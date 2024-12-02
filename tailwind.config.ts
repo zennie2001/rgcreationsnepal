@@ -4,6 +4,7 @@ const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/*.{js,ts,jsx,tsx,mdx}",
     "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
@@ -23,7 +24,7 @@ const config: Config = {
           DEFAULT: "#ffffff",
         },
         secondary: "#092A49",
-        tertiary: '#F5FBFF',
+        tertiary: '#0795FE',
         quaternary: '#FFBF1C',
         quinary: '#F6FAFE',
         text: {

@@ -1,7 +1,7 @@
 
 export default function Home() {
   return (
-    <main className="max-w-7xl overflow-hidden">
+    <main className="overflow-hidden">
       Reaction Nepal
     </main>
   );

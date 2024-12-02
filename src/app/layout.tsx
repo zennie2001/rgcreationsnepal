@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from 'next/font/google';
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
+import Header from "@/sections/Header";
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: "--font-sans" });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={twMerge(jakarta.variable, "antialiased font-sans")}>
+        <Header />
         {children}
       </body>
     </html>
