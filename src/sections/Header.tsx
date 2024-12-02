@@ -89,7 +89,7 @@ export default function Header() {
     const [showAbout, setShowAbout] = useState<boolean>(false);
 
     return (
-        <header className="header flex flex-col w-full text-primary">
+        <header className="header z-50 top-0 sticky flex flex-col w-full text-primary">
             <div className="header-top w-full py-4 px-24 flex justify-between items-center bg-secondary">
                 <div className="info flex_center gap-3">
                     <div className="flex_center gap-2 font-normal text-sm">
@@ -128,7 +128,7 @@ export default function Header() {
                     }
                 </div>
             </div>
-            <div className="header-bottom flex justify-between items-center px-24 border-b">
+            <div className="header-bottom flex justify-between items-center px-24 border-b bg-primary">
                 <div className="flex_center gap-12">
                     <Link
                         href={'/'}
