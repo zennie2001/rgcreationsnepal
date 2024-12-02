@@ -1,18 +1,46 @@
 import type { Config } from "tailwindcss";
 
-export default {
+const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: '480px',  // You can change the size as per your needs
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
+    container: {
+      center: true
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: "#ffffff",
+        },
+        secondary: "#092A49",
+        tertiary: '#F5FBFF',
+        quaternary: '#FFBF1C',
+        quinary: '#F6FAFE',
+        text: {
+          DEFAULT: "#4B4B4B",
+        },
+      },
+
+      fontFamily: {
+        sans: 'var(--font-sans)',
+      },
+
+      boxShadow: {
+        custom: `0px 0px 8px 0px rgba(2, 19, 79, 0.08)`,
+
       },
     },
   },
   plugins: [],
-} satisfies Config;
+};
+export default config;
