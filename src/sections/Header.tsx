@@ -1,3 +1,5 @@
+"use client";
+
 import { FaEnvelope, FaFacebookF, FaLinkedinIn, FaPhoneAlt, FaPinterest } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
@@ -6,6 +8,8 @@ import Link from "next/link";
 import Image from "next/image";
 import PrimaryButton from "@/components/UI/PrimaryButton";
 import SecondaryButton from "@/components/UI/SecondaryButton";
+import { useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 const socialMedia = [
     {
@@ -27,10 +31,6 @@ const socialMedia = [
 ]
 
 const navLinks = [
-    {
-        title: 'About Us',
-        link: '/about'
-    },
     {
         title: 'Gallery',
         link: '/gallery'
@@ -57,7 +57,37 @@ const navLinks = [
     },
 ]
 
+const aboutUs = [
+    {
+        link: '/about',
+        title: 'Introduction'
+    },
+    {
+        link: '/about',
+        title: 'Message From CEO'
+    },
+    {
+        link: '/about',
+        title: 'Message From Managing Director'
+    },
+    {
+        link: '/about',
+        title: 'Holiday List'
+    },
+    {
+        link: '/about',
+        title: 'Our Team'
+    },
+    {
+        link: '/about',
+        title: 'Our Certifications'
+    },
+]
+
 export default function Header() {
+
+    const [showAbout, setShowAbout] = useState<boolean>(false);
+
     return (
         <header className="header flex flex-col w-full text-primary">
             <div className="header-top w-full py-4 px-24 flex justify-between items-center bg-secondary">
@@ -110,7 +140,29 @@ export default function Header() {
                             className="w-full h-full object-contain"
                         />
                     </Link>
-                    <nav className="flex_center gap-6 text-text">
+                    <nav className="flex_center gap-6 text-text w-full">
+                        <div
+                            onMouseEnter={() => setShowAbout(true)}
+                            onMouseLeave={() => setShowAbout(false)}
+                            className="flex_center py-7 text-base border-b-2 border-primary hover:border-secondary cursor-pointer relative"
+                        >
+                            <p>About Us</p>
+                            <div className={twMerge("absolute -bottom-[355px] left-0 p-2 flex flex-col justify-center rounded-md bg-primary w-80", showAbout === true ? '' : 'hidden')}>
+                                {
+                                    aboutUs.map((about, index) => {
+                                        return (
+                                            <Link
+                                                key={index}
+                                                href={about.link}
+                                                className="p-4 rounded-md hover:bg-gray-100 w-full text-left"
+                                            >
+                                                {about.title}
+                                            </Link>
+                                        )
+                                    })
+                                }
+                            </div>
+                        </div>
                         {
                             navLinks.map((link, index) => {
                                 return (
