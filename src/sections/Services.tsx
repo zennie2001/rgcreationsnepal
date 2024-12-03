@@ -24,7 +24,7 @@ const services = [
 
 export default function Services() {
     return (
-        <section className="w-full h-[95vh] flex_center flex-col gap-12 px-24">
+        <section className="w-full flex_center flex-col gap-12 p-24">
             <SectionHeader
                 title="Tailored professional assistance"
                 smallTitle="Our Services"
