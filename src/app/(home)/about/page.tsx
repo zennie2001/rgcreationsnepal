@@ -1,6 +1,7 @@
 import PageHeader from "@/components/PageHeader";
 import SectionHeader from "@/components/SectionHeader";
 import aboutImage from '@/assets/images/heroBackground.jpg';
+import aboutSecondImage from '@/assets/images/aboutPageImage.png';
 import Image from "next/image";
 
 export default function AboutPage() {
@@ -61,6 +62,18 @@ export default function AboutPage() {
                     </div>
                 </div>
             </section>
+            <div className="image flex_center h-[80vh] w-full relative">
+                <Image
+                    src={aboutSecondImage}
+                    alt="image"
+                    className="size-full object-cover"
+                />
+                <div className="absolute bottom-0 flex_center w-full px-24">
+                    <div className="flex w-full h-16 bg-primary">
+
+                    </div>
+                </div>
+            </div>
         </main>
     )
 }
