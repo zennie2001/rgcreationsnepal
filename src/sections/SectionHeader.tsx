@@ -1,6 +1,8 @@
-export default function SectionHeader({ title, smallTitle }: { title: string; smallTitle: string; }) {
+import { twMerge } from "tailwind-merge";
+
+export default function SectionHeader({ title, smallTitle, className }: { title: string; smallTitle: string; className?: string; }) {
     return (
-        <div className="section-header flex_center flex-col">
+        <div className={twMerge("section-header flex_center flex-col", className)}>
             <p className="text-base font-bold text-tertiary">
                 {smallTitle}
             </p>
