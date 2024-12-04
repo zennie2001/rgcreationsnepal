@@ -1,4 +1,5 @@
 import About from "@/sections/About";
+import Blogs from "@/sections/Blogs";
 import Contact from "@/sections/Contact";
 import GlobalDestination from "@/sections/GlobalDestination";
 import Hero from "@/sections/Hero";
@@ -14,6 +15,7 @@ export default function Home() {
       <GlobalDestination />
       <Testimonials />
       <Contact />
+      <Blogs />
     </main>
   );
 }
