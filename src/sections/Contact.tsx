@@ -108,7 +108,7 @@ export default function Contact({ className }: { className?: string; }) {
                         className="w-full"
                     />
                 </div>
-                <div className="w-[50%] flex_center flex-col">
+                <div className="w-[50%] flex_center flex-col rounded-md overflow-hidden">
                     <Image src={contactImage} alt="contact-image" className="w-full h-[628px] object-cover" />
                 </div>
             </div>
