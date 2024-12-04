@@ -1,4 +1,5 @@
 import About from "@/sections/About";
+import Contact from "@/sections/Contact";
 import GlobalDestination from "@/sections/GlobalDestination";
 import Hero from "@/sections/Hero";
 import Services from "@/sections/Services";
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <GlobalDestination />
       <Testimonials />
+      <Contact />
     </main>
   );
 }
