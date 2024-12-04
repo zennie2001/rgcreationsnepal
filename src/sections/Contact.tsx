@@ -2,10 +2,11 @@ import PrimaryButton from "@/components/UI/PrimaryButton";
 import SectionHeader from "../components/SectionHeader";
 import contactImage from '@/assets/images/contactImage.png';
 import Image from "next/image";
+import { twMerge } from "tailwind-merge";
 
-export default function Contact() {
+export default function Contact({ className }: { className?: string; }) {
     return (
-        <section className="w-full flex_center px-24 pt-24">
+        <section className={twMerge("w-full flex_center px-24 pt-24", className)}>
             <div className="flex_center p-20 gap-20 w-full bg-[#F5FBFF] rounded-md">
                 <div className="w-[50%] flex_center flex-col gap-8">
                     <div className="flex flex-col gap-4">

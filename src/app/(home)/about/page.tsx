@@ -3,6 +3,7 @@ import SectionHeader from "@/components/SectionHeader";
 import aboutImage from '@/assets/images/heroBackground.jpg';
 import aboutSecondImage from '@/assets/images/aboutPageImage.png';
 import Image from "next/image";
+import Contact from "@/sections/Contact";
 
 export default function AboutPage() {
     return (
@@ -104,6 +105,7 @@ export default function AboutPage() {
                     </div>
                 </div>
             </section>
+            <Contact className="pt-0 pb-16" />
         </main>
     )
 }
