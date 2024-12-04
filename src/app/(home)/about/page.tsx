@@ -74,6 +74,36 @@ export default function AboutPage() {
                     </div>
                 </div>
             </div>
+            <section className="w-full flex_center px-24">
+                <div className="flex_center flex-col gap-16 pb-16 w-full">
+                    <div className="flex flex-col w-full px-12 gap-4">
+                        <h2 className="text-[40px] font-semibold text-secondary">
+                            Our Mission
+                        </h2>
+                        <div className="w-full flex gap-8">
+                            <p className="text-text w-1/2">
+                                It was established by the noble efforts and endeavors of a group of dedicated and qualified professionals with diverse academic expertise in the fields of applied education, science, and technology, with the sole objective of providing the student community with the most appropriate training and educational opportunities aboard. REACTION Nepal, with its team of experienced professionals and academics, provides counseling services for those students who wish to pursue their further studies abroad in well-reputed colleges, institutions, and universities in different countries on all continents, such as Asia-Pacific, Australia, Europe, and North America.
+                            </p>
+                            <p className="text-text w-1/2">
+                                REACTION Nepal, with its professionalized service in the sector of international educational counseling, boasts of its reputation, acquired within a very short span of time. It is probably the best choice for promising students aspiring to achieve success in life. A considerable number of our students have already been attending some of the most well-reputed colleges and universities abroad in pursuit of shaping their futures and careers.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col w-full px-12 gap-4">
+                        <h2 className="text-[40px] font-semibold text-secondary">
+                            Our Vision
+                        </h2>
+                        <div className="w-full flex gap-8">
+                            <p className="text-text w-1/2">
+                                REACTION Nepal, with its professionalized service in the sector of international educational counseling, boasts of its reputation, acquired within a very short span of time. It is probably the best choice for promising students aspiring to achieve success in life. A considerable number of our students have already been attending some of the most well-reputed colleges and universities abroad in pursuit of shaping their futures and careers.
+                            </p>
+                            <p className="text-text w-1/2">
+                                Reaction Nepal is a government-registered interdisciplinary organization with its headquarters in Putalisadak, Kathmandu, Nepal. Since its establishment in 2005, it has mainly aimed at providing education services to all seeking their study and career prospects in and out of the country.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     )
 }
