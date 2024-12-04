@@ -1,5 +1,5 @@
 import PrimaryButton from "@/components/UI/PrimaryButton";
-import SectionHeader from "./SectionHeader";
+import SectionHeader from "../components/SectionHeader";
 import contactImage from '@/assets/images/contactImage.png';
 import Image from "next/image";
 

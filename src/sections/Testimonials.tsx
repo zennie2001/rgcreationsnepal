@@ -1,4 +1,4 @@
-import SectionHeader from "./SectionHeader";
+import SectionHeader from "../components/SectionHeader";
 import TestimonialCard from "@/components/TestimonialCard";
 
 export default function Testimonials() {

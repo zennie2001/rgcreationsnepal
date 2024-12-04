@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SectionHeader from "./SectionHeader";
+import SectionHeader from "../components/SectionHeader";
 import worldMap from '@/assets/images/worldmap.png';
 
 export default function GlobalDestination() {

@@ -1,4 +1,4 @@
-import SectionHeader from "./SectionHeader";
+import SectionHeader from "../components/SectionHeader";
 import blogImage from '@/assets/images/blogImage.jpg';
 import BlogCard from "@/components/BlogCard";
 
