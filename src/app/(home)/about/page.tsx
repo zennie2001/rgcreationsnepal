@@ -1,3 +1,5 @@
+"use client";
+
 import PageHeader from "@/components/PageHeader";
 import SectionHeader from "@/components/SectionHeader";
 import aboutImage from '@/assets/images/heroBackground.jpg';
@@ -6,9 +8,34 @@ import Image from "next/image";
 import Contact from "@/sections/Contact";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import profileImage from '@/assets/images/profileImage.jpg';
-import { FaPlus } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaPinterest, FaPlus } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { RxCross2 } from "react-icons/rx";
+import { useState } from "react";
+
+const socialMedia = [
+    {
+        link: 'facebook.com',
+        icon: FaFacebookF
+    },
+    {
+        link: 'instagram.com',
+        icon: RiInstagramFill
+    },
+    {
+        link: 'linkedin.com',
+        icon: FaLinkedinIn
+    },
+    {
+        link: 'pinterest.com',
+        icon: FaPinterest
+    },
+]
 
 export default function AboutPage() {
+
+    const [showMessage, setShowMessage] = useState<boolean>(false);
+
     return (
         <main className="w-full overflow-hidden">
             <PageHeader
@@ -167,7 +194,10 @@ export default function AboutPage() {
                                     CEO/ Chairperson
                                 </p>
                             </div>
-                            <button className="size-9 bg-primary rounded-full p-2">
+                            <button
+                                onClick={() => setShowMessage(true)}
+                                className="size-9 bg-primary rounded-full p-2"
+                            >
                                 <FaPlus className="size-full text-secondary" />
                             </button>
                         </div>
@@ -187,7 +217,10 @@ export default function AboutPage() {
                                     CEO/ Chairperson
                                 </p>
                             </div>
-                            <button className="size-9 bg-primary rounded-full p-2">
+                            <button
+                                onClick={() => setShowMessage(true)}
+                                className="size-9 bg-primary rounded-full p-2"
+                            >
                                 <FaPlus className="size-full text-secondary" />
                             </button>
                         </div>
@@ -207,7 +240,10 @@ export default function AboutPage() {
                                     CEO/ Chairperson
                                 </p>
                             </div>
-                            <button className="size-9 bg-primary rounded-full p-2">
+                            <button
+                                onClick={() => setShowMessage(true)}
+                                className="size-9 bg-primary rounded-full p-2"
+                            >
                                 <FaPlus className="size-full text-secondary" />
                             </button>
                         </div>
@@ -219,6 +255,58 @@ export default function AboutPage() {
                         <IoIosArrowForward className="size-full" />
                     </button>
                 </div>
+                {
+                    showMessage &&
+                    <div className="absolute inset-0 bg-black/80 flex_center px-24">
+                        <div className="flex gap-6 p-8 w-[65%] h-[485px] bg-primary rounded-md relative -bottom-16">
+                            <div className="image w-[40%] h-full flex flex-col gap-4">
+                                <div className="flex_center w-full h-[70%] overflow-hidden">
+                                    <Image
+                                        src={profileImage}
+                                        alt="profile-image"
+                                        className="size-full object-cover"
+                                    />
+                                </div>
+                                <div className="flex_center flex-col gap-2">
+                                    <h4 className="text-2xl font-semibold text-secondary">
+                                        Raju Prasad Khanal
+                                    </h4>
+                                    <p className="text-text">
+                                        CEO/Chairperson
+                                    </p>
+                                </div>
+                                <div className="flex_center gap-3">
+                                    {
+                                        socialMedia.map((media, index) => (
+                                            <a
+                                                key={index}
+                                                href={media.link}
+                                                target="_blank"
+                                                className="social rounded-full size-8 p-2 border border-text/30 text-secondary"
+                                            >
+                                                <media.icon className="size-full" />
+                                            </a>
+                                        ))
+                                    }
+                                </div>
+                            </div>
+                            <div className="image flex flex-col gap-4 w-[60%]">
+                                <p className="text-text">
+                                    The CEO/Chairperson plays a pivotal role in steering the organization towards success and sustainability. Their work involves developing and executing the company&apos;s strategic vision, making critical decisions, and overseeing day-to-day operations.
+                                </p>
+                                <p className="text-text">
+                                    As the top executive, CEOs provide inspirational leadership, setting the tone for the organization&apos;s culture and values. They engage with various stakeholders, from employees to investors, maintaining positive relationships and ensuring alignment with the company&apos;s mission. Financial oversight, risk management, and policy development are integral components of their responsibilities.
+                                </p>
+                            </div>
+                            <button
+                                onClick={() => setShowMessage(false)}
+                                className="absolute top-5 right-5 text-secondary size-5"
+                            >
+                                <RxCross2 className="size-full" />
+                            </button>
+                        </div>
+                    </div>
+                }
             </section>
             <Contact className="pt-0 pb-16" />
         </main>
