@@ -5,6 +5,8 @@ import aboutSecondImage from '@/assets/images/aboutPageImage.png';
 import Image from "next/image";
 import Contact from "@/sections/Contact";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import profileImage from '@/assets/images/profileImage.jpg';
+import { FaPlus } from "react-icons/fa";
 
 export default function AboutPage() {
     return (
@@ -142,6 +144,80 @@ export default function AboutPage() {
                     <p className="w-full flex_center text-center text-text">
                         Relatively, the students were a bit less for other destinations like USA and Australia but consideraly a good number as usual. This number included serious, academically-intact and financially abled candidates for whom the good institutions mattered, not the contries. So, basically the visa was not a bar as they deserved it for their further studies. We have been happy to be in their service.
                     </p>
+                </div>
+            </section>
+            <section className="w-full flex_center flex-col px-24 py-16 gap-12 relative">
+                <SectionHeader
+                    smallTitle="Team Members"
+                    title="Meet Our Team"
+                />
+                <div className="grid grid-cols-3 w-full gap-8 relative">
+                    <div className="profilecard flex_center relative col-span-1 rounded-md overflow-hidden">
+                        <Image
+                            src={profileImage}
+                            alt="profile image"
+                            className="w-full h-[480px] object-cover"
+                        />
+                        <div className="absolute flex justify-between items-center w-[90%] gap-6 bottom-5">
+                            <div className="flex flex-col gap-2">
+                                <h4 className="text-2xl font-semibold text-primary">
+                                    Raju Prasad Khanal
+                                </h4>
+                                <p className="text-primary">
+                                    CEO/ Chairperson
+                                </p>
+                            </div>
+                            <button className="size-9 bg-primary rounded-full p-2">
+                                <FaPlus className="size-full text-secondary" />
+                            </button>
+                        </div>
+                    </div>
+                    <div className="profilecard flex_center relative col-span-1 rounded-md overflow-hidden">
+                        <Image
+                            src={profileImage}
+                            alt="profile image"
+                            className="w-full h-[480px] object-cover"
+                        />
+                        <div className="absolute flex justify-between items-center w-[90%] gap-6 bottom-5">
+                            <div className="flex flex-col gap-2">
+                                <h4 className="text-2xl font-semibold text-primary">
+                                    Raju Prasad Khanal
+                                </h4>
+                                <p className="text-primary">
+                                    CEO/ Chairperson
+                                </p>
+                            </div>
+                            <button className="size-9 bg-primary rounded-full p-2">
+                                <FaPlus className="size-full text-secondary" />
+                            </button>
+                        </div>
+                    </div>
+                    <div className="profilecard flex_center relative col-span-1 rounded-md overflow-hidden">
+                        <Image
+                            src={profileImage}
+                            alt="profile image"
+                            className="w-full h-[480px] object-cover"
+                        />
+                        <div className="absolute flex justify-between items-center w-[90%] gap-6 bottom-5">
+                            <div className="flex flex-col gap-2">
+                                <h4 className="text-2xl font-semibold text-primary">
+                                    Raju Prasad Khanal
+                                </h4>
+                                <p className="text-primary">
+                                    CEO/ Chairperson
+                                </p>
+                            </div>
+                            <button className="size-9 bg-primary rounded-full p-2">
+                                <FaPlus className="size-full text-secondary" />
+                            </button>
+                        </div>
+                    </div>
+                    <button className="absolute flex_center size-10 p-2 bg-primary rounded-md top-1/2 -left-5 shadow-md">
+                        <IoIosArrowBack className="size-full" />
+                    </button>
+                    <button className="absolute flex_center size-10 p-2 bg-primary rounded-md top-1/2 -right-5 shadow-md">
+                        <IoIosArrowForward className="size-full" />
+                    </button>
                 </div>
             </section>
             <Contact className="pt-0 pb-16" />
