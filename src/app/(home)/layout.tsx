@@ -3,6 +3,8 @@ import { Plus_Jakarta_Sans } from 'next/font/google';
 import "../globals.css";
 import { twMerge } from "tailwind-merge";
 import Header from "@/sections/Header";
+import Footer from "@/sections/Footer";
+import Link from "next/link";
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: "--font-sans" });
 
@@ -24,6 +26,21 @@ export default function RootLayout({
       <body className={twMerge(jakarta.variable, "antialiased font-sans")}>
         <Header />
         {children}
+        <Footer />
+        <div className="flex items-center justify-between w-full py-3 px-24 bg-[#03213C]">
+          <p className="text-primary">
+            © Copyright 2024 by Reaction Nepal Consultants Pvt. Ltd.
+          </p>
+          <div className="flex items-center text-primary gap-4">
+            <Link href={'/'} className="hover:underline">
+              Terms of use
+            </Link>
+            <div className="size-2 rounded-full bg-primary"></div>
+            <Link href={'/'} className="hover:underline">
+              Privacy Policy
+            </Link>
+          </div>
+        </div>
       </body>
     </html>
   );

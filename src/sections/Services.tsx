@@ -1,4 +1,4 @@
-import SectionHeader from "./SectionHeader";
+import SectionHeader from "../components/SectionHeader";
 import serviceFirst from '@/assets/images/servicesFirst.png';
 import serviceSecond from '@/assets/images/servicesSecond.png';
 import serviceThird from '@/assets/images/servicesThird.png';

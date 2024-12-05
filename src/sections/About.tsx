@@ -1,5 +1,5 @@
 import PrimaryButton from "@/components/UI/PrimaryButton";
-import SectionHeader from "./SectionHeader";
+import SectionHeader from "../components/SectionHeader";
 import SecondaryButton from "@/components/UI/SecondaryButton";
 import aboutImageFirst from '@/assets/images/homepageAbout.png';
 import aboutImageSecond from '@/assets/images/homepageAboutSecond.png';
