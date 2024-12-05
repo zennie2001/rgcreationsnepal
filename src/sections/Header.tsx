@@ -147,7 +147,7 @@ export default function Header() {
                             className="flex_center py-7 text-base border-b-2 border-primary hover:border-secondary cursor-pointer relative"
                         >
                             <p>About Us</p>
-                            <div className={twMerge("absolute -bottom-[355px] left-0 p-2 flex flex-col justify-center rounded-md bg-primary w-80", showAbout === true ? '' : 'hidden')}>
+                            <div className={twMerge("absolute -bottom-[355px] left-0 p-2 flex flex-col justify-center rounded-md bg-primary w-80 z-0", showAbout === true ? '' : 'hidden')}>
                                 {
                                     aboutUs.map((about, index) => {
                                         return (
