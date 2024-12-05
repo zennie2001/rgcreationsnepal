@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 export default function BlogCard({ image, date, title, miniDescription }: { image: StaticImageData; date: string; title: string; miniDescription: string; }) {
@@ -23,9 +24,9 @@ export default function BlogCard({ image, date, title, miniDescription }: { imag
                 </p>
             </div>
             <div className="flex items-center gap-2 text-base cursor-pointer w-max">
-                <p className="pb-1 border-b border-secondary text-secondary cursor-pointer">
+                <Link href={'/blogs/blogdetails'} className="pb-1 border-b border-secondary text-secondary cursor-pointer">
                     Read More
-                </p>
+                </Link>
                 <IoIosArrowRoundForward />
             </div>
         </div>
