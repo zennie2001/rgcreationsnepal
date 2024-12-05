@@ -4,6 +4,7 @@ import aboutImage from '@/assets/images/heroBackground.jpg';
 import aboutSecondImage from '@/assets/images/aboutPageImage.png';
 import Image from "next/image";
 import Contact from "@/sections/Contact";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 export default function AboutPage() {
     return (
@@ -103,6 +104,44 @@ export default function AboutPage() {
                             </p>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section className="w-full flex_center flex-col gap-12 px-24 py-16 bg-[#F5FBFF]">
+                <SectionHeader
+                    smallTitle="History"
+                    title="Over the Years"
+                />
+                <div className="flex_center w-full relative">
+                    <div className="absolute flex h-0.5 w-full bg-secondary"></div>
+                    <button className="absolute flex_center size-10 p-2 -top5 left-0 bg-secondary text-primary rounded-md z-10">
+                        <IoIosArrowBack />
+                    </button>
+                    <button className="absolute flex_center size-10 p-2 -top5 right-0 bg-secondary text-primary rounded-md z-10">
+                        <IoIosArrowForward />
+                    </button>
+                    <div className="flex_center gap-20 z-10">
+                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-6"></div>
+                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-6"></div>
+                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-14">
+                            2008
+                        </div>
+                        <div className="flex_center rounded-full bg-secondary size-36 text-primary text-[32px] font-semibold">
+                            2009
+                        </div>
+                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-14">
+                            2010
+                        </div>
+                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] font-bold size-6"></div>
+                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-6"></div>
+                    </div>
+                </div>
+                <div className="flex_center flex-col w-[60%] gap-6">
+                    <p className="w-full flex_center text-center text-text">
+                        With introduction of TIER-4 pointbased system by UKBA, this year was significant for REACTION Nepal to make successful placement to over a dozen UK institutions, including private and government colleges and universities. As a result of properly- selected courses in accordance with the students&apos; respective desires into right colleges, as well as accurate visa applications, the success rate was incredible with the cent percent. Also, the number of test prep students, especially for IELTS at RN soared up this year, with average of 6 Band overal.
+                    </p>
+                    <p className="w-full flex_center text-center text-text">
+                        Relatively, the students were a bit less for other destinations like USA and Australia but consideraly a good number as usual. This number included serious, academically-intact and financially abled candidates for whom the good institutions mattered, not the contries. So, basically the visa was not a bar as they deserved it for their further studies. We have been happy to be in their service.
+                    </p>
                 </div>
             </section>
             <Contact className="pt-0 pb-16" />
