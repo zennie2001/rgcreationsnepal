@@ -109,7 +109,7 @@ export default function FAQs() {
                         Payment Queries
                     </button>
                 </div>
-                <div className="flex flex-col gap-16 w-[80%] h-[76vh] overflow-y-scroll no-scrollbar">
+                <div className="flex flex-col gap-16 w-[80%] h-[100vh] overflow-y-scroll no-scrollbar">
                     <div className="flex flex-col gap-8">
                         <h3 className="text-3xl font-semibold text-secondary">
                             Abroad Study Process

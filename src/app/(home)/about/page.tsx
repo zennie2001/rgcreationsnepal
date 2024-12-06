@@ -1,11 +1,41 @@
+"use client";
+
 import PageHeader from "@/components/PageHeader";
 import SectionHeader from "@/components/SectionHeader";
 import aboutImage from '@/assets/images/heroBackground.jpg';
 import aboutSecondImage from '@/assets/images/aboutPageImage.png';
 import Image from "next/image";
 import Contact from "@/sections/Contact";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import profileImage from '@/assets/images/profileImage.jpg';
+import { FaFacebookF, FaLinkedinIn, FaPinterest, FaPlus } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { RxCross2 } from "react-icons/rx";
+import { useState } from "react";
+
+const socialMedia = [
+    {
+        link: 'facebook.com',
+        icon: FaFacebookF
+    },
+    {
+        link: 'instagram.com',
+        icon: RiInstagramFill
+    },
+    {
+        link: 'linkedin.com',
+        icon: FaLinkedinIn
+    },
+    {
+        link: 'pinterest.com',
+        icon: FaPinterest
+    },
+]
 
 export default function AboutPage() {
+
+    const [showMessage, setShowMessage] = useState<boolean>(false);
+
     return (
         <main className="w-full overflow-hidden">
             <PageHeader
@@ -104,6 +134,179 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </div>
+            </section>
+            <section className="w-full flex_center flex-col gap-12 px-24 py-16 bg-[#F5FBFF]">
+                <SectionHeader
+                    smallTitle="History"
+                    title="Over the Years"
+                />
+                <div className="flex_center w-full relative">
+                    <div className="absolute flex h-0.5 w-full bg-secondary"></div>
+                    <button className="absolute flex_center size-10 p-2 -top5 left-0 bg-secondary text-primary rounded-md z-10">
+                        <IoIosArrowBack />
+                    </button>
+                    <button className="absolute flex_center size-10 p-2 -top5 right-0 bg-secondary text-primary rounded-md z-10">
+                        <IoIosArrowForward />
+                    </button>
+                    <div className="flex_center gap-20 z-10">
+                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-6"></div>
+                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-6"></div>
+                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-14">
+                            2008
+                        </div>
+                        <div className="flex_center rounded-full bg-secondary size-36 text-primary text-[32px] font-semibold">
+                            2009
+                        </div>
+                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-14">
+                            2010
+                        </div>
+                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] font-bold size-6"></div>
+                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-6"></div>
+                    </div>
+                </div>
+                <div className="flex_center flex-col w-[60%] gap-6">
+                    <p className="w-full flex_center text-center text-text">
+                        With introduction of TIER-4 pointbased system by UKBA, this year was significant for REACTION Nepal to make successful placement to over a dozen UK institutions, including private and government colleges and universities. As a result of properly- selected courses in accordance with the students&apos; respective desires into right colleges, as well as accurate visa applications, the success rate was incredible with the cent percent. Also, the number of test prep students, especially for IELTS at RN soared up this year, with average of 6 Band overal.
+                    </p>
+                    <p className="w-full flex_center text-center text-text">
+                        Relatively, the students were a bit less for other destinations like USA and Australia but consideraly a good number as usual. This number included serious, academically-intact and financially abled candidates for whom the good institutions mattered, not the contries. So, basically the visa was not a bar as they deserved it for their further studies. We have been happy to be in their service.
+                    </p>
+                </div>
+            </section>
+            <section className="w-full flex_center flex-col px-24 py-16 gap-12 relative">
+                <SectionHeader
+                    smallTitle="Team Members"
+                    title="Meet Our Team"
+                />
+                <div className="grid grid-cols-3 w-full gap-8 relative">
+                    <div className="profilecard flex_center relative col-span-1 rounded-md overflow-hidden">
+                        <Image
+                            src={profileImage}
+                            alt="profile image"
+                            className="w-full h-[480px] object-cover"
+                        />
+                        <div className="absolute flex justify-between items-center w-[90%] gap-6 bottom-5">
+                            <div className="flex flex-col gap-2">
+                                <h4 className="text-2xl font-semibold text-primary">
+                                    Raju Prasad Khanal
+                                </h4>
+                                <p className="text-primary">
+                                    CEO/ Chairperson
+                                </p>
+                            </div>
+                            <button
+                                onClick={() => setShowMessage(true)}
+                                className="size-9 bg-primary rounded-full p-2"
+                            >
+                                <FaPlus className="size-full text-secondary" />
+                            </button>
+                        </div>
+                    </div>
+                    <div className="profilecard flex_center relative col-span-1 rounded-md overflow-hidden">
+                        <Image
+                            src={profileImage}
+                            alt="profile image"
+                            className="w-full h-[480px] object-cover"
+                        />
+                        <div className="absolute flex justify-between items-center w-[90%] gap-6 bottom-5">
+                            <div className="flex flex-col gap-2">
+                                <h4 className="text-2xl font-semibold text-primary">
+                                    Raju Prasad Khanal
+                                </h4>
+                                <p className="text-primary">
+                                    CEO/ Chairperson
+                                </p>
+                            </div>
+                            <button
+                                onClick={() => setShowMessage(true)}
+                                className="size-9 bg-primary rounded-full p-2"
+                            >
+                                <FaPlus className="size-full text-secondary" />
+                            </button>
+                        </div>
+                    </div>
+                    <div className="profilecard flex_center relative col-span-1 rounded-md overflow-hidden">
+                        <Image
+                            src={profileImage}
+                            alt="profile image"
+                            className="w-full h-[480px] object-cover"
+                        />
+                        <div className="absolute flex justify-between items-center w-[90%] gap-6 bottom-5">
+                            <div className="flex flex-col gap-2">
+                                <h4 className="text-2xl font-semibold text-primary">
+                                    Raju Prasad Khanal
+                                </h4>
+                                <p className="text-primary">
+                                    CEO/ Chairperson
+                                </p>
+                            </div>
+                            <button
+                                onClick={() => setShowMessage(true)}
+                                className="size-9 bg-primary rounded-full p-2"
+                            >
+                                <FaPlus className="size-full text-secondary" />
+                            </button>
+                        </div>
+                    </div>
+                    <button className="absolute flex_center size-10 p-2 bg-primary rounded-md top-1/2 -left-5 shadow-md">
+                        <IoIosArrowBack className="size-full" />
+                    </button>
+                    <button className="absolute flex_center size-10 p-2 bg-primary rounded-md top-1/2 -right-5 shadow-md">
+                        <IoIosArrowForward className="size-full" />
+                    </button>
+                </div>
+                {
+                    showMessage &&
+                    <div className="absolute inset-0 bg-black/80 flex_center px-24">
+                        <div className="flex gap-6 p-8 w-[65%] h-[485px] bg-primary rounded-md relative -bottom-16">
+                            <div className="image w-[40%] h-full flex flex-col gap-4">
+                                <div className="flex_center w-full h-[70%] overflow-hidden">
+                                    <Image
+                                        src={profileImage}
+                                        alt="profile-image"
+                                        className="size-full object-cover"
+                                    />
+                                </div>
+                                <div className="flex_center flex-col gap-2">
+                                    <h4 className="text-2xl font-semibold text-secondary">
+                                        Raju Prasad Khanal
+                                    </h4>
+                                    <p className="text-text">
+                                        CEO/Chairperson
+                                    </p>
+                                </div>
+                                <div className="flex_center gap-3">
+                                    {
+                                        socialMedia.map((media, index) => (
+                                            <a
+                                                key={index}
+                                                href={media.link}
+                                                target="_blank"
+                                                className="social rounded-full size-8 p-2 border border-text/30 text-secondary"
+                                            >
+                                                <media.icon className="size-full" />
+                                            </a>
+                                        ))
+                                    }
+                                </div>
+                            </div>
+                            <div className="image flex flex-col gap-4 w-[60%]">
+                                <p className="text-text">
+                                    The CEO/Chairperson plays a pivotal role in steering the organization towards success and sustainability. Their work involves developing and executing the company&apos;s strategic vision, making critical decisions, and overseeing day-to-day operations.
+                                </p>
+                                <p className="text-text">
+                                    As the top executive, CEOs provide inspirational leadership, setting the tone for the organization&apos;s culture and values. They engage with various stakeholders, from employees to investors, maintaining positive relationships and ensuring alignment with the company&apos;s mission. Financial oversight, risk management, and policy development are integral components of their responsibilities.
+                                </p>
+                            </div>
+                            <button
+                                onClick={() => setShowMessage(false)}
+                                className="absolute top-5 right-5 text-secondary size-5"
+                            >
+                                <RxCross2 className="size-full" />
+                            </button>
+                        </div>
+                    </div>
+                }
             </section>
             <Contact className="pt-0 pb-16" />
         </main>
