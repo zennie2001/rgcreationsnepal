@@ -129,6 +129,22 @@ export default function StudentCounselling() {
                     }
                 </div>
             </section>
+            <section className="w-full flex_center flex-col px-24 py-16 gap-12">
+                <SectionHeader
+                    smallTitle="Process"
+                    title="Steps in the Counseling Process"
+                    className="items-start w-full"
+                />
+            </section>
+            <section className="w-full flex_center flex-col px-24 py-16 gap-12 bg-[#F5FBFF]">
+                <SectionHeader
+                    smallTitle="Features"
+                    title="Counselling Features"
+                />
+                <div className="grid grid-cols-3 w-full gap-8">
+                        
+                </div>
+            </section>
             <Contact
                 className="pb-16"
             />
