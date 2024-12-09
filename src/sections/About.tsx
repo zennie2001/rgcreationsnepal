@@ -7,19 +7,19 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <section className="flex_center gap-8 w-full p-24 bg-[#F5FBFF]">
-            <div className="flex flex-col w-1/2 gap-12">
-                <div className="flex flex-col gap-4">
+        <section className="lg:flex_center flex flex-col lg:flex-row font-jakarta  gap-8 w-full xl:p-24 lg:p-10 py-10 px-5 bg-[#F5FBFF]">
+            <div className="flex flex-col md:w-1/2 w-full lg:gap-12 gap-6">
+                <div className="flex flex-col gap-4 lg:text-start text-center">
                     <SectionHeader
                         smallTitle="About Us"
                         title="Our goal is to assist students for hassle free environment"
-                        className="items-start"
+                        className="items-center"
                     />
-                    <p className="text-text text-justify">
+                    <p className="text-text lg:text-start text-center">
                         Reaction Nepal is a government-registered interdisciplinary organization with its headquarters in Putalisadak, Kathmandu, Nepal. Since its establishment in 2005, it has mainly aimed at providing education services to all seeking their study and career prospects in and out of the country.
                     </p>
                 </div>
-                <div className="flex gap-4">
+                <div className="flex gap-4 md:justify-start justify-center">
                     <PrimaryButton
                         text="Know More"
                     />
@@ -28,9 +28,9 @@ export default function About() {
                     />
                 </div>
             </div>
-            <div className="flex gap-8 w-1/2">
-                <div className="flex_center flex-col w-1/2 gap-8">
-                    <div className="flex flex-col w-full bg-tertiary rounded-md p-6 text-primary">
+            <div className="flex lg:flex-row flex-col gap-8 lg:w-1/2 w-full">
+                <div className="flex_center lg:flex-col flex-row lg:w-1/2 w-full gap-5 ">
+                    <div className="flex flex-col w-full bg-tertiary rounded-md lg:h-52 h-[265px] sm:p-6 p-3 text-primary">
                         <p className="text-[40px]">
                             10+
                         </p>
@@ -43,7 +43,7 @@ export default function About() {
                             </p>
                         </div>
                     </div>
-                    <div className="flex_center w-full h-48 rounded-md overflow-hidden">
+                    <div className="flex_center w-full lg:h-48 h-[265px] rounded-md overflow-hidden">
                         <Image
                             src={aboutImageFirst}
                             alt="about-image"
@@ -51,7 +51,7 @@ export default function About() {
                         />
                     </div>
                 </div>
-                <div className="flex_center w-1/2 h-[416px] rounded-md overflow-hidden">
+                <div className="flex_center lg:w-1/2 w-full lg:h-[416px] h-[200px] rounded-md overflow-hidden">
                     <Image src={aboutImageSecond} alt="about-image" className="size-full object-cover" />
                 </div>
             </div>

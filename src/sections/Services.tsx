@@ -24,12 +24,12 @@ const services = [
 
 export default function Services() {
     return (
-        <section className="w-full flex_center flex-col gap-12 p-24">
+        <section className="w-full flex_center flex-col lg:gap-12 gap-6 lg:p-24 px-4 py-10 font-jakarta">
             <SectionHeader
                 title="Tailored professional assistance"
                 smallTitle="Our Services"
             />
-            <div className="grid grid-cols-3 gap-8 w-full">
+            <div className="grid lg:grid-cols-3 lg:gap-8 gap-5 grid-cols-1 w-full">
                 {
                     services.map((service, index) => {
                         return (

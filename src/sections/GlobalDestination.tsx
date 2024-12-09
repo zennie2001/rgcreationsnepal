@@ -4,12 +4,13 @@ import worldMap from '@/assets/images/worldmap.png';
 
 export default function GlobalDestination() {
     return (
-        <section className="w-full flex_center flex-col gap-12 p-24">
+        <section className="w-full flex_center flex-col gap-12 lg:p-24 px-4 py-10 font-jakarta">
             <SectionHeader
                 smallTitle="Global Destinations"
                 title="One-Stop for all the Best Universities across the globe"
-                className="w-[60%] text-center"
+                className="lg:w-[60%] w-full text-center"
             />
+                
             <div className="map w-full flex_center relative">
                 <Image
                     src={worldMap}

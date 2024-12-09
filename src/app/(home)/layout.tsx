@@ -27,8 +27,8 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
-        <div className="flex items-center justify-between w-full py-3 px-24 bg-[#03213C]">
-          <p className="text-primary">
+        <div className="flex lg:flex-row flex-col items-center justify-between w-full py-3 lg:px-24 px-4 bg-[#03213C]">
+          <p className="text-primary text-center px-10">
             © Copyright 2024 by Reaction Nepal Consultants Pvt. Ltd.
           </p>
           <div className="flex items-center text-primary gap-4">
