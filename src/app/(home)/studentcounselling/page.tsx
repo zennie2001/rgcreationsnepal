@@ -7,6 +7,7 @@ import Image from "next/image";
 import Contact from "@/sections/Contact";
 import { useState } from "react";
 import FaqCard from "@/components/FaqCard";
+import { twMerge } from "tailwind-merge";
 
 const benifits = [
     {
@@ -60,9 +61,49 @@ const faqs = [
     }
 ]
 
+const steps = [
+    {
+        title: 'Initial Consultation',
+        link: 'initial'
+    },
+    {
+        title: 'Course and University Selection',
+        link: 'course'
+    },
+    {
+        title: 'Application Assistance',
+        link: 'application'
+    },
+    {
+        title: 'Visa Guidance',
+        link: 'visa'
+    },
+    {
+        title: 'Pre-Departure Orientation',
+        link: 'departure'
+    },
+]
+
+const features = [
+    {
+        title: 'One-on-One or Group Counseling Sessions',
+        description: 'Tailored guidance provided to each student based on their unique needs, aspirations, and circumstances. Direct interaction with the counselor allows for a detailed discussion of academic, career, and personal preferences.'
+    },
+    {
+        title: 'Online and Offline Appointment Options',
+        description: 'Convenient for students who cannot visit the counseling center physically. Students can access on-site resources, such as brochures, program catalogs, and direct interactions with multiple counselors.'
+    },
+    {
+        title: 'Experienced Counselors',
+        description: 'Counselors bring years of expertise in study-abroad guidance, ensuring students receive accurate, updated, and relevant advice.Their familiarity with international education systems, admission processes, and visa regulations helps streamline the process.'
+    },
+]
+
 export default function StudentCounselling() {
 
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+    const [counSteps, setCounSteps] = useState('initial');
 
     const toggleFAQ = (index: number) => {
         setActiveIndex(activeIndex === index ? null : index); // Toggle current FAQ
@@ -135,6 +176,57 @@ export default function StudentCounselling() {
                     title="Steps in the Counseling Process"
                     className="items-start w-full"
                 />
+                <div className="flex flex-col gap-12 justify-start w-full overflow-x-scroll no-scrollbar">
+                    <nav className="flex flex-none gap-6 lg:gap-8 overflow-x-clip">
+                        {
+                            steps.map((step, index) => {
+                                return (
+                                    <button
+                                        key={index}
+                                        onClick={() => setCounSteps(step.link)}
+                                        className={twMerge("text-sm font-medium py-3 px-6 rounded-md hover:text-tertiary w-max transition duration-300", counSteps === step.link ? 'border border-tertiary text-tertiary' : '')}
+                                    >
+                                        {step.title}
+                                    </button>
+                                )
+                            })
+                        }
+                    </nav>
+                    <div className="w-full gap-10 flex">
+                        <div className="w-[50%] gap-4 flex flex-col">
+                            <h4 className="text-2xl font-semibold">
+                                Understanding the Student&apos;s Goals & Preferences
+                            </h4>
+                            <p className="text-text text-base">
+                                The initial consultation is the foundation of the study-abroad counseling process. During this session, counselors work closely with students to understand their individual needs, aspirations, and circumstances. This involves:
+                            </p>
+                            <ul className="text-base text-text list-disc">
+                                <li className="mb-2">
+                                    Reviewing past education, grades, and academic achievements
+                                </li>
+                                <li className="mb-2">
+                                    Understanding the student&apos;s long-term professional aspirations and how studying abroad can help achieve them.
+                                </li>
+                                <li className="mb-2">
+                                    Discussing preferred fields of study, extracurricular interests, and specific subject areas
+                                </li>
+                                <li className="mb-2">
+                                    Factoring in the student&apos;s preferred study destination, cultural inclinations, lifestyle expectations, and any location-specific priorities.
+                                </li>
+                                <li className="mb-2">
+                                    Evaluating the student&apos;s financial situation to recommend suitable scholarships
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="w-[50%]">
+                            <Image
+                                src={placeholderImage}
+                                alt="placeholder-image"
+                                className="w-full h-80 object-cover"
+                            />
+                        </div>
+                    </div>
+                </div>
             </section>
             <section className="w-full flex_center flex-col px-24 py-16 gap-12 bg-[#F5FBFF]">
                 <SectionHeader
@@ -142,7 +234,24 @@ export default function StudentCounselling() {
                     title="Counselling Features"
                 />
                 <div className="grid grid-cols-3 w-full gap-8">
-                        
+                    {
+                        features.map((feature, index) => {
+                            return (
+                                <div key={index} className="flex_center flex-col gap-6 pt-14 p-8 bg-primary rounded-md col-span-1 relative">
+                                    <div className="absolute size-14 rounded-md bg-tertiary -top-7 left-1/2 -translate-x-1/2"></div>
+                                    <div className="flex_center flex-col gap-4">
+                                        <h4 className="text-2xl font-semibold text-center text-secondary">
+                                            {feature.title}
+                                        </h4>
+                                        <div className="flex w-20 h-1 bg-tertiary rounded-full"></div>
+                                    </div>
+                                    <p className="text-text text-center p-4">
+                                        {feature.description}
+                                    </p>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </section>
             <Contact
