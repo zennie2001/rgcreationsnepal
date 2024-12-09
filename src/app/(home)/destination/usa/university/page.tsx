@@ -170,7 +170,10 @@ export default function Universities() {
                                     university.location === 'washington'
                                 ).map((uni, index) => {
                                     return (
-                                        <div className="universitycard flex flex-col gap-2 rounded-md overflow-hidden col-span-1">
+                                        <div
+                                            key={index}
+                                            className="universitycard flex flex-col gap-2 rounded-md overflow-hidden col-span-1"
+                                        >
                                             <div className="image w-full h-80 rounded-md overflow-hidden">
                                                 <Image
                                                     src={uni.image}
@@ -197,7 +200,10 @@ export default function Universities() {
                                     university.location === 'newyork'
                                 ).map((uni, index) => {
                                     return (
-                                        <div className="universitycard flex flex-col gap-2 rounded-md overflow-hidden col-span-1">
+                                        <div
+                                            key={index}
+                                            className="universitycard flex flex-col gap-2 rounded-md overflow-hidden col-span-1"
+                                        >
                                             <div className="image w-full h-80 rounded-md overflow-hidden">
                                                 <Image
                                                     src={uni.image}
