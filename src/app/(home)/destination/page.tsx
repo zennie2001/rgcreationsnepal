@@ -6,35 +6,35 @@ import Link from "next/link";
 const countries = [
     {
         title: 'USA',
-        link: '/usa'
+        link: '/destination/usa'
     },
     {
         title: 'UK',
-        link: '/usa'
+        link: '/destination/usa'
     },
     {
         title: 'Australia',
-        link: '/usa'
+        link: '/destination/usa'
     },
     {
         title: 'Canada',
-        link: '/usa'
+        link: '/destination/usa'
     },
     {
         title: 'Japan',
-        link: '/usa'
+        link: '/destination/usa'
     },
     {
         title: 'Germany',
-        link: '/usa'
+        link: '/destination/usa'
     },
     {
         title: 'Denmark',
-        link: '/usa'
+        link: '/destination/usa'
     },
     {
         title: 'France',
-        link: '/usa'
+        link: '/destination/usa'
     },
 ]
 
