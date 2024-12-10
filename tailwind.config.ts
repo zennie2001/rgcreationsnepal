@@ -22,11 +22,13 @@ const config: Config = {
       colors: {
         primary: {
           DEFAULT: "#ffffff",
+       
         },
         secondary: "#092A49",
         tertiary: '#0795FE',
         quaternary: '#FFBF1C',
         quinary: '#F6FAFE',
+        borderColor:'#E9E9E9',
         text: {
           DEFAULT: "#4B4B4B",
         },
@@ -34,6 +36,7 @@ const config: Config = {
 
       fontFamily: {
         sans: 'var(--font-sans)',
+        jakarta: ['Plus Jakarta Sans', 'sans-serif'],
       },
 
       boxShadow: {

@@ -42,21 +42,24 @@ export default function AboutPage() {
                 title="About Us"
                 link="/about"
             />
-            <section className="flex_center flex-col w-full px-24 py-16 gap-16">
-                <div className="flex items-center gap-16 w-full">
-                    <div className="flex flex-col w-1/2 gap-12">
+            <section className="flex_center flex-col w-full lg:px-24 px-4 lg:py-16 py-7 gap-16">
+                <div className="flex lg:flex-row flex-col items-center lg:gap-16 gap-6 w-full">
+                    <div className="flex flex-col lg:w-1/2 w-full gap-12">
                         <div className="flex flex-col gap-4">
                             <SectionHeader
                                 smallTitle="About Us"
-                                title="Our goal is to assist students for hassle free environment"
-                                className="items-start"
+                                title=""
+                                className="items-center"
                             />
-                            <p className="text-text text-justify">
+                            <h1 className="text-[30px]  font-semibold lg:text-start text-center">
+                            Our goal is to assist students for hassle free environment
+            </h1>
+                            <p className="text-text lg:text-justify text-center">
                                 Reaction Nepal is a government-registered interdisciplinary organization with its headquarters in Putalisadak, Kathmandu, Nepal. Since its establishment in 2005, it has mainly aimed at providing education services to all seeking their study and career prospects in and out of the country.
                             </p>
                         </div>
                     </div>
-                    <div className="flex gap-8 w-1/2 h-80 rounded-md overflow-hidden">
+                    <div className="flex gap-8 lg:w-1/2 w-full h-80 rounded-md overflow-hidden">
                         <Image
                             src={aboutImage}
                             alt="image"
@@ -64,13 +67,13 @@ export default function AboutPage() {
                         />
                     </div>
                 </div>
-                <div className="flex_center w-full gap-8">
-                    <div className="flex items-center p-12 gap-8 bg-[#F5FBFF] w-1/2 rounded-md">
-                        <p className="text-4xl text-tertiary font-semibold">
+                <div className="flex_center lg:flex-row flex-col w-full lg:gap-8 gap-3">
+                    <div className="flex items-center lg:p-12 p-4 lg:gap-8 gap-2 bg-[#F5FBFF] lg:w-1/2 w-full rounded-md">
+                        <p className="lg:text-4xl text-3xl text-tertiary font-semibold  w-[40%] md:w-[20%]">
                             20K +
                         </p>
-                        <div className="flex flex-col gap-3">
-                            <p className="text-2xl font-semibold">
+                        <div className="flex flex-col lg:gap-3 gap-0">
+                            <p className="lg:text-2xl text-xl font-semibold">
                                 Satisfied Customers
                             </p>
                             <p className="text-text text-sm">
@@ -78,12 +81,12 @@ export default function AboutPage() {
                             </p>
                         </div>
                     </div>
-                    <div className="flex items-center p-12 gap-8 bg-[#FFBF1C]/10 w-1/2 rounded-md">
-                        <p className="text-4xl text-quaternary font-semibold">
+                    <div className="flex items-center lg:p-12 p-4 gap-8 bg-[#FFBF1C]/10 lg:w-1/2 w-full rounded-md">
+                        <p className="lg:text-4xl text-3xl text-quaternary font-semibold w-[30%] md:w-[20%]">
                             15 +
                         </p>
-                        <div className="flex flex-col gap-3">
-                            <p className="text-2xl font-semibold">
+                        <div className="flex flex-col lg:gap-3 gap-0">
+                            <p className="lg:text-2xl text-xl font-semibold">
                                 Years of Experience
                             </p>
                             <p className="text-text text-sm">
@@ -99,72 +102,72 @@ export default function AboutPage() {
                     alt="image"
                     className="size-full object-cover"
                 />
-                <div className="absolute bottom-0 flex_center w-full px-24">
+                <div className="absolute bottom-0 lg:flex_center hidden w-full px-24 ">
                     <div className="flex w-full h-16 bg-primary">
 
                     </div>
                 </div>
             </div>
-            <section className="w-full flex_center px-24">
-                <div className="flex_center flex-col gap-16 pb-16 w-full">
-                    <div className="flex flex-col w-full px-12 gap-4">
+            <section className="w-full flex_center lg:px-24 px-4">
+                <div className="flex_center flex-col lg:gap-16 gap-7 pb-16 w-full">
+                    <div className="flex flex-col w-full lg:px-12 px-0 gap-4 lg:pt-0 pt-10">
                         <h2 className="text-[40px] font-semibold text-secondary">
                             Our Mission
                         </h2>
-                        <div className="w-full flex gap-8">
-                            <p className="text-text w-1/2">
+                        <div className="w-full flex md:flex-row flex-col md:gap-8 gap-4">
+                            <p className="text-text md:w-1/2 w-full">
                                 It was established by the noble efforts and endeavors of a group of dedicated and qualified professionals with diverse academic expertise in the fields of applied education, science, and technology, with the sole objective of providing the student community with the most appropriate training and educational opportunities aboard. REACTION Nepal, with its team of experienced professionals and academics, provides counseling services for those students who wish to pursue their further studies abroad in well-reputed colleges, institutions, and universities in different countries on all continents, such as Asia-Pacific, Australia, Europe, and North America.
                             </p>
-                            <p className="text-text w-1/2">
+                            <p className="text-text md:w-1/2 w-full">
                                 REACTION Nepal, with its professionalized service in the sector of international educational counseling, boasts of its reputation, acquired within a very short span of time. It is probably the best choice for promising students aspiring to achieve success in life. A considerable number of our students have already been attending some of the most well-reputed colleges and universities abroad in pursuit of shaping their futures and careers.
                             </p>
                         </div>
                     </div>
-                    <div className="flex flex-col w-full px-12 gap-4">
+                    <div className="flex flex-col w-full lg:px-12 gap-4">
                         <h2 className="text-[40px] font-semibold text-secondary">
                             Our Vision
                         </h2>
-                        <div className="w-full flex gap-8">
-                            <p className="text-text w-1/2">
+                        <div className="w-full flex md:flex-row flex-col md:gap-8 gap-4">
+                            <p className="text-text md:w-1/2 w-full">
                                 REACTION Nepal, with its professionalized service in the sector of international educational counseling, boasts of its reputation, acquired within a very short span of time. It is probably the best choice for promising students aspiring to achieve success in life. A considerable number of our students have already been attending some of the most well-reputed colleges and universities abroad in pursuit of shaping their futures and careers.
                             </p>
-                            <p className="text-text w-1/2">
+                            <p className="text-text md:w-1/2 w-full">
                                 Reaction Nepal is a government-registered interdisciplinary organization with its headquarters in Putalisadak, Kathmandu, Nepal. Since its establishment in 2005, it has mainly aimed at providing education services to all seeking their study and career prospects in and out of the country.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="w-full flex_center flex-col gap-12 px-24 py-16 bg-[#F5FBFF]">
+            <section className="w-full flex_center flex-col lg:gap-12 gap-6 lg:px-24 px-4 lg:py-16 py-10 bg-[#F5FBFF]">
                 <SectionHeader
                     smallTitle="History"
                     title="Over the Years"
                 />
                 <div className="flex_center w-full relative">
                     <div className="absolute flex h-0.5 w-full bg-secondary"></div>
-                    <button className="absolute flex_center size-10 p-2 -top5 left-0 bg-secondary text-primary rounded-md z-10">
+                    <button className="absolute flex_center lg:size-10 size-7 p-2 -top5 left-0 bg-secondary text-primary rounded-md z-10">
                         <IoIosArrowBack />
                     </button>
-                    <button className="absolute flex_center size-10 p-2 -top5 right-0 bg-secondary text-primary rounded-md z-10">
+                    <button className="absolute flex_center lg:size-10 size-7 p-2 -top5 right-0 bg-secondary text-primary rounded-md z-10">
                         <IoIosArrowForward />
                     </button>
-                    <div className="flex_center gap-20 z-10">
-                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-6"></div>
-                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-6"></div>
+                    <div className="flex_center lg:gap-20 gap-7 z-10">
+                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold lg:size-6 size-3 lg:block hidden"></div>
+                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold lg:size-6 size-3 lg:block hidden"></div>
                         <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-14">
                             2008
                         </div>
-                        <div className="flex_center rounded-full bg-secondary size-36 text-primary text-[32px] font-semibold">
+                        <div className="flex_center rounded-full bg-secondary lg:size-36 size-20 text-primary lg:text-[32px] text-lg font-semibold">
                             2009
                         </div>
-                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-14">
+                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-14 ">
                             2010
                         </div>
-                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] font-bold size-6"></div>
-                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-6"></div>
+                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] font-bold size-6 lg:block hidden"></div>
+                        <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-6 lg:block hidden"></div>
                     </div>
                 </div>
-                <div className="flex_center flex-col w-[60%] gap-6">
+                <div className="flex_center flex-col lg:w-[60%] w-full gap-6">
                     <p className="w-full flex_center text-center text-text">
                         With introduction of TIER-4 pointbased system by UKBA, this year was significant for REACTION Nepal to make successful placement to over a dozen UK institutions, including private and government colleges and universities. As a result of properly- selected courses in accordance with the students&apos; respective desires into right colleges, as well as accurate visa applications, the success rate was incredible with the cent percent. Also, the number of test prep students, especially for IELTS at RN soared up this year, with average of 6 Band overal.
                     </p>
@@ -173,12 +176,12 @@ export default function AboutPage() {
                     </p>
                 </div>
             </section>
-            <section className="w-full flex_center flex-col px-24 py-16 gap-12 relative">
+            <section className="w-full flex_center flex-col lg:px-24 px-5 py-16 gap-12 relative">
                 <SectionHeader
                     smallTitle="Team Members"
                     title="Meet Our Team"
                 />
-                <div className="grid grid-cols-3 w-full gap-8 relative">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 relative">
                     <div className="profilecard flex_center relative col-span-1 rounded-md overflow-hidden">
                         <Image
                             src={profileImage}
@@ -257,10 +260,10 @@ export default function AboutPage() {
                 </div>
                 {
                     showMessage &&
-                    <div className="absolute inset-0 bg-black/80 flex_center px-24">
-                        <div className="flex gap-6 p-8 w-[65%] h-[485px] bg-primary rounded-md relative -bottom-16">
-                            <div className="image w-[40%] h-full flex flex-col gap-4">
-                                <div className="flex_center w-full h-[70%] overflow-hidden">
+                    <div className="absolute inset-0 bg-black/80 flex_center lg:px-24 px-4">
+                        <div className="flex lg:flex-row flex-col gap-6 p-8 lg:w-[65%] w-full lg:h-[485px]  bg-primary rounded-md relative -bottom-16">
+                            <div className="image lg:w-[40%] w-full lg:h-full flex flex-col gap-4">
+                                <div className="flex_center w-full lg:h-[70%] h-[300px] overflow-hidden">
                                     <Image
                                         src={profileImage}
                                         alt="profile-image"
@@ -290,7 +293,7 @@ export default function AboutPage() {
                                     }
                                 </div>
                             </div>
-                            <div className="image flex flex-col gap-4 w-[60%]">
+                            <div className=" flex flex-col gap-4 lg:w-[60%] w-full">
                                 <p className="text-text">
                                     The CEO/Chairperson plays a pivotal role in steering the organization towards success and sustainability. Their work involves developing and executing the company&apos;s strategic vision, making critical decisions, and overseeing day-to-day operations.
                                 </p>

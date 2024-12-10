@@ -68,12 +68,12 @@ export default function Blogs() {
                 link="/blogs"
                 title="Blogs"
             />
-            <section className="flex_center flex-col px-24 py-16 gap-12">
+            <section className="flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12">
                 <SectionHeader
                     smallTitle="Blogs & Articles"
                     title="Stay up to date on our blogs"
                 />
-                <div className="grid grid-cols-3 w-full gap-8 gap-y-16">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 gap-y-16">
                     {
                         blogs.map((blog, index) => {
                             return (

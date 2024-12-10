@@ -25,12 +25,12 @@ const blogs = [
 
 export default function Blogs() {
     return (
-        <section className="w-full flex_center flex-col py-20 px-24 gap-12">
+        <section className="w-full flex_center flex-col lg:py-20 font-jakarta py-10 lg:px-24 px-4 lg:gap-12 gap-6">
             <SectionHeader
                 smallTitle="Blogs & Articles"
                 title="Stay up to date on our blogs"
             />
-            <div className="w-full grid grid-cols-3 gap-8">
+            <div className="w-full grid lg:grid-cols-3 grid-cols-1 gap-8">
                 {
                     blogs.map((blog, index) => {
                         return (

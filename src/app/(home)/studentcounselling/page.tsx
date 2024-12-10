@@ -74,22 +74,22 @@ export default function StudentCounselling() {
                 link="/studentcounselling"
                 title="Student Counselling"
             />
-            <section className="w-full flex_center flex-col px-24 py-16 gap-12">
-                <div className="flex_center gap-8 w-full">
-                    <div className="w-[45%] flex flex-col gap-4">
+            <section className="w-full flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12">
+                <div className="flex_center lg:flex-row flex-col gap-8 w-full">
+                    <div className="lg:w-[45%] w-full flex flex-col gap-4">
                         <SectionHeader
                             smallTitle="Counselling"
                             title="Why Study Abroad"
-                            className="items-start"
+                            className="lg:items-start items-center"
                         />
-                        <p className="text-text">
+                        <p className="text-text lg:text-start text-center">
                             Studying abroad is an investment in your future. It equips you with a globally recognized education, a competitive edge in the job market, and the personal growth needed to succeed in an interconnected world.
                         </p>
-                        <p className="text-text">
+                        <p className="text-text lg:text-start text-center">
                             Studying abroad is a transformative experience that offers numerous academic, personal, and professional benefits. Gain a degree from top-ranked universities and institutions with global credibility. Exposure to cutting-edge research, modern curriculums, and advanced teaching methodologies.
                         </p>
                     </div>
-                    <div className="w-[55%] flex_center">
+                    <div className="lg:w-[55%] w-full flex_center">
                         <Image
                             src={placeholderImage}
                             alt="placeholder-image"
@@ -98,13 +98,13 @@ export default function StudentCounselling() {
                     </div>
                 </div>
             </section>
-            <section className="w-full flex_center flex-col px-24 py-16 gap-12 bg-[#F5FBFF]">
+            <section className="w-full flex_center flex-col lg:px-24 px-4  lg:py-16 py-10 gap-12 bg-[#F5FBFF]">
                 <SectionHeader
                     smallTitle="Why Counselling"
                     title="Benefits of Personalized Guidance"
-                    className="items-start w-full"
+                    className="lg:items-start items-center w-full"
                 />
-                <div className="grid grid-cols-3 w-full gap-8">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8">
                     {
                         benifits.map((benifit, index) => {
                             return (
@@ -129,7 +129,7 @@ export default function StudentCounselling() {
                     }
                 </div>
             </section>
-            <section className="w-full flex_center flex-col px-24 py-16 gap-12">
+            <section className="w-full flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12">
                 <SectionHeader
                     smallTitle="Process"
                     title="Steps in the Counseling Process"
@@ -148,12 +148,12 @@ export default function StudentCounselling() {
             <Contact
                 className="pb-16"
             />
-            <section className="w-full flex_center flex-col px-24 py-16 gap-12">
+            <section className="w-full flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12">
                 <SectionHeader
                     smallTitle="FAQs"
                     title="We answer your every queries"
                 />
-                <div className="flex_center w-[70%]">
+                <div className="flex_center lg:w-[70%] w-full">
                     <div className="flex flex-col w-full gap-6">
                         {
                             faqs.map((faq, index) => {

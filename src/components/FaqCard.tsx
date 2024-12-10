@@ -18,7 +18,7 @@ export default function FaqCard({
         <div className={twMerge("faqcard flex_center flex-col w-full border border-text/50 rounded-md transition duration-300 text-text gap-2", isActive === true ? 'border-tertiary text-tertiary' : '')}>
             <button
                 onClick={() => toggleFAQ(index)}
-                className='question flex justify-between items-center py-4 px-6 w-full'
+                className='question flex justify-between items-center text-start py-4 px-6 w-full'
             >
                 <p className="font-bold">
                     {question}
