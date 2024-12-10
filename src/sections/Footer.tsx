@@ -1,4 +1,3 @@
-import PrimaryButton from "@/components/UI/PrimaryButton";
 import Link from "next/link";
 import { FaEnvelope, FaFacebookF, FaLinkedinIn, FaPhoneAlt, FaPinterest } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
