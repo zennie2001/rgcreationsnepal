@@ -125,7 +125,7 @@ export default function Header() {
                         Mock Test
                     </button>
                     <p className="text-text  pt-5">Follow us on:</p>
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 mt-2">
                         {
                             socialMedia.map((media, index) => (
                                 <a
@@ -140,7 +140,7 @@ export default function Header() {
                         }
                     </div>
                     </div>
-                    <div className="flex flex-col gap-3 bg-secondary p-5">
+                    <div className="flex flex-col gap-3 bg-secondary p-5 mt-10">
                         <div className="flex items-center gap-2 text-sm">
                             <FaPhoneAlt /> <p>+977-1-4532334/4</p>
                         </div>

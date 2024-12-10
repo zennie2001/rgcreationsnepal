@@ -55,13 +55,13 @@ export default function BlogDetails() {
                 link="/blogs/blogdetails"
                 title="Blog Details"
             />
-            <section className="flex_center flex-col py-16 gap-12">
-                <div className="flex_center flex-col gap-8 w-[55%]">
+            <section className="flex_center flex-col lg:py-16 py-10 lg:gap-12 gap-6 lg:px-0 px-4">
+                <div className="flex_center flex-col gap-8 lg:w-[55%] w-full">
                     <h3 className="text-[32px] font-semibold text-secondary">
                         USA&apos;s Best Universities, Prices, and Scholarships for Students
                     </h3>
                     <div className="flex_center flex-col w-full gap-8">
-                        <div className="flex w-full justify-between items-center">
+                        <div className="flex md:flex-row flex-col w-full justify-between md:items-center items-start md:gap-0 gap-3">
                             <div className="flex gap-4">
                                 <p className="text-xs font-medium">
                                     BY ADMIN
@@ -220,12 +220,12 @@ export default function BlogDetails() {
                     </div>
                 </div>
             </section>
-            <section className="flex_center flex-col px-24 py-16 gap-12">
+            <section className="flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12">
                 <SectionHeader
                     smallTitle="Similar BLogs"
                     title="Stay up to date on our blogs"
                 />
-                <div className="grid grid-cols-3 w-full gap-8 gap-y-16">
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 gap-y-16">
                     {
                         blogs.map((blog, index) => {
                             return (

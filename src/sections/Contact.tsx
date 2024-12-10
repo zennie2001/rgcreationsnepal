@@ -7,7 +7,7 @@ import { twMerge } from "tailwind-merge";
 export default function Contact({ className }: { className?: string; }) {
     return (
         <section className={twMerge("w-full flex_center lg:px-24 lg:pt-24  pt-10 font-jakarta", className)}>
-            <div className="flex_center lg:flex-row flex-col lg:p-20 px-4 lg:py-5 xl:py-0 py-10 lg:gap-20 gap-10 w-full bg-[#F5FBFF] rounded-md">
+            <div className="flex_center lg:flex-row flex-col lg:p-20 px-4 lg:py-5 xl:py-20 py-10 lg:gap-20 gap-10 w-full bg-[#F5FBFF] rounded-md">
                 <div className="lg:w-[50%] w-full flex_center flex-col gap-8">
                     <div className="flex flex-col gap-4">
                         <SectionHeader

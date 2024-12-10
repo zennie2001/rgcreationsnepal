@@ -94,9 +94,9 @@ export default function FAQs() {
                 title="FAQs"
                 link="/faq"
             />
-            <section className="w-full px-24 py-16 flex gap-8">
-                <div className="flex flex-col gap-4 w-[20%]">
-                    <button className="flex_center py-3 px-6 border border-tertiary text-tertiary rounded-md w-max font-medium">
+            <section className="w-full lg:px-24 px-4 lg:py-16 py-10 flex lg:flex-row flex-col gap-8">
+                <div className="flex lg:flex-col flex-row overflow-x-auto gap-4 lg:w-[20%] w-full">
+                    <button className="flex_center py-3 px-6 border  border-tertiary text-tertiary rounded-md w-max font-medium">
                         Abroad Study Process
                     </button>
                     <button className="flex_center py-3 px-6 border-tertiary text-text rounded-md w-max font-medium">
@@ -109,7 +109,7 @@ export default function FAQs() {
                         Payment Queries
                     </button>
                 </div>
-                <div className="flex flex-col gap-16 w-[80%] h-[100vh] overflow-y-scroll no-scrollbar">
+                <div className="flex flex-col gap-16 lg:w-[80%] w-full h-[100vh] overflow-y-scroll no-scrollbar">
                     <div className="flex flex-col gap-8">
                         <h3 className="text-3xl font-semibold text-secondary">
                             Abroad Study Process

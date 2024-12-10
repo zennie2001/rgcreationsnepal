@@ -9,6 +9,7 @@
   body {
     @apply scroll-smooth;
     @apply box-border;
+    font-family: 'Plus Jakarta Sans', sans-serif;
   }
   .flex_center {
     @apply flex justify-center items-center;

@@ -75,7 +75,7 @@ export default function ContactUs() {
                 title="Contact Us"
                 link="/contact"
             />
-            <div className="w-full grid grid-cols-4 px-24 py-16 gap-8">
+            <div className="w-full grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 lg:px-24 px-4 lg:py-16 py-10 gap-8">
                 {
                     contactInfos.map((info, index) => {
                         return (
@@ -142,8 +142,8 @@ export default function ContactUs() {
                 >
                 </iframe>
             </div>
-            <div className="w-full flex px-24 py-16 gap-8">
-                <div className="flex w-full gap-8">
+            <div className="w-full flex lg:px-24 px-4 lg:py-16 py-10 gap-8">
+                <div className="flex flex-wrap w-full gap-8">
                     {
                         branches.map((branch, index) => {
                             return (
