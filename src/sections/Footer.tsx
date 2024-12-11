@@ -24,7 +24,7 @@ const socialMedia = [
 
 export default function Footer() {
     return (
-        <footer className="w-full flex_center flex-col lg:p-24 p-4 lg:py-0 py-10 font-jakarta lg:gap-24 gap-10 bg-secondary">
+        <footer className="w-full flex_center flex-col lg:py-24 p-4 lg:px-24  py-10 font-jakarta lg:gap-24 gap-10 bg-secondary">
             <div className="w-full flex lg:flex-row flex-col lg:gap-0 gap-5 justify-between lg:items-center items-start">
                 <h1 className="lg:text-[40px] text-[30px] font-semibold text-primary">
                     Subscribe To Our Newsletter
