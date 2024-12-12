@@ -138,33 +138,35 @@ export default function Universities() {
     return (
         <main className="w-full overflow-hidden">
             <PageHeader
-                title="FAQs"
+                title="USA"
                 link="/faq"
             />
-            <section className="w-full px-24 py-16 flex gap-8">
-                <div className="flex flex-col gap-4 w-[20%]">
-                    <button className="flex_center py-3 px-6 border border-tertiary text-tertiary rounded-md w-max font-medium">
+            <section className="w-full lg:px-24 px-4 lg:py-16 py-10 flex lg:gap-8 gap-4 lg:flex-row flex-col">
+                <div className="flex lg:flex-col flex-row gap-4 lg:w-[20%] w-full overflow-x-scroll">
+                    <button className="flex_center py-3 flex-shrink-0 px-2 border border-tertiary text-tertiary rounded-md   font-medium">
                         Washington DC University
                     </button>
-                    <button className="flex_center py-3 px-6 border-tertiary text-text rounded-md w-max font-medium">
+                    
+                   <button className="flex_center py-3 px-6 flex-shrink-0 border-tertiary text-text rounded-md w-max font-medium">
                         New York City University
                     </button>
-                    <button className="flex_center py-3 px-6 border-tertiary text-text rounded-md w-max font-medium">
+                    <button className="flex_center py-3 px-6 flex-shrink-0 border-tertiary text-text rounded-md w-max font-medium">
                         San Francisco University
                     </button>
-                    <button className="flex_center py-3 px-6 border-tertiary text-text rounded-md w-max font-medium">
+                    <button className="flex_center py-3 px-6 flex-shrink-0 border-tertiary text-text rounded-md w-max font-medium">
                         San Diego University
                     </button>
-                    <button className="flex_center py-3 px-6 border-tertiary text-text rounded-md w-max font-medium">
+                    <button className="flex_center py-3 px-6 flex-shrink-0 border-tertiary text-text rounded-md w-max font-medium">
                         Los Angles University
                     </button>
                 </div>
-                <div className="flex flex-col gap-16 w-[80%] h-max">
+                 
+                <div className="flex flex-col gap-16 lg:w-[80%] w-full h-max">
                     <div className="flex flex-col gap-8 w-full">
                         <h3 className="text-3xl font-semibold text-secondary">
                             Washington DC University
                         </h3>
-                        <div className="grid grid-cols-3 gap-8 w-full">
+                        <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 w-full">
                             {
                                 universities.filter((university) =>
                                     university.location === 'washington'
@@ -194,7 +196,7 @@ export default function Universities() {
                         <h3 className="text-3xl font-semibold text-secondary">
                             New York City University
                         </h3>
-                        <div className="grid grid-cols-3 gap-8 w-full">
+                        <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 w-full">
                             {
                                 universities.filter((university) =>
                                     university.location === 'newyork'
@@ -224,7 +226,7 @@ export default function Universities() {
                         <h3 className="text-3xl font-semibold text-secondary">
                             San Francisco University
                         </h3>
-                        <div className="grid grid-cols-3 gap-8 w-full">
+                        <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 w-full">
                             {
                                 universities.filter((university) =>
                                     university.location === 'francisco'
@@ -252,12 +254,12 @@ export default function Universities() {
                     </div>
                 </div>
             </section>
-            <section className="w-full flex_center flex-col px-24 py-16 gap-12 bg-[#F5FBFF]">
+            <section className="w-full flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12 bg-[#F5FBFF]">
                 <SectionHeader
                     smallTitle="Destinations"
                     title="Make Your Choice for the Preferred Nation"
                 />
-                <div className="grid grid-cols-4 gap-8 w-full">
+                <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-8 w-full">
                     {
                         countries.map((country, index) => {
                             return (
