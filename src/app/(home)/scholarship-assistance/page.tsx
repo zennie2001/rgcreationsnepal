@@ -1,18 +1,7 @@
 "use client"
 import PageHeader from "@/components/PageHeader";
-import SectionHeader from "@/components/SectionHeader";
-import blogImage from '@/assets/images/blogImage.jpg';
-import BlogCard from "@/components/BlogCard";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import TestimonialCard from "@/components/TestimonialCard";
-import InterviewCard from "@/components/InterviewCard";
-import FaqCard from "@/components/FaqCard";
-import { useState } from "react";
-import { faqs } from "../studentcounselling/page";
-import CTA from "@/components/CTA";
-import { FaMinus } from "react-icons/fa6";
-import { IoIosArrowDown } from "react-icons/io";
-import ScholarshipCard from "@/components/ScholarshipCard";
+
+
 import PrimaryButton from "@/components/UI/PrimaryButton";
 import SecondaryButton from "@/components/UI/SecondaryButton";
 import Image from "next/image";
@@ -94,7 +83,7 @@ const overview=[
                 </div>
                 <div className="mt-10">
 <p className="text-3xl font-semibold text-secondary">About Scholarship</p>
-<p className="text-text py-2">San Francisco scholarship is one of the most sought after scholarship programmes offered to students looking to pursue postgraduate courses from the University of Oxford. Rhodes scholarship covers all University and College fees, a personal stipend and one economy class airfare to Oxford at the start of the Scholarship, as well as an economy flight back to the student's home country at the conclusion of the Scholarship. This is one of the oldest scholarship programmes that started in 1902 with the will of Cecil John Rhodes. However, it was in 1947, the first Rhodes scholarship was awarded in India. It is not only the most prestigious but arduous scholarship to get. </p>
+<p className="text-text py-2">San Francisco scholarship is one of the most sought after scholarship programmes offered to students looking to pursue postgraduate courses from the University of Oxford. Rhodes scholarship covers all University and College fees, a personal stipend and one economy class airfare to Oxford at the start of the Scholarship, as well as an economy flight back to the students home country at the conclusion of the Scholarship. This is one of the oldest scholarship programmes that started in 1902 with the will of Cecil John Rhodes. However, it was in 1947, the first Rhodes scholarship was awarded in India. It is not only the most prestigious but arduous scholarship to get. </p>
                 </div>
                 <div className="mt-10">
 <p className="text-3xl font-semibold text-secondary">Requirements</p>

@@ -1,17 +1,9 @@
 "use client"
 import PageHeader from "@/components/PageHeader";
-import SectionHeader from "@/components/SectionHeader";
-import blogImage from '@/assets/images/blogImage.jpg';
-import BlogCard from "@/components/BlogCard";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import TestimonialCard from "@/components/TestimonialCard";
-import InterviewCard from "@/components/InterviewCard";
-import FaqCard from "@/components/FaqCard";
-import { useState } from "react";
-import CTA from "@/components/CTA";
+
+
 import { FaMinus } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
-import ScholarshipCard from "@/components/ScholarshipCard";
 import PrimaryButton from "@/components/UI/PrimaryButton";
 import SecondaryButton from "@/components/UI/SecondaryButton";
 import EventCard from "@/components/EventCard";
@@ -19,10 +11,7 @@ import EventCard from "@/components/EventCard";
 
 
 export default function Event() {
-    const [activeIndex, setActiveIndex] = useState<number | null>(null);
-    const toggleFAQ = (index: number) => {
-        setActiveIndex(activeIndex === index ? null : index); // Toggle current FAQ
-    };
+   
     return (
         <main className="w-full max-w-[1740px] mx-auto">
             <PageHeader

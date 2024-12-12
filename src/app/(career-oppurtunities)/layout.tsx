@@ -3,8 +3,7 @@ import { Plus_Jakarta_Sans } from 'next/font/google';
 import "../globals.css";
 import { twMerge } from "tailwind-merge";
 import Header from "@/sections/Header";
-import Footer from "@/sections/Footer";
-import Link from "next/link";
+
 
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'], variable: "--font-sans" });
 

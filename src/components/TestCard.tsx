@@ -2,7 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
-export default function TestCard({ image, date, title, miniDescription }: { image: StaticImageData; date: string; title: string; miniDescription: string; }) {
+export default function TestCard({ image, title, miniDescription }: { image: StaticImageData; date: string; title: string; miniDescription: string; }) {
     return (
         <div className="flex flex-col gap-4 col-span-1">
             <div className="flex_center w-full h-60 rounded-md overflow-hidden">

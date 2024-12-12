@@ -1,7 +1,5 @@
 import PageHeader from "@/components/PageHeader";
-import SectionHeader from "@/components/SectionHeader";
 import blogImage from '@/assets/images/blogImage.jpg';
-import BlogCard from "@/components/BlogCard";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import TestCard from "@/components/TestCard";
 

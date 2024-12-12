@@ -1,13 +1,9 @@
 "use client"
 import PageHeader from "@/components/PageHeader";
 
-import { useState } from "react";
-import { FaMinus } from "react-icons/fa6";
-import { IoIosArrowDown } from "react-icons/io";
-import ScholarshipCard from "@/components/ScholarshipCard";
+
 import PrimaryButton from "@/components/UI/PrimaryButton";
-import SecondaryButton from "@/components/UI/SecondaryButton";
-import JobCard from "@/components/JobCard";
+
 import { FaLocationDot } from "react-icons/fa6";
 
 import { PiShareFatLight } from "react-icons/pi";

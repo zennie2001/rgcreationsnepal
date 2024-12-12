@@ -1,14 +1,7 @@
 "use client"
 import PageHeader from "@/components/PageHeader";
 import SectionHeader from "@/components/SectionHeader";
-import blogImage from '@/assets/images/blogImage.jpg';
-import BlogCard from "@/components/BlogCard";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import TestimonialCard from "@/components/TestimonialCard";
-import InterviewCard from "@/components/InterviewCard";
-import FaqCard from "@/components/FaqCard";
-import { useState } from "react";
-import { faqs } from "../studentcounselling/page";
+
 import CTA from "@/components/CTA";
 import placeholderImage from '@/assets/images/visa.png';
 import placeholderImage1 from '@/assets/images/visa2.png';

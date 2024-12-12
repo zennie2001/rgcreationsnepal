@@ -2,15 +2,30 @@
 import PageHeader from "@/components/PageHeader";
 import SectionHeader from "@/components/SectionHeader";
 import blogImage from '@/assets/images/blogImage.jpg';
-import BlogCard from "@/components/BlogCard";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import TestimonialCard from "@/components/TestimonialCard";
 import InterviewCard from "@/components/InterviewCard";
 import FaqCard from "@/components/FaqCard";
 import { useState } from "react";
-import { faqs } from "../studentcounselling/page";
 import CTA from "@/components/CTA";
-
+const faqs = [
+    {
+        question: 'Why should I pursue my studies overseas?',
+        answer: 'If possible, begin your application process at least a year in advance to give enough time for your applications to be processed and to prepare for your time overseas.'
+    },
+    {
+        question: 'How long does the application process take?',
+        answer: 'If possible, begin your application process at least a year in advance to give enough time for your applications to be processed and to prepare for your time overseas.'
+    },
+    {
+        question: 'How much will it cost to study abroad?',
+        answer: 'If possible, begin your application process at least a year in advance to give enough time for your applications to be processed and to prepare for your time overseas.'
+    },
+    {
+        question: 'Can I work and study at the same time?',
+        answer: 'If possible, begin your application process at least a year in advance to give enough time for your applications to be processed and to prepare for your time overseas.'
+    }
+]
 const blogs = [
     {
         image: blogImage,
