@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SectionHeader from "../components/SectionHeader";
 import worldMap from '@/assets/images/worldmap.png';
+import mobileMap from '@/assets/images/mobilemap.svg';
 
 export default function GlobalDestination() {
     return (
@@ -10,8 +11,14 @@ export default function GlobalDestination() {
                 title="One-Stop for all the Best Universities across the globe"
                 className="lg:w-[60%] w-full text-center"
             />
-                
-            <div className="map w-full flex_center relative">
+                <div className="map lg:hidden block w-full">
+                <Image
+                    src={mobileMap}
+                    alt="World-Map"
+                    className="size-full object-contain"
+                />
+                </div>
+            <div className="map w-full flex_center relative lg:block hidden">
                 <Image
                     src={worldMap}
                     alt="World-Map"

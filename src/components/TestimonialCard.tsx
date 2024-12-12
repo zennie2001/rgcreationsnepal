@@ -3,7 +3,7 @@ import { ImQuotesLeft } from "react-icons/im";
 
 export default function TestimonialCard() {
     return (
-        <div className="testimonialcard flex flex-col gap-6 p-6 bg-primary rounded-md w-[608px] h-full border border-tertiary">
+        <div className="testimonialcard flex flex-col gap-6 p-6 bg-primary rounded-md lg:w-[608px] w-full h-full border border-tertiary">
             <ImQuotesLeft className="size-12" />
             <p className="text-text">
                 “I was extremely weak in English and spoilt my IELTS Center, I came to spot my vulnerability on my IELTS preparation with Raju Sir and within just 3 months, I was able to cross the limit of overall band score 6 which was sufficient for my admission in a reputed college in Australia.”

@@ -39,7 +39,7 @@ const navLinks = [
     },
     {
         title: 'Vacancy',
-        link: '/vacancy'
+        link: '/job-opportunities'
     },
     {
         title: 'Immigration Info',
@@ -51,7 +51,7 @@ const navLinks = [
     },
     {
         title: 'Test Preparation',
-        link: '/test'
+        link: '/test-list'
     },
     {
         title: 'Contact',
@@ -247,6 +247,7 @@ export default function Header() {
                         text="Apply"
                     />
                     <SecondaryButton
+                    
                         text="Mock Test"
                     />
                 </div>

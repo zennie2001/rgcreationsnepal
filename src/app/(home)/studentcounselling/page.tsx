@@ -42,7 +42,7 @@ const benifits = [
     },
 ]
 
-const faqs = [
+ const faqs = [
     {
         question: 'Why should I pursue my studies overseas?',
         answer: 'If possible, begin your application process at least a year in advance to give enough time for your applications to be processed and to prepare for your time overseas.'

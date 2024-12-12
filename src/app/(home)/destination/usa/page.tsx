@@ -133,11 +133,11 @@ export default function USA() {
                 link="/destination/usa"
                 title="USA"
             />
-            <section className="w-full flex_center flex-col px-24 py-16 gap-12">
+            <section className="w-full flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12">
                 <SectionHeader
                     smallTitle="Study in USA"
                     title="Studying in the USA might be closer than you think"
-                    className="w-[60%] text-center"
+                    className="lg:w-[60%] w-full text-center"
                 />
                 <div className="flex_center flex-col gap-4 w-full">
                     <Image
@@ -145,23 +145,24 @@ export default function USA() {
                         alt="placeholder-image"
                         className="w-full h-[60vh] object-cover"
                     />
-                    <div className="flex_center gap-8 w-full text-text">
-                        <p className="flex w-1/2">
+                    <div className="flex_center lg:flex-row flex-col  gap-8 w-full text-text">
+                        <p className="flex lg:w-1/2 w-full">
                             With over 1.1 million international students, the USA has emerged as the number one study destination over the years. One of the major reasons for students flocking to study in USA is the excellent reputation that US universities and degrees hold.
                         </p>
-                        <p className="flex w-1/2">
+                        <p className="flex lg:w-1/2 w-full">
                             Diversity is another distinguishing factor that attracts students to pursue higher studies in USA. The country also provides ample work opportunities to the students during and after completion of their academic courses.
                         </p>
                     </div>
                 </div>
             </section>
-            <section className="w-full flex_center flex-col px-24 py-16 gap-12 bg-[#F5FBFF]">
+            <section className="w-full flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 lg:gap-12 gap-4 bg-[#F5FBFF]">
                 <SectionHeader
                     smallTitle="Why USA"
-                    title="Why study in The USA?"
-                    className="items-start w-full"
+                    title="Why study in the USA?"
+                    className="lg:tems-start items-center w-full"
                 />
-                <div className="grid grid-cols-3 w-full gap-8">
+            
+                <div className="grid lg:grid-cols-3 grid-cols-1 w-full lg:gap-8 gap-4">
                     {
                         benifits.map((benifit, index) => {
                             return (
@@ -186,13 +187,13 @@ export default function USA() {
                     }
                 </div>
             </section>
-            <section className="w-full flex_center flex-col px-24 py-16 gap-12">
+            <section className="w-full flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 lg:gap-12 gap-4">
                 <SectionHeader
                     smallTitle="Universities"
                     title="Top Study Destinations in the USA"
-                    className="items-start w-full"
+                    className="lg:items-start items-center w-full"
                 />
-                <div className="grid grid-cols-3 w-full gap-8 relative">
+                <div className="grid lg:grid-cols-3 grid-cols-1 w-full gap-8 relative">
                     {
                         universities.map((uni, index) => {
                             return (
@@ -226,7 +227,7 @@ export default function USA() {
                     }
                 </div>
             </section>
-            <section className="w-full flex_center flex-col px-24 py-16 gap-12">
+            <section className="w-full flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12">
                 <SectionHeader
                     smallTitle="Universities"
                     title="Studying & Living Costs in The USA"
@@ -319,13 +320,13 @@ export default function USA() {
                     </div>
                 </div>
             </section>
-            <section className="w-full flex_center flex-col px-24 py-16 gap-12 bg-[#F5FBFF]">
+            <section className="w-full flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12 bg-[#F5FBFF]">
                 <SectionHeader
                     smallTitle="Application Process"
                     title="How to Apply to Study in the United States"
-                    className="items-start w-full"
+                    className="lg:items-start items-center w-full"
                 />
-                <div className="grid grid-cols-3 w-full gap-8">
+                <div className="grid lg:grid-cols-3 grid-cols-1 w-full gap-8">
                     {
                         appProcesses.map((process, index) => {
                             return (
@@ -350,12 +351,12 @@ export default function USA() {
                     }
                 </div>
             </section>
-            <section className="w-full flex_center flex-col px-24 py-16 gap-12">
+            <section className="w-full flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12">
                 <SectionHeader
                     smallTitle="Destinations"
                     title="Make Your Choice for the Preferred Nation"
                 />
-                <div className="grid grid-cols-4 gap-8 w-full">
+                <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-8 w-full">
                     {
                         countries.map((country, index) => {
                             return (
