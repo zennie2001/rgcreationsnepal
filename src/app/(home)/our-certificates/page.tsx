@@ -3,7 +3,6 @@ import PageHeader from '@/components/PageHeader'
 import React from 'react'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
-import "react-image-gallery/styles/css/image-gallery.css";
 export default function OurCertificate() {
     const images=[
         {
