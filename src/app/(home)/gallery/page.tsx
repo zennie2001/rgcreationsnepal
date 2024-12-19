@@ -1,6 +1,6 @@
 "use client"
 import PageHeader from '@/components/PageHeader'
-import React, { useState } from 'react'
+import React from 'react'
 
 import "react-image-gallery/styles/css/image-gallery.css";
 export default function Gallery() {
@@ -55,27 +55,11 @@ export default function Gallery() {
             ]
         },
     ];
-    const newimages=[
-        {
-            original: "https://via.placeholder.com/600x400/00ff00",
-            thumbnail: "https://via.placeholder.com/150x100/00ff00",
-          },
-          {
-            original: "https://via.placeholder.com/600x400/0000ff",
-            thumbnail: "https://via.placeholder.com/150x100/0000ff",
-          },
-    ]
-    const [isOpen, setIsOpen] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
+   
 
-  const openModal = (index:any) => {
-    setCurrentIndex(index);
-    setIsOpen(true);
-  };
 
-  const closeModal = () => {
-    setIsOpen(false);
-  };
+
+  
   return (
     <main>
   <PageHeader
@@ -85,7 +69,7 @@ export default function Gallery() {
             <section className='w-full flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12'>
 <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 w-full'>
 {images.map((e,i)=>{
-    return <div key={i} className='flex flex-col items-start w-full ' onClick={openModal}>
+    return <div key={i} className='flex flex-col items-start w-full ' >
 <img src={e.images[0]} alt="" className='lg:h-[384px] h-[500px] object-cover md:w-[288px] w-full rounded-md'/>
 <p className='text-base font-bold text-secondary py-2'>{e.name}</p>
 <p className='text-sm text-text'>{e.subtile}</p>

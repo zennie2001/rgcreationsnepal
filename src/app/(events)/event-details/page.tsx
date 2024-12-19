@@ -3,7 +3,6 @@ import PageHeader from "@/components/PageHeader";
 
 
 
-import { FaLocationDot } from "react-icons/fa6";
 import mobileceoimage from '@/assets/images/event.svg';
 import list from '@/assets/images/List.svg';
 import map from '@/assets/images/Map.svg';
@@ -93,14 +92,14 @@ export default function EventDetails() {
                 <div className="flex flex-col gap-3 lg:w-[50%] w-full lg:items-start items-center">
                   <p className="font-semibold text-xl ">Raju Prasad Khanal</p>
                   <p className="text-text text-sm">Assistant Director of Swarthmore College</p>
-                  <p className="text-text lg:text-start text-center">The CEO/Chairperson plays a pivotal role in steering the organization towards success and sustainability. Their work involves developing and executing the company's strategic vision.</p>
+                  <p className="text-text lg:text-start text-center">The CEO/Chairperson plays a pivotal role in steering the organization towards success and sustainability. Their work involves developing and executing the companys strategic vision.</p>
                   <div className="flex items-center gap-3">
                     {
                       socialMedia.map((media, index) => (
                         <a
                           key={index}
                           href={media.link}
-                          target="_blank"
+                          target="_blank" 
                           className="social rounded-full size-8 p-1.5 border border-secondary"
                         >
                           <media.icon className="size-full" />

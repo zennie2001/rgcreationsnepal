@@ -1,10 +1,6 @@
 "use client"
 import PageHeader from "@/components/PageHeader";
-import blogImage from '@/assets/images/blogImage.jpg';
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import TestCard from "@/components/TestCard";
-import PrimaryButton from "@/components/UI/PrimaryButton";
-import { PiShareFatLight } from "react-icons/pi";
+
 import TopTestSection from "@/components/TopTestSection";
 import tips from '@/assets/images/tips.svg';
 import support from '@/assets/images/support.svg';
@@ -143,7 +139,7 @@ export default function TestDetails() {
           <p className="text-secondary py-5 text-xl font-semibold">Sunday Tests</p>
           <ul className="text-text list-disc px-5">
             <li>Our students are put into mock tests every Sunday to consolidate their practice and gain confidence for the real exam. </li>
-            <li>They can not only get their scores reported with the instructors' comments, but they can also feel that the real exam is just another test.  </li>
+            <li>They can not only get their scores reported with the instructors comments, but they can also feel that the real exam is just another test.  </li>
             <li>We cater to standardized paper tests as per the requirements and criteria of the real test. </li>
           </ul>
           <p className="text-secondary py-5 text-xl font-semibold">Course Start Date</p>
@@ -202,12 +198,18 @@ export default function TestDetails() {
 }
 
 
-function TestBox({ title, image, subtitle }: any) {
+type TestBoxProps = {
+  title: string;
+  image: string;
+  subtitle: string;
+};
+
+function TestBox({ title, image, subtitle }: TestBoxProps) {
   return (
     <div className="bg-bodyColor rounded-md px-8 py-5">
-      <Image src={image} alt="" className="size-8" />
+      <Image src={image} alt={title} className="size-8" />
       <p className="font-semibold text-xl text-secondary py-3 pt-4">{title}</p>
       <p className="text-text text-sm">{subtitle}</p>
     </div>
-  )
+  );
 }

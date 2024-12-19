@@ -1,6 +1,6 @@
 "use client"
 import PageHeader from '@/components/PageHeader'
-import React, { useState } from 'react'
+import React from 'react'
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -39,17 +39,9 @@ export default function OurCertificate() {
       
     ];
    
-    const [isOpen, setIsOpen] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const openModal = (index:any) => {
-    setCurrentIndex(index);
-    setIsOpen(true);
-  };
 
-  const closeModal = () => {
-    setIsOpen(false);
-  };
+ 
   return (
     <main>
   <PageHeader
@@ -59,7 +51,7 @@ export default function OurCertificate() {
             <section className='w-full flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12'>
 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 w-full'>
 {images.map((e,i)=>{
-    return <div key={i} className='flex flex-col items-center w-full ' onClick={openModal}>
+    return <div key={i} className='flex flex-col items-center w-full '>
         <div className='lg:h-[222px] h-[500px]  md:w-[395px] w-full p-3 rounded-md border border-borderColor'>
 <img src={e.images} alt="" className='object-contain h-full w-full'/>
 
