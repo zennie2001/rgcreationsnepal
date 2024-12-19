@@ -43,16 +43,16 @@ const navLinks = [
     },
     {
         title: 'Immigration Info',
-        link: '/immigration'
+        link: '/services'
     },
     {
         title: 'Study Abroad',
-        link: '/study'
+        link: '/destination'
     },
-    {
-        title: 'Test Preparation',
-        link: '/test-list'
-    },
+    // {
+    //     title: 'Test Preparation',
+    //     link: '/test-list'
+    // },
     {
         title: 'Contact',
         link: '/contact'
@@ -65,30 +65,61 @@ const aboutUs = [
         title: 'Introduction'
     },
     {
-        link: '/about',
+        link: '/message-from-ceo',
         title: 'Message From CEO'
     },
     {
-        link: '/about',
+        link: '/message-from-ceo',
         title: 'Message From Managing Director'
     },
     {
-        link: '/about',
+        link: '/holiday-list',
         title: 'Holiday List'
     },
     {
-        link: '/about',
+        link: '/our-team',
         title: 'Our Team'
     },
     {
-        link: '/about',
+        link: '/our-certificates',
         title: 'Our Certifications'
     },
+    {
+        link: '/services',
+        title: 'Services'
+    },
+   
 ]
-
+const ourServices = [
+    {
+        link: '/test-list',
+        title: 'Test Preparation'
+    },
+    {
+        link: '/events',
+        title: 'Events'
+    },
+    {
+        link: '/consultation',
+        title: 'Consultation'
+    },
+    {
+        link: '/scholarship-list',
+        title: 'Scholarship'
+    },
+    {
+        link: '/career-counselling',
+        title: 'Career Counselling'
+    },
+    {
+        link: '/visa-assistance',
+        title: 'Visa Assistance'
+    },
+]
 export default function Header() {
 
     const [showAbout, setShowAbout] = useState<boolean>(false);
+    const [showServices, setShowServices] = useState<boolean>(false);
     const [showNav, setshowNav] = useState(false)
     return (
         <header className="header z-50 top-0 sticky flex flex-col w-full text-primary">
@@ -211,9 +242,31 @@ export default function Header() {
                             className="flex_center py-7 text-base border-b-2 border-primary hover:border-secondary cursor-pointer relative"
                         >
                             <p>About Us</p>
-                            <div className={twMerge("absolute -bottom-[355px] left-0 p-2 flex flex-col justify-center rounded-md bg-primary w-80 z-0", showAbout === true ? '' : 'hidden')}>
+                            <div className={twMerge("absolute -bottom-[405px] left-0 p-2 flex flex-col justify-center rounded-md bg-primary w-80 z-0", showAbout === true ? '' : 'hidden')}>
                                 {
                                     aboutUs.map((about, index) => {
+                                        return (
+                                            <Link
+                                                key={index}
+                                                href={about.link}
+                                                className="p-4 rounded-md hover:bg-gray-100 w-full text-left"
+                                            >
+                                                {about.title}
+                                            </Link>
+                                        )
+                                    })
+                                }
+                            </div>
+                        </div>
+                        <div
+                            onMouseEnter={() => setShowServices(true)}
+                            onMouseLeave={() => setShowServices(false)}
+                            className="flex_center py-7 text-base border-b-2 border-primary hover:border-secondary cursor-pointer relative"
+                        >
+                            <p>Our Services</p>
+                            <div className={twMerge("absolute -bottom-[355px] left-0 p-2 flex flex-col justify-center rounded-md bg-primary w-80 z-0", showServices === true ? '' : 'hidden')}>
+                                {
+                                    ourServices.map((about, index) => {
                                         return (
                                             <Link
                                                 key={index}
