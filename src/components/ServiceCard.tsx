@@ -2,9 +2,9 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
-export default function ServiceCard({ image, title, miniDescription }: { image: StaticImageData; title: string; miniDescription: string; }) {
+export default function ServiceCard({ image, title, miniDescription,link }: { image: StaticImageData; title: string; miniDescription: string; link:string; }) {
     return (
-        <div className="flex flex-col gap-4 col-span-1">
+     <Link href={link}>  <div className="flex flex-col gap-4 col-span-1">
             <div className="flex_center w-full h-60 rounded-md overflow-hidden">
                 <Image
                     src={image}
@@ -21,11 +21,12 @@ export default function ServiceCard({ image, title, miniDescription }: { image: 
                 </p>
             </div>
             <div className="flex items-center gap-2 text-base cursor-pointer w-max">
-                <Link href={'/services'} className="pb-1 border-b border-secondary text-secondary cursor-pointer">
+                <Link href={link} className="pb-1 border-b border-secondary text-secondary cursor-pointer">
                     Learn More
                 </Link>
                 <IoIosArrowRoundForward />
             </div>
         </div>
+        </Link> 
     )
 }

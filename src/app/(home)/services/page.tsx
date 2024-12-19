@@ -7,32 +7,38 @@ const ourServices = [
     {
         image: servicesImage,
         title: 'Student Counselling',
-        miniDescription: 'A wide range of test preparation classes for IELTS, TOFEL, SAT, GRE, GMAT, and Japanese language are operated.'
+        miniDescription: 'A wide range of test preparation classes for IELTS, TOFEL, SAT, GRE, GMAT, and Japanese language are operated.',
+        link:"/studentcounselling"
     },
     {
         image: servicesImage,
-        title: 'Student Counselling',
-        miniDescription: 'A wide range of test preparation classes for IELTS, TOFEL, SAT, GRE, GMAT, and Japanese language are operated.'
+        title: 'University Admission',
+        miniDescription: 'A wide range of test preparation classes for IELTS, TOFEL, SAT, GRE, GMAT, and Japanese language are operated.',
+        link:"/destination/universityadmission"
     },
     {
         image: servicesImage,
-        title: 'Student Counselling',
-        miniDescription: 'A wide range of test preparation classes for IELTS, TOFEL, SAT, GRE, GMAT, and Japanese language are operated.'
+        title: 'Visa Assistance',
+        miniDescription: 'A wide range of test preparation classes for IELTS, TOFEL, SAT, GRE, GMAT, and Japanese language are operated.',
+        link:"/visa-acceptance"
     },
     {
         image: servicesImage,
-        title: 'Student Counselling',
-        miniDescription: 'A wide range of test preparation classes for IELTS, TOFEL, SAT, GRE, GMAT, and Japanese language are operated.'
+        title: 'Test Preparation',
+        miniDescription: 'A wide range of test preparation classes for IELTS, TOFEL, SAT, GRE, GMAT, and Japanese language are operated.',
+        link:"/test-list"
     },
     {
         image: servicesImage,
-        title: 'Student Counselling',
-        miniDescription: 'A wide range of test preparation classes for IELTS, TOFEL, SAT, GRE, GMAT, and Japanese language are operated.'
+        title: 'Career Guidance',
+        miniDescription: 'A wide range of test preparation classes for IELTS, TOFEL, SAT, GRE, GMAT, and Japanese language are operated.',
+        link:"/career-counselling"
     },
     {
         image: servicesImage,
-        title: 'Student Counselling',
-        miniDescription: 'A wide range of test preparation classes for IELTS, TOFEL, SAT, GRE, GMAT, and Japanese language are operated.'
+        title: 'Scholarship Assistance',
+        miniDescription: 'A wide range of test preparation classes for IELTS, TOFEL, SAT, GRE, GMAT, and Japanese language are operated.',
+        link:"/scholarship-assistance"
     },
 ]
 
@@ -53,6 +59,7 @@ export default function Services() {
                         ourServices.map((service, index) => {
                             return (
                                 <ServiceCard
+                                link={service.link}
                                     key={index}
                                     image={service.image}
                                     title={service.title}

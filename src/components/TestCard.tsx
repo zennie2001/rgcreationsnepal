@@ -22,7 +22,7 @@ export default function TestCard({ image, title, miniDescription }: { image: Sta
                 </p>
             </div>
             <div className="flex items-center gap-2 text-base cursor-pointer w-max">
-                <Link href={'/blogs/blogdetails'} className="pb-1 border-b border-secondary text-secondary cursor-pointer">
+                <Link href={'/test-list/test-details'} className="pb-1 border-b border-secondary text-secondary cursor-pointer">
                     Read More
                 </Link>
                 <IoIosArrowRoundForward />
