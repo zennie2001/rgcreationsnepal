@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, ChevronRight, Menu, X } from "lucide-react";
 
 const navLinks = [
   {
@@ -127,6 +127,7 @@ export const MobileDropdownNav = ({
     </div>
   );
 };
+
 export const DropdownNav = ({
   href,
   children,
@@ -134,34 +135,57 @@ export const DropdownNav = ({
 }: {
   href: string;
   children: string;
-  menuItems: { label: string; path: string }[];
+  menuItems: {
+    label: string;
+    path: string;
+    subMenu?: { label: string; path: string }[];
+  }[];
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname() || "";
-  const path = pathname.split("/");
-  const activepath = `/${path[1]}/${path[2]}`;
-  const isActive = activepath === href;
+  const [activeSubMenu, setActiveSubMenu] = useState<string | null>(null);
 
   return (
     <div
       className="relative"
       onMouseEnter={() => setIsOpen(true)}
-      onMouseLeave={() => setIsOpen(false)}
+      onMouseLeave={() => {
+        setIsOpen(false);
+        setActiveSubMenu(null);
+      }}
     >
-      <button
-        className={`flex gap-1 items-center text-base font-medium text-gray-700 hover:text-[#ef001f]
-          ${isActive ? "active text-[#ef001f]" : ""}`}
-      >
+      <button className="flex gap-1 items-center text-base font-medium text-gray-700 hover:text-[#ef001f]">
         {children} <ChevronDown size={18} />
       </button>
+
       {isOpen && (
-        <div className="absolute top-full left-0 bg-white/80 p-2 rounded-sm shadow-lg w-56 z-50">
+        <div className="absolute top-full left-0 bg-white p-2 rounded-sm shadow-lg w-56 z-[100]">
           {menuItems.map((item, index) => (
-            <Link key={index} href={item.path}>
-              <div className="p-2 hover:bg-[#ef001f] hover:text-white rounded-sm text-base text-gray-600 font-normal cursor-pointer">
-                {item.label}
-              </div>
-            </Link>
+            <div
+              key={index}
+              className="relative"
+              onMouseEnter={() => item.subMenu && setActiveSubMenu(item.label)}
+              onMouseLeave={() => item.subMenu && setActiveSubMenu(null)}
+            >
+              <Link href={item.path}>
+                <div className="p-2 hover:bg-[#ef001f] hover:text-white rounded-sm text-base text-gray-600 font-normal flex justify-between items-center cursor-pointer">
+                  {item.label}
+                  {item.subMenu && <ChevronRight size={14} />}
+                </div>
+              </Link>
+
+              {/* Submenu */}
+              {item.subMenu && activeSubMenu === item.label && (
+                <div className="absolute top-[-8px] left-full bg-white p-2 rounded-sm shadow-lg w-56 z-[100]">
+                  {item.subMenu.map((subItem, subIndex) => (
+                    <Link key={subIndex} href={subItem.path}>
+                      <div className="p-2 hover:bg-[#ef001f] hover:text-white rounded-sm text-base text-gray-600 font-normal cursor-pointer">
+                        {subItem.label}
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </div>
       )}
@@ -190,20 +214,61 @@ const Header = () => {
         <DropdownNav
           href="/about-us"
           menuItems={[
-            { label: "Our Stories", path: "/message-from-ceo" },
+            {
+              label: "Our Stories",
+              path: "/message-from-ceo",
+            },
             { label: "Our Values", path: "/about" },
             { label: "Sustainability", path: "/our-certificates" },
           ]}
         >
           ABOUT US
         </DropdownNav>
+
         <DropdownNav
           href="/categories"
           menuItems={[
-            { label: "Necklaces", path: "/destination" },
-            { label: "Bracelets", path: "/faqs" },
-            { label: "Rings", path: "/gallery" },
-            { label: "Earrings", path: "/scholarship-list" },
+            {
+              label: "Necklaces",
+              path: "/destination",
+              subMenu: [
+                { label: "History", path: "/history" },
+                { label: "Vision & Mission", path: "/vision-mission" },
+              ],
+            },
+            {
+              label: "Bracelets",
+              path: "/faqs",
+              subMenu: [
+                { label: "Gold", path: "/gold" },
+                { label: "Silver", path: "/silver" },
+                { label: "Diamond", path: "/diamond" },
+                { label: "Platinum", path: "/platinum" },
+                { label: "Gemstone", path: "/gemstone" },
+              ],
+            },
+            {
+              label: "Rings",
+              path: "/gallery",
+              subMenu: [
+                { label: "Gold", path: "/gold" },
+                { label: "Silver", path: "/silver" },
+                { label: "Diamond", path: "/diamond" },
+                { label: "Platinum", path: "/platinum" },
+                { label: "Gemstone", path: "/gemstone" },
+              ],
+            },
+            {
+              label: "Earrings",
+              path: "/scholarship-list",
+              subMenu: [
+                { label: "Gold", path: "/gold" },
+                { label: "Silver", path: "/silver" },
+                { label: "Diamond", path: "/diamond" },
+                { label: "Platinum", path: "/platinum" },
+                { label: "Gemstone", path: "/gemstone" },
+              ],
+            },
             { label: "Bangles", path: "/testimonials" },
             { label: "Pendants", path: "/visa-acceptance" },
             { label: "Chains", path: "/studentcounselling" },
