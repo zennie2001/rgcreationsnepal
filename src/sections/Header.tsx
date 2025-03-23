@@ -1,310 +1,200 @@
 "use client";
-
-import { FaEnvelope, FaFacebookF, FaLinkedinIn, FaPhoneAlt, FaPinterest } from "react-icons/fa";
-import { FaLocationDot } from "react-icons/fa6";
-import { RiInstagramFill } from "react-icons/ri";
-import logo from '@/assets/logo/reactionNepalLogo.png';
-import Link from "next/link";
 import Image from "next/image";
-import PrimaryButton from "@/components/UI/PrimaryButton";
-import SecondaryButton from "@/components/UI/SecondaryButton";
+import Link from "next/link";
 import { useState } from "react";
-import { twMerge } from "tailwind-merge";
-import { FiMenu } from "react-icons/fi";
-import { MdClose } from "react-icons/md";
+import { usePathname } from "next/navigation";
+import { ChevronDown, Menu, X } from "lucide-react";
 
-const socialMedia = [
-    {
-        link: 'facebook.com',
-        icon: FaFacebookF
-    },
-    {
-        link: 'instagram.com',
-        icon: RiInstagramFill
-    },
-    {
-        link: 'linkedin.com',
-        icon: FaLinkedinIn
-    },
-    {
-        link: 'pinterest.com',
-        icon: FaPinterest
-    },
-]
+export const DropdownNav = ({
+  href,
+  children,
+  menuItems,
+}: {
+  href: string;
+  children: string;
+  menuItems: { label: string; path: string }[];
+}) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname() || "";
+  const path = pathname.split("/");
+  const activepath = `/${path[1]}/${path[2]}`;
+  const isActive = activepath === href;
 
-const navLinks = [
-    {
-        title: 'Gallery',
-        link: '/gallery'
-    },
-    {
-        title: 'Vacancy',
-        link: '/job-opportunities'
-    },
-    {
-        title: 'Immigration Info',
-        link: '/services'
-    },
-    {
-        title: 'Study Abroad',
-        link: '/destination'
-    },
-    // {
-    //     title: 'Test Preparation',
-    //     link: '/test-list'
-    // },
-    {
-        title: 'Contact',
-        link: '/contact'
-    },
-]
+  return (
+    <div
+      className="relative"
+      onMouseEnter={() => setIsOpen(true)}
+      onMouseLeave={() => setIsOpen(false)}
+    >
+      <button
+        className={`flex gap-1 items-center text-base font-medium text-gray-700 hover:text-[#ef001f]
+          ${isActive ? "active text-[#ef001f]" : ""}`}
+      >
+        {children} <ChevronDown size={18} />
+      </button>
+      {isOpen && (
+        <div className="absolute top-full left-0 bg-white/80 p-2 rounded-sm shadow-lg w-56 z-50">
+          {menuItems.map((item, index) => (
+            <Link key={index} href={item.path}>
+              <div className="p-2 hover:bg-[#ef001f] hover:text-white rounded-sm text-base text-gray-600 font-normal cursor-pointer">
+                {item.label}
+              </div>
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
 
-const aboutUs = [
-    {
-        link: '/about',
-        title: 'Introduction'
-    },
-    {
-        link: '/message-from-ceo',
-        title: 'Message From CEO'
-    },
-    {
-        link: '/message-from-ceo',
-        title: 'Message From Managing Director'
-    },
-    {
-        link: '/holiday-list',
-        title: 'Holiday List'
-    },
-    {
-        link: '/our-team',
-        title: 'Our Team'
-    },
-    {
-        link: '/our-certificates',
-        title: 'Our Certifications'
-    },
-    {
-        link: '/services',
-        title: 'Services'
-    },
-   
-]
-const ourServices = [
-    {
-        link: '/test-list',
-        title: 'Test Preparation'
-    },
-    {
-        link: '/events',
-        title: 'Events'
-    },
-    {
-        link: '/consultation',
-        title: 'Consultation'
-    },
-    {
-        link: '/scholarship-list',
-        title: 'Scholarship'
-    },
-    {
-        link: '/career-counselling',
-        title: 'Career Counselling'
-    },
-    {
-        link: '/visa-assistance',
-        title: 'Visa Assistance'
-    },
-]
-export default function Header() {
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const [showAbout, setShowAbout] = useState<boolean>(false);
-    const [showServices, setShowServices] = useState<boolean>(false);
-    const [showNav, setshowNav] = useState(false)
-    return (
-        <header className="header z-50 top-0 sticky flex flex-col w-full text-primary">
-            {/* mobile responsive */}
-            <div className="flex w-full bg-white justify-between items-center lg:hidden border-b border-[#E9E9E9]  p-[14px] text-black">
-                <Link
-                    href={'/'}
-                    className="logo w-28 h-auto"
-                >
-                    <Image
-                        src={logo}
-                        alt="Reaction-Nepal"
-                        className="w-full h-full object-contain"
-                    />
-                </Link>
-                {showNav == false ? <FiMenu className="text-black text-2xl" onClick={() => {
-                    setshowNav(!showNav)
-                }} /> : <MdClose className="text-black text-2xl" onClick={() => {
-                    setshowNav(!showNav)
-                }} />}
-            </div>
-            {showNav && (
-                <div className="bg-white w-full h-[calc(100vh-50px)]  z-50 top-0 sticky    overflow-y-auto">
-                    <div className="p-3">
+  return (
+    <nav className="w-full flex justify-between items-center p-6 px-8 md:px-32 z-20 absolute top-0 bg-white/40">
+      {/* Mobile Menu Button */}
+      <button
+        className="md:hidden text-gray-700"
+        onClick={() => setIsMenuOpen(true)}
+      >
+        <Menu size={28} />
+      </button>
 
-                   
-                    {navLinks.map((e, i) => {
-                        return <div key={i} className="p-3 text-text  border-b border-borderColor">
-                            {e.title}
-                        </div>
-                    })}
-                    <PrimaryButton text="Apply" className="h-[38px] w-full " />
-                    <button className="rounded-md border border-tertiary text-tertiary hover:bg-tertiary hover:text-primary transition duration-300 h-[38px] mt-3 w-full px-6 text-base font-medium">
-                        Mock Test
-                    </button>
-                    <p className="text-text  pt-5">Follow us on:</p>
-                    <div className="flex items-center gap-3 mt-2">
-                        {
-                            socialMedia.map((media, index) => (
-                                <a
-                                    key={index}
-                                    href={media.link}
-                                    target="_blank"
-                                    className="social rounded-full size-6 p-1.5 border border-secondary"
-                                >
-                                    <media.icon className="size-full text-secondary" />
-                                </a>
-                            ))
-                        }
-                    </div>
-                    </div>
-                    <div className="flex flex-col gap-3 bg-secondary p-5 mt-10">
-                        <div className="flex items-center gap-2 text-sm">
-                            <FaPhoneAlt /> <p>+977-1-4532334/4</p>
-                        </div>
-                        <div className="flex items-center gap-2 text-sm">
-                            <FaEnvelope /> <p>info@rnc.edu.np</p>
-                        </div>
-                        <div className="flex items-center gap-2 text-sm">
-                            <FaLocationDot /> <p>Putalisadak Chowk-30, Kathmandu, P.O.B: 8927</p>
-                        </div>
-                    </div>
-                </div>
-            )}
-            {/* desktop view */}
-            <div className="header-top w-full py-4 xl:px-24 px-10 lg:flex hidden justify-between items-center bg-secondary">
-                <div className="info flex_center gap-3">
-                    <div className="flex_center gap-2 font-normal text-sm">
-                        <FaEnvelope />
-                        <a href="mailto:info@rnc.edu.np" className="text-sm hover:underline">
-                            info@rnc.edu.np
-                        </a>
-                    </div>
-                    <div className="w-4 h-[1.5px] bg-primary"></div>
-                    <div className="flex_center gap-2 font-normal text-sm">
-                        <FaPhoneAlt />
-                        <a href="tel:+977-1-4532334/4" className="text-sm hover:underline">
-                            +977-1-4532334/4
-                        </a>
-                    </div>
-                    <div className="w-4 h-[1.5px] bg-primary"></div>
-                    <div className="flex_center gap-2 font-normal text-sm">
-                        <FaLocationDot />
-                        <p className="text-sm hover:underline">
-                            Putalisadak Chowk-30, Kathmandu, P.O.B: 8927
-                        </p>
-                    </div>
-                </div>
-                <div className="flex_center gap-3">
-                    {
-                        socialMedia.map((media, index) => (
-                            <a
-                                key={index}
-                                href={media.link}
-                                target="_blank"
-                                className="social rounded-full size-6 p-1.5 border-2 border-primary"
-                            >
-                                <media.icon className="size-full" />
-                            </a>
-                        ))
-                    }
-                </div>
-            </div>
-            <div className="header-bottom lg:flex hidden xl:px-24 px-10 justify-between items-center   border-b bg-primary">
-                <div className="flex_center xl:gap-12 gap-6">
-                    <Link
-                        href={'/'}
-                        className="logo w-32 h-auto"
-                    >
-                        <Image
-                            src={logo}
-                            alt="Reaction-Nepal"
-                            className="w-full h-full object-contain"
-                        />
-                    </Link>
-                    <nav className="flex_center gap-6 text-text w-full">
-                        <div
-                            onMouseEnter={() => setShowAbout(true)}
-                            onMouseLeave={() => setShowAbout(false)}
-                            className="flex_center py-7 text-base border-b-2 border-primary hover:border-secondary cursor-pointer relative"
-                        >
-                            <p>About Us</p>
-                            <div className={twMerge("absolute -bottom-[405px] left-0 p-2 flex flex-col justify-center rounded-md bg-primary w-80 z-0", showAbout === true ? '' : 'hidden')}>
-                                {
-                                    aboutUs.map((about, index) => {
-                                        return (
-                                            <Link
-                                                key={index}
-                                                href={about.link}
-                                                className="p-4 rounded-md hover:bg-gray-100 w-full text-left"
-                                            >
-                                                {about.title}
-                                            </Link>
-                                        )
-                                    })
-                                }
-                            </div>
-                        </div>
-                        <div
-                            onMouseEnter={() => setShowServices(true)}
-                            onMouseLeave={() => setShowServices(false)}
-                            className="flex_center py-7 text-base border-b-2 border-primary hover:border-secondary cursor-pointer relative"
-                        >
-                            <p>Our Services</p>
-                            <div className={twMerge("absolute -bottom-[355px] left-0 p-2 flex flex-col justify-center rounded-md bg-primary w-80 z-0", showServices === true ? '' : 'hidden')}>
-                                {
-                                    ourServices.map((about, index) => {
-                                        return (
-                                            <Link
-                                                key={index}
-                                                href={about.link}
-                                                className="p-4 rounded-md hover:bg-gray-100 w-full text-left"
-                                            >
-                                                {about.title}
-                                            </Link>
-                                        )
-                                    })
-                                }
-                            </div>
-                        </div>
-                        {
-                            navLinks.map((link, index) => {
-                                return (
-                                    <Link
-                                        key={index}
-                                        href={link.link}
-                                        className="flex_center py-7 text-base border-b-2 border-primary hover:border-secondary"
-                                    >
-                                        {link.title}
-                                    </Link>
-                                )
-                            })
-                        }
-                    </nav>
-                </div>
-                <div className="flex_center gap-4">
-                    <PrimaryButton
-                        text="Apply"
-                    />
-                    <SecondaryButton
-                    
-                        text="Mock Test"
-                    />
-                </div>
-            </div>
-        </header>
-    )
-}
+      {/* Left side navigation links (Hidden on small screens) */}
+      <div className="hidden md:flex gap-6 text-gray-600 text-base">
+        <Link href="/about-us" className="font-medium hover:text-[#ef001f]">
+          HOME
+        </Link>
+        <DropdownNav
+          href="/about-us"
+          menuItems={[
+            { label: "Our Stories", path: "/our-stories" },
+            { label: "Our Values", path: "/our-values" },
+            { label: "Sustainability", path: "/sustainability" },
+          ]}
+        >
+          ABOUT US
+        </DropdownNav>
+        <DropdownNav
+          href="/categories"
+          menuItems={[
+            { label: "Necklaces", path: "/necklace" },
+            { label: "Bracelets", path: "/bracelet" },
+            { label: "Rings", path: "/ring" },
+            { label: "Earrings", path: "/earring" },
+            { label: "Bangles", path: "/bangle" },
+            { label: "Pendants", path: "/pendant" },
+            { label: "Chains", path: "/chain" },
+            { label: "Anklets", path: "/anklet" },
+            { label: "Nose Pins", path: "/nose-pin" },
+            { label: "Cufflinks", path: "/cufflink" },
+            { label: "Jewelry Sets", path: "/jewelry-set" },
+            { label: "Gold Coin & Bullion", path: "/gold-coin-bullion" },
+          ]}
+        >
+          CATEGORIES
+        </DropdownNav>
+      </div>
+
+      {/* Center logo */}
+      <div className="absolute left-1/2 transform -translate-x-1/2 z-50">
+        <div className="bg-white/40 px-2 pt-32 pb-3 rounded-b-full">
+          <Image
+            src="/assets/logo-final.png"
+            alt="Logo"
+            width={150}
+            height={150}
+          />
+        </div>
+      </div>
+
+      {/* Right side navigation links (Hidden on small screens) */}
+      <div className="hidden md:flex gap-6 text-gray-700 text-base">
+        <DropdownNav
+          href="/services"
+          menuItems={[
+            { label: "Custom Design", path: "/custom-design" },
+            { label: "Jewelry Repair", path: "/jewelry-repair" },
+            { label: "Engraving Services", path: "/engraving-services" },
+            { label: "Appraisal Services", path: "/appraisal-services" },
+          ]}
+        >
+          SERVICES
+        </DropdownNav>
+        <Link href="/blog" className="hover:text-[#ef001f] font-medium">
+          BLOG
+        </Link>
+        <Link href="/contact" className="hover:text-[#ef001f] font-medium">
+          CONTACT US
+        </Link>
+      </div>
+
+      {/* Mobile Menu Overlay */}
+      {isMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/50 z-50"
+          onClick={() => setIsMenuOpen(false)}
+        ></div>
+      )}
+
+      {/* Mobile Menu */}
+      <div
+        className={`fixed top-0 right-0 w-3/4 max-w-xs h-full bg-white shadow-lg p-6 z-50 transform transition-transform ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <button
+          className="absolute top-4 right-4"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          <X size={28} />
+        </button>
+        <div className="flex flex-col gap-4 mt-10">
+          <Link
+            href="/"
+            className="text-gray-700 text-lg font-medium hover:text-[#ef001f]"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            HOME
+          </Link>
+          <DropdownNav
+            href="/about-us"
+            menuItems={[
+              { label: "Our Stories", path: "/our-stories" },
+              { label: "Our Values", path: "/our-values" },
+              { label: "Sustainability", path: "/sustainability" },
+            ]}
+          >
+            ABOUT US
+          </DropdownNav>
+          <DropdownNav
+            href="/categories"
+            menuItems={[
+              { label: "Necklaces", path: "/necklace" },
+              { label: "Bracelets", path: "/bracelet" },
+              { label: "Rings", path: "/ring" },
+            ]}
+          >
+            CATEGORIES
+          </DropdownNav>
+          <Link
+            href="/blog"
+            className="text-gray-700 text-lg font-medium hover:text-[#ef001f]"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            BLOG
+          </Link>
+          <Link
+            href="/contact"
+            className="text-gray-700 text-lg font-medium hover:text-[#ef001f]"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            CONTACT US
+          </Link>
+        </div>
+      </div>
+    </nav>
+  );
+};
+
+export default Header;

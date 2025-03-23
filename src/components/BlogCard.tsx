@@ -1,34 +1,49 @@
-import Image, { StaticImageData } from "next/image";
+import { StaticImageData } from "next/image";
 import Link from "next/link";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
-export default function BlogCard({ image, date, title, miniDescription }: { image: StaticImageData; date: string; title: string; miniDescription: string; }) {
-    return (
-        <div className="flex flex-col gap-4 col-span-1">
-            <div className="flex_center w-full h-60 rounded-md overflow-hidden">
-                <Image
-                    src={image}
-                    alt="blog-image"
-                    className="size-full object-cover"
-                />
-            </div>
-            <p className="py-1 px-2 rounded-md border border-text/30 w-max text-xs font-medium">
-                {date}
-            </p>
-            <div className="flex flex-col gap-3">
-                <h1 className="text-xl font-semibold">
-                    {title}
-                </h1>
-                <p className="text-base text-text">
-                    {miniDescription}
-                </p>
-            </div>
-            <div className="flex items-center gap-2 text-base cursor-pointer w-max">
-                <Link href={'/blogs/blogdetails'} className="pb-1 border-b border-secondary text-secondary cursor-pointer">
-                    Read More
-                </Link>
-                <IoIosArrowRoundForward />
-            </div>
-        </div>
-    )
+export default function BlogCard({
+  image,
+  date,
+  title,
+  miniDescription,
+  name,
+}: {
+  image: StaticImageData;
+  date: string;
+  title: string;
+  miniDescription: string;
+  name: string;
+}) {
+  return (
+    <div className="rounded-lg cursor-pointer overflow-hidden group bg-white flex flex-col h-full shadow-md">
+      {/* Fixed image size */}
+      <img
+        src={image.src}
+        alt="Blog"
+        className="w-full h-[250px] object-cover group-hover:scale-105 transition-all duration-300 rounded-lg"
+      />
+      {/* Content that fills remaining space */}
+      <div className="p-[16px] pb-[0px] flex flex-col justify-between flex-grow">
+        <h2 className="text-[20px] leading-[26px] text-[#222222] line-clamp-2 font-bold mt-[8px]">
+          {title}
+        </h2>
+        <p className="text-[14px] leading-[20px] text-[#F65128] font-medium my-[6px]">
+          {date} | {name}
+        </p>
+        <p className="text-[15px] leading-[24px] tracking-[0.03em] line-clamp-5 text-[#444444] pb-2">
+          {miniDescription}
+        </p>
+      </div>
+      <div className="flex m-2 border-b group hover:shadow-xl rounded-md border-secondary items-center gap-1 text-base cursor-pointer w-max">
+        <Link
+          href={"/blogs/blogdetails"}
+          className="p-1   text-secondary cursor-pointer"
+        >
+          Read More
+        </Link>
+        <IoIosArrowRoundForward className="me-2 group-hover:scale-150 transition-all duration-300" />
+      </div>
+    </div>
+  );
 }
