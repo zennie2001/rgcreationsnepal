@@ -5,6 +5,128 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
 
+const navLinks = [
+  {
+    title: "Gallery",
+    link: "/gallery",
+  },
+  {
+    title: "Vacancy",
+    link: "/job-opportunities",
+  },
+  {
+    title: "Immigration Info",
+    link: "/services",
+  },
+  {
+    title: "Study Abroad",
+    link: "/destination",
+  },
+  // {
+  //     title: 'Test Preparation',
+  //     link: '/test-list'
+  // },
+  {
+    title: "Contact",
+    link: "/contact",
+  },
+];
+
+const aboutUs = [
+  {
+    link: "/about",
+    title: "Introduction",
+  },
+  {
+    link: "/message-from-ceo",
+    title: "Message From CEO",
+  },
+  {
+    link: "/message-from-ceo",
+    title: "Message From Managing Director",
+  },
+  {
+    link: "/holiday-list",
+    title: "Holiday List",
+  },
+  {
+    link: "/our-team",
+    title: "Our Team",
+  },
+  {
+    link: "/our-certificates",
+    title: "Our Certifications",
+  },
+  {
+    link: "/services",
+    title: "Services",
+  },
+];
+const ourServices = [
+  {
+    link: "/test-list",
+    title: "Test Preparation",
+  },
+  {
+    link: "/events",
+    title: "Events",
+  },
+  {
+    link: "/consultation",
+    title: "Consultation",
+  },
+  {
+    link: "/scholarship-list",
+    title: "Scholarship",
+  },
+  {
+    link: "/career-counselling",
+    title: "Career Counselling",
+  },
+  {
+    link: "/visa-assistance",
+    title: "Visa Assistance",
+  },
+];
+
+export const MobileDropdownNav = ({
+  title,
+  items,
+}: {
+  title: string;
+  items: { label: string; path: string }[];
+}) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex justify-between text-xl items-center w-full py-2"
+      >
+        {title}
+        <ChevronDown
+          size={18}
+          className={`transition-transform ${isOpen ? "rotate-180" : ""}`}
+        />
+      </button>
+
+      {isOpen && (
+        <div className="pl-4 flex flex-col gap-2">
+          {items.map((item, index) => (
+            <Link
+              key={index}
+              href={item.path}
+              className="block py-1 text-gray-700"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
 export const DropdownNav = ({
   href,
   children,
@@ -54,7 +176,7 @@ const Header = () => {
     <nav className="w-full flex justify-between items-center p-6 px-8 md:px-32 z-20 absolute top-0 bg-white/40">
       {/* Mobile Menu Button */}
       <button
-        className="md:hidden text-gray-700"
+        className="md:hidden text-gray-700 ml-auto"
         onClick={() => setIsMenuOpen(true)}
       >
         <Menu size={28} />
@@ -68,9 +190,9 @@ const Header = () => {
         <DropdownNav
           href="/about-us"
           menuItems={[
-            { label: "Our Stories", path: "/our-stories" },
-            { label: "Our Values", path: "/our-values" },
-            { label: "Sustainability", path: "/sustainability" },
+            { label: "Our Stories", path: "/message-from-ceo" },
+            { label: "Our Values", path: "/about" },
+            { label: "Sustainability", path: "/our-certificates" },
           ]}
         >
           ABOUT US
@@ -78,18 +200,18 @@ const Header = () => {
         <DropdownNav
           href="/categories"
           menuItems={[
-            { label: "Necklaces", path: "/necklace" },
-            { label: "Bracelets", path: "/bracelet" },
-            { label: "Rings", path: "/ring" },
-            { label: "Earrings", path: "/earring" },
-            { label: "Bangles", path: "/bangle" },
-            { label: "Pendants", path: "/pendant" },
-            { label: "Chains", path: "/chain" },
-            { label: "Anklets", path: "/anklet" },
-            { label: "Nose Pins", path: "/nose-pin" },
-            { label: "Cufflinks", path: "/cufflink" },
-            { label: "Jewelry Sets", path: "/jewelry-set" },
-            { label: "Gold Coin & Bullion", path: "/gold-coin-bullion" },
+            { label: "Necklaces", path: "/destination" },
+            { label: "Bracelets", path: "/faqs" },
+            { label: "Rings", path: "/gallery" },
+            { label: "Earrings", path: "/scholarship-list" },
+            { label: "Bangles", path: "/testimonials" },
+            { label: "Pendants", path: "/visa-acceptance" },
+            { label: "Chains", path: "/studentcounselling" },
+            { label: "Anklets", path: "/scholarship-assistance" },
+            { label: "Nose Pins", path: "/message-from-ceo" },
+            { label: "Cufflinks", path: "/holiday-list" },
+            { label: "Jewelry Sets", path: "/about" },
+            { label: "Gold Coin & Bullion", path: "/blogs" },
           ]}
         >
           CATEGORIES
@@ -113,15 +235,15 @@ const Header = () => {
         <DropdownNav
           href="/services"
           menuItems={[
-            { label: "Custom Design", path: "/custom-design" },
-            { label: "Jewelry Repair", path: "/jewelry-repair" },
-            { label: "Engraving Services", path: "/engraving-services" },
-            { label: "Appraisal Services", path: "/appraisal-services" },
+            { label: "Custom Design", path: "/test-list" },
+            { label: "Jewelry Repair", path: "/services" },
+            { label: "Engraving Services", path: "/consultation" },
+            { label: "Appraisal Services", path: "/career-counselling" },
           ]}
         >
           SERVICES
         </DropdownNav>
-        <Link href="/blog" className="hover:text-[#ef001f] font-medium">
+        <Link href="/blogs" className="hover:text-[#ef001f] font-medium">
           BLOG
         </Link>
         <Link href="/contact" className="hover:text-[#ef001f] font-medium">
@@ -157,26 +279,43 @@ const Header = () => {
           >
             HOME
           </Link>
-          <DropdownNav
-            href="/about-us"
-            menuItems={[
-              { label: "Our Stories", path: "/our-stories" },
-              { label: "Our Values", path: "/our-values" },
-              { label: "Sustainability", path: "/sustainability" },
+          <MobileDropdownNav
+            title="About-us"
+            items={[
+              { label: "Our Stories", path: "/message-from-ceo" },
+              { label: "Our Values", path: "/about" },
+              { label: "Sustainability", path: "/our-certificates" },
             ]}
-          >
-            ABOUT US
-          </DropdownNav>
-          <DropdownNav
-            href="/categories"
-            menuItems={[
-              { label: "Necklaces", path: "/necklace" },
-              { label: "Bracelets", path: "/bracelet" },
-              { label: "Rings", path: "/ring" },
+          />
+
+          <MobileDropdownNav
+            title="Categories"
+            items={[
+              { label: "Necklaces", path: "/destination" },
+              { label: "Bracelets", path: "/faqs" },
+              { label: "Rings", path: "/gallery" },
+              { label: "Earrings", path: "/scholarship-list" },
+              { label: "Bangles", path: "/testimonials" },
+              { label: "Pendants", path: "/visa-acceptance" },
+              { label: "Chains", path: "/studentcounselling" },
+              { label: "Anklets", path: "/scholarship-assistance" },
+              { label: "Nose Pins", path: "/message-from-ceo" },
+              { label: "Cufflinks", path: "/holiday-list" },
+              { label: "Jewelry Sets", path: "/about" },
+              { label: "Gold Coin & Bullion", path: "/blogs" },
             ]}
-          >
-            CATEGORIES
-          </DropdownNav>
+          />
+
+          <MobileDropdownNav
+            title="Services"
+            items={[
+              { label: "Custom Design", path: "/test-list" },
+              { label: "Jewelry Repair", path: "/services" },
+              { label: "Engraving Services", path: "/consultation" },
+              { label: "Appraisal Services", path: "/career-counselling" },
+            ]}
+          />
+
           <Link
             href="/blog"
             className="text-gray-700 text-lg font-medium hover:text-[#ef001f]"
