@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  html,
+  body {
+    @apply scroll-smooth;
+    @apply box-border;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  .flex_center {
+    @apply flex justify-center items-center;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+div::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom Swiper Navigation Button Styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ef001f !important; /* Change arrow color */
+  
+  
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
