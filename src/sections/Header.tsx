@@ -284,13 +284,12 @@ const Header = () => {
       </div>
 
       {/* Center logo */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 z-50">
-        <div className="bg-white/40 px-2 pt-32 pb-3 rounded-b-full">
-          <Image
+      <div className="absolute left-1/2 transform top-0 -translate-x-1/2 z-50">
+        <div className="bg-white/40 px-2  md:pt-4 md:pb-3 py-2.5 rounded-b-full">
+          <img
             src="/assets/logo-final.png"
             alt="Logo"
-            width={150}
-            height={150}
+            className="md:h-[150px] md:w-[150px] h-[50px] w-[50px]"
           />
         </div>
       </div>
