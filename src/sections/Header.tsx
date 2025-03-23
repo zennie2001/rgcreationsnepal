@@ -184,7 +184,7 @@ const Header = () => {
 
       {/* Left side navigation links (Hidden on small screens) */}
       <div className="hidden md:flex gap-6 text-gray-600 text-base">
-        <Link href="/about-us" className="font-medium hover:text-[#ef001f]">
+        <Link href="/" className="font-medium hover:text-[#ef001f]">
           HOME
         </Link>
         <DropdownNav
