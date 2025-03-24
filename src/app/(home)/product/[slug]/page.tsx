@@ -2,9 +2,17 @@ import Image from "next/image";
 import { products } from "../../data/product"; // Ensure correct path
 import { notFound } from "next/navigation"; // Use Next.js 404 handling
 import PageHeader from "@/components/PageHeader";
+import { Metadata } from "next";
 
-export default function ProductPage({ params }: { params: { slug: string } }) {
-  const { slug } = params; // Get dynamic slug
+type Props = {
+  params: Promise<{ slug: string }>
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}
+
+export default async function ProductPage({ params, searchParams }: Props) {
+  const resolvedParams = await params;
+  const resolvedSearchParams = await searchParams;
+  const { slug } = resolvedParams ?? {};
 
   const formatTitle = (slug: string) =>
     slug
