@@ -51,14 +51,14 @@ const Products = () => {
                 <p className="text-[16px] md:text-[18px] font-medium">
                   {item.title}
                 </p>
-                <div className="flex items-center justify-between">
+                {/* <div className="flex items-center justify-between">
                   <p className="text-[14px]">{item.listings}</p>
                   <ArrowRight
                     color="#f65128"
                     size={30}
                     className="bg-gray-100 rounded-full p-1 transition-transform duration-300 group-hover:scale-110"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

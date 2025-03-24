@@ -29,7 +29,7 @@ const config: Config = {
         quaternary: '#FFBF1C',
         quinary: '#F6FAFE',
         borderColor:'#E9E9E9',
-        bodyColor:'#F5FBFF',
+        bodyColor:'#FFBF1C',
         text: {
           DEFAULT: "#4B4B4B",
         },
