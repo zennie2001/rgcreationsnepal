@@ -215,11 +215,16 @@ const Header = () => {
           href="/about-us"
           menuItems={[
             {
-              label: "Our Stories",
-              path: "/message-from-ceo",
+              label: "About Us",
+              path: "/about",
             },
-            { label: "Our Values", path: "/about" },
-            { label: "Sustainability", path: "/our-certificates" },
+            { label: "Who We Are", path: "/our-team" },
+            { label: "Director Message", path: "/message-from-ceo" },
+
+            { label: "Craftsmanship", path: "/message-from-ceo" },
+            { label: "Customer Testimonials", path: "/testimonials" },
+            { label: "Our Showrooms", path: "/message-from-ceo" },
+            { label: "FAQs", path: "/faqs" },
           ]}
         >
           ABOUT US
@@ -286,11 +291,13 @@ const Header = () => {
       {/* Center logo */}
       <div className="absolute left-1/2 transform top-0 -translate-x-1/2 z-50">
         <div className="bg-white/40 px-2  md:pt-4 md:pb-3 py-2.5 rounded-b-full">
-          <img
-            src="/assets/logo-final.png"
-            alt="Logo"
-            className="md:h-[150px] md:w-[150px] h-[50px] w-[50px]"
-          />
+          <Link href="/">
+            <img
+              src="/assets/star-laxmi-logo.png"
+              alt="Logo"
+              className="md:h-[150px] md:w-[150px] h-[50px] w-[50px]"
+            />
+          </Link>
         </div>
       </div>
 

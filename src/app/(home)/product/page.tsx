@@ -2,7 +2,7 @@
 import PageHeader from "@/components/PageHeader";
 import { products } from "../data/product";
 import ProductCard from "@/components/ProductCard";
-import { ChevronDown, ChevronRight, LayoutGrid } from "lucide-react";
+import { ChevronDown, ChevronRight, LayoutGrid, List } from "lucide-react";
 import { useState } from "react";
 
 import Link from "next/link";
@@ -61,27 +61,59 @@ const categories = [
   { label: "Gold Coin & Bullion", path: "/blogs" },
 ];
 
-export default function product() {
+export default function Product() {
   const [openCategory, setOpenCategory] = useState<string | null>(null);
+  const [viewMode, setViewMode] = useState("grid");
 
   const toggleSubMenu = (category: string) => {
     setOpenCategory(openCategory === category ? null : category);
   };
+
   return (
-    <main className="w-full ">
+    <main className="w-full">
       <PageHeader link="/product" title="Our Products" />
-      <section className="pt-10 bg-[	#F5F5F5]">
-        <SectionHeader
-          title="Tailored Products To Meet your Custom Needs"
-          smallTitle="Our Products"
-          className="mb-10"
-        />
-        <div className="container w-full flex ">
-          <div className="w-[30%]">
-            <div className="mb-2 bg-white me-4 p-4 rounded-sm shadow-lg md:min-w-80">
-              <div className="flex gap-4">
+
+      <section className="pt-10 bg-[#F5F5F5] px-4 sm:px-6 md:px-10 lg:px-16">
+        {/* Section Header & View Mode Toggle */}
+        <div className="container flex flex-col md:flex-row items-center justify-between md:justify-center md:relative mb-6">
+          <SectionHeader
+            title="Tailored Products To Meet Your Custom Needs"
+            smallTitle="Our Products"
+          />
+          <div className="flex md:absolute md:right-0 gap-4 mt-4 md:mt-0">
+            <button
+              onClick={() => setViewMode("grid")}
+              className={`p-2 rounded-md transition-all ${
+                viewMode === "grid"
+                  ? "bg-[#ef001f] text-white"
+                  : "bg-white text-gray-600"
+              }`}
+            >
+              <LayoutGrid size={24} />
+            </button>
+            <button
+              onClick={() => setViewMode("list")}
+              className={`p-2 rounded-md transition-all ${
+                viewMode === "list"
+                  ? "bg-[#ef001f] text-white"
+                  : "bg-white text-gray-600"
+              }`}
+            >
+              <List size={24} />
+            </button>
+          </div>
+        </div>
+
+        {/* Content Section (Sidebar + Products) */}
+        <div className="container flex flex-col md:flex-row gap-4">
+          {/* Sidebar (Categories) */}
+          <aside className="w-full md:w-1/4">
+            <div className="mb-2 bg-white p-4 rounded-sm shadow-lg">
+              <div className="flex items-center gap-4">
                 <LayoutGrid color="#ef001f" size={35} />
-                <span className="font-semibold text-2xl">Categories</span>
+                <span className="font-semibold text-xl md:text-2xl">
+                  Categories
+                </span>
               </div>
               <hr className="mt-3 mb-1 border-2 border-[#ecc96b]" />
               <ul>
@@ -106,7 +138,7 @@ export default function product() {
                         {item.subMenu.map((sub, subIndex) => (
                           <li
                             key={subIndex}
-                            className="p-1 me-20 text-gray-600 font-semibold hover:text-white hover:bg-[#ef001f] rounded-sm"
+                            className="p-1 text-gray-600 font-semibold hover:text-white hover:bg-[#ef001f] rounded-sm"
                           >
                             <Link href={sub.path}>{sub.label}</Link>
                           </li>
@@ -117,16 +149,26 @@ export default function product() {
                 ))}
               </ul>
             </div>
-          </div>
-          <div className="w-[70%] h-full">
-            <div className="grid lg:grid-cols-3 md:grid-cols-2  mt-[-16px] sm:grid-cols-2 gap-4 h-full overflow-y-auto">
+          </aside>
+
+          {/* Product Display */}
+          <div className="w-full md:w-3/4 mb-10 h-full">
+            <div
+              className={`grid gap-4 ${
+                viewMode === "grid"
+                  ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+                  : "flex flex-col space-y-4"
+              }`}
+            >
               {products.map(({ image, product, price, desc, id }) => (
                 <ProductCard
+                  key={id}
                   image={image.src}
                   product={product}
                   price={price}
                   desc={desc}
                   id={id}
+                  viewMode={viewMode}
                 />
               ))}
             </div>
