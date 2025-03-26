@@ -32,8 +32,8 @@ export default async function ProductPage({ params, searchParams }: Props) {
       <section className="py-10 bg-[#F5F5F5] px-4 sm:px-6 md:px-10 lg:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 container mx-auto">
           {/* Product Image */}
-          <ProductImageSlider 
-            images={product.images} 
+          <ProductImageSlider
+            images={product.images}
             productName={product.product}
           />
 
@@ -52,17 +52,18 @@ export default async function ProductPage({ params, searchParams }: Props) {
             <p className="text-gray-600 mt-4 text-sm md:text-base lg:text-lg">
               {product.desc}
             </p>
-
-            <button className="bg-[#ef001f] text-white py-3 px-6 rounded-lg mt-6 hover:bg-gray-800 transition text-sm sm:text-base md:text-lg">
-              ADD TO CART
-            </button>
-            <button className="bg-gray-200 text-black py-3 px-6 rounded-lg mt-3 hover:bg-gray-300 transition text-sm sm:text-base md:text-lg">
-              BUY NOW
-            </button>
+            <div className="flex justify-start gap-2 md:gap-6">
+              <button className="bg-[#ef001f] hover:bg-[#ef3d3d] text-white py-3 px-4 w-[150px] rounded-lg mt-6 transition text-xs md:text-base">
+                ADD TO CART
+              </button>
+              <button className="bg-gray-200 text-black py-3 px-4 w-[140px] me-12 rounded-lg mt-6 hover:bg-gray-300 transition text-xs md:text-base">
+                BUY NOW
+              </button>
+            </div>
 
             {/* Description & Details (Expandable) */}
             <details className="mt-6 border-t pt-4 cursor-pointer">
-              <summary className="text-lg text-[#ef001f] font-semibold">
+              <summary className="text-base md:text-lg text-[#ef001f] font-semibold">
                 DESCRIPTION
               </summary>
               <p className="text-gray-600 mt-2 text-sm md:text-base">
@@ -71,7 +72,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
             </details>
 
             <details className="mt-4 border-t pt-4 cursor-pointer">
-              <summary className="text-lg text-[#ef001f] font-semibold">
+              <summary className="text-base md:text-lg text-[#ef001f] font-semibold">
                 DETAILS
               </summary>
               <p className="text-gray-600 mt-2 text-sm md:text-base">

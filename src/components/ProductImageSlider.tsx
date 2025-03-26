@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/thumbs";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 interface ProductImage {
   src: string;
@@ -22,6 +22,23 @@ export default function ProductImageSlider({
   productName,
 }: ProductImageSliderProps) {
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
+  const thumbnailSwiperRef = useRef<any>(null);
+
+  const handlePrevClick = () => {
+    if (thumbnailSwiperRef.current) {
+      thumbnailSwiperRef.current.slideToLoop(
+        thumbnailSwiperRef.current.realIndex - 1
+      );
+    }
+  };
+
+  const handleNextClick = () => {
+    if (thumbnailSwiperRef.current) {
+      thumbnailSwiperRef.current.slideToLoop(
+        thumbnailSwiperRef.current.realIndex + 1
+      );
+    }
+  };
 
   return (
     <>
@@ -37,7 +54,7 @@ export default function ProductImageSlider({
           position: absolute;
           bottom: 10px;
           left: 30%;
-          transform: translateX(-5%);
+          transform: translateX(-2%);
           z-index: 10;
         }
         .thumbnail-swiper .swiper-slide-thumb-active img {
@@ -49,76 +66,94 @@ export default function ProductImageSlider({
           max-width: 500px;
           margin: auto;
         }
-        .thumbnail-swiper {
-          width: 80%;
-          height: 70px;
-          max-width: 500px;
-          margin-left: auto;
-          margin-right: auto;
+        .thumbnail-container {
           position: relative;
-        }
-        .thumbnail-swiper .swiper-button-next,
-        .thumbnail-swiper .swiper-button-prev {
-          width: 24px; /* Increased button size */
-          height: 24px;
-          background: rgba(255, 255, 255, 0.8); /* Slight transparency */
-          border-radius: 50%;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-          color: #ef001f;
-          font-size: 16px;
-          z-index: 50; /* Higher z-index to ensure visibility */
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
+          width: 80%;
+          max-width: 400px;
+          margin: auto;
+
           display: flex;
           align-items: center;
           justify-content: center;
         }
-        .thumbnail-swiper .swiper-button-next:after,
-        .thumbnail-swiper .swiper-button-prev:after {
-          font-size: 16px;
+        .thumbnail-swiper {
+          width: 100%;
+          height: 70px;
+        }
+        .thumbnail-prev,
+        .thumbnail-next {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 30px;
+          height: 30px;
+          background: rgba(255, 255, 255, 0.8);
+          border-radius: 50%;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          color: #ef001f;
+          font-size: 18px;
           font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: opacity 0.3s ease-in-out;
+          z-index: 50;
         }
-        .thumbnail-swiper .swiper-button-next {
-          right: 0px;
-          top: 50px; /* Moves button slightly outside the container but still visible */
+        .thumbnail-prev {
+          left: -40px;
         }
-        .thumbnail-swiper .swiper-button-prev {
-          left: 0px;
-          top: 50px;
+        .thumbnail-next {
+          right: -40px;
         }
-        .thumbnail-swiper .swiper-button-disabled {
-          opacity: 0.3;
-          cursor: not-allowed;
+        .thumbnail-prev:hover,
+        .thumbnail-next:hover {
+          background: rgba(255, 255, 255, 1);
         }
         @media (max-width: 640px) {
-          .thumbnail-swiper {
+          .thumbnail-container {
             width: 90%;
             max-width: 350px;
           }
-          .thumbnail-swiper .swiper-button-next {
-            right: -10px;
+          .thumbnail-prev {
+            left: -30px;
           }
-          .thumbnail-swiper .swiper-button-prev {
-            left: -10px;
+          .thumbnail-next {
+            right: -30px;
           }
         }
         @media (max-width: 480px) {
-          .thumbnail-swiper {
+          .thumbnail-container {
             width: 95%;
             max-width: 300px;
           }
-          .thumbnail-swiper .swiper-button-next {
-            right: -5px;
+          .thumbnail-prev {
+            left: -10px;
           }
-          .thumbnail-swiper .swiper-button-prev {
-            left: -5px;
+          .thumbnail-next {
+            right: -10px;
           }
+             .thumbnail-prev,
+  .thumbnail-next {
+    width: 20px; /* Reduce button width */
+    height: 20px; /* Reduce button height */
+    font-size: 12px; /* Reduce arrow size */
+  }
+     .thumbnail-swiper {
+    width: 90%;  /* Reduce overall width */
+    max-width: 280px; /* Make thumbnails narrower */
+  }
+
+  .thumbnail-swiper .swiper-slide {
+    margin-right: 8px; /* Reduce space between images */
+  }
+}
+}
         }
       `}</style>
 
       <div className="flex flex-col gap-4">
+        {/* Main Image Swiper */}
         <Swiper
           modules={[Autoplay, Navigation, Pagination, Thumbs]}
           spaceBetween={0}
@@ -136,50 +171,59 @@ export default function ProductImageSlider({
                 alt={productName}
                 width={400}
                 height={400}
-                className="rounded-lg shadow-lg w-full max-w-[450px] hover:scale-110 transition-all duration-300 h-auto object-cover"
+                className="rounded-lg shadow-lg w-full max-w-[500px] hover:scale-110 transition-all duration-300 h-auto object-cover"
                 priority={index === 0}
               />
             </SwiperSlide>
           ))}
         </Swiper>
 
-        {/* Thumbnails */}
-        <Swiper
-          onSwiper={setThumbsSwiper}
-          modules={[Navigation, Thumbs]}
-          spaceBetween={8}
-          slidesPerView={4}
-          watchSlidesProgress
-          navigation={true}
-          loop={true}
-          className="thumbnail-swiper"
-          breakpoints={{
-            320: {
-              slidesPerView: 3,
-              spaceBetween: 4,
-            },
-            480: {
-              slidesPerView: 4,
-              spaceBetween: 6,
-            },
-            640: {
-              slidesPerView: 4,
-              spaceBetween: 8,
-            },
-          }}
-        >
-          {images.map((image, index) => (
-            <SwiperSlide key={index} className="cursor-pointer">
-              <Image
-                src={image.src}
-                alt={`${productName} thumbnail ${index + 1}`}
-                width={100}
-                height={100}
-                className="rounded-lg w-[85px] h-[65px] object-cover"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        {/* Thumbnails Swiper with Navigation Buttons */}
+        <div className="thumbnail-container">
+          <button onClick={handlePrevClick} className="thumbnail-prev">
+            ❮
+          </button>
+
+          <Swiper
+            onSwiper={setThumbsSwiper}
+            onInit={(swiper) => (thumbnailSwiperRef.current = swiper)}
+            modules={[Navigation, Thumbs]}
+            spaceBetween={8}
+            slidesPerView={4}
+            loop={true} // ✅ Enables infinite loop
+            className="thumbnail-swiper"
+            breakpoints={{
+              320: {
+                slidesPerView: 3,
+                spaceBetween: 4,
+              },
+              480: {
+                slidesPerView: 4,
+                spaceBetween: 6,
+              },
+              640: {
+                slidesPerView: 4,
+                spaceBetween: 8,
+              },
+            }}
+          >
+            {images.map((image, index) => (
+              <SwiperSlide key={index} className="cursor-pointer">
+                <Image
+                  src={image.src}
+                  alt={`${productName} thumbnail ${index + 1}`}
+                  width={100}
+                  height={100}
+                  className="rounded-lg w-[85px] h-[65px] object-cover"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          <button onClick={handleNextClick} className="thumbnail-next">
+            ❯
+          </button>
+        </div>
       </div>
     </>
   );
