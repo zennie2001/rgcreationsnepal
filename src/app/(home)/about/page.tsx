@@ -36,9 +36,9 @@ export default function AboutPage() {
   const [showMessage, setShowMessage] = useState<boolean>(false);
 
   return (
-    <main className="w-full overflow-hidden">
+    <main className="w-full  overflow-hidden">
       <PageHeader title="About Us" link="/about" />
-      <section className="flex_center flex-col w-full lg:px-24 px-4 lg:py-16 py-7 gap-16">
+      <section className="flex_center container mx-auto flex-col w-full  lg:py-16 py-7 gap-16">
         <div className="flex lg:flex-row flex-col items-center lg:gap-16 gap-6 w-full">
           <div className="flex flex-col lg:w-1/2 w-full gap-12">
             <div className="flex flex-col gap-4">
@@ -96,17 +96,17 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <div className="image flex_center h-[80vh] w-full relative">
+      <div className="image container flex_center h-[80vh] w-full relative">
         <Image
           src={aboutSecondImage}
           alt="image"
           className="size-full object-cover"
         />
-        <div className="absolute bottom-0 lg:flex_center hidden w-full px-24 ">
+        <div className="absolute bottom-0 lg:flex_center hidden w-full  ">
           <div className="flex w-full h-16 bg-primary"></div>
         </div>
       </div>
-      <section className="w-full flex_center lg:px-24 px-4">
+      <section className="w-full flex_center container">
         <div className="flex_center flex-col lg:gap-16 gap-7 pb-16 w-full">
           <div className="flex flex-col w-full lg:px-12 px-0 gap-4 lg:pt-0 pt-10">
             <h2 className="text-[40px] font-semibold text-secondary">
@@ -166,7 +166,7 @@ export default function AboutPage() {
       </section>
       <section className="w-full flex_center flex-col lg:gap-12 gap-6 lg:px-24 px-4 lg:py-16 py-10 bg-[#F5FBFF]">
         <SectionHeader smallTitle="History" title="Over the Years" />
-        <div className="flex_center w-full relative">
+        <div className="flex_center w-full container relative">
           <div className="absolute flex h-0.5 w-full bg-secondary"></div>
           <button className="absolute flex_center lg:size-10 size-7 p-2 -top5 left-0 bg-secondary text-primary rounded-md z-10">
             <IoIosArrowBack />
@@ -190,7 +190,7 @@ export default function AboutPage() {
             <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-6 lg:block hidden"></div>
           </div>
         </div>
-        <div className="flex_center flex-col lg:w-[60%] w-full gap-6">
+        <div className="flex_center flex-col container  w-full gap-6">
           <p className="w-full flex_center text-center text-text">
             With introduction of TIER-4 pointbased system by UKBA, this year was
             significant for REACTION Nepal to make successful placement to over
@@ -213,7 +213,7 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
-      <section className="w-full flex_center flex-col lg:px-24 px-5 py-16 gap-12 relative">
+      <section className="w-full flex_center flex-col container py-16 gap-12 relative">
         <SectionHeader smallTitle="Team Members" title="Meet Our Team" />
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 relative">
           <div className="profilecard flex_center relative col-span-1 rounded-md overflow-hidden">

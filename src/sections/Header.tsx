@@ -197,7 +197,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full flex justify-between items-center p-6 px-8 md:px-32 z-20 absolute top-0 bg-white/40">
+    <nav className="w-full p-6 px-8 md:px-32 z-20 absolute top-0 bg-white/40">
       {/* Mobile Menu Button */}
       <button
         className="md:hidden text-gray-700 ml-auto"
@@ -205,121 +205,124 @@ const Header = () => {
       >
         <Menu size={28} />
       </button>
+      <div className="flex justify-between container mx-auto">
+        {/* Left side navigation links (Hidden on small screens) */}
+        <div className="hidden md:flex gap-6 text-gray-600 text-base">
+          <Link href="/" className="font-medium hover:text-[#ef001f]">
+            HOME
+          </Link>
+          <DropdownNav
+            href="/about-us"
+            menuItems={[
+              {
+                label: "About Us",
+                path: "/about",
+              },
+              { label: "Who We Are", path: "/our-team" },
+              { label: "Director Message", path: "/message-from-ceo" },
 
-      {/* Left side navigation links (Hidden on small screens) */}
-      <div className="hidden md:flex gap-6 text-gray-600 text-base">
-        <Link href="/" className="font-medium hover:text-[#ef001f]">
-          HOME
-        </Link>
-        <DropdownNav
-          href="/about-us"
-          menuItems={[
-            {
-              label: "About Us",
-              path: "/about",
-            },
-            { label: "Who We Are", path: "/our-team" },
-            { label: "Director Message", path: "/message-from-ceo" },
+              { label: "Craftsmanship", path: "/message-from-ceo" },
+              { label: "Customer Testimonials", path: "/testimonials" },
+              { label: "Our Showrooms", path: "/message-from-ceo" },
+              { label: "FAQs", path: "/faqs" },
+            ]}
+          >
+            ABOUT US
+          </DropdownNav>
 
-            { label: "Craftsmanship", path: "/message-from-ceo" },
-            { label: "Customer Testimonials", path: "/testimonials" },
-            { label: "Our Showrooms", path: "/message-from-ceo" },
-            { label: "FAQs", path: "/faqs" },
-          ]}
-        >
-          ABOUT US
-        </DropdownNav>
+          <DropdownNav
+            href="/categories"
+            menuItems={[
+              {
+                label: "Necklaces",
+                path: "/product",
+                subMenu: [
+                  { label: "Gold Necklace", path: "/product" },
+                  { label: "Silver Necklace", path: "/product" },
+                ],
+              },
+              {
+                label: "Bracelets",
+                path: "/product",
+                subMenu: [
+                  { label: "Gold", path: "/product" },
+                  { label: "Silver", path: "/product" },
+                  { label: "Diamond", path: "/product" },
+                  { label: "Platinum", path: "/product" },
+                  { label: "Gemstone", path: "/product" },
+                ],
+              },
+              {
+                label: "Rings",
+                path: "/product",
+                subMenu: [
+                  { label: "Gold", path: "/product" },
+                  { label: "Silver", path: "/product" },
+                  { label: "Diamond", path: "/product" },
+                  { label: "Platinum", path: "/product" },
+                  { label: "Gemstone", path: "/product" },
+                ],
+              },
+              {
+                label: "Earrings",
+                path: "/product",
+                subMenu: [
+                  { label: "Gold", path: "/product" },
+                  { label: "Silver", path: "/product" },
+                  { label: "Diamond", path: "/product" },
+                  { label: "Platinum", path: "/product" },
+                  { label: "Gemstone", path: "/product" },
+                ],
+              },
+              { label: "Bangles", path: "/product" },
+              { label: "Pendants", path: "/product" },
+              { label: "Chains", path: "/product" },
+              { label: "Anklets", path: "/product" },
+              { label: "Nose Pins", path: "/product" },
+              { label: "Cufflinks", path: "/product" },
+              { label: "Jewelry Sets", path: "/product" },
+              { label: "Gold Coin & Bullion", path: "/product" },
+            ]}
+          >
+            CATEGORIES
+          </DropdownNav>
+        </div>
 
-        <DropdownNav
-          href="/categories"
-          menuItems={[
-            {
-              label: "Necklaces",
-              path: "/destination",
-              subMenu: [
-                { label: "Gold Necklace", path: "/product" },
-                { label: "Silver Necklace", path: "/product" },
-              ],
-            },
-            {
-              label: "Bracelets",
-              path: "/faqs",
-              subMenu: [
-                { label: "Gold", path: "/product" },
-                { label: "Silver", path: "/product" },
-                { label: "Diamond", path: "/product" },
-                { label: "Platinum", path: "/product" },
-                { label: "Gemstone", path: "/product" },
-              ],
-            },
-            {
-              label: "Rings",
-              path: "/gallery",
-              subMenu: [
-                { label: "Gold", path: "/product" },
-                { label: "Silver", path: "/product" },
-                { label: "Diamond", path: "/product" },
-                { label: "Platinum", path: "/product" },
-                { label: "Gemstone", path: "/product" },
-              ],
-            },
-            {
-              label: "Earrings",
-              path: "/scholarship-list",
-              subMenu: [
-                { label: "Gold", path: "/product" },
-                { label: "Silver", path: "/product" },
-                { label: "Diamond", path: "/product" },
-                { label: "Platinum", path: "/product" },
-                { label: "Gemstone", path: "/product" },
-              ],
-            },
-            { label: "Bangles", path: "/product" },
-            { label: "Pendants", path: "/product" },
-            { label: "Chains", path: "/product" },
-            { label: "Anklets", path: "/product" },
-            { label: "Nose Pins", path: "/product" },
-            { label: "Cufflinks", path: "/product" },
-            { label: "Jewelry Sets", path: "/product" },
-            { label: "Gold Coin & Bullion", path: "/product" },
-          ]}
-        >
-          CATEGORIES
-        </DropdownNav>
-      </div>
+        {/* Center logo */}
+        <div className="mt-0">
+          <div className="absolute left-1/2 transform top-0 -translate-x-1/2 z-50">
+            <div className="bg-white/40 px-2  md:pt-4 md:pb-3 py-2.5 rounded-b-full">
+              <Link href="/">
+                <img
+                  src="/assets/star-laxmi-logo.png"
+                  alt="Logo"
+                  className="md:h-[150px] md:w-[150px] h-[50px] w-[50px]"
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
 
-      {/* Center logo */}
-      <div className="absolute left-1/2 transform top-0 -translate-x-1/2 z-50">
-        <div className="bg-white/40 px-2  md:pt-4 md:pb-3 py-2.5 rounded-b-full">
-          <Link href="/">
-            <img
-              src="/assets/star-laxmi-logo.png"
-              alt="Logo"
-              className="md:h-[150px] md:w-[150px] h-[50px] w-[50px]"
-            />
+        {/* Right side navigation links (Hidden on small screens) */}
+        <div className="hidden md:flex gap-6 text-gray-700 text-base">
+          <DropdownNav
+            href="/services"
+            menuItems={[
+              { label: "Custom Design", path: "/test-list" },
+              { label: "Jewelry Repair", path: "/services" },
+              { label: "Engraving Services", path: "/consultation" },
+              { label: "Appraisal Services", path: "/career-counselling" },
+            ]}
+          >
+            SERVICES
+          </DropdownNav>
+          <Link href="/blogs" className="hover:text-[#ef001f] font-medium">
+            BLOG
+          </Link>
+          <Link href="/contact" className="hover:text-[#ef001f] font-medium">
+            CONTACT US
           </Link>
         </div>
-      </div>
-
-      {/* Right side navigation links (Hidden on small screens) */}
-      <div className="hidden md:flex gap-6 text-gray-700 text-base">
-        <DropdownNav
-          href="/services"
-          menuItems={[
-            { label: "Custom Design", path: "/test-list" },
-            { label: "Jewelry Repair", path: "/services" },
-            { label: "Engraving Services", path: "/consultation" },
-            { label: "Appraisal Services", path: "/career-counselling" },
-          ]}
-        >
-          SERVICES
-        </DropdownNav>
-        <Link href="/blogs" className="hover:text-[#ef001f] font-medium">
-          BLOG
-        </Link>
-        <Link href="/contact" className="hover:text-[#ef001f] font-medium">
-          CONTACT US
-        </Link>
       </div>
 
       {/* Mobile Menu Overlay */}
