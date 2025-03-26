@@ -64,7 +64,7 @@ export default function Blogs() {
   return (
     <main className="w-full overflow-hidden">
       <PageHeader link="/blogs" title="Blogs" />
-      <section className="flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12">
+      <section className="flex_center flex-col container lg:py-16 py-10 gap-12">
         <SectionHeader
           smallTitle="Blogs & Articles"
           title="Stay up to date on our blogs"

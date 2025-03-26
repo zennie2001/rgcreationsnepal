@@ -35,7 +35,7 @@ const blogs = [
 
 export default function Blogs() {
   return (
-    <section className="container w-full flex_center flex-col lg:py-20 font-jakarta py-10 lg:gap-12 gap-6">
+    <section className="container w-[90%] md:w-full flex_center flex-col lg:py-20 font-jakarta py-10 lg:gap-12 gap-6">
       <SectionHeader
         smallTitle="Blogs & Articles"
         title="Stay up to date on our blogs"

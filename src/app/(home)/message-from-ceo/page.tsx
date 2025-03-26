@@ -9,7 +9,7 @@ export default function MessageFromCeo() {
   return (
     <main>
       <PageHeader link="/Message From CEO" title="Message From CEO" />
-      <section className="w-full flex  flex-col lg:pl-10 pl-0 lg:px-0 px-4  gap-12">
+      <section className="w-full flex  flex-col container  gap-12">
         <div className="flex lg:flex-row flex-col gap-5 items-center  px-2 py-5">
           <h1 className="font-semibold text-3xl text-secondary lg:hidden inline">
             Message From CEO

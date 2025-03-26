@@ -93,7 +93,7 @@ export default function FAQs() {
   return (
     <main className="w-full overflow-hidden">
       <PageHeader title="FAQs" link="/faq" />
-      <section className="w-full lg:px-24 px-4 lg:py-16 py-10 flex lg:flex-row flex-col gap-8">
+      <section className="w-full container lg:py-16 py-10 flex lg:flex-row flex-col gap-8">
         <div className="flex lg:flex-col flex-row overflow-x-auto gap-4 lg:w-[20%] w-full">
           {[
             { id: "general-questions", label: "General Questions" },

@@ -79,7 +79,7 @@ export default function ContactUs() {
   return (
     <main className="w-full overflow-hidden">
       <PageHeader title="Contact Us" link="/contact" />
-      <div className="w-full grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 lg:px-24 px-4 lg:py-16 py-10 gap-8">
+      <div className="w-full grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 container lg:py-16 py-10 gap-8">
         {contactInfos.map((info, index) => {
           return (
             <div
@@ -134,7 +134,7 @@ export default function ContactUs() {
           allowFullScreen
         ></iframe>
       </div>
-      <div className="w-full flex lg:px-24 px-4 lg:py-16 py-10 gap-8">
+      <div className="w-full flex container lg:py-16 py-10 gap-8">
         <div className="flex flex-wrap w-full gap-8">
           {branches.map((branch, index) => {
             return (

@@ -124,7 +124,7 @@ export default function CareerCounselling() {
   return (
     <main className="w-full overflow-hidden">
       <PageHeader link="/career-counselling" title="Career Counselling" />
-      <section className="w-full flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12">
+      <section className="w-full flex_center flex-col container lg:py-16 py-10 gap-12">
         <div className="flex_center lg:flex-row flex-col gap-8 w-full">
           <div className="lg:w-[45%] w-full flex flex-col gap-4">
             <SectionHeader
@@ -158,7 +158,7 @@ export default function CareerCounselling() {
           </div>
         </div>
       </section>
-      <section className="w-full flex_center flex-col lg:px-24 px-4  lg:py-16 py-10 gap-12 bg-[#F5FBFF]">
+      <section className="w-full flex_center flex-col container  lg:py-16 py-10 gap-12 bg-[#F5FBFF]">
         <SectionHeader
           smallTitle="Why Counselling"
           title="Benefits of Personalized Guidance"
@@ -183,7 +183,7 @@ export default function CareerCounselling() {
           })}
         </div>
       </section>
-      <section className="w-full flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12">
+      <section className="w-full flex_center flex-col container lg:py-16 py-10 gap-12">
         <SectionHeader
           smallTitle="Process"
           title="Steps in the Counseling Process"
@@ -252,7 +252,7 @@ export default function CareerCounselling() {
           </div>
         </div>
       </section>
-      <section className="w-full flex_center flex-col px-24 py-16 gap-12 bg-[#F5FBFF]">
+      <section className="w-full flex_center flex-col container py-16 gap-12 bg-[#F5FBFF]">
         <SectionHeader smallTitle="Features" title="Counselling Features" />
         <div className="grid grid-cols-3 w-full gap-8">
           {features.map((feature, index) => {
@@ -279,9 +279,9 @@ export default function CareerCounselling() {
       {/* <Contact
                 className="pb-16"
             /> */}
-      <section className="w-full flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12">
+      <section className="w-full flex_center flex-col container lg:py-16 py-10 gap-12">
         <SectionHeader smallTitle="FAQs" title="We answer your every queries" />
-        <div className="flex_center lg:w-[70%] w-full">
+        <div className="flex_center w-full">
           <div className="flex flex-col w-full gap-6">
             {faqs.map((faq, index) => {
               return (

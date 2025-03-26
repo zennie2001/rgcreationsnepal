@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
         {/* Footer Sections */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+        <div className="grid grid-cols-2 lg:grid-cols-5 mt-10 ">
           <div>
             <h2 className="text-lg font-semibold text-gray-700">Company</h2>
             <ul className="space-y-2 text-gray-600">
@@ -67,7 +67,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="md:-ml-10">
             <h2 className="text-lg font-semibold text-gray-700">Categories</h2>
             <ul className="space-y-2 text-gray-600">
               {firstHalf.map((item, index) => (
@@ -78,7 +78,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="md:-ml-20">
             <h2 className="text-lg font-semibold text-gray-700 invisible">
               Categories
             </h2>
@@ -91,7 +91,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="md:-ml-28">
             <h2 className="text-lg font-semibold text-gray-700">Services</h2>
             <ul className="space-y-2 text-gray-600">
               {services.map((item, index) => (
@@ -101,32 +101,39 @@ const Footer = () => {
               ))}
             </ul>
           </div>
-        </div>
+          {/* Contact Information */}
+          <div className="md:-ml-32">
+            <h2 className="text-lg font-semibold text-gray-700">Contact Us</h2>
+            <ul className="space-y-2 text-gray-600 w-full">
+              <li className="flex items-center gap-2">
+                <MapPin className="flex-shrink-0" />
+                <span>
+                  Al Souq Al Kabeer Tailor Galli, Esag Building (Old Plot), Shop
+                  No. 07 Burdubai, Dubai, UAE (Near Astoria Hotel)
+                </span>
+              </li>
 
-        {/* Contact Information */}
-        <div className="mt-10">
-          <h2 className="text-lg font-semibold text-gray-700">Contact Us</h2>
-          <ul className="space-y-2 text-gray-600">
-            <li className="flex items-center gap-2">
-              <MapPin /> 95 Victoria Road, Aldershot, United Kingdom
-            </li>
-            <li>
-              <Link
-                href="mailto:info@starlaxmijewellery.com"
-                className="flex items-center gap-2"
-              >
-                <Mail /> info@starlaxmijewellery.com
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="http://www.starlaxmijewellery.com"
-                className="flex items-center gap-2"
-              >
-                <Globe /> www.starlaxmijewellery.com
-              </Link>
-            </li>
-          </ul>
+              <li className="w-full">
+                <Link
+                  href="mailto:info@starlaxmijewellery.com"
+                  className="flex items-center gap-2 w-full"
+                >
+                  <Mail className="flex-shrink-0" />
+                  <span className="flex-1">info@starlaxmijewellery.com</span>
+                </Link>
+              </li>
+
+              <li className="w-full">
+                <Link
+                  href="http://www.starlaxmijewellery.com"
+                  className="flex items-center gap-2 w-full"
+                >
+                  <Globe className="flex-shrink-0" />
+                  <span className="flex-1">www.starlaxmijewellery.com</span>
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
