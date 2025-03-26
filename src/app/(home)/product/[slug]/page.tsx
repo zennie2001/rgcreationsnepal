@@ -1,13 +1,12 @@
-import Image from "next/image";
-import { products } from "../../data/product"; // Ensure correct path
-import { notFound } from "next/navigation"; // Use Next.js 404 handling
+import { products } from "../../data/product";
+import { notFound } from "next/navigation";
 import PageHeader from "@/components/PageHeader";
-import { Metadata } from "next";
+import ProductImageSlider from "@/components/ProductImageSlider";
 
 type Props = {
-  params: Promise<{ slug: string }>
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
-}
+  params: Promise<{ slug: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+};
 
 export default async function ProductPage({ params, searchParams }: Props) {
   const resolvedParams = await params;
@@ -25,7 +24,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
   // Find the matching product
   const product = products.find((p) => formatSlug(p.product) === slug);
 
-  if (!product) return notFound(); // Automatically handles 404
+  if (!product) return notFound();
 
   return (
     <main className="w-full">
@@ -33,25 +32,20 @@ export default async function ProductPage({ params, searchParams }: Props) {
       <section className="py-10 bg-[#F5F5F5] px-4 sm:px-6 md:px-10 lg:px-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 container mx-auto">
           {/* Product Image */}
-          <div className="flex justify-center">
-            <Image
-              src={product.image}
-              alt={product.product}
-              width={400}
-              height={400}
-              className="rounded-lg shadow-lg max-w-full h-auto object-cover"
-            />
-          </div>
+          <ProductImageSlider 
+            images={product.images} 
+            productName={product.product}
+          />
 
           {/* Product Details */}
           <div className="flex flex-col">
             <h2 className="text-gray-500 uppercase tracking-wide text-sm md:text-base lg:text-lg">
               18K Gold Plated
             </h2>
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold">
+            <h1 className="text-2xl sm:text-3xl text-[#ef001f] lg:text-4xl font-bold">
               {product.product}
             </h1>
-            <p className="text-lg md:text-xl font-semibold mt-2">
+            <p className="text-lg md:text-xl text-gray-500 font-semibold mt-2">
               Rs. {product.price}.00
             </p>
 
@@ -59,7 +53,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
               {product.desc}
             </p>
 
-            <button className="bg-black text-white py-3 px-6 rounded-lg mt-6 hover:bg-gray-800 transition text-sm sm:text-base md:text-lg">
+            <button className="bg-[#ef001f] text-white py-3 px-6 rounded-lg mt-6 hover:bg-gray-800 transition text-sm sm:text-base md:text-lg">
               ADD TO CART
             </button>
             <button className="bg-gray-200 text-black py-3 px-6 rounded-lg mt-3 hover:bg-gray-300 transition text-sm sm:text-base md:text-lg">
@@ -68,14 +62,18 @@ export default async function ProductPage({ params, searchParams }: Props) {
 
             {/* Description & Details (Expandable) */}
             <details className="mt-6 border-t pt-4 cursor-pointer">
-              <summary className="text-lg font-semibold">DESCRIPTION</summary>
+              <summary className="text-lg text-[#ef001f] font-semibold">
+                DESCRIPTION
+              </summary>
               <p className="text-gray-600 mt-2 text-sm md:text-base">
                 {product.desc}
               </p>
             </details>
 
             <details className="mt-4 border-t pt-4 cursor-pointer">
-              <summary className="text-lg font-semibold">DETAILS</summary>
+              <summary className="text-lg text-[#ef001f] font-semibold">
+                DETAILS
+              </summary>
               <p className="text-gray-600 mt-2 text-sm md:text-base">
                 Material: 18K Gold Plated | Weight: 5g
               </p>
