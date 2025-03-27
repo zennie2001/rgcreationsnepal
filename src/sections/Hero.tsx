@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 const slides = [
   { id: 1, image: "/main-banner.jpg" },
-  { id: 2, image: "/new-banner.jpg" },
+  { id: 2, image: "/new-banner3.jpg" },
   { id: 3, image: "/new-banner2.jpg" },
 ];
 
