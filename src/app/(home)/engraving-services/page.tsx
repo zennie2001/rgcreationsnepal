@@ -1,16 +1,13 @@
 import PageHeader from "@/components/PageHeader";
 
-export default function CustomDesign() {
+export default function EngravingServices() {
   return (
     <main className="w-full overflow-hidden">
-      <PageHeader
-        link="/custom-design"
-        title="Custom Design Jewellery Services"
-      />
+      <PageHeader link="/engraving-services" title="Engraving Services" />
       <section className="flex_center flex-col lg:py-16 py-10 lg:gap-12 gap-6 lg:px-0 px-4">
         <div className="flex_center flex-col gap-8 lg:w-[55%] w-full">
           <h3 className="text-[32px] font-semibold text-secondary">
-            Custom Design Jewellry Services
+            Engraving Services
           </h3>
           <div className="flex flex-col w-full gap-8">
             <div className="flex flex-col gap-8">
