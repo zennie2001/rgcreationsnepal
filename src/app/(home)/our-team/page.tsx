@@ -1,7 +1,7 @@
 "use client";
 import PageHeader from "@/components/PageHeader";
 import SectionHeader from "@/components/SectionHeader";
-import placeholderImage from "@/assets/images/team.jpeg";
+import placeholderImage from "@/assets/images/our-team.jpg";
 import Image from "next/image";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 

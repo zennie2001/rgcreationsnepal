@@ -5,8 +5,8 @@ export default function SectionHeader({
   smallTitle,
   className,
 }: {
-  title: string;
-  smallTitle: string;
+  title?: string;
+  smallTitle?: string;
   className?: string;
 }) {
   return (

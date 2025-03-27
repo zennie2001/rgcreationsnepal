@@ -157,7 +157,7 @@ export default function Product() {
               className={`grid gap-4 ${
                 viewMode === "grid"
                   ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-                  : "flex flex-col space-y-4"
+                  : "flex flex-col space-y-1"
               }`}
             >
               {products.map(({ image, product, price, desc, id }) => (

@@ -33,58 +33,24 @@ const faqs = [
 const blogs = [
   {
     image: blogImage,
-    date: "November 7, 2024",
-    title: `USA's Best Universities, Prices, and Scholarships for Students`,
-    miniDescription: `Watch your career soar by studying in USA, the happiest nation on earth! USA’s educational system is well praised for its excellence and .....`,
+    name: "Anjali K.",
+    miniDescription: `I had the most amazing experience shopping at Start Laxmi Jewellery! The designs are unique, and the quality of the pieces is unmatched. I bought a custom-made necklace for my wedding, and it turned out even more beautiful than I imagined. The staff was incredibly helpful and made sure every detail was perfect.`,
   },
   {
     image: blogImage,
-    date: "November 2, 2024",
-    title: `Germany's Best Universities, Prices, and Scholarships for Students`,
-    miniDescription: `Watch your career soar by studying in USA, the happiest nation on earth! USA’s educational system is well praised for its excellence and .....`,
+    name: "Ravi S.",
+    miniDescription: `Start Laxmi Jewellery is my go-to place for all things elegant and timeless. From exquisite traditional pieces to trendy modern designs, their collection is perfect for any occasion. I recently purchased a pair of earrings, and I’ve received so many compliments! Highly recommend!`,
   },
   {
     image: blogImage,
-    date: "October 24, 2024",
-    title: `Everything You Should Know About Student Scholarships for Studying in Europe`,
-    miniDescription: `Watch your career soar by studying in USA, the happiest nation on earth! USA’s educational system is well praised for its excellence and .....`,
+    name: "Maya L.",
+    miniDescription: `I’ve been a loyal customer of Start Laxmi Jewellery for years, and they never disappoint. The quality of their gold and diamond jewellery is exceptional, and the customer service is top-notch. Whether it's a gift for someone special or an addition to my own collection, I know I’m getting the best!`,
   },
   {
     image: blogImage,
-    date: "November 7, 2024",
-    title: `USA's Best Universities, Prices, and Scholarships for Students`,
-    miniDescription: `Watch your career soar by studying in USA, the happiest nation on earth! USA’s educational system is well praised for its excellence and .....`,
+    name: "Sandeep P.",
+    miniDescription: `Shopping at Start Laxmi Jewellery is always a great experience. The staff takes the time to understand your preferences and helps you choose the perfect piece. I bought a wedding ring here, and it was everything I had hoped for—timeless, elegant, and beautifully crafted.`,
   },
-  // {
-  //     image: blogImage,
-  //     date: 'November 2, 2024',
-  //     title: `Germany's Best Universities, Prices, and Scholarships for Students`,
-  //     miniDescription: `Watch your career soar by studying in USA, the happiest nation on earth! USA’s educational system is well praised for its excellence and .....`
-  // },
-  // {
-  //     image: blogImage,
-  //     date: 'October 24, 2024',
-  //     title: `Everything You Should Know About Student Scholarships for Studying in Europe`,
-  //     miniDescription: `Watch your career soar by studying in USA, the happiest nation on earth! USA’s educational system is well praised for its excellence and .....`
-  // },
-  // {
-  //     image: blogImage,
-  //     date: 'November 7, 2024',
-  //     title: `USA's Best Universities, Prices, and Scholarships for Students`,
-  //     miniDescription: `Watch your career soar by studying in USA, the happiest nation on earth! USA’s educational system is well praised for its excellence and .....`
-  // },
-  // {
-  //     image: blogImage,
-  //     date: 'November 2, 2024',
-  //     title: `Germany's Best Universities, Prices, and Scholarships for Students`,
-  //     miniDescription: `Watch your career soar by studying in USA, the happiest nation on earth! USA’s educational system is well praised for its excellence and .....`
-  // },
-  // {
-  //     image: blogImage,
-  //     date: 'October 24, 2024',
-  //     title: `Everything You Should Know About Student Scholarships for Studying in Europe`,
-  //     miniDescription: `Watch your career soar by studying in USA, the happiest nation on earth! USA’s educational system is well praised for its excellence and .....`
-  // },
 ];
 
 export default function Testimonials() {
@@ -102,10 +68,10 @@ export default function Testimonials() {
         />
         <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 w-full gap-8 gap-y-8">
           {blogs.map((blog, index) => {
-            return <TestimonialCard key={index} />;
+            return <TestimonialCard object={blog} key={index} />;
           })}
         </div>
-        <div className="flex items-center gap-2">
+        {/* <div className="flex items-center gap-2">
           <button className="border border-text/30 flex_center p-2 rounded-md text-sm size-10">
             <IoIosArrowBack />
           </button>
@@ -122,7 +88,7 @@ export default function Testimonials() {
           <button className="border border-text/30 flex_center p-2 rounded-md text-sm size-10">
             <IoIosArrowForward />
           </button>
-        </div>
+        </div> */}
       </section>
       <section className="mt-10 bg-bodyColor  lg:py-16 py-10">
         <SectionHeader

@@ -37,13 +37,13 @@ const ProductCard = ({ product, image, price, desc, id, viewMode }: any) => {
       </div>
     </div>
   ) : (
-    <div className="flex bg-white p-4 rounded-lg shadow-md group items-center gap-10">
+    <div className="flex bg-white p-1 rounded-lg shadow-md group items-center gap-10 overflow-hidden">
       <Image
         src={image}
         alt={product}
         width={200}
         height={200}
-        className="w-40 h-40 object-cover group-hover:scale-105 rounded-lg"
+        className="w-40 h-32 lg:w-80 lg:h-72 object-cover group-hover:scale-105 rounded-lg"
       />
       <div className="flex-1">
         <h3 className="text-xl font-semibold">{product}</h3>
