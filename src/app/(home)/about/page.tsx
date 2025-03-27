@@ -149,13 +149,12 @@ export default function AboutPage() {
       </section>
       <section className="w-full flex_center lg:gap-12 gap-6 lg:px-24 px-4 lg:py-16 py-10 bg-[#F5FBFF]">
         <div className="flex container flex-col w-full gap-6">
-          <SectionHeader title="History" />
-          <p className="w-full flex_center text-center text-text">
+          <h3 className="text-[32px] font-semibold text-center text-secondary">
             At Star Laxmi Jewellery LLC, we pride ourselves on being more than
-            just a supplier – we are trusted experts in the gold industry, with
+            just a supplier We are trusted experts in the gold industry, with
             over 15 years of experience in delivering exceptional quality and
             service.
-          </p>
+          </h3>
         </div>
       </section>
 
@@ -174,7 +173,7 @@ export default function AboutPage() {
               why you should choose us:
             </p>
             <ul className="list-disc">
-              <li className="mb-2 text-gray-700">
+              <li className="mb-2 text-black">
                 <span className="text-black">
                   Trusted Experts in the Gold Industry:
                 </span>{" "}
@@ -183,7 +182,7 @@ export default function AboutPage() {
                 understanding of the gold market ensures that we provide only
                 the best products to our clients.
               </li>
-              <li className="mb-2 text-gray-700">
+              <li className="mb-2 text-black">
                 <span className="text-black">
                   100% Certified and Hallmarked Jewellery:
                 </span>{" "}
@@ -192,7 +191,7 @@ export default function AboutPage() {
                 is genuine, pure, and of the finest quality, giving you complete
                 peace of mind.
               </li>
-              <li className="mb-2 text-gray-700">
+              <li className="mb-2 text-black">
                 <span className="text-black">
                   Competitive Wholesale and Retail Prices:
                 </span>{" "}
@@ -202,7 +201,7 @@ export default function AboutPage() {
                 from trusted mine companies, we eliminate intermediaries,
                 passing on the savings to you.
               </li>
-              <li className="mb-2 text-gray-700">
+              <li className="mb-2 text-black">
                 <span className="text-black">
                   Customized Jewellery Crafting Services:
                 </span>{" "}
@@ -214,7 +213,7 @@ export default function AboutPage() {
                 collection, we bring your vision to life with unparalleled
                 craftsmanship.
               </li>
-              <li className="mb-2 text-gray-700">
+              <li className="mb-2 text-black">
                 <span className="text-black">
                   Secure and Insured Transactions:
                 </span>{" "}

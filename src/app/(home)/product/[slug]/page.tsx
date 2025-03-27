@@ -39,17 +39,17 @@ export default async function ProductPage({ params, searchParams }: Props) {
 
           {/* Product Details */}
           <div className="flex flex-col">
-            <h2 className="text-gray-500 uppercase tracking-wide text-sm md:text-base lg:text-lg">
+            <h2 className="text-black uppercase tracking-wide text-sm md:text-base lg:text-lg">
               18K Gold Plated
             </h2>
             <h1 className="text-2xl sm:text-3xl text-[#ef001f] lg:text-4xl font-bold">
               {product.product}
             </h1>
-            <p className="text-lg md:text-xl text-gray-500 font-semibold mt-2">
+            <p className="text-lg md:text-xl text-black font-semibold mt-2">
               Rs. {product.price}.00
             </p>
 
-            <p className="text-gray-600 mt-4 text-sm md:text-base lg:text-lg">
+            <p className="text-black mt-4 text-sm md:text-base lg:text-lg">
               {product.desc}
             </p>
             <div className="flex justify-start gap-2 md:gap-6">
@@ -66,7 +66,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
               <summary className="text-base md:text-lg text-[#ef001f] font-semibold">
                 DESCRIPTION
               </summary>
-              <p className="text-gray-600 mt-2 text-sm md:text-base">
+              <p className="text-black mt-2 text-sm md:text-base">
                 {product.desc}
               </p>
             </details>
@@ -75,7 +75,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
               <summary className="text-base md:text-lg text-[#ef001f] font-semibold">
                 DETAILS
               </summary>
-              <p className="text-gray-600 mt-2 text-sm md:text-base">
+              <p className="text-black mt-2 text-sm md:text-base">
                 Material: 18K Gold Plated | Weight: 5g
               </p>
             </details>

@@ -117,7 +117,7 @@ export const MobileDropdownNav = ({
             <Link
               key={index}
               href={item.path}
-              className="block py-1 text-gray-700"
+              className="block py-1 text-black"
             >
               {item.label}
             </Link>
@@ -153,7 +153,7 @@ export const DropdownNav = ({
         setActiveSubMenu(null);
       }}
     >
-      <button className="flex gap-1 items-center text-base font-medium text-gray-700 hover:text-[#ef001f]">
+      <button className="flex gap-1 items-center text-base font-medium text-black hover:text-[#ef001f]">
         {children} <ChevronDown size={18} />
       </button>
 
@@ -167,7 +167,7 @@ export const DropdownNav = ({
               onMouseLeave={() => item.subMenu && setActiveSubMenu(null)}
             >
               <Link href={item.path}>
-                <div className="p-2 hover:bg-[#ef001f] hover:text-white rounded-sm text-base text-gray-600 font-normal flex justify-between items-center cursor-pointer">
+                <div className="p-2 hover:bg-[#ef001f] hover:text-white rounded-sm text-base text-black font-normal flex justify-between items-center cursor-pointer">
                   {item.label}
                   {item.subMenu && <ChevronRight size={14} />}
                 </div>
@@ -178,7 +178,7 @@ export const DropdownNav = ({
                 <div className="absolute top-[-8px] left-full bg-white p-2 rounded-sm shadow-lg w-56 z-[100]">
                   {item.subMenu.map((subItem, subIndex) => (
                     <Link key={subIndex} href={subItem.path}>
-                      <div className="p-2 hover:bg-[#ef001f] hover:text-white rounded-sm text-base text-gray-600 font-normal cursor-pointer">
+                      <div className="p-2 hover:bg-[#ef001f] hover:text-white rounded-sm text-base text-black font-normal cursor-pointer">
                         {subItem.label}
                       </div>
                     </Link>
@@ -200,14 +200,14 @@ const Header = () => {
     <nav className="w-full p-6 px-8 md:px-32 z-20 absolute top-0 bg-white/40">
       {/* Mobile Menu Button */}
       <button
-        className="md:hidden text-gray-700 ml-auto"
+        className="md:hidden text-black ml-auto"
         onClick={() => setIsMenuOpen(true)}
       >
         <Menu size={28} />
       </button>
       <div className="flex justify-between container mx-auto">
         {/* Left side navigation links (Hidden on small screens) */}
-        <div className="hidden md:flex gap-6 text-gray-600 text-base">
+        <div className="hidden md:flex gap-6 text-black text-base">
           <Link href="/" className="font-medium hover:text-[#ef001f]">
             HOME
           </Link>
@@ -215,16 +215,16 @@ const Header = () => {
             href="/about-us"
             menuItems={[
               {
-                label: "About Us",
+                label: "Company",
                 path: "/about",
               },
               { label: "Who We Are", path: "/our-team" },
               { label: "Message from CEO", path: "/message-from-ceo" },
-              {
-                label: "Message from Director",
-                path: "/message-from-director",
-              },
-              { label: "Craftsmanship", path: "/message-from-ceo" },
+              // {
+              //   label: "Message from Director",
+              //   path: "/message-from-director",
+              // },
+              { label: "Craftsmanship", path: "/craftsmanship" },
               { label: "Customer Testimonials", path: "/testimonials" },
               { label: "Our Showrooms", path: "/message-from-ceo" },
               { label: "FAQs", path: "/faqs" },
@@ -313,7 +313,7 @@ const Header = () => {
         </div>
 
         {/* Right side navigation links (Hidden on small screens) */}
-        <div className="hidden md:flex gap-6 text-gray-700 text-base">
+        <div className="hidden md:flex gap-6 text-black text-base">
           <DropdownNav
             href="/services"
             menuItems={[
@@ -363,7 +363,7 @@ const Header = () => {
         <div className="flex flex-col gap-4 mt-10">
           <Link
             href="/"
-            className="text-gray-700 text-lg font-medium hover:text-[#ef001f]"
+            className="text-black text-lg font-medium hover:text-[#ef001f]"
             onClick={() => setIsMenuOpen(false)}
           >
             HOME
@@ -407,14 +407,14 @@ const Header = () => {
 
           <Link
             href="/blog"
-            className="text-gray-700 text-lg font-medium hover:text-[#ef001f]"
+            className="text-black text-lg font-medium hover:text-[#ef001f]"
             onClick={() => setIsMenuOpen(false)}
           >
             BLOG
           </Link>
           <Link
             href="/contact"
-            className="text-gray-700 text-lg font-medium hover:text-[#ef001f]"
+            className="text-black text-lg font-medium hover:text-[#ef001f]"
             onClick={() => setIsMenuOpen(false)}
           >
             CONTACT US

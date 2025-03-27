@@ -97,27 +97,27 @@ export default function CaratGold() {
                 <h1 className="text-tertiary  font-bold mb-4">
                   Why Choose 24K Gold for Wholesale & Retail?
                 </h1>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   <span className="text-black">High Market Value:</span> Being
                   the purest form of gold, 24K gold has a higher price and
                   retains its value over time.
                 </li>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   <span className="text-black">Global Demand: </span> Gold is an
                   essential part of many cultures, and 24K gold is particularly
                   popular in markets like India, China, and the Middle East.
                 </li>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   <span className="text-black">Investment Benefits: </span> 24K
                   gold is a safe investment, providing financial security and
                   stability even in uncertain times.
                 </li>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   <span className="text-black">Premium Quality Jewelry:</span>{" "}
                   Many retailers prefer 24K gold for custom jewelry, as it
                   provides a premium and luxurious feel.
                 </li>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   <span className="text-black">Easy Resale & Liquidity:</span>{" "}
                   The resale value of 24K gold is high due to its purity, making
                   it easier to trade in global gold markets.
@@ -155,17 +155,17 @@ export default function CaratGold() {
                   capitalizing on this trend to secure long-term gains.
                 </h4>
                 <ul className="list-disc">
-                  <li className="mb-2 text-gray-700 ">
+                  <li className="mb-2 text-black ">
                     <span className="text-black">Global Market Trends:</span>{" "}
                     Demand for gold bullion and jewelry is increasing in
                     countries like India, China, and the UAE.
                   </li>
-                  <li className="mb-2 text-gray-700">
+                  <li className="mb-2 text-black">
                     <span className="text-black">Investment Appeal: </span> Gold
                     is a hedge against inflation, making it attractive for
                     financial institutions and large investors.
                   </li>
-                  <li className="mb-2 text-gray-700">
+                  <li className="mb-2 text-black">
                     <span className="text-black">Wholesale Advantages: </span>{" "}
                     Buying in bulk allows retailers and jewelry makers to get
                     better pricing and higher profit margins.
@@ -187,17 +187,17 @@ export default function CaratGold() {
                   place to buy and sell gold, including:
                 </h4>
                 <ul className="list-disc">
-                  <li className="mb-2 text-gray-700">
+                  <li className="mb-2 text-black">
                     <span className="text-black">Tax-Free Benefits:</span> The
                     UAE offers a duty-free environment, making gold trading more
                     profitable.
                   </li>
-                  <li className="mb-2 text-gray-700">
+                  <li className="mb-2 text-black">
                     <span className="text-black">Reliable Supply Chain: </span>{" "}
                     Dubai has a robust logistics network ensuring timely gold
                     delivery worldwide.
                   </li>
-                  <li className="mb-2 text-gray-700">
+                  <li className="mb-2 text-black">
                     <span className="text-black">High-Quality Standards: </span>{" "}
                     Dubai gold is known for its purity and certification,
                     attracting buyers worldwide.
@@ -219,23 +219,23 @@ export default function CaratGold() {
                   bullion is a smart choice:
                 </h4>
                 <ul className="list-disc">
-                  <li className="mb-2 text-gray-700">
+                  <li className="mb-2 text-black">
                     <span className="text-black ">Wealth Preservation:</span>{" "}
                     Gold retains value over time, making it a stable financial
                     asset.
                   </li>
-                  <li className="mb-2 text-gray-700">
+                  <li className="mb-2 text-black">
                     <span className="text-black">
                       Portfolio Diversification:{" "}
                     </span>{" "}
                     Adding gold to an investment portfolio reduces risk and
                     enhances security.
                   </li>
-                  <li className="mb-2 text-gray-700">
+                  <li className="mb-2 text-black">
                     <span className="text-black">High Liquidity: </span> Gold
                     bullion is easy to buy, sell, and trade in global markets.
                   </li>
-                  <li className="mb-2 text-gray-700">
+                  <li className="mb-2 text-black">
                     <span className="text-black">
                       Protection Against Inflation:{" "}
                     </span>
@@ -258,17 +258,17 @@ export default function CaratGold() {
                   differences between various gold purities:
                 </h4>
                 <ul className="list-disc">
-                  <li className="mb-2 text-gray-700">
+                  <li className="mb-2 text-black">
                     <span className="text-black">24K Gold (99.9% Pure):</span>{" "}
                     The purest form, ideal for investment and high-value
                     jewelry.
                   </li>
-                  <li className="mb-2 text-gray-700">
+                  <li className="mb-2 text-black">
                     <span className="text-black">22K Gold (91.6% Pure): </span>{" "}
                     Mixed with small amounts of alloys, making it suitable for
                     durable jewelry.
                   </li>
-                  <li className="mb-2 text-gray-700">
+                  <li className="mb-2 text-black">
                     <span className="text-black">18K Gold (75% Pure): </span>{" "}
                     Contains a higher percentage of other metals, offering
                     strength and affordability.

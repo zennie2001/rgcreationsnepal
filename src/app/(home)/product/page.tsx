@@ -86,7 +86,7 @@ export default function Product() {
               className={`p-2 rounded-md transition-all ${
                 viewMode === "grid"
                   ? "bg-[#ef001f] text-white"
-                  : "bg-white text-gray-600"
+                  : "bg-white text-black"
               }`}
             >
               <LayoutGrid size={24} />
@@ -96,7 +96,7 @@ export default function Product() {
               className={`p-2 rounded-md transition-all ${
                 viewMode === "list"
                   ? "bg-[#ef001f] text-white"
-                  : "bg-white text-gray-600"
+                  : "bg-white text-black"
               }`}
             >
               <List size={24} />
@@ -121,7 +121,7 @@ export default function Product() {
                   <li key={index} className="w-full">
                     <div
                       onClick={() => toggleSubMenu(item.label)}
-                      className="cursor-pointer flex items-center justify-between p-2 hover:bg-[#ef001f] text-gray-600 hover:text-white rounded-sm"
+                      className="cursor-pointer flex items-center justify-between p-2 hover:bg-[#ef001f] text-black hover:text-white rounded-sm"
                     >
                       <Link href={item.path} className="font-semibold">
                         {item.label}
@@ -138,7 +138,7 @@ export default function Product() {
                         {item.subMenu.map((sub, subIndex) => (
                           <li
                             key={subIndex}
-                            className="p-1 text-gray-600 font-semibold hover:text-white hover:bg-[#ef001f] rounded-sm"
+                            className="p-1 text-black font-semibold hover:text-white hover:bg-[#ef001f] rounded-sm"
                           >
                             <Link href={sub.path}>{sub.label}</Link>
                           </li>

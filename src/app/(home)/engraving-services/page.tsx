@@ -25,16 +25,16 @@ export default function EngravingServices() {
 
               <ul className="list-disc">
                 <h1 className="text-tertiary  font-bold mb-4">Key Features:</h1>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   Custom engraving on rings, bracelets, necklaces, and more
                 </li>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   High-quality precision engraving
                 </li>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   Variety of font and design options
                 </li>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   Special message or personal touch for any occasion
                 </li>
               </ul>

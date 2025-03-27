@@ -4,72 +4,90 @@ import FaqCard from "@/components/FaqCard";
 import PageHeader from "@/components/PageHeader";
 import { useState } from "react";
 
-const helpQuestions = [
+const generalQuestions = [
   {
-    question: "How can I contact Star Laxmi Jewellery for assistance?",
+    question: "How do you ensure the quality of your jewellery?",
     answer:
-      "You can reach us via email at info@starlaxmijewellery.com or call us at +971 4324 772O.",
+      "We have a strict quality control process, ensuring all pieces meet international standards for purity, craftsmanship, and durability.",
   },
   {
-    question: "Do you offer live chat support?",
+    question:
+      "Do you provide certificates of authenticity for diamonds and gemstones?",
     answer:
-      "Yes, we offer live chat support during business hours on our website.",
+      "Yes, we provide certification for diamonds and precious gemstones from reputable gemological institutes.",
   },
   {
-    question: "What should I do if I receive a damaged product?",
+    question:
+      "Do you offer designs tailored to cultural and regional preferences?",
     answer:
-      "If you receive a damaged or defective product, please contact our support team within 24 hours with images, and we will assist you with a replacement or refund.",
+      "Yes, we understand market variations in Europe, the Middle East, and Asia and offer designs that suit cultural and regional preferences.",
   },
   {
-    question: "How do I track my order?",
+    question: "Can I visit your showroom or manufacturing facility?",
     answer:
-      "Once your order is shipped, we will send you a tracking number via email so you can monitor the delivery status.",
+      "Yes, we welcome business partners to visit our showroom or production facility by appointment. Please contact us to schedule a visit.",
   },
 ];
 
 const paymentQueries = [
   {
-    question: "What payment methods do you accept?",
+    question: "What are your payment terms for bulk orders?",
     answer:
-      "We accept credit/debit cards (Visa, MasterCard, American Express), bank transfers, and PayPal for online purchases.",
+      "We offer flexible payment options, including bank transfers and LC (Letter of Credit). Payment terms are discussed during order confirmation.",
   },
   {
-    question: "Is my payment information secure?",
+    question: "How long does it take to fulfill bulk orders?",
     answer:
-      "Yes, we use SSL encryption and secure payment gateways to protect your financial information.",
+      "Production time varies based on order size and customization. On average, bulk orders take 4-8 weeks for production and delivery.",
   },
   {
-    question: "Do you offer installment payment options?",
+    question: "Are there import duties or taxes on jewellery shipments?",
     answer:
-      "Currently, we do not offer EMI options, but we are working on introducing flexible payment plans.",
+      "Import duties and taxes depend on the destination country’s regulations. We recommend checking with local customs authorities for details.",
   },
   {
-    question: "Can I pay using cryptocurrency?",
+    question: "Do you offer wholesale pricing for bulk purchases?",
     answer:
-      "At the moment, we do not accept cryptocurrency payments, but we may introduce this option in the future.",
+      "Yes, we offer competitive wholesale pricing for bulk purchases. Contact our sales team for detailed pricing and discounts.",
+  },
+  {
+    question: "Do you offer installment payment plans?",
+    answer:
+      "Currently, we do not offer installment payment plans. However, we provide flexible payment options for bulk and custom orders.",
   },
 ];
 
-const generalQuestions = [
+const helpQuestions = [
   {
-    question: "Are all your jewellery pieces made of real gold?",
+    question: "Do you offer international shipping?",
     answer:
-      "Yes, we offer certified 24K, 22K, and 18K gold jewellery, along with hallmarked authenticity.",
+      "Yes, we ship worldwide, including to Europe, the Middle East, and Asia. We partner with trusted logistics providers for safe and timely delivery.",
   },
   {
-    question: "Do you provide international shipping?",
+    question:
+      "Do you provide marketing support for retailers and distributors?",
     answer:
-      "Yes, we ship globally with trusted courier services. Shipping costs and delivery times vary based on location.",
+      "Yes, we offer high-quality images, catalogs, and promotional materials to help our B2B clients market their products effectively.",
   },
   {
-    question: "Can I customize my jewellery?",
+    question: "How can I place a bulk order or become a distributor?",
     answer:
-      "Yes! We offer customization services for gold and diamond jewellery. Contact us for details.",
+      "You can contact our sales team via email or WhatsApp to discuss your requirements. We will guide you through the ordering process and partnership opportunities.",
   },
   {
-    question: "Do you offer a buy-back or exchange policy?",
+    question: "What happens if my order gets delayed?",
     answer:
-      "Yes, we offer a buy-back and exchange policy based on the condition and current market value of the gold. Terms and conditions apply.",
+      "We do our best to ensure timely delivery. In case of delays due to unforeseen circumstances, we will notify you immediately with updates.",
+  },
+  {
+    question: "Do you provide after-sales support for your customers?",
+    answer:
+      "Yes, our team is available to assist with any post-purchase inquiries, including repairs, resizing, and general customer support.",
+  },
+  {
+    question: "Can I track my shipment after placing an order?",
+    answer:
+      "Yes, we provide tracking details for all shipments so you can monitor the status of your delivery in real-time.",
   },
 ];
 
