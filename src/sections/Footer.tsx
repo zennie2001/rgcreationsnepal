@@ -51,7 +51,7 @@ const Footer = () => {
       style={{ backgroundImage: "url(/footer-bg.jpg)" }}
     >
       <div className="container mx-auto px-4 py-8">
-        <div className="text-center flex md:text-left">
+        <div className="text-center flex md:flex-row flex-col md:text-left">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-gray-799">
               Subscribe Newsletter
