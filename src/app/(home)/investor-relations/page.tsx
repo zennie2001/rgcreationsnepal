@@ -11,6 +11,8 @@ import blog1 from "@/assets/images/blog1.jpg";
 import blog2 from "@/assets/images/blog2.jpg";
 
 import blog3 from "@/assets/images/blog3.jpg";
+import Link from "next/link";
+import { Globe, Mail, MapPin } from "lucide-react";
 
 const blogs = [
   {
@@ -61,231 +63,145 @@ const socialMedia = [
 export default function InvestorRelations() {
   return (
     <main className="w-full overflow-hidden">
-      <PageHeader link="/blogs/blogdetails" title="Blog Details" />
+      <PageHeader link="/investor-relations" title="Investor Relations" />
       <section className="flex_center flex-col lg:py-16 py-10 lg:gap-12 gap-6 lg:px-0 px-4">
         <div className="flex_center flex-col gap-8 lg:w-[55%] w-full">
           <h3 className="text-[32px] font-semibold text-secondary">
-            USA&apos;s Best Universities, Prices, and Scholarships for Students
+            Investor Relations
           </h3>
-          <div className="flex_center flex-col w-full gap-8">
-            <div className="flex md:flex-row flex-col w-full justify-between md:items-center items-start md:gap-0 gap-3">
-              <div className="flex gap-4">
-                <p className="text-xs font-medium">BY ADMIN</p>
-                <p className="text-xs font-medium text-text">
-                  29 Sep, 2023 - 9 min read
-                </p>
-              </div>
-              <div className="flex gap-3">
-                {socialMedia.map((media, index) => (
-                  <a
-                    key={index}
-                    href={media.link}
-                    target="_blank"
-                    className="social rounded-full size-8 p-2 border border-text/30 text-secondary"
-                  >
-                    <media.icon className="size-full" />
-                  </a>
-                ))}
-              </div>
-            </div>
-            <div className="flex_center flex-col gap-3 w-full">
-              <Image
-                src={blogImage}
-                alt="blog image"
-                className="w-full h-[60vh] object-cover"
-              />
-              <p className="text-text text-sm">Image Caption</p>
-            </div>
-            <div className="flex_center flex-col gap-8">
-              <h4 className="text-2xl font-semibold text-secondary text-justify w-full">
-                Studying in the USA is quite expensive; so, you must think ahead
-                and explore all possible sources of funding. Scholarships,
-                grants, student loans and part-time jobs are the avenues that
-                Nepalese Students can use to finance their studies in the USA.
+          <div className="flex flex-col w-full gap-8">
+            <div className="flex flex-col gap-8">
+              <h4 className=" text-justify w-full">
+                Welcome to the Investor Relations section of .
+                <span className=" font-semibold text-[#ef001f] text-justify w-full">
+                  Star Laxmi Jewellery LLC.
+                </span>{" "}
+                We are committed to providing our investors with comprehensive
+                and transparent information to help you understand our business
+                and investment opportunities. As a leading jewelry company, we
+                pride ourselves on our sustainable growth, financial stability,
+                and long-term value creation. This section is designed to offer
+                you all the necessary insights to stay informed about our
+                company’s performance, financial reports, and future prospects.
               </h4>
-              <p className="text-text text-base text-justify">
-                Students need to undertake a detailed analysis of all the
-                options available to them, based on their background and future
-                economic prospects, to make sound funding decisions for their
-                education.
-              </p>
-              <p className="text-text text-base text-justify">
-                Financial planning and the numerous scholarship opportunities
-                can be overwhelming as they are often complicated. To have a
-                hassle-free and stress-free journey, avail of our services from
-                The Next Education Consultancy. We have a team of experts that
-                offer end-to-end services, ranging from application help, and
-                visa assistance to search for scholarships and navigating
-                financial aid. We enable you to make informed decisions and
-                accomplish your education goals in the USA.
-              </p>
-            </div>
-            <div className="flex_center flex-col gap-8">
-              <h3 className="text-[32px] font-semibold text-secondary text-justify w-full">
-                Financial Planning for Study in the USA
-              </h3>
-              <p className="text-text text-base text-justify">
-                For Nepali students who cherish their dreams as high as the sky,
-                the United States is the world where they can grab a
-                close-to-hand opportunity to plunge into super-advanced research
-                laboratories, the innovative environment, and the immense
-                culture soaking up. This might be manageable; however, it will
-                be very expensive.
-              </p>
-              <div className="flex_center gap-8 w-full">
-                <div className="flex_center w-1/2">
-                  <Image
-                    src={blogImage}
-                    alt="blog image"
-                    className="w-full h-60 object-cover"
-                  />
-                </div>
-                <div className="flex_center w-1/2">
-                  <Image
-                    src={blogImage}
-                    alt="blog image"
-                    className="w-full h-60 object-cover"
-                  />
-                </div>
+              <div>
+                <h3 className="text-[32px] font-semibold text-secondary">
+                  Our Vision for Growth
+                </h3>
+                <h4 className=" text-justify w-full">
+                  At Star Laxmi Jewellery LLC, we aim to be the most trusted and
+                  innovative jewelry brand in the industry, offering exquisite
+                  craftsmanship, custom designs, and high-quality services. We
+                  are constantly expanding our product offerings and exploring
+                  new markets, while maintaining a commitment to the highest
+                  ethical standards and sustainable practices. Our goal is to
+                  deliver strong returns for our investors by capitalizing on
+                  market trends and maintaining financial discipline.
+                </h4>
               </div>
-              <p className="text-text text-base text-justify">
-                Planning the finances of Nepali students to study in the USA is
-                more than just calculating the fees. The students should be
-                prepared for the tuition fees, housing, and personal needs, and
-                have enough funds for any extra activities. It is an opportunity
-                to get the most out of it and to invest your time and money in
-                the right area.
-              </p>
-            </div>
-            <div className="flex w-full p-8 gap-4 bg-tertiary rounded-md">
-              <div className="flex flex-col w-[90%] gap-8">
-                <p className="text-sm text-primary/50">September 28, 2023</p>
-                <p className="italic font-semibold text-2xl text-primary/70">
-                  “Success is not final; failure is not fatal: it is the courage
-                  to continue that counts.”
-                </p>
-                <div className="flex items-center gap-2">
-                  <p className="text-sm font-bold text-primary">Maya Hawke</p>
-                  <GoDash className="font-bold text-primary" />
-                  <p className="text-sm text-primary/50">
-                    Forbes Java Developer
-                  </p>
-                </div>
+
+              <ul className="list-disc">
+                <h1 className="text-tertiary  font-bold mb-4">
+                  Investment Highlights
+                </h1>
+                <li className="mb-2 text-gray-700">
+                  <span className="text-black">Strong Market Position:</span> A
+                  trusted name in the jewelry industry with an established
+                  customer base.
+                </li>
+                <li className="mb-2 text-gray-700">
+                  <span className="text-black">Diversified Portfolio:</span>{" "}
+                  Offering a wide range of jewelry designs and services,
+                  including custom design, repair, engraving, and appraisal.
+                </li>
+                <li className="mb-2 text-gray-700">
+                  <span className="text-black">Sustainable Practices: </span>{" "}
+                  Commitment to responsible sourcing, ethical production, and
+                  sustainable business practices.
+                </li>
+                <li className="mb-2 text-gray-700">
+                  <span className="text-black">Growth Potential:</span> Focused
+                  on expanding our market presence and exploring new revenue
+                  streams through digital channels and international expansion.
+                </li>
+              </ul>
+              <div>
+                <h3 className="text-[32px] font-semibold text-secondary">
+                  Financial Reports
+                </h3>
+                <h4 className=" text-justify w-full">
+                  We provide quarterly and annual reports that highlight our
+                  financial performance and key metrics. These reports are
+                  available for download and will offer you an in-depth view of
+                  our revenue growth, profitability, and future strategies.
+                </h4>
               </div>
-              <div className="flex flex-col w-[10%]">
-                <ImQuotesRight className="w-full h-auto object-contain scale-y-[-1] text-primary/50" />
+              <div>
+                <h3 className="text-[32px] font-semibold text-secondary">
+                  Press Releases
+                </h3>
+                <h4 className=" text-justify w-full">
+                  Stay up to date with the latest company news, product
+                  launches, and partnerships. Our press releases provide insight
+                  into how Star Laxmi Jewellery LLC is continuing to shape the
+                  future of the jewelry industry.
+                </h4>
               </div>
-            </div>
-            <div className="flex_center flex-col gap-8">
-              <h3 className="text-[32px] font-semibold text-secondary text-justify w-full">
-                The US University/College Tuition Fee
-              </h3>
-              <p className="text-text text-base text-justify">
-                Planning the finances of Nepali students to study in the USA is
-                more than just calculating the fees. The students should be
-                prepared for the tuition fees, housing, and personal needs, and
-                have enough funds for any extra activities. It is an opportunity
-                to get the most out of it and to invest your time and money in
-                the right area.
-              </p>
-              <div className="flex_center gap-8 w-full">
-                <div className="flex flex-col gap-8 w-[65%]">
-                  <p className="text-text text-base text-justify">
-                    For Nepali students who cherish their dreams as high as the
-                    sky, the United States is the world where they can grab a
-                    close-to-hand opportunity to plunge into super-advanced
-                    research.
-                  </p>
-                  <p className="text-text text-base text-justify">
-                    Planning the finances of Nepali students to study in the USA
-                    is more than just calculating the fees. The students should
-                    be prepared for the tuition fees, housing, and personal
-                    needs.
-                  </p>
-                </div>
-                <div className="flex_center flex-col gap-3 w-[35%]">
-                  <Image
-                    src={blogImage}
-                    alt="blog image"
-                    className="w-full h-40 object-cover"
-                  />
-                  <p className="text-sm text-text ">Research Purpose</p>
-                </div>
+              <div>
+                <h3 className="text-[32px] font-semibold text-secondary">
+                  Corporate Governance
+                </h3>
+                <h4 className=" text-justify w-full">
+                  At Star Laxmi Jewellery LLC, we believe in maintaining the
+                  highest level of corporate governance to ensure
+                  accountability, transparency, and long-term value for our
+                  stakeholders. Our board of directors and management team are
+                  committed to overseeing the company’s growth and ensuring we
+                  meet the highest standards of integrity and business conduct.
+                </h4>
               </div>
-            </div>
-            <div className="flex_center flex-col gap-8">
-              <h4 className="text-2xl font-semibold text-secondary text-justify w-full">
-                Tuition by Type of Institution
-              </h4>
-              <p className="text-text text-base text-justify">
-                The tuition fees in the USA differ across the types of the
-                institution. Usually, public universities charge lower tuition
-                rates to domestic students, while international students have to
-                pay out-of-state tuition, which is much more expensive.
-              </p>
-              <p className="text-text text-base text-justify">
-                <span className="font-bold">Public Universities:</span>
-                International students should expect to pay around
-                $20,000-$40,000 a year in tuition fees.
-              </p>
-              <p className="text-text text-base text-justify">
-                <span className="font-bold">Public Universities:</span>
-                International students should expect to pay around
-                $20,000-$40,000 a year in tuition fees.
-              </p>
-              <p className="text-text text-base text-justify">
-                <span className="font-bold">Public Universities:</span>
-                International students should expect to pay around
-                $20,000-$40,000 a year in tuition fees.
-              </p>
-            </div>
-            <div className="flex_center flex-col gap-8">
-              <h4 className="text-2xl font-semibold text-secondary text-justify w-full">
-                Public vs. Private Institutions: Cost Comparison
-              </h4>
-              <p className="text-text text-base text-justify">
-                The tuition fees in the USA differ across the types of the
-                institution. Usually, public universities charge lower tuition
-                rates to domestic students, while international students have to
-                pay out-of-state tuition, which is much more expensive.
-              </p>
-              <p className="text-text text-base text-justify">
-                <span className="font-bold">Public Universities:</span>
-                International students should expect to pay around
-                $20,000-$40,000 a year in tuition fees.
-              </p>
-              <p className="text-text text-base text-justify">
-                <span className="font-bold">Public Universities:</span>
-                International students should expect to pay around
-                $20,000-$40,000 a year in tuition fees.
-              </p>
-              <p className="text-text text-base text-justify">
-                <span className="font-bold">Public Universities:</span>
-                International students should expect to pay around
-                $20,000-$40,000 a year in tuition fees.
-              </p>
+              <div>
+                <h3 className="text-[32px] font-semibold text-secondary">
+                  Investor Contact
+                </h3>
+                <h4 className=" text-justify w-full">
+                  For more information or inquiries about investment
+                  opportunities with Star Laxmi Jewellery LLC, please feel free
+                  to reach out to our Investor Relations team:
+                </h4>
+                <ul className="my-6 text-gray-600 w-full">
+                  <li className="flex items-x`center gap-2">
+                    <MapPin className="flex-shrink-0" />
+                    <span>
+                      Al Souq Al Kabeer Tailor Galli, Esag Building (Old Plot),
+                      Shop No. 07 Burdubai, Dubai, UAE (Near Astoria Hotel)
+                    </span>
+                  </li>
+
+                  <li className="w-full">
+                    <Link
+                      href="mailto:info@starlaxmijewellery.com"
+                      className="flex items-center gap-2 w-full"
+                    >
+                      <Mail className="flex-shrink-0" />
+                      <span className="flex-1">
+                        info@starlaxmijewellery.com
+                      </span>
+                    </Link>
+                  </li>
+                  <li className="w-full">
+                    <Link
+                      href="http://www.starlaxmijewellery.com"
+                      className="flex items-center gap-2 w-full"
+                    >
+                      <Globe className="flex-shrink-0" />
+                      <span className="flex-1">www.starlaxmijewellery.com</span>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12">
-        <SectionHeader
-          smallTitle="Similar BLogs"
-          title="Stay up to date on our blogs"
-        />
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 gap-y-16">
-          {blogs.map((blog, index) => {
-            return (
-              <BlogCard
-                key={index}
-                image={blog.image}
-                date={blog.date}
-                title={blog.title}
-                miniDescription={blog.miniDescription}
-                name={blog.name}
-              />
-            );
-          })}
         </div>
       </section>
     </main>
