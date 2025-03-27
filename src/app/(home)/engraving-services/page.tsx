@@ -12,36 +12,30 @@ export default function EngravingServices() {
           <div className="flex flex-col w-full gap-8">
             <div className="flex flex-col gap-8">
               <h4 className=" text-justify w-full">
-                At{" "}
+                Add a personal touch to your jewelry with our professional
+                engraving services at{" "}
                 <span className=" font-semibold text-[#ef001f] text-justify w-full">
-                  Star Laxmi Jewellery LLC,
+                  Star Laxmi Jewellery LLC.
                 </span>{" "}
-                we specialize in creating one-of-a-kind pieces that reflect your
-                personal style. Our custom design jewelry service allows you to
-                work closely with our skilled designers to bring your vision to
-                life. Whether it's a unique engagement ring, a special gift, or
-                a cherished heirloom, we ensure every detail is crafted to
-                perfection. From selecting the finest materials to handcrafting
-                intricate designs, we offer a full consultation process to make
-                sure your custom jewelry is as exceptional as you are.
+                Whether it's an engraving of initials, a special date, or a
+                meaningful quote, we can engrave your piece with precision and
+                care. Choose from a variety of fonts and designs, or work with
+                us to create a custom engraving that tells your unique story.
               </h4>
 
               <ul className="list-disc">
                 <h1 className="text-tertiary  font-bold mb-4">Key Features:</h1>
                 <li className="mb-2 text-gray-700">
-                  Personalized designs tailored to your preferences
+                  Custom engraving on rings, bracelets, necklaces, and more
                 </li>
                 <li className="mb-2 text-gray-700">
-                  Consultation with expert jewelers and designers
+                  High-quality precision engraving
                 </li>
                 <li className="mb-2 text-gray-700">
-                  Wide selection of high-quality gemstones and metals
+                  Variety of font and design options
                 </li>
                 <li className="mb-2 text-gray-700">
-                  3D rendering for visual approval before creation
-                </li>
-                <li className="mb-2 text-gray-700">
-                  Attention to detail and expert craftsmanship
+                  Special message or personal touch for any occasion
                 </li>
               </ul>
             </div>

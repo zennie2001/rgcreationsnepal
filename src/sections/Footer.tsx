@@ -40,7 +40,8 @@ const Footer = () => {
             Join Our Newsletter And Get
           </h2>
           <p className="text-lg text-gray-700">
-            Alerts about new products and services
+            Get the latest updates, tips, and exclusive offers straight to your
+            inbox
           </p>
           <div className="flex flex-col sm:flex-row items-center mt-4 w-full max-w-lg mx-auto">
             <input
@@ -147,7 +148,9 @@ const Footer = () => {
         <p className="text-gray-600">
           &copy; 2025 Star Laxmi Jewellery LLC | All Rights Reserved
         </p>
-        <p className="text-xs mt-1">PRIVACY POLICY | TERMS OF SERVICES</p>
+        <Link href="/terms-conditions" className="text-xs mt-1">
+          PRIVACY POLICY | TERMS OF SERVICES
+        </Link>
       </div>
     </div>
   );
