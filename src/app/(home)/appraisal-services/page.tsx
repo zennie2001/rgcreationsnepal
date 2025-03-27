@@ -29,16 +29,16 @@ export default function AppraisalServices() {
 
               <ul className="list-disc">
                 <h1 className="text-tertiary  font-bold mb-4">Key Features:</h1>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   Detailed appraisal reports for insurance purposes
                 </li>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   Expertise in gemstones, metals, and fine jewelry
                 </li>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   Certified and trusted gemologists
                 </li>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   Appraisal services for any type of jewelry, from antique to
                   modern
                 </li>

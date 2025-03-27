@@ -1,18 +1,20 @@
 import PageHeader from "@/components/PageHeader";
+import Image from "next/image";
+import aboutImage from "@/assets/images/craftmanship.jpg";
 
 export default function Craftsmanship() {
   return (
     <main className="w-full overflow-hidden">
       <PageHeader link="/craftsmanship" title="Craftsmanship" />
       <section className="flex_center flex-col lg:py-16 py-10 lg:gap-12 gap-6 lg:px-0 px-4">
-        <div className="flex_center flex-col gap-8 lg:w-[55%] w-full">
+        <div className="flex_center flex-col gap-8 container w-full">
           <h3 className="text-[32px] font-semibold text-secondary">
             Craftsmanship at Start Laxmi Jewellery
           </h3>
-          <div className="flex flex-col w-full gap-8">
-            <div className="flex flex-col gap-8">
+          <div className="flex md:flex-row flex-col w-full gap-8">
+            <div className="flex flex-col w-1/2 my-auto gap-8">
               <h4 className=" text-justify w-full">
-                At
+                At{" "}
                 <span className=" font-semibold text-[#ef001f] text-justify w-full">
                   Start Laxmi Jewellery,
                 </span>{" "}
@@ -44,6 +46,9 @@ export default function Craftsmanship() {
                 but stands the test of time. Our passion for perfection is what
                 makes our pieces cherished treasures for generations.
               </h4>
+            </div>
+            <div className="flex gap-8 lg:w-1/2  w-full h-auto  rounded-md overflow-hidden">
+              <Image src={aboutImage} alt="image" className=" object-cover" />
             </div>
           </div>
         </div>

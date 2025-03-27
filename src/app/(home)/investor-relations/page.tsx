@@ -104,22 +104,22 @@ export default function InvestorRelations() {
                 <h1 className="text-tertiary  font-bold mb-4">
                   Investment Highlights
                 </h1>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   <span className="text-black">Strong Market Position:</span> A
                   trusted name in the jewelry industry with an established
                   customer base.
                 </li>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   <span className="text-black">Diversified Portfolio:</span>{" "}
                   Offering a wide range of jewelry designs and services,
                   including custom design, repair, engraving, and appraisal.
                 </li>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   <span className="text-black">Sustainable Practices: </span>{" "}
                   Commitment to responsible sourcing, ethical production, and
                   sustainable business practices.
                 </li>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   <span className="text-black">Growth Potential:</span> Focused
                   on expanding our market presence and exploring new revenue
                   streams through digital channels and international expansion.
@@ -169,7 +169,7 @@ export default function InvestorRelations() {
                   opportunities with Star Laxmi Jewellery LLC, please feel free
                   to reach out to our Investor Relations team:
                 </h4>
-                <ul className="my-6 text-gray-600 w-full">
+                <ul className="my-6 text-black w-full">
                   <li className="flex items-x`center gap-2">
                     <MapPin className="flex-shrink-0" />
                     <span>

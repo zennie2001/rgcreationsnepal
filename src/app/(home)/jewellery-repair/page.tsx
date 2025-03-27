@@ -25,17 +25,17 @@ export default function JewelleryRepair() {
 
               <ul className="list-disc">
                 <h1 className="text-tertiary  font-bold mb-4">Key Features:</h1>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   Ring resizing and stone setting
                 </li>
-                <li className="mb-2 text-gray-700">Chain and clasp repairs</li>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">Chain and clasp repairs</li>
+                <li className="mb-2 text-black">
                   Restoration of vintage and antique pieces
                 </li>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   Polishing and cleaning for a renewed shine
                 </li>
-                <li className="mb-2 text-gray-700">
+                <li className="mb-2 text-black">
                   Replacement of missing gemstones
                 </li>
               </ul>

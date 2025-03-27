@@ -33,14 +33,14 @@ const Collection = () => {
         smallTitle="Our Collections"
       />
       <div className="mt-4 container mx-auto p-4">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3  gap-8">
           {/* Left Side - Gold Bars */}
-          <div className="flex flex-col items-center lg:items-start">
+          <div className="flex flex-col items-center group overflow-hidden rounded-lg lg:items-start">
             <div className="relative w-full lg:w-auto h-[500px]">
               <img
                 src={collections[0].imgSrc}
                 alt={collections[0].title}
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
               />
               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/90 px-4 py-2">
                 <h2 className="text-lg font-medium text-red-500">
@@ -51,13 +51,13 @@ const Collection = () => {
           </div>
 
           {/* Middle Section - Rings & Necklace */}
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8  overflow-hidden rounded-lg">
             {collections.slice(1, 3).map((item, index) => (
-              <div key={index} className="relative w-full h-[240px]">
+              <div key={index} className="relative w-full group h-[240px]">
                 <img
                   src={item.imgSrc}
                   alt={item.title}
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
                 />
                 <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/90 px-4 py-2">
                   <h2 className="text-lg font-medium text-red-500">
@@ -69,12 +69,12 @@ const Collection = () => {
           </div>
 
           {/* Right Side - 50% Off Earrings */}
-          <div className="flex flex-col items-center lg:items-end">
+          <div className="flex flex-col items-center lg:items-end group overflow-hidden rounded-lg ">
             <div className="relative w-full lg:w-auto h-[500px]">
               <img
                 src={collections[3].imgSrc}
                 alt={collections[3].title}
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
               />
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/90 w-48 h-48 rounded-full flex flex-col items-center justify-center">
                 <h2 className="text-base text-center">
