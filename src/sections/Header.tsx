@@ -219,8 +219,11 @@ const Header = () => {
                 path: "/about",
               },
               { label: "Who We Are", path: "/our-team" },
-              { label: "Director Message", path: "/message-from-ceo" },
-
+              { label: "Message from CEO", path: "/message-from-ceo" },
+              {
+                label: "Message from Director",
+                path: "/message-from-director",
+              },
               { label: "Craftsmanship", path: "/message-from-ceo" },
               { label: "Customer Testimonials", path: "/testimonials" },
               { label: "Our Showrooms", path: "/message-from-ceo" },
@@ -286,6 +289,12 @@ const Header = () => {
           >
             CATEGORIES
           </DropdownNav>
+          <Link
+            href="/24-carat-gold"
+            className="hover:text-[#ef001f] uppercase font-medium"
+          >
+            24 Carat Gold
+          </Link>
         </div>
 
         {/* Center logo */}
@@ -308,14 +317,20 @@ const Header = () => {
           <DropdownNav
             href="/services"
             menuItems={[
-              { label: "Custom Design", path: "/test-list" },
-              { label: "Jewelry Repair", path: "/services" },
-              { label: "Engraving Services", path: "/consultation" },
-              { label: "Appraisal Services", path: "/career-counselling" },
+              { label: "Custom Design", path: "/custom-design" },
+              { label: "Jewelry Repair", path: "/jewellery-repair" },
+              { label: "Engraving Services", path: "/engraving-services" },
+              { label: "Appraisal Services", path: "/appraisal-services" },
             ]}
           >
             SERVICES
           </DropdownNav>
+          <Link
+            href="/investor-relations"
+            className="hover:text-[#ef001f] font-medium"
+          >
+            INVESTOR RELATIONS
+          </Link>
           <Link href="/blogs" className="hover:text-[#ef001f] font-medium">
             BLOG
           </Link>

@@ -2,8 +2,8 @@
 
 import PageHeader from "@/components/PageHeader";
 import SectionHeader from "@/components/SectionHeader";
-import aboutImage from "@/assets/images/heroBackground.jpg";
-import aboutSecondImage from "@/assets/images/aboutPageImage.png";
+import aboutImage from "@/assets/images/our-team.jpg";
+import aboutSecondImage from "@/assets/images/about-large-starlaxmi.jpg";
 import Image from "next/image";
 import Contact from "@/sections/Contact";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
@@ -42,20 +42,33 @@ export default function AboutPage() {
         <div className="flex lg:flex-row flex-col items-center lg:gap-16 gap-6 w-full">
           <div className="flex flex-col lg:w-1/2 w-full gap-12">
             <div className="flex flex-col gap-4">
-              <SectionHeader
-                smallTitle="About Us"
-                title=""
-                className="items-center"
-              />
-              <h1 className="text-[30px]  font-semibold lg:text-start text-center">
-                Our goal is to assist students for hassle free environment
-              </h1>
+              <SectionHeader title="About Us" className="items-center" />
+
               <p className="text-text lg:text-justify text-center">
-                Reaction Nepal is a government-registered interdisciplinary
-                organization with its headquarters in Putalisadak, Kathmandu,
-                Nepal. Since its establishment in 2005, it has mainly aimed at
-                providing education services to all seeking their study and
-                career prospects in and out of the country.
+                At Star Laxmi Jewellery LLC, we specialize exclusively in
+                24-carat gold, offering our clients the highest level of purity
+                and unmatched quality. 24-carat gold is renowned for its
+                brilliant shine, exceptional durability, and timeless elegance,
+                making it the gold standard for premium jewellery. By focusing
+                solely on 24-carat gold, we ensure that every piece we craft
+                upholds the finest standards of quality, making it perfect for
+                both investment and luxurious adornment. We are committed to
+                supplying only the purest gold, sourced directly from trusted
+                gold mine companies, to ensure that our customers receive the
+                very best.
+              </p>
+              <p className="text-text lg:text-justify text-center">
+                Our clientele consists of gold retail shops spanning Europe, the
+                Middle East, and Asia, all of whom rely on our competitive
+                wholesale rates and consistent supply of premium 24-carat gold.
+                Whether you're looking to stock investment-grade pieces or seek
+                intricate, high-quality designs for your customers, we offer a
+                range of 24-carat gold jewellery that promises durability and
+                elegance. By focusing exclusively on 24-carat gold, Star Laxmi
+                Jewellery LLC guarantees that every piece we deliver is a true
+                reflection of luxury, purity, and craftsmanship, making us a
+                preferred supplier for retailers across the globe who value both
+                quality and affordability.
               </p>
             </div>
           </div>
@@ -107,34 +120,16 @@ export default function AboutPage() {
         </div>
       </div>
       <section className="w-full flex_center container">
-        <div className="flex_center flex-col lg:gap-16 gap-7 pb-16 w-full">
+        <div className="flex pb-16 w-full">
           <div className="flex flex-col w-full lg:px-12 px-0 gap-4 lg:pt-0 pt-10">
             <h2 className="text-[40px] font-semibold text-secondary">
               Our Mission
             </h2>
             <div className="w-full flex md:flex-row flex-col md:gap-8 gap-4">
-              <p className="text-text md:w-1/2 w-full">
-                It was established by the noble efforts and endeavors of a group
-                of dedicated and qualified professionals with diverse academic
-                expertise in the fields of applied education, science, and
-                technology, with the sole objective of providing the student
-                community with the most appropriate training and educational
-                opportunities aboard. REACTION Nepal, with its team of
-                experienced professionals and academics, provides counseling
-                services for those students who wish to pursue their further
-                studies abroad in well-reputed colleges, institutions, and
-                universities in different countries on all continents, such as
-                Asia-Pacific, Australia, Europe, and North America.
-              </p>
-              <p className="text-text md:w-1/2 w-full">
-                REACTION Nepal, with its professionalized service in the sector
-                of international educational counseling, boasts of its
-                reputation, acquired within a very short span of time. It is
-                probably the best choice for promising students aspiring to
-                achieve success in life. A considerable number of our students
-                have already been attending some of the most well-reputed
-                colleges and universities abroad in pursuit of shaping their
-                futures and careers.
+              <p className="text-text w-full">
+                To be a leading gold jewellery provider in the UAE, offering
+                unparalleled quality, innovative designs, and exceptional
+                customer service to wholesale and retail customers alike.
               </p>
             </div>
           </div>
@@ -143,208 +138,101 @@ export default function AboutPage() {
               Our Vision
             </h2>
             <div className="w-full flex md:flex-row flex-col md:gap-8 gap-4">
-              <p className="text-text md:w-1/2 w-full">
-                REACTION Nepal, with its professionalized service in the sector
-                of international educational counseling, boasts of its
-                reputation, acquired within a very short span of time. It is
-                probably the best choice for promising students aspiring to
-                achieve success in life. A considerable number of our students
-                have already been attending some of the most well-reputed
-                colleges and universities abroad in pursuit of shaping their
-                futures and careers.
-              </p>
-              <p className="text-text md:w-1/2 w-full">
-                Reaction Nepal is a government-registered interdisciplinary
-                organization with its headquarters in Putalisadak, Kathmandu,
-                Nepal. Since its establishment in 2005, it has mainly aimed at
-                providing education services to all seeking their study and
-                career prospects in and out of the country.
+              <p className="text-text w-full">
+                To redefine the gold jewellery industry by blending traditional
+                craftsmanship with modern elegance, ensuring accessibility and
+                affordability for all jewellery enthusiasts.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section className="w-full flex_center flex-col lg:gap-12 gap-6 lg:px-24 px-4 lg:py-16 py-10 bg-[#F5FBFF]">
-        <SectionHeader smallTitle="History" title="Over the Years" />
-        <div className="flex_center w-full container relative">
-          <div className="absolute flex h-0.5 w-full bg-secondary"></div>
-          <button className="absolute flex_center lg:size-10 size-7 p-2 -top5 left-0 bg-secondary text-primary rounded-md z-10">
-            <IoIosArrowBack />
-          </button>
-          <button className="absolute flex_center lg:size-10 size-7 p-2 -top5 right-0 bg-secondary text-primary rounded-md z-10">
-            <IoIosArrowForward />
-          </button>
-          <div className="flex_center lg:gap-20 gap-7 z-10">
-            <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold lg:size-6 size-3 lg:block hidden"></div>
-            <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold lg:size-6 size-3 lg:block hidden"></div>
-            <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-14">
-              2008
-            </div>
-            <div className="flex_center rounded-full bg-secondary lg:size-36 size-20 text-primary lg:text-[32px] text-lg font-semibold">
-              2009
-            </div>
-            <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-14 ">
-              2010
-            </div>
-            <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] font-bold size-6 lg:block hidden"></div>
-            <div className="flex_center rounded-full border-2 border-secondary bg-[#F5FBFF] text-secondary text-sm font-bold size-6 lg:block hidden"></div>
-          </div>
-        </div>
-        <div className="flex_center flex-col container  w-full gap-6">
+      <section className="w-full flex_center lg:gap-12 gap-6 lg:px-24 px-4 lg:py-16 py-10 bg-[#F5FBFF]">
+        <div className="flex container flex-col w-full gap-6">
+          <SectionHeader title="History" />
           <p className="w-full flex_center text-center text-text">
-            With introduction of TIER-4 pointbased system by UKBA, this year was
-            significant for REACTION Nepal to make successful placement to over
-            a dozen UK institutions, including private and government colleges
-            and universities. As a result of properly- selected courses in
-            accordance with the students&apos; respective desires into right
-            colleges, as well as accurate visa applications, the success rate
-            was incredible with the cent percent. Also, the number of test prep
-            students, especially for IELTS at RN soared up this year, with
-            average of 6 Band overal.
-          </p>
-          <p className="w-full flex_center text-center text-text">
-            Relatively, the students were a bit less for other destinations like
-            USA and Australia but consideraly a good number as usual. This
-            number included serious, academically-intact and financially abled
-            candidates for whom the good institutions mattered, not the
-            contries. So, basically the visa was not a bar as they deserved it
-            for their further studies. We have been happy to be in their
+            At Star Laxmi Jewellery LLC, we pride ourselves on being more than
+            just a supplier – we are trusted experts in the gold industry, with
+            over 15 years of experience in delivering exceptional quality and
             service.
           </p>
         </div>
       </section>
-      <section className="w-full flex_center flex-col container py-16 gap-12 relative">
-        <SectionHeader smallTitle="Team Members" title="Meet Our Team" />
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 relative">
-          <div className="profilecard flex_center relative col-span-1 rounded-md overflow-hidden">
-            <Image
-              src={profileImage}
-              alt="profile image"
-              className="w-full h-[480px] object-cover"
-            />
-            <div className="absolute flex justify-between items-center w-[90%] gap-6 bottom-5">
-              <div className="flex flex-col gap-2">
-                <h4 className="text-2xl font-semibold text-primary">
-                  Raju Prasad Khanal
-                </h4>
-                <p className="text-primary">CEO/ Chairperson</p>
-              </div>
-              <button
-                onClick={() => setShowMessage(true)}
-                className="size-9 bg-primary rounded-full p-2"
-              >
-                <FaPlus className="size-full text-secondary" />
-              </button>
-            </div>
+
+      <section className="flex_center flex-col container lg:py-16 py-10 lg:gap-12 gap-6">
+        <SectionHeader title="About Us" />
+        <div className="flex_center flex-col gap-8  w-full">
+          <div className="flex_center flex-col gap-8">
+            <p className="text-text text-base text-justify">
+              At{" "}
+              <span className=" font-semibold text-[#ef001f] text-justify w-full">
+                Star Laxmi Jewellery LLC,
+              </span>{" "}
+              we pride ourselves on being more than just a supplier – we are
+              trusted experts in the gold industry, with over 15 years of
+              experience in delivering exceptional quality and service. Here’s
+              why you should choose us:
+            </p>
+            <ul className="list-disc">
+              <li className="mb-2 text-gray-700">
+                <span className="text-black">
+                  Trusted Experts in the Gold Industry:
+                </span>{" "}
+                With over a decade of expertise, we have built a reputation for
+                reliability, precision, and commitment to quality. Our deep
+                understanding of the gold market ensures that we provide only
+                the best products to our clients.
+              </li>
+              <li className="mb-2 text-gray-700">
+                <span className="text-black">
+                  100% Certified and Hallmarked Jewellery:
+                </span>{" "}
+                All our jewellery is 100% certified and hallmarked, adhering to
+                the highest industry standards. This guarantees that every piece
+                is genuine, pure, and of the finest quality, giving you complete
+                peace of mind.
+              </li>
+              <li className="mb-2 text-gray-700">
+                <span className="text-black">
+                  Competitive Wholesale and Retail Prices:
+                </span>{" "}
+                We offer highly competitive pricing for both wholesale and
+                retail, making it easier for you to access premium, 24-carat
+                gold jewellery at exceptional value. By sourcing gold directly
+                from trusted mine companies, we eliminate intermediaries,
+                passing on the savings to you.
+              </li>
+              <li className="mb-2 text-gray-700">
+                <span className="text-black">
+                  Customized Jewellery Crafting Services:
+                </span>{" "}
+                At Star Laxmi Jewellery LLC, we understand that each customer
+                has unique needs. That’s why we offer customized jewellery
+                crafting services, allowing you to create bespoke pieces that
+                meet your specifications and preferences. Whether you're
+                designing a one-of-a-kind item or creating a signature
+                collection, we bring your vision to life with unparalleled
+                craftsmanship.
+              </li>
+              <li className="mb-2 text-gray-700">
+                <span className="text-black">
+                  Secure and Insured Transactions:
+                </span>{" "}
+                We prioritize your safety and peace of mind. All transactions
+                with us are secure and fully insured, ensuring that your
+                investment is protected from start to finish. From the moment
+                you place an order to the final delivery, we guarantee a safe
+                and reliable experience.
+              </li>
+              <p>
+                Choose Star Laxmi Jewellery LLC for your wholesale and retail
+                gold needs, and experience the perfect blend of purity, quality,
+                expertise, and customer satisfaction.
+              </p>
+            </ul>
           </div>
-          <div className="profilecard flex_center relative col-span-1 rounded-md overflow-hidden">
-            <Image
-              src={profileImage}
-              alt="profile image"
-              className="w-full h-[480px] object-cover"
-            />
-            <div className="absolute flex justify-between items-center w-[90%] gap-6 bottom-5">
-              <div className="flex flex-col gap-2">
-                <h4 className="text-2xl font-semibold text-primary">
-                  Raju Prasad Khanal
-                </h4>
-                <p className="text-primary">CEO/ Chairperson</p>
-              </div>
-              <button
-                onClick={() => setShowMessage(true)}
-                className="size-9 bg-primary rounded-full p-2"
-              >
-                <FaPlus className="size-full text-secondary" />
-              </button>
-            </div>
-          </div>
-          <div className="profilecard flex_center relative col-span-1 rounded-md overflow-hidden">
-            <Image
-              src={profileImage}
-              alt="profile image"
-              className="w-full h-[480px] object-cover"
-            />
-            <div className="absolute flex justify-between items-center w-[90%] gap-6 bottom-5">
-              <div className="flex flex-col gap-2">
-                <h4 className="text-2xl font-semibold text-primary">
-                  Raju Prasad Khanal
-                </h4>
-                <p className="text-primary">CEO/ Chairperson</p>
-              </div>
-              <button
-                onClick={() => setShowMessage(true)}
-                className="size-9 bg-primary rounded-full p-2"
-              >
-                <FaPlus className="size-full text-secondary" />
-              </button>
-            </div>
-          </div>
-          <button className="absolute flex_center size-10 p-2 bg-primary rounded-md top-1/2 -left-5 shadow-md">
-            <IoIosArrowBack className="size-full" />
-          </button>
-          <button className="absolute flex_center size-10 p-2 bg-primary rounded-md top-1/2 -right-5 shadow-md">
-            <IoIosArrowForward className="size-full" />
-          </button>
         </div>
-        {showMessage && (
-          <div className="absolute inset-0 bg-black/80 flex_center lg:px-24 px-4">
-            <div className="flex lg:flex-row flex-col gap-6 p-8 lg:w-[65%] w-full lg:h-[485px]  bg-primary rounded-md relative -bottom-16">
-              <div className="image lg:w-[40%] w-full lg:h-full flex flex-col gap-4">
-                <div className="flex_center w-full lg:h-[70%] h-[300px] overflow-hidden">
-                  <Image
-                    src={profileImage}
-                    alt="profile-image"
-                    className="size-full object-cover"
-                  />
-                </div>
-                <div className="flex_center flex-col gap-2">
-                  <h4 className="text-2xl font-semibold text-secondary">
-                    Raju Prasad Khanal
-                  </h4>
-                  <p className="text-text">CEO/Chairperson</p>
-                </div>
-                <div className="flex_center gap-3">
-                  {socialMedia.map((media, index) => (
-                    <a
-                      key={index}
-                      href={media.link}
-                      target="_blank"
-                      className="social rounded-full size-8 p-2 border border-text/30 text-secondary"
-                    >
-                      <media.icon className="size-full" />
-                    </a>
-                  ))}
-                </div>
-              </div>
-              <div className=" flex flex-col gap-4 lg:w-[60%] w-full">
-                <p className="text-text">
-                  The CEO/Chairperson plays a pivotal role in steering the
-                  organization towards success and sustainability. Their work
-                  involves developing and executing the company&apos;s strategic
-                  vision, making critical decisions, and overseeing day-to-day
-                  operations.
-                </p>
-                <p className="text-text">
-                  As the top executive, CEOs provide inspirational leadership,
-                  setting the tone for the organization&apos;s culture and
-                  values. They engage with various stakeholders, from employees
-                  to investors, maintaining positive relationships and ensuring
-                  alignment with the company&apos;s mission. Financial
-                  oversight, risk management, and policy development are
-                  integral components of their responsibilities.
-                </p>
-              </div>
-              <button
-                onClick={() => setShowMessage(false)}
-                className="absolute top-5 right-5 text-secondary size-5"
-              >
-                <RxCross2 className="size-full" />
-              </button>
-            </div>
-          </div>
-        )}
       </section>
-      {/* <Contact className="pt-0 pb-16" /> */}
     </main>
   );
 }

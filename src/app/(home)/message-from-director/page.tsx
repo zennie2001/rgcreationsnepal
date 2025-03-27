@@ -5,10 +5,10 @@ import ceoimage from "@/assets/images/ceo.svg";
 import mobileceoimage from "@/assets/images/mobileceo.svg";
 import Image from "next/image";
 
-export default function MessageFromCeo() {
+export default function MessageFromDirector() {
   return (
     <main>
-      <PageHeader link="/message-from-ceo" title="Message From CEO" />
+      <PageHeader link="/message-from-director" title="Message From Director" />
       <section className="w-full flex  flex-col container  gap-12">
         <div className="flex lg:flex-row flex-col gap-5 items-center  px-2 py-5">
           <h1 className="font-semibold text-3xl text-secondary lg:hidden inline">
@@ -22,39 +22,38 @@ export default function MessageFromCeo() {
           <div className="flex items-start lg:w-[55%] w-full gap-3">
             <div className="w-full text-justify">
               <h1 className="font-extrabold mb-6 text-black">
-                Dear Valued Customers,
+                Dear Esteemed Customers and Partners,
               </h1>
               <p>
-                Welcome to Star Laxmi Jewellery LLC, where elegance meets
-                craftsmanship. We are delighted to have you explore our
-                exquisite collection of fine jewellery, designed to celebrate
-                your most precious moments.
+                It is with great pride and gratitude that I welcome you to Star
+                Laxmi Jewellery LLC. Our journey is built on a foundation of
+                trust, quality, and a deep passion for fine jewellery. Each
+                piece we create reflects our commitment to excellence, blending
+                traditional artistry with modern elegance.
               </p>
               <p className="mt-3">
-                At Star Laxmi Jewellery, we take pride in offering timeless
-                pieces crafted with passion, precision, and the highest quality
-                materials. Whether you are looking for a statement piece, a
-                meaningful gift, or a treasured heirloom, our dedicated team is
-                here to help you find jewellery that reflects your style and
-                emotions.
+                At Star Laxmi Jewellery, we believe jewellery is more than just
+                an accessory—it’s a symbol of love, culture, and timeless
+                beauty. That’s why we meticulously craft every piece, ensuring
+                that it tells a story and creates unforgettable memories for our
+                valued customers.
               </p>
               <p className="mt-3">
-                Your trust and satisfaction are at the heart of everything we
-                do. We are committed to providing an unparalleled shopping
-                experience, exceptional customer service, and stunning designs
-                that make every occasion truly special.
+                Our success is driven by your support, and we remain dedicated
+                to innovation, customer satisfaction, and delivering the finest
+                jewellery that exceeds expectations. We invite you to explore
+                our collections and experience the brilliance that defines Star
+                Laxmi Jewellery.
               </p>
-              <p className="mt-3">
-                Thank you for choosing Star Laxmi Jewellery. We look forward to
-                being part of your journey, celebrating love, beauty, and
-                elegance with you.
+              <p>
+                Thank you for being a part of our journey. We look forward to
+                adorning your moments with grace and luxury.
               </p>
-
               <div className="flex flex-col items-start justify-start pt-10">
                 <p className="font-semibold text-xl text-secondary">
                   Warm regards,
                 </p>
-                <p className="text-text">Prabesh KC</p>
+                <p className="text-text">Laxmi Gurung</p>
                 <p className="text-text"> Director, Star Laxmi Jewellery LLC</p>
               </div>
             </div>
