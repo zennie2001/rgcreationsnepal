@@ -22,7 +22,7 @@ const contactInfos = [
     logo: FaEnvelope,
     title: "Mail us",
     subTitle: "We are here to help.",
-    contact: "starlaxmi555@gmail.com",
+    contact: "info@starlaxmijewellery.com",
   },
   {
     logo: FaLocationDot,
@@ -51,29 +51,29 @@ const socialMedia = [
   },
 ];
 
-const branches = [
-  {
-    branch: "Kathmandu Office",
-    location: "Putalisadak Chowk-30,",
-    postBox: "Kathmandu, P.O.B: 8927",
-    number: "+977-1-4532334/4",
-    mail: "info@rnc.edu.np",
-  },
-  {
-    branch: "Bhaktapur Office",
-    location: "Putalisadak Chowk-30,",
-    postBox: "Kathmandu, P.O.B: 8927",
-    number: "+977-1-4532334/4",
-    mail: "info@rnc.edu.np",
-  },
-  {
-    branch: "Itahari Office",
-    location: "Putalisadak Chowk-30,",
-    postBox: "Kathmandu, P.O.B: 8927",
-    number: "+977-1-4532334/4",
-    mail: "info@rnc.edu.np",
-  },
-];
+// const branches = [
+//   {
+//     branch: "Kathmandu Office",
+//     location: "Putalisadak Chowk-30,",
+//     postBox: "Kathmandu, P.O.B: 8927",
+//     number: "+977-1-4532334/4",
+//     mail: "info@rnc.edu.np",
+//   },
+//   {
+//     branch: "Bhaktapur Office",
+//     location: "Putalisadak Chowk-30,",
+//     postBox: "Kathmandu, P.O.B: 8927",
+//     number: "+977-1-4532334/4",
+//     mail: "info@rnc.edu.np",
+//   },
+//   {
+//     branch: "Itahari Office",
+//     location: "Putalisadak Chowk-30,",
+//     postBox: "Kathmandu, P.O.B: 8927",
+//     number: "+977-1-4532334/4",
+//     mail: "info@rnc.edu.np",
+//   },
+// ];
 
 export default function ContactUs() {
   return (
@@ -133,27 +133,6 @@ export default function ContactUs() {
           className="w-full h-[60vh]"
           allowFullScreen
         ></iframe>
-      </div>
-      <div className="w-full flex container lg:py-16 py-10 gap-8">
-        <div className="flex flex-wrap w-full gap-8">
-          {branches.map((branch, index) => {
-            return (
-              <div key={index} className="flex flex-col gap-4 w-72">
-                <h5 className="text-xl font-semibold text-secondary">
-                  {branch.branch}
-                </h5>
-                <div className="flex flex-col">
-                  <p className="text-text">{branch.location}</p>
-                  <p className="text-text">{branch.postBox}</p>
-                </div>
-                <div className="flex flex-col gap-1">
-                  <p className="text-tertiary">{branch.number}</p>
-                  <p className="text-tertiary">{branch.mail}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
       </div>
     </main>
   );

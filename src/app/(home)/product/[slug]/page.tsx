@@ -46,7 +46,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
               {product.product}
             </h1>
             <p className="text-lg md:text-xl text-black font-semibold mt-2">
-              Rs. {product.price}.00
+              €. {product.price}.00
             </p>
 
             <p className="text-black mt-4 text-sm md:text-base lg:text-lg">

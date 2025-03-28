@@ -1,13 +1,16 @@
 import PageHeader from "@/components/PageHeader";
 import Image from "next/image";
 import aboutImage from "@/assets/images/craftmanship.jpg";
+import craft1 from "@/assets/images/crafts/c1.jpg";
+import craft2 from "@/assets/images/crafts/c2.jpg";
+import craft3 from "@/assets/images/crafts/c3.jpg";
 
 export default function Craftsmanship() {
   return (
     <main className="w-full overflow-hidden">
       <PageHeader link="/craftsmanship" title="Craftsmanship" />
-      <section className="flex_center flex-col lg:py-16 py-10 lg:gap-12 gap-6 lg:px-0 px-4">
-        <div className="flex_center flex-col gap-8 container w-full">
+      <section className="lg:py-16 py-10 lg:gap-12 container gap-6 lg:px-0 px-4">
+        <div className="flex_center flex-col gap-8  w-full">
           <h3 className="text-[32px] font-semibold text-secondary">
             Craftsmanship at Start Laxmi Jewellery
           </h3>
@@ -51,6 +54,23 @@ export default function Craftsmanship() {
               <Image src={aboutImage} alt="image" className=" object-cover" />
             </div>
           </div>
+        </div>
+        <div className="flex md:flex-row flex-col gap-2 justify-between my-10 w-full">
+          <Image
+            src={craft1}
+            alt="image"
+            className="md:w-[30%] w-full rounded-md shadow-lg hover:scale-110 transition-all duration-300 object-cover"
+          />
+          <Image
+            src={craft2}
+            alt="image"
+            className=" md:w-[30%] w-full rounded-md shadow-lg hover:scale-110 transition-all duration-300  object-cover"
+          />
+          <Image
+            src={craft3}
+            alt="image"
+            className="md:w-[30%] w-full rounded-md shadow-lg hover:scale-110 transition-all duration-300  object-cover"
+          />
         </div>
       </section>
     </main>

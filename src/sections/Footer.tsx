@@ -8,7 +8,7 @@ const Footer = () => {
       label: "Company",
       path: "/about",
     },
-    { label: "Who We Are", path: "/our-team" },
+    // { label: "Who We Are", path: "/our-team" },
     { label: "Message from CEO", path: "/message-from-ceo" },
     // {
     //   label: "Message from Director",
@@ -16,7 +16,7 @@ const Footer = () => {
     // },
     { label: "Craftsmanship", path: "/craftsmanship" },
     { label: "Customer Testimonials", path: "/testimonials" },
-    { label: "Our Showrooms", path: "/message-from-ceo" },
+    // { label: "Our Showrooms", path: "/message-from-ceo" },
     { label: "FAQs", path: "/faqs" },
   ];
   const categories = [

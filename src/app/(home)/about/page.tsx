@@ -2,7 +2,7 @@
 
 import PageHeader from "@/components/PageHeader";
 import SectionHeader from "@/components/SectionHeader";
-import aboutImage from "@/assets/images/our-team.jpg";
+import aboutImage from "@/assets/images/crafts/c8.jpg";
 import aboutSecondImage from "@/assets/images/about-large-starlaxmi.jpg";
 import Image from "next/image";
 import Contact from "@/sections/Contact";
@@ -12,6 +12,9 @@ import { FaFacebookF, FaLinkedinIn, FaPinterest, FaPlus } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { RxCross2 } from "react-icons/rx";
 import { useState } from "react";
+import craft1 from "@/assets/images/crafts/c4.jpg";
+import craft2 from "@/assets/images/crafts/c8.jpg";
+import craft3 from "@/assets/images/crafts/c2.jpg";
 
 const socialMedia = [
   {
@@ -42,7 +45,10 @@ export default function AboutPage() {
         <div className="flex lg:flex-row flex-col items-center lg:gap-16 gap-6 w-full">
           <div className="flex flex-col lg:w-1/2 w-full gap-12">
             <div className="flex flex-col gap-4">
-              <SectionHeader title="About Us" className="items-center" />
+              <h1 className="font-semibold text-3xl">
+                Star Laxmi Jewellery LLC: The Premier Supplier of Premium
+                24-Carat Gold Jewellery
+              </h1>
 
               <p className="text-text lg:text-justify text-center">
                 At Star Laxmi Jewellery LLC, we specialize exclusively in
@@ -83,14 +89,14 @@ export default function AboutPage() {
         <div className="flex_center lg:flex-row flex-col w-full lg:gap-8 gap-3">
           <div className="flex items-center lg:p-12 p-4 lg:gap-8 gap-2 bg-[#F5FBFF] lg:w-1/2 w-full rounded-md">
             <p className="lg:text-4xl text-3xl text-tertiary font-semibold  w-[40%] md:w-[20%]">
-              20K +
+              1K +
             </p>
             <div className="flex flex-col lg:gap-3 gap-0">
               <p className="lg:text-2xl text-xl font-semibold">
-                Satisfied Customers
+                Satisfied Business Customers
               </p>
               <p className="text-text text-sm">
-                Trusted by 20K+ people all around the world
+                Trusted by 1K + businesses all around the world
               </p>
             </div>
           </div>
@@ -159,7 +165,23 @@ export default function AboutPage() {
       </section>
 
       <section className="flex_center flex-col container lg:py-16 py-10 lg:gap-12 gap-6">
-        <SectionHeader title="About Us" />
+        <div className="flex md:flex-row flex-col gap-2 justify-between my-10 w-full">
+          <Image
+            src={craft1}
+            alt="image"
+            className="md:w-[30%] w-full rounded-md shadow-lg hover:scale-110 transition-all duration-300 object-cover"
+          />
+          <Image
+            src={craft2}
+            alt="image"
+            className=" md:w-[30%] w-full rounded-md shadow-lg hover:scale-110 transition-all duration-300  object-cover"
+          />
+          <Image
+            src={craft3}
+            alt="image"
+            className="md:w-[30%] w-full rounded-md shadow-lg hover:scale-110 transition-all duration-300  object-cover"
+          />
+        </div>
         <div className="flex_center flex-col gap-8  w-full">
           <div className="flex_center flex-col gap-8">
             <p className="text-text text-base text-justify">

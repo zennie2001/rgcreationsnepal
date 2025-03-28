@@ -23,6 +23,7 @@ export default async function BlogDetails({ params, searchParams }: Props) {
     return name.split(":")[0].trim().toLowerCase().replace(/\s+/g, "-");
   };
 
+  // Find the matching product
   const blog = newBlogs.find((p) => formatSlug(p.title) === slug);
 
   if (!blog) return notFound();
@@ -30,58 +31,65 @@ export default async function BlogDetails({ params, searchParams }: Props) {
   return (
     <main className="w-full">
       <PageHeader link={`/blogs/${slug}`} title={revertSlug(slug)} />
-      <section className="py-10 bg-[#F5F5F5] w-full px-4 sm:px-6 md:px-10">
-        <div className="flex flex-col items-center gap-8 container mx-auto">
+      <section className="py-10 bg-[#F5F5F5] w-full">
+        <div className="flex_center flex-col gap-8 container">
           <h3 className="text-3xl font-semibold text-center text-secondary">
             {blog.title}
           </h3>
-          <div className="flex flex-col items-center w-full gap-8">
-            <div className="flex flex-col items-center gap-3 w-full">
+          <div className="flex_center flex-col w-full gap-8">
+            <div className="flex_center flex-col gap-3 w-full">
               <img
                 src={blog.image.src}
                 alt="blog image"
-                className="w-full h-[50vh] sm:h-[60vh] object-cover"
+                className="w-full h-[60vh] object-cover"
               />
+              {/* <p className="text-text text-sm">Image Caption</p> */}
             </div>
-            <div className="flex flex-col items-center gap-8">
-              <h4 className="text-base text-text text-justify w-full max-w-3xl">
+            <div className="flex_center flex-col gap-8">
+              <h4 className="text-base text-text text-justify w-full">
                 {blog.description}
               </h4>
             </div>
-            <div className="flex flex-col items-center gap-8 w-full">
+            <div className="flex_center flex-col gap-8">
               {blog.subTitle && (
-                <h3 className="text-2xl md:text-3xl font-semibold text-secondary text-center w-full">
+                <h3 className="text-3xl font-semibold text-secondary text-center w-full">
                   {blog.subTitle}
                 </h3>
               )}
               {blog.subContent1 && (
-                <p className="text-text text-base text-justify max-w-3xl">
+                <p className="text-text text-base text-justify">
                   {blog.subContent1}
                 </p>
               )}
               {blog.subContent2 && (
-                <p className="text-text text-base text-justify max-w-3xl">
+                <p className="text-text text-base text-justify">
                   {blog.subContent2}
                 </p>
               )}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full">
-                <img
-                  src={blog.image.src}
-                  alt="blog image"
-                  className="w-full h-60 object-cover"
-                />
-                <img
-                  src={blog.image.src}
-                  alt="blog image"
-                  className="w-full h-60 object-cover"
-                />
+
+              <div className="flex_center gap-8 w-full">
+                <div className="flex_center w-1/2">
+                  <img
+                    src={blog.image.src}
+                    alt="blog image"
+                    className="w-full h-60 object-cover"
+                  />
+                </div>
+                <div className="flex_center w-1/2">
+                  <img
+                    src={blog.image.src}
+                    alt="blog image"
+                    className="w-full h-60 object-cover"
+                  />
+                </div>
               </div>
+
               {blog.section1.map((section1, index) => (
-                <div key={index} className="w-full max-w-3xl">
+                <div key={index}>
                   <p className="text-secondary text-xl md:text-3xl text-center font-semibold mt-10 mb-6">
                     {section1.title}
                   </p>
-                  <ul className="list-disc pl-6">
+                  <ul className="list-disc">
                     {section1.subsections.map((subsection, subIndex) => (
                       <li key={subIndex} className="mb-2">
                         <span className="font-semibold text-tertiary">
@@ -95,7 +103,7 @@ export default async function BlogDetails({ params, searchParams }: Props) {
               ))}
             </div>
             {blog.section2 && (
-              <div className="w-full max-w-3xl">
+              <div>
                 {blog.section2.map((section2, index) => (
                   <div key={index}>
                     <p className="text-secondary text-lg md:text-2xl text-center font-semibold mt-10 mb-6">
@@ -106,7 +114,7 @@ export default async function BlogDetails({ params, searchParams }: Props) {
                         {section2.description}
                       </p>
                     )}
-                    <ul className="list-disc pl-6">
+                    <ul>
                       {section2.subsections.map((subsection, subIndex) => (
                         <li key={subIndex} className="mb-2">
                           <span className="font-semibold text-tertiary mt-10">
@@ -121,8 +129,8 @@ export default async function BlogDetails({ params, searchParams }: Props) {
               </div>
             )}
             {blog.secondTitle && (
-              <div className="flex flex-col items-center gap-8 w-full max-w-3xl">
-                <h3 className="text-2xl md:text-3xl font-semibold text-secondary text-center w-full">
+              <div className="flex_center flex-col gap-8">
+                <h3 className="text-3xl font-semibold text-secondary text-center w-full">
                   {blog.secondTitle}
                 </h3>
                 {blog.secondContent1 && (
@@ -137,10 +145,12 @@ export default async function BlogDetails({ params, searchParams }: Props) {
                 )}
               </div>
             )}
-            <div className="flex flex-col items-center gap-8 w-full max-w-3xl">
-              <h4 className="text-2xl md:text-3xl font-semibold text-secondary text-center w-full">
+
+            <div className="flex_center flex-col gap-8">
+              <h4 className="text-3xl font-semibold text-secondary text-center w-full">
                 {blog.conclusion}
               </h4>
+
               <p className="text-text text-base text-justify">
                 {blog.conclusionContent1}
               </p>

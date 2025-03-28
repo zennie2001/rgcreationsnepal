@@ -21,7 +21,7 @@ const ProductCard = ({ product, image, price, desc, id, viewMode }: any) => {
 
       <div className="mt-4 text-center">
         <h2 className="font-medium text-lg text-black">{product}</h2>
-        <p className="text-xl font-bold text-black mt-2">Rs. {price}</p>
+        <p className="text-xl font-bold text-black mt-2">€. {price}</p>
         <p className="text-sm text-black mt-2">{desc}</p>
       </div>
 
