@@ -5,7 +5,7 @@ import BlogCard from "@/components/BlogCard";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 import blog1 from "@/assets/images/blog1.jpg";
-import blog2 from "@/assets/images/blog2.jpg";
+import blog2 from "@/assets/images/crafts/c2.jpg";
 
 import blog3 from "@/assets/images/blog3.jpg";
 import { section } from "framer-motion/client";

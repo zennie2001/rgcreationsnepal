@@ -339,7 +339,7 @@ const Header = () => {
                 <img
                   src="/assets/star-laxmi-logo.png"
                   alt="Logo"
-                  className="md:h-[150px] md:w-[150px] h-[50px] w-[50px]"
+                  className="md:h-[150px] md:w-[150px] h-[70px] w-[70px]"
                 />
               </Link>
             </div>

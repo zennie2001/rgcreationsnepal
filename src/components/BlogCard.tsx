@@ -25,9 +25,14 @@ export default function BlogCard({
       />
       {/* Content that fills remaining space */}
       <div className="p-[16px] pb-[0px] flex flex-col justify-between flex-grow">
-        <h2 className="text-[20px] leading-[26px] text-[#222222] line-clamp-2 font-bold mt-[8px]">
-          {title}
-        </h2>
+        <Link
+          href={`/blogs/${formatSlug(title)}`}
+          className="p-1   text-secondary cursor-pointer"
+        >
+          <h2 className="text-[20px] leading-[26px] text-[#222222] line-clamp-2 font-bold mt-[8px]">
+            {title}
+          </h2>
+        </Link>
         <p className="text-[14px] leading-[20px] text-[#F65128] font-medium my-[6px]">
           March 20,2025 | Star Laxmi
         </p>

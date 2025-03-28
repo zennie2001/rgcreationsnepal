@@ -1,6 +1,6 @@
 import SectionHeader from "../components/SectionHeader";
 import blog1 from "@/assets/images/blog1.jpg";
-import blog2 from "@/assets/images/blog2.jpg";
+import blog2 from "@/assets/images/crafts/c2.jpg";
 
 import blog3 from "@/assets/images/blog3.jpg";
 
@@ -152,6 +152,55 @@ export const newBlogs = [
       "Purchasing 24-carat gold is a smart choice for B2B customers in Dubai and beyond. With its purity, global demand, and potential for long-term financial security, 24-carat gold offers businesses a reliable asset that adds both value and luxury to their product offerings. By partnering with Star Laxmi Jewellery LLC, you gain access to premium gold products that meet the highest standards of quality, craftsmanship, and affordability.",
     conclusionContent2:
       "Whether you’re a retailer looking to stock investment-grade gold jewelry or a distributor seeking a reliable supply chain partner, Star Laxmi Jewellery LLC is here to support your business growth and success. Buy 24-carat gold today and secure your place in the thriving global gold market.",
+  },
+  {
+    image: blog3, // Add the appropriate image reference
+    title:
+      "Why Choose Star Laxmi Jewellery LLC for Your Gold Jewelry Needs: A Commitment to Craftsmanship and Luxury",
+    description:
+      "When it comes to gold jewelry, quality, craftsmanship, and trust are essential. Star Laxmi Jewellery LLC, based in the heart of Dubai, has built a strong reputation for offering exquisitely crafted jewelry that combines timeless design with premium quality. Whether you are buying for yourself or searching for the perfect gift, Star Laxmi Jewellery LLC provides a selection of luxury gold jewelry that is unmatched in terms of both elegance and durability.",
+
+    subTitle: "A Legacy of Excellence in Gold Jewelry",
+    subContent1:
+      "For decades, Star Laxmi Jewellery LLC has been a trusted name in the gold jewelry industry. With an unwavering commitment to quality, our craftsmen use the finest 24-carat gold sourced from trusted suppliers to create jewelry that not only meets but exceeds our customers' expectations. Our team of skilled artisans ensures that every piece of jewelry is crafted to perfection, from elegant necklaces to statement rings and sophisticated bracelets.",
+    subContent2:
+      "Our attention to detail and passion for excellence are evident in every design we produce. Whether you seek a timeless gold necklace, a luxurious bracelet, or a custom-designed wedding band, we bring your vision to life with our expert craftsmanship.",
+
+    section1: [
+      {
+        title:
+          "Why Gold Jewelry from Star Laxmi Jewellery LLC is a Smart Investment",
+        subsections: [
+          {
+            title: "Timeless Value and Stability",
+            content:
+              "Gold is more than just a precious metal—it is a valuable asset that has stood the test of time. Unlike other forms of investment, gold has consistently proven to retain its value, making it a smart choice for those who seek long-term financial security.",
+          },
+          {
+            title: "Uncompromising Purity and Quality",
+            content:
+              "Our 24-carat gold jewelry is sourced from trusted suppliers, ensuring the highest standards of purity. Each piece is crafted to meet industry standards, guaranteeing brilliance and durability.",
+          },
+          {
+            title: "Customization for Every Occasion",
+            content:
+              "One of the key features that set Star Laxmi Jewellery LLC apart is our ability to create custom-designed jewelry. Whether it’s a one-of-a-kind engagement ring or a personalized necklace, we work closely with clients to craft unique pieces that reflect their style.",
+          },
+        ],
+      },
+    ],
+
+    secondTitle: "Why Dubai is the Ideal Place to Buy Luxury Gold Jewelry",
+    secondContent1:
+      "Dubai is internationally recognized as the 'City of Gold,' offering some of the world's most luxurious jewelry collections at competitive prices. With a strong economy and a reputation as a luxury capital, Dubai remains the perfect destination for premium gold jewelry.",
+    secondContent2:
+      "As a trusted jeweler in Dubai, Star Laxmi Jewellery LLC provides an exclusive selection of high-quality gold jewelry, ensuring that every purchase is a worthwhile investment.",
+
+    conclusion: "Conclusion",
+    conclusionContent1:
+      "Gold jewelry is an investment in both beauty and value. With its timeless appeal and ability to withstand the test of time, gold has always been synonymous with luxury and elegance.",
+    conclusionContent2:
+      "At Star Laxmi Jewellery LLC, we offer the finest gold jewelry in Dubai, backed by exceptional craftsmanship and a commitment to quality. When you choose us, you invest in a legacy of luxury, trust, and unparalleled artistry.",
   },
 ];
 
