@@ -128,7 +128,9 @@ export const MobileDropdownNav = ({
                 }
                 className="w-full text-left py-1 text-black flex justify-between items-center"
               >
-                {item.label}
+                <Link href={item.path} className="text-gray-600">
+                  {item.label}
+                </Link>
                 {item.subMenu && (
                   <ChevronDown
                     size={14}
@@ -382,7 +384,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 w-3/4 max-w-xs h-full bg-white shadow-lg p-6 z-50 transform transition-transform ${
+        className={`fixed top-0 right-0 w-3/4 max-w-xs h-full bg-white shadow-lg p-6 z-50 transform transition-transform overflow-y-auto ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -401,7 +403,7 @@ const Header = () => {
             HOME
           </Link>
           <MobileDropdownNav
-            title="About-us"
+            title="About Us"
             items={[
               {
                 label: "Company",

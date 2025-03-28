@@ -27,7 +27,7 @@ const collections = [
 
 const Collection = () => {
   return (
-    <section className="w-full flex_center flex-col lg:gap-12 gap-6 lg:px-14 pt-20  px-1 font-jakarta">
+    <section className="w-full flex_center flex-col lg:gap-12 gap-6 lg:px-14 pt-10 md:pt-20  px-1 font-jakarta">
       <SectionHeader
         title="Tailored Products To Meet your Custom Needs"
         smallTitle="Our Collections"

@@ -79,7 +79,7 @@ export default function ContactUs() {
   return (
     <main className="w-full overflow-hidden">
       <PageHeader title="Contact Us" link="/contact" />
-      <div className="w-full grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 container lg:py-16 py-10 gap-8">
+      <div className="w-full grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 px-4 lg:px-0 container lg:py-16 py-10 gap-8">
         {contactInfos.map((info, index) => {
           return (
             <div

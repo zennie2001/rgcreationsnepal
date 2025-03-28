@@ -15,7 +15,7 @@ export default function Craftsmanship() {
             Craftsmanship at Start Laxmi Jewellery
           </h3>
           <div className="flex md:flex-row flex-col w-full gap-8">
-            <div className="flex flex-col w-1/2 my-auto gap-8">
+            <div className="flex flex-col w-full md:w-1/2 my-auto gap-8">
               <h4 className=" text-justify w-full">
                 At{" "}
                 <span className=" font-semibold text-[#ef001f] text-justify w-full">

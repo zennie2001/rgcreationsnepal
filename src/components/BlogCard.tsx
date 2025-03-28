@@ -21,7 +21,7 @@ export default function BlogCard({
       <img
         src={image.src}
         alt="Blog"
-        className="w-full h-[250px] object-cover group-hover:scale-105 transition-all duration-300 rounded-lg"
+        className="w-full h-[250px] object-cover group-hover:scale-105 transition-all duration-300 rounded-t-lg"
       />
       {/* Content that fills remaining space */}
       <div className="p-[16px] pb-[0px] flex flex-col justify-between flex-grow">

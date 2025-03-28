@@ -41,16 +41,16 @@ export default function AboutPage() {
   return (
     <main className="w-full  overflow-hidden">
       <PageHeader title="About Us" link="/about" />
-      <section className="flex_center container mx-auto flex-col w-full  lg:py-16 py-7 gap-16">
+      <section className="flex_center container mx-auto flex-col w-full px-4 lg:px-0  lg:py-16 py-7 gap-16">
         <div className="flex lg:flex-row flex-col items-center lg:gap-16 gap-6 w-full">
           <div className="flex flex-col lg:w-1/2 w-full gap-12">
             <div className="flex flex-col gap-4">
-              <h1 className="font-semibold text-3xl">
+              <h1 className="font-semibold text-xl md:text-3xl">
                 Star Laxmi Jewellery LLC: The Premier Supplier of Premium
                 24-Carat Gold Jewellery
               </h1>
 
-              <p className="text-text lg:text-justify text-center">
+              <p className="text-text text-justify">
                 At Star Laxmi Jewellery LLC, we specialize exclusively in
                 24-carat gold, offering our clients the highest level of purity
                 and unmatched quality. 24-carat gold is renowned for its
@@ -63,7 +63,7 @@ export default function AboutPage() {
                 gold mine companies, to ensure that our customers receive the
                 very best.
               </p>
-              <p className="text-text lg:text-justify text-center">
+              <p className="text-text text-justify ">
                 Our clientele consists of gold retail shops spanning Europe, the
                 Middle East, and Asia, all of whom rely on our competitive
                 wholesale rates and consistent supply of premium 24-carat gold.
@@ -115,7 +115,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <div className="image container flex_center h-[80vh] w-full relative">
+      <div className="image container px-4 lg:px-0 flex_center h-[80vh] w-full relative">
         <Image
           src={aboutSecondImage}
           alt="image"
@@ -125,10 +125,10 @@ export default function AboutPage() {
           <div className="flex w-full h-16 bg-primary"></div>
         </div>
       </div>
-      <section className="w-full flex_center container">
+      <section className="w-full flex_center container px-4 lg:px-0">
         <div className="flex pb-16 w-full">
           <div className="flex flex-col w-full lg:px-12 px-0 gap-4 lg:pt-0 pt-10">
-            <h2 className="text-[40px] font-semibold text-secondary">
+            <h2 className="text-xl md:text-3xl font-semibold text-secondary">
               Our Mission
             </h2>
             <div className="w-full flex md:flex-row flex-col md:gap-8 gap-4">
@@ -139,8 +139,8 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col w-full lg:px-12 gap-4">
-            <h2 className="text-[40px] font-semibold text-secondary">
+          <div className="flex flex-col w-full lg:px-12 gap-4 pt-10 md:pt-0">
+            <h2 className="text-xl md:text-3xl font-semibold text-secondary">
               Our Vision
             </h2>
             <div className="w-full flex md:flex-row flex-col md:gap-8 gap-4">
@@ -155,7 +155,7 @@ export default function AboutPage() {
       </section>
       <section className="w-full flex_center lg:gap-12 gap-6 lg:px-24 px-4 lg:py-16 py-10 bg-[#F5FBFF]">
         <div className="flex container flex-col w-full gap-6">
-          <h3 className="text-[32px] font-semibold text-center text-secondary">
+          <h3 className=" text-xl md:text-3xl font-semibold text-center text-secondary">
             At Star Laxmi Jewellery LLC, we pride ourselves on being more than
             just a supplier We are trusted experts in the gold industry, with
             over 15 years of experience in delivering exceptional quality and
@@ -164,7 +164,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="flex_center flex-col container lg:py-16 py-10 lg:gap-12 gap-6">
+      <section className="flex_center flex-col container px-4 lg:px-0 lg:py-16 py-10 lg:gap-12 gap-6">
         <div className="flex md:flex-row flex-col gap-2 justify-between my-10 w-full">
           <Image
             src={craft1}

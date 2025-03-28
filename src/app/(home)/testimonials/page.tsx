@@ -61,7 +61,7 @@ export default function Testimonials() {
   return (
     <main className="w-full mx-auto">
       <PageHeader link="/Testimonials" title="Testimonials" />
-      <section className="flex_center flex-col container lg:py-16 py-10 gap-12">
+      <section className="flex_center flex-col container lg:py-16 px-4 lg:px-0 py-10 gap-12">
         <SectionHeader
           smallTitle="Client Testimonials"
           title="Testimonials that inspire confidence"

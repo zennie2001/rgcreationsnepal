@@ -10,6 +10,7 @@ const categories = [
   { name: "Pendants", image: "pendents.jpg" },
   { name: "Chains", image: "chain.jpg" },
   { name: "Anklets", image: "anklets.jpg" },
+  { name: "Nose Pins", image: "earring.jpg" },
 ];
 
 const Categories = () => {
@@ -17,7 +18,7 @@ const Categories = () => {
     <div>
       <div className="container mx-auto">
         <div className="w-full flex justify-evenly">
-          <div className="grid sm:grid-cols-4 grid-cols-2 lg:grid-cols-8 mx-auto py-[1rem] md:py-[2rem] gap-y-[20px] md:gap-y-[40px]">
+          <div className="grid sm:grid-cols-4 grid-cols-3 lg:grid-cols-9 md:ms-[-50px] py-[1rem] md:py-[2rem] gap-y-[14px] md:gap-y-[40px]">
             {categories.map((category, index) => (
               <div
                 key={index}
@@ -25,7 +26,7 @@ const Categories = () => {
                 //   whileInView={{ opacity: 1, y: 0 }}
                 //   transition={{ duration: 1 + index * 0.1 }}
                 //   viewport={{ once: true }}
-                className="flex flex-col justify-center items-center overflow-hidden md:gap-[30px] mx-4 md:mx-10 gap-[14px] group w-[96px] h-[96px] md:w-[120px] md:h-[120px] rounded-full hover:border-tertiary transition-all duration-300 border-2 border-black  text-white cursor-pointer"
+                className="flex flex-col justify-center items-center overflow-hidden md:gap-[30px] mx-4 md:mx-10 gap-[14px] group w-[80px] h-[80px] md:w-[120px] md:h-[120px] rounded-full hover:border-tertiary transition-all duration-300 border-2 border-black  text-white cursor-pointer"
               >
                 <img
                   src={`/${category.image}`}

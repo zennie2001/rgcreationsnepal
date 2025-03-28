@@ -110,7 +110,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="md:-ml-28">
+          <div className="md:-ml-28 mt-4 md:mt-0">
             <h2 className="text-lg font-semibold text-black">Services</h2>
             <ul className="space-y-2 text-black">
               {services.map((item, index) => (
@@ -121,12 +121,12 @@ const Footer = () => {
             </ul>
           </div>
           {/* Contact Information */}
-          <div className="md:-ml-32">
+          <div className="md:-ml-32 col-span-2 md:col-span-1 mt-4 md:mt-0">
             <h2 className="text-lg font-semibold text-black">Contact Us</h2>
             <ul className="space-y-2 text-black w-full">
-              <li className="flex items-center gap-2">
+              <li className="flex items-center gap-2 w-full">
                 <MapPin className="flex-shrink-0" />
-                <span>
+                <span className="flex-1">
                   Al Souq Al Kabeer Tailor Galli, Esag Building (Old Plot), Shop
                   No. 07 Burdubai, Dubai, UAE (Near Astoria Hotel)
                 </span>
@@ -163,8 +163,10 @@ const Footer = () => {
           className="h-32 mx-auto mb-2"
           alt="Company Logo"
         />
-        <p className="text-black">
-          &copy; 2025 Star Laxmi Jewellery LLC | All Rights Reserved
+        <p className="text-black flex flex-col lg:flex-row justify-center items-center">
+          &copy; 2025 Star Laxmi Jewellery LLC
+          <span className="hidden lg:inline">&nbsp;|&nbsp;</span>
+          <span>All Rights Reserved</span>
         </p>
         <span>
           <Link href="/privacy-policy" className="text-xs mt-1">
