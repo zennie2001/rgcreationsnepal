@@ -4,17 +4,17 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 export default function BlogCard({
   image,
-  date,
   title,
-  miniDescription,
-  name,
+  description,
 }: {
   image: StaticImageData;
-  date: string;
   title: string;
-  miniDescription: string;
-  name: string;
+  description: string;
 }) {
+  const formatSlug = (name: string): string => {
+    return name.split(":")[0].trim().toLowerCase().replace(/\s+/g, "-");
+  };
+
   return (
     <div className="rounded-lg cursor-pointer overflow-hidden group bg-white flex flex-col h-full shadow-md">
       {/* Fixed image size */}
@@ -29,15 +29,15 @@ export default function BlogCard({
           {title}
         </h2>
         <p className="text-[14px] leading-[20px] text-[#F65128] font-medium my-[6px]">
-          {date} | {name}
+          March 20,2025 | Star Laxmi
         </p>
-        <p className="text-[15px] leading-[24px] tracking-[0.03em] line-clamp-5 text-[#444444] pb-2">
-          {miniDescription}
+        <p className="text-[15px] leading-[24px] tracking-[0.03em] line-clamp-5 text-[#444444]">
+          {description}
         </p>
       </div>
       <div className="flex m-2 border-b group hover:shadow-xl rounded-md border-secondary items-center gap-1 text-base cursor-pointer w-max">
         <Link
-          href={"/blogs/blogdetails"}
+          href={`/blogs/${formatSlug(title)}`}
           className="p-1   text-secondary cursor-pointer"
         >
           Read More

@@ -94,9 +94,14 @@ export const MobileDropdownNav = ({
   items,
 }: {
   title: string;
-  items: { label: string; path: string }[];
+  items: {
+    label: string;
+    path: string;
+    subMenu?: { label: string; path: string }[];
+  }[];
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSubMenu, setActiveSubMenu] = useState<string | null>(null);
 
   return (
     <div>
@@ -114,13 +119,40 @@ export const MobileDropdownNav = ({
       {isOpen && (
         <div className="pl-4 flex flex-col gap-2">
           {items.map((item, index) => (
-            <Link
-              key={index}
-              href={item.path}
-              className="block py-1 text-black"
-            >
-              {item.label}
-            </Link>
+            <div key={index}>
+              <button
+                onClick={() =>
+                  setActiveSubMenu(
+                    activeSubMenu === item.label ? null : item.label
+                  )
+                }
+                className="w-full text-left py-1 text-black flex justify-between items-center"
+              >
+                {item.label}
+                {item.subMenu && (
+                  <ChevronDown
+                    size={14}
+                    className={`transition-transform ${
+                      activeSubMenu === item.label ? "rotate-180" : ""
+                    }`}
+                  />
+                )}
+              </button>
+
+              {item.subMenu && activeSubMenu === item.label && (
+                <div className="pl-4 flex flex-col gap-1">
+                  {item.subMenu.map((subItem, subIndex) => (
+                    <Link
+                      key={subIndex}
+                      href={subItem.path}
+                      className="text-gray-600 py-1"
+                    >
+                      {subItem.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </div>
       )}
@@ -371,42 +403,103 @@ const Header = () => {
           <MobileDropdownNav
             title="About-us"
             items={[
-              { label: "Our Stories", path: "/message-from-ceo" },
-              { label: "Our Values", path: "/about" },
-              { label: "Sustainability", path: "/our-certificates" },
+              {
+                label: "Company",
+                path: "/about",
+              },
+              { label: "Who We Are", path: "/our-team" },
+              { label: "Message from CEO", path: "/message-from-ceo" },
+              // {
+              //   label: "Message from Director",
+              //   path: "/message-from-director",
+              // },
+              { label: "Craftsmanship", path: "/craftsmanship" },
+              { label: "Customer Testimonials", path: "/testimonials" },
+              { label: "Our Showrooms", path: "/message-from-ceo" },
+              { label: "FAQs", path: "/faqs" },
             ]}
           />
 
           <MobileDropdownNav
             title="Categories"
             items={[
-              { label: "Necklaces", path: "/destination" },
-              { label: "Bracelets", path: "/faqs" },
-              { label: "Rings", path: "/gallery" },
-              { label: "Earrings", path: "/scholarship-list" },
-              { label: "Bangles", path: "/testimonials" },
-              { label: "Pendants", path: "/visa-acceptance" },
-              { label: "Chains", path: "/studentcounselling" },
-              { label: "Anklets", path: "/scholarship-assistance" },
-              { label: "Nose Pins", path: "/message-from-ceo" },
-              { label: "Cufflinks", path: "/holiday-list" },
-              { label: "Jewelry Sets", path: "/about" },
-              { label: "Gold Coin & Bullion", path: "/blogs" },
+              {
+                label: "Necklaces",
+                path: "/product",
+                subMenu: [
+                  { label: "Gold Necklace", path: "/product" },
+                  { label: "Silver Necklace", path: "/product" },
+                ],
+              },
+              {
+                label: "Bracelets",
+                path: "/product",
+                subMenu: [
+                  { label: "Gold", path: "/product" },
+                  { label: "Silver", path: "/product" },
+                  { label: "Diamond", path: "/product" },
+                  { label: "Platinum", path: "/product" },
+                  { label: "Gemstone", path: "/product" },
+                ],
+              },
+              {
+                label: "Rings",
+                path: "/product",
+                subMenu: [
+                  { label: "Gold", path: "/product" },
+                  { label: "Silver", path: "/product" },
+                  { label: "Diamond", path: "/product" },
+                  { label: "Platinum", path: "/product" },
+                  { label: "Gemstone", path: "/product" },
+                ],
+              },
+              {
+                label: "Earrings",
+                path: "/product",
+                subMenu: [
+                  { label: "Gold", path: "/product" },
+                  { label: "Silver", path: "/product" },
+                  { label: "Diamond", path: "/product" },
+                  { label: "Platinum", path: "/product" },
+                  { label: "Gemstone", path: "/product" },
+                ],
+              },
+              { label: "Bangles", path: "/product" },
+              { label: "Pendants", path: "/product" },
+              { label: "Chains", path: "/product" },
+              { label: "Anklets", path: "/product" },
+              { label: "Nose Pins", path: "/product" },
+              { label: "Cufflinks", path: "/product" },
+              { label: "Jewelry Sets", path: "/product" },
+              { label: "Gold Coin & Bullion", path: "/product" },
             ]}
           />
+          <Link
+            href="/24-carat-gold"
+            className="text-black text-lg font-medium hover:text-[#ef001f]"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            24 CARAT GOLD
+          </Link>
 
           <MobileDropdownNav
             title="Services"
             items={[
-              { label: "Custom Design", path: "/test-list" },
-              { label: "Jewelry Repair", path: "/services" },
-              { label: "Engraving Services", path: "/consultation" },
-              { label: "Appraisal Services", path: "/career-counselling" },
+              { label: "Custom Design", path: "/custom-design" },
+              { label: "Jewelry Repair", path: "/jewellery-repair" },
+              { label: "Engraving Services", path: "/engraving-services" },
+              { label: "Appraisal Services", path: "/appraisal-services" },
             ]}
           />
-
           <Link
-            href="/blog"
+            href="/investor-relations"
+            className="text-black text-lg font-medium hover:text-[#ef001f]"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            INVESTOR RELATIONS
+          </Link>
+          <Link
+            href="/blogs"
             className="text-black text-lg font-medium hover:text-[#ef001f]"
             onClick={() => setIsMenuOpen(false)}
           >

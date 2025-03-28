@@ -31,7 +31,7 @@ const config: Config = {
         borderColor:'#E9E9E9',
         bodyColor:'#FFBF1C',
         text: {
-          DEFAULT: "#4B4B4B",
+          DEFAULT: "black",
         },
       },
 
