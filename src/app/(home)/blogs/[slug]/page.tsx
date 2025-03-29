@@ -1,7 +1,6 @@
 import { newBlogs } from "../page";
 import { notFound } from "next/navigation";
 import PageHeader from "@/components/PageHeader";
-import ProductImageSlider from "@/components/ProductImageSlider";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -41,7 +40,7 @@ export default async function BlogDetails({ params, searchParams }: Props) {
               <img
                 src={blog.image.src}
                 alt="blog image"
-                className="w-full h-[60vh] object-cover"
+                className="w-full h-auto object-cover"
               />
               {/* <p className="text-text text-sm">Image Caption</p> */}
             </div>
@@ -70,16 +69,16 @@ export default async function BlogDetails({ params, searchParams }: Props) {
               <div className="flex_center gap-8 w-full">
                 <div className="flex_center w-1/2">
                   <img
-                    src={blog.image.src}
+                    src={blog.image2.src}
                     alt="blog image"
-                    className="w-full h-60 object-cover"
+                    className="w-full h-auto object-contain"
                   />
                 </div>
                 <div className="flex_center w-1/2">
                   <img
-                    src={blog.image.src}
+                    src={blog.image3.src}
                     alt="blog image"
-                    className="w-full h-60 object-cover"
+                    className="w-full h-auto object-contain"
                   />
                 </div>
               </div>

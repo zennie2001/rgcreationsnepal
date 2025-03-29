@@ -1,18 +1,25 @@
 import PageHeader from "@/components/PageHeader";
 import SectionHeader from "@/components/SectionHeader";
-import blogImage from "@/assets/images/blogImage.jpg";
+import blogImage from "@/assets/images/our-team.jpg";
 import BlogCard from "@/components/BlogCard";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 import blog1 from "@/assets/images/blog1.jpg";
 import blog2 from "@/assets/images/crafts/c2.jpg";
-
+import blog5 from "@/assets/images/crafts/c4.jpg";
+import blog6 from "@/assets/images/crafts/c8.jpg";
+import blog7 from "@/assets/images/crafts/c3.jpg";
+import blog8 from "@/assets/images/crafts/c5.jpg";
+import blog9 from "@/assets/images/crafts/c9.jpg";
+import blog4 from "@/assets/images/newBanner.jpg";
 import blog3 from "@/assets/images/blog3.jpg";
 import { section } from "framer-motion/client";
 
 export const newBlogs = [
   {
     image: blog1,
+    image2: blog2,
+    image3: blogImage,
     title:
       "Investing in 24-Carat Gold: A Smart Choice for Secure and Luxurious Wealth",
     description:
@@ -75,7 +82,9 @@ export const newBlogs = [
       "At Star Laxmi Jewellery LLC, we are dedicated to providing the finest 24-carat gold products to our clients, ensuring that every piece we deliver reflects our commitment to quality, luxury, and craftsmanship. By investing in 24-carat gold, you are not only securing a valuable asset but also embracing a legacy of elegance and wealth that will last for generations.",
   },
   {
-    image: blog2,
+    image: blog4,
+    image2: blog5,
+    image3: blog6,
     title:
       "Buy Wholesale 24-Carat Gold in Dubai: Why B2B Clients Choose Star Laxmi Jewellery for Luxury and Security",
     description:
@@ -158,7 +167,9 @@ export const newBlogs = [
       "Whether you’re a retailer looking to stock investment-grade gold jewelry or a distributor seeking a reliable supply chain partner, Star Laxmi Jewellery LLC is here to support your business growth and success. Buy 24-carat gold today and secure your place in the thriving global gold market.",
   },
   {
-    image: blog3, // Add the appropriate image reference
+    image: blog7, // Add the appropriate image reference
+    image2: blog8,
+    image3: blog9,
     title:
       "Why Choose Star Laxmi Jewellery LLC for Your Gold Jewelry Needs: A Commitment to Craftsmanship and Luxury",
     description:
