@@ -2,7 +2,7 @@ import PageHeader from "@/components/PageHeader";
 import leftquote from "@/assets/images/leftquotes.svg";
 import rightquote from "@/assets/images/rightquotes.svg";
 import ceoimage from "@/assets/images/ceoImage.jpg";
-import mobileceoimage from "@/assets/images/mobileceo.svg";
+import mobileceoimage from "@/assets/images/ceoImage.jpg";
 import Image from "next/image";
 
 export default function MessageFromCeo() {
@@ -11,7 +11,7 @@ export default function MessageFromCeo() {
       <PageHeader link="/message-from-ceo" title="Message From CEO" />
       <section className="w-full flex  flex-col container  gap-12">
         <div className="flex lg:flex-row flex-col gap-5 items-center  px-2 py-5">
-          <h1 className="font-semibold text-3xl text-secondary lg:hidden inline">
+          <h1 className="font-semibold text-center text-3xl text-secondary lg:hidden inline">
             Message From The CEO
           </h1>
           <Image
