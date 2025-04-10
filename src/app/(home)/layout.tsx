@@ -6,6 +6,7 @@ import Header from "@/sections/Header";
 import Footer from "@/sections/Footer";
 import Link from "next/link";
 import { Marcellus } from "next/font/google";
+import ToastProvider from "@/components/ToastContainer";
 
 const jakarta = Marcellus({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({
       <body className={twMerge(jakarta.variable, "antialiased font-sans")}>
         <Header />
         {children}
+        <ToastProvider />
         <Footer />
       </body>
     </html>

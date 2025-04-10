@@ -4,6 +4,15 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { ChevronDown, ChevronRight, Menu, X } from "lucide-react";
+import {
+  FaEnvelope,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaPhoneAlt,
+  FaPinterest,
+} from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { RiInstagramFill } from "react-icons/ri";
 
 const navLinks = [
   {
@@ -231,292 +240,341 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full p-6 px-8 md:px-32 z-20 absolute top-0 bg-white/40">
-      {/* Mobile Menu Button */}
-      <button
-        className="md:hidden text-black ml-auto"
-        onClick={() => setIsMenuOpen(true)}
-      >
-        <Menu size={28} />
-      </button>
-      <div className="flex justify-between container mx-auto">
-        {/* Left side navigation links (Hidden on small screens) */}
-        <div className="hidden md:flex gap-6 text-black text-base">
-          <Link href="/" className="font-medium hover:text-[#ef001f]">
-            HOME
-          </Link>
-          <DropdownNav
-            href="/about-us"
-            menuItems={[
-              {
-                label: "Company",
-                path: "/about",
-              },
-              // { label: "Who We Are", path: "/our-team" },
-              { label: "Message from CEO", path: "/message-from-ceo" },
-              // {
-              //   label: "Message from Director",
-              //   path: "/message-from-director",
-              // },
-              { label: "Craftsmanship", path: "/craftsmanship" },
-              { label: "Customer Testimonials", path: "/testimonials" },
-              // { label: "Our Showrooms", path: "/message-from-ceo" },
-              { label: "FAQs", path: "/faqs" },
-            ]}
-          >
-            ABOUT US
-          </DropdownNav>
+    <>
+      <div className="header-top w-full py-2 xl:px-32 px-10 hidden lg:block bg-primary">
+        <div className="container lg:flex hidden justify-between items-center">
+          <div className="info flex_center gap-3">
+            <div className="flex_center gap-2 font-normal text-sm">
+              <FaEnvelope />
+              <a
+                href="mailto:info@aiglobal.com.au"
+                className="text-sm hover:underline"
+              >
+                info@starlaxmijewellery.com
+              </a>
+            </div>
+            <div className="w-4 h-[1.5px] bg-primary"></div>
 
-          <DropdownNav
-            href="/categories"
-            menuItems={[
-              {
-                label: "Necklaces",
-                path: "/product",
-                subMenu: [
-                  { label: "Gold Necklace", path: "/product" },
-                  { label: "Silver Necklace", path: "/product" },
-                ],
-              },
-              {
-                label: "Bracelets",
-                path: "/product",
-                subMenu: [
-                  { label: "Gold", path: "/product" },
-                  { label: "Silver", path: "/product" },
-                  { label: "Diamond", path: "/product" },
-                  { label: "Platinum", path: "/product" },
-                  { label: "Gemstone", path: "/product" },
-                ],
-              },
-              {
-                label: "Rings",
-                path: "/product",
-                subMenu: [
-                  { label: "Gold", path: "/product" },
-                  { label: "Silver", path: "/product" },
-                  { label: "Diamond", path: "/product" },
-                  { label: "Platinum", path: "/product" },
-                  { label: "Gemstone", path: "/product" },
-                ],
-              },
-              {
-                label: "Earrings",
-                path: "/product",
-                subMenu: [
-                  { label: "Gold", path: "/product" },
-                  { label: "Silver", path: "/product" },
-                  { label: "Diamond", path: "/product" },
-                  { label: "Platinum", path: "/product" },
-                  { label: "Gemstone", path: "/product" },
-                ],
-              },
-              { label: "Bangles", path: "/product" },
-              { label: "Pendants", path: "/product" },
-              { label: "Chains", path: "/product" },
-              { label: "Anklets", path: "/product" },
-              { label: "Nose Pins", path: "/product" },
-              { label: "Cufflinks", path: "/product" },
-              { label: "Jewelry Sets", path: "/product" },
-              { label: "Gold Coin & Bullion", path: "/product" },
-            ]}
-          >
-            CATEGORIES
-          </DropdownNav>
-          <Link
-            href="/24-carat-gold"
-            className="hover:text-[#ef001f] uppercase font-medium"
-          >
-            24 Carat Gold
-          </Link>
-        </div>
-
-        {/* Center logo */}
-        <div className="mt-0">
-          <div className="absolute left-1/2 transform top-0 -translate-x-1/2 z-50">
-            <div className="bg-white/40 px-2  md:pt-4 md:pb-3 py-2.5 rounded-b-full">
-              <Link href="/">
-                <img
-                  src="/assets/star-laxmi-logo.png"
-                  alt="Logo"
-                  className="md:h-[150px] md:w-[150px] h-[70px] w-[70px]"
-                />
+            <div className="flex_center gap-2 font-normal text-sm">
+              <FaLocationDot />
+              <p className="text-sm hover:underline">
+                Al Souq Al Kabeer Tailor Galli, Esag Building (Old Plot), Shop
+                No. 07 Burdubai, Dubai, UAE
+              </p>
+            </div>
+          </div>
+          <div className="flex_center gap-3">
+            <Link href="/cart">
+              <img
+                src="/assets/cart.svg"
+                alt="cart"
+                className="w-6 h-6 mx-2  "
+              />
+            </Link>
+            <div className="-mt-2">
+              <Link href="/login">
+                <span className="font-normal text-pretty text-base ps-4  ">
+                  Login
+                </span>
+              </Link>
+              <span className="font-thin text-3xl"> | </span>
+              <Link href="/signup">
+                <span className="font-normal text-pretty text-base  pe-2 ">
+                  Sign Up
+                </span>
               </Link>
             </div>
           </div>
         </div>
-
-        {/* Right side navigation links (Hidden on small screens) */}
-        <div className="hidden md:flex gap-6 text-black text-base">
-          <DropdownNav
-            href="/services"
-            menuItems={[
-              { label: "Custom Design", path: "/custom-design" },
-              { label: "Jewelry Repair", path: "/jewellery-repair" },
-              { label: "Engraving Services", path: "/engraving-services" },
-              { label: "Appraisal Services", path: "/appraisal-services" },
-            ]}
-          >
-            SERVICES
-          </DropdownNav>
-          <Link
-            href="/investor-relations"
-            className="hover:text-[#ef001f] font-medium"
-          >
-            INVESTOR RELATIONS
-          </Link>
-          <Link href="/blogs" className="hover:text-[#ef001f] font-medium">
-            BLOG
-          </Link>
-          <Link href="/contact" className="hover:text-[#ef001f] font-medium">
-            CONTACT US
-          </Link>
-        </div>
       </div>
-
-      {/* Mobile Menu Overlay */}
-      {isMenuOpen && (
-        <div
-          className="fixed inset-0 bg-black/50 z-50"
-          onClick={() => setIsMenuOpen(false)}
-        ></div>
-      )}
-
-      {/* Mobile Menu */}
-      <div
-        className={`fixed top-0 right-0 w-3/4 max-w-xs h-full bg-white shadow-lg p-6 z-50 transform transition-transform overflow-y-auto ${
-          isMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
+      <nav className="w-full p-6 px-8 md:px-32 z-20 absolute top-0 lg:top-10 bg-white/40">
+        {/* Mobile Menu Button */}
         <button
-          className="absolute top-4 right-4"
-          onClick={() => setIsMenuOpen(false)}
+          className="md:hidden text-black ml-auto"
+          onClick={() => setIsMenuOpen(true)}
         >
-          <X size={28} />
+          <Menu size={28} />
         </button>
-        <div className="flex flex-col gap-4 mt-10">
-          <Link
-            href="/"
-            className="text-black text-lg font-medium hover:text-[#ef001f]"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            HOME
-          </Link>
-          <MobileDropdownNav
-            title="About Us"
-            items={[
-              {
-                label: "Company",
-                path: "/about",
-              },
-              // { label: "Who We Are", path: "/our-team" },
-              { label: "Message from CEO", path: "/message-from-ceo" },
-              // {
-              //   label: "Message from Director",
-              //   path: "/message-from-director",
-              // },
-              { label: "Craftsmanship", path: "/craftsmanship" },
-              { label: "Customer Testimonials", path: "/testimonials" },
-              // { label: "Our Showrooms", path: "/message-from-ceo" },
-              { label: "FAQs", path: "/faqs" },
-            ]}
-          />
 
-          <MobileDropdownNav
-            title="Categories"
-            items={[
-              {
-                label: "Necklaces",
-                path: "/product",
-                subMenu: [
-                  { label: "Gold Necklace", path: "/product" },
-                  { label: "Silver Necklace", path: "/product" },
-                ],
-              },
-              {
-                label: "Bracelets",
-                path: "/product",
-                subMenu: [
-                  { label: "Gold", path: "/product" },
-                  { label: "Silver", path: "/product" },
-                  { label: "Diamond", path: "/product" },
-                  { label: "Platinum", path: "/product" },
-                  { label: "Gemstone", path: "/product" },
-                ],
-              },
-              {
-                label: "Rings",
-                path: "/product",
-                subMenu: [
-                  { label: "Gold", path: "/product" },
-                  { label: "Silver", path: "/product" },
-                  { label: "Diamond", path: "/product" },
-                  { label: "Platinum", path: "/product" },
-                  { label: "Gemstone", path: "/product" },
-                ],
-              },
-              {
-                label: "Earrings",
-                path: "/product",
-                subMenu: [
-                  { label: "Gold", path: "/product" },
-                  { label: "Silver", path: "/product" },
-                  { label: "Diamond", path: "/product" },
-                  { label: "Platinum", path: "/product" },
-                  { label: "Gemstone", path: "/product" },
-                ],
-              },
-              { label: "Bangles", path: "/product" },
-              { label: "Pendants", path: "/product" },
-              { label: "Chains", path: "/product" },
-              { label: "Anklets", path: "/product" },
-              { label: "Nose Pins", path: "/product" },
-              { label: "Cufflinks", path: "/product" },
-              { label: "Jewelry Sets", path: "/product" },
-              { label: "Gold Coin & Bullion", path: "/product" },
-            ]}
-          />
-          <Link
-            href="/24-carat-gold"
-            className="text-black text-lg font-medium hover:text-[#ef001f]"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            24 CARAT GOLD
-          </Link>
+        <div className="flex justify-between container mx-auto">
+          {/* Left side navigation links (Hidden on small screens) */}
+          <div className="hidden md:flex gap-6 text-black text-base">
+            <Link href="/" className="font-medium hover:text-[#ef001f]">
+              HOME
+            </Link>
+            <DropdownNav
+              href="/about-us"
+              menuItems={[
+                {
+                  label: "Company",
+                  path: "/about",
+                },
+                // { label: "Who We Are", path: "/our-team" },
+                { label: "Message from CEO", path: "/message-from-ceo" },
+                // {
+                //   label: "Message from Director",
+                //   path: "/message-from-director",
+                // },
+                { label: "Craftsmanship", path: "/craftsmanship" },
+                { label: "Customer Testimonials", path: "/testimonials" },
+                // { label: "Our Showrooms", path: "/message-from-ceo" },
+                { label: "FAQs", path: "/faqs" },
+              ]}
+            >
+              ABOUT US
+            </DropdownNav>
 
-          <MobileDropdownNav
-            title="Services"
-            items={[
-              { label: "Custom Design", path: "/custom-design" },
-              { label: "Jewelry Repair", path: "/jewellery-repair" },
-              { label: "Engraving Services", path: "/engraving-services" },
-              { label: "Appraisal Services", path: "/appraisal-services" },
-            ]}
-          />
-          <Link
-            href="/investor-relations"
-            className="text-black text-lg font-medium hover:text-[#ef001f]"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            INVESTOR RELATIONS
-          </Link>
-          <Link
-            href="/blogs"
-            className="text-black text-lg font-medium hover:text-[#ef001f]"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            BLOG
-          </Link>
-          <Link
-            href="/contact"
-            className="text-black text-lg font-medium hover:text-[#ef001f]"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            CONTACT US
-          </Link>
+            <DropdownNav
+              href="/categories"
+              menuItems={[
+                {
+                  label: "Necklaces",
+                  path: "/product",
+                  subMenu: [
+                    { label: "Gold Necklace", path: "/product" },
+                    { label: "Silver Necklace", path: "/product" },
+                  ],
+                },
+                {
+                  label: "Bracelets",
+                  path: "/product",
+                  subMenu: [
+                    { label: "Gold", path: "/product" },
+                    { label: "Silver", path: "/product" },
+                    { label: "Diamond", path: "/product" },
+                    { label: "Platinum", path: "/product" },
+                    { label: "Gemstone", path: "/product" },
+                  ],
+                },
+                {
+                  label: "Rings",
+                  path: "/product",
+                  subMenu: [
+                    { label: "Gold", path: "/product" },
+                    { label: "Silver", path: "/product" },
+                    { label: "Diamond", path: "/product" },
+                    { label: "Platinum", path: "/product" },
+                    { label: "Gemstone", path: "/product" },
+                  ],
+                },
+                {
+                  label: "Earrings",
+                  path: "/product",
+                  subMenu: [
+                    { label: "Gold", path: "/product" },
+                    { label: "Silver", path: "/product" },
+                    { label: "Diamond", path: "/product" },
+                    { label: "Platinum", path: "/product" },
+                    { label: "Gemstone", path: "/product" },
+                  ],
+                },
+                { label: "Bangles", path: "/product" },
+                { label: "Pendants", path: "/product" },
+                { label: "Chains", path: "/product" },
+                { label: "Anklets", path: "/product" },
+                { label: "Nose Pins", path: "/product" },
+                { label: "Cufflinks", path: "/product" },
+                { label: "Jewelry Sets", path: "/product" },
+                { label: "Gold Coin & Bullion", path: "/product" },
+              ]}
+            >
+              CATEGORIES
+            </DropdownNav>
+            <Link
+              href="/24-carat-gold"
+              className="hover:text-[#ef001f] uppercase font-medium"
+            >
+              24 Carat Gold
+            </Link>
+          </div>
+
+          {/* Center logo */}
+          <div className="mt-0">
+            <div className="absolute left-1/2 transform top-0 -translate-x-1/2 z-50">
+              <div className="bg-white/40 px-2  md:pt-4 md:pb-3 py-2.5 rounded-b-full">
+                <Link href="/">
+                  <img
+                    src="/assets/star-laxmi-logo.png"
+                    alt="Logo"
+                    className="md:h-[150px] md:w-[150px] h-[70px] w-[70px]"
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Right side navigation links (Hidden on small screens) */}
+          <div className="hidden md:flex gap-6 text-black text-base">
+            <DropdownNav
+              href="/services"
+              menuItems={[
+                { label: "Custom Design", path: "/custom-design" },
+                { label: "Jewelry Repair", path: "/jewellery-repair" },
+                { label: "Engraving Services", path: "/engraving-services" },
+                { label: "Appraisal Services", path: "/appraisal-services" },
+              ]}
+            >
+              SERVICES
+            </DropdownNav>
+            <Link
+              href="/investor-relations"
+              className="hover:text-[#ef001f] font-medium"
+            >
+              INVESTOR RELATIONS
+            </Link>
+            <Link href="/blogs" className="hover:text-[#ef001f] font-medium">
+              BLOG
+            </Link>
+            <Link href="/contact" className="hover:text-[#ef001f] font-medium">
+              CONTACT US
+            </Link>
+          </div>
         </div>
-      </div>
-    </nav>
+
+        {/* Mobile Menu Overlay */}
+        {isMenuOpen && (
+          <div
+            className="fixed inset-0 bg-black/50 z-50"
+            onClick={() => setIsMenuOpen(false)}
+          ></div>
+        )}
+
+        {/* Mobile Menu */}
+        <div
+          className={`fixed top-0 right-0 w-3/4 max-w-xs h-full bg-white shadow-lg p-6 z-50 transform transition-transform overflow-y-auto ${
+            isMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          <button
+            className="absolute top-4 right-4"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <X size={28} />
+          </button>
+          <div className="flex flex-col gap-4 mt-10">
+            <Link
+              href="/"
+              className="text-black text-lg font-medium hover:text-[#ef001f]"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              HOME
+            </Link>
+            <MobileDropdownNav
+              title="About Us"
+              items={[
+                {
+                  label: "Company",
+                  path: "/about",
+                },
+                // { label: "Who We Are", path: "/our-team" },
+                { label: "Message from CEO", path: "/message-from-ceo" },
+                // {
+                //   label: "Message from Director",
+                //   path: "/message-from-director",
+                // },
+                { label: "Craftsmanship", path: "/craftsmanship" },
+                { label: "Customer Testimonials", path: "/testimonials" },
+                // { label: "Our Showrooms", path: "/message-from-ceo" },
+                { label: "FAQs", path: "/faqs" },
+              ]}
+            />
+
+            <MobileDropdownNav
+              title="Categories"
+              items={[
+                {
+                  label: "Necklaces",
+                  path: "/product",
+                  subMenu: [
+                    { label: "Gold Necklace", path: "/product" },
+                    { label: "Silver Necklace", path: "/product" },
+                  ],
+                },
+                {
+                  label: "Bracelets",
+                  path: "/product",
+                  subMenu: [
+                    { label: "Gold", path: "/product" },
+                    { label: "Silver", path: "/product" },
+                    { label: "Diamond", path: "/product" },
+                    { label: "Platinum", path: "/product" },
+                    { label: "Gemstone", path: "/product" },
+                  ],
+                },
+                {
+                  label: "Rings",
+                  path: "/product",
+                  subMenu: [
+                    { label: "Gold", path: "/product" },
+                    { label: "Silver", path: "/product" },
+                    { label: "Diamond", path: "/product" },
+                    { label: "Platinum", path: "/product" },
+                    { label: "Gemstone", path: "/product" },
+                  ],
+                },
+                {
+                  label: "Earrings",
+                  path: "/product",
+                  subMenu: [
+                    { label: "Gold", path: "/product" },
+                    { label: "Silver", path: "/product" },
+                    { label: "Diamond", path: "/product" },
+                    { label: "Platinum", path: "/product" },
+                    { label: "Gemstone", path: "/product" },
+                  ],
+                },
+                { label: "Bangles", path: "/product" },
+                { label: "Pendants", path: "/product" },
+                { label: "Chains", path: "/product" },
+                { label: "Anklets", path: "/product" },
+                { label: "Nose Pins", path: "/product" },
+                { label: "Cufflinks", path: "/product" },
+                { label: "Jewelry Sets", path: "/product" },
+                { label: "Gold Coin & Bullion", path: "/product" },
+              ]}
+            />
+            <Link
+              href="/24-carat-gold"
+              className="text-black text-lg font-medium hover:text-[#ef001f]"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              24 CARAT GOLD
+            </Link>
+
+            <MobileDropdownNav
+              title="Services"
+              items={[
+                { label: "Custom Design", path: "/custom-design" },
+                { label: "Jewelry Repair", path: "/jewellery-repair" },
+                { label: "Engraving Services", path: "/engraving-services" },
+                { label: "Appraisal Services", path: "/appraisal-services" },
+              ]}
+            />
+            <Link
+              href="/investor-relations"
+              className="text-black text-lg font-medium hover:text-[#ef001f]"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              INVESTOR RELATIONS
+            </Link>
+            <Link
+              href="/blogs"
+              className="text-black text-lg font-medium hover:text-[#ef001f]"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              BLOG
+            </Link>
+            <Link
+              href="/contact"
+              className="text-black text-lg font-medium hover:text-[#ef001f]"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              CONTACT US
+            </Link>
+          </div>
+        </div>
+      </nav>
+    </>
   );
 };
 

@@ -69,6 +69,8 @@ export default function Product() {
     setOpenCategory(openCategory === category ? null : category);
   };
 
+
+
   return (
     <main className="w-full">
       <PageHeader link="/product" title="Our Products" />
