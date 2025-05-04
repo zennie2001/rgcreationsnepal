@@ -1,4 +1,4 @@
-# star-laxmi-new
+# blade-web-2025
 
 
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.com/supremeitonline/star-laxmi-new.git
+git remote add origin https://gitlab.com/supremeitonline/blade-web-2025.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.com/supremeitonline/star-laxmi-new/-/settings/integrations)
+- [ ] [Set up project integrations](https://gitlab.com/supremeitonline/blade-web-2025/-/settings/integrations)
 
 ## Collaborate with your team
 
