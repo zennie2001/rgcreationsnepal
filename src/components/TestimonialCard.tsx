@@ -1,33 +1,15 @@
-import { GoStarFill } from "react-icons/go";
-import { ImQuotesLeft } from "react-icons/im";
-import { StaticImageData } from "next/image";
-
-export default function TestimonialCard({
-  object,
-}: {
-  object: {
-    miniDescription: string;
-    name: string;
-    image?: string | StaticImageData;
-  };
-}) {
-  return (
-    <div className="testimonialcard hover:shadow-lg flex flex-col gap-6 p-6 bg-primary rounded-md lg:w-[608px] w-full h-full border border-tertiary">
-      <ImQuotesLeft className="size-12 text-quaternary" />
-      <p className="text-text">{object.miniDescription}</p>
-      <div className="NAME flex w-full gap-3">
-        <div className="image size-12 rounded-full overflow-hidden bg-quaternary"></div>
-        <div className="flex flex-col gap-1">
-          <p className="font-medium">{object.name}</p>
-          <div className="flex gap-1">
-            <GoStarFill className="text-quaternary" />
-            <GoStarFill className="text-quaternary" />
-            <GoStarFill className="text-quaternary" />
-            <GoStarFill className="text-quaternary" />
-            <GoStarFill className="text-quaternary" />
-          </div>
-        </div>
-      </div>
+const TestimonialCard = ({ name, description, image }: any) => (
+  <div className="relative z-10 bg-gradient-to-br from-[#1f1f1f] to-[#121212] text-white px-8 py-10 rounded-[24px] max-w-3xl w-full shadow-xl border border-neutral-800">
+    <div className="text-orange-500 text-4xl mb-4">“</div>
+    <p className="text-center text-sm sm:text-base italic leading-relaxed mb-8">
+      {description}
+    </p>
+    <div className="flex flex-col items-center">
+      <img src={image} alt={name} className="w-14 h-14 rounded-full border-2 border-orange-500 mb-2" />
+      <h3 className="text-sm font-semibold uppercase tracking-wide">{name}</h3>
+      <span className="text-xs text-gray-400">Verified Customer</span>
     </div>
-  );
-}
+  </div>
+);
+
+export default TestimonialCard;

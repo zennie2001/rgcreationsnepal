@@ -5,10 +5,10 @@ import { twMerge } from "tailwind-merge";
 import Header from "@/sections/Header";
 import Footer from "@/sections/Footer";
 import Link from "next/link";
-import { Marcellus } from "next/font/google";
+import {Inter } from "next/font/google";
 import ToastProvider from "@/components/ToastContainer";
 
-const jakarta = Marcellus({
+const jakarta = Inter({
   subsets: ["latin"],
   weight: "400", // Add required font weights
   variable: "--font-sans",

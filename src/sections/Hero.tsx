@@ -1,72 +1,36 @@
-"use client"; // Required for Next.js App Router compatibility
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
-const slides = [
-  { id: 1, image: "/new-banner3.jpg" },
-  { id: 2, image: "/new-banner2.jpg" },
-  { id: 3, image: "/main-banner.jpg" },
-];
+import home from "@/assets/images/home.jpg";
 
 const Hero = () => {
   return (
-    <>
-      <style jsx global>{`
-        .swiper-pagination-bullet {
-          background: #ef001f !important;
-          opacity: 0.5;
-        }
-        .swiper-pagination-bullet-active {
-          opacity: 1;
-        }
-        .swiper-button-prev,
-        .swiper-button-next {
-          background: rgba(255, 255, 255, 0.4) !important;
-          width: 40px !important;
-          height: 40px !important;
-          border-radius: 50% !important;
-          display: flex !important;
-          align-items: center !important;
-          justify-content: center !important;
-        }
+    <main className="bg-black">
+      <section className="relative w-full h-[100vh] container  text-white ">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 left-[40%]">
+          <img
+            src={home.src}
+            alt="Hero Background"
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-        .swiper-button-prev::after,
-        .swiper-button-next::after {
-          font-size: 18px !important;
-          color: #ef001f !important;
-          font-weight: bold;
-        }
-      `}</style>
-      <section className="w-full  h-[60vh] md:h-[100vh]">
-        <Swiper
-          modules={[Autoplay, Navigation, Pagination]}
-          spaceBetween={0}
-          slidesPerView={1}
-          loop
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
-          navigation
-          pagination={{ clickable: true }}
-          className="w-full  h-[60vh] md:h-[100vh]"
-        >
-          {slides.map((slide) => (
-            <SwiperSlide
-              key={slide.id}
-              className="relative w-full  h-[60vh] md:h-[100vh]"
-            >
-              <img
-                src={slide.image}
-                className="w-full h-[60vh] md:h-[100vh] object-cover"
-                alt="Slide"
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        {/* Content */}
+        <div className="relative z-10 flex flex-col justify-center h-full px-6  md:px-0">
+          <h1 className="text-4xl md:text-6xl font-bold text-white">
+            Built for Action.
+          </h1>
+          <h2 className="text-4xl md:text-6xl font-bold text-orange-500 mt-4">
+            Designed to Impress.
+          </h2>
+          <p className="mt-6 max-w-xl text-sm md:text-base text-gray-200">
+            From sleek silhouettes to dependable mechanics, our automatic knives
+            are the perfect fusion of style, safety, and speed.
+          </p>
+          <button className="mt-8 w-max px-6 py-3 border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-black transition rounded">
+            Learn More
+          </button>
+        </div>
       </section>
-    </>
+    </main>
   );
 };
 

@@ -1,185 +1,100 @@
 import Link from "next/link";
-import React from "react";
-import { Globe, Mail, MapPin } from "lucide-react";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaXTwitter,
+  FaYoutube,
+  FaWordpress,
+} from "react-icons/fa6";
+import { Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
-  const about = [
-    {
-      label: "Company",
-      path: "/about",
-    },
-    // { label: "Who We Are", path: "/our-team" },
-    { label: "Message from CEO", path: "/message-from-ceo" },
-    // {
-    //   label: "Message from Director",
-    //   path: "/message-from-director",
-    // },
-    { label: "Craftsmanship", path: "/craftsmanship" },
-    { label: "Customer Testimonials", path: "/testimonials" },
-    // { label: "Our Showrooms", path: "/message-from-ceo" },
-    { label: "FAQs", path: "/faqs" },
-  ];
-  const categories = [
-    { label: "Necklaces", path: "/necklace" },
-    { label: "Bracelets", path: "/bracelet" },
-    { label: "Rings", path: "/ring" },
-    { label: "Earrings", path: "/earring" },
-    { label: "Bangles", path: "/bangle" },
-    { label: "Pendants", path: "/pendant" },
-    { label: "Chains", path: "/chain" },
-    { label: "Anklets", path: "/anklet" },
-    { label: "Nose Pins", path: "/nose-pin" },
-    { label: "Cufflinks", path: "/cufflink" },
-    { label: "Jewelry Sets", path: "/jewelry-set" },
-    { label: "Gold Coin & Bullion", path: "/gold-coin-bullion" },
-  ];
-
-  const services = [
-    { label: "Custom Design Services", path: "/necklace" },
-    { label: "Jewelry Repair", path: "/bracelet" },
-    { label: "Engraving Services", path: "/ring" },
-    { label: "Appraisal Services", path: "/ring" },
-  ];
-
-  const midPoint = Math.ceil(categories.length / 2);
-  const firstHalf = categories.slice(0, midPoint);
-  const secondHalf = categories.slice(midPoint);
-
   return (
-    <div
-      className="bg-[#F6F8FA] bg-cover bg-no-repeat bg-center"
-      style={{ backgroundImage: "url(/footer-bg.jpg)" }}
-    >
-      <div className="container mx-auto px-4 py-8">
-        <div className="text-center flex md:flex-row flex-col md:text-left">
-          <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-799">
-              Subscribe Newsletter
-            </h2>
-            <p className="text-lg text-black">
-              Get the latest updates, tips, and exclusive offers straight to
-              your inbox
+    <footer className="bg-[#121212] text-white pt-20 pb-10 px-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+        {/* Left Column */}
+        <div>
+          <h2 className="text-3xl font-bold leading-tight mb-6">
+            <span className="text-[#F65128]">Engineered</span> to Cut, Styled to
+            <br />
+            Stand Out, Ready for{" "}
+            <span className="text-[#F65128]">Anything</span>
+          </h2>
+
+          <div className="mt-10">
+            <h3 className="text-[#F65128] text-lg font-semibold">Blades</h3>
+            <p className="text-gray-300 mt-2 text-sm leading-relaxed max-w-sm">
+              Whether it’s everyday carry or mission-ready gear, our collection
+              covers the spectrum of sharp innovation. Choose your edge — and
+              carry it with confidence.
             </p>
-          </div>
-          <div className="flex flex-row items-center w-full max-w-lg mx-auto">
-            <input
-              type="text"
-              className="flex-grow p-2 border rounded-l w-[70%] md:w-full sm:w-auto"
-              placeholder="Enter your email"
-            />
-            <button className="bg-[#ffd359] text-black px-4 py-2 rounded-r">
-              Subscribe
-            </button>
+
+            <div className="flex gap-4 mt-4 text-xl text-white">
+              <FaFacebookF />
+              <FaInstagram />
+              <FaXTwitter />
+              <FaYoutube />
+              <FaWordpress />
+            </div>
           </div>
         </div>
 
-        {/* Footer Sections */}
-        <div className="grid grid-cols-2 lg:grid-cols-5 mt-10 ">
+        {/* Middle Column */}
+        <div className="flex flex-col gap-6">
           <div>
-            <h2 className="text-lg font-semibold text-black">About US</h2>
-            <ul className="space-y-2 text-black">
-              {about.map((item, index) => (
-                <li key={index}>
-                  <Link href={item.path}>{item.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="md:-ml-10">
-            <h2 className="text-lg font-semibold text-black">Categories</h2>
-            <ul className="space-y-2 text-black">
-              {firstHalf.map((item, index) => (
-                <li key={index}>
-                  <Link href={item.path}>{item.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="md:-ml-20">
-            <h2 className="text-lg font-semibold text-black invisible">
-              Categories
-            </h2>
-            <ul className="space-y-2 text-black">
-              {secondHalf.map((item, index) => (
-                <li key={index}>
-                  <Link href={item.path}>{item.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="md:-ml-28 mt-4 md:mt-0">
-            <h2 className="text-lg font-semibold text-black">Services</h2>
-            <ul className="space-y-2 text-black">
-              {services.map((item, index) => (
-                <li key={index}>
-                  <Link href={item.path}>{item.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          {/* Contact Information */}
-          <div className="md:-ml-32 col-span-2 md:col-span-1 mt-4 md:mt-0">
-            <h2 className="text-lg font-semibold text-black">Contact Us</h2>
-            <ul className="space-y-2 text-black w-full">
-              <li className="flex items-center gap-2 w-full">
-                <MapPin className="flex-shrink-0" />
-                <span className="flex-1">
-                  Al Souq Al Kabeer Tailor Galli, Esag Building (Old Plot), Shop
-                  No. 07 Burdubai, Dubai, UAE (Near Astoria Hotel)
-                </span>
+            <h4 className="text-white font-semibold text-lg mb-2">Company</h4>
+            <ul className="space-y-2 text-sm text-gray-300">
+              <li>
+                <Link href="/about">About Us</Link>
               </li>
-
-              <li className="w-full">
-                <Link
-                  href="mailto:info@starlaxmijewellery.com"
-                  className="flex items-center gap-2 w-full"
-                >
-                  <Mail className="flex-shrink-0" />
-                  <span className="flex-1">info@starlaxmijewellery.com</span>
+              <li>
+                <Link href="/shipping-info">Shipping Info</Link>
+              </li>
+              <li>
+                <Link href="/cancellations-returns">
+                  Cancellations & Returns
                 </Link>
               </li>
+              <li>
+                <Link href="/accessibility">Accessibility Policy</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-              <li className="w-full">
-                <Link
-                  href="http://www.starlaxmijewellery.com"
-                  className="flex items-center gap-2 w-full"
-                >
-                  <Globe className="flex-shrink-0" />
-                  <span className="flex-1">www.starlaxmijewellery.com</span>
-                </Link>
+        {/* Right Column */}
+        <div className="flex flex-col gap-6">
+          <div>
+            <h4 className="text-white font-semibold text-lg mb-2">Contact</h4>
+            <ul className="space-y-2 text-sm text-gray-300">
+              <li className="flex gap-2 items-start">
+                <MapPin className="w-4 h-4 mt-1" />
+                Tyler, Alabama 36785 (not open to public)
+              </li>
+              <li className="flex gap-2 items-center">
+                <Mail className="w-4 h-4" />
+                <a href="mailto:orders@knife-depot.com">
+                  orders@knife-depot.com
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* Footer Bottom */}
-      <div className="text-center py-6 border-t">
-        <img
-          src="/../assets/logo-final.png"
-          className="h-32 mx-auto mb-2"
-          alt="Company Logo"
-        />
-        <p className="text-black flex flex-col lg:flex-row justify-center items-center">
-          &copy; 2025 Star Laxmi Jewellery LLC
-          <span className="hidden lg:inline">&nbsp;|&nbsp;</span>
-          <span>All Rights Reserved</span>
-        </p>
-        <span>
-          <Link href="/privacy-policy" className="text-xs mt-1">
-            PRIVACY POLICY
-          </Link>
-          {" | "}
-          <Link href="/terms-conditions" className="text-xs mt-1">
-            TERMS OF SERVICES
-          </Link>
-        </span>
+      {/* Divider */}
+      <div className="border-t border-gray-800 mt-12 pt-6 text-sm text-gray-400 text-center">
+        <p>&copy; 2025 Blades. All rights reserved</p>
+        <div className="mt-2 space-x-3">
+          <Link href="/privacy-policy">Privacy Policy</Link>|
+          <Link href="/terms-conditions">Terms & Conditions</Link>|
+          <Link href="/cookies-policy">Cookies Policy</Link>|
+          <Link href="/site-map">Map</Link>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
 export default Footer;
+  

@@ -1,54 +1,69 @@
-import { StaticImageData } from "next/image";
-import Link from "next/link";
-import { IoIosArrowRoundForward } from "react-icons/io";
+import React from "react";
 
-export default function BlogCard({
-  image,
-  title,
-  description,
-}: {
-  image: StaticImageData;
-  title: string;
-  description: string;
-}) {
-  const formatSlug = (name: string): string => {
-    return name.split(":")[0].trim().toLowerCase().replace(/\s+/g, "-");
+function BlogCard({ blog }: any) {
+  // Function to create URL-friendly slug from title
+  const createSlug = (title: any) => {
+    return title.toLowerCase().replace(/\s+/g, "-");
   };
 
   return (
-    <div className="rounded-lg cursor-pointer overflow-hidden group bg-white flex flex-col h-full shadow-md">
-      {/* Fixed image size */}
-      <img
-        src={image.src}
-        alt="Blog"
-        className="w-full h-[250px] object-cover group-hover:scale-105 transition-all duration-300 rounded-t-lg"
-      />
-      {/* Content that fills remaining space */}
-      <div className="p-[16px] pb-[0px] flex flex-col justify-between flex-grow">
-        <Link
-          href={`/blogs/${formatSlug(title)}`}
-          className="p-1   text-secondary cursor-pointer"
-        >
-          <h2 className="text-[20px] leading-[26px] text-[#222222] line-clamp-2 font-bold mt-[8px]">
-            {title}
-          </h2>
-        </Link>
-        <p className="text-[14px] leading-[20px] text-[#F65128] font-medium my-[6px]">
-          March 20,2025 | Star Laxmi
-        </p>
-        <p className="text-[15px] leading-[24px] tracking-[0.03em] line-clamp-5 text-[#444444]">
-          {description}
-        </p>
+    <div className="bg-neutral-800/60 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-orange-500/20 group">
+      <div className="relative">
+        {blog?.image && (
+          <img
+            src={blog.image}
+            alt={blog.title || "Blog image"}
+            className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        )}
       </div>
-      <div className="flex m-2 border-b group hover:shadow-xl rounded-md border-secondary items-center gap-1 text-base cursor-pointer w-max">
-        <Link
-          href={`/blogs/${formatSlug(title)}`}
-          className="p-1   text-secondary cursor-pointer"
+
+      <div className="p-6">
+        <p className="text-sm text-gray-400 mb-2">{blog.category}</p>
+
+        <a
+          href={`/blogs/${createSlug(blog.title)}`}
+          className="group flex items-start gap-2"
         >
-          Read More
-        </Link>
-        <IoIosArrowRoundForward className="me-2 group-hover:scale-150 transition-all duration-300" />
+          <h3 className="text-white text-lg font-medium leading-tight mb-3 group-hover:text-orange-500 transition-colors">
+            {blog.title}
+          </h3>
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="text-orange-500 mt-1 transform transition-transform group-hover:translate-x-1"
+          >
+            <path
+              d="M5 12H19M19 12L12 5M19 12L12 19"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </a>
+
+        <p className="text-sm text-gray-400 mb-4">{blog.description}</p>
+
+        <div className="flex items-center gap-3 mt-6">
+          <div className="w-8 h-8 rounded-full bg-gray-500 overflow-hidden">
+            <img
+              src="/api/placeholder/32/32"
+              alt={blog.author}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div>
+            <p className="text-sm text-white">{blog.author}</p>
+            <p className="text-xs text-gray-400">{blog.date}</p>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
+
+export default BlogCard;

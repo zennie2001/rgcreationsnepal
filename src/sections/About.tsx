@@ -1,60 +1,51 @@
-import PrimaryButton from "@/components/UI/PrimaryButton";
-import SectionHeader from "../components/SectionHeader";
-import SecondaryButton from "@/components/UI/SecondaryButton";
-import aboutImageFirst from '@/assets/images/homepageAbout.png';
-import aboutImageSecond from '@/assets/images/homepageAboutSecond.png';
 import Image from "next/image";
+import knifeImage from "@/assets/images/blade.png";
 
 export default function About() {
-    return (
-        <section className="lg:flex_center flex flex-col lg:flex-row font-jakarta  gap-8 w-full xl:p-24 lg:p-10 py-10 px-5 bg-[#F5FBFF]">
-            <div className="flex flex-col md:w-1/2 w-full lg:gap-12 gap-6">
-                <div className="flex flex-col gap-4 lg:text-start text-center">
-                    <SectionHeader
-                        smallTitle="About Us"
-                        title="Our goal is to assist students for hassle free environment"
-                        className="items-center"
-                    />
-                    <p className="text-text lg:text-start text-center">
-                        Reaction Nepal is a government-registered interdisciplinary organization with its headquarters in Putalisadak, Kathmandu, Nepal. Since its establishment in 2005, it has mainly aimed at providing education services to all seeking their study and career prospects in and out of the country.
-                    </p>
-                </div>
-                <div className="flex gap-4 md:justify-start justify-center">
-                    <PrimaryButton
-                        text="Know More"
-                    />
-                    <SecondaryButton
-                        text="Get Started"
-                    />
-                </div>
+  return (
+    <main className=" bg-black">
+      <section className="flex flex-col-reverse lg:flex-row w-full container text-white px-5 py-16 lg:px-0 lg:py-32 items-center gap-12">
+        {/* Left Content */}
+        <div className="w-full lg:w-1/2  flex flex-col gap-6">
+          <p className="text-[#FF5A1F] font-medium text-sm">About us</p>
+          <h2 className="text-3xl sm:text-4xl font-semibold leading-tight tracking-tight">
+            Crafted with Vision, Honed with <br className="hidden sm:block" />
+            Purpose, Carried with Confidence
+          </h2>
+          <p className="text-gray-300 text-base leading-relaxed">
+            At Swift-Action, we craft more than blades — we build tools that
+            answer the call of speed, safety, and style. Every knife is a
+            product of thoughtful engineering and bold design, made to perform
+            when it matters most.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-8 pt-4">
+            <div className="flex-1">
+              <h4 className="font-semibold mb-2">Engineered with Purpose.</h4>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                From concept to creation, every knife we produce reflects our
+                commitment to quality, performance, and cutting-edge design.
+              </p>
             </div>
-            <div className="flex lg:flex-row flex-col gap-8 lg:w-1/2 w-full">
-                <div className="flex_center lg:flex-col flex-row lg:w-1/2 w-full gap-5 ">
-                    <div className="flex flex-col w-full bg-tertiary rounded-md lg:h-52 h-[265px] sm:p-6 p-3 text-primary">
-                        <p className="text-[40px]">
-                            10+
-                        </p>
-                        <div className="flex flex-col gap-2">
-                            <p className="text-xl">
-                                Years of Experience
-                            </p>
-                            <p>
-                                Our vision is to provide aspirant individual with solution.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="flex_center w-full lg:h-48 h-[265px] rounded-md overflow-hidden">
-                        <Image
-                            src={aboutImageFirst}
-                            alt="about-image"
-                            className="size-full object-cover"
-                        />
-                    </div>
-                </div>
-                <div className="flex_center lg:w-1/2 w-full lg:h-[416px] h-[200px] rounded-md overflow-hidden">
-                    <Image src={aboutImageSecond} alt="about-image" className="size-full object-cover" />
-                </div>
+            <div className="flex-1">
+              <h4 className="font-semibold mb-2">A Legacy of Precision</h4>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Born from a deep respect for mechanics and form, we set out to
+                redefine the automatic knife — delivering speed, safety, and
+                style.
+              </p>
             </div>
-        </section>
-    )
+          </div>
+        </div>
+
+        {/* Right Image */}
+        <div className="w-full lg:w-1/2 flex justify-center items-center">
+          <Image
+            src={knifeImage}
+            alt="Crossed knives"
+            className="w-[300px] sm:w-[400px] h-auto object-contain"
+          />
+        </div>
+      </section>
+    </main>
+  );
 }

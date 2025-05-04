@@ -228,7 +228,7 @@ export default function Blogs() {
           smallTitle="Blogs & Articles"
           title="Stay up to date on our blogs"
         />
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 gap-y-16">
+        {/* <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 gap-y-16">
           {newBlogs.map((blog, index) => {
             return (
               <BlogCard
@@ -241,25 +241,8 @@ export default function Blogs() {
               />
             );
           })}
-        </div>
-        {/* <div className="flex items-center gap-2">
-          <button className="border border-text/30 flex_center p-2 rounded-md text-sm size-10">
-            <IoIosArrowBack />
-          </button>
-          <button className="flex_center p-2 rounded-md text-sm size-10">
-            1
-          </button>
-          <button className="flex_center p-2 rounded-md text-sm size-10">
-            2
-          </button>
-          <p className="flex_center p-2 rounded-md text-sm size-10">....</p>
-          <button className="border border-text/30 flex_center p-2 rounded-md text-sm size-10">
-            5
-          </button>
-          <button className="border border-text/30 flex_center p-2 rounded-md text-sm size-10">
-            <IoIosArrowForward />
-          </button>
         </div> */}
+        
       </section>
     </main>
   );
