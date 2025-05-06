@@ -1,47 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import { Heart } from "lucide-react";
-import knife from "@/assets/images/blade.png"
+import products  from "@/constants/products";
 
-// Sample product data to match the image
-const products = [
-  {
-    id: 1,
-    name: 'Benchmade 9400 Osborne Auto, 3.4" S30V Satin Blade, Green Aluminum Handle',
-    brand: "Benchmade",
-    originalPrice: 999.0,
-    salePrice: 899.0,
-    discount: 10,
-    image: knife, // Replace with your actual image path
-  },
-  {
-    id: 2,
-    name: 'Benchmade 9400 Osborne Auto, 3.4" S30V Satin Blade, Green Aluminum Handle',
-    brand: "Benchmade",
-    originalPrice: 999.0,
-    salePrice: 899.0,
-    discount: 10,
-    image:knife, // Replace with your actual image path
-  },
-  {
-    id: 3,
-    name: 'Benchmade 9400 Osborne Auto, 3.4" S30V Satin Blade, Green Aluminum Handle',
-    brand: "Benchmade",
-    originalPrice: 999.0,
-    salePrice: 899.0,
-    discount: 10,
-    image: knife, // Replace with your actual image path
-  },
-  {
-    id: 4,
-    name: 'Benchmade 9400 Osborne Auto, 3.4" S30V Satin Blade, Green Aluminum Handle',
-    brand: "Benchmade",
-    originalPrice: 999.0,
-    salePrice: 899.0,
-    discount: 10,
-    image: knife, // Replace with your actual image path
-  },
-];
+
+
 
 // Filter tabs
 const filterTabs = [
@@ -85,7 +48,7 @@ const Products = () => {
 
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {products.map((product) => (
+          {products.slice(0,4).map((product) => (
             <div
               key={product.id}
               className="bg-zinc-900 rounded-lg overflow-hidden"
@@ -95,7 +58,7 @@ const Products = () => {
                 <img
                   src={product.image.src}
                   alt={product.name}
-                  className="w-full aspect-square object-cover"
+                  className="w-full aspect-square object-cover "
                 />
                 {/* Wishlist Button */}
                 <button className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full">
