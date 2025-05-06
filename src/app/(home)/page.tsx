@@ -25,9 +25,9 @@ export default function Home() {
       <Youtube />
       <Deals />
       <Testimonials />
+      <Blogs />
       <FAQ />
 
-      <Blogs />
       <NewsLetter />
     </main>
   );

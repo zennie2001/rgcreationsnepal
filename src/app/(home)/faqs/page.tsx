@@ -33,7 +33,7 @@ export default function FAQ() {
 
   return (
     <section className="w-full bg-black text-white py-16">
-      <div className="container mx-auto px-4 max-w-4xl">
+      <div className="container mx-auto px-4 ">
         <div className="mb-10">
           <p className="text-orange-500 font-medium mb-2">FAQ</p>
           <h2 className="text-4xl font-bold">Got Questions? We've Got the Edge on Answers</h2>
