@@ -1,5 +1,5 @@
 import React from "react";
-import { FaMoneyBillWave } from "react-icons/fa"; // Replace with your actual SVG if available
+import { FaMoneyBillWave } from "react-icons/fa";
 
 const advantages = [
   {
@@ -21,11 +21,11 @@ const advantages = [
 
 const Categories = () => {
   return (
-    <main className=" bg-[#0D1E23]">
-      <section className="flex flex-col container md:flex-row w-full">
-        {/* Left Side */}
-        <div className=" text-white py-10 md:w-1/3 flex flex-col justify-center items-start space-y-6">
-          <h2 className="text-3xl font-semibold">
+    <main className="w-full  bg-[#0D1E23]">
+      <section className="grid grid-cols-1 md:grid-cols-4 container w-full">
+        {/* Left Side - 1/4 width, dark */}
+        <div className="bg-[#0D1E23] text-white py-10 flex flex-col justify-center items-center md:items-start space-y-6">
+          <h2 className="text-3xl text-center md:text-left font-semibold">
             Our <br />
             Advantages
           </h2>
@@ -34,18 +34,17 @@ const Categories = () => {
           </button>
         </div>
 
-        {/* Right Side */}
-        <div className="bg-[#FF5A1F] text-white p-10 md:w-2/3 grid md:grid-cols-3 gap-8">
-          {advantages.map((item, index) => (
-            <div key={index} className="flex flex-col items-start space-y-4">
-              <FaMoneyBillWave className="text-white text-3xl" />
-              <h3 className="text-lg font-semibold leading-snug">
-                {item.title}
-              </h3>
-              <p className="text-sm opacity-90">{item.description}</p>
-            </div>
-          ))}
-        </div>
+        {/* Right Side - 3/4 width, orange in 3 columns */}
+        {advantages.map((item, index) => (
+          <div
+            key={index}
+            className="bg-[#FF5A1F] text-white p-8 flex flex-col items-center md:items-start space-y-4"
+          >
+            <FaMoneyBillWave className="text-white text-3xl" />
+            <h3 className="text-lg text-center md:text-left font-semibold leading-snug">{item.title}</h3>
+            <p className="text-xs md:text-sm text-center md:text-left opacity-90">{item.description}</p>
+          </div>
+        ))}
       </section>
     </main>
   );
