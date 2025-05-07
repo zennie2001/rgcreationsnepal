@@ -59,11 +59,11 @@ function Newsletter() {
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Left side - Newsletter subscription */}
           <div className="w-full lg:w-1/2">
-            <p className="text-orange-500 font-medium mb-2">NEWSLETTER</p>
-            <h2 className="text-3xl font-bold mb-4">
+            <p className="text-secondary  text-center md:text-left font-medium mb-2">NEWSLETTER</p>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl  text-center md:text-left font-bold mb-4">
               Blades. Deals. Insider Access. Straight to Your Inbox.
             </h2>
-            <p className="text-gray-400 mb-8">
+            <p className="text-gray-400  text-center md:text-left mb-8">
               Join our newsletter to receive sharp updates, members-only offers, and the latest
               from the world of Swift-Action. Stay connected — stay equipped.
             </p>
@@ -74,11 +74,11 @@ function Newsletter() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter Your Email"
-                className="bg-gray-900 text-white px-4 py-3 rounded-md flex-grow focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="bg-gray-900 text-white px-4 py-3 rounded-md flex-grow focus:outline-none focus:ring-2 focus:ring-secondary"
               />
               <button
                 onClick={handleSubscribe}
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-md font-medium transition-colors flex items-center justify-center"
+                className="bg-secondary hover:bg-orange-600 text-white px-8 py-2 rounded-md font-medium transition-colors flex items-center justify-center"
               >
                 SUBSCRIBE
                 <svg className="ml-2 w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">

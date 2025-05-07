@@ -36,7 +36,7 @@ export default function Deals() {
                 <div className="relative">
                   {/* Orange splash background */}
                   <div
-                    className="absolute inset-0 w-64 h-40 bg-orange-500"
+                    className="absolute inset-0 w-64 h-40 bg-secondary"
                     style={{
                       clipPath:
                         "polygon(15% 31%, 37% 14%, 85% 28%, 97% 64%, 82% 84%, 58% 92%, 14% 71%, 6% 49%)",
@@ -57,8 +57,8 @@ export default function Deals() {
           <div className="md:w-1/2 md:pl-8">
             {/* Section header */}
             <div className="mb-8">
-              <p className="text-orange-500 text-sm">Deals</p>
-              <h2 className="text-3xl font-bold">
+              <p className="text-secondary text-center md:text-left text-sm">Deals</p>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl text-center md:text-left font-bold">
                 Top Picks. Bottom Prices. Limited
                 <br />
                 Time.
@@ -149,7 +149,7 @@ export default function Deals() {
                     onClick={() => setActiveSlide(index)}
                     className={`h-2 rounded-full transition-all ${
                       activeSlide === index
-                        ? "w-8 bg-orange-500"
+                        ? "w-8 bg-secondary"
                         : "w-2 bg-gray-400"
                     }`}
                   ></button>

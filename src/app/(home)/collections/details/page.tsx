@@ -163,7 +163,7 @@ const ProductDetailPage = () => {
                   key={index}
                   className={`border-2 ${
                     selectedImage === index
-                      ? "border-orange-500"
+                      ? "border-secondary"
                       : "border-gray-700"
                   } rounded-lg cursor-pointer overflow-hidden`}
                   onClick={() => setSelectedImage(index)}
@@ -224,7 +224,7 @@ const ProductDetailPage = () => {
                           option.color
                         } cursor-pointer ${
                           option.id === 1
-                            ? "ring-2 ring-offset-2 ring-offset-black ring-orange-500"
+                            ? "ring-2 ring-offset-2 ring-offset-black ring-secondary"
                             : ""
                         }`}
                       />
@@ -238,7 +238,7 @@ const ProductDetailPage = () => {
                           option.color
                         } cursor-pointer ${
                           option.id === 1
-                            ? "ring-2 ring-offset-2 ring-offset-black ring-orange-500"
+                            ? "ring-2 ring-offset-2 ring-offset-black ring-secondary"
                             : ""
                         }`}
                       />

@@ -34,9 +34,9 @@ export default function FAQ() {
   return (
     <section className="w-full bg-black text-white py-16">
       <div className="container mx-auto px-4 ">
-        <div className="mb-10">
-          <p className="text-orange-500 font-medium mb-2">FAQ</p>
-          <h2 className="text-4xl font-bold">Got Questions? We've Got the Edge on Answers</h2>
+        <div className="mb-10 text-center md:text-left">
+          <p className="text-secondary font-medium mb-2">FAQ</p>
+          <h2 className="text-2xl lg:text-4xl font-medium">Got Questions? We've Got the Edge on Answers</h2>
         </div>
         
         <div className="space-y-4">
@@ -49,8 +49,8 @@ export default function FAQ() {
                 className="flex justify-between items-center w-full text-left py-4 focus:outline-none"
                 onClick={() => toggleItem(index)}
               >
-                <span className="font-medium text-lg">{item.question}</span>
-                <div className={`flex items-center justify-center w-8 h-8 rounded-full ${openItem === index ? 'bg-red-600' : 'bg-orange-500'}`}>
+                <span className="font-medium text-sm md:text-lg w-[90%]">{item.question}</span>
+                <div className={`flex items-center justify-center w-8 h-8 rounded-full ${openItem === index ? 'bg-red-600' : 'bg-secondary'}`}>
                   {openItem === index ? (
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M18 6L6 18" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -66,7 +66,7 @@ export default function FAQ() {
               </button>
               
               {openItem === index && (
-                <div className="py-2 text-gray-400 text-sm">
+                <div className="py-2 text-gray-400 text-xs md:text-sm">
                   {item.answer}
                 </div>
               )}

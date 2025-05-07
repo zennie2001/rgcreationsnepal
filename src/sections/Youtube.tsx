@@ -1,5 +1,7 @@
 import SectionHeader from "../components/SectionHeader";
 import Image from "next/image";
+import { ArrowRight } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 
 const videoItems = [
   {
@@ -25,8 +27,8 @@ export default function Youtube() {
       <div className="container mx-auto px-4">
         {/* Youtube section header */}
         <div className="mb-4">
-          <p className="text-[#F65128] text-sm">Youtube</p>
-          <h2 className="text-3xl font-bold">
+          <p className="text-[#F65128] text-center md:text-left text-sm">Youtube</p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-center md:text-left font-bold">
             Unboxing the Blade That's
             <br />
             Breaking the Rules
@@ -60,12 +62,12 @@ export default function Youtube() {
           </div>
 
           {/* Navigation arrows */}
-          <div className="absolute -top-12 right-0 flex space-x-2">
+          <div className="absolute -top-12 md:right-0 my-4 flex space-x-2">
             <button className="bg-[#F65128] w-8 h-8 rounded flex items-center justify-center">
-              <span className="transform rotate-180">→</span>
+              <ArrowLeft size={16} />
             </button>
             <button className="bg-[#F65128] w-8 h-8 rounded flex items-center justify-center">
-              <span>→</span>
+              <ArrowRight size={16} />
             </button>
           </div>
         </div>

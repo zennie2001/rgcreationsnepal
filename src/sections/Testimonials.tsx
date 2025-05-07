@@ -27,12 +27,13 @@ const blogs = [
 
 export default function Testimonials() {
   return (
+    
     <section className="flex_center flex-col w-full py-24 font-jakarta bg-black text-white gap-16">
       <div className="text-left">
-        <p className="text-sm text-orange-500 font-semibold uppercase">
+        <p className="text-sm text-secondary text-center md:text-left font-semibold uppercase">
           Testimonials
         </p>
-        <h2 className="text-3xl sm:text-4xl font-bold mt-2 leading-snug">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl text-center md:text-left font-bold mt-2 leading-snug">
           Trusted by Thousands.
           <br />
           Carried with Confidence.
@@ -48,7 +49,7 @@ export default function Testimonials() {
       </div>
 
       <div className="flex items-center justify-center gap-10">
-        <button className="text-white text-xl hover:text-orange-500 transition">
+        <button className="text-white text-xl hover:text-secondary transition">
           ←
         </button>
         <div className="flex items-center gap-2">
@@ -56,12 +57,12 @@ export default function Testimonials() {
             <div
               key={index}
               className={`rounded-full ${
-                index === 0 ? "w-4 h-4 bg-orange-500" : "w-3 h-3 bg-gray-600"
+                index === 0 ? "w-4 h-4 bg-secondary" : "w-3 h-3 bg-gray-600"
               }`}
             />
           ))}
         </div>
-        <button className="text-white text-xl hover:text-orange-500 transition">
+        <button className="text-white text-xl hover:text-secondary transition">
           →
         </button>
       </div>
