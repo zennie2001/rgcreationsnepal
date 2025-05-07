@@ -39,16 +39,20 @@ function BlogsSection() {
   return (
     <section className="w-full bg-gradient-to-br from-black to-neutral-900 py-16">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between items-start mb-12">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start mb-12">
           <div>
-            <p className="text-orange-500 mb-2">Blogs</p>
-            <h2 className="text-3xl font-bold text-white">
+            <p className="text-secondary text-center md:text-left mb-2">
+              Blogs
+            </p>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-2 text-center md:text-left text-white">
               The Edge Report: Stories, Tips & Sharp Talk
             </h2>
           </div>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-md transition-all">
-            Learn More
-          </button>
+         
+            <button className="bg-secondary hover:bg-orange-600 text-white px-6 py-3 rounded-md transition-all">
+              Learn More
+            </button>
+          
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">

@@ -125,9 +125,9 @@ const KnivesCollectionPage: React.FC = () => {
       <Hero />
       <section className="min-h-screen bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 py-8">
-          <div className="flex flex-col md:flex-row gap-6">
+          <div className="flex flex-col md:flex-row   gap-6">
             {/* Sidebar Filters */}
-            <div className="w-full md:w-64 flex-shrink-0">
+            <div className="w-full md:w-64 flex-shrink-0 hidden md:block">
               <div className="bg-gray-900 border-2 border-gray-400 rounded-lg p-4 sticky top-4">
                 <div className="flex justify-between items-center mb-4">
                   <h2 className="text-lg font-medium">Filters</h2>
@@ -155,7 +155,7 @@ const KnivesCollectionPage: React.FC = () => {
                       <div className="relative pt-5 pb-2">
                         <div className="h-1 bg-gray-700 rounded">
                           <div
-                            className="absolute h-1 bg-orange-500 rounded"
+                            className="absolute h-1 bg-secondary rounded"
                             style={{
                               left: `${
                                 ((priceRange[0] - 0) / (300 - 0)) * 100
@@ -252,7 +252,7 @@ const KnivesCollectionPage: React.FC = () => {
                         <label className="flex items-center cursor-pointer">
                           <input
                             type="checkbox"
-                            className=" h-5 w-5 text-orange-500 rounded border-gray-700 bg-gray-800"
+                            className=" h-5 w-5 text-secondary rounded border-gray-700 bg-gray-800"
                           />
                           <span className="ml-2 text-sm">In Stock</span>
                         </label>
@@ -262,7 +262,7 @@ const KnivesCollectionPage: React.FC = () => {
                         <label className="flex items-center cursor-pointer">
                           <input
                             type="checkbox"
-                            className="form-checkbox h-5 w-5 text-orange-500 rounded border-gray-700 bg-gray-800"
+                            className="form-checkbox h-5 w-5 text-secondary rounded border-gray-700 bg-gray-800"
                           />
                           <span className="ml-2 text-sm">Out Of Stock</span>
                         </label>
@@ -293,7 +293,7 @@ const KnivesCollectionPage: React.FC = () => {
                           key={brand.label}
                           className={`px-3 py-1 text-sm rounded-full ${
                             brand.label === "White Deer"
-                              ? "bg-orange-500 text-white"
+                              ? "bg-secondary text-white"
                               : "bg-gray-800 text-[#ff5722]"
                           }`}
                         >
@@ -491,17 +491,17 @@ const KnivesCollectionPage: React.FC = () => {
             {/* Main Content */}
             <div className="flex-1">
               <div className="mb-6">
-                <h1 className="text-2xl font-bold text-orange-500">
+                <h1 className="md:text-2xl text-xl font-medium text-secondary">
                   Collections
                 </h1>
-                <div className="flex justify-between items-center mt-2">
+                <div className="flex flex-col md:flex-row gap-2 justify-between items-start md:items-center mt-2">
                   <span className="text-sm text-gray-400">
                     Showing 1-{productItems.length} of {productItems.length}{" "}
                     Products
                   </span>
                   <div className="relative">
                     <button
-                      className="flex items-center bg-transparent text-sm text-orange-500"
+                      className="flex items-center bg-transparent text-sm text-secondary"
                       onClick={() => setShowSortDropdown(!showSortDropdown)}
                     >
                       Sort by: {sortBy} <FiChevronDown className="ml-1" />
@@ -519,7 +519,7 @@ const KnivesCollectionPage: React.FC = () => {
                               <button
                                 className={`block px-4 py-2 text-sm w-full text-left ${
                                   sortBy === option
-                                    ? "text-orange-500"
+                                    ? "text-secondary"
                                     : "text-white hover:bg-gray-800"
                                 }`}
                                 onClick={() => {
@@ -553,7 +553,7 @@ const KnivesCollectionPage: React.FC = () => {
                         className="w-full aspect-square object-cover "
                       />
                       {/* Wishlist Button */}
-                      <button  className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full">
+                      <button className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full">
                         <Heart size={20} color="white" />
                       </button>
                     </div>
@@ -580,7 +580,10 @@ const KnivesCollectionPage: React.FC = () => {
 
                       {/* Buy Now Button */}
                       <div className="flex mt-4 gap-2">
-                        <Link href="/collections/details" className="bg-gray-700 text-center hover:bg-gray-600 text-white py-2 px-4 rounded flex-grow">
+                        <Link
+                          href="/collections/details"
+                          className="bg-gray-700 text-center hover:bg-gray-600 text-white py-2 px-4 rounded flex-grow"
+                        >
                           Buy Now
                         </Link>
                         <button className="bg-[#ff5533] hover:bg-[#e64a2e] text-white p-2 rounded">
@@ -608,26 +611,27 @@ const KnivesCollectionPage: React.FC = () => {
               </div>
 
               {/* Pagination */}
-              <div className="mt-8 flex justify-center items-center gap-2">
+              <div className="mt-8 flex flex-col md:flex-row justify-center items-center gap-2">
                 <button className="bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded-md flex items-center">
                   <FiChevronLeft className="mr-1" /> Previous
                 </button>
-
-                {[1, 2, 3, "...", 9, 10].map((page, index) => (
-                  <button
-                    key={index}
-                    className={`w-8 h-8 flex items-center justify-center rounded-md ${
-                      currentPage === page
-                        ? "bg-secondary text-white"
-                        : "bg-gray-800 hover:bg-gray-700 text-white"
-                    }`}
-                    onClick={() =>
-                      typeof page === "number" && setCurrentPage(page)
-                    }
-                  >
-                    {page}
-                  </button>
-                ))}
+                <div className="flex gap-2">
+                  {[1, 2, 3, "...", 9, 10].map((page, index) => (
+                    <button
+                      key={index}
+                      className={`w-8 h-8 flex items-center justify-center rounded-md ${
+                        currentPage === page
+                          ? "bg-secondary text-white"
+                          : "bg-gray-800 hover:bg-gray-700 text-white"
+                      }`}
+                      onClick={() =>
+                        typeof page === "number" && setCurrentPage(page)
+                      }
+                    >
+                      {page}
+                    </button>
+                  ))}
+                </div>
 
                 <button className="bg-secondary hover:bg-orange-600 text-white py-2 px-4 rounded-md flex items-center">
                   Next <FiChevronRight className="ml-1" />

@@ -18,11 +18,11 @@ const Products = () => {
 
   return (
     <section className="w-full bg-black text-white py-16 px-6 md:px-12 lg:px-16">
-      <div className="container mx-auto">
+      <div className="container mx-auto md:text-left text-center">
         {/* Product Range Heading */}
         <div className="mb-12">
           <p className="text-[#ff5533] mb-2">Product Range</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
+          <h2 className="text-xl md:text-3xl lg:text-4xl xl:text-5xl font-medium ">
             Engineered to Cut, Styled to
             <br />
             Stand Out, Ready for Anything
@@ -30,11 +30,11 @@ const Products = () => {
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex flex-wrap gap-3 mb-8">
+        <div className="flex flex-wrap justify-center md:justify-start gap-3 mb-8">
           {filterTabs.map((tab) => (
             <button
               key={tab.id}
-              className={`px-6 py-2 rounded-full transition-colors ${
+              className={`px-4 py-2 md:px-6 md:py-2 text-sm md:text-lg rounded-full transition-colors ${
                 activeFilter === tab.id
                   ? "bg-[#ff5533] text-white"
                   : "bg-gray-600 text-white hover:bg-gray-500"

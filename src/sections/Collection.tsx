@@ -54,12 +54,12 @@ const Collection = () => {
     <section className="w-full bg-black text-white py-16 px-6 md:px-12 lg:px-16">
       <div className="container mx-auto">
         {/* Heading */}
-        <div className="mb-12">
+        <div className="mb-12 text-center md:text-left">
           <p className="text-[#ff5533] mb-2">Top Categories</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium leading-tight">
-            Sorted by Purpose, Defined by
-            <br />
-            Precision, Chosen by You
+          <h2 className="text-xl md:text-4xl lg:text-5xl font-medium ">
+            Sorted by Purpose, Defined 
+            <br/>
+            by Precision, Chosen by You
           </h2>
         </div>
 
@@ -171,7 +171,7 @@ const NewCategoryCard = ({
 }: any) => {
   return (
     <div
-      className={`bg-white rounded-lg overflow-hidden relative ${className}`}
+      className={`bg-white rounded-lg min-h-[290px]  overflow-hidden relative ${className}`}
     >
       <div className="absolute inset-0 flex flex-col   p-6">
         {/* Category Type */}
@@ -196,7 +196,7 @@ const NewCategoryCard = ({
       </div>
 
       {/* The knife image with red glow effect */}
-      <div className="absolute top-[60%] right-10 transform -translate-y-1/2">
+      <div className="absolute top-[70%] md:top-[60%] right-10 transform -translate-y-1/2">
         <div className="relative">
           {/* Red glow effect */}
           <div className="absolute bottom-20 w-80 h-8 bg-[#ff5533] opacity-70 blur-2xl rounded-full"></div>
