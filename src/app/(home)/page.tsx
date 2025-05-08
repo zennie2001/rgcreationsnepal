@@ -8,7 +8,7 @@ import Hero from "@/sections/Hero";
 import Products from "@/sections/Products";
 // import Services from "@/sections/Services";
 import Testimonials from "@/sections/Testimonials";
-import FAQ from "./faqs/page";
+
 import NewsLetter from "@/sections/NewsLetter";
 import Youtube from "@/sections/Youtube";
 import Deals from "@/sections/Deals";
@@ -26,7 +26,6 @@ export default function Home() {
       <Deals />
       <Testimonials />
       <Blogs />
-      <FAQ />
 
       <NewsLetter />
     </main>

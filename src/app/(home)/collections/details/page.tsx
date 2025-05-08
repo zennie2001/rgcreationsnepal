@@ -347,7 +347,6 @@ const ProductDetailPage = () => {
           </div>
         </div>
       </section>
-      <FAQ />
 
       <NewsLetter />
     </main>

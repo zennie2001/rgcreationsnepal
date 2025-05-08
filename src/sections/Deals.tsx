@@ -72,7 +72,7 @@ export default function Deals() {
                 style={{ transform: `translateX(-${activeSlide * 100}%)` }}
               >
                 {productItems.map((product) => (
-                  <div key={product.id} className="w-1/2 flex-shrink-0 px-2">
+                  <div key={product.id} className="w-full md:w-1/2 flex-shrink-0 px-2">
                     <div className="bg-zinc-900 rounded-lg overflow-hidden">
                       {/* Product Image */}
                       <div className="relative">
