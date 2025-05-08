@@ -641,7 +641,6 @@ const KnivesCollectionPage: React.FC = () => {
           </div>
         </div>
       </section>
-      <FAQ />
 
       <NewsLetter />
     </main>

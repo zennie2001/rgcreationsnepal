@@ -1,5 +1,6 @@
 import PageHeader from "@/components/PageHeader";
 import Contact from "@/sections/Contact";
+import FAQ from "@/app/(home)/faqs/page";
 import {
   FaEnvelope,
   FaFacebookF,
@@ -125,6 +126,7 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
+      <FAQ/>
       {/* <Contact className="pt-0 pb-16" /> */}
       <div className="w-full flex_center h-max">
         <iframe
