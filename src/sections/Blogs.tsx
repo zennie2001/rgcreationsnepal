@@ -1,5 +1,6 @@
 import React from "react";
 import BlogCard from "@/components/BlogCard"; // This will be imported from a separate file
+import Link from "next/link";
 
 function BlogsSection() {
   // Sample blog data
@@ -49,9 +50,9 @@ function BlogsSection() {
             </h2>
           </div>
          
-            <button className="bg-secondary hover:bg-orange-600 text-white px-6 py-3 rounded-md transition-all">
+            <Link href="/blogs" className="bg-secondary hover:bg-orange-600 text-white px-6 py-3 rounded-md transition-all">
               Learn More
-            </button>
+            </Link>
           
         </div>
 

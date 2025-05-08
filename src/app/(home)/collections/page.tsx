@@ -44,13 +44,11 @@ const KnivesCollectionPage: React.FC = () => {
     "Price Range": true,
     Ratings: true,
     Availability: true,
-    Brands: true,
-    "Blade Material": true,
-    "Blade Colors": true,
+    Style: true,
+    "Blade Length": true,
     "Handle Material": true,
-    "Handle Colors": true,
-    "Lock Type": true,
-    Categories: true,
+    "Blade Finish": true,
+    "Scabbard Type": true,
   });
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -75,57 +73,58 @@ const KnivesCollectionPage: React.FC = () => {
     }
   };
 
-  // Filter options data
+  // Filter options data with the new categories
   const filterOptions: { [key: string]: FilterOption[] } = {
-    "Blade Material": [
-      { label: "1095", count: 12 },
-      { label: "12C27", count: 8 },
-      { label: "14C28N", count: 15 },
-      { label: "14C28N-D2", count: 6 },
-      { label: "3Cr13", count: 10 },
+    Style: [
+      { label: "Modern", count: 42 },
+      { label: "Traditional", count: 35 },
+      { label: "Tactical", count: 28 },
+      { label: "Historical Replica", count: 15 },
+      { label: "Custom Design", count: 20 },
+    ],
+    "Blade Length": [
+      { label: "Under 3 inches (Small)", count: 32 },
+      { label: "3–5 inches (Medium)", count: 45 },
+      { label: "6–9 inches (Large)", count: 28 },
+      { label: "10–15 inches (Extra Large)", count: 17 },
+      { label: "Over 15 inches (Oversized/Swords)", count: 10 },
     ],
     "Handle Material": [
-      { label: "Aluminum", count: 18 },
-      { label: "Bone, Wood", count: 7 },
-      { label: "Carbon Fiber", count: 9 },
-      { label: "FRN", count: 12 },
-      { label: "G-10", count: 16 },
+      { label: "Wood", count: 30 },
+      { label: "Micarta", count: 22 },
+      { label: "G10 Composite", count: 25 },
+      { label: "Bone or Horn", count: 15 },
+      { label: "Rubberized Grip", count: 20 },
+      { label: "Metal", count: 18 },
+      { label: "Leather Wrapped", count: 12 },
     ],
-    "Lock Type": [
-      { label: "Blade Lock", count: 14 },
-      { label: "Button Lock", count: 8 },
-      { label: "Frame Lock", count: 11 },
-      { label: "Liner Lock", count: 9 },
-      { label: "Lockback", count: 7 },
+    "Blade Finish": [
+      { label: "Mirror Polish", count: 24 },
+      { label: "Satin Finish", count: 32 },
+      { label: "Stonewashed", count: 18 },
+      { label: "Black Oxide/Coated", count: 22 },
+      { label: "Acid Etched", count: 14 },
+      { label: "Damascus Patterned", count: 16 },
+      { label: "Raw/Forge Finish", count: 10 },
     ],
-    Brands: [
-      { label: "Hogue", count: 8 },
-      { label: "WE Knife", count: 12 },
-      { label: "Ka-bar Knives", count: 9 },
-      { label: "Schrade", count: 7 },
-      { label: "Spyderco", count: 15 },
-      { label: "White Deer", count: 6 },
-      { label: "Kershaw Knives", count: 10 },
+    "Scabbard Type": [
+      { label: "Leather Scabbard", count: 28 },
+      { label: "Wooden Sheath", count: 18 },
+      { label: "Kydex Sheath", count: 24 },
+      { label: "Nylon Case", count: 20 },
+      { label: "No Scabbard", count: 15 },
+      { label: "Decorative Display Sheath", count: 10 },
     ],
   };
 
   const ratings = [5, 4, 3, 2, 1];
-
-  const categories = [
-    "Engraved Knives",
-    "Folding Knives",
-    "Fixed Blade",
-    "Throwing",
-    "Hunting",
-    "Tools",
-  ];
 
   return (
     <main className="overflow-hidden">
       <Hero />
       <section className="min-h-screen bg-black text-white">
         <div className="max-w-7xl mx-auto px-4 py-8">
-          <div className="flex flex-col md:flex-row   gap-6">
+          <div className="flex flex-col md:flex-row gap-6">
             {/* Sidebar Filters */}
             <div className="w-full md:w-64 flex-shrink-0 hidden md:block">
               <div className="bg-gray-900 border-2 border-gray-400 rounded-lg p-4 sticky top-4">
@@ -252,7 +251,7 @@ const KnivesCollectionPage: React.FC = () => {
                         <label className="flex items-center cursor-pointer">
                           <input
                             type="checkbox"
-                            className=" h-5 w-5 text-secondary rounded border-gray-700 bg-gray-800"
+                            className="h-5 w-5 text-secondary rounded border-gray-700 bg-gray-800"
                           />
                           <span className="ml-2 text-sm">In Stock</span>
                         </label>
@@ -272,62 +271,36 @@ const KnivesCollectionPage: React.FC = () => {
                   )}
                 </div>
 
-                {/* Brands */}
+                {/* Style */}
                 <div className="border-b border-gray-300 py-4">
                   <button
                     className="flex justify-between items-center w-full text-left mb-2"
-                    onClick={() => toggleSection("Brands")}
+                    onClick={() => toggleSection("Style")}
                   >
-                    <h3 className="font-medium">Brands</h3>
-                    {openSections["Brands"] ? (
+                    <h3 className="font-medium">Style</h3>
+                    {openSections["Style"] ? (
                       <FiChevronUp />
                     ) : (
                       <FiChevronDown />
                     )}
                   </button>
 
-                  {openSections["Brands"] && (
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {filterOptions["Brands"].map((brand) => (
-                        <div
-                          key={brand.label}
-                          className={`px-3 py-1 text-sm rounded-full ${
-                            brand.label === "White Deer"
-                              ? "bg-secondary text-white"
-                              : "bg-gray-800 text-[#ff5722]"
-                          }`}
-                        >
-                          {brand.label}
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-
-                {/* Blade Material */}
-                <div className="border-b border-gray-300 py-4">
-                  <button
-                    className="flex justify-between items-center w-full text-left mb-2"
-                    onClick={() => toggleSection("Blade Material")}
-                  >
-                    <h3 className="font-medium">Blade Material</h3>
-                    {openSections["Blade Material"] ? (
-                      <FiChevronUp />
-                    ) : (
-                      <FiChevronDown />
-                    )}
-                  </button>
-
-                  {openSections["Blade Material"] && (
+                  {openSections["Style"] && (
                     <div className="space-y-2 mt-2">
-                      {filterOptions["Blade Material"].map((material) => (
+                      {filterOptions["Style"].map((style) => (
                         <div
-                          key={material.label}
+                          key={style.label}
                           className="flex justify-between items-center"
                         >
-                          <span className="text-sm">{material.label}</span>
+                          <label className="flex items-center cursor-pointer">
+                            <input
+                              type="checkbox"
+                              className="h-4 w-4 text-secondary rounded border-gray-700 bg-gray-800"
+                            />
+                            <span className="ml-2 text-sm">{style.label}</span>
+                          </label>
                           <span className="text-xs text-gray-400">
-                            ({material.count})
+                            ({style.count})
                           </span>
                         </div>
                       ))}
@@ -335,29 +308,38 @@ const KnivesCollectionPage: React.FC = () => {
                   )}
                 </div>
 
-                {/* Blade Colors */}
+                {/* Blade Length */}
                 <div className="border-b border-gray-300 py-4">
                   <button
                     className="flex justify-between items-center w-full text-left mb-2"
-                    onClick={() => toggleSection("Blade Colors")}
+                    onClick={() => toggleSection("Blade Length")}
                   >
-                    <h3 className="font-medium">Blade Colors</h3>
-                    {openSections["Blade Colors"] ? (
+                    <h3 className="font-medium">Blade Length</h3>
+                    {openSections["Blade Length"] ? (
                       <FiChevronUp />
                     ) : (
                       <FiChevronDown />
                     )}
                   </button>
 
-                  {openSections["Blade Colors"] && (
-                    <div className="grid grid-cols-5 gap-2 mt-2">
-                      {colors.map((color) => (
+                  {openSections["Blade Length"] && (
+                    <div className="space-y-2 mt-2">
+                      {filterOptions["Blade Length"].map((length) => (
                         <div
-                          key={color}
-                          className={`w-8 h-8 rounded-full bg-${
-                            color === "gray" ? "gray-200" : color
-                          }-500 border-2 border-gray-800 cursor-pointer`}
-                        ></div>
+                          key={length.label}
+                          className="flex justify-between items-center"
+                        >
+                          <label className="flex items-center cursor-pointer">
+                            <input
+                              type="checkbox"
+                              className="h-4 w-4 text-secondary rounded border-gray-700 bg-gray-800"
+                            />
+                            <span className="ml-2 text-sm">{length.label}</span>
+                          </label>
+                          <span className="text-xs text-gray-400">
+                            ({length.count})
+                          </span>
+                        </div>
                       ))}
                     </div>
                   )}
@@ -384,7 +366,15 @@ const KnivesCollectionPage: React.FC = () => {
                           key={material.label}
                           className="flex justify-between items-center"
                         >
-                          <span className="text-sm">{material.label}</span>
+                          <label className="flex items-center cursor-pointer">
+                            <input
+                              type="checkbox"
+                              className="h-4 w-4 text-secondary rounded border-gray-700 bg-gray-800"
+                            />
+                            <span className="ml-2 text-sm">
+                              {material.label}
+                            </span>
+                          </label>
                           <span className="text-xs text-gray-400">
                             ({material.count})
                           </span>
@@ -394,58 +384,36 @@ const KnivesCollectionPage: React.FC = () => {
                   )}
                 </div>
 
-                {/* Handle Colors */}
+                {/* Blade Finish */}
                 <div className="border-b border-gray-300 py-4">
                   <button
                     className="flex justify-between items-center w-full text-left mb-2"
-                    onClick={() => toggleSection("Handle Colors")}
+                    onClick={() => toggleSection("Blade Finish")}
                   >
-                    <h3 className="font-medium">Handle Colors</h3>
-                    {openSections["Handle Colors"] ? (
+                    <h3 className="font-medium">Blade Finish</h3>
+                    {openSections["Blade Finish"] ? (
                       <FiChevronUp />
                     ) : (
                       <FiChevronDown />
                     )}
                   </button>
 
-                  {openSections["Handle Colors"] && (
-                    <div className="grid grid-cols-5 gap-2 mt-2">
-                      {colors.map((color) => (
-                        <div
-                          key={color}
-                          className={`w-8 h-8 rounded-full bg-${
-                            color === "gray" ? "gray-200" : color
-                          }-500 border-2 border-gray-800 cursor-pointer`}
-                        ></div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-
-                {/* Lock Type */}
-                <div className="border-b border-gray-300 py-4">
-                  <button
-                    className="flex justify-between items-center w-full text-left mb-2"
-                    onClick={() => toggleSection("Lock Type")}
-                  >
-                    <h3 className="font-medium">Lock Type</h3>
-                    {openSections["Lock Type"] ? (
-                      <FiChevronUp />
-                    ) : (
-                      <FiChevronDown />
-                    )}
-                  </button>
-
-                  {openSections["Lock Type"] && (
+                  {openSections["Blade Finish"] && (
                     <div className="space-y-2 mt-2">
-                      {filterOptions["Lock Type"].map((lock) => (
+                      {filterOptions["Blade Finish"].map((finish) => (
                         <div
-                          key={lock.label}
+                          key={finish.label}
                           className="flex justify-between items-center"
                         >
-                          <span className="text-sm">{lock.label}</span>
+                          <label className="flex items-center cursor-pointer">
+                            <input
+                              type="checkbox"
+                              className="h-4 w-4 text-secondary rounded border-gray-700 bg-gray-800"
+                            />
+                            <span className="ml-2 text-sm">{finish.label}</span>
+                          </label>
                           <span className="text-xs text-gray-400">
-                            ({lock.count})
+                            ({finish.count})
                           </span>
                         </div>
                       ))}
@@ -453,29 +421,39 @@ const KnivesCollectionPage: React.FC = () => {
                   )}
                 </div>
 
-                {/* Categories */}
+                {/* Scabbard Type */}
                 <div className="py-4">
                   <button
                     className="flex justify-between items-center w-full text-left mb-2"
-                    onClick={() => toggleSection("Categories")}
+                    onClick={() => toggleSection("Scabbard Type")}
                   >
-                    <h3 className="font-medium">Categories</h3>
-                    {openSections["Categories"] ? (
+                    <h3 className="font-medium">Scabbard Type</h3>
+                    {openSections["Scabbard Type"] ? (
                       <FiChevronUp />
                     ) : (
                       <FiChevronDown />
                     )}
                   </button>
 
-                  {openSections["Categories"] && (
+                  {openSections["Scabbard Type"] && (
                     <div className="space-y-2 mt-2">
-                      {categories.map((category) => (
+                      {filterOptions["Scabbard Type"].map((scabbard) => (
                         <div
-                          key={category}
+                          key={scabbard.label}
                           className="flex justify-between items-center"
                         >
-                          <span className="text-sm">{category}</span>
-                          <FiChevronRight className="text-gray-500" />
+                          <label className="flex items-center cursor-pointer">
+                            <input
+                              type="checkbox"
+                              className="h-4 w-4 text-secondary rounded border-gray-700 bg-gray-800"
+                            />
+                            <span className="ml-2 text-sm">
+                              {scabbard.label}
+                            </span>
+                          </label>
+                          <span className="text-xs text-gray-400">
+                            ({scabbard.count})
+                          </span>
                         </div>
                       ))}
                     </div>
