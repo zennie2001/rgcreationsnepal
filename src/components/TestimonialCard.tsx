@@ -1,3 +1,6 @@
+"use client";
+import Image from "next/image";
+
 const TestimonialCard = ({ name, description, image }: any) => (
   <section className="bg-gradient-to-r from-gray-600 to-gray-800 rounded-[24px]">
     <div className="relative z-10 m-4 bg-gradient-to-br from-[#1f1f1f] to-[#121212] text-white px-8 py-10 rounded-[24px] max-w-4xl shadow-xl border border-neutral-800">
@@ -6,8 +9,10 @@ const TestimonialCard = ({ name, description, image }: any) => (
         {description}
       </p>
       <div className="flex flex-col items-center">
-        <img
-          src={image.src}
+        <Image
+          width={80}
+          height={80}
+          src={image}
           alt={name}
           className="w-16 h-16 rounded-full border-2 border-secondary mb-2"
         />
