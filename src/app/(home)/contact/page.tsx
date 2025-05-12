@@ -17,13 +17,13 @@ const contactInfos = [
     logo: FaPhoneAlt,
     title: "Call us",
     subTitle: "Sun-Fri from 10am-5pm",
-    contact: "+971 4324 772O",
+    contact: "+971 7777777777",
   },
   {
     logo: FaEnvelope,
     title: "Mail us",
     subTitle: "We are here to help.",
-    contact: "info@starlaxmijewellery.com",
+    contact: "info@blade.com",
   },
   {
     logo: FaLocationDot,
