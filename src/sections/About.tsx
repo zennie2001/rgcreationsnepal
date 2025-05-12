@@ -3,7 +3,7 @@ import knifeImage from "@/assets/images/blade.png";
 
 export default function About() {
   return (
-    <main className=" bg-black">
+    <main className=" bg-background">
       <section className="flex flex-col lg:flex-row w-full container text-white px-5 py-16 lg:px-0 lg:py-32 items-center gap-12">
         {/* Left Content */}
         <div className="w-full lg:w-1/2  flex flex-col gap-6">

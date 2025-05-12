@@ -2,14 +2,14 @@ import home from "@/assets/images/home.jpg";
 
 const Hero = () => {
   return (
-    <main className="bg-black">
-      <section className="md:relative flex flex-col-reverse w-full md:h-[100vh] h-[120vh] container  text-white ">
+    <main className="bg-background">
+      <section className="md:relative flex flex-col-reverse w-full h-[100vh] container  text-white ">
         {/* Background Image with Overlay */}
-        <div className="md:absolute  md:inset-0 md:left-[40%]">
+        <div className="md:absolute  md:inset-0 md:left-[50%]">
           <img
             src={home.src}
             alt="Hero Background"
-            className="w-full h-full object-cover"
+            className="w-full h-[98%] bg-background rounded-full object-cover"
           />
         </div>
 

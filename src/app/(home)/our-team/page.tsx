@@ -130,7 +130,7 @@ export default function OurTeam() {
           </div>
         </div>
         {showMessage && (
-          <div className="absolute inset-0 bg-black/80 flex_center lg:px-24 px-4">
+          <div className="absolute inset-0 bg-background/80 flex_center lg:px-24 px-4">
             <div className="flex lg:flex-row flex-col gap-6 p-8 lg:w-[65%] w-full lg:h-[485px]  bg-primary rounded-md relative -bottom-16">
               <div className="image lg:w-[40%] w-full lg:h-full flex flex-col gap-4">
                 <div className="flex_center w-full lg:h-[70%] h-[300px] overflow-hidden">
@@ -320,7 +320,7 @@ export default function OurTeam() {
           </div>
         </div>
         {showMessage && (
-          <div className="absolute inset-0 bg-black/80 flex_center lg:px-24 px-4">
+          <div className="absolute inset-0 bg-background/80 flex_center lg:px-24 px-4">
             <div className="flex lg:flex-row flex-col gap-6 p-8 lg:w-[65%] w-full lg:h-[485px]  bg-primary rounded-md relative -bottom-16">
               <div className="image lg:w-[40%] w-full lg:h-full flex flex-col gap-4">
                 <div className="flex_center w-full lg:h-[70%] h-[300px] overflow-hidden">

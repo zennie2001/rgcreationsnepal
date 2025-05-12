@@ -5,7 +5,7 @@ import { twMerge } from "tailwind-merge";
 import Header from "@/sections/Header";
 import Footer from "@/sections/Footer";
 import Link from "next/link";
-import {Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import ToastProvider from "@/components/ToastContainer";
 
 const jakarta = Inter({
@@ -16,14 +16,14 @@ const jakarta = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Star Laxmi",
-    template: "%s | Star Laxmi",
+    default: "BLADE",
+    template: "%s | BLADE",
   },
   description:
-    "Star Laxmi Jewellery LLC, a leading gold supplier, specializes in high-quality 24K gold for wholesale and retail buyers, ensuring purity, authenticity, and competitive pricing.",
+    "Blade is a specialized eCommerce website offering high-quality blades for industrial, culinary, and personal use. Shop a wide selection of durable, precision-crafted blades designed for performance and reliability. ",
   icons: {
-    icon: "/assets/star-laxmi-favicon.png",
-    apple: "/assets/star-laxmi-favicon.png",
+    icon: "/blade.png",
+    apple: "/blade.png",
   },
 };
 

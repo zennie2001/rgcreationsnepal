@@ -27,7 +27,7 @@ const blogs = [
 
 export default function Testimonials() {
   return (
-    <main className="bg-black">
+    <main className="bg-background">
       <section className="container flex flex-col w-full py-24 font-jakarta  text-white gap-16">
         <div className="text-left">
           <p className="text-sm text-secondary text-center md:text-left font-semibold uppercase">

@@ -19,7 +19,7 @@ export default function Deals() {
   };
 
   return (
-    <section className="w-full bg-black py-16 text-white overflow-hidden">
+    <section className="w-full bg-background py-16 text-white overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row">
           {/* Left side - Hero image with overlay text */}
