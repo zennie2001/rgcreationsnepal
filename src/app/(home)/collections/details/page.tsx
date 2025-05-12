@@ -139,7 +139,7 @@ const ProductDetailPage = () => {
   return (
     <main className="overflow-hidden">
       <Hero />
-      <section className="bg-black text-white min-h-screen">
+      <section className="bg-background text-white min-h-screen">
         {/* Navigation */}
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center text-sm mb-6">

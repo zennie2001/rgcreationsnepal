@@ -26,6 +26,7 @@ const config: Config = {
         },
         secondary: "#e64a2e",
         tertiary: '#EF001F',
+        background:'#4B5320',
         quaternary: '#FFBF1C',
         quinary: '#F6FAFE',
         borderColor:'#E9E9E9',

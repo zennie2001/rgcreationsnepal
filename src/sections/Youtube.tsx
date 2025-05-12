@@ -23,7 +23,7 @@ const videoItems = [
 
 export default function Youtube() {
   return (
-    <section className="w-full bg-black py-12 text-white">
+    <section className="w-full bg-background py-12 text-white">
       <div className="container flex flex-col md:flex-row justify-between items-center mx-auto px-4">
         {/* Youtube section header */}
         <div className="">
@@ -61,7 +61,7 @@ export default function Youtube() {
                   {/* Play button overlay */}
                   {item.playIcon && (
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-12 h-12 bg-black bg-opacity-50 rounded-full flex items-center justify-center">
+                      <div className="w-12 h-12 bg-background bg-opacity-50 rounded-full flex items-center justify-center">
                         <div className="w-4 h-4 border-t-4 border-r-4 border-b-4 border-l-0 border-gray-300 rounded-full transform rotate-90"></div>
                       </div>
                     </div>

@@ -122,7 +122,7 @@ const KnivesCollectionPage: React.FC = () => {
   return (
     <main className="overflow-hidden">
       <Hero />
-      <section className="min-h-screen bg-black text-white">
+      <section className="min-h-screen bg-background text-white">
         <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row gap-6">
             {/* Sidebar Filters */}

@@ -11,7 +11,7 @@ import { MoveDownRight } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#121212] text-white  pt-20 pb-10 px-4">
+    <footer className="bg-background text-white  pt-20 pb-10 px-4">
       <div className="flex flex-col items-centernp md:flex-row justify-between container mb-14">
         <h2 className="text-2xl md:text-3xl xl:text-4xl font-bold  text-center md:text-left  mb-6">
           <span className="text-[#F65128]">Engineered</span> to Cut, Styled to

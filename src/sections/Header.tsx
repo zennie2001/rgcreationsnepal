@@ -13,7 +13,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full bg-[#050505] text-white py-4 px-6 md:px-12 lg:px-16">
+    <header className="w-full bg-background text-white py-4 px-6 md:px-12 lg:px-16">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex-1">
@@ -63,12 +63,12 @@ const Header = () => {
           <>
             {/* Overlay */}
             <div
-              className="fixed inset-0 bg-black/50 z-40"
+              className="fixed inset-0 bg-background/50 z-40"
               onClick={() => setIsMenuOpen(false)}
             ></div>
 
             {/* Menu */}
-            <div className="fixed top-0 right-0 w-64 h-full bg-black z-50 p-6 shadow-lg">
+            <div className="fixed top-0 right-0 w-64 h-full bg-background z-50 p-6 shadow-lg">
               <button
                 className="absolute top-4 right-4 text-white"
                 onClick={() => setIsMenuOpen(false)}

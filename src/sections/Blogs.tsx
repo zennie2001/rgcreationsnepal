@@ -38,7 +38,7 @@ function BlogsSection() {
   ];
 
   return (
-    <section className="w-full bg-gradient-to-br from-black to-neutral-900 py-16">
+    <section className="w-full bg-background py-16">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start mb-12">
           <div>
