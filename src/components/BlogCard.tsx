@@ -7,8 +7,8 @@ function BlogCard({ blog }: any) {
   };
 
   return (
-    <section className="bg-gradient-to-r from-gray-600 to-gray-800 rounded-xl">
-      <div className="bg-neutral-800 m-4 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-secondary/50 group">
+    <section className="bg-gradient-to-r from-[#888888] to-[#9e9e9e] rounded-xl">
+      <div className="bg-gradient-to-r to-[#d9d9d9] from-[#ffffff] m-4 rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-darkGreen/50 group">
         <div className="relative">
           {blog?.image && (
             <img
@@ -20,13 +20,13 @@ function BlogCard({ blog }: any) {
         </div>
 
         <div className="p-6">
-          <p className="text-sm text-gray-400 mb-2">{blog.category}</p>
+          {/* <p className="text-sm text-black mb-2">{blog.category}</p> */}
 
           <a
             href={`/blogs/${createSlug(blog.title)}`}
-            className="group flex items-start gap-2"
+            className="group flex items-start gap-4"
           >
-            <h3 className="text-white text-lg font-medium leading-tight mb-3 group-hover:text-secondary transition-colors">
+            <h3 className="text-darkGreen text-lg font-medium leading-tight mb-3 group-hover:text-darkGreen transition-colors">
               {blog.title}
             </h3>
             <svg
@@ -35,7 +35,7 @@ function BlogCard({ blog }: any) {
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="text-secondary mt-1 transform transition-transform group-hover:translate-x-1"
+              className="text-darkGreen mt-1 transform transition-transform group-hover:translate-x-1"
             >
               <path
                 d="M5 12H19M19 12L12 5M19 12L12 19"
@@ -47,7 +47,7 @@ function BlogCard({ blog }: any) {
             </svg>
           </a>
 
-          <p className="text-sm text-gray-400 mb-4">{blog.description}</p>
+          <p className="text-sm text-black mb-4">{blog.description}</p>
 
           <div className="flex items-center gap-3 mt-6">
             <div className="w-8 h-8 rounded-full bg-gray-500 overflow-hidden">
@@ -58,8 +58,8 @@ function BlogCard({ blog }: any) {
               />
             </div>
             <div>
-              <p className="text-sm text-white">{blog.author}</p>
-              <p className="text-xs text-gray-400">{blog.date}</p>
+              <p className="text-sm text-black">{blog.author}</p>
+              <p className="text-xs text-black">{blog.date}</p>
             </div>
           </div>
         </div>

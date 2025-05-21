@@ -10,10 +10,13 @@ const Header = () => {
     { title: "Home", link: "/" },
     { title: "About Us", link: "/about" },
     { title: "Collections", link: "/collections" },
+    { title: "Blogs", link: "/blogs" },
+    { title: "Make your Custom Khukuri", link: "/collections" },
+    
   ];
 
   return (
-    <header className="w-full bg-background text-white py-4 px-6 md:px-12 lg:px-16">
+    <header className="w-full bg-lightGreen text-white py-4 px-6 md:px-12 lg:px-16">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex-1">
@@ -23,15 +26,15 @@ const Header = () => {
         </div>
 
         {/* Desktop Navigation - Centered */}
-        <nav className="hidden md:flex flex-1 justify-center">
+        <nav className="hidden md:flex  justify-center">
           <ul className="flex space-x-8">
             {mainNavLinks.map((item, index) => (
               <li key={index}>
                 <Link
                   href={item.link}
                   className={`${
-                    index === 0 ? "text-[#ff5533]" : "text-white"
-                  } hover:text-[#ff5533] transition-colors font-medium`}
+                    index === 0 ? "text-darkGreen font-semibold" : "text-white"
+                  } hover:text-darkGreen transition-colors font-medium`}
                 >
                   {item.title}
                 </Link>
@@ -44,7 +47,7 @@ const Header = () => {
         <div className="flex-1 flex justify-end">
           <Link
             href="/contact"
-            className="border border-[#ff5533] text-white hover:bg-[#ff5533] transition-colors px-4 py-2 rounded-md text-sm font-medium"
+            className="bg-primary text-darkGreen  hover:bg-[#ff5533] transition-colors px-5 py-2 rounded-md text-base font-semibold"
           >
             Contact Us
           </Link>
@@ -63,12 +66,12 @@ const Header = () => {
           <>
             {/* Overlay */}
             <div
-              className="fixed inset-0 bg-background/50 z-40"
+              className="fixed inset-0 bg-primary/50 z-40"
               onClick={() => setIsMenuOpen(false)}
             ></div>
 
             {/* Menu */}
-            <div className="fixed top-0 right-0 w-64 h-full bg-background z-50 p-6 shadow-lg">
+            <div className="fixed top-0 right-0 w-64 h-full bg-primary z-50 p-6 shadow-lg">
               <button
                 className="absolute top-4 right-4 text-white"
                 onClick={() => setIsMenuOpen(false)}

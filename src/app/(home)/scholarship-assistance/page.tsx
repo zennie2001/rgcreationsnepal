@@ -58,7 +58,7 @@ export default function ScholarshipAssistance() {
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
-            <p className="text-2xl text-secondary font-semibold pt-3">
+            <p className="text-2xl text-darkGreen font-semibold pt-3">
               International Undergraduate Scholarship for Women
             </p>
             <div className="flex w-full lg:flex-row flex-col justify-between lg:items-center items-start lg:gap-0 gap-4">
@@ -85,7 +85,7 @@ export default function ScholarshipAssistance() {
           </div>
         </div>
         <div className="mt-10">
-          <p className="text-3xl font-semibold text-secondary">
+          <p className="text-3xl font-semibold text-darkGreen">
             About Scholarship
           </p>
           <p className="text-text py-2">
@@ -103,7 +103,7 @@ export default function ScholarshipAssistance() {
           </p>
         </div>
         <div className="mt-10">
-          <p className="text-3xl font-semibold text-secondary">Requirements</p>
+          <p className="text-3xl font-semibold text-darkGreen">Requirements</p>
           <ul className="text-text list-disc px-5">
             <li>
               Open to women enrolled in an undergraduate degree program at a
@@ -130,12 +130,12 @@ export default function ScholarshipAssistance() {
           </ul>
         </div>
         <div className="mt-10">
-          <p className="text-3xl font-semibold text-secondary">Overview</p>
+          <p className="text-3xl font-semibold text-darkGreen">Overview</p>
           <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-6 pt-5">
             {overview.map((e, i) => {
               return (
                 <div key={i}>
-                  <p className="font-bold text-secondary">{e.name}</p>
+                  <p className="font-bold text-darkGreen">{e.name}</p>
                   <p className="text-sm text-text pt-2">{e.subtitle}</p>
                 </div>
               );

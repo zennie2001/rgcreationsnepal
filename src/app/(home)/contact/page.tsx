@@ -88,11 +88,11 @@ export default function ContactUs() {
               className="flex flex-col col-span-1 gap-8 p-6 border border-text/30 rounded-md"
             >
               <div className="p-2 border border-text/30 rounded-md w-max">
-                <info.logo className="size-6 text-secondary" />
+                <info.logo className="size-6 text-darkGreen" />
               </div>
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
-                  <p className="font-bold text-secondary">{info.title}</p>
+                  <p className="font-bold text-darkGreen">{info.title}</p>
                   <p className="text-text text-sm">{info.subTitle}</p>
                 </div>
                 <div className="py-2 px-4 rounded-md border border-text/30 text-text w-max">
@@ -104,11 +104,11 @@ export default function ContactUs() {
         })}
         <div className="flex flex-col col-span-1 gap-8 p-6 border border-text/30 rounded-md">
           <div className="p-2 border border-text/30 rounded-md w-max">
-            <FaHeadset className="size-6 text-secondary" />
+            <FaHeadset className="size-6 text-darkGreen" />
           </div>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2">
-              <p className="font-bold text-secondary">Give us a follow</p>
+              <p className="font-bold text-darkGreen">Give us a follow</p>
               <p className="text-text text-sm">Follow us in social medias.</p>
             </div>
             <div className="flex gap-3">
@@ -117,7 +117,7 @@ export default function ContactUs() {
                   key={index}
                   href={media.link}
                   target="_blank"
-                  className="social rounded-full size-8 p-2 border border-text/30 text-secondary"
+                  className="social rounded-full size-8 p-2 border border-text/30 text-darkGreen"
                 >
                   <media.icon className="size-full" />
                 </a>
@@ -126,7 +126,7 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-      <FAQ/>
+      <FAQ />
       {/* <Contact className="pt-0 pb-16" /> */}
       <div className="w-full flex_center h-max">
         <iframe

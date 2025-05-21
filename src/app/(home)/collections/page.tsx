@@ -33,7 +33,7 @@ const colors = [
   "blue",
   "purple",
   "pink",
-  "white",
+  "black",
   "gray",
 ];
 
@@ -122,21 +122,21 @@ const KnivesCollectionPage: React.FC = () => {
   return (
     <main className="overflow-hidden">
       <Hero />
-      <section className="min-h-screen bg-background text-white">
+      <section className="min-h-screen bg-primary text-black">
         <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row gap-6">
             {/* Sidebar Filters */}
             <div className="w-full md:w-64 flex-shrink-0 hidden md:block">
-              <div className="bg-gray-900 border-2 border-gray-400 rounded-lg p-4 sticky top-4">
+              <div className="bg-primary border-2 border-gray-400 rounded-lg p-4 sticky top-4">
                 <div className="flex justify-between items-center mb-4">
                   <h2 className="text-lg font-medium">Filters</h2>
-                  <button className="text-white">
+                  <button className="text-black">
                     <FiSliders size={20} />
                   </button>
                 </div>
 
                 {/* Price Range */}
-                <div className="border-b border-gray-300 py-4">
+                <div className="border-b border-lightGreen py-4">
                   <button
                     className="flex justify-between items-center w-full text-left mb-2"
                     onClick={() => toggleSection("Price Range")}
@@ -154,7 +154,7 @@ const KnivesCollectionPage: React.FC = () => {
                       <div className="relative pt-5 pb-2">
                         <div className="h-1 bg-gray-700 rounded">
                           <div
-                            className="absolute h-1 bg-secondary rounded"
+                            className="absolute h-1 bg-darkGreen rounded"
                             style={{
                               left: `${
                                 ((priceRange[0] - 0) / (300 - 0)) * 100
@@ -167,13 +167,13 @@ const KnivesCollectionPage: React.FC = () => {
                           ></div>
                         </div>
                         <div
-                          className="absolute w-4 h-4 bg-white rounded-full -mt-1.5 cursor-pointer"
+                          className="absolute w-4 h-4 bg-black rounded-full -mt-1.5 cursor-pointer"
                           style={{
                             left: `${((priceRange[0] - 0) / (300 - 0)) * 100}%`,
                           }}
                         ></div>
                         <div
-                          className="absolute w-4 h-4 bg-white rounded-full -mt-1.5 cursor-pointer"
+                          className="absolute w-4 h-4 bg-black rounded-full -mt-1.5 cursor-pointer"
                           style={{
                             left: `${((priceRange[1] - 0) / (300 - 0)) * 100}%`,
                           }}
@@ -188,7 +188,7 @@ const KnivesCollectionPage: React.FC = () => {
                 </div>
 
                 {/* Ratings */}
-                <div className="border-b border-gray-300 py-4">
+                <div className="border-b border-lightGreen py-4">
                   <button
                     className="flex justify-between items-center w-full text-left mb-2"
                     onClick={() => toggleSection("Ratings")}
@@ -224,7 +224,7 @@ const KnivesCollectionPage: React.FC = () => {
                                 </span>
                               ))}
                           </div>
-                          <span className="text-xs text-gray-400">(125)</span>
+                          <span className="text-xs text-gray-500">(125)</span>
                         </div>
                       ))}
                     </div>
@@ -232,7 +232,7 @@ const KnivesCollectionPage: React.FC = () => {
                 </div>
 
                 {/* Availability */}
-                <div className="border-b border-gray-300 py-4">
+                <div className="border-b border-lightGreen py-4">
                   <button
                     className="flex justify-between items-center w-full text-left mb-2"
                     onClick={() => toggleSection("Availability")}
@@ -251,28 +251,28 @@ const KnivesCollectionPage: React.FC = () => {
                         <label className="flex items-center cursor-pointer">
                           <input
                             type="checkbox"
-                            className="h-5 w-5 text-secondary rounded border-gray-700 bg-gray-800"
+                            className="h-5 w-5 text-darkGreen rounded border-gray-700 bg-gray-800"
                           />
                           <span className="ml-2 text-sm">In Stock</span>
                         </label>
-                        <span className="text-xs text-gray-400">(218)</span>
+                        <span className="text-xs text-gray-500">(218)</span>
                       </div>
                       <div className="flex items-center justify-between">
                         <label className="flex items-center cursor-pointer">
                           <input
                             type="checkbox"
-                            className="form-checkbox h-5 w-5 text-secondary rounded border-gray-700 bg-gray-800"
+                            className="form-checkbox h-5 w-5 text-darkGreen rounded border-gray-700 bg-gray-800"
                           />
                           <span className="ml-2 text-sm">Out Of Stock</span>
                         </label>
-                        <span className="text-xs text-gray-400">(28)</span>
+                        <span className="text-xs text-gray-500">(28)</span>
                       </div>
                     </div>
                   )}
                 </div>
 
                 {/* Style */}
-                <div className="border-b border-gray-300 py-4">
+                <div className="border-b border-lightGreen py-4">
                   <button
                     className="flex justify-between items-center w-full text-left mb-2"
                     onClick={() => toggleSection("Style")}
@@ -295,11 +295,11 @@ const KnivesCollectionPage: React.FC = () => {
                           <label className="flex items-center cursor-pointer">
                             <input
                               type="checkbox"
-                              className="h-4 w-4 text-secondary rounded border-gray-700 bg-gray-800"
+                              className="h-4 w-4 text-darkGreen rounded border-gray-700 bg-gray-800"
                             />
                             <span className="ml-2 text-sm">{style.label}</span>
                           </label>
-                          <span className="text-xs text-gray-400">
+                          <span className="text-xs text-gray-500">
                             ({style.count})
                           </span>
                         </div>
@@ -309,7 +309,7 @@ const KnivesCollectionPage: React.FC = () => {
                 </div>
 
                 {/* Blade Length */}
-                <div className="border-b border-gray-300 py-4">
+                <div className="border-b border-lightGreen py-4">
                   <button
                     className="flex justify-between items-center w-full text-left mb-2"
                     onClick={() => toggleSection("Blade Length")}
@@ -332,11 +332,11 @@ const KnivesCollectionPage: React.FC = () => {
                           <label className="flex items-center cursor-pointer">
                             <input
                               type="checkbox"
-                              className="h-4 w-4 text-secondary rounded border-gray-700 bg-gray-800"
+                              className="h-4 w-4 text-darkGreen rounded border-gray-700 bg-gray-800"
                             />
                             <span className="ml-2 text-sm">{length.label}</span>
                           </label>
-                          <span className="text-xs text-gray-400">
+                          <span className="text-xs text-gray-500">
                             ({length.count})
                           </span>
                         </div>
@@ -346,7 +346,7 @@ const KnivesCollectionPage: React.FC = () => {
                 </div>
 
                 {/* Handle Material */}
-                <div className="border-b border-gray-300 py-4">
+                <div className="border-b border-lightGreen py-4">
                   <button
                     className="flex justify-between items-center w-full text-left mb-2"
                     onClick={() => toggleSection("Handle Material")}
@@ -369,13 +369,13 @@ const KnivesCollectionPage: React.FC = () => {
                           <label className="flex items-center cursor-pointer">
                             <input
                               type="checkbox"
-                              className="h-4 w-4 text-secondary rounded border-gray-700 bg-gray-800"
+                              className="h-4 w-4 text-darkGreen rounded border-gray-700 bg-gray-800"
                             />
                             <span className="ml-2 text-sm">
                               {material.label}
                             </span>
                           </label>
-                          <span className="text-xs text-gray-400">
+                          <span className="text-xs text-gray-500">
                             ({material.count})
                           </span>
                         </div>
@@ -385,7 +385,7 @@ const KnivesCollectionPage: React.FC = () => {
                 </div>
 
                 {/* Blade Finish */}
-                <div className="border-b border-gray-300 py-4">
+                <div className="border-b border-lightGreen py-4">
                   <button
                     className="flex justify-between items-center w-full text-left mb-2"
                     onClick={() => toggleSection("Blade Finish")}
@@ -408,11 +408,11 @@ const KnivesCollectionPage: React.FC = () => {
                           <label className="flex items-center cursor-pointer">
                             <input
                               type="checkbox"
-                              className="h-4 w-4 text-secondary rounded border-gray-700 bg-gray-800"
+                              className="h-4 w-4 text-darkGreen rounded border-gray-700 bg-gray-800"
                             />
                             <span className="ml-2 text-sm">{finish.label}</span>
                           </label>
-                          <span className="text-xs text-gray-400">
+                          <span className="text-xs text-gray-500">
                             ({finish.count})
                           </span>
                         </div>
@@ -445,13 +445,13 @@ const KnivesCollectionPage: React.FC = () => {
                           <label className="flex items-center cursor-pointer">
                             <input
                               type="checkbox"
-                              className="h-4 w-4 text-secondary rounded border-gray-700 bg-gray-800"
+                              className="h-4 w-4 text-darkGreen rounded border-gray-700 bg-gray-800"
                             />
                             <span className="ml-2 text-sm">
                               {scabbard.label}
                             </span>
                           </label>
-                          <span className="text-xs text-gray-400">
+                          <span className="text-xs text-gray-500">
                             ({scabbard.count})
                           </span>
                         </div>
@@ -460,7 +460,7 @@ const KnivesCollectionPage: React.FC = () => {
                   )}
                 </div>
 
-                <button className="mt-4 w-full bg-secondary rounded-full hover:bg-orange-600 text-white py-2 transition duration-200">
+                <button className="mt-4 w-full bg-darkGreen rounded-full  text-white py-2 transition duration-200">
                   Apply Filter
                 </button>
               </div>
@@ -469,17 +469,17 @@ const KnivesCollectionPage: React.FC = () => {
             {/* Main Content */}
             <div className="flex-1">
               <div className="mb-6">
-                <h1 className="md:text-2xl text-xl font-medium text-secondary">
+                <h1 className="md:text-2xl text-xl font-medium text-darkGreen">
                   Collections
                 </h1>
                 <div className="flex flex-col md:flex-row gap-2 justify-between items-start md:items-center mt-2">
-                  <span className="text-sm text-gray-400">
+                  <span className="text-sm text-gray-500">
                     Showing 1-{productItems.length} of {productItems.length}{" "}
                     Products
                   </span>
                   <div className="relative">
                     <button
-                      className="flex items-center bg-transparent text-sm text-secondary"
+                      className="flex items-center bg-transparent text-sm text-darkGreen"
                       onClick={() => setShowSortDropdown(!showSortDropdown)}
                     >
                       Sort by: {sortBy} <FiChevronDown className="ml-1" />
@@ -497,8 +497,8 @@ const KnivesCollectionPage: React.FC = () => {
                               <button
                                 className={`block px-4 py-2 text-sm w-full text-left ${
                                   sortBy === option
-                                    ? "text-secondary"
-                                    : "text-white hover:bg-gray-800"
+                                    ? "text-darkGreen"
+                                    : "text-black hover:bg-gray-800"
                                 }`}
                                 onClick={() => {
                                   setSortBy(option);
@@ -521,7 +521,7 @@ const KnivesCollectionPage: React.FC = () => {
                 {productItems.map((product) => (
                   <div
                     key={product.id}
-                    className="bg-zinc-900 rounded-lg overflow-hidden"
+                    className="bg-primary border-darkGreen border rounded-lg overflow-hidden"
                   >
                     {/* Product Image */}
                     <div className="relative">
@@ -530,57 +530,41 @@ const KnivesCollectionPage: React.FC = () => {
                         alt={product.name}
                         className="w-full aspect-square object-cover "
                       />
-                      {/* Wishlist Button */}
-                      <button className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full">
-                        <Heart size={20} color="white" />
-                      </button>
                     </div>
 
                     {/* Product Info */}
                     <div className="p-4">
-                      <p className="text-gray-400 text-sm">{product.brand}</p>
-                      <h3 className="font-medium text-white mt-1 mb-4 line-clamp-2">
+                      <p className="text-gray-500 text-sm">{product.brand}</p>
+                      <h3 className="font-medium text-black mt-1 mb-4 line-clamp-2">
                         {product.name}
                       </h3>
 
                       {/* Price */}
-                      <div className="flex items-center gap-2">
-                        <span className="text-white font-bold">
+                      <div className="flex items-center justify-between gap-2">
+                        <span className="text-black font-bold">
                           ${product.salePrice.toFixed(2)}
                         </span>
-                        <span className="text-gray-400 line-through text-sm">
-                          ${product.originalPrice.toFixed(2)}
-                        </span>
-                        <span className="text-gray-400 text-sm">
-                          -{product.discount}%
-                        </span>
+                        <div className="flex gap-2 items-center">
+                          <span className="text-gray-500 line-through text-sm">
+                            ${product.originalPrice.toFixed(2)}
+                          </span>
+                          <span className="text-white bg-black px-1.5 py-1 rounded-md text-sm">
+                            -{product.discount}%
+                          </span>
+                        </div>
                       </div>
 
                       {/* Buy Now Button */}
                       <div className="flex mt-4 gap-2">
                         <Link
                           href="/collections/details"
-                          className="bg-gray-700 text-center hover:bg-gray-600 text-white py-2 px-4 rounded flex-grow"
+                          className="bg-[#1c1c1c] text-center hover:bg-gray-600 text-white py-2.5 text-lg font-medium px-4 rounded-2xl flex-grow"
                         >
-                          Buy Now
+                          Add to Cart
                         </Link>
-                        <button className="bg-[#ff5533] hover:bg-[#e64a2e] text-white p-2 rounded">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="lucide lucide-shopping-cart"
-                          >
-                            <circle cx="8" cy="21" r="1" />
-                            <circle cx="19" cy="21" r="1" />
-                            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
-                          </svg>
+                        {/* Wishlist Button */}
+                        <button className=" w-12 h-12 flex bg-darkGreen  items-center justify-center rounded-2xl">
+                          <Heart size={20} color="white" />
                         </button>
                       </div>
                     </div>
@@ -589,7 +573,7 @@ const KnivesCollectionPage: React.FC = () => {
               </div>
 
               {/* Pagination */}
-              <div className="mt-8 flex flex-col md:flex-row justify-center items-center gap-2">
+              <div className="mt-8 flex flex-col md:flex-row justify-between  items-center gap-2">
                 <button className="bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded-md flex items-center">
                   <FiChevronLeft className="mr-1" /> Previous
                 </button>
@@ -599,7 +583,7 @@ const KnivesCollectionPage: React.FC = () => {
                       key={index}
                       className={`w-8 h-8 flex items-center justify-center rounded-md ${
                         currentPage === page
-                          ? "bg-secondary text-white"
+                          ? "bg-darkGreen text-white"
                           : "bg-gray-800 hover:bg-gray-700 text-white"
                       }`}
                       onClick={() =>
@@ -611,7 +595,7 @@ const KnivesCollectionPage: React.FC = () => {
                   ))}
                 </div>
 
-                <button className="bg-secondary hover:bg-orange-600 text-white py-2 px-4 rounded-md flex items-center">
+                <button className="bg-darkGreen hover:bg-darkGreen text-white py-2 px-4 rounded-md flex items-center">
                   Next <FiChevronRight className="ml-1" />
                 </button>
               </div>
@@ -620,7 +604,7 @@ const KnivesCollectionPage: React.FC = () => {
         </div>
       </section>
 
-      <NewsLetter />
+      {/* <NewsLetter /> */}
     </main>
   );
 };

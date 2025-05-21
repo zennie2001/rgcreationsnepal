@@ -21,15 +21,15 @@ const advantages = [
 
 const Categories = () => {
   return (
-    <main className="w-full pt-10  bg-background">
+    <main className="w-full mt-10 bg-darkGray">
       <section className="grid grid-cols-1 md:grid-cols-4 container w-full">
         {/* Left Side - 1/4 width, dark */}
-        <div className="bg-background text-white py-10 flex flex-col justify-center items-center md:items-start space-y-6">
+        <div className=" text-white py-10 flex flex-col justify-center items-center md:items-start space-y-6">
           <h2 className="text-3xl text-center md:text-left font-semibold">
             Our <br />
             Advantages
           </h2>
-          <button className="bg-[#FF5A1F] hover:bg-[#e54b10] text-white px-6 py-3 rounded transition">
+          <button className="bg-darkGreen text-white px-6 py-3 rounded transition">
             Learn More
           </button>
         </div>
@@ -38,7 +38,7 @@ const Categories = () => {
         {advantages.map((item, index) => (
           <div
             key={index}
-            className="bg-[#FF5A1F] text-white p-8 flex flex-col items-center md:items-start space-y-4"
+            className="bg-darkGreen text-white p-8 flex flex-col items-center md:items-start space-y-4"
           >
             <FaMoneyBillWave className="text-white text-3xl" />
             <h3 className="text-lg text-center md:text-left font-semibold leading-snug">{item.title}</h3>

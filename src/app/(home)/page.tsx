@@ -21,13 +21,13 @@ export default function Home() {
 
       <About />
       <Products />
-      <Collection />
+      {/* <Collection /> */}
       <Youtube />
-      <Deals />
+      {/* <Deals /> */}
       <Testimonials />
       <Blogs />
 
-      <NewsLetter />
+      {/* <NewsLetter />   */}
     </main>
   );
 }

@@ -1,3 +1,5 @@
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import {
   FaFacebookF,
@@ -10,17 +12,49 @@ import { Mail, MapPin } from "lucide-react";
 import { MoveDownRight } from "lucide-react";
 
 const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSubscribe = () => {
+    // Implement subscription logic here
+    console.log("Subscribing email:", email);
+    // Reset the input
+    setEmail("");
+  };
   return (
-    <footer className="bg-background text-white  pt-20 pb-10 px-4">
-      <div className="flex flex-col items-centernp md:flex-row justify-between container mb-14">
-        <h2 className="text-2xl md:text-3xl xl:text-4xl font-bold  text-center md:text-left  mb-6">
-          <span className="text-[#F65128]">Engineered</span> to Cut, Styled to
-          <br/><p className="md:mt-4"></p>
-          Stand Out, Ready for <span className="text-[#F65128]">Anything</span>
+    <footer className="bg-darkGreen text-white  pt-10 pb-10 px-4">
+      <div className="flex flex-col items-centernp border-b border-lightGreen md:flex-row justify-between container mb-14">
+        <h2 className="text-xl md:text-2xl  font-semibold text-white  text-center md:text-left  mb-8">
+          Join our newsletter to
+          <br /> keep up to date with us!
         </h2>
-        <div className="w-20 flex items-center h-20 bg-secondary">
-          {" "}
-          <MoveDownRight size={70} className="m-1" />
+
+        <div className="flex flex-col sm:flex-row gap-4 mb-16">
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter Your Email"
+            className="bg-darkGreen border border-lightGreen w-[300px] rounded-full text-white px-4 py-3  flex-grow focus:outline-none focus:ring-2 focus:ring-secondary"
+          />
+          <button
+            onClick={handleSubscribe}
+            className="bg-primary text-black rounded-full px-4   py-2 text-sm font-medium transition-colors flex items-center justify-center"
+          >
+            SUBSCRIBE
+            <svg
+              className="ml-2 w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
         </div>
       </div>
 
@@ -28,7 +62,9 @@ const Footer = () => {
         {/* Left Column */}
         <div>
           <div className="  text-center md:text-left">
-            <h3 className="text-[#F65128] text-lg font-semibold mb-4">Blades</h3>
+            <h3 className="text-white text-2xl font-semibold mb-4">
+              Blades
+            </h3>
             <p className="text-gray-300 mt-2 text-sm leading-relaxed max-w-sm">
               Whether it’s everyday carry or mission-ready gear, our collection
               covers the spectrum of sharp innovation. Choose your edge — and
@@ -93,9 +129,9 @@ const Footer = () => {
       </div>
 
       {/* Divider */}
-      <div className="border-t border-gray-800 mt-12 pt-6 text-xs md:text-sm text-gray-400 text-center">
+      <div className="border-t border-lightGreen container flex justify-between mt-12 pt-6 text-xs md:text-sm text-gray-400 text-center">
         <p>&copy; 2025 Blades. All rights reserved</p>
-        <div className="mt-2 space-x-3">
+        <div className=" space-x-3">
           <Link href="/privacy-policy">Privacy Policy</Link>|
           <Link href="/terms-conditions">Terms & Conditions</Link>|
           <Link href="/cookies-policy">Cookies Policy</Link>|

@@ -68,7 +68,7 @@ export default function CaratGold() {
       <PageHeader link="/24-carat-gold" title="24 Carat Gold" />
       <section className="flex_center flex-col lg:py-16 py-10 lg:gap-12 gap-6 lg:px-0 px-4">
         <div className="flex_center flex-col gap-8 lg:w-[55%] w-full">
-          <h3 className="text-[32px] font-semibold text-secondary">
+          <h3 className="text-[32px] font-semibold text-darkGreen">
             Why 24K Gold is the Best Choice for Wholesale & Retail Buyers
           </h3>
           <div className="flex flex-col w-full gap-8">
@@ -106,7 +106,7 @@ export default function CaratGold() {
             </div>
             <div>
               <ul className="list-disc">
-                <h1 className="text-[32px] font-semibold text-secondary mb-6">
+                <h1 className="text-[32px] font-semibold text-darkGreen mb-6">
                   Why Choose 24K Gold for Wholesale & Retail?
                 </h1>
                 <li className="mb-2 text-black">
@@ -167,7 +167,7 @@ export default function CaratGold() {
                 </h4>
               </div>
               <div>
-                <h3 className="text-[32px] font-semibold text-secondary">
+                <h3 className="text-[32px] font-semibold text-darkGreen">
                   The Growing Demand for Gold in Wholesale Markets
                 </h3>
                 <h4 className=" text-justify w-full mb-4">
@@ -207,7 +207,7 @@ export default function CaratGold() {
                 </h4>
               </div>
               <div>
-                <h3 className="text-[32px] font-semibold text-secondary">
+                <h3 className="text-[32px] font-semibold text-darkGreen">
                   Why Dubai is the Best Hub for Gold Suppliers
                 </h3>
                 <h4 className=" text-justify w-full mb-4">
@@ -245,7 +245,7 @@ export default function CaratGold() {
                 </h4>
               </div>
               <div>
-                <h3 className="text-[32px] font-semibold text-secondary">
+                <h3 className="text-[32px] font-semibold text-darkGreen">
                   The Benefits of Investing in Gold Bullion
                 </h3>
                 <h4 className=" text-justify w-full mb-4">
@@ -290,7 +290,7 @@ export default function CaratGold() {
                 </h4>
               </div>
               <div>
-                <h3 className="text-[32px] font-semibold text-secondary">
+                <h3 className="text-[32px] font-semibold text-darkGreen">
                   Understanding Gold Purity: 24K vs. 22K vs. 18K
                 </h3>
                 <h4 className=" text-justify w-full mb-4">

@@ -27,13 +27,13 @@ const blogs = [
 
 export default function Testimonials() {
   return (
-    <main className="bg-background">
+    <main className="bg-primary">
       <section className="container flex flex-col w-full py-24 font-jakarta  text-white gap-16">
         <div className="text-left">
-          <p className="text-sm text-secondary text-center md:text-left font-semibold uppercase">
+          <p className="text-base md:text-lg text-darkGreen text-center md:text-left font-semibold uppercase">
             Testimonials
           </p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl text-center md:text-left font-bold mt-2 leading-snug">
+          <h2 className="text-2xl md:text-3xl text-black lg:text-4xl text-center md:text-left font-semibold mt-2 leading-snug">
             Trusted by Thousands.
             <br />
             Carried with Confidence.
@@ -49,7 +49,7 @@ export default function Testimonials() {
         </div>
 
         <div className="flex items-center justify-center gap-10">
-          <button className="text-white text-xl hover:text-secondary transition">
+          <button className="text-white text-xl hover:text-darkGreen transition">
             ←
           </button>
           <div className="flex items-center gap-2">
@@ -57,12 +57,12 @@ export default function Testimonials() {
               <div
                 key={index}
                 className={`rounded-full ${
-                  index === 0 ? "w-4 h-4 bg-secondary" : "w-3 h-3 bg-gray-600"
+                  index === 0 ? "w-4 h-4 bg-darkGreen" : "w-3 h-3 bg-gray-600"
                 }`}
               />
             ))}
           </div>
-          <button className="text-white text-xl hover:text-secondary transition">
+          <button className="text-white text-xl hover:text-darkGreen transition">
             →
           </button>
         </div>
