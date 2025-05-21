@@ -203,11 +203,11 @@ function Blog() {
   return (
     <main>
       <Hero />
-      <section className="w-full bg-gradient-to-br from-black to-neutral-900 py-16">
+      <section className="w-full bg-white py-16">
         <div className="container mx-auto px-4">
           <div className="mb-6">
-            <h1 className="md:text-3xl text-xl font-bold text-secondary">
-              Collections
+            <h1 className="md:text-3xl text-xl font-bold text-darkGreen">
+              Latest Stories
             </h1>
             <div className="flex flex-col md:flex-row gap-2 justify-between items-start md:items-center mt-2">
               <span className="text-sm text-gray-400">
@@ -216,7 +216,7 @@ function Blog() {
               </span>
               <div className="relative">
                 <button
-                  className="flex items-center bg-transparent text-sm text-secondary"
+                  className="flex items-center bg-transparent text-sm text-darkGreen"
                   onClick={() => setShowSortDropdown(!showSortDropdown)}
                 >
                   Sort by: {sortBy} <FiChevronDown className="ml-1" />
@@ -234,7 +234,7 @@ function Blog() {
                           <button
                             className={`block px-4 py-2 text-sm w-full text-left ${
                               sortBy === option
-                                ? "text-secondary"
+                                ? "text-darkGreen"
                                 : "text-white hover:bg-gray-800"
                             }`}
                             onClick={() => {

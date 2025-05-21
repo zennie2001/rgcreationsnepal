@@ -66,7 +66,7 @@ export default function InvestorRelations() {
       <PageHeader link="/investor-relations" title="Investor Relations" />
       <section className="flex_center flex-col lg:py-16 py-10 lg:gap-12 gap-6 lg:px-0 px-4">
         <div className="flex_center flex-col gap-8 lg:w-[55%] w-full">
-          <h3 className="text-[32px] font-semibold text-secondary">
+          <h3 className="text-[32px] font-semibold text-darkGreen">
             Investor Relations
           </h3>
           <div className="flex flex-col w-full gap-8">
@@ -85,7 +85,7 @@ export default function InvestorRelations() {
                 company’s performance, financial reports, and future prospects.
               </h4>
               <div>
-                <h3 className="text-[32px] font-semibold text-secondary">
+                <h3 className="text-[32px] font-semibold text-darkGreen">
                   Our Vision for Growth
                 </h3>
                 <h4 className=" text-justify w-full">
@@ -126,7 +126,7 @@ export default function InvestorRelations() {
                 </li>
               </ul>
               <div>
-                <h3 className="text-[32px] font-semibold text-secondary">
+                <h3 className="text-[32px] font-semibold text-darkGreen">
                   Financial Reports
                 </h3>
                 <h4 className=" text-justify w-full">
@@ -137,7 +137,7 @@ export default function InvestorRelations() {
                 </h4>
               </div>
               <div>
-                <h3 className="text-[32px] font-semibold text-secondary">
+                <h3 className="text-[32px] font-semibold text-darkGreen">
                   Press Releases
                 </h3>
                 <h4 className=" text-justify w-full">
@@ -148,7 +148,7 @@ export default function InvestorRelations() {
                 </h4>
               </div>
               <div>
-                <h3 className="text-[32px] font-semibold text-secondary">
+                <h3 className="text-[32px] font-semibold text-darkGreen">
                   Corporate Governance
                 </h3>
                 <h4 className=" text-justify w-full">
@@ -161,7 +161,7 @@ export default function InvestorRelations() {
                 </h4>
               </div>
               <div>
-                <h3 className="text-[32px] font-semibold text-secondary">
+                <h3 className="text-[32px] font-semibold text-darkGreen">
                   Investor Contact
                 </h3>
                 <h4 className=" text-justify w-full">

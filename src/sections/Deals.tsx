@@ -19,7 +19,7 @@ export default function Deals() {
   };
 
   return (
-    <section className="w-full bg-background py-16 text-white overflow-hidden">
+    <section className="w-full bg-primary py-16 text-white overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row">
           {/* Left side - Hero image with overlay text */}
@@ -36,7 +36,7 @@ export default function Deals() {
                 <div className="relative">
                   {/* Orange splash background */}
                   <div
-                    className="absolute inset-0 w-64 h-40 bg-secondary"
+                    className="absolute inset-0 w-64 h-40 bg-darkGreen"
                     style={{
                       clipPath:
                         "polygon(15% 31%, 37% 14%, 85% 28%, 97% 64%, 82% 84%, 58% 92%, 14% 71%, 6% 49%)",
@@ -57,7 +57,9 @@ export default function Deals() {
           <div className="md:w-1/2 md:pl-8">
             {/* Section header */}
             <div className="mb-8">
-              <p className="text-secondary text-center md:text-left text-sm">Deals</p>
+              <p className="text-darkGreen text-center md:text-left text-sm">
+                Deals
+              </p>
               <h2 className="text-2xl md:text-3xl lg:text-4xl text-center md:text-left font-bold">
                 Top Picks. Bottom Prices. Limited
                 <br />
@@ -72,7 +74,10 @@ export default function Deals() {
                 style={{ transform: `translateX(-${activeSlide * 100}%)` }}
               >
                 {productItems.map((product) => (
-                  <div key={product.id} className="w-full md:w-1/2 flex-shrink-0 px-2">
+                  <div
+                    key={product.id}
+                    className="w-full md:w-1/2 flex-shrink-0 px-2"
+                  >
                     <div className="bg-zinc-900 rounded-lg overflow-hidden">
                       {/* Product Image */}
                       <div className="relative">
@@ -149,7 +154,7 @@ export default function Deals() {
                     onClick={() => setActiveSlide(index)}
                     className={`h-2 rounded-full transition-all ${
                       activeSlide === index
-                        ? "w-8 bg-secondary"
+                        ? "w-8 bg-darkGreen"
                         : "w-2 bg-gray-400"
                     }`}
                   ></button>

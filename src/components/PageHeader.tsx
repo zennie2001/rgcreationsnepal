@@ -11,7 +11,7 @@ export default function PageHeader({
   link: string;
 }) {
   return (
-    <div className="w-full  h-60 md:h-96 bg-secondary flex_center flex-col text-primary relative">
+    <div className="w-full  h-60 md:h-96 bg-darkGreen flex_center flex-col text-primary relative">
       <Image
         src={pageHeaderImage}
         alt="page header image"

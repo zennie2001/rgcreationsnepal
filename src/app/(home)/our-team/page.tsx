@@ -82,7 +82,7 @@ export default function OurTeam() {
                 onClick={() => setShowMessage(true)}
                 className="size-9 bg-primary rounded-full p-2"
               >
-                <FaPlus className="size-full text-secondary" />
+                <FaPlus className="size-full text-darkGreen" />
               </button>
             </div>
           </div>
@@ -103,7 +103,7 @@ export default function OurTeam() {
                 onClick={() => setShowMessage(true)}
                 className="size-9 bg-primary rounded-full p-2"
               >
-                <FaPlus className="size-full text-secondary" />
+                <FaPlus className="size-full text-darkGreen" />
               </button>
             </div>
           </div>
@@ -124,13 +124,13 @@ export default function OurTeam() {
                 onClick={() => setShowMessage(true)}
                 className="size-9 bg-primary rounded-full p-2"
               >
-                <FaPlus className="size-full text-secondary" />
+                <FaPlus className="size-full text-darkGreen" />
               </button>
             </div>
           </div>
         </div>
         {showMessage && (
-          <div className="absolute inset-0 bg-background/80 flex_center lg:px-24 px-4">
+          <div className="absolute inset-0 bg-primary/80 flex_center lg:px-24 px-4">
             <div className="flex lg:flex-row flex-col gap-6 p-8 lg:w-[65%] w-full lg:h-[485px]  bg-primary rounded-md relative -bottom-16">
               <div className="image lg:w-[40%] w-full lg:h-full flex flex-col gap-4">
                 <div className="flex_center w-full lg:h-[70%] h-[300px] overflow-hidden">
@@ -141,7 +141,7 @@ export default function OurTeam() {
                   />
                 </div>
                 <div className="flex_center flex-col gap-2">
-                  <h4 className="text-2xl font-semibold text-secondary">
+                  <h4 className="text-2xl font-semibold text-darkGreen">
                     Raju Prasad Khanal
                   </h4>
                   <p className="text-text">CEO/Chairperson</p>
@@ -152,7 +152,7 @@ export default function OurTeam() {
                       key={index}
                       href={media.link}
                       target="_blank"
-                      className="social rounded-full size-8 p-2 border border-text/30 text-secondary"
+                      className="social rounded-full size-8 p-2 border border-text/30 text-darkGreen"
                     >
                       <media.icon className="size-full" />
                     </a>
@@ -179,7 +179,7 @@ export default function OurTeam() {
               </div>
               <button
                 onClick={() => setShowMessage(false)}
-                className="absolute top-5 right-5 text-secondary size-5"
+                className="absolute top-5 right-5 text-darkGreen size-5"
               >
                 <RxCross2 className="size-full" />
               </button>
@@ -207,7 +207,7 @@ export default function OurTeam() {
                 onClick={() => setShowMessage(true)}
                 className="size-9 bg-primary rounded-full p-2"
               >
-                <FaPlus className="size-full text-secondary" />
+                <FaPlus className="size-full text-darkGreen" />
               </button>
             </div>
           </div>
@@ -228,7 +228,7 @@ export default function OurTeam() {
                 onClick={() => setShowMessage(true)}
                 className="size-9 bg-primary rounded-full p-2"
               >
-                <FaPlus className="size-full text-secondary" />
+                <FaPlus className="size-full text-darkGreen" />
               </button>
             </div>
           </div>
@@ -249,7 +249,7 @@ export default function OurTeam() {
                 onClick={() => setShowMessage(true)}
                 className="size-9 bg-primary rounded-full p-2"
               >
-                <FaPlus className="size-full text-secondary" />
+                <FaPlus className="size-full text-darkGreen" />
               </button>
             </div>
           </div>
@@ -272,7 +272,7 @@ export default function OurTeam() {
                 onClick={() => setShowMessage(true)}
                 className="size-9 bg-primary rounded-full p-2"
               >
-                <FaPlus className="size-full text-secondary" />
+                <FaPlus className="size-full text-darkGreen" />
               </button>
             </div>
           </div>
@@ -293,7 +293,7 @@ export default function OurTeam() {
                 onClick={() => setShowMessage(true)}
                 className="size-9 bg-primary rounded-full p-2"
               >
-                <FaPlus className="size-full text-secondary" />
+                <FaPlus className="size-full text-darkGreen" />
               </button>
             </div>
           </div>
@@ -314,13 +314,13 @@ export default function OurTeam() {
                 onClick={() => setShowMessage(true)}
                 className="size-9 bg-primary rounded-full p-2"
               >
-                <FaPlus className="size-full text-secondary" />
+                <FaPlus className="size-full text-darkGreen" />
               </button>
             </div>
           </div>
         </div>
         {showMessage && (
-          <div className="absolute inset-0 bg-background/80 flex_center lg:px-24 px-4">
+          <div className="absolute inset-0 bg-primary/80 flex_center lg:px-24 px-4">
             <div className="flex lg:flex-row flex-col gap-6 p-8 lg:w-[65%] w-full lg:h-[485px]  bg-primary rounded-md relative -bottom-16">
               <div className="image lg:w-[40%] w-full lg:h-full flex flex-col gap-4">
                 <div className="flex_center w-full lg:h-[70%] h-[300px] overflow-hidden">
@@ -331,7 +331,7 @@ export default function OurTeam() {
                   />
                 </div>
                 <div className="flex_center flex-col gap-2">
-                  <h4 className="text-2xl font-semibold text-secondary">
+                  <h4 className="text-2xl font-semibold text-darkGreen">
                     Raju Prasad Khanal
                   </h4>
                   <p className="text-text">CEO/Chairperson</p>
@@ -342,7 +342,7 @@ export default function OurTeam() {
                       key={index}
                       href={media.link}
                       target="_blank"
-                      className="social rounded-full size-8 p-2 border border-text/30 text-secondary"
+                      className="social rounded-full size-8 p-2 border border-text/30 text-darkGreen"
                     >
                       <media.icon className="size-full" />
                     </a>
@@ -369,7 +369,7 @@ export default function OurTeam() {
               </div>
               <button
                 onClick={() => setShowMessage(false)}
-                className="absolute top-5 right-5 text-secondary size-5"
+                className="absolute top-5 right-5 text-darkGreen size-5"
               >
                 <RxCross2 className="size-full" />
               </button>

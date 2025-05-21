@@ -128,7 +128,7 @@ export default function AboutPage() {
       <section className="w-full flex_center container px-4 lg:px-0">
         <div className="flex pb-16 w-full">
           <div className="flex flex-col w-full lg:px-12 px-0 gap-4 lg:pt-0 pt-10">
-            <h2 className="text-xl md:text-3xl font-semibold text-secondary">
+            <h2 className="text-xl md:text-3xl font-semibold text-darkGreen">
               Our Mission
             </h2>
             <div className="w-full flex md:flex-row flex-col md:gap-8 gap-4">
@@ -140,7 +140,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="flex flex-col w-full lg:px-12 gap-4 pt-10 md:pt-0">
-            <h2 className="text-xl md:text-3xl font-semibold text-secondary">
+            <h2 className="text-xl md:text-3xl font-semibold text-darkGreen">
               Our Vision
             </h2>
             <div className="w-full flex md:flex-row flex-col md:gap-8 gap-4">
@@ -155,7 +155,7 @@ export default function AboutPage() {
       </section>
       <section className="w-full flex_center lg:gap-12 gap-6 lg:px-24 px-4 lg:py-16 py-10 bg-[#F5FBFF]">
         <div className="flex container flex-col w-full gap-6">
-          <h3 className=" text-xl md:text-3xl font-semibold text-center text-secondary">
+          <h3 className=" text-xl md:text-3xl font-semibold text-center text-darkGreen">
             At Star Laxmi Jewellery LLC, we pride ourselves on being more than
             just a supplier We are trusted experts in the gold industry, with
             over 15 years of experience in delivering exceptional quality and

@@ -38,22 +38,24 @@ function BlogsSection() {
   ];
 
   return (
-    <section className="w-full bg-background py-16">
+    <section className="w-full bg-primary py-16">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start mb-12">
           <div>
-            <p className="text-secondary text-center md:text-left mb-2">
+            <p className="text-darkGreen text-base md:text-lg text-center md:text-left mb-2">
               Blogs
             </p>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-2 text-center md:text-left text-white">
-              The Edge Report: Stories, Tips & Sharp Talk
+            <h2 className="text-2xl md:text-3xl lg:text-4xl text-black font-semibold mb-2 text-center md:text-left ">
+              The Edge Report: Stories, Tips &<br/> Sharp Talk
             </h2>
           </div>
-         
-            <Link href="/blogs" className="bg-secondary hover:bg-orange-600 text-white px-6 py-3 rounded-md transition-all">
-              Learn More
-            </Link>
-          
+
+          <Link
+            href="/blogs"
+            className="bg-darkGreen hover:darkGreen text-white px-6 py-3 md:mt-14 rounded-md transition-all"
+          >
+            Learn More
+          </Link>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6">

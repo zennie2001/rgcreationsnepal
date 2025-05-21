@@ -51,7 +51,7 @@ const categories = [
 
 const Collection = () => {
   return (
-    <section className="w-full bg-background text-white py-16 px-6 md:px-12 lg:px-16">
+    <section className="w-full bg-primary text-white py-16 px-6 md:px-12 lg:px-16">
       <div className="container mx-auto">
         {/* Heading */}
         <div className="mb-12 text-center md:text-left">

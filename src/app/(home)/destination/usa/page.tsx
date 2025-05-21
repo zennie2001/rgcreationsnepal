@@ -172,11 +172,11 @@ export default function USA() {
                 key={index}
                 className="counselling card flex flex-col gap-4 p-6 col-span-1 bg-primary rounded-md"
               >
-                <div className="flex_center w-max py-2 px-4 bg-[#F5FBFF] text-base font-bold text-secondary rounded-md">
+                <div className="flex_center w-max py-2 px-4 bg-[#F5FBFF] text-base font-bold text-darkGreen rounded-md">
                   {benifit.pointNo}
                 </div>
                 <div className="flex flex-col gap-4">
-                  <p className="text-secondary font-bold">{benifit.title}</p>
+                  <p className="text-darkGreen font-bold">{benifit.title}</p>
                   <p className="text-text text-sm">{benifit.description}</p>
                 </div>
               </div>
@@ -210,7 +210,7 @@ export default function USA() {
                     <p className="text-primary">{uni.unis}</p>
                   </div>
                   <button className="size-9 bg-primary rounded-full p-2">
-                    <IoIosArrowForward className="size-full text-secondary" />
+                    <IoIosArrowForward className="size-full text-darkGreen" />
                   </button>
                 </div>
               </div>
@@ -226,7 +226,7 @@ export default function USA() {
         />
         <div className="flex flex-col w-full gap-8">
           <div className="flex w-full flex-col gap-4">
-            <h4 className="text-secondary text-2xl font-semibold flex">
+            <h4 className="text-darkGreen text-2xl font-semibold flex">
               Tuition by Type of Institution
             </h4>
             <p className="text-text">
@@ -258,7 +258,7 @@ export default function USA() {
             </ul>
           </div>
           <div className="flex w-full flex-col gap-4">
-            <h4 className="text-secondary text-2xl font-semibold flex">
+            <h4 className="text-darkGreen text-2xl font-semibold flex">
               Housing and Living expenses
             </h4>
             <p className="text-text">
@@ -290,7 +290,7 @@ export default function USA() {
             </ul>
           </div>
           <div className="flex w-full flex-col gap-4">
-            <h4 className="text-secondary text-2xl font-semibold flex">
+            <h4 className="text-darkGreen text-2xl font-semibold flex">
               Food, Transportation, and Utilities
             </h4>
             <p className="text-text">
@@ -336,11 +336,11 @@ export default function USA() {
                 key={index}
                 className="counselling card flex flex-col gap-4 p-6 col-span-1 bg-primary rounded-md"
               >
-                <div className="flex_center w-max py-2 px-4 bg-[#F5FBFF] text-base font-bold text-secondary rounded-md">
+                <div className="flex_center w-max py-2 px-4 bg-[#F5FBFF] text-base font-bold text-darkGreen rounded-md">
                   {process.pointNo}
                 </div>
                 <div className="flex flex-col gap-4">
-                  <p className="text-secondary font-bold">{process.title}</p>
+                  <p className="text-darkGreen font-bold">{process.title}</p>
                   <p className="text-text text-sm">{process.description}</p>
                 </div>
               </div>

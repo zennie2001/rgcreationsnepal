@@ -168,11 +168,11 @@ export default function StudentCounselling() {
                 key={index}
                 className="counselling card flex flex-col gap-4 p-6 col-span-1 bg-primary rounded-md"
               >
-                <div className="flex_center w-max py-2 px-4 bg-[#F5FBFF] text-base font-bold text-secondary">
+                <div className="flex_center w-max py-2 px-4 bg-[#F5FBFF] text-base font-bold text-darkGreen">
                   {benifit.pointNo}
                 </div>
                 <div className="flex flex-col gap-4">
-                  <p className="text-secondary font-bold">{benifit.title}</p>
+                  <p className="text-darkGreen font-bold">{benifit.title}</p>
                   <p className="text-text text-sm">{benifit.description}</p>
                 </div>
               </div>
@@ -260,7 +260,7 @@ export default function StudentCounselling() {
               >
                 <div className="absolute size-14 rounded-md bg-tertiary -top-7 left-1/2 -translate-x-1/2"></div>
                 <div className="flex_center flex-col gap-4">
-                  <h4 className="text-2xl font-semibold text-center text-secondary">
+                  <h4 className="text-2xl font-semibold text-center text-darkGreen">
                     {feature.title}
                   </h4>
                   <div className="flex w-20 h-1 bg-tertiary rounded-full"></div>

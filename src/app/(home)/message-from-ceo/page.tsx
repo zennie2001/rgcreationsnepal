@@ -11,7 +11,7 @@ export default function MessageFromCeo() {
       <PageHeader link="/message-from-ceo" title="Message From CEO" />
       <section className="w-full flex  flex-col container  gap-12">
         <div className="flex lg:flex-row flex-col gap-5 items-center  px-2 py-5">
-          <h1 className="font-semibold text-center text-3xl text-secondary lg:hidden inline">
+          <h1 className="font-semibold text-center text-3xl text-darkGreen lg:hidden inline">
             Message From The CEO
           </h1>
           <Image
@@ -56,7 +56,7 @@ export default function MessageFromCeo() {
               </p>
 
               <div className="flex flex-col items-start justify-start pt-10">
-                <p className="font-semibold text-xl text-secondary">
+                <p className="font-semibold text-xl text-darkGreen">
                   Warm regards,
                 </p>
                 <p className="text-text">Prabesh KC</p>
