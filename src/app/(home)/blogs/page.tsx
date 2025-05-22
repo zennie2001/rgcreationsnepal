@@ -19,6 +19,7 @@ import NewsLetter from "@/sections/NewsLetter";
 import productItems from "@/constants/products";
 import Image from "next/image";
 import { Heart } from "lucide-react";
+import { blogs } from "@/constants/products";
 
 interface FilterOption {
   label: string;
@@ -27,98 +28,7 @@ interface FilterOption {
 
 function Blog() {
   // Sample blog data
-  const blogs = [
-    {
-      id: 1,
-      image: "/blog-image.jpg",
-      category: "News",
-      title: "10 Best Rescue Knives You Can Buy in 2024",
-      description:
-        "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
-      author: "Olivia Rhye",
-      date: "20 Jan 2022",
-    },
-    {
-      id: 2,
-      image: "/blog-image.jpg",
-      category: "News",
-      title: "10 Best Rescue Knives You Can Buy in 2024",
-      description:
-        "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
-      author: "Olivia Rhye",
-      date: "20 Jan 2022",
-    },
-    {
-      id: 3,
-      image: "/blog-image.jpg",
-      category: "News",
-      title: "10 Best Rescue Knives You Can Buy in 2024",
-      description:
-        "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
-      author: "Olivia Rhye",
-      date: "20 Jan 2022",
-    },
-    {
-      id: 1,
-      image: "/blog-image.jpg",
-      category: "News",
-      title: "10 Best Rescue Knives You Can Buy in 2024",
-      description:
-        "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
-      author: "Olivia Rhye",
-      date: "20 Jan 2022",
-    },
-    {
-      id: 2,
-      image: "/blog-image.jpg",
-      category: "News",
-      title: "10 Best Rescue Knives You Can Buy in 2024",
-      description:
-        "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
-      author: "Olivia Rhye",
-      date: "20 Jan 2022",
-    },
-    {
-      id: 3,
-      image: "/blog-image.jpg",
-      category: "News",
-      title: "10 Best Rescue Knives You Can Buy in 2024",
-      description:
-        "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
-      author: "Olivia Rhye",
-      date: "20 Jan 2022",
-    },
-    {
-      id: 1,
-      image: "/blog-image.jpg",
-      category: "News",
-      title: "10 Best Rescue Knives You Can Buy in 2024",
-      description:
-        "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
-      author: "Olivia Rhye",
-      date: "20 Jan 2022",
-    },
-    {
-      id: 2,
-      image: "/blog-image.jpg",
-      category: "News",
-      title: "10 Best Rescue Knives You Can Buy in 2024",
-      description:
-        "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
-      author: "Olivia Rhye",
-      date: "20 Jan 2022",
-    },
-    {
-      id: 3,
-      image: "/blog-image.jpg",
-      category: "News",
-      title: "10 Best Rescue Knives You Can Buy in 2024",
-      description:
-        "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
-      author: "Olivia Rhye",
-      date: "20 Jan 2022",
-    },
-  ];
+
   const [priceRange, setPriceRange] = useState<[number, number]>([50, 200]);
   const [openSections, setOpenSections] = useState<{ [key: string]: boolean }>({
     "Price Range": true,
