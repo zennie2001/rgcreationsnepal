@@ -23,9 +23,13 @@ const Footer = () => {
   return (
     <footer className="bg-darkGreen text-white  pt-10 pb-10 px-4">
       <div className="flex flex-col items-centernp border-b border-lightGreen md:flex-row justify-between container mb-14">
-        <h2 className="text-xl md:text-2xl  font-semibold text-white  text-center md:text-left  mb-8">
+        <h2 className="text-xl md:text-2xl hidden md:flex font-semibold text-white  text-center md:text-left  mb-8">
           Join our newsletter to
           <br /> keep up to date with us!
+        </h2>
+        <h2 className=" flex md:hidden text-xl md:text-2xl  font-semibold text-white  text-center md:text-left  mb-8">
+          Join our newsletter to
+           keep<br /> up to date with us!
         </h2>
 
         <div className="flex flex-col sm:flex-row gap-4 mb-16">
@@ -34,7 +38,7 @@ const Footer = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter Your Email"
-            className="bg-darkGreen border border-lightGreen w-[300px] rounded-full text-white px-4 py-3  flex-grow focus:outline-none focus:ring-2 focus:ring-secondary"
+            className="bg-darkGreen border border-lightGreen md:w-[300px] rounded-full text-white px-4 py-2 md:py-3  flex-grow focus:outline-none focus:ring-2 focus:ring-secondary"
           />
           <button
             onClick={handleSubscribe}
