@@ -28,7 +28,7 @@ const blogs = [
 export default function Testimonials() {
   return (
     <main className="bg-primary">
-      <section className="container flex flex-col w-full py-24 font-jakarta  text-white gap-16">
+      <section className="container flex flex-col w-full md:py-24 font-jakarta  text-white gap-16">
         <div className="text-left">
           <p className="text-base md:text-lg text-darkGreen text-center md:text-left font-semibold uppercase">
             Testimonials

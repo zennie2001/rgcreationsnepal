@@ -3,7 +3,7 @@ import home from "@/assets/images/blade-home.png";
 const Hero = () => {
   return (
     <main className="bg-primary">
-      <section className="md:relative flex flex-col-reverse w-full h-[85vh] container  text-white ">
+      <section className="md:relative flex flex-col-reverse w-full h-[110vh] md:h-[85vh] container  text-white ">
         {/* Background Image with Overlay */}
         <div className="md:absolute  md:inset-0 md:left-[50%]">
           <img
@@ -15,10 +15,10 @@ const Hero = () => {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col justify-center h-full px-6  md:px-0">
-          <h1 className="text-4xl md:text-6xl font-bold text-center md:text-left text-black">
+          <h1 className="text-4xl md:text-6xl hidden md:flex font-bold text-center md:text-left text-black">
             Built for Action.
           </h1>
-          <h2 className="text-4xl md:text-6xl font-bold text-center md:text-left text-darkGreen mt-4">
+          <h2 className="text-4xl md:text-6xl font-bold text-center md:text-left text-darkGreen mt-20 md:mt-4">
             Designed to Impress.
           </h2>
           <p className="mt-6 max-w-xl text-sm md:text-base text-center md:text-left text-black">
@@ -26,7 +26,7 @@ const Hero = () => {
             are the perfect fusion of style, safety, and speed.
           </p>
           <div className="flex justify-center md:justify-start">
-            <button className="mt-8 w-max px-6 py-3 border-2  border-darkGreen text-black hover:bg-darkGreen hover:text-white transition rounded">
+            <button className="mt-4 mb-8 md:mb-0 md:mt-8 w-max px-4 py-2 md:px-6 md:py-3 border-2   border-darkGreen text-black hover:bg-darkGreen hover:text-white transition rounded">
               Learn More
             </button>
           </div>
