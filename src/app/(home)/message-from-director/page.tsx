@@ -32,11 +32,11 @@ export default function MessageFromDirector() {
                 traditional artistry with modern elegance.
               </p>
               <p className="mt-3">
-                At Star Laxmi Jewellery, we believe jewellery is more than just
-                an accessory—it’s a symbol of love, culture, and timeless
-                beauty. That’s why we meticulously craft every piece, ensuring
-                that it tells a story and creates unforgettable memories for our
-                valued customers.
+                At Khukuri Blades, we believe jewellery is more than just an
+                accessory—it’s a symbol of love, culture, and timeless beauty.
+                That’s why we meticulously craft every piece, ensuring that it
+                tells a story and creates unforgettable memories for our valued
+                customers.
               </p>
               <p className="mt-3">
                 Our success is driven by your support, and we remain dedicated
@@ -54,7 +54,7 @@ export default function MessageFromDirector() {
                   Warm regards,
                 </p>
                 <p className="text-text">Laxmi Gurung</p>
-                <p className="text-text"> Director, Star Laxmi Jewellery LLC</p>
+                <p className="text-text"> Director, Khukuri Blades</p>
               </div>
             </div>
           </div>

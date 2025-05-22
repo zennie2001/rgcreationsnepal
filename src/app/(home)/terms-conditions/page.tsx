@@ -14,7 +14,7 @@ export default function TermsConditions() {
               <h4 className=" text-justify w-full">
                 Welcome to{" "}
                 <span className=" font-semibold text-[#ef001f] text-justify w-full">
-                  Star Laxmi Jewellery LLC.
+                  Khukuri Blades.
                 </span>{" "}
                 By accessing or using our website and services, you agree to
                 comply with and be bound by the following Terms & Conditions.
@@ -135,8 +135,8 @@ export default function TermsConditions() {
                   7. Liability & Disclaimers
                 </h1>
                 <li className="mb-2 text-black">
-                  <span className="text-black">7.1: </span>Star Laxmi Jewellery
-                  LLC shall not be liable for any indirect, incidental, or
+                  <span className="text-black">7.1: </span>Khukuri Blades LLC
+                  shall not be liable for any indirect, incidental, or
                   consequential damages arising from the use of our products or
                   services.
                 </li>

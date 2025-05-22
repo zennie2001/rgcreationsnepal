@@ -19,7 +19,7 @@ const blogs = [
     image: blog1,
     title: "Why 24K Gold is the Best Choice for Wholesale & Retail Buyers",
     date: "January 2, 2025",
-    name: "Star Laxmi",
+    name: "Khukuri Blades",
     miniDescription:
       "24K gold, known for its 99.9% purity, is highly valued in both wholesale and retail markets. Its demand continues to rise, making it a prime investment choice.",
   },
@@ -27,7 +27,7 @@ const blogs = [
     image: blog2,
     title: "The Growing Demand for Gold in Wholesale Markets",
     date: "March 2, 2025",
-    name: "Star Laxmi",
+    name: "Khukuri Blades",
     miniDescription:
       "Gold has been a prized commodity for centuries, and its demand in wholesale markets is growing rapidly. Investors see it as a stable asset amid economic uncertainty.",
   },
@@ -35,7 +35,7 @@ const blogs = [
     image: blog3,
     title: "The Benefits of Investing in Gold Bullion",
     date: "Feburary 2, 2025",
-    name: "Star Laxmi",
+    name: "Khukuri Blades",
     miniDescription:
       "Gold bullion is a safe and lucrative investment option, offering wealth preservation, high liquidity, and protection against inflation in global markets.",
   },
@@ -74,7 +74,7 @@ export default function InvestorRelations() {
               <h4 className=" text-justify w-full">
                 Welcome to the Investor Relations section of .
                 <span className=" font-semibold text-[#ef001f] text-justify w-full">
-                  Star Laxmi Jewellery LLC.
+                  Khukuri Blades.
                 </span>{" "}
                 We are committed to providing our investors with comprehensive
                 and transparent information to help you understand our business
@@ -89,7 +89,7 @@ export default function InvestorRelations() {
                   Our Vision for Growth
                 </h3>
                 <h4 className=" text-justify w-full">
-                  At Star Laxmi Jewellery LLC, we aim to be the most trusted and
+                  At Khukuri Blades, we aim to be the most trusted and
                   innovative jewelry brand in the industry, offering exquisite
                   craftsmanship, custom designs, and high-quality services. We
                   are constantly expanding our product offerings and exploring
@@ -143,8 +143,8 @@ export default function InvestorRelations() {
                 <h4 className=" text-justify w-full">
                   Stay up to date with the latest company news, product
                   launches, and partnerships. Our press releases provide insight
-                  into how Star Laxmi Jewellery LLC is continuing to shape the
-                  future of the jewelry industry.
+                  into how Khukuri Bladesis continuing to shape the future of
+                  the jewelry industry.
                 </h4>
               </div>
               <div>
@@ -152,12 +152,12 @@ export default function InvestorRelations() {
                   Corporate Governance
                 </h3>
                 <h4 className=" text-justify w-full">
-                  At Star Laxmi Jewellery LLC, we believe in maintaining the
-                  highest level of corporate governance to ensure
-                  accountability, transparency, and long-term value for our
-                  stakeholders. Our board of directors and management team are
-                  committed to overseeing the company’s growth and ensuring we
-                  meet the highest standards of integrity and business conduct.
+                  At Khukuri Blades, we believe in maintaining the highest level
+                  of corporate governance to ensure accountability,
+                  transparency, and long-term value for our stakeholders. Our
+                  board of directors and management team are committed to
+                  overseeing the company’s growth and ensuring we meet the
+                  highest standards of integrity and business conduct.
                 </h4>
               </div>
               <div>
@@ -166,8 +166,8 @@ export default function InvestorRelations() {
                 </h3>
                 <h4 className=" text-justify w-full">
                   For more information or inquiries about investment
-                  opportunities with Star Laxmi Jewellery LLC, please feel free
-                  to reach out to our Investor Relations team:
+                  opportunities with Khukuri Blades, please feel free to reach
+                  out to our Investor Relations team:
                 </h4>
                 <ul className="my-6 text-black w-full">
                   <li className="flex items-x`center gap-2">

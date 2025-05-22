@@ -21,7 +21,7 @@ const blogs = [
     image: blog1,
     title: "Why 24K Gold is the Best Choice for Wholesale & Retail Buyers",
     date: "January 2, 2025",
-    name: "Star Laxmi",
+    name: "Khukuri Blades",
     miniDescription:
       "24K gold, known for its 99.9% purity, is highly valued in both wholesale and retail markets. Its demand continues to rise, making it a prime investment choice.",
   },
@@ -29,7 +29,7 @@ const blogs = [
     image: blog2,
     title: "The Growing Demand for Gold in Wholesale Markets",
     date: "March 2, 2025",
-    name: "Star Laxmi",
+    name: "Khukuri Blades",
     miniDescription:
       "Gold has been a prized commodity for centuries, and its demand in wholesale markets is growing rapidly. Investors see it as a stable asset amid economic uncertainty.",
   },
@@ -37,7 +37,7 @@ const blogs = [
     image: blog3,
     title: "The Benefits of Investing in Gold Bullion",
     date: "Feburary 2, 2025",
-    name: "Star Laxmi",
+    name: "Khukuri Blades",
     miniDescription:
       "Gold bullion is a safe and lucrative investment option, offering wealth preservation, high liquidity, and protection against inflation in global markets.",
   },
@@ -80,7 +80,7 @@ export default function CaratGold() {
                   market, 24K gold stands out as the purest form, making it the
                   preferred choice for both wholesale and retail buyers. At{" "}
                   <span className=" font-semibold text-[#ef001f] text-justify w-full">
-                    Star Laxmi Jewellery LLC,
+                    Khukuri Blades,
                   </span>{" "}
                   a Dubai-based company with over 15 years of experience, we
                   specialize in providing high-quality 24K gold to global
@@ -148,9 +148,9 @@ export default function CaratGold() {
               </ul>
               <div>
                 <h4 className=" text-justify w-full">
-                  How Star Laxmi Jewellery LLC Ensures High-Quality 24K Gold As
-                  an established gold supplier in Dubai, we ensure that all our
-                  24K gold products are certified and hallmarked, guaranteeing
+                  How Khukuri BladesEnsures High-Quality 24K Gold As an
+                  established gold supplier in Dubai, we ensure that all our 24K
+                  gold products are certified and hallmarked, guaranteeing
                   authenticity. We offer wholesale and retail solutions,
                   catering to businesses that seek reliable gold procurement at
                   competitive rates.
@@ -160,10 +160,10 @@ export default function CaratGold() {
                 <h4 className=" text-justify w-full">
                   Conclusion 24K gold remains the top choice for investors,
                   wholesalers, and retailers looking for quality, purity, and
-                  profitability. At Star Laxmi Jewellery LLC, we provide
-                  high-grade gold bullion, coins, and custom jewelry, ensuring
-                  excellence in every transaction. Partner with us to secure the
-                  best 24K gold supply in the market.
+                  profitability. At Khukuri Blades, we provide high-grade gold
+                  bullion, coins, and custom jewelry, ensuring excellence in
+                  every transaction. Partner with us to secure the best 24K gold
+                  supply in the market.
                 </h4>
               </div>
               <div>
@@ -201,9 +201,8 @@ export default function CaratGold() {
                   </li>
                 </ul>
                 <h4 className=" text-justify w-full mt-4">
-                  As a trusted Dubai-based gold supplier, Star Laxmi Jewellery
-                  LLC provides premium quality gold at competitive wholesale
-                  rates.
+                  As a trusted Dubai-based gold supplier, Khukuri Blades LLC
+                  provides premium quality gold at competitive wholesale rates.
                 </h4>
               </div>
               <div>
@@ -239,9 +238,9 @@ export default function CaratGold() {
                   </li>
                 </ul>
                 <h4 className=" text-justify w-full mt-4">
-                  For wholesalers and retailers, Star Laxmi Jewellery LLC
-                  ensures authentic 24K gold with competitive pricing and bulk
-                  supply options.
+                  For wholesalers and retailers, Khukuri Blades ensures
+                  authentic 24K gold with competitive pricing and bulk supply
+                  options.
                 </h4>
               </div>
               <div>
@@ -284,9 +283,9 @@ export default function CaratGold() {
                   </li>
                 </ul>
                 <h4 className=" text-justify w-full mt-4">
-                  At Star Laxmi Jewellery LLC, we offer high-purity gold bullion
-                  for both wholesale and retail investors looking for a secure
-                  and profitable investment.
+                  At Khukuri Blades, we offer high-purity gold bullion for both
+                  wholesale and retail investors looking for a secure and
+                  profitable investment.
                 </h4>
               </div>
               <div>
@@ -321,7 +320,7 @@ export default function CaratGold() {
                   </li>
                 </ul>
                 <h4 className=" text-justify w-full mt-4">
-                  For both wholesale and retail gold buyers, Star Laxmi
+                  For both wholesale and retail gold buyers, Khukuri Blades
                   Jewellery LLC provides certified gold in different purities to
                   meet diverse market needs.
                 </h4>

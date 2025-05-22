@@ -17,7 +17,7 @@ export default function AppraisalServices() {
               <h4 className=" text-justify w-full">
                 At{" "}
                 <span className=" font-semibold text-[#ef001f] text-justify w-full">
-                  Star Laxmi Jewellery LLC,
+                  Khukuri Blades,
                 </span>{" "}
                 our certified gemologists provide comprehensive jewelry
                 appraisal services for insurance, resale, or estate purposes.

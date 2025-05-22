@@ -15,7 +15,7 @@ export default function EngravingServices() {
                 Add a personal touch to your jewelry with our professional
                 engraving services at{" "}
                 <span className=" font-semibold text-[#ef001f] text-justify w-full">
-                  Star Laxmi Jewellery LLC.
+                  Khukuri Blades.
                 </span>{" "}
                 Whether it's an engraving of initials, a special date, or a
                 meaningful quote, we can engrave your piece with precision and
