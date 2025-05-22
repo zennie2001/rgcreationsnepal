@@ -69,8 +69,6 @@ export default function Product() {
     setOpenCategory(openCategory === category ? null : category);
   };
 
-
-
   return (
     <main className="w-full">
       <PageHeader link="/product" title="Our Products" />
@@ -87,7 +85,7 @@ export default function Product() {
               onClick={() => setViewMode("grid")}
               className={`p-2 rounded-md transition-all ${
                 viewMode === "grid"
-                  ? "bg-[#ef001f] text-white"
+                  ? "bg-darkGreen text-white"
                   : "bg-white text-black"
               }`}
             >
@@ -97,7 +95,7 @@ export default function Product() {
               onClick={() => setViewMode("list")}
               className={`p-2 rounded-md transition-all ${
                 viewMode === "list"
-                  ? "bg-[#ef001f] text-white"
+                  ? "bg-darkGreen text-white"
                   : "bg-white text-black"
               }`}
             >
@@ -112,7 +110,7 @@ export default function Product() {
           <aside className="w-full md:w-1/4">
             <div className="mb-2 bg-white p-4 rounded-sm shadow-lg">
               <div className="flex items-center gap-4">
-                <LayoutGrid color="#ef001f" size={35} />
+                <LayoutGrid color="darkGreen" size={35} />
                 <span className="font-semibold text-xl md:text-2xl">
                   Categories
                 </span>
@@ -123,7 +121,7 @@ export default function Product() {
                   <li key={index} className="w-full">
                     <div
                       onClick={() => toggleSubMenu(item.label)}
-                      className="cursor-pointer flex items-center justify-between p-2 hover:bg-[#ef001f] text-black hover:text-white rounded-sm"
+                      className="cursor-pointer flex items-center justify-between p-2 hover:bg-darkGreen text-black hover:text-white rounded-sm"
                     >
                       <Link href={item.path} className="font-semibold">
                         {item.label}
@@ -140,7 +138,7 @@ export default function Product() {
                         {item.subMenu.map((sub, subIndex) => (
                           <li
                             key={subIndex}
-                            className="p-1 text-black font-semibold hover:text-white hover:bg-[#ef001f] rounded-sm"
+                            className="p-1 text-black font-semibold hover:text-white hover:bg-darkGreen rounded-sm"
                           >
                             <Link href={sub.path}>{sub.label}</Link>
                           </li>

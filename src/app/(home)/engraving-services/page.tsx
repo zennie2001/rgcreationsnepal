@@ -14,7 +14,7 @@ export default function EngravingServices() {
               <h4 className=" text-justify w-full">
                 Add a personal touch to your jewelry with our professional
                 engraving services at{" "}
-                <span className=" font-semibold text-[#ef001f] text-justify w-full">
+                <span className=" font-semibold text-darkGreen text-justify w-full">
                   Khukuri Blades.
                 </span>{" "}
                 Whether it's an engraving of initials, a special date, or a

@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 export default function FAQ() {
-  const [openItem, setOpenItem] = useState(0);
+  const [openItem, setOpenItem] = useState<number | null>(0);
 
   const faqItems = [
     {
@@ -32,92 +32,53 @@ export default function FAQ() {
     },
   ];
 
-  const toggleItem = (index: any) => {
+  const toggleItem = (index: number) => {
     setOpenItem(openItem === index ? null : index);
   };
 
   return (
-    <section className="w-full bg-primary text-white py-16">
+    <section className="w-full bg-white text-black py-16">
       <div className="container mx-auto px-4 ">
-        <div className="mb-10 text-center md:text-left">
-          <p className="text-darkGreen font-medium mb-2">FAQ</p>
-          <h2 className="text-2xl lg:text-4xl font-medium">
-            Got Questions? We've Got the Edge on Answers
+        <div className="mb-10">
+          <p className="text-[#5f7040] font-medium mb-2 text-sm">FAQ</p>
+          <h2 className="text-3xl md:text-4xl font-semibold leading-tight">
+            Got Questions? We’ve Got the <br /> Edge on Answers
           </h2>
         </div>
 
         <div className="space-y-4">
-          {faqItems.map((item, index) => (
-            <div key={index} className="border-b border-gray-800 pb-4">
-              <button
-                className="flex justify-between items-center w-full text-left py-4 focus:outline-none"
-                onClick={() => toggleItem(index)}
-              >
-                <span className="font-medium text-sm md:text-lg w-[90%]">
-                  {item.question}
-                </span>
-                <div
-                  className={`flex items-center justify-center w-8 h-8 rounded-full ${
-                    openItem === index ? "bg-red-600" : "bg-darkGreen"
-                  }`}
+          {faqItems.map((item, index) => {
+            const isOpen = openItem === index;
+            return (
+              <div key={index} className="border-b border-gray-200 pb-4">
+                <button
+                  onClick={() => toggleItem(index)}
+                  className="flex items-start justify-between w-full py-4 text-left focus:outline-none"
                 >
-                  {openItem === index ? (
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M18 6L6 18"
-                        stroke="white"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M6 6L18 18"
-                        stroke="white"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  ) : (
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12 5V19"
-                        stroke="white"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M5 12H19"
-                        stroke="white"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  )}
-                </div>
-              </button>
+                  <span className="text-base md:text-lg font-medium w-[90%]">
+                    {item.question}
+                  </span>
+                  <div
+                    className={`flex items-center justify-center w-8 h-8 rounded-full mt-1 shrink-0 ${
+                      isOpen ? "bg-red-600" : "bg-[#5f7040]"
+                    }`}
+                  >
+                    {isOpen ? (
+                      <span className="text-white text-xl leading-none">×</span>
+                    ) : (
+                      <span className="text-white text-xl leading-none">+</span>
+                    )}
+                  </div>
+                </button>
 
-              {openItem === index && (
-                <div className="py-2 text-gray-400 text-xs md:text-sm">
-                  {item.answer}
-                </div>
-              )}
-            </div>
-          ))}
+                {isOpen && (
+                  <p className="text-sm text-gray-600 leading-relaxed pr-6">
+                    {item.answer}
+                  </p>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -42,13 +42,10 @@ body::-webkit-scrollbar {
 /* Custom Swiper Navigation Button Styles */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #ef001f !important; /* Change arrow color */
-  
-  
+  color: darkGreen !important; /* Change arrow color */
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-

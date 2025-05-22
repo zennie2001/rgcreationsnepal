@@ -16,7 +16,7 @@ export default function AppraisalServices() {
             <div className="flex flex-col gap-8">
               <h4 className=" text-justify w-full">
                 At{" "}
-                <span className=" font-semibold text-[#ef001f] text-justify w-full">
+                <span className=" font-semibold text-darkGreen text-justify w-full">
                   Khukuri Blades,
                 </span>{" "}
                 our certified gemologists provide comprehensive jewelry

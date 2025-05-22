@@ -11,6 +11,9 @@ import {
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
+import { Phone } from "lucide-react";
+import { MailOpen } from "lucide-react";
+import blade from "@/assets/images/blade-home.png";
 
 const contactInfos = [
   {
@@ -52,90 +55,132 @@ const socialMedia = [
   },
 ];
 
-// const branches = [
-//   {
-//     branch: "Kathmandu Office",
-//     location: "Putalisadak Chowk-30,",
-//     postBox: "Kathmandu, P.O.B: 8927",
-//     number: "+977-1-4532334/4",
-//     mail: "info@rnc.edu.np",
-//   },
-//   {
-//     branch: "Bhaktapur Office",
-//     location: "Putalisadak Chowk-30,",
-//     postBox: "Kathmandu, P.O.B: 8927",
-//     number: "+977-1-4532334/4",
-//     mail: "info@rnc.edu.np",
-//   },
-//   {
-//     branch: "Itahari Office",
-//     location: "Putalisadak Chowk-30,",
-//     postBox: "Kathmandu, P.O.B: 8927",
-//     number: "+977-1-4532334/4",
-//     mail: "info@rnc.edu.np",
-//   },
-// ];
-
 export default function ContactUs() {
   return (
     <main className="w-full overflow-hidden">
       <PageHeader title="Contact Us" link="/contact" />
-      <div className="w-full grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 px-4 lg:px-0 container lg:py-16 py-10 gap-8">
-        {contactInfos.map((info, index) => {
-          return (
-            <div
-              key={index}
-              className="flex flex-col col-span-1 gap-8 p-6 border border-text/30 rounded-md"
+      {/* Contact Section */}
+      <div className="container mx-auto mt-20 mb-20 shadow-lg rounded-3xl overflow-hidden flex flex-col md:flex-row">
+        {/* Left side - Form */}
+        <div className="w-full md:w-1/2 bg-white p-10 md:p-16">
+          <h2 className="text-3xl text-left font-extrabold text-black mb-4">
+            Get in <span className="text-darkGreen">Touch</span>
+          </h2>
+          <p className="text-gray-600 text-sm mb-6">
+            Contact us anytime. We're happy to assist with product info, orders,
+            or anything else you need.
+          </p>
+
+          <form className="space-y-4">
+            <input
+              type="text"
+              name="name"
+              // value={formData.name}
+              // onChange={handleChange}
+              placeholder="Name *"
+              required
+              className="w-full px-4 py-3 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-darkGreen"
+            />
+            <input
+              type="country"
+              name="country"
+              // value={formData.country}
+              // onChange={handleChange}
+              placeholder="Country"
+              className="w-full px-4 py-3 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-darkGreen"
+            />
+            <input
+              type="tel"
+              name="phone"
+              // value={formData.phone}
+              // onChange={handleChange}
+              placeholder="Phone number *"
+              required
+              className="w-full px-4 py-3 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-darkGreen"
+            />
+            <textarea
+              name="details"
+              // value={formData.details}
+              // onChange={handleChange}
+              placeholder="Enter your Query / Details"
+              rows={4}
+              required
+              className="w-full px-4 py-3 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-darkGreen"
+            />
+
+            <button
+              type="submit"
+              className="w-full bg-primary text-white py-2 px-4 rounded"
+              // disabled={status === "loading"}
             >
-              <div className="p-2 border border-text/30 rounded-md w-max">
-                <info.logo className="size-6 text-darkGreen" />
-              </div>
-              <div className="flex flex-col gap-4">
-                <div className="flex flex-col gap-2">
-                  <p className="font-bold text-darkGreen">{info.title}</p>
-                  <p className="text-text text-sm">{info.subTitle}</p>
-                </div>
-                <div className="py-2 px-4 rounded-md border border-text/30 text-text w-max">
-                  {info.contact}
-                </div>
+              Submit
+            </button>
+
+            {/* {status === "success" && (
+              <p className="text-green-600 mt-2">
+                Request submitted successfully!
+              </p>
+            )}
+            {status === "error" && (
+              <p className="text-red-600 mt-2">
+                Something went wrong. Try again.
+              </p>
+            )} */}
+          </form>
+
+          {/* Contact info */}
+          <div className="mt-8 text-xs flex flex-col md:flex-row items-center gap-4 md:gap-10 text-gray-700">
+            <div className="flex items-center gap-2 mb-1">
+              <Phone
+                size={15}
+                className="text-darkGreen font-semibold"
+                fill="darkGreen"
+              />
+              <div className="flex flex-col items-start">
+                <span className="text-darkGreen text-sm font-semibold">
+                  Phone
+                </span>
+                <span className="text-gray-500 font-semibold">
+                  2222 4444 8685
+                </span>
               </div>
             </div>
-          );
-        })}
-        <div className="flex flex-col col-span-1 gap-8 p-6 border border-text/30 rounded-md">
-          <div className="p-2 border border-text/30 rounded-md w-max">
-            <FaHeadset className="size-6 text-darkGreen" />
+            <div className="flex items-center gap-2">
+              <MailOpen size={15} className="text-darkGreen" fill="darkGreen" />
+              <div className="flex flex-col items-start">
+                <span className="text-darkGreen text-sm font-semibold">
+                  Email
+                </span>
+                <span className="text-gray-500 font-semibold">
+                  orders@knife-depot.com
+                </span>
+              </div>
+            </div>
           </div>
-          <div className="flex flex-col gap-4">
-            <div className="flex flex-col gap-2">
-              <p className="font-bold text-darkGreen">Give us a follow</p>
-              <p className="text-text text-sm">Follow us in social medias.</p>
-            </div>
-            <div className="flex gap-3">
-              {socialMedia.map((media, index) => (
-                <a
-                  key={index}
-                  href={media.link}
-                  target="_blank"
-                  className="social rounded-full size-8 p-2 border border-text/30 text-darkGreen"
-                >
-                  <media.icon className="size-full" />
-                </a>
-              ))}
-            </div>
+        </div>
+
+        {/* Right side - Image */}
+        <div className="w-[90%] mx-auto relative md:w-1/2  ">
+          <div className="absolute bg-darkGreen right-0 h-full w-1/2 z-10"></div>
+          <div className="relative w-[70%] md:w-[77%] mx-auto h-[77%]  m-20 z-20">
+            <img
+              src={blade.src} // Replace with your actual image
+              alt="Contact Person"
+              className="object-cover w-full h-full  rounded-sm "
+            />
           </div>
         </div>
       </div>
       <FAQ />
       {/* <Contact className="pt-0 pb-16" /> */}
-      <div className="w-full flex_center h-max">
+      {/* <div className="w-full flex_center h-max">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.390823710961!2d55.2927915!3d25.2645181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f433fc32c0151%3A0xc280b5c494aa3428!2sAl%20Souq%20Al%20Kabeer%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2snp!4v1711382400000!5m2!1sen!2snp"
           loading="lazy"
           className="w-full h-[60vh]"
           allowFullScreen
         ></iframe>
-      </div>
+      </div> */}
     </main>
   );
 }

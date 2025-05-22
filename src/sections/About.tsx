@@ -1,5 +1,5 @@
 import Image from "next/image";
-import knifeImage from "@/assets/images/blade.png";
+import knifeImage from "@/assets/images/image-about.jpg";
 
 export default function About() {
   return (
@@ -38,11 +38,11 @@ export default function About() {
         </div>
 
         {/* Right Image */}
-        <div className="relative w-full lg:w-1/2 flex justify-center items-center">
+        <div className="relative w-full lg:w-1/2 flex justify-center rounded-lg items-center">
           <Image
             src={knifeImage}
             alt="Crossed knives"
-            className="w-[300px] sm:w-[400px] h-auto object-contain"
+            className="w-[300px] sm:w-full rounded-lg h-auto object-cover"
           />
         </div>
       </section>

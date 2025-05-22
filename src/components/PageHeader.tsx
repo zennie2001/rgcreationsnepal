@@ -17,7 +17,7 @@ export default function PageHeader({
         alt="page header image"
         className="w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-gradient-to-r from-secondary/80 to-secondary"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-lightGreen to-darkGreen"></div>
       <div className="flex_center flex-col gap-8 absolute">
         <h1 className="text-2xl md:text-[2.5rem] mt-10 md:mt-32 text-center font-semibold">
           {title}

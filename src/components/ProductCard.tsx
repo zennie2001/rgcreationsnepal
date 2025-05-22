@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import {toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { useCartStore } from "@/app/(home)/store/useCartStore";
 
 const ProductCard = ({ product, image, price, desc, id, viewMode }: any) => {
@@ -10,20 +10,18 @@ const ProductCard = ({ product, image, price, desc, id, viewMode }: any) => {
 
   const { items: cart, addToCart } = useCartStore();
 
+  const handleAddToCart = () => {
+    const productToAdd = { image, name: product, price, desc, id };
 
+    const itemExists = cart.some((item) => item.id === id);
 
-    const handleAddToCart = () => {
-      const productToAdd = { image, name:product, price, desc, id };
-    
-      const itemExists = cart.some((item) => item.id === id);
-    
-      if (itemExists) {
-        toast.info("Product already exists!!");
-      } else {
-        addToCart(productToAdd);
-        toast.success('Product added to Cart');
-      }
-    };
+    if (itemExists) {
+      toast.info("Product already exists!!");
+    } else {
+      addToCart(productToAdd);
+      toast.success("Product added to Cart");
+    }
+  };
 
   return viewMode === "grid" ? (
     <div className="bg-white p-4 rounded-sm shadow-lg group">
@@ -46,11 +44,14 @@ const ProductCard = ({ product, image, price, desc, id, viewMode }: any) => {
       </div>
 
       <div className="mt-4 flex justify-between items-center">
-          <button onClick={handleAddToCart} className="text-semibold text-ascent-1 px-4 py-2 border-2 border-[#dda303] rounded-lg hover:bg-[#ef001f] hover:text-white transition">
-            Add to Cart
-          </button>
+        <button
+          onClick={handleAddToCart}
+          className="text-semibold text-ascent-1 px-4 py-2 border-2 border-[#dda303] rounded-lg hover:bg-darkGreen hover:text-white transition"
+        >
+          Add to Cart
+        </button>
         <Link href={`/product/${formatSlug(product)}`} passHref>
-          <button className="text-semibold text-ascent-1 px-4 py-2 border-2 border-[#dda303] rounded-lg hover:bg-[#ef001f] hover:text-white transition">
+          <button className="text-semibold text-ascent-1 px-4 py-2 border-2 border-[#dda303] rounded-lg hover:bg-darkGreen hover:text-white transition">
             Buy Now
           </button>
         </Link>
@@ -70,11 +71,15 @@ const ProductCard = ({ product, image, price, desc, id, viewMode }: any) => {
         <p className="text-black">{desc}</p>
         <p className="text-gray-900 font-bold"> £. {price}</p>
         <div className="flex space-x-2 mt-2">
-          <Link href="#" onClick={handleAddToCart} className="text-xs text-ascent-1 px-4 py-2 border-2 border-[#dda303] rounded-lg hover:bg-[#ef001f] hover:text-white transition">
+          <Link
+            href="#"
+            onClick={handleAddToCart}
+            className="text-xs text-ascent-1 px-4 py-2 border-2 border-[#dda303] rounded-lg hover:bg-darkGreen hover:text-white transition"
+          >
             Add to Cart
           </Link>
           <Link href={`/product/${formatSlug(product)}`} passHref>
-            <button className="text-xs text-ascent-1 px-4 py-2 border-2 border-[#dda303] rounded-lg hover:bg-[#ef001f] hover:text-white transition">
+            <button className="text-xs text-ascent-1 px-4 py-2 border-2 border-[#dda303] rounded-lg hover:bg-darkGreen hover:text-white transition">
               More Details
             </button>
           </Link>

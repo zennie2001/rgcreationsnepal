@@ -55,10 +55,10 @@ const Collection = () => {
       <div className="container mx-auto">
         {/* Heading */}
         <div className="mb-12 text-center md:text-left">
-          <p className="text-[#ff5533] mb-2">Top Categories</p>
+          <p className="text-darkGreen mb-2">Top Categories</p>
           <h2 className="text-xl md:text-4xl lg:text-5xl font-medium ">
-            Sorted by Purpose, Defined 
-            <br/>
+            Sorted by Purpose, Defined
+            <br />
             by Precision, Chosen by You
           </h2>
         </div>
@@ -85,7 +85,10 @@ const Collection = () => {
             <CategoryCard category={categories[3]} className="h-64 md:h-72" />
           </div>
           <div className="lg:col-span-2  col-span-1">
-            <NewCategoryCard category={categories[5]} className="h-64 md:h-72" />
+            <NewCategoryCard
+              category={categories[5]}
+              className="h-64 md:h-72"
+            />
           </div>
           <div className="col-span-1">
             <CategoryCard category={categories[3]} className="h-64 md:h-72" />
@@ -127,7 +130,7 @@ const CategoryCard = ({
       <div className="absolute inset-0 flex flex-col   p-6">
         {/* Category Type */}
         <div>
-          <p className="text-[#ff5533] font-semibold">{category.type}</p>
+          <p className="text-darkGreen font-semibold">{category.type}</p>
         </div>
 
         {/* Category Title */}
@@ -150,7 +153,7 @@ const CategoryCard = ({
       <div className="absolute top-[60%] right-10 transform -translate-y-1/2">
         <div className="relative">
           {/* Red glow effect */}
-          <div className="absolute bottom-5 w-56 h-8 bg-[#ff5533] opacity-70 blur-xl rounded-full"></div>
+          <div className="absolute bottom-5 w-56 h-8 bg-darkGreen opacity-70 blur-xl rounded-full"></div>
 
           {/* Knife image */}
           <img
@@ -176,7 +179,7 @@ const NewCategoryCard = ({
       <div className="absolute inset-0 flex flex-col   p-6">
         {/* Category Type */}
         <div>
-          <p className="text-[#ff5533] font-semibold">{category.type}</p>
+          <p className="text-darkGreen font-semibold">{category.type}</p>
         </div>
 
         {/* Category Title */}
@@ -199,7 +202,7 @@ const NewCategoryCard = ({
       <div className="absolute top-[70%] md:top-[60%] right-10 transform -translate-y-1/2">
         <div className="relative">
           {/* Red glow effect */}
-          <div className="absolute bottom-20 w-80 h-8 bg-[#ff5533] opacity-70 blur-2xl rounded-full"></div>
+          <div className="absolute bottom-20 w-80 h-8 bg-darkGreen opacity-70 blur-2xl rounded-full"></div>
 
           {/* Knife image */}
           <img

@@ -50,7 +50,7 @@ const Cart = () => {
                             item.quantity > 1 &&
                             handleQuantityChange(item.id, item.quantity - 1)
                           }
-                          className="font-semibold px-3 py-1 border-2 border-[#dda303] rounded-sm hover:bg-[#ef001f] hover:text-white transition"
+                          className="font-semibold px-3 py-1 border-2 border-[#dda303] rounded-sm hover:bg-darkGreen hover:text-white transition"
                         >
                           -
                         </button>
@@ -59,7 +59,7 @@ const Cart = () => {
                           onClick={() =>
                             handleQuantityChange(item.id, item.quantity + 1)
                           }
-                          className="font-semibold px-3 py-1 border-2 border-[#dda303] rounded-sm hover:bg-[#ef001f] hover:text-white transition"
+                          className="font-semibold px-3 py-1 border-2 border-[#dda303] rounded-sm hover:bg-darkGreen hover:text-white transition"
                         >
                           +
                         </button>
@@ -69,7 +69,7 @@ const Cart = () => {
                     {/* Remove Button */}
                     <button
                       onClick={() => removeFromCart(item.id)}
-                      className="mt-4 sm:mt-0 font-semibold px-4 py-2 border-2 border-[#dda303] rounded-sm hover:bg-[#ef001f] hover:text-white transition"
+                      className="mt-4 sm:mt-0 font-semibold px-4 py-2 border-2 border-[#dda303] rounded-sm hover:bg-darkGreen hover:text-white transition"
                     >
                       Remove
                     </button>
@@ -85,7 +85,7 @@ const Cart = () => {
               <>
                 <button
                   onClick={() => clearCart()}
-                  className="w-full  font-semibold px-4 py-2 border-2 border-[#dda303] rounded-md hover:bg-[#ef001f] hover:text-white transition"
+                  className="w-full  font-semibold px-4 py-2 border-2 border-[#dda303] rounded-md hover:bg-darkGreen hover:text-white transition"
                 >
                   Clear All
                 </button>

@@ -42,7 +42,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
             <h2 className="text-black uppercase tracking-wide text-sm md:text-base lg:text-lg">
               18K Gold Plated
             </h2>
-            <h1 className="text-2xl sm:text-3xl text-[#ef001f] lg:text-4xl font-bold">
+            <h1 className="text-2xl sm:text-3xl text-darkGreen lg:text-4xl font-bold">
               {product.product}
             </h1>
             <p className="text-lg md:text-xl text-black font-semibold mt-2">
@@ -53,7 +53,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
               {product.desc}
             </p>
             <div className="flex justify-start gap-2 md:gap-6">
-              <button className="bg-[#ef001f] hover:bg-[#ef3d3d] text-white py-3 px-4 w-[150px] rounded-lg mt-6 transition text-xs md:text-base">
+              <button className="bg-darkGreen hover:bg-[#ef3d3d] text-white py-3 px-4 w-[150px] rounded-lg mt-6 transition text-xs md:text-base">
                 ADD TO CART
               </button>
               <button className="bg-gray-200 text-black py-3 px-4 w-[140px] me-12 rounded-lg mt-6 hover:bg-gray-300 transition text-xs md:text-base">
@@ -63,7 +63,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
 
             {/* Description & Details (Expandable) */}
             <details className="mt-6 border-t pt-4 cursor-pointer">
-              <summary className="text-base md:text-lg text-[#ef001f] font-semibold">
+              <summary className="text-base md:text-lg text-darkGreen font-semibold">
                 DESCRIPTION
               </summary>
               <p className="text-black mt-2 text-sm md:text-base">
@@ -72,7 +72,7 @@ export default async function ProductPage({ params, searchParams }: Props) {
             </details>
 
             <details className="mt-4 border-t pt-4 cursor-pointer">
-              <summary className="text-base md:text-lg text-[#ef001f] font-semibold">
+              <summary className="text-base md:text-lg text-darkGreen font-semibold">
                 DETAILS
               </summary>
               <p className="text-black mt-2 text-sm md:text-base">
