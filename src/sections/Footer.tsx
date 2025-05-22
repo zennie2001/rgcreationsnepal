@@ -69,7 +69,7 @@ const Footer = () => {
               carry it with confidence.
             </p>
 
-            <div className="flex gap-4 mt-4  text-center md:text-left text-xl text-white">
+            <div className="flex w-[80%] mx-auto md:mx-0 gap-4 justify-between md:justify-start mt-4  text-center md:text-left text-xl text-white">
               <FaFacebookF />
               <FaInstagram />
               <FaXTwitter />
