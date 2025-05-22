@@ -204,13 +204,12 @@ const Footer = () => {
       </div>
 
       {/* Divider */}
-      <div className="border-t border-lightGreen container flex justify-between mt-12 pt-6 text-xs md:text-sm text-gray-400 text-center">
+      <div className="border-t border-lightGreen container flex flex-col md:flex-row justify-between mt-12 pt-6 text-xs md:text-sm text-gray-400 text-center">
         <p>&copy; 2025 Blades. All rights reserved</p>
-        <div className=" space-x-3">
-          <Link href="/privacy-policy">Privacy Policy</Link>|
-          <Link href="/terms-conditions">Terms & Conditions</Link>|
-          <Link href="/cookies-policy">Cookies Policy</Link>|
-          <Link href="/site-map">Map</Link>
+        <div className="flex gap-6 md:gap-8 mt-4 md:mt-0">
+          <Link href="/terms-conditions">Terms & Conditions</Link>
+          <Link href="/privacy-policy">Privacy Policy</Link>
+          <Link href="/cookies-policy">Cookies</Link>
         </div>
       </div>
     </footer>
