@@ -172,13 +172,13 @@ export default function TermsConditions() {
                   If you have any questions about this Privacy Policy, please
                   contact us:
                 </h1>
-                <li className="flex items-center gap-2">
+                {/* <li className="flex items-center gap-2">
                   <MapPin className="flex-shrink-0" />
                   <span>
                     Al Souq Al Kabeer Tailor Galli, Esag Building (Old Plot),
                     Shop No. 07 Burdubai, Dubai, UAE (Near Astoria Hotel)
                   </span>
-                </li>
+                </li> */}
 
                 <li className="w-full">
                   <Link
@@ -186,17 +186,17 @@ export default function TermsConditions() {
                     className="flex items-center gap-2 w-full"
                   >
                     <Mail className="flex-shrink-0" />
-                    <span className="flex-1">info@starlaxmijewellery.com</span>
+                    <span className="flex-1">orders@knife-depot.com</span>
                   </Link>
                 </li>
 
                 <li className="w-full">
                   <Link
-                    href="http://www.starlaxmijewellery.com"
+                    href="http://www.khukuriblades.com"
                     className="flex items-center gap-2 w-full"
                   >
                     <Globe className="flex-shrink-0" />
-                    <span className="flex-1">www.starlaxmijewellery.com</span>
+                    <span className="flex-1">www.khukuriblades.com</span>
                   </Link>
                 </li>
               </ul>
