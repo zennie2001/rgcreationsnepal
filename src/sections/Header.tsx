@@ -11,7 +11,7 @@ const Header = () => {
     { title: "About Us", link: "/about" },
     { title: "Collections", link: "/collections" },
     { title: "Blogs", link: "/blogs" },
-    { title: "Make your Custom Khukuri", link: "/collections" },
+    { title: "Make your Custom Khukuri", link: "/custom-khukuri" },
   ];
 
   return (
