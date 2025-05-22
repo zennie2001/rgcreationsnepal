@@ -3,17 +3,17 @@ import { FaMoneyBillWave } from "react-icons/fa";
 
 const advantages = [
   {
-    title: "Unmatched Variety Across Categories",
+    title: "Traditional",
     description:
       "Turning your investments into cash flows and planning to bless future generations.",
   },
   {
-    title: "Discounts for Military and First Responders",
+    title: "Modern",
     description:
       "Turning your investments into cash flows and planning to bless future generations.",
   },
   {
-    title: "Customizable to Your Preferences",
+    title: "Custom",
     description:
       "Turning your investments into cash flows and planning to bless future generations.",
   },

@@ -12,14 +12,13 @@ const Header = () => {
     { title: "Collections", link: "/collections" },
     { title: "Blogs", link: "/blogs" },
     { title: "Make your Custom Khukuri", link: "/collections" },
-    
   ];
 
   return (
-    <header className="w-full bg-lightGreen text-white py-4 px-6 md:px-12 lg:px-16">
+    <header className="w-full bg-lightGreen text-white py-4 px-2 md:px-12 lg:px-16">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex-1">
+        <div className="hidden md:flex">
           <Link href="/" className="text-xl font-medium">
             Blades
           </Link>
@@ -44,10 +43,10 @@ const Header = () => {
         </nav>
 
         {/* Contact Button */}
-        <div className="flex-1 flex justify-end">
+        <div className=" hidden md:flex md:justify-end">
           <Link
             href="/contact"
-            className="bg-primary text-darkGreen  hover:bg-[#ff5533] transition-colors px-5 py-2 rounded-md text-base font-semibold"
+            className="bg-primary text-darkGreen  hover:bg-[#ff5533] transition-colors px-5 py-2 rounded-md text-sm md:text-base font-semibold"
           >
             Contact Us
           </Link>
@@ -60,6 +59,19 @@ const Header = () => {
         >
           <Menu size={24} />
         </button>
+        <div className="flex md:hidden">
+          <Link href="/" className="text-lg font-medium">
+            Blades
+          </Link>
+        </div>
+        <div className="flex md:hidden md:justify-end">
+          <Link
+            href="/contact"
+            className="bg-primary text-darkGreen  hover:bg-[#ff5533] transition-colors px-2 py-1 rounded-md text-sm  font-semibold"
+          >
+            Contact Us
+          </Link>
+        </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (

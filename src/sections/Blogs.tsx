@@ -42,17 +42,20 @@ function BlogsSection() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start mb-12">
           <div>
-            <p className="text-darkGreen text-base md:text-lg text-center md:text-left mb-2">
+            <p className="text-darkGreen font-medium text-base md:text-lg text-center md:text-left mb-2">
               Blogs
             </p>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl text-black font-semibold mb-2 text-center md:text-left ">
+            <h2 className="text-2xl hidden md:flex md:text-3xl lg:text-4xl text-black font-semibold mb-2 text-center md:text-left ">
               The Edge Report: Stories, Tips &<br/> Sharp Talk
+            </h2>
+            <h2 className=" flex md:hidden text-xl md:text-3xl lg:text-4xl text-black font-semibold mb-2 text-center md:text-left ">
+              The Edge Report: Stories,<br/>  Tips &Sharp Talk
             </h2>
           </div>
 
           <Link
             href="/blogs"
-            className="bg-darkGreen hover:darkGreen text-white px-6 py-3 md:mt-14 rounded-md transition-all"
+            className="bg-darkGreen hover:darkGreen text-white px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-14 rounded-md transition-all"
           >
             Learn More
           </Link>
