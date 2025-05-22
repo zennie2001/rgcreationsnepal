@@ -15,7 +15,7 @@ export default function TermsConditions() {
             <div className="flex flex-col gap-8">
               <h4 className=" text-justify w-full">
                 <span className=" font-semibold text-[#ef001f] text-justify w-full">
-                  Star Laxmi Jewellery LLC
+                  Khukuri Blades
                 </span>{" "}
                 ("Company," "we," "our," or "us") is committed to protecting
                 your privacy. This Privacy Policy explains how we collect, use,

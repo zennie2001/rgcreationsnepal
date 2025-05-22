@@ -25,14 +25,14 @@ export default function MessageFromCeo() {
                 Dear Valued Business Partners,
               </h1>
               <p>
-                Welcome to Star Laxmi Jewellery LLC, your trusted partner in
-                fine jewellery craftsmanship. As a leading B2B jewellery
-                supplier, we take pride in serving wholesalers, retailers, and
-                distributors across Europe, the Middle East, and Asia with
-                exquisite, high-quality jewellery that meets global standards.
+                Welcome to Khukuri Blades, your trusted partner in fine
+                jewellery craftsmanship. As a leading B2B jewellery supplier, we
+                take pride in serving wholesalers, retailers, and distributors
+                across Europe, the Middle East, and Asia with exquisite,
+                high-quality jewellery that meets global standards.
               </p>
               <p className="mt-3">
-                At Star Laxmi Jewellery, we combine tradition with innovation to
+                At Khukuri Blades, we combine tradition with innovation to
                 create timeless designs that resonate with diverse markets. Our
                 expertise in custom jewellery manufacturing, private-label
                 production, and bulk orders allows us to offer tailored
@@ -49,10 +49,10 @@ export default function MessageFromCeo() {
                 growth.
               </p>
               <p className="mt-3">
-                Thank you for choosing Star Laxmi Jewellery LLC as your
-                preferred jewellery supplier. We look forward to building a
-                long-lasting relationship and supporting your business with our
-                exquisite collections.
+                Thank you for choosing Khukuri Bladesas your preferred jewellery
+                supplier. We look forward to building a long-lasting
+                relationship and supporting your business with our exquisite
+                collections.
               </p>
 
               <div className="flex flex-col items-start justify-start pt-10">
@@ -60,7 +60,7 @@ export default function MessageFromCeo() {
                   Warm regards,
                 </p>
                 <p className="text-text">Prabesh KC</p>
-                <p className="text-text"> CEO, Star Laxmi Jewellery LLC</p>
+                <p className="text-text"> CEO, Khukuri Blades</p>
               </div>
             </div>
           </div>

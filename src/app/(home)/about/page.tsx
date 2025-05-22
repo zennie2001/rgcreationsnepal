@@ -46,19 +46,19 @@ export default function AboutPage() {
           <div className="flex flex-col lg:w-1/2 w-full gap-12">
             <div className="flex flex-col gap-4">
               <h1 className="font-semibold text-xl md:text-3xl">
-                Star Laxmi Jewellery LLC: The Premier Supplier of Premium
-                24-Carat Gold Jewellery
+                Khukuri Blades: The Premier Supplier of Premium 24-Carat Gold
+                Jewellery
               </h1>
 
               <p className="text-text text-justify">
-                At Star Laxmi Jewellery LLC, we specialize exclusively in
-                24-carat gold, offering our clients the highest level of purity
-                and unmatched quality. 24-carat gold is renowned for its
-                brilliant shine, exceptional durability, and timeless elegance,
-                making it the gold standard for premium jewellery. By focusing
-                solely on 24-carat gold, we ensure that every piece we craft
-                upholds the finest standards of quality, making it perfect for
-                both investment and luxurious adornment. We are committed to
+                At Khukuri Blades, we specialize exclusively in 24-carat gold,
+                offering our clients the highest level of purity and unmatched
+                quality. 24-carat gold is renowned for its brilliant shine,
+                exceptional durability, and timeless elegance, making it the
+                gold standard for premium jewellery. By focusing solely on
+                24-carat gold, we ensure that every piece we craft upholds the
+                finest standards of quality, making it perfect for both
+                investment and luxurious adornment. We are committed to
                 supplying only the purest gold, sourced directly from trusted
                 gold mine companies, to ensure that our customers receive the
                 very best.
@@ -70,11 +70,11 @@ export default function AboutPage() {
                 Whether you're looking to stock investment-grade pieces or seek
                 intricate, high-quality designs for your customers, we offer a
                 range of 24-carat gold jewellery that promises durability and
-                elegance. By focusing exclusively on 24-carat gold, Star Laxmi
-                Jewellery LLC guarantees that every piece we deliver is a true
-                reflection of luxury, purity, and craftsmanship, making us a
-                preferred supplier for retailers across the globe who value both
-                quality and affordability.
+                elegance. By focusing exclusively on 24-carat gold, Khukuri
+                Blades Jewellery LLC guarantees that every piece we deliver is a
+                true reflection of luxury, purity, and craftsmanship, making us
+                a preferred supplier for retailers across the globe who value
+                both quality and affordability.
               </p>
             </div>
           </div>
@@ -156,10 +156,9 @@ export default function AboutPage() {
       <section className="w-full flex_center lg:gap-12 gap-6 lg:px-24 px-4 lg:py-16 py-10 bg-[#F5FBFF]">
         <div className="flex container flex-col w-full gap-6">
           <h3 className=" text-xl md:text-3xl font-semibold text-center text-darkGreen">
-            At Star Laxmi Jewellery LLC, we pride ourselves on being more than
-            just a supplier We are trusted experts in the gold industry, with
-            over 15 years of experience in delivering exceptional quality and
-            service.
+            At Khukuri Blades, we pride ourselves on being more than just a
+            supplier We are trusted experts in the gold industry, with over 15
+            years of experience in delivering exceptional quality and service.
           </h3>
         </div>
       </section>
@@ -187,7 +186,7 @@ export default function AboutPage() {
             <p className="text-text text-base text-justify">
               At{" "}
               <span className=" font-semibold text-[#ef001f] text-justify w-full">
-                Star Laxmi Jewellery LLC,
+                Khukuri Blades,
               </span>{" "}
               we pride ourselves on being more than just a supplier – we are
               trusted experts in the gold industry, with over 15 years of
@@ -227,13 +226,12 @@ export default function AboutPage() {
                 <span className="text-black">
                   Customized Jewellery Crafting Services:
                 </span>{" "}
-                At Star Laxmi Jewellery LLC, we understand that each customer
-                has unique needs. That’s why we offer customized jewellery
-                crafting services, allowing you to create bespoke pieces that
-                meet your specifications and preferences. Whether you're
-                designing a one-of-a-kind item or creating a signature
-                collection, we bring your vision to life with unparalleled
-                craftsmanship.
+                At Khukuri Blades, we understand that each customer has unique
+                needs. That’s why we offer customized jewellery crafting
+                services, allowing you to create bespoke pieces that meet your
+                specifications and preferences. Whether you're designing a
+                one-of-a-kind item or creating a signature collection, we bring
+                your vision to life with unparalleled craftsmanship.
               </li>
               <li className="mb-2 text-black">
                 <span className="text-black">
@@ -246,9 +244,9 @@ export default function AboutPage() {
                 and reliable experience.
               </li>
               <p>
-                Choose Star Laxmi Jewellery LLC for your wholesale and retail
-                gold needs, and experience the perfect blend of purity, quality,
-                expertise, and customer satisfaction.
+                Choose Khukuri Bladesfor your wholesale and retail gold needs,
+                and experience the perfect blend of purity, quality, expertise,
+                and customer satisfaction.
               </p>
             </ul>
           </div>

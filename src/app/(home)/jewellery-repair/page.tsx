@@ -14,7 +14,7 @@ export default function JewelleryRepair() {
               <h4 className=" text-justify w-full">
                 Is your favorite piece of jewelry in need of repair? At{" "}
                 <span className=" font-semibold text-[#ef001f] text-justify w-full">
-                  Star Laxmi Jewellery LLC,
+                  Khukuri Blades,
                 </span>{" "}
                 our expert jewelers offer a range of jewelry repair services to
                 restore your treasures. From fixing broken chains and resizing

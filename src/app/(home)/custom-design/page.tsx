@@ -19,7 +19,7 @@ export default function CustomDesign() {
               <h4 className=" text-justify w-full">
                 At{" "}
                 <span className=" font-semibold text-[#ef001f] text-justify w-full">
-                  Star Laxmi Jewellery LLC,
+                  Khukuri Blades,
                 </span>{" "}
                 we specialize in creating one-of-a-kind pieces that reflect your
                 personal style. Our custom design jewelry service allows you to
@@ -137,8 +137,8 @@ export default function CustomDesign() {
                   responsibility of the customer.
                 </li>
                 <li className="mb-2 text-black">
-                  Star Laxmi Jewellery LLC is not liable for delays due to
-                  customs or shipping carriers.
+                  Khukuri Bladesis not liable for delays due to customs or
+                  shipping carriers.
                 </li>
               </ul>
               <ul className="list-disc">
@@ -163,14 +163,14 @@ export default function CustomDesign() {
                   Intellectual Property Rights
                 </h1>
                 <li className="mb-2 text-black">
-                  Star Laxmi Jewellery LLC retains the rights to original
-                  designs unless otherwise agreed.
+                  Khukuri Bladesretains the rights to original designs unless
+                  otherwise agreed.
                 </li>
                 <li className="mb-2 text-black">
                   Customer-provided designs remain the property of the customer.
-                  However, Star Laxmi Jewellery LLC reserves the right to
-                  feature completed custom pieces in its portfolio unless
-                  otherwise specified in writing.
+                  However, Khukuri Bladesreserves the right to feature completed
+                  custom pieces in its portfolio unless otherwise specified in
+                  writing.
                 </li>
               </ul>
               <ul>
