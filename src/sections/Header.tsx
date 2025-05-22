@@ -48,7 +48,7 @@ const Header = () => {
         {/* Contact Button */}
         <div className=" hidden md:flex md:justify-end gap-4">
           <Link
-            href="/contact"
+            href="/cart"
             className="py-2"
           >
             <ShoppingCart size={28} fill="white" className="text-white" />
