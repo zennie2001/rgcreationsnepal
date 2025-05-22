@@ -79,7 +79,7 @@ export default function CaratGold() {
                   prosperity. Among the different types of gold available in the
                   market, 24K gold stands out as the purest form, making it the
                   preferred choice for both wholesale and retail buyers. At{" "}
-                  <span className=" font-semibold text-[#ef001f] text-justify w-full">
+                  <span className=" font-semibold text-darkGreen text-justify w-full">
                     Khukuri Blades,
                   </span>{" "}
                   a Dubai-based company with over 15 years of experience, we

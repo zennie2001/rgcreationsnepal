@@ -25,7 +25,7 @@ const config: Config = {
        
         },
         secondary: "#e64a2e",
-        tertiary: '#EF001F',
+        tertiary: 'darkGreen',
         background:'#4B5320',
         lightGreen:"#b1b59f",
         darkGreen:"#4b5320",

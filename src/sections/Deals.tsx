@@ -119,7 +119,7 @@ export default function Deals() {
                           <button className="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded flex-grow">
                             Buy Now
                           </button>
-                          <button className="bg-[#ff5533] hover:bg-[#e64a2e] text-white p-2 rounded">
+                          <button className="bg-darkGreen hover:bg-[#e64a2e] text-white p-2 rounded">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width="24"

@@ -2,6 +2,8 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { ShoppingCart } from 'lucide-react';
+import { User } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,6 +14,7 @@ const Header = () => {
     { title: "Collections", link: "/collections" },
     { title: "Blogs", link: "/blogs" },
     { title: "Make your Custom Khukuri", link: "/custom-khukuri" },
+     { title: "Contact Us", link: "/contact" },
   ];
 
   return (
@@ -43,12 +46,18 @@ const Header = () => {
         </nav>
 
         {/* Contact Button */}
-        <div className=" hidden md:flex md:justify-end">
+        <div className=" hidden md:flex md:justify-end gap-4">
           <Link
             href="/contact"
-            className="bg-primary text-darkGreen  hover:bg-[#ff5533] transition-colors px-5 py-2 rounded-md text-sm md:text-base font-semibold"
+            className="py-2"
           >
-            Contact Us
+            <ShoppingCart size={28} fill="white" className="text-white" />
+          </Link>
+          <Link
+            href="/contact"
+            className=" py-2"
+          >
+            <User size={28} fill="white" />
           </Link>
         </div>
 
@@ -67,7 +76,7 @@ const Header = () => {
         <div className="flex md:hidden md:justify-end">
           <Link
             href="/contact"
-            className="bg-primary text-darkGreen  hover:bg-[#ff5533] transition-colors px-2 py-1 rounded-md text-sm  font-semibold"
+            className="bg-primary text-darkGreen  hover:bg-darkGreen transition-colors px-2 py-1 rounded-md text-sm  font-semibold"
           >
             Contact Us
           </Link>
@@ -97,8 +106,8 @@ const Header = () => {
                     key={index}
                     href={item.link}
                     className={`${
-                      index === 0 ? "text-[#ff5533]" : "text-white"
-                    } text-lg font-medium hover:text-[#ff5533]`}
+                      index === 0 ? "text-darkGreen" : "text-white"
+                    } text-lg font-medium hover:text-darkGreen`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.title}
@@ -106,7 +115,7 @@ const Header = () => {
                 ))}
                 <Link
                   href="/contact"
-                  className="border border-[#ff5533] text-white hover:bg-[#ff5533] transition-colors px-4 py-2 rounded-md text-center mt-4"
+                  className="border border-darkGreen text-white hover:bg-darkGreen transition-colors px-4 py-2 rounded-md text-center mt-4"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Contact Us

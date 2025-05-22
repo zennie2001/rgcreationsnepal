@@ -67,17 +67,17 @@ const CustomKhukuri = () => {
 
         return (
           <div key={stepNumber} className="flex items-center">
-            <div className="flex flex-col items-center">
-              <div className="text-sm text-gray-500 mb-2">{step}</div>
+            <div className="flex flex-col items-start">
+              <div className="text-[15px] text-gray-700 mb-2">{step}</div>
               <div
-                className={`h-1 ${
+                className={`h-1 rounded-full ${
                   isActive
                     ? "bg-green-500"
                     : isCompleted
                     ? "bg-green-500"
                     : "bg-gray-300"
                 } ${
-                  stepNumber === 1 ? "w-48" : stepNumber === 5 ? "w-48" : "w-56"
+                  stepNumber === 1 ? "w-48" : stepNumber === 5 ? "w-56" : "w-60"
                 }`}
               ></div>
             </div>
@@ -89,18 +89,18 @@ const CustomKhukuri = () => {
 
   const renderStep1 = () => (
     <div className="space-y-6">
-      <div className="border border-gray-300 rounded-lg p-6">
-        <h3 className="text-lg font-medium mb-4">Design Info</h3>
+      <div className="border-2 relative shadow-2xl mb-14 border-gray-500 rounded-lg p-6">
+        <h3 className="text-lg absolute -top-4 bg-white left-10 font-medium mb-4">Design Info</h3>
 
-        <div className="space-y-4">
+        <div className="space-y-6 mt-6 mb-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">
+            <label className="block  text-sm font-medium text-gray-700 mb-2">
               Khukuri Title
             </label>
             <input
               type="text"
               placeholder="Enter Khukuri Title"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border hover:shadow-2xl border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.khukuriTitle}
               onChange={(e) =>
                 handleInputChange("khukuriTitle", e.target.value)
@@ -115,7 +115,7 @@ const CustomKhukuri = () => {
             <textarea
               placeholder="Enter Khukuri Description"
               rows={6}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border hover:shadow-2xl border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.khukuriDescription}
               onChange={(e) =>
                 handleInputChange("khukuriDescription", e.target.value)
@@ -125,8 +125,8 @@ const CustomKhukuri = () => {
         </div>
       </div>
 
-      <div className="border border-gray-300 rounded-lg p-6">
-        <h3 className="text-lg font-medium mb-4">Upload Reference Image</h3>
+      <div className="border-2 shadow-xl relative  border-gray-500 rounded-lg p-6">
+        <h3 className="text-lg  absolute -top-4 bg-white left-8 font-medium mb-4">Upload Reference Image</h3>
 
         <div>
           <h4 className="font-medium mb-2">Reference Image Upload</h4>
@@ -134,7 +134,7 @@ const CustomKhukuri = () => {
             Add your documents here, and you can upload up to 5 files max
           </p>
 
-          <div className="border-2 border-dashed border-gray-300 rounded-lg p-12 text-center">
+          <div className="border-2 border-dashed border-gray-500 rounded-lg p-12 text-center">
             <Cloud className="mx-auto h-12 w-12 text-gray-400 mb-4" />
             <p className="text-gray-600">
               Drag your file(s) or{" "}
@@ -154,7 +154,7 @@ const CustomKhukuri = () => {
       <div className="flex justify-end">
         <button
           onClick={handleNext}
-          className="px-6 py-2 bg-green-700 text-white rounded-full hover:bg-green-800"
+          className="px-10 py-2 bg-darkGreen text-white rounded-full hover:bg-green-800"
         >
           Next
         </button>
@@ -164,10 +164,10 @@ const CustomKhukuri = () => {
 
   const renderStep2 = () => (
     <div className="space-y-6">
-      <div className="border border-gray-300 rounded-lg p-6">
-        <h3 className="text-lg font-medium mb-6">Blade Options</h3>
+      <div className="border relative border-gray-500 shadow-2xl rounded-lg p-6">
+        <h3 className="text-lg absolute -top-4 bg-white left-10 font-medium mb-6">Blade Options</h3>
 
-        <div className="space-y-4">
+        <div className="space-y-4 mt-6 mb-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
               Blade Length
@@ -175,7 +175,7 @@ const CustomKhukuri = () => {
             <input
               type="text"
               placeholder="Enter Blade Length From (6\' to 50\')"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.bladeLength}
               onChange={(e) => handleInputChange("bladeLength", e.target.value)}
             />
@@ -186,7 +186,7 @@ const CustomKhukuri = () => {
               Blade Finish
             </label>
             <select
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.bladeFinish}
               onChange={(e) => handleInputChange("bladeFinish", e.target.value)}
             >
@@ -201,7 +201,7 @@ const CustomKhukuri = () => {
             <textarea
               placeholder="Enter Engraving Details"
               rows={4}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.engravingDetails}
               onChange={(e) =>
                 handleInputChange("engravingDetails", e.target.value)
@@ -216,7 +216,7 @@ const CustomKhukuri = () => {
             <textarea
               placeholder="Enter Additional Comments"
               rows={8}
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.additionalComments}
               onChange={(e) =>
                 handleInputChange("additionalComments", e.target.value)
@@ -226,16 +226,16 @@ const CustomKhukuri = () => {
         </div>
       </div>
 
-      <div className="flex justify-between">
+      <div className="flex justify-end gap-4">
         <button
           onClick={handleBack}
-          className="px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800"
+          className="px-10 py-2 bg-black text-white rounded-full hover:bg-gray-800"
         >
           Back
         </button>
         <button
           onClick={handleNext}
-          className="px-6 py-2 bg-green-700 text-white rounded-full hover:bg-green-800"
+          className="px-10 py-2 bg-darkGreen text-white rounded-full hover:bg-green-800"
         >
           Next
         </button>
@@ -245,10 +245,10 @@ const CustomKhukuri = () => {
 
   const renderStep3 = () => (
     <div className="space-y-6">
-      <div className="border border-gray-300 rounded-lg p-6">
-        <h3 className="text-lg font-medium mb-6">Handle Options</h3>
+      <div className="border relative shadow-2xl border-gray-500 rounded-lg p-6">
+        <h3 className="text-lg absolute -top-4 bg-white left-10 font-medium mb-6">Handle Options</h3>
 
-        <div className="space-y-4">
+        <div className="space-y-4 mt-6 mb-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
               Handle Length
@@ -256,7 +256,7 @@ const CustomKhukuri = () => {
             <input
               type="text"
               placeholder="Enter Handle Length From (4\' to 25\')"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.handleLength}
               onChange={(e) =>
                 handleInputChange("handleLength", e.target.value)
@@ -269,7 +269,7 @@ const CustomKhukuri = () => {
               Primary Material
             </label>
             <select
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.primaryMaterial}
               onChange={(e) =>
                 handleInputChange("primaryMaterial", e.target.value)
@@ -284,7 +284,7 @@ const CustomKhukuri = () => {
               Secondary Material
             </label>
             <select
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.secondaryMaterial}
               onChange={(e) =>
                 handleInputChange("secondaryMaterial", e.target.value)
@@ -299,7 +299,7 @@ const CustomKhukuri = () => {
               Handle Type
             </label>
             <select
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.handleType}
               onChange={(e) => handleInputChange("handleType", e.target.value)}
             >
@@ -309,16 +309,16 @@ const CustomKhukuri = () => {
         </div>
       </div>
 
-      <div className="flex justify-between">
+      <div className="flex justify-end gap-4">
         <button
           onClick={handleBack}
-          className="px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800"
+          className="px-10 py-2 bg-black text-white rounded-full hover:bg-gray-800"
         >
           Back
         </button>
         <button
           onClick={handleNext}
-          className="px-6 py-2 bg-green-700 text-white rounded-full hover:bg-green-800"
+          className="px-10 py-2 bg-darkGreen text-white rounded-full hover:bg-green-800"
         >
           Next
         </button>
@@ -328,16 +328,16 @@ const CustomKhukuri = () => {
 
   const renderStep4 = () => (
     <div className="space-y-6">
-      <div className="border border-gray-300 rounded-lg p-6">
-        <h3 className="text-lg font-medium mb-6">Scabbard Options</h3>
+      <div className="border relative shadow-2xl border-gray-500 rounded-lg p-6">
+        <h3 className="text-lg absolute -top-4 bg-white left-10 font-medium mb-6">Scabbard Options</h3>
 
-        <div className="space-y-4">
+        <div className="space-y-4 mt-6 mb-4">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
               Scabbard Material
             </label>
             <select
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.scabbardMaterial}
               onChange={(e) =>
                 handleInputChange("scabbardMaterial", e.target.value)
@@ -352,7 +352,7 @@ const CustomKhukuri = () => {
               Scabbard Color
             </label>
             <select
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.scabbardColor}
               onChange={(e) =>
                 handleInputChange("scabbardColor", e.target.value)
@@ -367,7 +367,7 @@ const CustomKhukuri = () => {
               Chappe
             </label>
             <select
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.chappe}
               onChange={(e) => handleInputChange("chappe", e.target.value)}
             >
@@ -377,16 +377,16 @@ const CustomKhukuri = () => {
         </div>
       </div>
 
-      <div className="flex justify-between">
+      <div className="flex justify-end gap-4">
         <button
           onClick={handleBack}
-          className="px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800"
+          className="px-10 py-2 bg-black text-white rounded-full hover:bg-gray-800"
         >
           Back
         </button>
         <button
           onClick={handleNext}
-          className="px-6 py-2 bg-green-700 text-white rounded-full hover:bg-green-800"
+          className="px-10 py-2 bg-darkGreen text-white rounded-full hover:bg-green-800"
         >
           Next
         </button>
@@ -396,10 +396,10 @@ const CustomKhukuri = () => {
 
   const renderStep5 = () => (
     <div className="space-y-6">
-      <div className="border border-gray-300 rounded-lg p-6">
-        <h3 className="text-lg font-medium mb-6">Contact Form</h3>
+      <div className="border border-gray-500 shadow-2xl relative rounded-lg p-6">
+        <h3 className="text-lg absolute -top-4 bg-white left-10 font-medium mb-6">Contact Form</h3>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-4 mt-6">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
               First Name <span className="text-red-500">*</span>
@@ -407,7 +407,7 @@ const CustomKhukuri = () => {
             <input
               type="text"
               placeholder="Enter First Name"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.firstName}
               onChange={(e) => handleInputChange("firstName", e.target.value)}
             />
@@ -420,7 +420,7 @@ const CustomKhukuri = () => {
             <input
               type="text"
               placeholder="Enter Last Name"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.lastName}
               onChange={(e) => handleInputChange("lastName", e.target.value)}
             />
@@ -434,7 +434,7 @@ const CustomKhukuri = () => {
           <input
             type="email"
             placeholder="Enter Email Address"
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
             value={formData.email}
             onChange={(e) => handleInputChange("email", e.target.value)}
           />
@@ -447,7 +447,7 @@ const CustomKhukuri = () => {
           <input
             type="text"
             placeholder="Enter Street Address"
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+            className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
             value={formData.fullAddress}
             onChange={(e) => handleInputChange("fullAddress", e.target.value)}
           />
@@ -459,7 +459,7 @@ const CustomKhukuri = () => {
               Country <span className="text-red-500">*</span>
             </label>
             <select
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.country}
               onChange={(e) => handleInputChange("country", e.target.value)}
             >
@@ -472,7 +472,7 @@ const CustomKhukuri = () => {
               State <span className="text-red-500">*</span>
             </label>
             <select
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.state}
               onChange={(e) => handleInputChange("state", e.target.value)}
             >
@@ -489,7 +489,7 @@ const CustomKhukuri = () => {
             <input
               type="text"
               placeholder="Enter City Name"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.city}
               onChange={(e) => handleInputChange("city", e.target.value)}
             />
@@ -502,7 +502,7 @@ const CustomKhukuri = () => {
             <input
               type="text"
               placeholder="Enter Postal Code"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full px-3 py-2 border border-gray-500 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
               value={formData.postalCode}
               onChange={(e) => handleInputChange("postalCode", e.target.value)}
             />
@@ -513,7 +513,7 @@ const CustomKhukuri = () => {
           <input
             type="checkbox"
             id="terms"
-            className="mt-1 h-4 w-4 text-green-600 focus:ring-green-500 border-gray-300 rounded"
+            className="mt-1 h-4 w-4 text-green-600 focus:ring-green-500 border-gray-500 rounded"
             checked={formData.agreedToTerms}
             onChange={(e) =>
               handleInputChange("agreedToTerms", e.target.checked)
@@ -533,16 +533,16 @@ const CustomKhukuri = () => {
         </div>
       </div>
 
-      <div className="flex justify-between">
+      <div className="flex mb-4 justify-end gap-4">
         <button
           onClick={handleBack}
-          className="px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800"
+          className="px-10 py-2 bg-black text-white rounded-full hover:bg-gray-800"
         >
           Back
         </button>
         <button
           onClick={() => alert("Quote requested!")}
-          className="px-6 py-2 bg-green-700 text-white rounded-full hover:bg-green-800"
+          className="px-6 py-2 bg-darkGreen text-white rounded-full hover:bg-green-800"
         >
           Request A Quote
         </button>
@@ -570,7 +570,7 @@ const CustomKhukuri = () => {
   return (
     <main>
         <Hero/>
-      <div className="container mx-auto p-6 bg-white">
+      <div className="container mx-auto my-10 p-6 bg-white">
         {renderProgressBar()}
         {renderCurrentStep()}
       </div>

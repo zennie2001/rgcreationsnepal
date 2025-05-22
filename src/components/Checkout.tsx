@@ -2,7 +2,6 @@
 import { useCartStore } from "@/app/(home)/store/useCartStore";
 import React from "react";
 
-
 export default function Checkout() {
   const { items, addToCart, removeFromCart, updateQuantity, clearCart } =
     useCartStore();
@@ -38,7 +37,7 @@ export default function Checkout() {
       </div>
       <button
         // onClick={handleProceedToCheckout}
-        className="text-semibold text-ascent-1 px-4 my-4 py-2 border-2 border-[#dda303] rounded-sm hover:bg-[#ef001f] hover:text-white transition"
+        className="text-semibold text-ascent-1 px-4 my-4 py-2 border-2 border-[#dda303] rounded-sm hover:bg-darkGreen hover:text-white transition"
       >
         Proceed To CheckOut
       </button>

@@ -13,7 +13,7 @@ export default function JewelleryRepair() {
             <div className="flex flex-col gap-8">
               <h4 className=" text-justify w-full">
                 Is your favorite piece of jewelry in need of repair? At{" "}
-                <span className=" font-semibold text-[#ef001f] text-justify w-full">
+                <span className=" font-semibold text-darkGreen text-justify w-full">
                   Khukuri Blades,
                 </span>{" "}
                 our expert jewelers offer a range of jewelry repair services to

@@ -1,20 +1,14 @@
 "use client";
-
+import knifeImage from "@/assets/images/image-about.jpg";
 import PageHeader from "@/components/PageHeader";
-import SectionHeader from "@/components/SectionHeader";
-import aboutImage from "@/assets/images/crafts/c8.jpg";
-import aboutSecondImage from "@/assets/images/about-large-starlaxmi.jpg";
+import aboutSecondImage from "@/assets/images/about-blade2.jpg";
 import Image from "next/image";
-import Contact from "@/sections/Contact";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import profileImage from "@/assets/images/profileImage.jpg";
 import { FaFacebookF, FaLinkedinIn, FaPinterest, FaPlus } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
-import { RxCross2 } from "react-icons/rx";
 import { useState } from "react";
-import craft1 from "@/assets/images/crafts/c4.jpg";
-import craft2 from "@/assets/images/crafts/c8.jpg";
-import craft3 from "@/assets/images/crafts/c2.jpg";
+import craft1 from "@/assets/images/about-blade.jpg";
+import craft2 from "@/assets/images/about-blade2.jpg";
+import craft3 from "@/assets/images/image-about.jpg";
 
 const socialMedia = [
   {
@@ -42,47 +36,49 @@ export default function AboutPage() {
     <main className="w-full  overflow-hidden">
       <PageHeader title="About Us" link="/about" />
       <section className="flex_center container mx-auto flex-col w-full px-4 lg:px-0  lg:py-16 py-7 gap-16">
-        <div className="flex lg:flex-row flex-col items-center lg:gap-16 gap-6 w-full">
-          <div className="flex flex-col lg:w-1/2 w-full gap-12">
-            <div className="flex flex-col gap-4">
-              <h1 className="font-semibold text-xl md:text-3xl">
-                Khukuri Blades: The Premier Supplier of Premium 24-Carat Gold
-                Jewellery
-              </h1>
-
-              <p className="text-text text-justify">
-                At Khukuri Blades, we specialize exclusively in 24-carat gold,
-                offering our clients the highest level of purity and unmatched
-                quality. 24-carat gold is renowned for its brilliant shine,
-                exceptional durability, and timeless elegance, making it the
-                gold standard for premium jewellery. By focusing solely on
-                24-carat gold, we ensure that every piece we craft upholds the
-                finest standards of quality, making it perfect for both
-                investment and luxurious adornment. We are committed to
-                supplying only the purest gold, sourced directly from trusted
-                gold mine companies, to ensure that our customers receive the
-                very best.
-              </p>
-              <p className="text-text text-justify ">
-                Our clientele consists of gold retail shops spanning Europe, the
-                Middle East, and Asia, all of whom rely on our competitive
-                wholesale rates and consistent supply of premium 24-carat gold.
-                Whether you're looking to stock investment-grade pieces or seek
-                intricate, high-quality designs for your customers, we offer a
-                range of 24-carat gold jewellery that promises durability and
-                elegance. By focusing exclusively on 24-carat gold, Khukuri
-                Blades Jewellery LLC guarantees that every piece we deliver is a
-                true reflection of luxury, purity, and craftsmanship, making us
-                a preferred supplier for retailers across the globe who value
-                both quality and affordability.
-              </p>
+        <div className="flex flex-col lg:flex-row w-full container text-white px-5 py-16 lg:px-0 lg:py-28 items-center gap-12">
+          {/* Left Content */}
+          <div className="w-full lg:w-1/2  flex flex-col gap-6">
+            <p className="text-darkGreen md:text-left text-center font-medium text-base md:text-lg -mb-4">
+              About us
+            </p>
+            <h2 className="text-xl text-black sm:text-3xl md:text-4xl md:text-left text-center font-medium ">
+              Crafted with Vision, Honed with <br className="hidden sm:block" />
+              Purpose, Carried with Confidence
+            </h2>
+            <p className="text-black text-[13px] md:text-base md:text-left text-center leading-relaxed">
+              At Swift-Action, we craft more than blades — we build tools that
+              answer the call of speed, safety, and style. Every knife is a
+              product of thoughtful engineering and bold design, made to perform
+              when it matters most.
+            </p>
+            <div className="flex flex-col md:text-left text-black text-center sm:flex-row gap-8 pt-4">
+              <div className="flex-1">
+                <h4 className="font-semibold  mb-2">
+                  Engineered with Purpose.
+                </h4>
+                <p className="text-black  text-[13px] leading-relaxed">
+                  From concept to creation, every knife we produce reflects our
+                  commitment to quality, performance, and cutting-edge design.
+                </p>
+              </div>
+              <div className="flex-1">
+                <h4 className="font-semibold mb-2">A Legacy of Precision</h4>
+                <p className="text-black text-[13px] leading-relaxed">
+                  Born from a deep respect for mechanics and form, we set out to
+                  redefine the automatic knife — delivering speed, safety, and
+                  style.
+                </p>
+              </div>
             </div>
           </div>
-          <div className="flex gap-8 lg:w-1/2 w-full h-80 rounded-md overflow-hidden">
+
+          {/* Right Image */}
+          <div className="relative w-full lg:w-1/2 flex justify-center rounded-lg items-center">
             <Image
-              src={aboutImage}
-              alt="image"
-              className="size-full object-cover"
+              src={knifeImage}
+              alt="Crossed knives"
+              className="w-[300px] sm:w-full rounded-lg h-auto object-cover"
             />
           </div>
         </div>
@@ -115,11 +111,11 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <div className="image container px-4 lg:px-0 flex_center h-[80vh] w-full relative">
+      <div className="image container px-4 lg:px-0 flex_center w-full relative">
         <Image
           src={aboutSecondImage}
           alt="image"
-          className="size-full object-cover"
+          className="size-full object-contain"
         />
         <div className="absolute bottom-0 lg:flex_center hidden w-full  ">
           <div className="flex w-full h-16 bg-primary"></div>
@@ -153,7 +149,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <section className="w-full flex_center lg:gap-12 gap-6 lg:px-24 px-4 lg:py-16 py-10 bg-[#F5FBFF]">
+      <section className="w-full flex_center lg:gap-12 gap-6 lg:px-24 px-4 lg:py-16 py-10 bg-lightGreen/70">
         <div className="flex container flex-col w-full gap-6">
           <h3 className=" text-xl md:text-3xl font-semibold text-center text-darkGreen">
             At Khukuri Blades, we pride ourselves on being more than just a
@@ -171,21 +167,21 @@ export default function AboutPage() {
             className="md:w-[30%] w-full rounded-md shadow-lg hover:scale-110 transition-all duration-300 object-cover"
           />
           <Image
-            src={craft2}
-            alt="image"
-            className=" md:w-[30%] w-full rounded-md shadow-lg hover:scale-110 transition-all duration-300  object-cover"
-          />
-          <Image
             src={craft3}
             alt="image"
             className="md:w-[30%] w-full rounded-md shadow-lg hover:scale-110 transition-all duration-300  object-cover"
+          />
+          <Image
+            src={craft2}
+            alt="image"
+            className=" md:w-[30%] w-full rounded-md shadow-lg hover:scale-110 transition-all duration-300  object-cover"
           />
         </div>
         <div className="flex_center flex-col gap-8  w-full">
           <div className="flex_center flex-col gap-8">
             <p className="text-text text-base text-justify">
               At{" "}
-              <span className=" font-semibold text-[#ef001f] text-justify w-full">
+              <span className=" font-semibold text-darkGreen text-justify w-full">
                 Khukuri Blades,
               </span>{" "}
               we pride ourselves on being more than just a supplier – we are

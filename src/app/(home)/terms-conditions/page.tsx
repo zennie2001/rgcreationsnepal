@@ -13,7 +13,7 @@ export default function TermsConditions() {
             <div className="flex flex-col gap-8">
               <h4 className=" text-justify w-full">
                 Welcome to{" "}
-                <span className=" font-semibold text-[#ef001f] text-justify w-full">
+                <span className=" font-semibold text-darkGreen text-justify w-full">
                   Khukuri Blades.
                 </span>{" "}
                 By accessing or using our website and services, you agree to

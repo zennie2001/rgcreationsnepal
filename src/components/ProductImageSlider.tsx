@@ -44,7 +44,7 @@ export default function ProductImageSlider({
     <>
       <style jsx global>{`
         .swiper-pagination-bullet {
-          background: #ef001f !important;
+          background: darkGreen !important;
           opacity: 0.5;
         }
         .swiper-pagination-bullet-active {
@@ -58,7 +58,7 @@ export default function ProductImageSlider({
           z-index: 10;
         }
         .thumbnail-swiper .swiper-slide-thumb-active img {
-          border: 2px solid #ef001f;
+          border: 2px solid darkGreen;
           border-radius: 8px;
         }
         .main-swiper {
@@ -90,7 +90,7 @@ export default function ProductImageSlider({
           background: rgba(255, 255, 255, 0.8);
           border-radius: 50%;
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-          color: #ef001f;
+          color: darkGreen;
           font-size: 18px;
           font-weight: bold;
           display: flex;
