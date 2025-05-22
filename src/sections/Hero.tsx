@@ -3,7 +3,7 @@ import home from "@/assets/images/blade-home.png";
 const Hero = () => {
   return (
     <main className="bg-primary">
-      <section className="md:relative flex flex-col-reverse w-full h-[110vh] md:h-[80vh] container  text-white ">
+      <section className="md:relative flex flex-col-reverse w-full h-[100vh] md:h-[80vh] container  text-white ">
         {/* Background Image with Overlay */}
         <div className="md:absolute  md:inset-0 md:left-[50%]">
           <img

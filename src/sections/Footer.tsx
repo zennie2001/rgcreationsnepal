@@ -9,7 +9,7 @@ import {
   FaWordpress,
 } from "react-icons/fa6";
 import { Mail, MapPin } from "lucide-react";
-import { MoveDownRight } from "lucide-react";
+import logo from "@/assets/images/final-logo.png";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -28,8 +28,8 @@ const Footer = () => {
           <br /> keep up to date with us!
         </h2>
         <h2 className=" flex md:hidden text-xl md:text-2xl  font-semibold text-white  text-center md:text-left  mb-8">
-          Join our newsletter to
-           keep<br /> up to date with us!
+          Join our newsletter to keep
+          <br /> up to date with us!
         </h2>
 
         <div className="flex flex-col sm:flex-row gap-4 mb-16">
@@ -66,7 +66,12 @@ const Footer = () => {
         {/* Left Column */}
         <div>
           <div className="  text-center md:text-left">
-            <h3 className="text-white text-2xl font-semibold mb-4">Blades</h3>
+            <div className="w-60 p-4 bg-white rounded-lg">
+              <Link href="/">
+                <img src={logo.src} alt="Logo" className="w-full" />
+              </Link>
+            </div>
+
             <p className="text-gray-300 mt-2 text-sm leading-relaxed max-w-sm">
               Whether it’s everyday carry or mission-ready gear, our collection
               covers the spectrum of sharp innovation. Choose your edge — and
