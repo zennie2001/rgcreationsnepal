@@ -87,3 +87,96 @@ const  products = [
   ];
 
   export default products;
+
+    export const blogs = [
+      {
+        id: 1,
+        image: "/blog-image.jpg",
+        category: "News",
+        title: "10 Best Rescue Knives You Can Buy in 2024",
+        description:
+          "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
+        author: "Olivia Rhye",
+        date: "20 Jan 2022",
+      },
+      {
+        id: 2,
+        image: "/blog-image.jpg",
+        category: "News",
+        title: "10 Best Rescue Knives You Can Buy in 2024",
+        description:
+          "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
+        author: "Olivia Rhye",
+        date: "20 Jan 2022",
+      },
+      {
+        id: 3,
+        image: "/blog-image.jpg",
+        category: "News",
+        title: "10 Best Rescue Knives You Can Buy in 2024",
+        description:
+          "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
+        author: "Olivia Rhye",
+        date: "20 Jan 2022",
+      },
+      {
+        id: 1,
+        image: "/blog-image.jpg",
+        category: "News",
+        title: "10 Best Rescue Knives You Can Buy in 2024",
+        description:
+          "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
+        author: "Olivia Rhye",
+        date: "20 Jan 2022",
+      },
+      {
+        id: 2,
+        image: "/blog-image.jpg",
+        category: "News",
+        title: "10 Best Rescue Knives You Can Buy in 2024",
+        description:
+          "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
+        author: "Olivia Rhye",
+        date: "20 Jan 2022",
+      },
+      {
+        id: 3,
+        image: "/blog-image.jpg",
+        category: "News",
+        title: "10 Best Rescue Knives You Can Buy in 2024",
+        description:
+          "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
+        author: "Olivia Rhye",
+        date: "20 Jan 2022",
+      },
+      {
+        id: 1,
+        image: "/blog-image.jpg",
+        category: "News",
+        title: "10 Best Rescue Knives You Can Buy in 2024",
+        description:
+          "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
+        author: "Olivia Rhye",
+        date: "20 Jan 2022",
+      },
+      {
+        id: 2,
+        image: "/blog-image.jpg",
+        category: "News",
+        title: "10 Best Rescue Knives You Can Buy in 2024",
+        description:
+          "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
+        author: "Olivia Rhye",
+        date: "20 Jan 2022",
+      },
+      {
+        id: 3,
+        image: "/blog-image.jpg",
+        category: "News",
+        title: "10 Best Rescue Knives You Can Buy in 2024",
+        description:
+          "Disaster can strike anytime, anywhere. Your car might suddenly careen off the road before landing...",
+        author: "Olivia Rhye",
+        date: "20 Jan 2022",
+      },
+    ];

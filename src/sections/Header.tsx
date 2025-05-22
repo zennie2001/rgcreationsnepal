@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { ShoppingCart } from 'lucide-react';
 import { User } from 'lucide-react';
+import logo from "@/assets/images/final-logo.png"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,8 +23,8 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="hidden md:flex">
-          <Link href="/" className="text-xl font-medium">
-            Blades
+          <Link href="/">
+            <img src={logo.src} alt="Logo" className="w-36 " />
           </Link>
         </div>
 
@@ -69,16 +70,22 @@ const Header = () => {
           <Menu size={24} />
         </button>
         <div className="flex md:hidden">
-          <Link href="/" className="text-lg font-medium">
-            Blades
+          <Link href="/" >
+            <img src={logo.src} alt="Logo" className="w-24" />
           </Link>
         </div>
-        <div className="flex md:hidden md:justify-end">
+        <div className="flex md:hidden gap-3 md:justify-end">
+          <Link
+            href="/cart"
+            className="py-2"
+          >
+            <ShoppingCart size={24} fill="white" className="text-white" />
+          </Link>
           <Link
             href="/contact"
-            className="bg-primary text-darkGreen  hover:bg-darkGreen transition-colors px-2 py-1 rounded-md text-sm  font-semibold"
+            className=" py-2"
           >
-            Contact Us
+            <User size={24} fill="white" />
           </Link>
         </div>
 
@@ -97,29 +104,23 @@ const Header = () => {
                 className="absolute top-4 right-4 text-white"
                 onClick={() => setIsMenuOpen(false)}
               >
-                <X size={24} />
+                <X size={24} className="text-darkGreen" />
               </button>
 
-              <div className="mt-10 flex flex-col gap-6">
+              <div className="mt-10 flex flex-col gap-4">
                 {mainNavLinks.map((item, index) => (
                   <Link
                     key={index}
                     href={item.link}
                     className={`${
-                      index === 0 ? "text-darkGreen" : "text-white"
-                    } text-lg font-medium hover:text-darkGreen`}
+                      index === 0 ? "text-darkGreen" : "text-darkGreen"
+                    } text-base font-medium hover:bg-darkGreen hover:text-white px-2 py-1 rounded-sm`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.title}
                   </Link>
                 ))}
-                <Link
-                  href="/contact"
-                  className="border border-darkGreen text-white hover:bg-darkGreen transition-colors px-4 py-2 rounded-md text-center mt-4"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Contact Us
-                </Link>
+                
               </div>
             </div>
           </>

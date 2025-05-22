@@ -23,7 +23,7 @@ function BlogCard({ blog }: any) {
           {/* <p className="text-sm text-black mb-2">{blog.category}</p> */}
 
           <a
-            href={`/blogs/${createSlug(blog.title)}`}
+            href={`/blogs/details`}
             className="group flex items-start gap-4"
           >
             <h3 className="text-darkGreen text-lg font-medium leading-tight mb-3 group-hover:text-darkGreen transition-colors">
