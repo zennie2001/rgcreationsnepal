@@ -7,7 +7,7 @@ import products from "@/constants/products";
 const filterTabs = [
   { id: "featured", label: "Featured Products" },
   { id: "new", label: "New Arrivals" },
-  { id: "bestseller", label: "Best Seller" },
+  { id: "bestseller", label: "On Sale" },
 ];
 
 const Products = () => {
@@ -57,7 +57,7 @@ const Products = () => {
                 <img
                   src={product.image.src}
                   alt={product.name}
-                  className="w-full aspect-square object-cover "
+                  className="w-full aspect-square object-contain "
                 />
               </div>
 
