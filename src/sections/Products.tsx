@@ -14,7 +14,7 @@ const Products = () => {
   const [activeFilter, setActiveFilter] = useState("featured");
 
   return (
-    <section className="w-full bg-primary text-white py-16 px-6 md:px-12 lg:px-16">
+    <section className="w-full bg-primary text-white  px-6 md:px-12 lg:px-16">
       <div className="container mx-auto md:text-left text-center">
         {/* Product Range Heading */}
         <div className="mb-12">
