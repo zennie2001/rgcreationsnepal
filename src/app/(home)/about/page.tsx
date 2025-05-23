@@ -9,6 +9,7 @@ import { useState } from "react";
 import craft1 from "@/assets/images/about-blade.jpg";
 import craft2 from "@/assets/images/about-blade2.jpg";
 import craft3 from "@/assets/images/image-about.jpg";
+import { Check } from 'lucide-react';
 
 const socialMedia = [
   {
@@ -47,10 +48,14 @@ export default function AboutPage() {
               Purpose, Carried with Confidence
             </h2>
             <p className="text-black text-[13px] md:text-base md:text-left text-center leading-relaxed">
-              At Swift-Action, we craft more than blades — we build tools that
-              answer the call of speed, safety, and style. Every knife is a
-              product of thoughtful engineering and bold design, made to perform
-              when it matters most.
+              Khukuriblades.com is a proud, Nepali-owned company devoted to
+              preserving and promoting one of Nepal’s most iconic cultural
+              treasures — the Khukuri. More than just a weapon, the Khukuri is a
+              living symbol of Nepali identity, bravery, and craftsmanship. For
+              centuries, it has represented the strength of the legendary Gurkha
+              warriors, the rituals of mountain villages, and the deep-rooted
+              pride of our ancestors. At Khukuriblades.com, we honor this
+              heritage with every blade we forge.
             </p>
             <div className="flex flex-col md:text-left text-black text-center sm:flex-row gap-8 pt-4">
               <div className="flex-1">
@@ -129,9 +134,9 @@ export default function AboutPage() {
             </h2>
             <div className="w-full flex md:flex-row flex-col md:gap-8 gap-4">
               <p className="text-text w-full">
-                To be a leading gold jewellery provider in the UAE, offering
-                unparalleled quality, innovative designs, and exceptional
-                customer service to wholesale and retail customers alike.
+                To promote, preserve, and protect the traditional art of Khukuri
+                making by empowering local artisans and delivering handcrafted
+                blades that honor Nepali culture, history, and valor.
               </p>
             </div>
           </div>
@@ -141,9 +146,10 @@ export default function AboutPage() {
             </h2>
             <div className="w-full flex md:flex-row flex-col md:gap-8 gap-4">
               <p className="text-text w-full">
-                To redefine the gold jewellery industry by blending traditional
-                craftsmanship with modern elegance, ensuring accessibility and
-                affordability for all jewellery enthusiasts.
+                To become the global benchmark in authentic Khukuri
+                craftsmanship—celebrated for our quality, integrity, and
+                commitment to sustaining Nepal’s legendary blade-making
+                heritage.
               </p>
             </div>
           </div>
@@ -152,14 +158,16 @@ export default function AboutPage() {
       <section className="w-full flex_center lg:gap-12 gap-6 lg:px-24 px-4 lg:py-16 py-10 bg-lightGreen/70">
         <div className="flex container flex-col w-full gap-6">
           <h3 className=" text-xl md:text-3xl font-semibold text-center text-darkGreen">
-            At Khukuri Blades, we pride ourselves on being more than just a
-            supplier We are trusted experts in the gold industry, with over 15
-            years of experience in delivering exceptional quality and service.
+            Whether you are a military history enthusiast, a collector, an
+            outdoor adventurer, or simply someone who values authentic, handmade
+            artistry, you’ll find that our Khukuris are not just tools or
+            souvenirs — they are living relics of a warrior culture and a proud
+            nation.
           </h3>
         </div>
       </section>
 
-      <section className="flex_center flex-col container px-4 lg:px-0 lg:py-16 py-10 lg:gap-12 gap-6">
+      <section className="flex_center flex-col container mx-auto px-4 lg:px-0 lg:py-16 py-10 lg:gap-12 gap-6">
         <div className="flex md:flex-row flex-col gap-2 justify-between my-10 w-full">
           <Image
             src={craft1}
@@ -177,72 +185,42 @@ export default function AboutPage() {
             className=" md:w-[30%] w-full rounded-md shadow-lg hover:scale-110 transition-all duration-300  object-cover"
           />
         </div>
-        <div className="flex_center flex-col gap-8  w-full">
-          <div className="flex_center flex-col gap-8">
+        <div className="flex flex-col  gap-8  w-full">
+          <div className="flex flex-col gap-8">
             <p className="text-text text-base text-justify">
               At{" "}
               <span className=" font-semibold text-darkGreen text-justify w-full">
                 Khukuri Blades,
               </span>{" "}
-              we pride ourselves on being more than just a supplier – we are
-              trusted experts in the gold industry, with over 15 years of
-              experience in delivering exceptional quality and service. Here’s
-              why you should choose us:
+              we are committed to bringing you the very best:
             </p>
-            <ul className="list-disc">
-              <li className="mb-2 text-black">
-                <span className="text-black">
-                  Trusted Experts in the Gold Industry:
-                </span>{" "}
-                With over a decade of expertise, we have built a reputation for
-                reliability, precision, and commitment to quality. Our deep
-                understanding of the gold market ensures that we provide only
-                the best products to our clients.
+            <ul>
+              <li className="mb-2 flex items-center gap-2 text-black">
+                <Check className="bg-green-600 text-white rounded-sm" size={16} />
+                <span className="text-black">100% handmade in Nepal</span>{" "}
               </li>
-              <li className="mb-2 text-black">
+              <li className="mb-2 flex items-center gap-2 text-black">
+                <Check className="bg-green-600 text-white rounded-sm" size={16} />
                 <span className="text-black">
-                  100% Certified and Hallmarked Jewellery:
+                  Authentic designs based on historical and regional styles
                 </span>{" "}
-                All our jewellery is 100% certified and hallmarked, adhering to
-                the highest industry standards. This guarantees that every piece
-                is genuine, pure, and of the finest quality, giving you complete
-                peace of mind.
               </li>
-              <li className="mb-2 text-black">
+              <li className="mb-2 flex items-center gap-2 text-black">
+                <Check className="bg-green-600 text-white rounded-sm" size={16} />
                 <span className="text-black">
-                  Competitive Wholesale and Retail Prices:
+                  Ethically sourced and artisan-empowered
                 </span>{" "}
-                We offer highly competitive pricing for both wholesale and
-                retail, making it easier for you to access premium, 24-carat
-                gold jewellery at exceptional value. By sourcing gold directly
-                from trusted mine companies, we eliminate intermediaries,
-                passing on the savings to you.
               </li>
-              <li className="mb-2 text-black">
+              <li className="mb-2 flex items-center gap-2 text-black">
+                <Check className="bg-green-600 text-white rounded-sm" size={16} />
                 <span className="text-black">
-                  Customized Jewellery Crafting Services:
+                  Built for both beauty and performance
                 </span>{" "}
-                At Khukuri Blades, we understand that each customer has unique
-                needs. That’s why we offer customized jewellery crafting
-                services, allowing you to create bespoke pieces that meet your
-                specifications and preferences. Whether you're designing a
-                one-of-a-kind item or creating a signature collection, we bring
-                your vision to life with unparalleled craftsmanship.
               </li>
-              <li className="mb-2 text-black">
-                <span className="text-black">
-                  Secure and Insured Transactions:
-                </span>{" "}
-                We prioritize your safety and peace of mind. All transactions
-                with us are secure and fully insured, ensuring that your
-                investment is protected from start to finish. From the moment
-                you place an order to the final delivery, we guarantee a safe
-                and reliable experience.
-              </li>
+
               <p>
-                Choose Khukuri Bladesfor your wholesale and retail gold needs,
-                and experience the perfect blend of purity, quality, expertise,
-                and customer satisfaction.
+                When you hold one of our Khukuris in your hand, you're not just
+                holding a blade — you're holding a piece of Nepal’s soul.
               </p>
             </ul>
           </div>

@@ -5,9 +5,11 @@ import { Menu, X } from "lucide-react";
 import { ShoppingCart } from 'lucide-react';
 import { User } from 'lucide-react';
 import logo from "@/assets/images/final-logo.png"
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const mainNavLinks = [
     { title: "Home", link: "/" },
@@ -15,7 +17,7 @@ const Header = () => {
     { title: "Collections", link: "/collections" },
     { title: "Blogs", link: "/blogs" },
     { title: "Make your Custom Khukuri", link: "/custom-khukuri" },
-     { title: "Contact Us", link: "/contact" },
+    { title: "Contact Us", link: "/contact" },
   ];
 
   return (
@@ -31,12 +33,12 @@ const Header = () => {
         {/* Desktop Navigation - Centered */}
         <nav className="hidden md:flex  justify-center">
           <ul className="flex space-x-8">
-            {mainNavLinks.map((item, index) => (
-              <li key={index}>
+            {mainNavLinks.map((item) => (
+              <li key={item.link}>
                 <Link
                   href={item.link}
                   className={`${
-                    index === 0 ? "text-darkGreen font-semibold" : "text-white"
+                    pathname === item.link ? "text-darkGreen font-semibold" : "text-white"
                   } hover:text-darkGreen transition-colors font-medium`}
                 >
                   {item.title}
@@ -108,19 +110,18 @@ const Header = () => {
               </button>
 
               <div className="mt-10 flex flex-col gap-4">
-                {mainNavLinks.map((item, index) => (
+                {mainNavLinks.map((item) => (
                   <Link
-                    key={index}
+                    key={item.link}
                     href={item.link}
                     className={`${
-                      index === 0 ? "text-darkGreen" : "text-darkGreen"
+                      pathname === item.link ? "text-white bg-darkGreen" : "text-darkGreen"
                     } text-base font-medium hover:bg-darkGreen hover:text-white px-2 py-1 rounded-sm`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.title}
                   </Link>
                 ))}
-                
               </div>
             </div>
           </>

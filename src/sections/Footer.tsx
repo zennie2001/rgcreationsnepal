@@ -66,7 +66,7 @@ const Footer = () => {
         {/* Left Column */}
         <div>
           <div className="  text-center md:text-left">
-            <div className="w-60 p-4 bg-white rounded-lg">
+            <div className="w-60 p-4 mx-auto md:mx-0 bg-white rounded-lg">
               <Link href="/">
                 <img src={logo.src} alt="Logo" className="w-full" />
               </Link>

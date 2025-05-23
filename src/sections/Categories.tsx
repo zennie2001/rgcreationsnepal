@@ -2,17 +2,21 @@ import React from "react";
 import { FaMoneyBillWave } from "react-icons/fa";
 
 const advantages = [
+
   {
+    img:"/blade1.png",
     title: "Traditional",
     description:
       "Turning your investments into cash flows and planning to bless future generations.",
   },
   {
+     img:"/blade3.png",
     title: "Modern",
     description:
       "Turning your investments into cash flows and planning to bless future generations.",
   },
   {
+     img:"/blade2.png",
     title: "Custom",
     description:
       "Turning your investments into cash flows and planning to bless future generations.",
@@ -40,7 +44,7 @@ const Categories = () => {
             key={index}
             className="bg-darkGreen text-white p-8 flex flex-col items-center md:items-start space-y-4"
           >
-            <FaMoneyBillWave className="text-white text-3xl" />
+            <img src={item.img} alt={item.title} className="w-14 h-14" />
             <h3 className="text-lg text-center md:text-left font-semibold leading-snug">{item.title}</h3>
             <p className="text-xs md:text-sm text-center md:text-left opacity-90">{item.description}</p>
           </div>

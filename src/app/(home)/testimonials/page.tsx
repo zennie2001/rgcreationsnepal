@@ -66,11 +66,11 @@ export default function Testimonials() {
           smallTitle="Client Testimonials"
           title="Testimonials that inspire confidence"
         />
-        <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 w-full gap-8 gap-y-8">
+        {/* <div className="grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 w-full gap-8 gap-y-8">
           {blogs.map((blog, index) => {
             return <TestimonialCard object={blog} key={index} />;
           })}
-        </div>
+        </div> */}
       </section>
     </main>
   );

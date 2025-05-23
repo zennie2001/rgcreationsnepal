@@ -1,26 +1,55 @@
 "use client";
-import Image from "next/image";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import { RefObject } from "react";
 
-const TestimonialCard = ({ name, description, image }: any) => (
-  <section className="bg-gradient-to-r from-[#888888] to-[#9e9e9e] rounded-[24px]">
-    <div className="relative z-10 m-4 bg-gradient-to-br from-[#adadad] to-[#d9d9d9] text-white px-8 py-10 rounded-[24px] max-w-4xl shadow-xl">
-      <div className="text-darkGreen text-[80px] ">“</div>
-      <p className="text-center text-black text-sm sm:text-base italic leading-relaxed mb-8">
+interface Props {
+  name: string;
+  description: string;
+  prevRef?: RefObject<HTMLButtonElement>;
+  nextRef?: RefObject<HTMLButtonElement>;
+  onPrevClick?: () => void;
+  onNextClick?: () => void;
+}
+
+const TestimonialCard = ({ name, description, prevRef, nextRef, onPrevClick, onNextClick }: Props) => (
+  <section className="bg-gradient-to-r from-[#888888] to-[#9e9e9e] rounded-2xl shadow-inner w-full max-w-4xl p-4">
+    <div className="relative flex flex-col justify-center items-center bg-gradient-to-br from-[#adadad] to-[#d9d9d9] rounded-2xl px-6 py-12">
+      {/* Quote Icon */}
+      <div className="text-darkGreen text-[80px]  leading-none pt-4">"</div>
+
+      {/* Description */}
+      <p className="text-sm sm:text-base text-black italic leading-7 text-center max-w-3xl">
         {description}
       </p>
-      <div className="flex flex-col items-center">
-        <Image
-          width={80}
-          height={80}
-          src={image}
-          alt={name}
-          className="w-16 h-16 rounded-full border-2 border-darkGreen mb-2"
-        />
-        <h3 className="text-sm md:text-base font-medium text-black uppercase tracking-wide">
-          {name}
-        </h3>
-        <span className="text-xs md:text-sm text-black">Verified Customer</span>
-      </div>
+
+      {/* Arrows (if present) */}
+      {prevRef && nextRef && (
+        <div className="flex justify-between w-[90%] gap-10 mt-10">
+          <button
+            ref={prevRef}
+            onClick={onPrevClick}
+            className="text-black hover:text-darkGreen transition"
+            aria-label="Previous"
+          >
+            <ArrowLeft size={24} />
+          </button>
+          {/* Name and Role */}
+          <div className="my-10 text-center">
+            <h3 className="text-black font-semibold text-xs sm:text-sm uppercase">
+              {name}
+            </h3>
+            <p className="text-xs text-gray-700 mt-1">Founder of Technology</p>
+          </div>
+          <button
+            ref={nextRef}
+            onClick={onNextClick}
+            className="text-black hover:text-darkGreen transition"
+            aria-label="Next"
+          >
+            <ArrowRight size={24} />
+          </button>
+        </div>
+      )}
     </div>
   </section>
 );
