@@ -1,71 +1,75 @@
-import SectionHeader from "../components/SectionHeader";
+"use client";
+import { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import type { Swiper as SwiperType } from 'swiper';
+import "swiper/css";
+import "swiper/css/navigation";
+
 import TestimonialCard from "@/components/TestimonialCard";
-import blogImage from "../assets/images/john.png";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const blogs = [
   {
-    image: blogImage,
-    name: "Anjali K.",
-    description: `I had the most amazing experience shopping at Start Laxmi Jewellery! The designs are unique, and the quality of the pieces is unmatched...`,
+    name: "Gurkha Blade Enthusiast",
+    description: `The craftsmanship of the Khukuris from this site is simply unparalleled. Each blade is a testament to authentic Gurkha tradition, offering superb balance and a razor-sharp edge that excels in both utility and display. The craftsmanship of the Khukuris from this site is simply unparalleled. `,
   },
   {
-    image: blogImage,
-    name: "Ravi S.",
-    description: `Start Laxmi Jewellery is my go-to place for all things elegant and timeless. From exquisite traditional pieces to trendy modern designs...`,
+    name: "Outdoor Adventurer",
+    description: `I rely on my Khukuri for all my outdoor expeditions. Its robust construction and incredible versatility make it the ultimate tool for camping, bushcraft, and survival. It truly holds up to the toughest challenges. I rely on my Khukuri for all my outdoor expeditions. `,
   },
   {
-    image: blogImage,
-    name: "Maya L.",
-    description: `I’ve been a loyal customer of Start Laxmi Jewellery for years, and they never disappoint. The quality of their gold and diamond jewellery...`,
+    name: "Collector of Fine Edges",
+    description: `As a collector, I seek authenticity and quality, and these Khukuris deliver on every front. The historical accuracy and meticulous attention to detail in each piece are remarkable, making them true highlights of my collection. As a collector, I seek authenticity and quality, and these Khukuris deliver on every front. `,
   },
   {
-    image: blogImage,
-    name: "Sandeep P.",
-    description: `Shopping at Start Laxmi Jewellery is always a great experience. The staff takes the time to understand your preferences...`,
+    name: "Martial Arts Practitioner",
+    description: `The training Khukuri is perfectly weighted and balanced, providing an ideal feel for practicing traditional movements. Its durability ensures it can withstand rigorous training, making it an essential part of my martial arts regimen. The training Khukuri is perfectly weighted and balanced, providing an ideal feel for practicing traditional movements. `,
   },
 ];
 
 export default function Testimonials() {
+  const prevRef = useRef<HTMLButtonElement>(null);
+  const nextRef = useRef<HTMLButtonElement>(null);
+  const swiperRef = useRef<SwiperType | null>(null);
+
   return (
-    <main className="bg-primary">
-      <section className="container flex flex-col w-full md:py-24 font-jakarta  text-white gap-16">
-        <div className="text-left">
-          <p className="text-base md:text-lg text-darkGreen text-center md:text-left font-semibold uppercase">
-            Testimonials
+    <main className="bg-primary md:py-6">
+      <section className="container font-jakarta text-white px-4">
+        
+        <div className="mb-10">
+          <p className="text-darkGreen text-center md:text-left md:text-lg text-base">
+            Testimonails
           </p>
-          <h2 className="text-2xl md:text-3xl text-black lg:text-4xl text-center md:text-left font-semibold mt-2 leading-snug">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-black text-center md:text-left font-semibold">
             Trusted by Thousands.
             <br />
             Carried with Confidence.
           </h2>
         </div>
 
-        <div className="w-full px-4 flex justify-center">
-          <TestimonialCard
-            name={blogs[0].name}
-            description={blogs[0].description}
-            image={blogs[0].image}
-          />
-        </div>
-
-        <div className="flex items-center justify-center gap-10">
-          <button className="text-white text-xl hover:text-darkGreen transition">
-            ←
-          </button>
-          <div className="flex items-center gap-2">
-            {blogs.map((_, index) => (
-              <div
-                key={index}
-                className={`rounded-full ${
-                  index === 0 ? "w-4 h-4 bg-darkGreen" : "w-3 h-3 bg-gray-600"
-                }`}
+        <Swiper
+          modules={[Navigation]}
+          onBeforeInit={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+          spaceBetween={30}
+          slidesPerView={1}
+          className="max-w-4xl mx-auto"
+        >
+          {blogs.map((testimonial, index) => (
+            <SwiperSlide key={index}>
+              <TestimonialCard
+                name={testimonial.name}
+                description={testimonial.description}
+                prevRef={prevRef}
+                nextRef={nextRef}
+                onPrevClick={() => swiperRef.current?.slidePrev()}
+                onNextClick={() => swiperRef.current?.slideNext()}
               />
-            ))}
-          </div>
-          <button className="text-white text-xl hover:text-darkGreen transition">
-            →
-          </button>
-        </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </section>
     </main>
   );
