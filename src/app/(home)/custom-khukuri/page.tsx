@@ -57,9 +57,36 @@ const CustomKhukuri = () => {
       setCurrentStep(currentStep - 1);
     }
   };
+const renderProgressBar = () => (
+  <div className="mb-8">
+    {/* Mobile view - show only current step */}
+    <div className="md:hidden">
+      <div className="flex flex-col items-center">
+        <div className="text-lg font-semibold text-gray-700 mb-2 text-center">
+          {steps[currentStep - 1]} 
+        </div>
+        <div className="flex items-center space-x-1 mb-2">
+          {steps.map((_, index) => (
+            <div
+              key={index}
+              className={`h-2 w-2 rounded-full ${
+                index + 1 === currentStep
+                  ? "bg-green-500"
+                  : index + 1 < currentStep
+                  ? "bg-green-500"
+                  : "bg-gray-300"
+              }`}
+            />
+          ))}
+        </div>
+        <div className="text-sm text-gray-500">
+          Step {currentStep} of {steps.length}
+        </div>
+      </div>
+    </div>
 
-  const renderProgressBar = () => (
-    <div className="flex items-center justify-between mb-8">
+    {/* Desktop view - show all steps */}
+    <div className="hidden md:flex items-center justify-between">
       {steps.map((step, index) => {
         const stepNumber = index + 1;
         const isActive = stepNumber === currentStep;
@@ -79,13 +106,14 @@ const CustomKhukuri = () => {
                 } ${
                   stepNumber === 1 ? "w-48" : stepNumber === 5 ? "w-56" : "w-60"
                 }`}
-              ></div>
+              />
             </div>
           </div>
         );
       })}
     </div>
-  );
+  </div>
+);
 
   const renderStep1 = () => (
     <div className="space-y-6">
@@ -151,7 +179,7 @@ const CustomKhukuri = () => {
         </div>
       </div>
 
-      <div className="flex justify-end">
+      <div className="flex md:justify-end justify-center">
         <button
           onClick={handleNext}
           className="px-10 py-2 bg-darkGreen text-white rounded-full hover:bg-green-800"
@@ -226,7 +254,7 @@ const CustomKhukuri = () => {
         </div>
       </div>
 
-      <div className="flex justify-end gap-4">
+      <div className="flex md:justify-end justify-center gap-4">
         <button
           onClick={handleBack}
           className="px-10 py-2 bg-black text-white rounded-full hover:bg-gray-800"
@@ -309,7 +337,7 @@ const CustomKhukuri = () => {
         </div>
       </div>
 
-      <div className="flex justify-end gap-4">
+      <div className="flex md:justify-end justify-center gap-4">
         <button
           onClick={handleBack}
           className="px-10 py-2 bg-black text-white rounded-full hover:bg-gray-800"
@@ -377,7 +405,7 @@ const CustomKhukuri = () => {
         </div>
       </div>
 
-      <div className="flex justify-end gap-4">
+      <div className="flex md:justify-end justify-center gap-4">
         <button
           onClick={handleBack}
           className="px-10 py-2 bg-black text-white rounded-full hover:bg-gray-800"
@@ -533,7 +561,7 @@ const CustomKhukuri = () => {
         </div>
       </div>
 
-      <div className="flex mb-4 justify-end gap-4">
+      <div className="flex mb-4 md:justify-end justify-center gap-4">
         <button
           onClick={handleBack}
           className="px-10 py-2 bg-black text-white rounded-full hover:bg-gray-800"
