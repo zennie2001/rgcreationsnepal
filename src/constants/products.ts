@@ -15,7 +15,7 @@ import b2 from "@/assets/images/b2.jpg"
 const  products = [
     {
       id: 1,
-      name: 'Good dui chirra khukurī',
+      name: 'Good dui chirra khukuri',
       brand: "Benchmade",
       originalPrice: 999.0,
       salePrice: 899.0,
@@ -35,7 +35,7 @@ const  products = [
     },
     {
       id: 3,
-      name: 'A fine mid 19th century khukurī',
+      name: 'A fine mid 19th century khukuri',
       brand: "Benchmade",
       originalPrice: 999.0,
       salePrice: 899.0,
@@ -45,7 +45,7 @@ const  products = [
     },
     {
       id: 4,
-      name: 'A fine 19th century khukurī',
+      name: 'A fine 19th century khukuri',
       brand: "Benchmade",
       originalPrice: 999.0,
       salePrice: 899.0,
@@ -55,7 +55,7 @@ const  products = [
     },
     {
         id: 5,
-        name: 'Gold mounted presentation khukurī',
+        name: 'Gold mounted presentation khukuri',
         brand: "Benchmade",
         originalPrice: 999.0,
         salePrice: 899.0,
@@ -75,7 +75,7 @@ const  products = [
       },
       {
         id: 7,
-        name: 'Khukurī with tools',
+        name: 'Khukuri with tools',
         brand: "Benchmade",
         originalPrice: 999.0,
         salePrice: 899.0,
@@ -85,7 +85,7 @@ const  products = [
       },
       {
         id: 8,
-        name: 'Ramree veteran khukurī',
+        name: 'Ramree veteran khukuri',
         brand: "Benchmade",
         originalPrice: 999.0,
         salePrice: 899.0,

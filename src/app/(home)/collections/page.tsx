@@ -38,6 +38,7 @@ const colors = [
 ];
 
 const KnivesCollectionPage: React.FC = () => {
+  const formatSlug = (name: string) => name.toLowerCase().replace(/ /g, "-");
   // State for filters
   const [priceRange, setPriceRange] = useState<[number, number]>([50, 200]);
   const [openSections, setOpenSections] = useState<{ [key: string]: boolean }>({
@@ -71,50 +72,6 @@ const KnivesCollectionPage: React.FC = () => {
     } else {
       setPriceRange([priceRange[0], value]);
     }
-  };
-
-  // Filter options data with the new categories
-  const filterOptions: { [key: string]: FilterOption[] } = {
-    Style: [
-      { label: "Modern", count: 42 },
-      { label: "Traditional", count: 35 },
-      { label: "Tactical", count: 28 },
-      { label: "Historical Replica", count: 15 },
-      { label: "Custom Design", count: 20 },
-    ],
-    "Blade Length": [
-      { label: "Under 3 inches (Small)", count: 32 },
-      { label: "3–5 inches (Medium)", count: 45 },
-      { label: "6–9 inches (Large)", count: 28 },
-      { label: "10–15 inches (Extra Large)", count: 17 },
-      { label: "Over 15 inches (Oversized/Swords)", count: 10 },
-    ],
-    "Handle Material": [
-      { label: "Wood", count: 30 },
-      { label: "Micarta", count: 22 },
-      { label: "G10 Composite", count: 25 },
-      { label: "Bone or Horn", count: 15 },
-      { label: "Rubberized Grip", count: 20 },
-      { label: "Metal", count: 18 },
-      { label: "Leather Wrapped", count: 12 },
-    ],
-    "Blade Finish": [
-      { label: "Mirror Polish", count: 24 },
-      { label: "Satin Finish", count: 32 },
-      { label: "Stonewashed", count: 18 },
-      { label: "Black Oxide/Coated", count: 22 },
-      { label: "Acid Etched", count: 14 },
-      { label: "Damascus Patterned", count: 16 },
-      { label: "Raw/Forge Finish", count: 10 },
-    ],
-    "Scabbard Type": [
-      { label: "Leather Scabbard", count: 28 },
-      { label: "Wooden Sheath", count: 18 },
-      { label: "Kydex Sheath", count: 24 },
-      { label: "Nylon Case", count: 20 },
-      { label: "No Scabbard", count: 15 },
-      { label: "Decorative Display Sheath", count: 10 },
-    ],
   };
 
   const ratings = [5, 4, 3, 2, 1];
@@ -335,20 +292,24 @@ const KnivesCollectionPage: React.FC = () => {
                     className="bg-primary border-darkGreen border rounded-lg overflow-hidden"
                   >
                     {/* Product Image */}
-                    <div className="relative">
-                      <img
-                        src={product.image.src}
-                        alt={product.name}
-                        className="w-full aspect-square object-cover "
-                      />
-                    </div>
+                    <Link href={`/collections/${formatSlug(product.name)}`}>
+                      <div className="relative">
+                        <img
+                          src={product.image.src}
+                          alt={product.name}
+                          className="w-full aspect-square object-cover "
+                        />
+                      </div>
+                    </Link>
 
                     {/* Product Info */}
                     <div className="p-4">
-                      <p className="text-gray-500 text-sm">{product.brand}</p>
-                      <h3 className="font-medium text-black mt-1 mb-4 line-clamp-2">
-                        {product.name}
-                      </h3>
+                      <Link href={`/collections/${formatSlug(product.name)}`}>
+                        <p className="text-gray-500 text-sm">{product.brand}</p>
+                        <h3 className="font-medium text-black mt-1 mb-4 line-clamp-2">
+                          {product.name}
+                        </h3>
+                      </Link>
 
                       {/* Price */}
                       <div className="flex items-center justify-between gap-2">

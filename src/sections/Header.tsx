@@ -57,7 +57,7 @@ const Header = () => {
             <ShoppingCart size={28} fill="white" className="text-white" />
           </Link>
           <Link
-            href="/contact"
+            href="/login"
             className=" py-2"
           >
             <User size={28} fill="white" />
@@ -84,7 +84,7 @@ const Header = () => {
             <ShoppingCart size={24} fill="white" className="text-white" />
           </Link>
           <Link
-            href="/contact"
+            href="/login"
             className=" py-2"
           >
             <User size={24} fill="white" />
