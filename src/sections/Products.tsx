@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Heart } from "lucide-react";
 import products from "@/constants/products";
+import Link from "next/link";
 
 // Filter tabs
 const filterTabs = [
@@ -11,6 +12,7 @@ const filterTabs = [
 ];
 
 const Products = () => {
+  const formatSlug = (name: string) => name.toLowerCase().replace(/ /g, "-");
   const [activeFilter, setActiveFilter] = useState("featured");
 
   return (
@@ -53,20 +55,24 @@ const Products = () => {
               className="bg-white border-2 border-darkGreen rounded-2xl overflow-hidden"
             >
               {/* Product Image */}
-              <div className="relative">
-                <img
-                  src={product.image.src}
-                  alt={product.name}
-                  className="w-full aspect-square object-contain "
-                />
-              </div>
+              <Link href={`/collections/${formatSlug(product.name)}`}>
+                <div className="relative">
+                  <img
+                    src={product.image.src}
+                    alt={product.name}
+                    className="w-full aspect-square object-contain "
+                  />
+                </div>
+              </Link>
 
               {/* Product Info */}
               <div className="p-4">
+                <Link href={`/collections/${formatSlug(product.name)}`}>
                 <p className="text-gray-500 text-sm">{product.brand}</p>
                 <h3 className="font-medium text-black mt-1 mb-4 line-clamp-2">
                   {product.name}
                 </h3>
+                </Link >
 
                 {/* Price */}
                 <div className="flex items-center gap-2">
@@ -83,8 +89,8 @@ const Products = () => {
 
                 {/* Buy Now Button */}
                 <div className="flex mt-4 gap-2">
-                  <button className="bg-gray-700 hover:bg-gray-600  text-white py-2 px-4 rounded-xl rounded flex-grow">
-                    Buy Now
+                  <button className="bg-gray-700 hover:bg-gray-600  text-white py-2 px-4 rounded-xl flex-grow">
+                    Add To Cart
                   </button>
                   {/* Wishlist Button */}
                   <button className=" bg-darkGreen w-12 h-12   flex items-center justify-center rounded-xl">
