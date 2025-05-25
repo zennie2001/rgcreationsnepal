@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Left Column */}
         <div>
           <div className="  text-center md:text-left">
@@ -88,7 +88,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Middle Column */}
+        {/*1st Middle Column */}
         <div className="flex flex-col  text-center md:text-left gap-6">
           <div>
             <h4 className="text-white font-semibold text-base md:text-lg  mb-4">
@@ -112,6 +112,30 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        {/*2nd Middle Column */}
+        <div className="flex flex-col  text-center md:text-left gap-6">
+          <div>
+            <h4 className="text-white font-semibold text-base md:text-lg  mb-4">
+              Company
+            </h4>
+            <ul className="space-y-2 text-sm text-gray-300">
+              <li>
+                <Link href="/#">What is a Khukuri/kukri?</Link>
+              </li>
+              <li>
+                <Link href="/#">How We Forge a Khukuri/kukri?</Link>
+              </li>
+              <li>
+                <Link href="/#">
+                  How to care khukuri/kukri?
+                </Link>
+              </li>
+              <li>
+                <Link href="/#">How to use khukuri/kukri?</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         {/* Right Column */}
         <div className="flex flex-col gap-6">
@@ -120,7 +144,7 @@ const Footer = () => {
               Contact
             </h4>
             <ul className="space-y-2 text-sm text-gray-300 flex flex-col items-center md:items-start">
-              <li className="flex gap-2 items-center text-center">
+              <li className="flex gap-2 items-center text-left">
                 <MapPin className="w-4 h-4 mt-1 ms-6 md:ms-0" />
                 Tyler, Alabama 36785 (not open to public)
               </li>

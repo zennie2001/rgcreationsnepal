@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { Heart } from "lucide-react";
 import products from "@/constants/products";
 import Link from "next/link";
+import { useCartStore } from "@/app/(home)/store/useCartStore";
+import { toast } from "react-toastify";
 
 // Filter tabs
 const filterTabs = [
@@ -14,6 +16,12 @@ const filterTabs = [
 const Products = () => {
   const formatSlug = (name: string) => name.toLowerCase().replace(/ /g, "-");
   const [activeFilter, setActiveFilter] = useState("featured");
+  const addItem = useCartStore((state) => state.addItem);
+
+  const handleAddToCart = (product: any) => {
+    addItem(product);
+    toast.success("Added to cart!");
+  };
 
   return (
     <section className="w-full bg-primary text-white  px-6 md:px-12 lg:px-16">
@@ -89,7 +97,10 @@ const Products = () => {
 
                 {/* Buy Now Button */}
                 <div className="flex mt-4 gap-2">
-                  <button className="bg-gray-700 hover:bg-gray-600  text-white py-2 px-4 rounded-xl flex-grow">
+                  <button 
+                    onClick={() => handleAddToCart(product)}
+                    className="bg-gray-700 hover:bg-gray-600  text-white py-2 px-4 rounded-xl flex-grow"
+                  >
                     Add To Cart
                   </button>
                   {/* Wishlist Button */}
