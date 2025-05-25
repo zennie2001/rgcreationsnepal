@@ -2,14 +2,16 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { ShoppingCart } from 'lucide-react';
-import { User } from 'lucide-react';
-import logo from "@/assets/images/final-logo.png"
-import { usePathname } from 'next/navigation';
+import { ShoppingCart } from "lucide-react";
+import { User } from "lucide-react";
+import logo from "@/assets/images/final-logo.png";
+import { usePathname } from "next/navigation";
+import { useCartStore } from "@/app/(home)/store/useCartStore";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
+  const totalItems = useCartStore((state) => state.getTotalItems());
 
   const mainNavLinks = [
     { title: "Home", link: "/" },
@@ -38,7 +40,9 @@ const Header = () => {
                 <Link
                   href={item.link}
                   className={`${
-                    pathname === item.link ? "text-darkGreen font-semibold" : "text-white"
+                    pathname === item.link
+                      ? "text-darkGreen font-semibold"
+                      : "text-white"
                   } hover:text-darkGreen transition-colors font-medium`}
                 >
                   {item.title}
@@ -49,17 +53,14 @@ const Header = () => {
         </nav>
 
         {/* Contact Button */}
-        <div className=" hidden md:flex md:justify-end gap-4">
-          <Link
-            href="/cart"
-            className="py-2"
-          >
+        <div className=" hidden md:flex  md:justify-end gap-4">
+          <Link href="/cart" className="py-2 relative">
+            <span className="rounded-full -top-1 left-4 bg-red-500 w-4 h-4 flex items-center justify-center absolute">
+              {totalItems}
+            </span>
             <ShoppingCart size={28} fill="white" className="text-white" />
           </Link>
-          <Link
-            href="/login"
-            className=" py-2"
-          >
+          <Link href="/login" className=" py-2">
             <User size={28} fill="white" />
           </Link>
         </div>
@@ -72,21 +73,19 @@ const Header = () => {
           <Menu size={24} />
         </button>
         <div className="flex md:hidden">
-          <Link href="/" >
+          <Link href="/">
             <img src={logo.src} alt="Logo" className="w-24" />
           </Link>
         </div>
         <div className="flex md:hidden gap-3 md:justify-end">
-          <Link
-            href="/cart"
-            className="py-2"
-          >
+          <Link href="/cart" className="py-2 relative">
+            {" "}
+            <span className="rounded-full -top-1 left-4 bg-red-600 w-4 h-4 flex items-center justify-center absolute">
+              {totalItems}
+            </span>
             <ShoppingCart size={24} fill="white" className="text-white" />
           </Link>
-          <Link
-            href="/login"
-            className=" py-2"
-          >
+          <Link href="/login" className=" py-2">
             <User size={24} fill="white" />
           </Link>
         </div>
@@ -115,7 +114,9 @@ const Header = () => {
                     key={item.link}
                     href={item.link}
                     className={`${
-                      pathname === item.link ? "text-white bg-darkGreen" : "text-darkGreen"
+                      pathname === item.link
+                        ? "text-white bg-darkGreen"
+                        : "text-darkGreen"
                     } text-base font-medium hover:bg-darkGreen hover:text-white px-2 py-1 rounded-sm`}
                     onClick={() => setIsMenuOpen(false)}
                   >

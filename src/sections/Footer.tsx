@@ -116,7 +116,7 @@ const Footer = () => {
         <div className="flex flex-col  text-center md:text-left gap-6">
           <div>
             <h4 className="text-white font-semibold text-base md:text-lg  mb-4">
-              Company
+              Khukuri/Kukri Info
             </h4>
             <ul className="space-y-2 text-sm text-gray-300">
               <li>

@@ -4,7 +4,7 @@ import knifeImage from "@/assets/images/image-about.jpg";
 export default function About() {
   return (
     <main className=" bg-primary">
-      <section className="flex flex-col lg:flex-row w-full container text-white px-5 py-16 lg:px-0 lg:py-28 items-center gap-12">
+      <section className="flex flex-col lg:flex-row w-full container text-white px-5 py-10 lg:px-0 lg:py-16  gap-12">
         {/* Left Content */}
         <div className="w-full lg:w-1/2  flex flex-col gap-6">
           <p className="text-darkGreen md:text-left text-center font-medium text-base md:text-lg -mb-4">About us</p>
