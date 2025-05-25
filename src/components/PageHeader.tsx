@@ -18,7 +18,7 @@ export default function PageHeader({
         className="w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-lightGreen to-darkGreen"></div>
-      <div className="flex_center flex-col gap-6 absolute">
+      <div className="flex_center flex-col gap-4 absolute">
         <h1 className="text-2xl   text-center font-semibold">
           {title}
         </h1>
