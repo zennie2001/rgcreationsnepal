@@ -46,12 +46,12 @@ const ProductCard = ({ product, image, price, desc, id, viewMode }: any) => {
       <div className="mt-4 flex justify-between items-center">
         <button
           onClick={handleAddToCart}
-          className="text-semibold text-ascent-1 px-4 py-2 border-2 border-[#dda303] rounded-lg hover:bg-darkGreen hover:text-white transition"
+          className="text-semibold text-ascent-1 px-4 py-2 border-2 border-darkGreen rounded-lg hover:bg-darkGreen hover:text-white transition"
         >
           Add to Cart
         </button>
         <Link href={`/product/${formatSlug(product)}`} passHref>
-          <button className="text-semibold text-ascent-1 px-4 py-2 border-2 border-[#dda303] rounded-lg hover:bg-darkGreen hover:text-white transition">
+          <button className="text-semibold text-ascent-1 px-4 py-2 border-2 border-darkGreen rounded-lg hover:bg-darkGreen hover:text-white transition">
             Buy Now
           </button>
         </Link>
@@ -74,12 +74,12 @@ const ProductCard = ({ product, image, price, desc, id, viewMode }: any) => {
           <Link
             href="#"
             onClick={handleAddToCart}
-            className="text-xs text-ascent-1 px-4 py-2 border-2 border-[#dda303] rounded-lg hover:bg-darkGreen hover:text-white transition"
+            className="text-xs text-ascent-1 px-4 py-2 border-2 border-darkGreen rounded-lg hover:bg-darkGreen hover:text-white transition"
           >
             Add to Cart
           </Link>
           <Link href={`/product/${formatSlug(product)}`} passHref>
-            <button className="text-xs text-ascent-1 px-4 py-2 border-2 border-[#dda303] rounded-lg hover:bg-darkGreen hover:text-white transition">
+            <button className="text-xs text-ascent-1 px-4 py-2 border-2 border-darkGreen rounded-lg hover:bg-darkGreen hover:text-white transition">
               More Details
             </button>
           </Link>

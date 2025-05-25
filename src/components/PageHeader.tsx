@@ -11,15 +11,15 @@ export default function PageHeader({
   link: string;
 }) {
   return (
-    <div className="w-full  h-60 md:h-80 bg-darkGreen flex_center flex-col text-primary relative">
+    <div className="w-full  h-44  bg-darkGreen flex_center flex-col text-primary relative">
       <Image
         src={pageHeaderImage}
         alt="page header image"
         className="w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-gradient-to-r from-lightGreen to-darkGreen"></div>
-      <div className="flex_center flex-col gap-8 absolute">
-        <h1 className="text-2xl md:text-[2.5rem] mt-10 md:mt-32 text-center font-semibold">
+      <div className="flex_center flex-col gap-6 absolute">
+        <h1 className="text-2xl md:text-3xl  text-center font-semibold">
           {title}
         </h1>
         <div className="flex_center gap-3 py-2 px-4 border border-primary rounded-md text-base">

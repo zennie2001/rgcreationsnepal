@@ -266,7 +266,135 @@ export default function ProductDetailClient({ product, reviews }: Props) {
             </button>
           </div>
         </div>
+        
       </div>
+      {/* Product details tabs */}
+        <div className="mb-12">
+          <div className="border-b bg-[#fafafa] border-gray-300 mb-6">
+            <div className="flex">
+              <button
+                className={`py-3 px-6 font-medium relative ${
+                  selectedTab === "details" ? "text-gray-800" : "text-gray-500"
+                }`}
+                onClick={() => setSelectedTab("details")}
+              >
+                Product Details
+                {selectedTab === "details" && (
+                  <div className="absolute bottom-0 left-0 w-full h-0.5 bg-green-800"></div>
+                )}
+              </button>
+              <button
+                className={`py-3 px-6 font-medium relative ${
+                  selectedTab === "reviews" ? "text-gray-800" : "text-gray-500"
+                }`}
+                onClick={() => setSelectedTab("reviews")}
+              >
+                Reviews
+                {selectedTab === "reviews" && (
+                  <div className="absolute bottom-0 left-0 w-full h-0.5 bg-green-800"></div>
+                )}
+              </button>
+            </div>
+          </div>
+
+          {selectedTab === "details" && (
+            <div className="prose max-w-none">
+              <h2 className="text-xl font-bold mb-4">
+                Talwar Sword – Hand-Forged Indo-Nepalese Blade with Brass Hilt
+              </h2>
+              <p className="mb-4">
+                The 24-inch Talwar sword by expert forge talents features
+                Indo-Nepalese blade design with the ornamental beauty of a
+                handcrafted brass hilt. Forged in Nepal using traditional
+                techniques and regional influence, the blade represents a
+                harmonious blend of Eastern and Western sword-making traditions,
+                precisely curved for ceremonial elegance.
+              </p>
+              <p className="mb-4">
+                Crafted from high-carbon steel salvaged from truck leaf springs,
+                the blade is water-tempered to provide optimal hardness and
+                flexibility. The curve is a dramatic 24-inch sweep with
+                exquisite along cutting, sharpened to a fine edge and polished
+                for a semi-reflective finish.
+              </p>
+              <p className="mb-4">
+                The handcrafted brass hilt features intricate detailing inspired
+                by traditional Indo-Nepalese ornamental designs and elegant
+                Tibetan flourishes. The sword comes with a scabbard for safe
+                storage and ceremonial display. Whether used for martial
+                training, costume, or collection, this Talwar sword is a
+                powerful presence in both form and function.
+              </p>
+              <p>
+                The Talwar is a curved blade with roots in the Indian
+                subcontinent, heavily influenced by Persian scimitars and
+                Central Asian weapons. It was adopted by Indian and Nepali
+                warriors alike for its curved shape, fine edge and flared tip
+                that effectively combines the cutting/slashing capabilities of
+                Eastern/Western blade designs to create an innovative and
+                historical significance.
+              </p>
+              <button className="text-green-800 font-medium mt-4">
+                View More
+              </button>
+            </div>
+          )}
+
+          {selectedTab === "reviews" && (
+            <div>
+              <div className="flex justify-between items-center mb-6">
+                <h2 className="text-xl font-bold">All Reviews (449)</h2>
+                <div className="flex gap-4 items-center">
+                  <div className="flex items-center gap-2">
+                    <span className="text-gray-600">Sort by:</span>
+                    <select className="border border-gray-300 rounded px-2 py-1 text-sm">
+                      <option>Latest</option>
+                      <option>Highest Rated</option>
+                      <option>Lowest Rated</option>
+                    </select>
+                  </div>
+                  <button className="bg-green-800 hover:bg-green-700 text-white px-4 py-2 rounded text-sm">
+                    Write a Review
+                  </button>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {reviews.map((review) => (
+                  <div
+                    key={review.id}
+                    className="border border-gray-200 rounded-lg p-4 relative"
+                  >
+                    <div className="flex mb-2">
+                      {renderStars(review.rating)}
+                    </div>
+                    <h3 className="font-bold flex items-center gap-2 mb-1">
+                      {review.author}
+                      {review.verified && (
+                        <span className="bg-green-100 text-green-600 text-xs px-1 py-0.5 rounded-full">
+                          ✓
+                        </span>
+                      )}
+                    </h3>
+                    <p className="text-gray-600 mb-4">{review.content}</p>
+                    <span className="text-gray-500 text-sm">
+                      Posted on {review.date}
+                    </span>
+                    <button className="absolute top-4 right-4 text-gray-500">
+                      •••
+                    </button>
+                  </div>
+                ))}
+              </div>
+
+              <div className="flex justify-center mt-8">
+                <button className="bg-green-800 hover:bg-green-700 text-white py-2 px-6 rounded">
+                  Load More Reviews
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
     </>
   );
 }

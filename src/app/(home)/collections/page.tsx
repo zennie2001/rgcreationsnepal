@@ -16,6 +16,8 @@ import productItems from "@/constants/products";
 import Image from "next/image";
 import { Heart } from "lucide-react";
 import Link from "next/link";
+import { useCartStore } from "@/app/(home)/store/useCartStore";
+import { toast } from "react-toastify";
 
 // Types
 interface FilterOption {
@@ -51,6 +53,12 @@ const KnivesCollectionPage: React.FC = () => {
     "Blade Finish": true,
     "Scabbard Type": true,
   });
+  const addItem = useCartStore((state) => state.addItem);
+
+  const handleAddToCart = (product: any) => {
+    addItem(product);
+    toast.success("Added to cart!");
+  };
 
   const [currentPage, setCurrentPage] = useState(1);
   const [sortBy, setSortBy] = useState("Most Popular");
@@ -234,108 +242,96 @@ const KnivesCollectionPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Main Content */}
+            {/* Products Grid */}
             <div className="flex-1">
-              <div className="mb-6">
-                <h1 className="md:text-2xl text-xl font-medium text-darkGreen">
-                  Collections
-                </h1>
-                <div className="flex flex-col md:flex-row gap-2 justify-between items-start md:items-center mt-2">
-                  <span className="text-sm text-gray-500">
-                    Showing 1-{productItems.length} of {productItems.length}{" "}
-                    Products
-                  </span>
+              {/* Sort and Filter Controls */}
+              <div className="flex justify-between items-center mb-6">
+                <div className="flex items-center gap-2">
+                  <span className="text-sm text-gray-600">Sort by:</span>
                   <div className="relative">
                     <button
-                      className="flex items-center bg-transparent text-sm text-darkGreen"
+                      className="flex items-center gap-2 text-sm font-medium"
                       onClick={() => setShowSortDropdown(!showSortDropdown)}
                     >
-                      Sort by: {sortBy} <FiChevronDown className="ml-1" />
+                      {sortBy}
+                      {showSortDropdown ? (
+                        <FiChevronUp />
+                      ) : (
+                        <FiChevronDown />
+                      )}
                     </button>
                     {showSortDropdown && (
-                      <div className="absolute right-0 mt-2 w-48 bg-gray-900 border border-gray-800 rounded-md shadow-lg z-10">
-                        <ul className="py-1">
-                          {[
-                            "Most Popular",
-                            "Price: Low to High",
-                            "Price: High to Low",
-                            "Newest",
-                          ].map((option) => (
-                            <li key={option}>
-                              <button
-                                className={`block px-4 py-2 text-sm w-full text-left ${
-                                  sortBy === option
-                                    ? "text-darkGreen"
-                                    : "text-black hover:bg-gray-800"
-                                }`}
-                                onClick={() => {
-                                  setSortBy(option);
-                                  setShowSortDropdown(false);
-                                }}
-                              >
-                                {option}
-                              </button>
-                            </li>
-                          ))}
-                        </ul>
+                      <div className="absolute top-full left-0 mt-1 bg-white border border-gray-200 rounded-lg shadow-lg z-10">
+                        {[
+                          "Most Popular",
+                          "Price: Low to High",
+                          "Price: High to Low",
+                          "Newest First",
+                        ].map((option) => (
+                          <button
+                            key={option}
+                            className="block w-full text-left px-4 py-2 text-sm hover:bg-gray-100"
+                            onClick={() => {
+                              setSortBy(option);
+                              setShowSortDropdown(false);
+                            }}
+                          >
+                            {option}
+                          </button>
+                        ))}
                       </div>
                     )}
                   </div>
                 </div>
+                <div className="text-sm text-gray-600">
+                  Showing {productItems.length} products
+                </div>
               </div>
 
               {/* Products Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {productItems.map((product) => (
                   <div
                     key={product.id}
-                    className="bg-primary border-darkGreen border rounded-lg overflow-hidden"
+                    className="bg-white rounded-lg overflow-hidden shadow-md"
                   >
-                    {/* Product Image */}
                     <Link href={`/collections/${formatSlug(product.name)}`}>
-                      <div className="relative">
+                      <div className="relative aspect-square">
                         <img
                           src={product.image.src}
                           alt={product.name}
-                          className="w-full aspect-square object-cover "
+                          className="w-full h-full object-contain"
                         />
                       </div>
                     </Link>
-
-                    {/* Product Info */}
                     <div className="p-4">
                       <Link href={`/collections/${formatSlug(product.name)}`}>
-                        <p className="text-gray-500 text-sm">{product.brand}</p>
-                        <h3 className="font-medium text-black mt-1 mb-4 line-clamp-2">
+                        <h3 className="text-lg font-medium mb-2 line-clamp-2">
                           {product.name}
                         </h3>
                       </Link>
-
-                      {/* Price */}
-                      <div className="flex items-center justify-between gap-2">
-                        <span className="text-black font-bold">
+                      <p className="text-gray-600 text-sm mb-2">
+                        {product.brand}
+                      </p>
+                      <div className="flex items-center gap-2 mb-4">
+                        <span className="text-lg font-bold">
                           ${product.salePrice.toFixed(2)}
                         </span>
-                        <div className="flex gap-2 items-center">
-                          <span className="text-gray-500 line-through text-sm">
-                            ${product.originalPrice.toFixed(2)}
-                          </span>
-                          <span className="text-white bg-black px-1.5 py-1 rounded-md text-sm">
-                            -{product.discount}%
-                          </span>
-                        </div>
+                        <span className="text-gray-500 line-through text-sm">
+                          ${product.originalPrice.toFixed(2)}
+                        </span>
+                        <span className="text-white bg-[#1c1c1c] px-2 py-1 rounded-sm text-sm">
+                          -{product.discount}%
+                        </span>
                       </div>
-
-                      {/* Buy Now Button */}
-                      <div className="flex mt-4 gap-2">
-                        <Link
-                          href="/collections/details"
-                          className="bg-[#1c1c1c] text-center hover:bg-gray-600 text-white py-2.5 text-lg font-medium px-4 rounded-2xl flex-grow"
+                      <div className="flex gap-2">
+                        <button
+                          onClick={() => handleAddToCart(product)}
+                          className="flex-1 bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-xl"
                         >
-                          Add to Cart
-                        </Link>
-                        {/* Wishlist Button */}
-                        <button className=" w-12 h-12 flex bg-darkGreen  items-center justify-center rounded-2xl">
+                          Add To Cart
+                        </button>
+                        <button className="bg-darkGreen w-12 h-12 flex items-center justify-center rounded-xl">
                           <Heart size={20} color="white" />
                         </button>
                       </div>
@@ -345,38 +341,37 @@ const KnivesCollectionPage: React.FC = () => {
               </div>
 
               {/* Pagination */}
-              <div className="mt-8 flex flex-col md:flex-row justify-between  items-center gap-2">
-                <button className="bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded-md flex items-center">
-                  <FiChevronLeft className="mr-1" /> Previous
-                </button>
-                <div className="flex gap-2">
-                  {[1, 2, 3, "...", 9, 10].map((page, index) => (
-                    <button
-                      key={index}
-                      className={`w-8 h-8 flex items-center justify-center rounded-md ${
-                        currentPage === page
-                          ? "bg-darkGreen text-white"
-                          : "bg-gray-800 hover:bg-gray-700 text-white"
-                      }`}
-                      onClick={() =>
-                        typeof page === "number" && setCurrentPage(page)
-                      }
-                    >
-                      {page}
-                    </button>
-                  ))}
+              <div className="flex justify-center mt-8">
+                <div className="flex items-center gap-2">
+                  <button
+                    className="p-2 rounded-full hover:bg-gray-100"
+                    onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                    disabled={currentPage === 1}
+                  >
+                    <FiChevronLeft />
+                  </button>
+                  <span className="text-sm">
+                    Page {currentPage} of {Math.ceil(productItems.length / 9)}
+                  </span>
+                  <button
+                    className="p-2 rounded-full hover:bg-gray-100"
+                    onClick={() =>
+                      setCurrentPage((prev) =>
+                        Math.min(prev + 1, Math.ceil(productItems.length / 9))
+                      )
+                    }
+                    disabled={currentPage === Math.ceil(productItems.length / 9)}
+                  >
+                    <FiChevronRight />
+                  </button>
                 </div>
-
-                <button className="bg-darkGreen hover:bg-darkGreen text-white py-2 px-4 rounded-md flex items-center">
-                  Next <FiChevronRight className="ml-1" />
-                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* <NewsLetter /> */}
+      <FAQ />
+      <NewsLetter />
     </main>
   );
 };

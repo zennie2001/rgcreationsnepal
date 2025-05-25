@@ -3,14 +3,13 @@ import { useCartStore } from "@/app/(home)/store/useCartStore";
 import React from "react";
 
 export default function Checkout() {
-  const { items, addToCart, removeFromCart, updateQuantity, clearCart } =
-    useCartStore();
+  const { items } = useCartStore();
   const shippingFee = 125;
   //   const navigate = useNavigate();
 
   // Calculate subtotal inside the component
   const subTotal = items.reduce(
-    (acc, item) => acc + item.price * item.quantity,
+    (acc, item) => acc + item.salePrice * item.quantity,
     0
   );
 
@@ -37,7 +36,7 @@ export default function Checkout() {
       </div>
       <button
         // onClick={handleProceedToCheckout}
-        className="text-semibold text-ascent-1 px-4 my-4 py-2 border-2 border-[#dda303] rounded-sm hover:bg-darkGreen hover:text-white transition"
+        className="text-semibold text-ascent-1 px-4 my-4 py-2 border-2 border-darkGreen rounded-sm hover:bg-darkGreen hover:text-white transition"
       >
         Proceed To CheckOut
       </button>

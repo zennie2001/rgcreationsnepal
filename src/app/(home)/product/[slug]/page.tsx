@@ -1,4 +1,4 @@
-import { products } from "../../data/product";
+import { products } from "@/constants/products";
 import { notFound } from "next/navigation";
 import PageHeader from "@/components/PageHeader";
 import ProductImageSlider from "@/components/ProductImageSlider";
