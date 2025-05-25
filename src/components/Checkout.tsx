@@ -1,11 +1,12 @@
 "use client";
 import { useCartStore } from "@/app/(home)/store/useCartStore";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 export default function Checkout() {
   const { items } = useCartStore();
   const shippingFee = 125;
-  //   const navigate = useNavigate();
+  const navigate = useRouter();
 
   // Calculate subtotal inside the component
   const subTotal = items.reduce(
@@ -13,9 +14,9 @@ export default function Checkout() {
     0
   );
 
-  //   const handleProceedToCheckout = () => {
-  //     navigate("/shipping");
-  //   };
+  const handleProceedToCheckout = () => {
+    navigate.push("/shipping");
+  };
 
   return (
     <div className="max-w-sm mx-auto bg-white shadow-lg rounded-lg p-6">
@@ -28,14 +29,14 @@ export default function Checkout() {
         <span>Shipping Fee</span>
         <span>Rs. {shippingFee}</span>
       </div>
-      <div className="flex mt-6 justify-between text-gray-700 mt-2">
+      <div className="flex mt-6 justify-between  text-gray-700">
         <span className="font-semibold text-xl">Total</span>
         <span className="font-semibold text-xl">
           Rs. {subTotal + shippingFee}
         </span>
       </div>
       <button
-        // onClick={handleProceedToCheckout}
+        onClick={handleProceedToCheckout}
         className="text-semibold text-ascent-1 px-4 my-4 py-2 border-2 border-darkGreen rounded-sm hover:bg-darkGreen hover:text-white transition"
       >
         Proceed To CheckOut
