@@ -19,10 +19,10 @@ export default function PageHeader({
       />
       <div className="absolute inset-0 bg-gradient-to-r from-lightGreen to-darkGreen"></div>
       <div className="flex_center flex-col gap-6 absolute">
-        <h1 className="text-2xl md:text-3xl  text-center font-semibold">
+        <h1 className="text-2xl   text-center font-semibold">
           {title}
         </h1>
-        <div className="flex_center gap-3 py-2 px-4 border border-primary rounded-md text-base">
+        <div className="flex_center gap-3 py-1.5 px-4 border border-primary rounded-md text-base">
           <Link href={"/"} className="flex_center gap-2">
             <BiHome />
             <p className="text-sm md:text-lg">Home</p>

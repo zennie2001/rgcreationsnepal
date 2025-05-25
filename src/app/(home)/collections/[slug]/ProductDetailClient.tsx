@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
 import { Star, StarHalf, Plus, Minus } from "lucide-react";
-
+import { useCartStore } from "@/app/(home)/store/useCartStore";
+import { toast } from "react-toastify";
 interface Review {
   id: number;
   author: string;
@@ -28,6 +29,12 @@ interface Props {
 }
 
 export default function ProductDetailClient({ product, reviews }: Props) {
+    const addItem = useCartStore((state) => state.addItem);
+  
+    const handleAddToCart = (product: any) => {
+      addItem(product);
+      toast.success("Added to cart!");
+    };
   const [quantity, setQuantity] = useState(1);
   const [selectedImage, setSelectedImage] = useState(0);
   const [selectedTab, setSelectedTab] = useState("details");
@@ -261,7 +268,7 @@ export default function ProductDetailClient({ product, reviews }: Props) {
                 <Plus className="w-4 h-4" />
               </button>
             </div>
-            <button className="flex-1 bg-darkGreen text-white py-2 px-4 rounded hover:bg-opacity-90 transition-colors">
+            <button onClick={() => handleAddToCart(product)} className="flex-1 bg-darkGreen text-white py-2 px-4 rounded hover:bg-opacity-90 transition-colors">
               Add To Cart
             </button>
           </div>
