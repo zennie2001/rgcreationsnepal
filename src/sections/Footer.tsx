@@ -237,9 +237,15 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="flex w-full justify-center items-center gap-4 mt-8 md:-mt-10">
+        <Users className="text-gray-300  text-base md:text-lg" />
+        <Link href="mailto:khukuriknives@bladeforums">
+          <span className="text-gray-300">khukuriknives@bladeforums</span>
+        </Link>
+      </div>
 
       {/* Divider */}
-      <div className="border-t border-lightGreen container flex flex-col md:flex-row justify-between mt-12 pt-6 text-xs md:text-sm text-gray-400 text-center">
+      <div className="border-t border-lightGreen container flex flex-col md:flex-row justify-between mt-6 md:mt-12 pt-6 text-xs md:text-sm text-gray-400 text-center">
         <p>&copy; 2025 Blades. All rights reserved</p>
         <div className="flex gap-6 md:gap-8 mt-4 md:mt-0">
           <Link href="/terms-conditions">Terms & Conditions</Link>

@@ -105,7 +105,7 @@ const BlogPost = () => {
             <div className="">
               <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
                 <h3 className="text-lg font-semibold text-darkGreen mb-4">
-                  Related Blogs
+                  Read Next
                 </h3>
                 {blogs.slice(0, 2).map((blog) => (
                   <BlogCard key={blog.id} blog={blog} />
