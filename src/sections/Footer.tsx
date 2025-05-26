@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Users } from 'lucide-react';
+import { Users } from "lucide-react";
 import Link from "next/link";
 import {
   FaFacebookF,
@@ -91,51 +91,51 @@ const Footer = () => {
         </div>
 
         {/*1st Middle Column */}
-        <div className="flex flex-col ms-14  text-center md:text-left gap-6">
-          <div>
-            <h4 className="text-white font-semibold text-base md:text-lg  mb-4">
-              Company
-            </h4>
-            <ul className="space-y-2 text-sm text-gray-300">
-              <li>
-                <Link href="/about">About Us</Link>
-              </li>
-              <li>
-                <Link href="/shipping-info">Shipping Info</Link>
-              </li>
-              <li>
-                <Link href="/cancellations-returns">
-                  Cancellations & Returns
-                </Link>
-              </li>
-              <li>
-                <Link href="/accessibility">Accessibility Policy</Link>
-              </li>
-            </ul>
+        <div className="flex md:col-span-2 md:gap-28">
+          <div className="flex flex-col md:ms-14  text-left gap-6">
+            <div>
+              <h4 className="text-white font-semibold text-base md:text-lg  mb-4">
+                Company
+              </h4>
+              <ul className="space-y-2 text-sm text-gray-300">
+                <li>
+                  <Link href="/about">About Us</Link>
+                </li>
+                <li>
+                  <Link href="/shipping-info">Shipping Info</Link>
+                </li>
+                <li>
+                  <Link href="/cancellations-returns">
+                    Cancellations & Returns
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/accessibility">Accessibility Policy</Link>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        {/*2nd Middle Column */}
-        <div className="flex flex-col  text-center md:text-left gap-6">
-          <div>
-            <h4 className="text-white font-semibold text-base md:text-lg  mb-4">
-              Khukuri/Kukri Info
-            </h4>
-            <ul className="space-y-2 text-sm text-gray-300">
-              <li>
-                <Link href="/#">What is a Khukuri/kukri?</Link>
-              </li>
-              <li>
-                <Link href="/#">How We Forge a Khukuri/kukri?</Link>
-              </li>
-              <li>
-                <Link href="/#">
-                  How to care khukuri/kukri?
-                </Link>
-              </li>
-              <li>
-                <Link href="/#">How to use khukuri/kukri?</Link>
-              </li>
-            </ul>
+          {/*2nd Middle Column */}
+          <div className="flex flex-col  text-left gap-6">
+            <div>
+              <h4 className="text-white font-semibold text-base md:text-lg  mb-4">
+                Khukuri/Kukri Info
+              </h4>
+              <ul className="space-y-2 text-sm text-gray-300">
+                <li>
+                  <Link href="/#">What is a Khukuri/kukri?</Link>
+                </li>
+                <li>
+                  <Link href="/#">How We Forge a Khukuri/kukri?</Link>
+                </li>
+                <li>
+                  <Link href="/#">How to care khukuri/kukri?</Link>
+                </li>
+                <li>
+                  <Link href="/#">How to use khukuri/kukri?</Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -237,9 +237,15 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="flex w-full justify-center items-center gap-4 mt-8 md:-mt-10">
+        <Users className="text-gray-300  text-base md:text-lg" />
+        <Link href="mailto:khukuriknives@bladeforums">
+          <span className="text-gray-300">khukuriknives@bladeforums</span>
+        </Link>
+      </div>
 
       {/* Divider */}
-      <div className="border-t border-lightGreen container flex flex-col md:flex-row justify-between mt-12 pt-6 text-xs md:text-sm text-gray-400 text-center">
+      <div className="border-t border-lightGreen container flex flex-col md:flex-row justify-between mt-6 md:mt-12 pt-6 text-xs md:text-sm text-gray-400 text-center">
         <p>&copy; 2025 Blades. All rights reserved</p>
         <div className="flex gap-6 md:gap-8 mt-4 md:mt-0">
           <Link href="/terms-conditions">Terms & Conditions</Link>
