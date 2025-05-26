@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { Users } from 'lucide-react';
 import Link from "next/link";
 import {
   FaFacebookF,
@@ -9,7 +10,7 @@ import {
   FaWordpress,
 } from "react-icons/fa6";
 import { Mail, MapPin } from "lucide-react";
-import logo from "@/assets/images/final-logo.png";
+import logo from "@/assets/images/footer-logo.png";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -22,7 +23,7 @@ const Footer = () => {
   };
   return (
     <footer className="bg-darkGreen text-white  pt-10 pb-10 px-4">
-      <div className="flex flex-col items-centernp border-b border-lightGreen md:flex-row justify-between container mb-14">
+      <div className="flex flex-col  md:flex-row justify-between max-w-4xl mx-auto ">
         <h2 className="text-xl md:text-2xl hidden md:flex font-semibold text-white  text-center md:text-left  mb-8">
           Join our newsletter to
           <br /> keep up to date with us!
@@ -61,12 +62,13 @@ const Footer = () => {
           </button>
         </div>
       </div>
+      <div className="border-b container mx-auto border-lightGreen mb-14"></div>
 
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Left Column */}
         <div>
           <div className="  text-center md:text-left">
-            <div className="w-60 p-4 mx-auto md:mx-0 bg-white rounded-lg">
+            <div className="w-60 pb-2 mx-auto md:mx-0  rounded-lg">
               <Link href="/">
                 <img src={logo.src} alt="Logo" className="w-full" />
               </Link>
@@ -89,7 +91,7 @@ const Footer = () => {
         </div>
 
         {/*1st Middle Column */}
-        <div className="flex flex-col  text-center md:text-left gap-6">
+        <div className="flex flex-col ms-14  text-center md:text-left gap-6">
           <div>
             <h4 className="text-white font-semibold text-base md:text-lg  mb-4">
               Company

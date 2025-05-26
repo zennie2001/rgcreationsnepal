@@ -22,8 +22,8 @@ export const metadata: Metadata = {
   description:
     "Blade is a specialized eCommerce website offering high-quality blades for industrial, culinary, and personal use. Shop a wide selection of durable, precision-crafted blades designed for performance and reliability. ",
   icons: {
-    icon: "/blade.png",
-    apple: "/blade.png",
+    icon: "/favicon.png",
+    apple: "/favicon.png",
   },
 };
 

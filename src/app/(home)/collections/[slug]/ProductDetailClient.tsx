@@ -1,8 +1,17 @@
 "use client";
 import { useState } from "react";
-import { Star, StarHalf, Plus, Minus } from "lucide-react";
+import { Star, StarHalf, Plus, Minus, Heart } from "lucide-react";
 import { useCartStore } from "@/app/(home)/store/useCartStore";
 import { toast } from "react-toastify";
+import products from "@/constants/products";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaXTwitter,
+  FaYoutube,
+  FaWordpress,
+} from "react-icons/fa6";
+import Link from "next/link";
 interface Review {
   id: number;
   author: string;
@@ -29,12 +38,13 @@ interface Props {
 }
 
 export default function ProductDetailClient({ product, reviews }: Props) {
-    const addItem = useCartStore((state) => state.addItem);
-  
-    const handleAddToCart = (product: any) => {
-      addItem(product);
-      toast.success("Added to cart!");
-    };
+  const formatSlug = (name: string) => name.toLowerCase().replace(/ /g, "-");
+  const addItem = useCartStore((state) => state.addItem);
+
+  const handleAddToCart = (product: any) => {
+    addItem(product);
+    toast.success("Added to cart!");
+  };
   const [quantity, setQuantity] = useState(1);
   const [selectedImage, setSelectedImage] = useState(0);
   const [selectedTab, setSelectedTab] = useState("details");
@@ -118,6 +128,13 @@ export default function ProductDetailClient({ product, reviews }: Props) {
               </div>
             ))}
           </div>
+          <div className="flex gap-6 justify-between md:justify-start mt-10  text-center md:text-left text-2xl text-black">
+            <FaFacebookF />
+            <FaInstagram />
+            <FaXTwitter />
+            <FaYoutube />
+            <FaWordpress />
+          </div>
         </div>
 
         {/* Product details */}
@@ -143,11 +160,12 @@ export default function ProductDetailClient({ product, reviews }: Props) {
           <p className="text-gray-700 font-semibold border-b border-lightGreen pb-4 mb-6">
             {product.name}
           </p>
-
+          <h3 className="font-semibold text-xl text-center mb-6">
+            Customize Your Blade
+          </h3>
           {/* Customization options */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
             <div>
-              <h3 className="font-medium mb-2">Customize Your Blade</h3>
               <div className="mb-4">
                 <label className="block text-gray-600 text-sm mb-1">
                   Blade Finish
@@ -191,7 +209,6 @@ export default function ProductDetailClient({ product, reviews }: Props) {
             </div>
 
             <div>
-              <h3 className="font-medium mb-2">Blade Details</h3>
               <div className="mb-4">
                 <label className="block text-gray-600 text-sm mb-1">
                   Blade Length
@@ -224,11 +241,11 @@ export default function ProductDetailClient({ product, reviews }: Props) {
                 <label className="block text-gray-600 text-sm mb-1">
                   Custom Logo / Photo Engraving
                 </label>
-                <div className="border border-gray-300 border-dashed rounded p-4 bg-gray-50 flex flex-col items-center justify-center">
-                  <div className="mb-1">
+                <div className="border border-gray-300 border-dashed rounded p-3 bg-gray-50 flex gap-4 items-center justify-center">
+                  <div className="">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-6 w-6 text-gray-400"
+                      className="h-4 w-4 text-gray-400"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -268,140 +285,207 @@ export default function ProductDetailClient({ product, reviews }: Props) {
                 <Plus className="w-4 h-4" />
               </button>
             </div>
-            <button onClick={() => handleAddToCart(product)} className="flex-1 bg-darkGreen text-white py-2 px-4 rounded hover:bg-opacity-90 transition-colors">
+            <button
+              onClick={() => handleAddToCart(product)}
+              className="flex-1 bg-darkGreen text-white py-2 px-4 rounded hover:bg-opacity-90 transition-colors"
+            >
               Add To Cart
             </button>
           </div>
         </div>
-        
       </div>
       {/* Product details tabs */}
-        <div className="mb-12">
-          <div className="border-b bg-[#fafafa] border-gray-300 mb-6">
-            <div className="flex">
-              <button
-                className={`py-3 px-6 font-medium relative ${
-                  selectedTab === "details" ? "text-gray-800" : "text-gray-500"
-                }`}
-                onClick={() => setSelectedTab("details")}
-              >
-                Product Details
-                {selectedTab === "details" && (
-                  <div className="absolute bottom-0 left-0 w-full h-0.5 bg-green-800"></div>
-                )}
-              </button>
-              <button
-                className={`py-3 px-6 font-medium relative ${
-                  selectedTab === "reviews" ? "text-gray-800" : "text-gray-500"
-                }`}
-                onClick={() => setSelectedTab("reviews")}
-              >
-                Reviews
-                {selectedTab === "reviews" && (
-                  <div className="absolute bottom-0 left-0 w-full h-0.5 bg-green-800"></div>
-                )}
-              </button>
-            </div>
+      <div className="mb-12">
+        <div className="border-b bg-[#fafafa] border-gray-300 mb-6">
+          <div className="flex">
+            <button
+              className={`py-3 px-6 font-medium relative ${
+                selectedTab === "details" ? "text-gray-800" : "text-gray-500"
+              }`}
+              onClick={() => setSelectedTab("details")}
+            >
+              Product Details
+              {selectedTab === "details" && (
+                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-green-800"></div>
+              )}
+            </button>
+            <button
+              className={`py-3 px-6 font-medium relative ${
+                selectedTab === "reviews" ? "text-gray-800" : "text-gray-500"
+              }`}
+              onClick={() => setSelectedTab("reviews")}
+            >
+              Reviews
+              {selectedTab === "reviews" && (
+                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-green-800"></div>
+              )}
+            </button>
           </div>
+        </div>
 
-          {selectedTab === "details" && (
-            <div className="prose max-w-none">
-              <h2 className="text-xl font-bold mb-4">
-                Talwar Sword – Hand-Forged Indo-Nepalese Blade with Brass Hilt
-              </h2>
-              <p className="mb-4">
-                The 24-inch Talwar sword by expert forge talents features
-                Indo-Nepalese blade design with the ornamental beauty of a
-                handcrafted brass hilt. Forged in Nepal using traditional
-                techniques and regional influence, the blade represents a
-                harmonious blend of Eastern and Western sword-making traditions,
-                precisely curved for ceremonial elegance.
-              </p>
-              <p className="mb-4">
-                Crafted from high-carbon steel salvaged from truck leaf springs,
-                the blade is water-tempered to provide optimal hardness and
-                flexibility. The curve is a dramatic 24-inch sweep with
-                exquisite along cutting, sharpened to a fine edge and polished
-                for a semi-reflective finish.
-              </p>
-              <p className="mb-4">
-                The handcrafted brass hilt features intricate detailing inspired
-                by traditional Indo-Nepalese ornamental designs and elegant
-                Tibetan flourishes. The sword comes with a scabbard for safe
-                storage and ceremonial display. Whether used for martial
-                training, costume, or collection, this Talwar sword is a
-                powerful presence in both form and function.
-              </p>
-              <p>
-                The Talwar is a curved blade with roots in the Indian
-                subcontinent, heavily influenced by Persian scimitars and
-                Central Asian weapons. It was adopted by Indian and Nepali
-                warriors alike for its curved shape, fine edge and flared tip
-                that effectively combines the cutting/slashing capabilities of
-                Eastern/Western blade designs to create an innovative and
-                historical significance.
-              </p>
-              <button className="text-green-800 font-medium mt-4">
-                View More
-              </button>
-            </div>
-          )}
+        {selectedTab === "details" && (
+          <div className="prose max-w-none">
+            <h2 className="text-xl font-bold mb-4">
+              Talwar Sword – Hand-Forged Indo-Nepalese Blade with Brass Hilt
+            </h2>
+            <p className="mb-4">
+              The 24-inch Talwar sword by expert forge talents features
+              Indo-Nepalese blade design with the ornamental beauty of a
+              handcrafted brass hilt. Forged in Nepal using traditional
+              techniques and regional influence, the blade represents a
+              harmonious blend of Eastern and Western sword-making traditions,
+              precisely curved for ceremonial elegance.
+            </p>
+            <p className="mb-4">
+              Crafted from high-carbon steel salvaged from truck leaf springs,
+              the blade is water-tempered to provide optimal hardness and
+              flexibility. The curve is a dramatic 24-inch sweep with exquisite
+              along cutting, sharpened to a fine edge and polished for a
+              semi-reflective finish.
+            </p>
+            <p className="mb-4">
+              The handcrafted brass hilt features intricate detailing inspired
+              by traditional Indo-Nepalese ornamental designs and elegant
+              Tibetan flourishes. The sword comes with a scabbard for safe
+              storage and ceremonial display. Whether used for martial training,
+              costume, or collection, this Talwar sword is a powerful presence
+              in both form and function.
+            </p>
+            <p>
+              The Talwar is a curved blade with roots in the Indian
+              subcontinent, heavily influenced by Persian scimitars and Central
+              Asian weapons. It was adopted by Indian and Nepali warriors alike
+              for its curved shape, fine edge and flared tip that effectively
+              combines the cutting/slashing capabilities of Eastern/Western
+              blade designs to create an innovative and historical significance.
+            </p>
+            <button className="text-green-800 font-medium mt-4">
+              View More
+            </button>
+          </div>
+        )}
 
-          {selectedTab === "reviews" && (
-            <div>
-              <div className="flex justify-between items-center mb-6">
-                <h2 className="text-xl font-bold">All Reviews (449)</h2>
-                <div className="flex gap-4 items-center">
-                  <div className="flex items-center gap-2">
-                    <span className="text-gray-600">Sort by:</span>
-                    <select className="border border-gray-300 rounded px-2 py-1 text-sm">
-                      <option>Latest</option>
-                      <option>Highest Rated</option>
-                      <option>Lowest Rated</option>
-                    </select>
-                  </div>
-                  <button className="bg-green-800 hover:bg-green-700 text-white px-4 py-2 rounded text-sm">
-                    Write a Review
-                  </button>
+        {selectedTab === "reviews" && (
+          <div>
+            <div className="flex justify-between items-center mb-6">
+              <h2 className="text-xl font-bold">All Reviews (449)</h2>
+              <div className="flex gap-4 items-center">
+                <div className="flex items-center gap-2">
+                  <span className="text-gray-600">Sort by:</span>
+                  <select className="border border-gray-300 rounded px-2 py-1 text-sm">
+                    <option>Latest</option>
+                    <option>Highest Rated</option>
+                    <option>Lowest Rated</option>
+                  </select>
                 </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {reviews.map((review) => (
-                  <div
-                    key={review.id}
-                    className="border border-gray-200 rounded-lg p-4 relative"
-                  >
-                    <div className="flex mb-2">
-                      {renderStars(review.rating)}
-                    </div>
-                    <h3 className="font-bold flex items-center gap-2 mb-1">
-                      {review.author}
-                      {review.verified && (
-                        <span className="bg-green-100 text-green-600 text-xs px-1 py-0.5 rounded-full">
-                          ✓
-                        </span>
-                      )}
-                    </h3>
-                    <p className="text-gray-600 mb-4">{review.content}</p>
-                    <span className="text-gray-500 text-sm">
-                      Posted on {review.date}
-                    </span>
-                    <button className="absolute top-4 right-4 text-gray-500">
-                      •••
-                    </button>
-                  </div>
-                ))}
-              </div>
-
-              <div className="flex justify-center mt-8">
-                <button className="bg-green-800 hover:bg-green-700 text-white py-2 px-6 rounded">
-                  Load More Reviews
+                <button className="bg-green-800 hover:bg-green-700 text-white px-4 py-2 rounded text-sm">
+                  Write a Review
                 </button>
               </div>
             </div>
-          )}
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {reviews.map((review) => (
+                <div
+                  key={review.id}
+                  className="border border-gray-200 rounded-lg p-4 relative"
+                >
+                  <div className="flex mb-2">{renderStars(review.rating)}</div>
+                  <h3 className="font-bold flex items-center gap-2 mb-1">
+                    {review.author}
+                    {review.verified && (
+                      <span className="bg-green-100 text-green-600 text-xs px-1 py-0.5 rounded-full">
+                        ✓
+                      </span>
+                    )}
+                  </h3>
+                  <p className="text-gray-600 mb-4">{review.content}</p>
+                  <span className="text-gray-500 text-sm">
+                    Posted on {review.date}
+                  </span>
+                  <button className="absolute top-4 right-4 text-gray-500">
+                    •••
+                  </button>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex justify-center mt-8">
+              <button className="bg-darkGreen hover:bg-green-700 text-white py-2 px-6 rounded">
+                Load More Reviews
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+      {/* Products Grid */}
+      <div>
+        <h3 className="font-semibold text-darkGreen text-2xl text-center my-10">
+          Related Products
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {products.slice(0, 4).map((product) => (
+            <div
+              key={product.id}
+              className="bg-white border-2 border-darkGreen rounded-2xl overflow-hidden"
+            >
+              {/* Product Image */}
+              <Link href={`/collections/${formatSlug(product.name)}`}>
+                <div className="relative">
+                  <img
+                    src={product.image.src}
+                    alt={product.name}
+                    className="w-full aspect-square object-contain "
+                  />
+                </div>
+              </Link>
+
+              {/* Product Info */}
+              <div className="p-4">
+                <Link href={`/collections/${formatSlug(product.name)}`}>
+                  <p className="text-gray-500 text-sm">{product.brand}</p>
+                  <h3 className="font-medium text-black mt-1 mb-4 line-clamp-2">
+                    {product.name}
+                  </h3>
+                </Link>
+
+                {/* Price */}
+                <div className="flex items-center gap-2">
+                  <span className="text-black font-bold">
+                    ${product.salePrice.toFixed(2)}
+                  </span>
+                  <span className="text-gray-500 line-through text-sm">
+                    ${product.originalPrice.toFixed(2)}
+                  </span>
+                  <span className="text-white bg-[#1c1c1c] px-2 py-1 rounded-sm text-sm">
+                    -{product.discount}%
+                  </span>
+                </div>
+
+                {/* Buy Now Button */}
+                <div className="flex mt-4 gap-2">
+                  <button
+                    onClick={() => handleAddToCart(product)}
+                    className="bg-gray-700 hover:bg-gray-600  text-white py-2 px-4 rounded-xl flex-grow"
+                  >
+                    Add To Cart
+                  </button>
+                  {/* Wishlist Button */}
+                  <button className=" bg-darkGreen w-12 h-12   flex items-center justify-center rounded-xl">
+                    <Heart size={20} color="white" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
+        <div className="flex justify-center mt-8 mb-10">
+          <Link href="/collections"><button className="bg-darkGreen hover:bg-green-700 text-white py-2 px-6 rounded">
+            View More 
+          </button></Link>
+          
+        </div>
+      </div>
     </>
   );
 }
