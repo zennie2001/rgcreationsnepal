@@ -31,7 +31,7 @@ const Categories = () => {
         <div className=" text-white py-10 flex flex-col justify-center items-center md:items-start space-y-6">
           <h2 className="text-3xl text-center md:text-left font-semibold">
             Our <br />
-            Advantages
+            Khukuri/kukri
           </h2>
           <button className="bg-darkGreen text-white px-6 py-3 rounded transition">
             Learn More
