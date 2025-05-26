@@ -5,21 +5,21 @@ const advantages = [
 
   {
     img:"/blade1.png",
-    title: "Traditional",
+    title: "Traditional & Classic Kukris",
     description:
-      "Turning your investments into cash flows and planning to bless future generations.",
+      "Blades rooted in history—crafted in the same style as those carried by farmers, villagers, and legendary Gurkha warriors.",
   },
   {
      img:"/blade3.png",
-    title: "Modern",
+    title: "Modern & Tactical Kukris",
     description:
-      "Turning your investments into cash flows and planning to bless future generations.",
+      "Contemporary designs built for today's needs—featuring ergonomic handles, updated blade profiles, and functional materials for field, survival, and combat use.",
   },
   {
      img:"/blade2.png",
-    title: "Custom",
+    title: "Custom & Modified Kukris",
     description:
-      "Turning your investments into cash flows and planning to bless future generations.",
+      "Unique, personalized kukris tailored to your vision—blending traditional forging with custom blade shapes, engravings, and handle designs.",
   },
 ];
 
