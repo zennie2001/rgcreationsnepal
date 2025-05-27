@@ -53,7 +53,7 @@ export default function Youtube() {
           {videoItems.map((item, index) => (
             <div key={index} className="relative mx-4 md:mx-0">
               {/* Video thumbnail */}
-              <div className="relative aspect-video overflow-hidden bg-gray-800">
+              <div className="relative aspect-[16/10] overflow-hidden bg-gray-800">
                 {/* Replace with actual image */}
                 <div className="w-full h-48 bg-gray-700 relative">
                   {/* Play button overlay */}

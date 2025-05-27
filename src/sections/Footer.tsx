@@ -22,53 +22,55 @@ const Footer = () => {
     setEmail("");
   };
   return (
-    <footer className="bg-darkGreen text-white  pt-10 pb-10 px-4">
-      <div className="flex flex-col  md:flex-row justify-between max-w-4xl mx-auto ">
-        <h2 className="text-xl md:text-2xl hidden md:flex font-semibold text-white  text-center md:text-left  mb-8">
-          Join our newsletter to
-          <br /> keep up to date with us!
-        </h2>
-        <h2 className=" flex md:hidden text-xl md:text-2xl  font-semibold text-white  text-center md:text-left  mb-8">
-          Join our newsletter to keep
-          <br /> up to date with us!
-        </h2>
+    <footer className="bg-darkGreen text-white pb-3">
+      <section className="w-full bg-lightGreen">
+        <div className="flex flex-col  md:flex-row justify-between items-start max-w-4xl mx-auto pb-4 pt-4">
+          <h2 className="text-xl hidden md:flex font-semibold text-white  text-center md:text-left">
+            Join our newsletter to
+            <br /> keep up to date with us!
+          </h2>
+          <h2 className=" flex md:hidden text-xl md:text-2xl  font-semibold text-white  text-center md:text-left ">
+            Join our newsletter to keep
+            <br /> up to date with us!
+          </h2>
 
-        <div className="flex flex-col sm:flex-row gap-4 mb-16">
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter Your Email"
-            className="bg-darkGreen border border-lightGreen md:w-[300px] rounded-full text-white px-4 py-2 md:py-3  flex-grow focus:outline-none focus:ring-2 focus:ring-secondary"
-          />
-          <button
-            onClick={handleSubscribe}
-            className="bg-primary text-black rounded-full px-4   py-2 text-sm font-medium transition-colors flex items-center justify-center"
-          >
-            SUBSCRIBE
-            <svg
-              className="ml-2 w-4 h-4"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+          <div className="flex flex-col sm:flex-row gap-4">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter Your Email"
+              className="bg-white border border-lightGreen md:w-[300px] rounded-full text-gray-600 px-4 py-2   flex-grow focus:outline-none focus:ring-2 focus:ring-darkGreen"
+            />
+            <button
+              onClick={handleSubscribe}
+              className="bg-primary text-black rounded-full px-4   py-2 text-sm font-medium transition-colors flex items-center justify-center"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
+              SUBSCRIBE
+              <svg
+                className="ml-2 w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
-      <div className="border-b container mx-auto border-lightGreen mb-14"></div>
+      </section>
+      <div className="border-b container mx-auto border-lightGreen mb-4"></div>
 
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Left Column */}
         <div>
           <div className="  text-center md:text-left">
-            <div className="w-60 pb-2 mx-auto md:mx-0  rounded-lg">
+            <div className="w-40 pb-2 mx-auto md:mx-0  rounded-lg">
               <Link href="/">
                 <img src={logo.src} alt="Logo" className="w-full" />
               </Link>
@@ -158,7 +160,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="mt-6">
+          <div className="">
             <h4 className="text-white  text-center md:text-left font-semibold text-base md:text-lg mb-4">
               We Accept
             </h4>
@@ -240,12 +242,14 @@ const Footer = () => {
       <div className="flex w-full justify-center items-center gap-4 mt-8 md:-mt-10">
         <Users className="text-gray-300  text-base md:text-lg" />
         <Link href="mailto:khukuriknives@bladeforums">
-          <span className="text-gray-300">khukuriknives@bladeforums</span>
+          <span className="text-gray-300 font-extrabold">
+            khukuriknives@bladeforums
+          </span>
         </Link>
       </div>
 
       {/* Divider */}
-      <div className="border-t border-lightGreen container flex flex-col md:flex-row justify-between mt-6 md:mt-12 pt-6 text-xs md:text-sm text-gray-400 text-center">
+      <div className="border-t border-lightGreen container flex flex-col md:flex-row justify-between mt-4 md:mt-8  pt-4 text-xs md:text-sm text-gray-400 text-center">
         <p>&copy; 2025 Blades. All rights reserved</p>
         <div className="flex gap-6 md:gap-8 mt-4 md:mt-0">
           <Link href="/terms-conditions">Terms & Conditions</Link>

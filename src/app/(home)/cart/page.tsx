@@ -3,7 +3,7 @@ import React from "react";
 import { useCartStore } from "@/app/(home)/store/useCartStore";
 import Checkout from "@/components/Checkout";
 import PageHeader from "@/components/PageHeader";
-
+import { Trash2 } from 'lucide-react';
 const Cart = () => {
   const { items, removeFromCart, updateQuantity, clearCart } = useCartStore();
 
@@ -33,7 +33,7 @@ const Cart = () => {
                     <img
                       src={item.image?.src || item.image}
                       alt={item.name}
-                      className="w-20 h-20 lg:w-60 lg:h-48 group-hover:scale-105 object-cover rounded-lg"
+                      className="w-20 h-20 lg:w-60 lg:h-48 group-hover:scale-105 object-contain rounded-lg"
                     />
 
                     {/* Info + Quantity */}
@@ -69,9 +69,9 @@ const Cart = () => {
                     {/* Remove Button */}
                     <button
                       onClick={() => removeFromCart(item.id)}
-                      className="mt-4 sm:mt-0 font-semibold px-4 py-2 border-2 border-darkGreen rounded-sm hover:bg-darkGreen hover:text-white transition"
+                      className="mt-4 sm:mt-0 font-semibold px-4 py-2 transition"
                     >
-                      Remove
+                      <Trash2 className="w-6 h-6 text-darkGreen " />
                     </button>
                   </li>
                 ))}
