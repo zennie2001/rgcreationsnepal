@@ -24,7 +24,7 @@ const Footer = () => {
   return (
     <footer className="bg-darkGreen text-white pb-3">
       <section className="w-full bg-lightGreen">
-        <div className="flex flex-col  md:flex-row justify-between items-start max-w-4xl mx-auto pb-4 pt-4">
+        <div className="flex flex-col  md:flex-row justify-between items-center max-w-4xl mx-auto pb-4 pt-4">
           <h2 className="text-xl hidden md:flex font-semibold text-white  text-center md:text-left">
             Join our newsletter to
             <br /> keep up to date with us!
