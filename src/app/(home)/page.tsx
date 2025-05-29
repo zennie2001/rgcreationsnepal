@@ -19,8 +19,8 @@ export default function Home() {
       <Hero />
       <Categories />
 
-      <About />
       <Products />
+      <About />
       {/* <Collection /> */}
       <Youtube />
       {/* <Deals /> */}

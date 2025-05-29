@@ -24,7 +24,7 @@ const Products = () => {
   };
 
   return (
-    <section className="w-full bg-primary text-white  px-6 md:px-12 lg:px-16">
+    <section className="w-full bg-primary text-white pt-8 md:pt-16  px-6 md:px-12 lg:px-16">
       <div className="container mx-auto md:text-left text-center">
         {/* Product Range Heading */}
         <div className="mb-12">
@@ -39,7 +39,7 @@ const Products = () => {
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex flex-wrap justify-center md:justify-end gap-3 mb-8">
+        <div className="flex flex-wrap justify-center -mt-8 md:-mt-4 md:justify-end gap-3 mb-8">
           {filterTabs.map((tab) => (
             <button
               key={tab.id}

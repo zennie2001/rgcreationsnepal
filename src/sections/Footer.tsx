@@ -93,8 +93,8 @@ const Footer = () => {
         </div>
 
         {/*1st Middle Column */}
-        <div className="flex md:col-span-2 md:gap-28">
-          <div className="flex flex-col md:ms-14  text-left gap-6">
+        <div className="flex justify-center md:col-span-2 gap-2 md:gap-28">
+          <div className="flex flex-col  md:ms-14 text-left gap-6">
             <div>
               <h4 className="text-white font-semibold text-base md:text-lg  mb-4">
                 Company

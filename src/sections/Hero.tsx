@@ -3,7 +3,7 @@ import home from "@/assets/images/blade-home.png";
 const Hero = () => {
   return (
     <main className="bg-primary">
-      <section className="md:relative flex flex-col-reverse w-full h-[100vh] md:h-[55vh] container  text-white ">
+      <section className="md:relative flex flex-col-reverse w-full h-[95vh] md:h-[65vh] container  text-white ">
         {/* Background Image with Overlay */}
         <div className="md:absolute md:inset-0 md:left-[50%]">
           <img
@@ -15,7 +15,7 @@ const Hero = () => {
 
         {/* Content */}
         <div className="relative z-10 flex flex-col justify-center h-full px-6  md:px-0">
-          <h1 className="text-4xl md:text-6xl hidden md:flex font-bold text-center md:text-left text-black">
+          <h1 className="text-4xl md:text-6xl invisible md:flex font-bold text-center md:text-left text-black">
             Built for Action.
           </h1>
           <h2 className="text-4xl md:text-6xl font-bold text-center md:text-left text-darkGreen mt-20 md:mt-4">

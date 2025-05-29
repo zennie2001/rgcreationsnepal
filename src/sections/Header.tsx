@@ -41,9 +41,9 @@ const Header = () => {
                   href={item.link}
                   className={`${
                     pathname === item.link
-                      ? "text-darkGreen font-semibold"
+                      ? "text-darkGreen font-bold"
                       : "text-white"
-                  } hover:text-darkGreen transition-colors font-medium`}
+                  } hover:text-darkGreen transition-colors font-semibold`}
                 >
                   {item.title}
                 </Link>

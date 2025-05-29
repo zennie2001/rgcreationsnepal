@@ -23,7 +23,7 @@ const videoItems = [
 
 export default function Youtube() {
   return (
-    <section className="w-full bg-primary py-12 text-white">
+    <section className="w-full bg-primary pb-12 text-white">
       <div className="container flex flex-col md:flex-row justify-between items-center mx-auto px-4">
         {/* Youtube section header */}
         <div className="">
