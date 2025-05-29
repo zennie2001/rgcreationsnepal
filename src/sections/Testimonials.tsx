@@ -39,7 +39,7 @@ export default function Testimonials() {
         
         <div className="mb-10">
           <p className="text-darkGreen text-center md:text-left md:text-lg text-base">
-            Testimonails
+            Testimonials
           </p>
           <h2 className="text-2xl md:text-3xl lg:text-4xl text-black text-center md:text-left font-semibold">
             Trusted by Thousands.

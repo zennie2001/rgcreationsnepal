@@ -76,7 +76,7 @@ const Footer = () => {
               </Link>
             </div>
 
-            <p className="text-gray-300 mt-2 text-sm leading-relaxed max-w-sm">
+            <p className="text-gray-300 mt-2 text-sm leading-relaxed max-w-md">
               Whether it’s everyday carry or mission-ready gear, our collection
               covers the spectrum of sharp innovation. Choose your edge — and
               carry it with confidence.
@@ -164,7 +164,7 @@ const Footer = () => {
             <h4 className="text-white  text-center md:text-left font-semibold text-base md:text-lg mb-4">
               We Accept
             </h4>
-            <ul className=" text-sm text-gray-300 flex justify-start gap-4 mx-4 md:mx-0 items-center md:items-start">
+            <ul className=" text-sm text-gray-300 flex justify-center md:justify-start gap-4 mx-4 md:mx-0 items-center md:items-start">
               <li className="flex gap-2 items-center text-center">
                 <svg
                   width="48"

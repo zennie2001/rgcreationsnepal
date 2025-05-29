@@ -38,7 +38,7 @@ export default function About() {
         </div>
 
         {/* Right Image */}
-        <div className="relative w-full lg:w-1/2 rounded-lg">
+        <div className="relative w-full lg:w-1/2 flex justify-center rounded-lg">
           <Image
             src={knifeImage}
             alt="Crossed knives"
