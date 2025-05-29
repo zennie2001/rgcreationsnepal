@@ -370,7 +370,7 @@ const KnivesCollectionPage: React.FC = () => {
           </div>
         </div>
       </section>
-      <FAQ />
+      {/* <FAQ /> */}
       <NewsLetter />
     </main>
   );

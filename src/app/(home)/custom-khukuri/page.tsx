@@ -62,7 +62,7 @@ const renderProgressBar = () => (
     {/* Mobile view - show only current step */}
     <div className="md:hidden">
       <div className="flex flex-col items-center">
-        <div className="text-lg font-semibold text-gray-700 mb-2 text-center">
+        <div className="text-lg font-extrabold text-gray-700 mb-2 text-center">
           {steps[currentStep - 1]} 
         </div>
         <div className="flex items-center space-x-1 mb-2">
@@ -79,7 +79,7 @@ const renderProgressBar = () => (
             />
           ))}
         </div>
-        <div className="text-sm text-gray-500">
+        <div className="text-sm font-extrabold text-gray-500">
           Step {currentStep} of {steps.length}
         </div>
       </div>
@@ -95,7 +95,7 @@ const renderProgressBar = () => (
         return (
           <div key={stepNumber} className="flex items-center">
             <div className="flex flex-col items-start">
-              <div className="text-[15px] text-gray-700 mb-2">{step}</div>
+              <div className="text-[15px] font-extrabold text-gray-700 mb-2">{step}</div>
               <div
                 className={`h-1 rounded-full ${
                   isActive
