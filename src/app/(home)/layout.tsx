@@ -16,14 +16,14 @@ const jakarta = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "BLADE",
-    template: "%s | BLADE",
+    default: "RG Creations",
+    template: "%s | RG Creations",
   },
   description:
-    "Blade is a specialized eCommerce website offering high-quality blades for industrial, culinary, and personal use. Shop a wide selection of durable, precision-crafted blades designed for performance and reliability. ",
+    "RG Creations is a leading construction company in Nepal, specializing in residential and commercial projects. We are committed to delivering high-quality construction services with a focus on innovation, sustainability, and customer satisfaction.",
   icons: {
-    icon: "/favicon.png",
-    apple: "/favicon.png",
+    icon: "/logo.png",
+    apple: "/logo.png",
   },
 };
 

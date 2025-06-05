@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +13,7 @@ const Header = () => {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex w-32 h-28 bg-white items-center">
-              <img src="/logo.png" alt="Logo" className="p-4"/>
+              <img src="/logo.png" alt="Logo" className="p-4" />
             </div>
 
             {/* Desktop Navigation */}
@@ -24,12 +24,30 @@ const Header = () => {
               >
                 Home
               </a>
-              <a
-                href="/about"
-                className="text-white hover:text-darkGreen hover:font-semiboldfont-medium transition-colors"
-              >
-                About Us
-              </a>
+              <div className="relative group">
+                <div className="text-white hover:text-darkGreen hover:font-semiboldfont-medium transition-colors flex items-center gap-1 cursor-pointer">
+                  About Us
+                  <ChevronDown
+                    size={16}
+                    className="transition-transform group-hover:rotate-180"
+                  />
+                </div>
+                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <a
+                    href="/about/mission-vision"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-darkGreen"
+                  >
+                    Mission & Vision
+                  </a>
+
+                  <a
+                    href="/about/company-history"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-darkGreen"
+                  >
+                    Company History
+                  </a>
+                </div>
+              </div>
               <a
                 href="/services"
                 className="text-white hover:text-darkGreen hover:font-semiboldfont-medium transition-colors"
@@ -96,12 +114,31 @@ const Header = () => {
                 >
                   Home
                 </a>
-                <a
-                  href="/about"
-                  className="py-3 text-gray-700 hover:text-gray-900 font-medium"
-                >
-                  About Us
-                </a>
+                <div className="flex flex-col">
+                  <div className="py-3 text-gray-700 hover:text-gray-900 font-medium">
+                    About Us
+                  </div>
+                  <div className="pl-4 space-y-2">
+                    <a
+                      href="/about/mission"
+                      className="block py-2 text-gray-600 hover:text-gray-900"
+                    >
+                      Mission
+                    </a>
+                    <a
+                      href="/about/vision"
+                      className="block py-2 text-gray-600 hover:text-gray-900"
+                    >
+                      Vision
+                    </a>
+                    <a
+                      href="/about/history"
+                      className="block py-2 text-gray-600 hover:text-gray-900"
+                    >
+                      Company History
+                    </a>
+                  </div>
+                </div>
                 <a
                   href="/services"
                   className="py-3 text-gray-700 hover:text-gray-900 font-medium"

@@ -60,7 +60,7 @@ const Footer = () => {
           {/* Left Column - Company Info */}
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
-              <img src="logo.png" alt="RG Creations Logo" className="h-20 brightness-0 invert" />
+              <img src="/logo.png" alt="RG Creations Logo" className="h-20 brightness-0 invert" />
             </div>
 
             <p className="text-gray-300 text-sm leading-relaxed max-w-sm">
