@@ -12,6 +12,7 @@ import Testimonials from "@/sections/Testimonials";
 import NewsLetter from "@/sections/NewsLetter";
 import Youtube from "@/sections/Youtube";
 import Deals from "@/sections/Deals";
+import FAQ from "@/app/(home)/faqs/page";
 
 export default function Home() {
   return (
@@ -21,13 +22,14 @@ export default function Home() {
 
       <Products />
       <About />
-      {/* <Collection /> */}
-      <Youtube />
-      {/* <Deals /> */}
-      <Testimonials />
-      <Blogs />
+      <Collection />
+      {/* <Youtube /> */}
+      <Deals />
+      <FAQ/>
+      {/* <Testimonials />
+      <Blogs /> */}
 
-      {/* <NewsLetter />   */}
+      <NewsLetter />  
     </main>
   );
 }

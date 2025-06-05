@@ -40,7 +40,7 @@ export default function FAQ() {
     <section className="w-full bg-white text-black py-16">
       <div className="container mx-auto px-4 ">
         <div className="mb-10">
-          <p className="text-[#5f7040] font-medium mb-2 text-sm">FAQ</p>
+          <p className="text-darkGreen font-medium mb-2 text-sm">FAQ</p>
           <h2 className="text-3xl md:text-4xl font-semibold leading-tight">
             Got Questions? We’ve Got the <br /> Edge on Answers
           </h2>
@@ -60,7 +60,7 @@ export default function FAQ() {
                   </span>
                   <div
                     className={`flex items-center justify-center w-8 h-8 rounded-full mt-1 shrink-0 ${
-                      isOpen ? "bg-red-600" : "bg-[#5f7040]"
+                      isOpen ? "bg-red-600" : "bg-darkGreen"
                     }`}
                   >
                     {isOpen ? (

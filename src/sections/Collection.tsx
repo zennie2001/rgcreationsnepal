@@ -1,217 +1,153 @@
 "use client";
 import React from "react";
-import { ArrowRight } from "lucide-react";
-import blade from "@/assets/images/blade.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
-// Define categories to match the image
-const categories = [
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+}
+
+const projects: Project[] = [
   {
     id: 1,
-    type: "Knife",
-    title: "Pocket Knives",
-    image: blade,
-    size: "wide", // This is the wider card in the layout
+    title: "Harsh Batika",
+    description:
+      "Harshan Batika, a escape from the city's hustle and bustle and discovering all-in-one party venue, nestled in a serene and family-friendly location.",
+    image:
+      "/harshah.jpg",
   },
   {
     id: 2,
-    type: "Knife",
-    title: "Survival Knives",
-    image: blade, // Replace with your actual knife image path
-    size: "normal",
+    title: "Royal Palace Hotel",
+    description:
+      "A luxurious 5-star hotel complex featuring traditional Nepalese architecture blended with modern amenities, offering guests an unforgettable experience in the heart of Kathmandu.",
+    image:
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
   },
   {
     id: 3,
-    type: "Knife",
-    title: "Machetes",
-    image: blade, // Replace with your actual knife image path
-    size: "normal",
+    title: "Mountain View Residences",
+    description:
+      "Premium residential complex with stunning Himalayan views, featuring modern apartments designed for comfort and sustainability, perfect for families seeking luxury living.",
+    image:
+      "https://images.unsplash.com/photo-1605146769289-440113cc3d00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
   },
   {
     id: 4,
-    type: "Knife",
-    title: "Tactical Knives",
-    image: blade, // Replace with your actual knife image path
-    size: "normal",
-  },
-  {
-    id: 5,
-    type: "Knife",
-    title: "Pocket Knives",
-    image: blade, // Replace with your actual knife image path
-    size: "wide", // This is the wider card in the second row
-  },
-  {
-    id: 6,
-    type: "Knife",
-    title: "Boot Knives",
-    image: blade, // Replace with your actual knife image path
-    size: "normal",
+    title: "Heritage Shopping Center",
+    description:
+      "A contemporary shopping destination that celebrates Nepal's rich cultural heritage while providing modern retail spaces and entertainment facilities for the whole family.",
+    image:
+      "https://images.unsplash.com/photo-1555636222-cae831e670b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
   },
 ];
 
-const Collection = () => {
+const Collection: React.FC = () => {
   return (
-    <section className="w-full bg-primary text-white py-16 px-6 md:px-12 lg:px-16">
-      <div className="container mx-auto">
-        {/* Heading */}
-        <div className="mb-12 text-center md:text-left">
-          <p className="text-darkGreen mb-2">Top Categories</p>
-          <h2 className="text-xl md:text-4xl lg:text-5xl font-medium ">
-            Sorted by Purpose, Defined
-            <br />
-            by Precision, Chosen by You
+    <div className="min-h-screen py-12 px-4">
+      <div className="container mx-auto w-full relative">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Best Construction Company in Kathmandu
+          </h1>
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">
+            Our Projects
           </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            We take pride in our track record, having successfully constructed
+            over 100 houses, the majority of which are luxurious bungalows.
+          </p>
         </div>
 
-        {/* Categories Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {/* First row */}
-          <div className="lg:col-span-2 md:col-span-2 col-span-1">
-            <NewCategoryCard
-              category={categories[0]}
-              showButton={true}
-              className="h-64 md:h-72"
-            />
-          </div>
-          <div className="col-span-1">
-            <CategoryCard category={categories[1]} className="h-64 md:h-72" />
-          </div>
+        {/* Slider Container */}
+        <div className="relative bg-white rounded-sm  overflow-hidden">
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={0}
+            slidesPerView={1}
+            navigation={{
+              nextEl: ".swiper-button-next-custom",
+              prevEl: ".swiper-button-prev-custom",
+            }}
+            pagination={{
+              el: ".swiper-pagination-custom",
+              clickable: true,
+              renderBullet: (index: number, className: string) => {
+                return `<span class="${className} w-3 h-3 bg-gray-300 rounded-full mx-1 cursor-pointer transition-all duration-300 hover:bg-gray-500"></span>`;
+              },
+            }}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            className="h-[300px] md:h-[500px]"
+          >
+            {projects.map((project) => (
+              <SwiperSlide key={project.id}>
+                <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
+                  {/* Image Section */}
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
+                  </div>
 
-          {/* Second row */}
-          <div className="col-span-1">
-            <CategoryCard category={categories[2]} className="h-64 md:h-72" />
-          </div>
-          <div className="col-span-1">
-            <CategoryCard category={categories[3]} className="h-64 md:h-72" />
-          </div>
-          <div className="lg:col-span-2  col-span-1">
-            <NewCategoryCard
-              category={categories[5]}
-              className="h-64 md:h-72"
-            />
-          </div>
-          <div className="col-span-1">
-            <CategoryCard category={categories[3]} className="h-64 md:h-72" />
-          </div>
+                  {/* Content Section */}
+                  <div className="flex flex-col absolute left-[500px]  justify-center my-28 p-8 md:py-12 lg:py-16 bg-white/70">
+                    <div className="space-y-6">
+                      <h3 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                        {project.title}
+                      </h3>
+                      <div className="w-20 h-1 bg-darkGreen rounded-full"></div>
+                      <p className="text-darkGreen/60 font-semibold text-lg md:text-xl leading-relaxed">
+                        {project.description}
+                      </p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
 
-          {/* Third row - only shows on mobile
-          <div className="lg:hidden md:hidden col-span-1">
-            <CategoryCard 
-              category={categories[4]} 
-              showButton={true} 
-              className="h-64"
-            />
-          </div> */}
-
-          {/* Wide card for desktop/tablet - third row */}
-          {/* <div className="hidden md:block lg:col-span-2 md:col-span-2">
-            <CategoryCard 
-              category={categories[4]} 
-              showButton={true} 
-              className="h-64 md:h-72"
-            />
-          </div> */}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-// Category Card Component
-const CategoryCard = ({
-  category,
-  showButton = false,
-  className = "",
-}: any) => {
-  return (
-    <div
-      className={`bg-white rounded-lg overflow-hidden relative ${className}`}
-    >
-      <div className="absolute inset-0 flex flex-col   p-6">
-        {/* Category Type */}
-        <div>
-          <p className="text-darkGreen font-semibold">{category.type}</p>
-        </div>
-
-        {/* Category Title */}
-        <div>
-          <h3 className="text-gray-500 text-2xl md:text-3xl font-extrabold mb-4">
-            {category.title}
-          </h3>
-
-          {/* Shop Now Button - Only shown if showButton is true */}
-          {showButton && (
-            <button className="bg-gray-800 text-white flex items-center gap-2 px-4 py-2 rounded text-sm">
-              SHOP NOW
-              <ArrowRight size={16} />
+          {/* Custom Navigation Buttons */}
+          <div className="absolute bottom-8 left-8 z-10 flex items-center space-x-4">
+            <button className="swiper-button-prev-custom group flex items-center justify-center w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full  hover:bg-white transition-all duration-300 hover:scale-110">
+              <ChevronLeft className="w-6 h-6 text-gray-700 group-hover:text-gray-900 transition-colors" />
             </button>
-          )}
-        </div>
-      </div>
-
-      {/* The knife image with red glow effect */}
-      <div className="absolute top-[60%] right-10 transform -translate-y-1/2">
-        <div className="relative">
-          {/* Red glow effect */}
-          <div className="absolute bottom-5 w-56 h-8 bg-darkGreen opacity-70 blur-xl rounded-full"></div>
-
-          {/* Knife image */}
-          <img
-            src={category.image.src || "https://via.placeholder.com/300"}
-            alt={category.title}
-            className="h-56 w-56 object-contain"
-          />
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const NewCategoryCard = ({
-  category,
-  showButton = false,
-  className = "",
-}: any) => {
-  return (
-    <div
-      className={`bg-white rounded-lg min-h-[290px]  overflow-hidden relative ${className}`}
-    >
-      <div className="absolute inset-0 flex flex-col   p-6">
-        {/* Category Type */}
-        <div>
-          <p className="text-darkGreen font-semibold">{category.type}</p>
-        </div>
-
-        {/* Category Title */}
-        <div>
-          <h3 className="text-gray-500 text-2xl md:text-3xl font-extrabold mb-4">
-            {category.title}
-          </h3>
-
-          {/* Shop Now Button - Only shown if showButton is true */}
-          {showButton && (
-            <button className="bg-gray-800 text-white flex items-center gap-2 px-4 py-2 rounded text-sm">
-              SHOP NOW
-              <ArrowRight size={16} />
+            <button className="swiper-button-next-custom group flex items-center justify-center w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full  hover:bg-white transition-all duration-300 hover:scale-110">
+              <ChevronRight className="w-6 h-6 text-gray-700 group-hover:text-gray-900 transition-colors" />
             </button>
-          )}
+
+            {/* Custom Pagination */}
+            <div className="swiper-pagination-custom flex items-center ml-4"></div>
+          </div>
         </div>
+
+        
       </div>
 
-      {/* The knife image with red glow effect */}
-      <div className="absolute top-[70%] md:top-[60%] right-10 transform -translate-y-1/2">
-        <div className="relative">
-          {/* Red glow effect */}
-          <div className="absolute bottom-20 w-80 h-8 bg-darkGreen opacity-70 blur-2xl rounded-full"></div>
-
-          {/* Knife image */}
-          <img
-            src={category.image.src || "https://via.placeholder.com/300"}
-            alt={category.title}
-            className="h-80 w-80 object-contain"
-          />
-        </div>
-      </div>
+      {/* Custom Swiper Styles */}
+      <style jsx>{`
+        .swiper-pagination-custom .swiper-pagination-bullet-active {
+          background-color: #3b82f6 !important;
+          transform: scale(1.2);
+        }
+      `}</style>
     </div>
   );
 };

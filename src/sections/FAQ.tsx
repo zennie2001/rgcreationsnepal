@@ -1,3 +1,4 @@
+"use client";
 import FaqCard from '@/components/FaqCard'
 import SectionHeader from '@/components/SectionHeader'
 import React, { useState } from 'react'

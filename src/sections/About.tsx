@@ -1,51 +1,60 @@
-import Image from "next/image";
-import knifeImage from "@/assets/images/image-about.jpg";
+import React from "react";
 
-export default function About() {
+const About: React.FC = () => {
   return (
-    <main className=" bg-primary">
-      <section className="flex flex-col lg:flex-row w-full container text-white px-5 py-10 lg:px-0 lg:py-16  gap-12">
-        {/* Left Content */}
-        <div className="w-full lg:w-1/2  flex flex-col gap-6">
-          <p className="text-darkGreen md:text-left text-center font-medium text-base md:text-lg -mb-4">About us</p>
-          <h2 className="text-xl text-black sm:text-3xl md:text-4xl md:text-left text-center font-medium ">
-            Crafted with Vision, Honed with <br className="hidden sm:block" />
-            Purpose, Carried with Confidence
-          </h2>
-          <p className="text-black text-[13px] md:text-base md:text-left text-center leading-relaxed">
-            At Swift-Action, we craft more than blades — we build tools that
-            answer the call of speed, safety, and style. Every knife is a
-            product of thoughtful engineering and bold design, made to perform
-            when it matters most.
-          </p>
-          <div className="flex flex-col md:text-left text-black text-center sm:flex-row gap-8 pt-4">
-            <div className="flex-1">
-              <h4 className="font-semibold  mb-2">Engineered with Purpose.</h4>
-              <p className="text-black  text-[13px] leading-relaxed">
-                From concept to creation, every knife we produce reflects our
-                commitment to quality, performance, and cutting-edge design.
-              </p>
-            </div>
-            <div className="flex-1">
-              <h4 className="font-semibold mb-2">A Legacy of Precision</h4>
-              <p className="text-black text-[13px] leading-relaxed">
-                Born from a deep respect for mechanics and form, we set out to
-                redefine the automatic knife — delivering speed, safety, and
-                style.
-              </p>
-            </div>
-          </div>
+    <>
+
+      <section className="relative container mx-auto mb-10 mt-20 w-full">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/about1.jpg" // Replace with actual image path
+            alt="Interior Background"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black opacity-40" />
         </div>
 
-        {/* Right Image */}
-        <div className="relative w-full lg:w-1/2 flex justify-center rounded-lg">
-          <Image
-            src={knifeImage}
-            alt="Crossed knives"
-            className="w-[300px] sm:w-full rounded-lg h-[90%] object-cover"
-          />
+        {/* Hero Text */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 py-32 text-center text-white">
+          <p className="uppercase text-sm tracking-widest mb-4">
+            Explore Our Services
+          </p>
+          <h1 className="text-4xl md:text-5xl font-semibold mb-6">
+            See what we can do together.
+          </h1>
+          <button className="border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition">
+            View All Services
+          </button>
         </div>
       </section>
-    </main>
+      {/* Stats Section */}
+      <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 bg-[#f3f6fc] max-w-6xl mx-auto -mt-10  text-center py-8 text-gray-800">
+        <div>
+          <p className="text-3xl font-bold">40+</p>
+          <p className="uppercase text-xs tracking-widest mt-2">
+            Different Services
+          </p>
+        </div>
+        <div>
+          <p className="text-3xl font-bold">100+</p>
+          <p className="uppercase text-xs tracking-widest mt-2">
+            Projects Completed
+          </p>
+        </div>
+        <div>
+          <p className="text-3xl font-bold">15+</p>
+          <p className="uppercase text-xs tracking-widest mt-2">
+            Years of Experience
+          </p>
+        </div>
+        <div>
+          <p className="text-3xl font-bold">98%</p>
+          <p className="uppercase text-xs tracking-widest mt-2">Success Rate</p>
+        </div>
+      </div>
+    </>
   );
-}
+};
+
+export default About;

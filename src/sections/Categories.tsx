@@ -1,56 +1,54 @@
 import React from "react";
-import { FaMoneyBillWave } from "react-icons/fa";
-
-const advantages = [
-
-  {
-    img:"/blade1.png",
-    title: "Traditional & Classic Kukris",
-    description:
-      "Blades rooted in history—crafted in the same style as those carried by farmers, villagers, and legendary Gurkha warriors.",
-  },
-  {
-     img:"/blade3.png",
-    title: "Modern & Tactical Kukris",
-    description:
-      "Contemporary designs built for today's needs—featuring ergonomic handles, updated blade profiles, and functional materials for field, survival, and combat use.",
-  },
-  {
-     img:"/blade2.png",
-    title: "Custom & Modified Kukris",
-    description:
-      "Unique, personalized kukris tailored to your vision—blending traditional forging with custom blade shapes, engravings, and handle designs.",
-  },
-];
+import Image from "next/image";
 
 const Categories = () => {
   return (
-    <main className="w-full mt-10 bg-darkGray">
-      <section className="grid grid-cols-1 md:grid-cols-4 container w-full">
-        {/* Left Side - 1/4 width, dark */}
-        <div className=" text-white py-10 flex flex-col justify-center items-center md:items-start space-y-6">
-          <h2 className="text-3xl text-center md:text-left font-semibold">
-            Our <br />
-            Khukuri/kukri
+    <section className="w-full py-16 bg-white">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center px-6">
+        {/* Left content */}
+        <div className="space-y-6">
+          <p className="text-sm text-darkGreen uppercase tracking-widest">
+            About Us
+          </p>
+          <h2 className="text-4xl font-bold text-darkBlue leading-snug">
+            With our knowledge <br /> we guarentee success
           </h2>
-          <button className="bg-darkGreen text-white px-6 py-3 rounded transition">
-            Learn More
+          <p className="text-gray-600 max-w-md">
+            To be the epitome of construction excellence, redefining the
+            landscape with iconic structures that seamlessly blend innovation,
+            luxury, and functionality. We envision a future where our projects,
+            adorned with a royal touch, stand as timeless masterpieces, setting
+            new benchmarks in the realms of hospitality, entertainment,
+            healthcare, residential, and education.
+          </p>
+          <button className="bg-darkGreen text-white px-6 py-3 rounded shadow hover:bg-green-800 transition">
+            Learn more →
           </button>
         </div>
 
-        {/* Right Side - 3/4 width, orange in 3 columns */}
-        {advantages.map((item, index) => (
-          <div
-            key={index}
-            className="bg-darkGreen text-white p-8 flex flex-col items-center md:items-start space-y-4"
-          >
-            <img src={item.img} alt={item.title} className="w-14 h-14" />
-            <h3 className="text-lg text-center md:text-left font-semibold leading-snug">{item.title}</h3>
-            <p className="text-xs md:text-sm text-center md:text-left opacity-90">{item.description}</p>
+        {/* Right images */}
+        <div className="relative w-full h-[400px]">
+          <div className="absolute top-0 right-0 w-60 h-40 shadow-lg">
+            <Image
+              src="/about1.jpg"
+              alt="Notebook"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
           </div>
-        ))}
-      </section>
-    </main>
+          <div className="absolute bottom-0 left-0 w-72 h-52 shadow-lg border-4 border-white">
+            <Image
+              src="/about2.jpg"
+              alt="Construction Site"
+              layout="fill"
+              objectFit="cover"
+              className="rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
