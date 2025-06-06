@@ -3,24 +3,25 @@ import React, { useState } from "react";
 import { ChevronRight } from "lucide-react";
 import Header from "./Header";
 
+
 // Hero slides data
 const slides = [
   {
     id: 1,
     image:
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+      "/rambagh.jpg",
     title: "Best Architectural Firm for Sustainable Design",
   },
   {
     id: 2,
     image:
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+      "/royal.jpg",
     title: "Innovative Architecture Solutions",
   },
   {
     id: 3,
     image:
-      "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+      "/taaj.jpg",
     title: "Creating Tomorrow's Spaces Today",
   },
 ];
@@ -61,7 +62,7 @@ const Hero = () => {
             <img
               src={slide.image}
               alt={slide.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-fill"
             />
             <div className="absolute inset-0 bg-black/50"></div>
           </div>

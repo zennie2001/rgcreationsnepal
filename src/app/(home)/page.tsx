@@ -10,9 +10,10 @@ import Products from "@/sections/Products";
 import Testimonials from "@/sections/Testimonials";
 
 import NewsLetter from "@/sections/NewsLetter";
-import Youtube from "@/sections/Youtube";
+import Youtube from "@/sections/Blog";
 import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
+import BlogDesign from "@/sections/Blog";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
       <Products />
       <About />
       <Collection />
-      {/* <Youtube /> */}
+      <BlogDesign />
       <Deals />
       <FAQ/>
       {/* <Testimonials />

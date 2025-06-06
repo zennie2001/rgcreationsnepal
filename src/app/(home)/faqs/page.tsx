@@ -6,29 +6,30 @@ export default function FAQ() {
 
   const faqItems = [
     {
-      question: "How long will it take my product to arrive?",
+      question: "What makes your firm the best choice for sustainable design?",
       answer:
-        "When you place an order with Knife Depot, you'll receive an estimated delivery date during the checkout process. Your actual date of delivery will depend on the shipping option you choose. Keep in mind that on occasion bad weather and shipping company delays can slow down orders.",
+        "Our firm combines cutting-edge green technologies with timeless design principles. We prioritize passive design strategies, eco-certified materials, and LEED/BREEAM standards to deliver buildings that are both sustainable and beautiful.",
     },
     {
-      question: "How much will shipping cost?",
+      question: "Do sustainable buildings cost more to design or build?",
       answer:
-        "Shipping costs depend on your location, selected shipping method, and order total. Standard shipping starts at $5.99, with free shipping available on orders over $75. Express shipping options are available at additional cost.",
+        "While some sustainable materials and technologies may have higher upfront costs, they typically result in long-term savings through energy efficiency, durability, and reduced maintenance costs.",
     },
     {
-      question: "Do you ship to military bases?",
+      question: "Can you work with local/natural materials in your designs?",
       answer:
-        "Yes, we do ship to military bases and APO/FPO addresses. Please note that deliveries to military addresses may take additional time due to military postal system processing.",
+        "Absolutely! We actively seek out local and natural materials to reduce transportation emissions, support regional economies, and connect our designs to their local contexts.",
     },
     {
-      question: "Do I need to sign up for an account to place an order?",
+      question:
+        "Do sustainable designs compromise on aesthetics or functionality?",
       answer:
-        "No, you don't need to create an account to place an order. We offer a guest checkout option. However, creating an account allows you to track orders, save preferences, and makes future purchases faster.",
+        "Not at all. Our sustainable designs are tailored to meet high standards of beauty and performance. Sustainability enhances both form and function when integrated thoughtfully.",
     },
     {
-      question: "What payment methods do you accept?",
+      question: "Do you offer sustainable design services internationally?",
       answer:
-        "We accept all major credit cards (Visa, MasterCard, American Express, Discover), PayPal, Apple Pay, and Google Pay. We currently do not accept checks, money orders, or cryptocurrency.",
+        "Yes, we provide sustainable design consultancy and architectural services to clients around the world. Our team is experienced in adapting to regional codes, climates, and cultural needs.",
     },
   ];
 
@@ -37,7 +38,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="w-full bg-white text-black py-16">
+    <section className="w-full bg-white text-black pt-8 pb-10">
       <div className="container mx-auto px-4 ">
         <div className="mb-10">
           <p className="text-darkGreen font-medium mb-2 text-sm">FAQ</p>
@@ -60,7 +61,7 @@ export default function FAQ() {
                   </span>
                   <div
                     className={`flex items-center justify-center w-8 h-8 rounded-full mt-1 shrink-0 ${
-                      isOpen ? "bg-red-600" : "bg-darkGreen"
+                      isOpen ? "bg-[#980000]" : "bg-darkGreen"
                     }`}
                   >
                     {isOpen ? (

@@ -7,7 +7,7 @@ const Products = () => {
     <section className="relative w-full h-screen">
       {/* Background Image */}
       <Image
-        src="/villa.jpg" // Replace with your image in public folder
+        src="/bouddha.jpg" // Replace with your image in public folder
         alt="Background"
         layout="fill"
         objectFit="cover"

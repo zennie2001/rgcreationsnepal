@@ -22,38 +22,34 @@ const projects: Project[] = [
     title: "Harsh Batika",
     description:
       "Harshan Batika, a escape from the city's hustle and bustle and discovering all-in-one party venue, nestled in a serene and family-friendly location.",
-    image:
-      "/harshah.jpg",
+    image: "/harshah.jpg",
   },
   {
     id: 2,
-    title: "Royal Palace Hotel",
+    title: "Rambagh Mahal",
     description:
-      "A luxurious 5-star hotel complex featuring traditional Nepalese architecture blended with modern amenities, offering guests an unforgettable experience in the heart of Kathmandu.",
-    image:
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      "Rambagh Mahal, a luxury and one of the largest banquet venue. We specialize in making your special occasions truly memorable.",
+    image: "/rambagh.jpg",
   },
   {
     id: 3,
-    title: "Mountain View Residences",
+    title: "Bouddha Heritage",
     description:
-      "Premium residential complex with stunning Himalayan views, featuring modern apartments designed for comfort and sustainability, perfect for families seeking luxury living.",
-    image:
-      "https://images.unsplash.com/photo-1605146769289-440113cc3d00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      "Bouddha Heritage, a luxury and premium banquet venue. The high-class interior and royal touch add a touch of elegance and grandeur to the overall ambiance.",
+    image: "/bouddha.jpg",
   },
   {
     id: 4,
-    title: "Heritage Shopping Center",
+    title: "Taaj Reception",
     description:
-      "A contemporary shopping destination that celebrates Nepal's rich cultural heritage while providing modern retail spaces and entertainment facilities for the whole family.",
-    image:
-      "https://images.unsplash.com/photo-1555636222-cae831e670b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      "Taaj Reception, the best venue in town is a captivating blend of elegance, functionality, and ambiance. From the moment you step through its doors, you're enveloped in an atmosphere of sophistication and charm.",
+    image: "/taj.jpg",
   },
 ];
 
 const Collection: React.FC = () => {
   return (
-    <div className="min-h-screen py-12 px-4">
+    <div className="min-h-screen pt-20 pb-10 px-4">
       <div className="container mx-auto w-full relative">
         {/* Header */}
         <div className="text-center mb-16">
@@ -87,7 +83,7 @@ const Collection: React.FC = () => {
               },
             }}
             autoplay={{
-              delay: 5000,
+              delay: 10000,
               disableOnInteraction: false,
             }}
             loop={true}
@@ -113,10 +109,9 @@ const Collection: React.FC = () => {
                         {project.title}
                       </h3>
                       <div className="w-20 h-1 bg-darkGreen rounded-full"></div>
-                      <p className="text-darkGreen/60 font-semibold text-lg md:text-xl leading-relaxed">
+                      <p className="text-[#909090] font-medium text-lg md:text-xl leading-relaxed">
                         {project.description}
                       </p>
-                      
                     </div>
                   </div>
                 </div>
@@ -137,8 +132,6 @@ const Collection: React.FC = () => {
             <div className="swiper-pagination-custom flex items-center ml-4"></div>
           </div>
         </div>
-
-        
       </div>
 
       {/* Custom Swiper Styles */}

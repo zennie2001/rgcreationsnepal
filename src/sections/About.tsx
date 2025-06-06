@@ -4,15 +4,15 @@ const About: React.FC = () => {
   return (
     <>
 
-      <section className="relative container mx-auto mb-10 mt-20 w-full">
+      <section className="relative container mx-auto my-10 w-full">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="/about1.jpg" // Replace with actual image path
+            src="/banner-1.png" 
             alt="Interior Background"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black opacity-40" />
+          
         </div>
 
         {/* Hero Text */}
