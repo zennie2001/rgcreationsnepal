@@ -3,16 +3,14 @@ import React from "react";
 const About: React.FC = () => {
   return (
     <>
-
       <section className="relative container mx-auto my-10 w-full">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="/banner-1.png" 
+            src="/banner-1.png"
             alt="Interior Background"
             className="w-full h-full object-cover"
           />
-          
         </div>
 
         {/* Hero Text */}
@@ -29,7 +27,7 @@ const About: React.FC = () => {
         </div>
       </section>
       {/* Stats Section */}
-      <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 bg-[#f3f6fc] max-w-6xl mx-auto -mt-10  text-center py-8 text-gray-800">
+      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 bg-[#f3f6fc] max-w-6xl mx-auto -mt-10 text-center py-8 text-gray-800 px-4">
         <div>
           <p className="text-3xl font-bold">40+</p>
           <p className="uppercase text-xs tracking-widest mt-2">

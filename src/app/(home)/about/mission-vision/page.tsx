@@ -1,4 +1,5 @@
 import NewPageHeader from "@/components/NewPageHeader";
+import BlogDesign from "@/sections/Blog";
 import NewsLetter from "@/sections/NewsLetter";
 import Image from "next/image";
 
@@ -17,12 +18,12 @@ export default function RGMission() {
               height={800}
               className="rounded-lg object-cover"
             />
-            <div className="absolute bottom-6 left-6 bg-blue-900 text-white px-4 py-4 rounded">
-              <span className="text-4xl font-bold">15+</span>
-              <div className="text-xs">YEARS OF EXPERIENCE</div>
+            <div className="absolute bottom-6 left-6 bg-[#051f4f] text-white px-4 py-4  rounded">
+              <span className="text-5xl font-extrabold ">15+</span>
+              <div className="text-xs mt-2">YEARS OF EXPERIENCE</div>
             </div>
           </div>
-          <div className="md:w-1/2 mt-10">
+          <div className="md:w-1/2 md:mt-20">
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
               Welcome to RG Creations Building Dreams, Crafting Excellence
             </h1>
@@ -60,16 +61,15 @@ export default function RGMission() {
 
         {/* Our Mission Section */}
         <div className="mt-20">
-          <h2 className="text-2xl font-bold mb-6">Our Mission</h2>
-          <p className="text-gray-700 max-w-2xl mb-8">
-            Our construction company endeavors to turn every vision into a
-            tangible, quality construction. With innovation at the forefront, we
-            aim to provide superior results on time and on budget that exceed
-            the client’s expectations.
-          </p>
-
           <div className="grid md:grid-cols-2 gap-10 items-start">
             <div className="space-y-6">
+              <h2 className="text-2xl font-bold md:mt-20 mb-6">Our Mission</h2>
+              <p className="text-gray-700 max-w-xl mb-8">
+                Our construction company endeavors to turn every vision into a
+                tangible, quality construction. With innovation at the
+                forefront, we aim to provide superior results on time and on
+                budget that exceed the client’s expectations.
+              </p>
               <div className="flex items-start gap-4">
                 <div className="bg-green-500 text-white px-3 py-3 rounded-lg text-sm font-bold">
                   <svg
@@ -175,6 +175,7 @@ export default function RGMission() {
           </div>
         </div>
       </div>
+      <BlogDesign />
       <NewsLetter />
     </main>
   );

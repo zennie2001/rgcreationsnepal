@@ -12,8 +12,8 @@ const Header = () => {
         <div className="container mx-auto px-6 lg:px-12">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <div className="flex w-32 h-28 bg-white items-center">
-              <img src="/logo.png" alt="Logo" className="p-4" />
+            <div className="flex w-20 h-16 md:w-32 md:h-28 bg-white items-center">
+              <img src="/logo.png" alt="Logo" className="p-2 md:p-4" />
             </div>
 
             {/* Desktop Navigation */}

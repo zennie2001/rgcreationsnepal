@@ -27,24 +27,49 @@ const Categories = () => {
         </div>
 
         {/* Right images */}
-        <div className="relative w-full h-[500px]">
-          <div className="absolute top-0 right-0 w-96 h-80 p-4 bg-white border-white shadow-lg">
-            <Image
-              src="/img-rg1.png"
-              alt="Notebook"
-              layout="fill"
-              objectFit="cover "
-              className="rounded-lg p-3"
-            />
+        <div className="w-full">
+          {/* Responsive Column Layout for Small Screens */}
+          <div className="flex flex-col md:hidden space-y-4">
+            <div className="w-full h-80 p-4 bg-white border-white shadow-lg">
+              <Image
+                src="/img-rg1.png"
+                alt="Notebook"
+                width={600}
+                height={320}
+                className="rounded-lg w-full h-full object-cover p-3"
+              />
+            </div>
+            <div className="w-full h-80 p-4 bg-white border-white shadow-lg">
+              <Image
+                src="/about2.jpg"
+                alt="Construction Site"
+                width={600}
+                height={320}
+                className="rounded-lg w-full h-full object-cover p-3"
+              />
+            </div>
           </div>
-          <div className="absolute bottom-0 left-10 w-72 h-80 shadow-lg border-4 p-4 bg-white border-white">
-            <Image
-              src="/about2.jpg"
-              alt="Construction Site"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-lg p-3"
-            />
+
+          {/* Original Absolute Layout for Medium and Up */}
+          <div className="relative w-full h-[500px] hidden md:block">
+            <div className="absolute top-0 right-0 w-96 h-80 p-4 bg-white border-white shadow-lg">
+              <Image
+                src="/img-rg1.png"
+                alt="Notebook"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-lg p-3"
+              />
+            </div>
+            <div className="absolute bottom-0 left-10 w-72 h-80 shadow-lg border-4 p-4 bg-white border-white">
+              <Image
+                src="/about2.jpg"
+                alt="Construction Site"
+                layout="fill"
+                objectFit="cover"
+                className="rounded-lg p-3"
+              />
+            </div>
           </div>
         </div>
       </div>
