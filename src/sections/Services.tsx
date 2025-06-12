@@ -1,63 +1,115 @@
-import SectionHeader from "../components/SectionHeader";
-import serviceFirst from "@/assets/images/servicesFirst.png";
-import serviceSecond from "@/assets/images/servicesSecond.png";
-import serviceThird from "@/assets/images/servicesThird.png";
-import Image from "next/image";
+import React from "react";
 
-const services = [
-  {
-    image: serviceFirst,
-    title: "Test Preparation",
-    description:
-      "A wide range of test preparation classes for IELTS, TOFEL, SAT, GRE, GMAT, and Japanese language are operated.",
-  },
-  {
-    image: serviceSecond,
-    title: "Approach",
-    description:
-      "We aligned ourselves according to the student’s objectives and collaborate to unlock maximum opportunities.",
-  },
-  {
-    image: serviceThird,
-    title: "Placement",
-    description:
-      "Our association with reputed intuitions enables students to embark their journey with the best platform available.",
-  },
-];
+const Services: React.FC = () => {
+  const services = [
+    {
+      id: 1,
+      category: "Explore Service",
+      title: "Mechanical Engineering",
+      link: "Read",
+    },
+    {
+      id: 2,
+      category: "Explore Service",
+      title: "Mechanical Engineering",
+      link: "Read",
+    },
+    {
+      id: 3,
+      category: "Explore Service",
+      title: "Mechanical Engineering",
+      link: "Read",
+    },
+    {
+      id: 4,
+      category: "Explore Service",
+      title: "Mechanical Engineering",
+      link: "Read",
+    },
+    {
+      id: 5,
+      category: "Explore Service",
+      title: "Mechanical Engineering",
+      link: "Read",
+    },
+    {
+      id: 6,
+      category: "Explore Service",
+      title: "Mechanical Engineering",
+      link: "Read",
+    },
+    {
+      id: 7,
+      category: "Explore Service",
+      title: "Mechanical Engineering",
+      link: "Read",
+    },
+    {
+      id: 8,
+      category: "Explore Service",
+      title: "Mechanical Engineering",
+      link: "Read",
+    },
+    {
+      id: 9,
+      category: "Explore Service",
+      title: "Mechanical Engineering",
+      link: "Read",
+    },
+    {
+      id: 10,
+      category: "Explore Service",
+      title: "Mechanical Engineering",
+      link: "Read",
+    },
+    {
+      id: 11,
+      category: "Explore Service",
+      title: "Mechanical Engineering",
+      link: "Read",
+    },
+    {
+      id: 12,
+      category: "Explore Service",
+      title: "Mechanical Engineering",
+      link: "Read",
+    },
+  ];
 
-export default function Services() {
   return (
-    <section className="w-full flex_center flex-col lg:gap-12 gap-6 lg:p-24 px-4 py-10 font-jakarta">
-      <SectionHeader
-        title="Tailored professional assistance"
-        smallTitle="Our Services"
-      />
-      <div className="grid lg:grid-cols-3 lg:gap-8 gap-5 grid-cols-1 w-full">
-        {services.map((service, index) => {
-          return (
+    <section className="py-16 px-4 lg:px-8 bg-white">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Title */}
+        <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-12">
+          Other Services
+        </h2>
+
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {services.map((service) => (
             <div
-              key={index}
-              className="flex_center flex-col col-span-1 gap-6 rounded-md p-8 bg-[#F5FBFF]"
+              key={service.id}
+              className="bg-white  overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
             >
-              <div className="image size-52">
-                <Image
-                  src={service.image}
-                  alt="service"
-                  className="size-full object-contain"
-                />
-              </div>
-              <div className="texts flex_center flex-col gap-4">
-                <p className="flex_center text-2xl text-darkGreen font-semibold">
+              {/* Teal Header Bar */}
+              <div className="h-2 bg-darkGreen"></div>
+
+              {/* Card Content */}
+              <div className="p-6 pb-14 pt-8">
+                <p className="text-sm text-gray-500 mb-3">{service.category}</p>
+                <h3 className="text-xl font-bold text-gray-900 mb-4 leading-tight">
                   {service.title}
-                </p>
-                <p className="flex_center text-center text-text">
-                  {service.description}
-                </p>
+                </h3>
+                <button className="text-sm font-semibold text-gray-900 hover:text-darkGreen transition-colors duration-200">
+                  {service.link}
+                </button>
               </div>
             </div>
-          );
-        })}
+          ))}
+        </div>
       </div>
     </section>
   );
-}
+};
+
+export default Services;

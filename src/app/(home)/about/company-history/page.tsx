@@ -15,12 +15,12 @@ export default function RGMission() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6">
           {/* Left content */}
           <div className="space-y-6">
-            <p className="text-4xl font-bold text-darkGreen leading-snug">
+            <p className="text-3xl md:text-4xl w-full font-bold text-darkGreen leading-snug">
               Welcome to RG
               <br /> Creations Building Dreams,
               <br /> Crafting Excellence
             </p>
-            <p className="text-base font-semibold text-darkGreen whitespace-nowrap">
+            <p className="text-base font-semibold w-full text-darkGreen ">
               No. 1 quality construction for residential, commercial,
               infrastructure development.
             </p>

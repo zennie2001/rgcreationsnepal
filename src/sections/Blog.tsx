@@ -110,7 +110,9 @@ const BlogDesign: React.FC = () => {
             <p className="text-darkGreen text-sm font-medium tracking-widest uppercase mb-2">
               BLOG
             </p>
-            <p className="text-3xl md:text-5xl font-light text-gray-900">What's new?</p>
+            <p className="text-3xl md:text-5xl font-light text-gray-900">
+              What's new?
+            </p>
           </div>
           <button className="bg-darkGreen   text-white px-6 py-3 rounded-full text-xs md:text-sm font-medium hover:bg-teal-800 transition-colors">
             VIEW ALL BLOGS
@@ -200,7 +202,7 @@ const BlogDesign: React.FC = () => {
                       />
                     </div>
                     <div className="space-y-3">
-                      <h2 className="text-xl font-medium text-gray-900 group-hover:text-teal-700 transition-colors leading-tight">
+                      <h2 className="text-xl font-medium text-gray-900 group-hover:text-darkGreen transition-colors leading-tight">
                         {post.title}
                       </h2>
                       <p className="text-gray-600 text-sm leading-relaxed">
@@ -228,7 +230,7 @@ const BlogDesign: React.FC = () => {
                       onClick={() => setCurrentSlide(index * 2)}
                       className={`w-2 h-2 rounded-full transition-colors ${
                         Math.floor(currentSlide / 2) === index
-                          ? "bg-teal-700"
+                          ? "bg-darkGreen"
                           : "bg-gray-300"
                       }`}
                     />
