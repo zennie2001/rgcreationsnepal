@@ -5,7 +5,7 @@ const NewsLetter: React.FC = () => {
     <section className="max-w-7xl mx-auto my-12 px-4">
       <div className="bg-white shadow-lg rounded-xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
         {/* Left Image */}
-        <div className="h-[500px] lg:h-auto">
+        <div className="h-[400px] lg:h-auto">
           <img
             src="/rambagh.jpg" // Replace with your actual image path
             alt="Rambagh Mahal"

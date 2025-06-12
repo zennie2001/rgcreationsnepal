@@ -58,7 +58,7 @@ const Hero = () => {
             <img
               src={slide.image}
               alt={slide.title}
-              className="w-full h-full object-fill"
+              className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/50"></div>
           </div>
@@ -74,7 +74,7 @@ const Hero = () => {
             {slides[currentSlide].title}
           </p>
 
-          <button className="bg-white text-black px-8 py-2.5 rounded-md font-semibold text-lg hover:bg-darkGreen hover:text-white duration-500 transition-colors shadow-lg">
+          <button className="bg-white text-black px-4 py-2 md:px-8 md:py-2.5 rounded-md font-semibold text-base md:text-lg hover:bg-darkGreen hover:text-white duration-500 transition-colors shadow-lg">
             Send Message
           </button>
         </div>
@@ -83,16 +83,16 @@ const Hero = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-6 top-1/2 -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-2 md:p-3 rounded-full transition-colors"
+        className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-2 md:p-3 rounded-full transition-colors"
       >
-        <ChevronRight size={24} className="rotate-180" />
+        <ChevronRight size={20} className="rotate-180" />
       </button>
 
       <button
         onClick={nextSlide}
-        className="absolute right-6 top-1/2 -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-2 rounded-full transition-colors"
+        className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-2 md:p-3 rounded-full transition-colors"
       >
-        <ChevronRight size={24} />
+        <ChevronRight size={20} />
       </button>
 
       {/* Pagination Dots */}

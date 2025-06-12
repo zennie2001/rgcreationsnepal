@@ -121,10 +121,10 @@ const Collection: React.FC = () => {
 
           {/* Custom Navigation Buttons */}
           <div className="absolute bottom-8 left-8 z-10 flex items-center space-x-4">
-            <button className="swiper-button-prev-custom group flex items-center justify-center w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full  hover:bg-white transition-all duration-300 hover:scale-110">
+            <button className="swiper-button-prev-custom group flex items-center justify-center w-14 h-8 bg-white/90 backdrop-blur-sm rounded-full  hover:bg-white transition-all duration-300 hover:scale-110">
               <ChevronLeft className="w-6 h-6 text-gray-700 group-hover:text-gray-900 transition-colors" />
             </button>
-            <button className="swiper-button-next-custom group flex items-center justify-center w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full  hover:bg-white transition-all duration-300 hover:scale-110">
+            <button className="swiper-button-next-custom group flex items-center justify-center w-14 h-8 bg-white/90 backdrop-blur-sm rounded-full  hover:bg-white transition-all duration-300 hover:scale-110">
               <ChevronRight className="w-6 h-6 text-gray-700 group-hover:text-gray-900 transition-colors" />
             </button>
 

@@ -105,14 +105,14 @@ const BlogDesign: React.FC = () => {
     <div className="w-full container mx-auto bg-white py-10 pb-4 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="flex justify-between items-start mb-16">
+        <div className="flex justify-between items-center md:items-start mb-16">
           <div>
             <p className="text-darkGreen text-sm font-medium tracking-widest uppercase mb-2">
               BLOG
             </p>
-            <p className="text-5xl font-light text-gray-900">What's new?</p>
+            <p className="text-3xl md:text-5xl font-light text-gray-900">What's new?</p>
           </div>
-          <button className="bg-darkGreen   text-white px-6 py-3 rounded-full text-[10px] md:text-sm font-medium hover:bg-teal-800 transition-colors">
+          <button className="bg-darkGreen   text-white px-6 py-3 rounded-full text-xs md:text-sm font-medium hover:bg-teal-800 transition-colors">
             VIEW ALL BLOGS
           </button>
         </div>
@@ -189,7 +189,7 @@ const BlogDesign: React.FC = () => {
               </div>
 
               {/* Blog Posts Grid */}
-              <div className="grid grid-cols-2 gap-8 overflow-hidden">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 overflow-hidden">
                 {visiblePosts.map((post, index) => (
                   <article key={post.id} className="group cursor-pointer">
                     <div className="aspect-video mb-6 overflow-hidden rounded-xs">

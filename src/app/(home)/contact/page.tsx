@@ -13,7 +13,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
 import { Phone } from "lucide-react";
 import { MailOpen } from "lucide-react";
-import blade from "@/assets/images/blade-home.png";
+import NewPageHeader from "@/components/NewPageHeader";
 
 const contactInfos = [
   {
@@ -58,11 +58,39 @@ const socialMedia = [
 export default function ContactUs() {
   return (
     <main className="w-full overflow-hidden">
-      <PageHeader title="Contact Us" link="/contact" />
+      <NewPageHeader title="Contact" />
       {/* Contact Section */}
       <div className="container mx-auto mt-20 mb-20 shadow-lg rounded-3xl overflow-hidden flex flex-col md:flex-row">
         {/* Left side - Form */}
         <div className="w-full md:w-1/2 bg-white p-10 md:p-16">
+          <div className="md:mt-8 text-xs flex flex-col md:flex-row items-center gap-4 md:gap-10 text-gray-700">
+            <div className="flex items-center -ms-20 md:ms-0  gap-2 mb-8">
+              <Phone
+                size={20}
+                className="text-darkGreen font-semibold"
+                fill="darkGreen"
+              />
+              <div className="flex flex-col items-start">
+                <span className="text-darkGreen text-base font-semibold">
+                  Phone
+                </span>
+                <span className="text-gray-500 text-base font-semibold">
+                  2222 4444 8685
+                </span>
+              </div>
+            </div>
+            <div className="flex items-center gap-2 -ms-3 mb-8">
+              <MailOpen size={20} className="text-darkGreen" fill="darkGreen" />
+              <div className="flex flex-col items-start">
+                <span className="text-darkGreen text-base font-semibold">
+                  Email
+                </span>
+                <span className="text-gray-500 text-base font-semibold">
+                  orders@RGCreation.com
+                </span>
+              </div>
+            </div>
+          </div>
           <h2 className="text-3xl text-left font-extrabold text-black mb-4">
             Get in <span className="text-darkGreen">Touch</span>
           </h2>
@@ -110,7 +138,7 @@ export default function ContactUs() {
 
             <button
               type="submit"
-              className="w-full bg-primary text-white py-2 px-4 rounded"
+              className="w-full bg-darkGreen text-white py-2 px-4 rounded"
               // disabled={status === "loading"}
             >
               Submit
@@ -129,7 +157,7 @@ export default function ContactUs() {
           </form>
 
           {/* Contact info */}
-          <div className="mt-8 text-xs flex flex-col md:flex-row items-center gap-4 md:gap-10 text-gray-700">
+          {/* <div className="mt-8 text-xs flex flex-col md:flex-row items-center gap-4 md:gap-10 text-gray-700">
             <div className="flex items-center gap-2 mb-1">
               <Phone
                 size={15}
@@ -152,11 +180,11 @@ export default function ContactUs() {
                   Email
                 </span>
                 <span className="text-gray-500 font-semibold">
-                  orders@knife-depot.com
+                  orders@RGCreation.com
                 </span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Right side - Image */}
@@ -164,7 +192,7 @@ export default function ContactUs() {
           <div className="absolute bg-darkGreen right-0 h-full w-1/2 z-10"></div>
           <div className="relative w-[70%] md:w-[77%] mx-auto h-[77%]  m-20 z-20">
             <img
-              src={blade.src} // Replace with your actual image
+              src="/third-image.jpg" // Replace with your actual image
               alt="Contact Person"
               className="object-cover w-full h-full  rounded-sm "
             />

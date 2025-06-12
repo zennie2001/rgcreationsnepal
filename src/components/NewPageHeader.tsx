@@ -2,17 +2,19 @@ import Image from "next/image";
 import img from "@/assets/images/about-banner.png";
 export default function PageHeader({ title }: { title: string }) {
   return (
-    <div className="w-full  h-screen  flex_center flex-col text-primary relative">
+    <div className="w-full  h-screen  flex flex-col text-primary relative">
       <Image
         src={img}
         alt="page header image"
         className="w-full h-full object-cover bg-black/40"
       />
 
-      <div className="flex items-center justify-start absolute">
-        <p className="text-2xl md:text-4xl container mx-auto  font-semibold">
-          {title}
-        </p>
+      <div className="absolute inset-0 flex items-center justify-center z-30">
+        <div className="text-center md:text-left text-white px-14 container mx-auto ">
+          <p className="text-3xl md:text-5xl  font-bold mb-6 leading-tight">
+            {title}
+          </p>
+        </div>
       </div>
     </div>
   );

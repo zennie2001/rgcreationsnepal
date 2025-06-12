@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function RGMission() {
   return (
     <main>
-      <NewPageHeader title="Company History" />
+      <NewPageHeader title="Residential Construction" />
       <div className="container mx-auto w-full py-10 bg-white">
         {/* Top Section */}
 
