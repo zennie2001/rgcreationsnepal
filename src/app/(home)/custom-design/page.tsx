@@ -32,7 +32,7 @@ export default function CustomDesign() {
               </h4>
 
               <ul className="list-disc">
-                <h1 className="text-tertiary  font-bold mb-4">Key Features:</h1>
+                <p className="text-tertiary  font-bold mb-4">Key Features:</p>
                 <li className="mb-2 text-black">
                   Personalized designs tailored to your preferences
                 </li>
@@ -50,7 +50,7 @@ export default function CustomDesign() {
                 </li>
               </ul>
               <ul className="list-disc">
-                <h1 className="text-tertiary font-bold mb-4">Order Process</h1>
+                <p className="text-tertiary font-bold mb-4">Order Process</p>
                 <li className="mb-2 text-black">
                   Customers must submit a detailed design request via email or
                   an official purchase order.
@@ -65,9 +65,9 @@ export default function CustomDesign() {
                 </li>
               </ul>
               <ul className="list-disc">
-                <h1 className="text-tertiary font-bold mb-4">
+                <p className="text-tertiary font-bold mb-4">
                   Design & Modifications
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   Customers can request up to two design modifications before
                   production starts.
@@ -82,9 +82,7 @@ export default function CustomDesign() {
                 </li>
               </ul>
               <ul className="list-disc">
-                <h1 className="text-tertiary font-bold mb-4">
-                  Production Time
-                </h1>
+                <p className="text-tertiary font-bold mb-4">Production Time</p>
                 <li className="mb-2 text-black">
                   Standard production time: 4-8 weeks, depending on the
                   complexity of the design.
@@ -95,7 +93,7 @@ export default function CustomDesign() {
                 </li>
               </ul>
               <ul className="list-disc">
-                <h1 className="text-tertiary font-bold mb-4">Payment Terms</h1>
+                <p className="text-tertiary font-bold mb-4">Payment Terms</p>
                 <li className="mb-2 text-black">
                   50% deposit required upfront, with the remaining 50% due
                   before shipment.
@@ -109,9 +107,9 @@ export default function CustomDesign() {
                 </li>
               </ul>
               <ul className="list-disc">
-                <h1 className="text-tertiary font-bold mb-4">
+                <p className="text-tertiary font-bold mb-4">
                   Cancellation & Refunds
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   Custom orders cannot be canceled once production has started.
                 </li>
@@ -125,9 +123,9 @@ export default function CustomDesign() {
                 </li>
               </ul>
               <ul className="list-disc">
-                <h1 className="text-tertiary font-bold mb-4">
+                <p className="text-tertiary font-bold mb-4">
                   Shipping & Delivery
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   Custom jewellery is shipped worldwide, including Europe, the
                   Middle East, and Asia.
@@ -142,9 +140,9 @@ export default function CustomDesign() {
                 </li>
               </ul>
               <ul className="list-disc">
-                <h1 className="text-tertiary font-bold mb-4">
+                <p className="text-tertiary font-bold mb-4">
                   Product Warranty & Repairs
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   All custom jewellery is crafted with high-quality materials
                   and inspected before delivery.
@@ -159,9 +157,9 @@ export default function CustomDesign() {
                 </li>
               </ul>
               <ul className="list-disc">
-                <h1 className="text-tertiary font-bold mb-4">
+                <p className="text-tertiary font-bold mb-4">
                   Intellectual Property Rights
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   Khukuri Bladesretains the rights to original designs unless
                   otherwise agreed.
@@ -174,12 +172,12 @@ export default function CustomDesign() {
                 </li>
               </ul>
               <ul>
-                <h1 className="text-tertiary font-bold mb-4">
+                <p className="text-tertiary font-bold mb-4">
                   Contact Information
-                </h1>
-                <h1 className="text-black font-semibold mb-4">
+                </p>
+                <p className="text-black font-semibold mb-4">
                   For custom order inquiries, please contact:
-                </h1>
+                </p>
                 <li className="flex items-center gap-2">
                   <MapPin className="flex-shrink-0" />
                   <span>

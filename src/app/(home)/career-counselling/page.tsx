@@ -132,9 +132,9 @@ export default function CareerCounselling() {
               title=" "
               className="lg:items-start items-start"
             />
-            <h1 className="text-[30px]  font-semibold lg:text-start text-center   w-full">
+            <p className="text-[30px]  font-semibold lg:text-start text-center   w-full">
               Empowering students to make informed decisions
-            </h1>
+            </p>
             <p className="text-text lg:text-start text-center">
               Studying abroad is an investment in your future. It equips you
               with a globally recognized education, a competitive edge in the

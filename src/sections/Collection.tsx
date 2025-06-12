@@ -49,16 +49,16 @@ const projects: Project[] = [
 
 const Collection: React.FC = () => {
   return (
-    <div className="min-h-screen pt-20 pb-10 px-4">
+    <div className="min-h-screen pt-10 md:pt-20 pb-10 px-4">
       <div className="container mx-auto w-full relative">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-6 md:mb-16">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Best Construction Company in Kathmandu
           </h1>
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">
+          <p className="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">
             Our Projects
-          </h2>
+          </p>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             We take pride in our track record, having successfully constructed
             over 100 houses, the majority of which are luxurious bungalows.
@@ -105,9 +105,9 @@ const Collection: React.FC = () => {
                   {/* Content Section */}
                   <div className="flex flex-col absolute left-[500px]  justify-center my-28 p-8 md:py-12 lg:py-16 bg-white/70">
                     <div className="space-y-6">
-                      <h3 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                      <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
                         {project.title}
-                      </h3>
+                      </h1>
                       <div className="w-20 h-1 bg-darkGreen rounded-full"></div>
                       <p className="text-[#909090] font-medium text-lg md:text-xl leading-relaxed">
                         {project.description}

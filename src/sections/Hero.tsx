@@ -3,25 +3,21 @@ import React, { useState } from "react";
 import { ChevronRight } from "lucide-react";
 import Header from "./Header";
 
-
 // Hero slides data
 const slides = [
   {
     id: 1,
-    image:
-      "/rambagh.jpg",
+    image: "/rambagh.jpg",
     title: "Best Architectural Firm for Sustainable Design",
   },
   {
     id: 2,
-    image:
-      "/royal.jpg",
+    image: "/royal.jpg",
     title: "Innovative Architecture Solutions",
   },
   {
     id: 3,
-    image:
-      "/taaj.jpg",
+    image: "/taaj.jpg",
     title: "Creating Tomorrow's Spaces Today",
   },
 ];
@@ -70,15 +66,14 @@ const Hero = () => {
       </div>
 
       {/* Decorative Elements */}
-      
 
       {/* Hero Content */}
       <div className="absolute inset-0 flex items-center justify-center z-30">
         <div className="text-center md:text-left text-white px-14 container mx-auto ">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+          <p className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             {slides[currentSlide].title}
-          </h1>
-          
+          </p>
+
           <button className="bg-white text-black px-8 py-2.5 rounded-md font-semibold text-lg hover:bg-darkGreen hover:text-white duration-500 transition-colors shadow-lg">
             Send Message
           </button>

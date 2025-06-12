@@ -23,7 +23,7 @@ export default function TestCard({
       </div>
 
       <div className="flex flex-col gap-3">
-        <h1 className="text-xl font-semibold">{title}</h1>
+        <p className="text-xl font-semibold">{title}</p>
         <p className="text-base text-text">{miniDescription}</p>
       </div>
       <div className="flex items-center gap-2 text-base cursor-pointer w-max">

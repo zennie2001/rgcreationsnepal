@@ -14,7 +14,7 @@ export default function ScholarshipList() {
 
       <section className="xl:px-24 lg:px-10 px-4 lg:py-16 py-10 flex justify-between gap-5">
         <div className="w-[22%] lg:block hidden">
-          <h1 className="text-2xl text-darkGreen font-semibold">Filters</h1>
+          <p className="text-2xl text-darkGreen font-semibold">Filters</p>
           <p className="text-text py-2">
             Use the filters listed below to focus your search.
           </p>

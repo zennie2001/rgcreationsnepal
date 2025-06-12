@@ -47,9 +47,9 @@ export default function Services() {
                 />
               </div>
               <div className="texts flex_center flex-col gap-4">
-                <h1 className="flex_center text-2xl text-darkGreen font-semibold">
+                <p className="flex_center text-2xl text-darkGreen font-semibold">
                   {service.title}
-                </h1>
+                </p>
                 <p className="flex_center text-center text-text">
                   {service.description}
                 </p>

@@ -101,9 +101,9 @@ export default function InvestorRelations() {
               </div>
 
               <ul className="list-disc">
-                <h1 className="text-tertiary  font-bold mb-4">
+                <p className="text-tertiary  font-bold mb-4">
                   Investment Highlights
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   <span className="text-black">Strong Market Position:</span> A
                   trusted name in the jewelry industry with an established

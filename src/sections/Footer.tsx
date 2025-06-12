@@ -27,11 +27,11 @@ const Footer = () => {
       {/* Newsletter Section */}
       <section className="w-full container mx-auto bg-[#2d5a5a] border-b border-[#3d6a6a]">
         <div className="flex flex-col md:flex-row justify-between items-center container mx-auto px-6 py-8">
-          <h2 className="text-xl md:text-2xl font-medium text-white text-center md:text-left mb-4 md:mb-0">
+          <h1 className="text-xl md:text-2xl font-medium text-white text-center md:text-left mb-4 md:mb-0">
             Join our newsletter to keep
             <br />
             up to date with us!
-          </h2>
+          </h1>
 
           <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
             <div className="relative">
@@ -56,10 +56,10 @@ const Footer = () => {
 
       {/* Main Footer Content */}
       <div className="container mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 ">
           {/* Left Column - Company Info */}
-          <div className="space-y-6">
-            <div className="flex items-center space-x-3">
+          <div className="space-y-6 ">
+            <div className="flex items-center  space-x-3">
               <img src="/logo.png" alt="RG Creations Logo" className="h-20 brightness-0 invert" />
             </div>
 
@@ -98,7 +98,7 @@ const Footer = () => {
 
           {/* Middle Column - Services */}
           <div className="space-y-6">
-            <h4 className="text-white font-medium text-lg">SERVICES</h4>
+            <p className="text-white font-medium text-lg">SERVICES</p>
             <ul className="space-y-3">
               <li>
                 <Link
@@ -145,7 +145,7 @@ const Footer = () => {
 
           {/* Right Column - Contact */}
           <div className="space-y-6">
-            <h4 className="text-white font-medium text-lg">CONTACT US</h4>
+            <p className="text-white font-medium text-lg">CONTACT US</p>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <Phone className="w-4 h-4 mt-1 text-gray-300 flex-shrink-0" />

@@ -11,9 +11,9 @@ const clients = [
 
 const Deals: React.FC = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="md:py-16 py-6 bg-white">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-2xl font-semibold mb-10">Our Clients</h2>
+        <p className="text-2xl font-semibold mb-10">Our Clients</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center justify-center">
           {clients.map((client, index) => (
             <div

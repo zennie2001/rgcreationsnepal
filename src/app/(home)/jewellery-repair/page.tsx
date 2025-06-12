@@ -24,7 +24,7 @@ export default function JewelleryRepair() {
               </h4>
 
               <ul className="list-disc">
-                <h1 className="text-tertiary  font-bold mb-4">Key Features:</h1>
+                <p className="text-tertiary  font-bold mb-4">Key Features:</p>
                 <li className="mb-2 text-black">
                   Ring resizing and stone setting
                 </li>

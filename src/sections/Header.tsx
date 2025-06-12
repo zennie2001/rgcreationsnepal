@@ -85,7 +85,7 @@ const Header = () => {
               onClick={() => setIsMenuOpen(true)}
               className="lg:hidden text-white p-2"
             >
-              <Menu size={24} />
+              <Menu size={30} />
             </button>
           </div>
         </div>
@@ -103,7 +103,7 @@ const Header = () => {
               <div className="flex justify-between items-center mb-8">
                 <span className="text-xl font-bold text-gray-800">Menu</span>
                 <button onClick={() => setIsMenuOpen(false)}>
-                  <X size={24} className="text-gray-600" />
+                  <X size={30} className="text-gray-600" />
                 </button>
               </div>
 

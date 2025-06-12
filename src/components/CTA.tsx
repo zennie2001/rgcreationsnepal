@@ -11,9 +11,9 @@ export default function CTA() {
         <p className="text-base font-bold text-tertiary lg:text-start text-center">
           About Us
         </p>
-        <h1 className="lg:text-[40px] text-[30px] lg:leading-[46px] leading-[40px] py-3 font-semibold lg:text-start  text-darkGreen text-center">
+        <p className="lg:text-[40px] text-[30px] lg:leading-[46px] leading-[40px] py-3 font-semibold lg:text-start  text-darkGreen text-center">
           Prepare to Set Out on Your Adventure
-        </h1>
+        </p>
         <p className="text-text lg:text-start text-center">
           Learn more, keep yourself updated, and begin your path to academic
           success.

@@ -24,9 +24,9 @@ export default function RGMission() {
             </div>
           </div>
           <div className="md:w-1/2 md:mt-20">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">
+            <p className="text-3xl md:text-4xl font-bold mb-4">
               Welcome to RG Creations Building Dreams, Crafting Excellence
-            </h1>
+            </p>
             <p className="text-gray-700 my-2">
               RG Creations stands as a beacon of innovation and quality in the
               realm of construction and business ventures. With a steadfast

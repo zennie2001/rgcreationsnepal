@@ -24,7 +24,7 @@ export default function VisaCard({
     >
       <div className={"section-header flex flex-col gap-3 md:w-[50%] w-full"}>
         <p className="text-base font-bold text-tertiary">{smallTitle}</p>
-        <h1 className="text-2xl font-semibold text-darkGreen">{title}</h1>
+        <p className="text-2xl font-semibold text-darkGreen">{title}</p>
         <p className="text-text">{description}</p>
       </div>
 

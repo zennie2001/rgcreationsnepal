@@ -25,13 +25,13 @@ export default function TermsConditions() {
               </h4>
 
               <ul className="list-disc">
-                <h1 className="text-tertiary  font-bold mb-4">
+                <p className="text-tertiary  font-bold mb-4">
                   1. Information We Collect
-                </h1>
-                <h1 className="text-black  font-semibold mb-4">
+                </p>
+                <p className="text-black  font-semibold mb-4">
                   We may collect the following types of personal and
                   non-personal information:
-                </h1>
+                </p>
 
                 <li className="mb-2 text-black">
                   <span className="text-black">Personal Information: </span>{" "}
@@ -60,12 +60,12 @@ export default function TermsConditions() {
                 </li>
               </ul>
               <ul>
-                <h1 className="text-tertiary  font-bold mb-4">
+                <p className="text-tertiary  font-bold mb-4">
                   2. How We Use Your Information
-                </h1>
-                <h1 className="text-black  font-semibold mb-4">
+                </p>
+                <p className="text-black  font-semibold mb-4">
                   We use your information for the following purposes:
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   To process orders and payments.
                 </li>
@@ -85,13 +85,13 @@ export default function TermsConditions() {
                 </li>
               </ul>
               <ul>
-                <h1 className="text-tertiary  font-bold mb-4">
+                <p className="text-tertiary  font-bold mb-4">
                   3. Sharing Your Information
-                </h1>
-                <h1 className="text-black  font-semibold mb-4">
+                </p>
+                <p className="text-black  font-semibold mb-4">
                   We do not sell or rent your personal information. However, we
                   may share it in the following situations:
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   <span className="text-black">With Service Providers:</span>{" "}
                   Third-party companies that assist in payment processing,
@@ -107,20 +107,20 @@ export default function TermsConditions() {
                 </li>
               </ul>
               <ul>
-                <h1 className="text-tertiary  font-bold mb-4">
+                <p className="text-tertiary  font-bold mb-4">
                   4. Data Security
-                </h1>
-                <h1 className="text-black  font-semibold mb-4">
+                </p>
+                <p className="text-black  font-semibold mb-4">
                   We implement industry-standard security measures to protect
                   your information. However, no method of transmission over the
                   Internet is 100% secure, and we cannot guarantee absolute
                   security.
-                </h1>
+                </p>
               </ul>
               <ul>
-                <h1 className="text-tertiary  font-bold mb-4">
+                <p className="text-tertiary  font-bold mb-4">
                   5. Your Rights and Choices
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   You can update or delete your account information by
                   contacting us.
@@ -137,9 +137,9 @@ export default function TermsConditions() {
                 </li>
               </ul>
               <ul>
-                <h1 className="text-tertiary  font-bold mb-4">
+                <p className="text-tertiary  font-bold mb-4">
                   6. Third-Party Links
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   Our website may contain links to third-party sites. We are not
                   responsible for their privacy practices and encourage you to
@@ -147,9 +147,9 @@ export default function TermsConditions() {
                 </li>
               </ul>
               <ul>
-                <h1 className="text-tertiary font-bold mb-4">
+                <p className="text-tertiary font-bold mb-4">
                   7. Children's Privacy
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   Our services are not intended for individuals under the age of
                   18. We do not knowingly collect personal data from children.
@@ -157,9 +157,9 @@ export default function TermsConditions() {
               </ul>
 
               <ul>
-                <h1 className="text-tertiary font-bold mb-4">
+                <p className="text-tertiary font-bold mb-4">
                   8. Changes to This Privacy Policy
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   We may update this Privacy Policy from time to time. Any
                   changes will be posted on this page with the revised date.
@@ -167,11 +167,11 @@ export default function TermsConditions() {
               </ul>
 
               <ul>
-                <h1 className="text-tertiary font-bold mb-4">9. Contact Us</h1>
-                <h1 className="text-black  font-semibold mb-4">
+                <p className="text-tertiary font-bold mb-4">9. Contact Us</p>
+                <p className="text-black  font-semibold mb-4">
                   If you have any questions about this Privacy Policy, please
                   contact us:
-                </h1>
+                </p>
                 {/* <li className="flex items-center gap-2">
                   <MapPin className="flex-shrink-0" />
                   <span>

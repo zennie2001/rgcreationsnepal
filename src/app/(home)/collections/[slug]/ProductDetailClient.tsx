@@ -139,7 +139,7 @@ export default function ProductDetailClient({ product, reviews }: Props) {
 
         {/* Product details */}
         <div className="w-full md:w-1/2">
-          <h1 className="text-2xl font-bold mb-2">{product.name}</h1>
+          <p className="text-2xl font-bold mb-2">{product.name}</p>
           <p className="text-gray-600 mb-2">Product Code: xyz123ac</p>
 
           <div className="flex items-center gap-2 mb-4">
@@ -480,10 +480,11 @@ export default function ProductDetailClient({ product, reviews }: Props) {
           ))}
         </div>
         <div className="flex justify-center mt-8 mb-10">
-          <Link href="/collections"><button className="bg-darkGreen hover:bg-green-700 text-white py-2 px-6 rounded">
-            View More 
-          </button></Link>
-          
+          <Link href="/collections">
+            <button className="bg-darkGreen hover:bg-green-700 text-white py-2 px-6 rounded">
+              View More
+            </button>
+          </Link>
         </div>
       </div>
     </>

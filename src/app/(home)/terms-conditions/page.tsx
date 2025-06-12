@@ -22,7 +22,7 @@ export default function TermsConditions() {
               </h4>
 
               <ul>
-                <h1 className="text-tertiary  font-bold mb-4">1. General</h1>
+                <p className="text-tertiary  font-bold mb-4">1. General</p>
                 <li className="mb-2 text-black">
                   <span className="text-black">1.1:</span> These Terms &
                   Conditions govern the use of our website, products, and
@@ -40,9 +40,9 @@ export default function TermsConditions() {
                 </li>
               </ul>
               <ul>
-                <h1 className="text-tertiary  font-bold mb-4">
+                <p className="text-tertiary  font-bold mb-4">
                   2. Products & Pricing
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   <span className="text-black"> 2.1:</span> All prices are
                   listed in [Currency] and are subject to change without prior
@@ -60,9 +60,9 @@ export default function TermsConditions() {
                 </li>
               </ul>
               <ul>
-                <h1 className="text-tertiary  font-bold mb-4">
+                <p className="text-tertiary  font-bold mb-4">
                   3. Orders & Payments
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   <span className="text-black">3.1:</span> Orders placed through
                   our website are subject to availability and confirmation.
@@ -78,9 +78,9 @@ export default function TermsConditions() {
                 </li>
               </ul>
               <ul>
-                <h1 className="text-tertiary  font-bold mb-4">
+                <p className="text-tertiary  font-bold mb-4">
                   4. Shipping & Delivery
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   <span className="text-black">4.1:</span> We deliver within
                   [Specify Areas] and strive to ensure timely delivery.
@@ -97,9 +97,9 @@ export default function TermsConditions() {
                 </li>
               </ul>
               <ul>
-                <h1 className="text-tertiary  font-bold mb-4">
+                <p className="text-tertiary  font-bold mb-4">
                   5. Returns & Refunds
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   <span className="text-black">5.1:</span>5.1 Returns are
                   accepted within 7 days of purchase, subject to our return
@@ -116,9 +116,9 @@ export default function TermsConditions() {
                 </li>
               </ul>
               <ul>
-                <h1 className="text-tertiary  font-bold mb-4">
+                <p className="text-tertiary  font-bold mb-4">
                   6. Warranty & Repairs
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   <span className="text-black">6.1:</span>6.1 Our jewellery
                   items come with a 7 days warranty against manufacturing
@@ -131,9 +131,9 @@ export default function TermsConditions() {
                 </li>
               </ul>
               <ul>
-                <h1 className="text-tertiary font-bold mb-4">
+                <p className="text-tertiary font-bold mb-4">
                   7. Liability & Disclaimers
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   <span className="text-black">7.1: </span>Khukuri Blades LLC
                   shall not be liable for any indirect, incidental, or
@@ -148,9 +148,9 @@ export default function TermsConditions() {
               </ul>
 
               <ul>
-                <h1 className="text-tertiary font-bold mb-4">
+                <p className="text-tertiary font-bold mb-4">
                   8. Intellectual Property
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   <span className="text-black">8.1: </span>All website content,
                   including images, logos, and text, is the property of Star
@@ -159,9 +159,9 @@ export default function TermsConditions() {
               </ul>
 
               <ul>
-                <h1 className="text-tertiary font-bold mb-4">
+                <p className="text-tertiary font-bold mb-4">
                   9. Privacy Policy
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   <span className="text-black">9.1: </span>Your personal
                   information is collected and used per our Privacy Policy.
@@ -174,9 +174,9 @@ export default function TermsConditions() {
               </ul>
 
               <ul>
-                <h1 className="text-tertiary font-bold mb-4">
+                <p className="text-tertiary font-bold mb-4">
                   10. Governing Law & Disputes
-                </h1>
+                </p>
                 <li className="mb-2 text-black">
                   <span className="text-black">10.1: </span>These Terms &
                   Conditions are governed by the laws of the United Arab

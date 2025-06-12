@@ -12,9 +12,9 @@ const BlogPost = () => {
           {/* Main Content */}
           <div className="lg:col-span-4">
             <article className="bg-white rounded-lg shadow-sm p-8">
-              <h1 className="text-3xl font-bold text-darkGreen mb-6">
+              <p className="text-3xl font-bold text-darkGreen mb-6">
                 10 Best Rescue Knives You Can Buy in 2024
-              </h1>
+              </p>
 
               {/* Featured Image */}
               <div className="mb-8">

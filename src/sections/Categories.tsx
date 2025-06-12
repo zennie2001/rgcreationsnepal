@@ -10,10 +10,10 @@ const Categories = () => {
           <p className="text-sm text-darkGreen uppercase tracking-widest">
             About Us
           </p>
-          <h2 className="text-4xl font-bold text-darkBlue leading-snug">
+          <p className="text-4xl font-bold text-darkBlue leading-snug">
             With our knowledge <br /> we guarentee success
-          </h2>
-          <p className="text-gray-600 max-w-2xl">
+          </p>
+          <p className="text-gray-600 max-w-2xl text-justify">
             To be the epitome of construction excellence, redefining the
             landscape with iconic structures that seamlessly blend innovation,
             luxury, and functionality. We envision a future where our projects,
@@ -21,7 +21,7 @@ const Categories = () => {
             new benchmarks in the realms of hospitality, entertainment,
             healthcare, residential, and education.
           </p>
-          <button className="bg-darkGreen text-white px-14 py-3 text-base rounded shadow hover:bg-green-800 transition">
+          <button className="bg-darkGreen text-white px-14 ms-6 md:ms-0 py-3 text-base rounded shadow hover:bg-green-800 transition">
             Learn more →
           </button>
         </div>

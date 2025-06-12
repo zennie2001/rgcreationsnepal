@@ -3,7 +3,7 @@ import React from "react";
 const About: React.FC = () => {
   return (
     <>
-      <section className="relative container mx-auto my-10 w-full">
+      <section className="relative container mx-auto md:my-10 w-full">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
@@ -18,9 +18,9 @@ const About: React.FC = () => {
           <p className="uppercase text-sm tracking-widest mb-4">
             Explore Our Services
           </p>
-          <h1 className="text-4xl md:text-5xl font-semibold mb-6">
+          <p className="text-4xl md:text-5xl font-semibold mb-6">
             See what we can do together.
-          </h1>
+          </p>
           <button className="border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition">
             View All Services
           </button>

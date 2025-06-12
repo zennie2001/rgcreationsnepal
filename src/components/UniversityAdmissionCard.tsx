@@ -22,7 +22,7 @@ export default function UniversityAdmissionCard({
     >
       <div className={"section-header flex flex-col gap-3 w-[394px]"}>
         <p className="text-base font-bold text-tertiary">{smallTitle}</p>
-        <h1 className="text-2xl font-semibold text-darkGreen">{title}</h1>
+        <p className="text-2xl font-semibold text-darkGreen">{title}</p>
         <p className="text-text">{description}</p>
       </div>
       <div className="flex_center size-14 rounded-full bg-[#F5FBFF] text-darkGreen text-xl font-semibold p-2">

@@ -7,10 +7,10 @@ export default function TopTestSection() {
     <div className="w-full rounded-sm border border-borderColor  p-4">
       <div className="flex w-full lg:justify-between justify-start lg:gap-0 gap-2 items-center">
         <div className="lg:size-[80px] size-[64px] rounded-sm bg-[#D9D9D9] lg:hidden block"></div>
-        <h1 className="lg:text-2xl text-xl font-semibold w-[70%] text-darkGreen">
+        <p className="lg:text-2xl text-xl font-semibold w-[70%] text-darkGreen">
           (IELTS) International English Language{" "}
           <span className="lg:inline hidden">Testing System</span>{" "}
-        </h1>
+        </p>
         <div className=" gap-2 items-center lg:flex hidden">
           <PrimaryButton text="Get Consultation" />
           <div className="h-[40px] w-[40px] rounded-sm border border-borderColor flex items-center justify-center">

@@ -110,19 +110,19 @@ const BlogDesign: React.FC = () => {
             <p className="text-darkGreen text-sm font-medium tracking-widest uppercase mb-2">
               BLOG
             </p>
-            <h1 className="text-5xl font-light text-gray-900">What's new?</h1>
+            <p className="text-5xl font-light text-gray-900">What's new?</p>
           </div>
-          <button className="bg-darkGreen text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-teal-800 transition-colors">
+          <button className="bg-darkGreen   text-white px-6 py-3 rounded-full text-[10px] md:text-sm font-medium hover:bg-teal-800 transition-colors">
             VIEW ALL BLOGS
           </button>
         </div>
 
-        <div className="flex gap-16">
+        <div className="flex flex-col md:flex-row gap-16">
           {/* Left Sidebar - Categories */}
           <div className="w-64 flex-shrink-0">
-            <h3 className="text-[#090b19] text-base font-medium tracking-widest uppercase mb-8">
+            <p className="text-[#090b19] text-base font-medium tracking-widest uppercase mb-8">
               POPULAR CATEGORIES
-            </h3>
+            </p>
             <nav className="space-y-4">
               {categories.map((category) => (
                 <button

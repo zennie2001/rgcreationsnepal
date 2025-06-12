@@ -116,9 +116,9 @@ function Blog() {
       <section className="w-full bg-white py-16">
         <div className="container mx-auto px-4">
           <div className="mb-6">
-            <h1 className="md:text-3xl text-xl font-bold text-darkGreen">
+            <p className="md:text-3xl text-xl font-bold text-darkGreen">
               Latest Stories
-            </h1>
+            </p>
             <div className="flex flex-col md:flex-row gap-2 justify-between items-start md:items-center mt-2">
               <span className="text-sm text-gray-400">
                 Showing 1-{productItems.length} of {productItems.length}{" "}

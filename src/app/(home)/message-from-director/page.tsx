@@ -11,9 +11,9 @@ export default function MessageFromDirector() {
       <PageHeader link="/message-from-director" title="Message From Director" />
       <section className="w-full flex  flex-col container  gap-12">
         <div className="flex lg:flex-row flex-col gap-5 items-center  px-2 py-5">
-          <h1 className="font-semibold text-3xl text-darkGreen lg:hidden inline">
+          <p className="font-semibold text-3xl text-darkGreen lg:hidden inline">
             Message From CEO
-          </h1>
+          </p>
           <Image
             src={mobileceoimage}
             alt="placeholder-image"
@@ -21,9 +21,9 @@ export default function MessageFromDirector() {
           />
           <div className="flex items-start lg:w-[55%] w-full gap-3">
             <div className="w-full text-justify">
-              <h1 className="font-extrabold mb-6 text-black">
+              <p className="font-extrabold mb-6 text-black">
                 Dear Esteemed Customers and Partners,
-              </h1>
+              </p>
               <p>
                 It is with great pride and gratitude that I welcome you to Star
                 Laxmi Jewellery LLC. Our journey is built on a foundation of
