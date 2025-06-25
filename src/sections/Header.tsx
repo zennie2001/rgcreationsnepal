@@ -78,7 +78,7 @@ const Header = () => {
   };
 
   const renderMegaMenu = (content:any) => (
-    <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-screen overflow-hidden max-w-3xl bg-white rounded-lg shadow-2xl  opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 z-50">
+    <div className="absolute top-16 left-1/2 z-50 transform -translate-x-1/2 w-screen overflow-hidden max-w-3xl  rounded-lg shadow-2xl  opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0 ">
       <div className="grid grid-cols-2 gap-12">
         {/* Left Column */}
         <div className="py-8 px-8">
@@ -97,7 +97,7 @@ const Header = () => {
         </div>
 
         {/* Right Column */}
-        <div className=" bg-[#f7f7fc] space-y-6 py-8 px-8">
+        <div className=" bg-black space-y-6 py-8 px-8">
           {content.rightColumn.map((item:any, index:any) => (
             <a
               key={index}
@@ -105,7 +105,7 @@ const Header = () => {
               className="flex items-center gap-4 p-4 rounded-lg hover:bg-gray-50 transition-colors group/item"
             >
               <div className={`w-10 h-10 ${getIconColor(item.icon)} rounded-full flex items-center justify-center`}>
-                <ArrowRight className="w-5 h-5 text-white" />
+                <ArrowRight className="w-5 h-5 text-black" />
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-2">
@@ -124,11 +124,11 @@ const Header = () => {
   return (
     <>
       {/* Navigation */}
-      <nav className="absolute top-0 left-0 right-0 z-40 bg-black/20 backdrop-blur-sm">
+      <nav className=" backdrop-blur-sm">
         <div className="container mx-auto px-6 lg:px-12 relative">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <div className="flex w-20 h-16 md:w-32 md:h-28 bg-white items-center">
+            <div className="flex w-20 h-16 md:w-32 md:h-28  items-center">
               <img src="/logo.png" alt="Logo" className="p-2 md:p-4" />
             </div>
 
@@ -136,14 +136,14 @@ const Header = () => {
             <div className="hidden lg:flex items-center space-x-8">
               <a
                 href="/"
-                className="text-white hover:text-green-400 hover:font-semibold transition-colors"
+                className="text-black hover:text-green-400 hover:font-semibold transition-colors"
               >
                 Home
               </a>
               
               {/* About Us - Mega Menu */}
               <div className="relative group">
-                <div className="text-white hover:text-green-400 hover:font-semibold transition-colors flex items-center gap-1 cursor-pointer py-4">
+                <div className="text-black hover:text-green-400 hover:font-semibold transition-colors flex items-center gap-1 cursor-pointer py-4">
                   About Us
                   <ChevronDown
                     size={16}
@@ -155,7 +155,7 @@ const Header = () => {
 
               {/* Services - Mega Menu */}
               <div className="relative group">
-                <div className="text-white hover:text-green-400 hover:font-semibold transition-colors flex items-center gap-1 cursor-pointer py-4">
+                <div className="text-black hover:text-green-400 hover:font-semibold transition-colors flex items-center gap-1 cursor-pointer py-4">
                   Services
                   <ChevronDown
                     size={16}
@@ -167,25 +167,25 @@ const Header = () => {
 
               <a
                 href="#"
-                className="text-white hover:text-green-400 hover:font-semibold transition-colors"
+                className="text-black hover:text-green-400 hover:font-semibold transition-colors"
               >
                 Projects
               </a>
               <a
                 href="#"
-                className="text-white hover:text-green-400 hover:font-semibold transition-colors"
+                className="text-black hover:text-green-400 hover:font-semibold transition-colors"
               >
                 Work Process
               </a>
               <a
                 href="#"
-                className="text-white hover:text-green-400 hover:font-semibold transition-colors"
+                className="text-black hover:text-green-400 hover:font-semibold transition-colors"
               >
                 Blog
               </a>
               <a
                 href="/contact"
-                className="text-white hover:text-green-400 hover:font-semibold transition-colors"
+                className="text-black hover:text-green-400 hover:font-semibold transition-colors"
               >
                 Contact Us
               </a>
@@ -194,7 +194,7 @@ const Header = () => {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMenuOpen(true)}
-              className="lg:hidden text-white p-2"
+              className="lg:hidden text-black p-2"
             >
               <Menu size={30} />
             </button>

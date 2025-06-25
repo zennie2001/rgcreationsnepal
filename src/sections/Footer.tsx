@@ -1,182 +1,304 @@
 "use client";
 import React, { useState } from "react";
-import { Users, Phone, MapPin, Mail } from "lucide-react";
+import { User, Phone, MapPin, Mail } from "lucide-react";
 import Link from "next/link";
 import {
   FaFacebookF,
-  FaInstagram,
-  FaLinkedinIn,
+  FaTwitter,
   FaYoutube,
+  FaLinkedinIn,
 } from "react-icons/fa6";
-
-// You'll need to replace this with your actual RG Creations logo
-const rgLogo = "/path-to-your-rg-logo.png"; // Update this path
 
 const Footer = () => {
   const [email, setEmail] = useState("");
 
   const handleSubscribe = () => {
-    // Implement subscription logic here
     console.log("Subscribing email:", email);
-    // Reset the input
     setEmail("");
   };
 
   return (
-    <footer className="bg-[#2d5a5a] text-white">
-      {/* Newsletter Section */}
-      <section className="w-full container mx-auto bg-[#2d5a5a] border-b border-[#3d6a6a]">
-        <div className="flex flex-col md:flex-row justify-between items-center container mx-auto px-6 py-8">
-          <h1 className="text-xl md:text-2xl font-medium text-white text-center md:text-left mb-4 md:mb-0">
-            Join our newsletter to keep
-            <br />
-            up to date with us!
-          </h1>
-
-          <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-            <div className="relative">
-              <Users className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email"
-                className="bg-[#3d6a6a] border border-[#4d7a7a] rounded-full text-white placeholder-gray-300 pl-10 pr-4 py-3 w-full md:w-[300px] focus:outline-none focus:ring-2 focus:ring-white focus:border-white"
-              />
-            </div>
-            <button
-              onClick={handleSubscribe}
-              className="bg-white text-[#2d5a5a] rounded-full px-6 py-3 text-sm font-medium hover:bg-gray-100 transition-colors"
-            >
-              Subscribe
-            </button>
-          </div>
-        </div>
-      </section>
-
+    <footer className="bg-gray-900 text-white">
       {/* Main Footer Content */}
-      <div className="container mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 ">
-          {/* Left Column - Company Info */}
-          <div className="space-y-6 ">
-            <div className="flex items-center  space-x-3">
-              <img src="/logo.png" alt="RG Creations Logo" className="h-20 brightness-0 invert" />
-            </div>
-
-            <p className="text-gray-300 text-sm leading-relaxed max-w-sm">
-              Welcome to RG Creations. We envision a future where our projects,
-              adorned with a royal touch, stand as timeless masterpieces.
+      <div className="container mx-auto px-6 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+          {/* First Column - Blog/Articles */}
+          <div className="lg:col-span-2 space-y-6">
+            <h3 className="text-white font-semibold text-lg mb-6">
+              The Rise of Smart Homes: Revolutionizing Technology
+            </h3>
+            <p className="text-gray-400 text-sm leading-relaxed mb-4">
+              Exercitations with consequatur on lorem of quaerat in a encounters
+              rationals and happiness taken fugiat by suscipit occasional
             </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <h4 className="text-white font-medium">Our Plain</h4>
+                <p className="text-gray-400 text-sm">
+                  Teaching lorem dislikes find distinctio dolore selections and
+                  circumstances distinctio
+                </p>
 
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="w-8 h-8 bg-[#3d6a6a] rounded-full flex items-center justify-center hover:bg-[#4d7a7a] transition-colors"
-              >
-                <FaInstagram className="w-4 h-4" />
-              </a>
-              <a
-                href="#"
-                className="w-8 h-8 bg-[#3d6a6a] rounded-full flex items-center justify-center hover:bg-[#4d7a7a] transition-colors"
-              >
-                <FaFacebookF className="w-4 h-4" />
-              </a>
-              <a
-                href="#"
-                className="w-8 h-8 bg-[#3d6a6a] rounded-full flex items-center justify-center hover:bg-[#4d7a7a] transition-colors"
-              >
-                <FaLinkedinIn className="w-4 h-4" />
-              </a>
-              <a
-                href="#"
-                className="w-8 h-8 bg-[#3d6a6a] rounded-full flex items-center justify-center hover:bg-[#4d7a7a] transition-colors"
-              >
-                <FaYoutube className="w-4 h-4" />
-              </a>
+                <h4 className="text-white font-medium">
+                  Many blinded Frequently
+                </h4>
+                <p className="text-gray-400 text-sm">
+                  Survive largest who use making obscures the consectetur
+                  available
+                </p>
+
+                <h4 className="text-white font-medium">Structures Interest</h4>
+                <p className="text-gray-400 text-sm">
+                  Always, original humour undoubtable was our simply way many
+                  looked
+                </p>
+              </div>
+              {/* Second Column - Consequuntures */}
+              <div className="space-y-6">
+                <h3 className="text-white font-semibold text-lg mb-6">
+                  Consequuntures
+                </h3>
+                <div className="space-y-4">
+                  <p className="text-gray-400 text-sm">
+                    Ex qui aut Consequuntures ut denouncing happiness lorem's
+                    pursues laborious
+                  </p>
+
+                  <h4 className="text-white font-medium">Ipsum</h4>
+                  <p className="text-gray-400 text-sm">
+                    Many ducimus pain know-those circumstance, human is the
+                    lorem
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Middle Column - Services */}
+          {/* Third Column - About RG */}
           <div className="space-y-6">
-            <p className="text-white font-medium text-lg">SERVICES</p>
+            <h3 className="text-white font-semibold text-lg mb-6">About RG</h3>
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/architectural-design"
-                  className="text-gray-300 text-sm hover:text-white transition-colors"
+                  href="#"
+                  className="text-gray-400 text-sm hover:text-white transition-colors"
+                >
+                  Company History
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-gray-400 text-sm hover:text-white transition-colors"
+                >
+                  Mission & Vision
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-gray-400 text-sm hover:text-white transition-colors"
+                >
+                  Our Team
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-gray-400 text-sm hover:text-white transition-colors"
+                >
+                  Certifications & Licenses
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#"
+                  className="text-gray-400 text-sm hover:text-white transition-colors"
+                >
+                  Awards & Recognitions
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Fourth Column - We Offer */}
+          <div className="space-y-6">
+            <h3 className="text-white font-semibold text-lg mb-6">We Offer</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="#"
+                  className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   Architectural Design
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/interior-design"
-                  className="text-gray-300 text-sm hover:text-white transition-colors"
+                  href="#"
+                  className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   Interior Design
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/quality-assurance"
-                  className="text-gray-300 text-sm hover:text-white transition-colors"
+                  href="#"
+                  className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   Quality Assurance
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/utilities-installation"
-                  className="text-gray-300 text-sm hover:text-white transition-colors"
+                  href="#"
+                  className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   Utilities Installation
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/finishing-touches"
-                  className="text-gray-300 text-sm hover:text-white transition-colors"
+                  href="#"
+                  className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   Finishing Touches
                 </Link>
               </li>
             </ul>
           </div>
-
-          {/* Right Column - Contact */}
+          {/* Right - Contact and Newsletter */}
           <div className="space-y-6">
-            <p className="text-white font-medium text-lg">CONTACT US</p>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <Phone className="w-4 h-4 mt-1 text-gray-300 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">+2222 4444 5555</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <MapPin className="w-4 h-4 mt-1 text-gray-300 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">
-                 Dummy, Dummy, Dummy
-                </span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Mail className="w-4 h-4 mt-1 text-gray-300 flex-shrink-0" />
-                <a
-                  href="mailto:rgcreationsnp@gmail.com"
-                  className="text-gray-300 text-sm hover:text-white transition-colors"
-                >
-                  rgcreationsnp@gmail.com
-                </a>
+            {/* Contact Info */}
+            <div className="">
+              <h3 className="text-white border-2 border-gray-400 p-4 text-center font-semibold text-base mb-4">
+                CONTACT US
+              </h3>
+              <div className="space-y-6">
+                <div className="flex items-center space-x-3">
+                  <Phone className="w-4 h-4 text-gray-400" />
+                  <span className="text-gray-400 text-sm">+01-4524806</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <MapPin className="w-4 h-4 text-gray-400" />
+                  <span className="text-gray-400 text-sm">
+                    Balkuwatar Kathmandu, Nepal. 44600
+                  </span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="w-4 h-4 text-gray-400" />
+                  <span className="text-gray-400 text-sm">
+                    rgcreationsnp@gmail.com
+                  </span>
+                </div>
               </div>
             </div>
+
+            {/* Newsletter */}
+            <div className="space-y-4 ">
+              <h3 className="text-white font-semibold text-lg">
+                Join our newsletter to keep up to date with us!
+              </h3>
+              <div className="flex flex-col gap-3">
+                <div className="relative flex-1">
+                  <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Enter your email"
+                    className="bg-gray-800 border border-gray-400 text-white placeholder-gray-400 pl-10 pr-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-gray-600 focus:border-gray-600"
+                  />
+                </div>
+                <button
+                  onClick={handleSubscribe}
+                  className="border-gray-400 border hover:bg-gray-600 text-white px-6 py-3 font-medium transition-colors"
+                >
+                  SUBSCRIBE
+                </button>
+              </div>
+            </div>
+
+            {/* Social Media */}
+            <div className="flex space-x-4">
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                <FaFacebookF className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                <FaTwitter className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                <FaYoutube className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                <FaLinkedinIn className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Contact Section */}
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Left - Logo and Description */}
+          <div className="space-y-6">
+            <div className="flex items-center space-x-3">
+              <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center">
+                <div className="text-gray-900 font-bold text-2xl">RG</div>
+              </div>
+              <div>
+                <div className="text-white font-bold text-xl tracking-wider">
+                  CREATIONS
+                </div>
+              </div>
+            </div>
+            <p className="text-gray-400 text-sm leading-relaxed max-w-md">
+              Welcome to RG Creations. We envision a future where our projects,
+              adorned with a royal touch, stand as timeless masterpieces.
+            </p>
           </div>
         </div>
       </div>
 
-      {/* Bottom Copyright */}
-      <div className="border-t border-[#3d6a6a]">
-        <div className="max-w-6xl mx-auto px-6 py-4">
-          <p className="text-gray-300 text-xs text-right">
-            © 2025 RG Creations. All rights reserved.
-          </p>
+      {/* Bottom Footer */}
+      <div className="border-t border-gray-800">
+        <div className="container mx-auto px-6 py-6">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex space-x-6 mb-4 md:mb-0">
+              <Link
+                href="#"
+                className="text-gray-400 text-sm hover:text-white transition-colors"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="#"
+                className="text-gray-400 text-sm hover:text-white transition-colors"
+              >
+                Terms & Conditions
+              </Link>
+              <Link
+                href="#"
+                className="text-gray-400 text-sm hover:text-white transition-colors"
+              >
+                Cookies
+              </Link>
+            </div>
+            <p className="text-gray-400 text-sm">
+              © 2025 RG Creations. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
