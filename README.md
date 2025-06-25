@@ -1,4 +1,4 @@
-# blade-web-2025
+# Rgcreation-web-latest
 
 
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.com/supremeitonline/blade-web-2025.git
+git remote add origin https://gitlab.com/supremeitonline/rgcreation-web-latest.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.com/supremeitonline/blade-web-2025/-/settings/integrations)
+- [ ] [Set up project integrations](https://gitlab.com/supremeitonline/rgcreation-web-latest/-/settings/integrations)
 
 ## Collaborate with your team
 
