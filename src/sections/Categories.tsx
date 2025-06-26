@@ -2,21 +2,11 @@ import React from "react";
 
 const WelcomeSection = () => {
   return (
-    <section className="w-full py-40 bg-[#f6f7f8] overflow-hidden">
+    <section className="w-full py-20 bg-[#f6f7f8] overflow-hidden">
       {/* Background Text */}
       <div className="container mx-auto relative">
-        <div className="absolute -right-60 bottom-10  text-black font-bold text-5xl md:text-7xl  leading-none pointer-events-none select-none">
-          15 YEARS
-        </div>
-
-        {/* Experience Working Text */}
-        <div className="absolute right-8 md:right-16 lg:right-24 bottom-8 md:bottom-16 text-gray-500 font-medium text-sm md:text-base tracking-wide z-10">
-          EXPERIENCE WORKING
-          <div className="w-16 h-0.5 bg-teal-600 mt-2"></div>
-        </div>
-
         <div className="container mx-auto px-4 md:px-0">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center">
             {/* Left Content */}
             <div className="space-y-8 z-10 relative">
               <div className="space-y-4">
@@ -49,22 +39,26 @@ const WelcomeSection = () => {
             </div>
 
             {/* Right Content - Image with Frame */}
-            <div className="relative z-10">
-              <div className="relative">
+            <div className="relative z-10 me-20">
+              <div>
                 {/* Main Image Container */}
-                <div className="bg-[#244d4d] p-6 md:p-8">
-                  <div className="bg-white p-4 md:p-6">
-                    <img
-                      src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=400&fit=crop"
-                      alt="Luxury restaurant interior"
-                      className="w-full h-80 md:h-96 object-cover"
-                    />
-                  </div>
+                <div className="border-[#244d4d] border-[24px] w-full h-60 md:h-72 p-4 md:p-6">
+                  <img
+                    src="/welcome.jpg"
+                    alt="Luxury restaurant interior"
+                    className=" absolute -top-14 left-14 object-contain"
+                  />
                 </div>
-
-                {/* Decorative Elements */}
-                <div className="absolute -top-4 -right-4 w-16 h-16 border-2 border-[#244d4d]"></div>
-                <div className="absolute -bottom-4 -left-4 w-12 h-12 border-2 border-[#244d4d]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-end  ">
+          <div className="border-r-8  border-darkGreen pr-4">
+            <div className="text-[#bfbfbf]/50 text-right">
+              <span className="text-6xl font-extrabold">15 YEARS</span>
+              <div className="mt-2">
+                <span className="text-xl font-medium text-gray-800">EXPERIENCE WORKING</span>
               </div>
             </div>
           </div>

@@ -33,7 +33,9 @@ const Footer = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-4">
-                <h4 className="text-white font-medium">Our Plain</h4>
+                <h4 className="text-white text-base font-semibold">
+                  Our Plain
+                </h4>
                 <p className="text-gray-400 text-sm">
                   Teaching lorem dislikes find distinctio dolore selections and
                   circumstances distinctio
@@ -55,7 +57,7 @@ const Footer = () => {
               </div>
               {/* Second Column - Consequuntures */}
               <div className="space-y-6">
-                <h3 className="text-white font-semibold text-lg mb-6">
+                <h3 className="text-white font-semibold text-base mb-6">
                   Consequuntures
                 </h3>
                 <div className="space-y-4">
@@ -171,13 +173,13 @@ const Footer = () => {
           <div className="space-y-6">
             {/* Contact Info */}
             <div className="">
-              <h3 className="text-white border-2 border-gray-400 p-4 text-center font-semibold text-base mb-4">
+              <h3 className="text-white border-2 border-gray-400 p-2 text-center font-semibold text-base mb-4">
                 CONTACT US
               </h3>
               <div className="space-y-6">
-                <div className="flex items-center space-x-3">
+                <div className="flex pt-4 items-center space-x-3">
                   <Phone className="w-4 h-4 text-gray-400" />
-                  <span className="text-gray-400 text-sm">+01-4524806</span>
+                  <span className="text-gray-400 text-sm ">+01-4524806</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-4 h-4 text-gray-400" />
@@ -207,12 +209,12 @@ const Footer = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
-                    className="bg-gray-800 border border-gray-400 text-white placeholder-gray-400 pl-10 pr-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-gray-600 focus:border-gray-600"
+                    className="bg-gray-800 border border-gray-400 text-white placeholder-gray-400 pl-10 pr-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-gray-600 focus:border-gray-600"
                   />
                 </div>
                 <button
                   onClick={handleSubscribe}
-                  className="border-gray-400 border hover:bg-gray-600 text-white px-6 py-3 font-medium transition-colors"
+                  className="border-gray-400 border hover:bg-gray-600 text-white px-6 py-2 font-medium transition-colors"
                 >
                   SUBSCRIBE
                 </button>
@@ -246,61 +248,46 @@ const Footer = () => {
                 <FaLinkedinIn className="w-5 h-5" />
               </a>
             </div>
-          </div>
-        </div>
-
-        {/* Contact Section */}
-        <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Left - Logo and Description */}
-          <div className="space-y-6">
-            <div className="flex items-center space-x-3">
-              <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center">
-                <div className="text-gray-900 font-bold text-2xl">RG</div>
-              </div>
-              <div>
-                <div className="text-white font-bold text-xl tracking-wider">
-                  CREATIONS
-                </div>
-              </div>
-            </div>
-            <p className="text-gray-400 text-sm leading-relaxed max-w-md">
-              Welcome to RG Creations. We envision a future where our projects,
-              adorned with a royal touch, stand as timeless masterpieces.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Bottom Footer */}
-      <div className="border-t border-gray-800">
-        <div className="container mx-auto px-6 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex space-x-6 mb-4 md:mb-0">
-              <Link
-                href="#"
-                className="text-gray-400 text-sm hover:text-white transition-colors"
-              >
-                Privacy Policy
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-400 text-sm hover:text-white transition-colors"
-              >
-                Terms & Conditions
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-400 text-sm hover:text-white transition-colors"
-              >
-                Cookies
-              </Link>
-            </div>
             <p className="text-gray-400 text-sm">
               © 2025 RG Creations. All rights reserved.
             </p>
           </div>
         </div>
+
+        {/* Contact Section */}
+        <div className="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-12">
+          {/* Left - Logo and Description */}
+          <div className="space-y-6">
+            <img src="/logo.png" className="invert brightness-0" />
+            <p className="text-gray-400 text-sm leading-relaxed max-w-md">
+              Welcome to RG Creations. We envision a future where our projects,
+              adorned with a royal touch, stand as timeless masterpieces.
+            </p>
+          </div>
+          <div className="flex space-x-6 mb-4 md:mb-0">
+            <Link
+              href="#"
+              className="text-gray-400 text-sm hover:text-white transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="#"
+              className="text-gray-400 text-sm hover:text-white transition-colors"
+            >
+              Terms & Conditions
+            </Link>
+            <Link
+              href="#"
+              className="text-gray-400 text-sm hover:text-white transition-colors"
+            >
+              Cookies
+            </Link>
+          </div>
+        </div>
       </div>
+
+      
     </footer>
   );
 };

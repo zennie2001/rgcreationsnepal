@@ -10,7 +10,7 @@ import ToastProvider from "@/components/ToastContainer";
 
 const jakarta = Inter({
   subsets: ["latin"],
-  weight: "400", // Add required font weights
+  weight: ["400","500","600","700","800","900"], // Add required font weights
   variable: "--font-sans",
 });
 

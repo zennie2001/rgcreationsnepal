@@ -10,29 +10,25 @@ const LatestProjects = () => {
     {
       id: 1,
       category: "Interior",
-      image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop",
+      image: "/rambagh.jpg",
       title: "Luxury Hotel Lobby",
     },
     {
       id: 2,
       category: "Restaurant",
-      image:
-        "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop",
+      image: "/taaj.jpg",
       title: "Fine Dining Restaurant",
     },
     {
       id: 3,
       category: "Interior",
-      image:
-        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&h=400&fit=crop",
+      image: "/taj.jpg",
       title: "Grand Ballroom",
     },
     {
       id: 4,
       category: "Building",
-      image:
-        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&h=400&fit=crop",
+      image: "/royal.jpg",
       title: "Modern Architecture",
     },
   ];
@@ -43,18 +39,7 @@ const LatestProjects = () => {
       : projects.filter((project) => project.category === activeFilter);
 
   return (
-    <section className="w-full py-20 bg-white relative overflow-hidden">
-      {/* Background Text */}
-      <div className="absolute right-0 bottom-0 text-gray-100 font-bold text-8xl md:text-9xl lg:text-[12rem] xl:text-[15rem] leading-none pointer-events-none select-none">
-        AWESOME
-      </div>
-
-      {/* Designs Text */}
-      <div className="absolute right-8 md:right-16 lg:right-24 bottom-8 md:bottom-16 text-gray-500 font-medium text-sm md:text-base tracking-wide z-10">
-        DESIGNS
-        <div className="w-16 h-0.5 bg-[#244d4d] mt-2"></div>
-      </div>
-
+    <section className="w-full py-14 bg-white relative overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12 relative z-20">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12">
@@ -93,13 +78,6 @@ const LatestProjects = () => {
               key={project.id}
               className="group relative overflow-hidden bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              {/* Special S Badge for first project */}
-              {index === 0 && (
-                <div className="absolute top-4 left-4 w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center text-white font-bold text-lg z-10">
-                  S
-                </div>
-              )}
-
               <div className="w-80 h-[420px] overflow-hidden">
                 <img
                   src={project.image}
@@ -153,6 +131,18 @@ const LatestProjects = () => {
               />
             </svg>
           </button>
+        </div>
+        <div className="flex justify-end  ">
+          <div className="border-r-8  border-darkGreen pr-4">
+            <div className="text-[#bfbfbf]/50 text-right">
+              <span className="text-6xl font-extrabold">AWESOME</span>
+              <div className="mt-2">
+                <span className="text-xl font-medium text-gray-800">
+                  DESIGNS
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
