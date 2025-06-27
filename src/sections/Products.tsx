@@ -40,7 +40,7 @@ const LatestProjects = () => {
 
   return (
     <section className="w-full py-14 bg-white relative overflow-hidden">
-      <div className="container mx-auto px-6 lg:px-12 relative z-20">
+      <div className="container mx-auto px-6 lg:px-0 relative z-20">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12">
           <div className="mb-8 lg:mb-0">
@@ -78,7 +78,7 @@ const LatestProjects = () => {
               key={project.id}
               className="group relative overflow-hidden bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="w-80 h-[420px] overflow-hidden">
+              <div className="w-[373px] h-[518px] overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}

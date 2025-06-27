@@ -13,7 +13,7 @@ const StatsSection: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-[85vh] bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 flex items-center justify-center relative overflow-hidden">
+    <div className="h-[530px] bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 flex items-center justify-center relative overflow-hidden">
       {/* Background atmospheric effects */}
       <div className="absolute inset-0 bg-black/80 overflow-hidden z-20"></div>
       <img
@@ -64,15 +64,15 @@ const StatsSection: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left side - Text content */}
             <div className="lg:col-span-1">
-              <div className=" border-[16px] border-[#244d4d] p-8  relative ">
+              <div className=" border-[16px] h-[370px] w-[585px] border-[#244d4d] p-8  relative ">
                 {/* Subtle background pattern */}
                 <div className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-transparent"></div>
 
-                <div className="relative z-10">
-                  <h2 className="text-white text-2xl md:text-4xl font-light mb-2 tracking-wide">
+                <div className="relative mt-10 z-10">
+                  <h2 className="text-white text-2xl md:text-4xl  font-light mb-2 tracking-wide">
                     SOME
                   </h2>
-                  <h2 className="text-[#d5dd02] text-2xl md:text-4xl font-bold mb-6 tracking-wide">
+                  <h2 className="text-[#d5dd02] text-2xl md:text-5xl font-bold mb-6 tracking-wide">
                     INTRESTING FACTS
                   </h2>
 
