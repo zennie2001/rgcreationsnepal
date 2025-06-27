@@ -36,7 +36,7 @@ const ModernBlogDesign: React.FC = () => {
         "Exploring modern architectural trends and innovative design solutions for contemporary living spaces.",
       category: "ARCHITECTURE",
       image:
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "/blog (1).jpg",
       date: "18 AUG 2023",
     },
     {
@@ -46,7 +46,7 @@ const ModernBlogDesign: React.FC = () => {
         "Modern interior design concepts that blend functionality with aesthetic appeal.",
       category: "INTERIOR DESIGN",
       image:
-        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "/blog (3).jpg",
       date: "15 AUG 2023",
     },
     {
@@ -56,7 +56,7 @@ const ModernBlogDesign: React.FC = () => {
         "typefaces and layouts, and in appearance most of different generational content of dummy text is nonsensical typefaces dummy text is nonsensical.",
       category: "ARCHITECTURE",
       image:
-        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "/blog (2).jpg",
       date: "10 AUG 2023",
       featured: true,
     },
@@ -118,7 +118,7 @@ const ModernBlogDesign: React.FC = () => {
             <div className="relative">
               
               <article className="group cursor-pointer h-full">
-                <div className="relative overflow-hidden rounded-sm h-full min-h-[500px]">
+                <div className="relative  rounded-sm h-full min-h-[500px]">
                   <div className="absolute inset-0 bg-black/50 overflow-hidden"></div>
                   <img
                     src={featuredPost.image}
@@ -126,7 +126,7 @@ const ModernBlogDesign: React.FC = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   {/* Large Overlay Card */}
-                  <div className="absolute bottom-8 right-8 border-[16px] border-darkGreen text-white p-6 rounded-sm max-w-md">
+                  <div className="absolute top-1/2 left-60 transform  -translate-y-1/2 border-[16px] border-darkGreen text-white p-6 rounded-sm max-w-md">
                     <div className="text-xs font-medium mb-3 opacity-75">
                       {featuredPost.date}
                     </div>

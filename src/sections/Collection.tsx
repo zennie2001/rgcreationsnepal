@@ -1,146 +1,86 @@
 "use client";
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  image: string;
-}
-
-const projects: Project[] = [
-  {
-    id: 1,
-    title: "Harsh Batika",
-    description:
-      "Harshan Batika, a escape from the city's hustle and bustle and discovering all-in-one party venue, nestled in a serene and family-friendly location.",
-    image: "/harshah.jpg",
-  },
-  {
-    id: 2,
-    title: "Rambagh Mahal",
-    description:
-      "Rambagh Mahal, a luxury and one of the largest banquet venue. We specialize in making your special occasions truly memorable.",
-    image: "/rambagh.jpg",
-  },
-  {
-    id: 3,
-    title: "Bouddha Heritage",
-    description:
-      "Bouddha Heritage, a luxury and premium banquet venue. The high-class interior and royal touch add a touch of elegance and grandeur to the overall ambiance.",
-    image: "/bouddha.jpg",
-  },
-  {
-    id: 4,
-    title: "Taaj Reception",
-    description:
-      "Taaj Reception, the best venue in town is a captivating blend of elegance, functionality, and ambiance. From the moment you step through its doors, you're enveloped in an atmosphere of sophistication and charm.",
-    image: "/taj.jpg",
-  },
-];
 
 const Collection: React.FC = () => {
   return (
-    <div className="min-h-screen pt-10 md:pt-20 pb-10 px-4">
-      <div className="container mx-auto w-full relative">
-        {/* Header */}
-        <div className="text-center mb-6 md:mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Best Construction Company in Kathmandu
-          </h1>
-          <p className="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">
-            Our Projects
-          </p>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            We take pride in our track record, having successfully constructed
-            over 100 houses, the majority of which are luxurious bungalows.
-          </p>
+    <div className="min-h-screen bg-gray-50 py-16 px-4">
+      <div className="container mx-auto max-w-7xl">
+        {/* Top Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-12">
+          {/* Left Column - Building Image */}
+          <div className="lg:col-span-3">
+            <div className="relative">
+              {/* Green rectangle decoration */}
+              <div className="absolute -top-8 left-0 w-16 h-20 bg-darkGreen z-10"></div>
+              <img
+                src="/latest-image (1).jpg"
+                alt="Traditional Building"
+                className="w-full h-80 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+
+          {/* Middle Column - Interior Design */}
+          <div className="lg:col-span-6">
+            <img
+              src="/latest-image (3).jpg"
+              alt="Modern Interior Design"
+              className="w-full h-80 object-cover rounded-lg shadow-lg"
+            />
+          </div>
+
+          {/* Right Column - Text */}
+          <div className="lg:col-span-3 flex flex-col justify-center">
+            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+              Best &<br />
+              Trendy
+              <br />
+              Designs
+            </h2>
+          </div>
         </div>
 
-        {/* Slider Container */}
-        <div className="relative bg-white rounded-sm  overflow-hidden">
-          <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={0}
-            slidesPerView={1}
-            navigation={{
-              nextEl: ".swiper-button-next-custom",
-              prevEl: ".swiper-button-prev-custom",
-            }}
-            pagination={{
-              el: ".swiper-pagination-custom",
-              clickable: true,
-              renderBullet: (index: number, className: string) => {
-                return `<span class="${className} w-3 h-3 bg-gray-300 rounded-full mx-1 cursor-pointer transition-all duration-300 hover:bg-gray-500"></span>`;
-              },
-            }}
-            autoplay={{
-              delay: 10000,
-              disableOnInteraction: false,
-            }}
-            loop={true}
-            className="h-[300px] md:h-[500px]"
-          >
-            {projects.map((project) => (
-              <SwiperSlide key={project.id}>
-                <div className="grid grid-cols-1 lg:grid-cols-2 h-full">
-                  {/* Image Section */}
-                  <div className="relative overflow-hidden">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
-                  </div>
-
-                  {/* Content Section */}
-                  <div className="flex flex-col absolute left-[500px]  justify-center my-28 p-8 md:py-12 lg:py-16 bg-white/70">
-                    <div className="space-y-6">
-                      <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                        {project.title}
-                      </h1>
-                      <div className="w-20 h-1 bg-darkGreen rounded-full"></div>
-                      <p className="text-[#909090] font-medium text-lg md:text-xl leading-relaxed">
-                        {project.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
-          {/* Custom Navigation Buttons */}
-          <div className="absolute bottom-8 left-8 z-10 flex items-center space-x-4">
-            <button className="swiper-button-prev-custom group flex items-center justify-center w-14 h-8 bg-white/90 backdrop-blur-sm rounded-full  hover:bg-white transition-all duration-300 hover:scale-110">
-              <ChevronLeft className="w-6 h-6 text-gray-700 group-hover:text-gray-900 transition-colors" />
+        {/* Bottom Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          {/* Left Column - Text Content */}
+          <div className="lg:col-span-6 text-right space-y-6">
+            <h3 className="text-2xl font-semibold text-gray-900">
+              Modern design with new look
+            </h3>
+            <p className="text-gray-600 leading-relaxed">
+              pictures doesn't hurt but let's pull the curtain back<br/> and be
+              honest here for a minute. Architects communicate<br/> through their
+              drawings - we aren't making art.
+            </p>
+            <button className="bg-darkGreen hover:bg-darkGreen text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300">
+              Explore More
             </button>
-            <button className="swiper-button-next-custom group flex items-center justify-center w-14 h-8 bg-white/90 backdrop-blur-sm rounded-full  hover:bg-white transition-all duration-300 hover:scale-110">
-              <ChevronRight className="w-6 h-6 text-gray-700 group-hover:text-gray-900 transition-colors" />
-            </button>
+          </div>
 
-            {/* Custom Pagination */}
-            <div className="swiper-pagination-custom flex items-center ml-4"></div>
+          {/* Right Column - Modern House Image */}
+          <div className="lg:col-span-6">
+            <img
+              src="/latest-image (2).jpg"
+              alt="Modern House Design"
+              className="w-full h-96 object-cover rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+
+        {/* Bottom Text Section */}
+        <div className="flex justify-start  ">
+          <div className="border-l-8  border-darkGreen pl-4">
+            <div className="text-[#bfbfbf]/50 text-left">
+              <span className="text-6xl font-extrabold">LATEST DESIGN</span>
+              <div className="mt-2">
+                <span className="text-xl font-medium text-gray-800">
+                  TRENDS
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      {/* Custom Swiper Styles */}
-      <style jsx>{`
-        .swiper-pagination-custom .swiper-pagination-bullet-active {
-          background-color: #3b82f6 !important;
-          transform: scale(1.2);
-        }
-      `}</style>
     </div>
   );
 };

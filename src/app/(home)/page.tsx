@@ -22,8 +22,9 @@ export default function Home() {
       <Categories />
 
       <Products />
+       <Collection />
       <About />
-      {/* <Collection /> */}
+     
       <BlogDesign />
       <Deals />
       <FAQ/>

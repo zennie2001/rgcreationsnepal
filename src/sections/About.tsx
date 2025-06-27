@@ -5,7 +5,7 @@ const Specialization: React.FC = () => {
     <section className="bg-white py-16 px-4 md:px-0">
       <div className="container mx-auto">
         {/* Header */}
-        <div className="mb-16">
+        <div className="mb-16 grid grid-cols-1 md:grid-cols-2">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
             OUR
             <br />
@@ -21,13 +21,13 @@ const Specialization: React.FC = () => {
         </div>
 
         {/* Premium Nightclub Section */}
-        <div className="mb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
+        <div className="mb-10">
+          <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
+            <div className="relative overflow-hidden">
               <img
                 src="/premium.jpg "
                 alt="Premium Nightclub Interior"
-                className="w-full h-96 object-cover rounded-sm shadow-lg"
+                className="w-full h-96 object-cover hover:scale-110 duration-300 transition-all rounded-sm shadow-lg"
               />
             </div>
             <div className="lg:pl-8">
@@ -49,8 +49,8 @@ const Specialization: React.FC = () => {
         </div>
 
         {/* Luxurious Residential Section */}
-        <div className="mb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="mb-10">
+          <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 lg:pr-8">
               <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
                 LUXURIOUS RESIDENTIAL
@@ -65,24 +65,24 @@ const Specialization: React.FC = () => {
                 READ MORE
               </button>
             </div>
-            <div className="order-1 lg:order-2">
+            <div className="order-1 lg:order-2 overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="/about (2).jpg"
                 alt="Luxurious Residential Interior"
-                className="w-full h-96 object-cover rounded-sm shadow-lg"
+                className="w-full h-96 object-cover hover:scale-110 duration-300 transition-all rounded-sm shadow-lg"
               />
             </div>
           </div>
         </div>
 
         {/* Commercial Construction Section */}
-        <div className="mb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+        <div className="mb-10">
+          <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
+            <div className="overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="/about (3).jpg"
                 alt="Commercial Construction Site"
-                className="w-full h-96 object-cover rounded-sm shadow-lg"
+                className="w-full h-96 object-cover hover:scale-110 duration-300 transition-all rounded-sm shadow-lg"
               />
             </div>
             <div className="lg:pl-8">
@@ -104,8 +104,8 @@ const Specialization: React.FC = () => {
         </div>
 
         {/* Architectural & Interior Design Section */}
-        <div className="mb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="mb-10">
+          <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 lg:pr-8">
               <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
                 ARCHITECTURAL &<br />
@@ -120,24 +120,24 @@ const Specialization: React.FC = () => {
                 READ MORE
               </button>
             </div>
-            <div className="order-1 lg:order-2">
+            <div className="order-1 overflow-hidden lg:order-2">
               <img
-                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+               src="/about (4).jpg"
                 alt="Modern Interior Design"
-                className="w-full h-96 object-cover rounded-sm shadow-lg"
+                className="w-full h-96 hover:scale-110 duration-300 transition-all object-cover rounded-sm shadow-lg"
               />
             </div>
           </div>
         </div>
 
         {/* Premium Furniture Supply Section */}
-        <div className="mb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+        <div className="mb-10">
+          <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
+            <div className="overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+               src="/about (5).jpg"
                 alt="Premium Furniture Collection"
-                className="w-full h-96 object-cover rounded-sm shadow-lg"
+                className="w-full h-96 hover:scale-110 duration-300 transition-all object-cover rounded-sm shadow-lg"
               />
             </div>
             <div className="lg:pl-8">
@@ -159,8 +159,8 @@ const Specialization: React.FC = () => {
         </div>
 
         {/* Nightclub Equipment Supply Section */}
-        <div className="mb-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="mb-10">
+          <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 lg:pr-8">
               <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
                 NIGHTCLUB EQUIPMENT
@@ -175,11 +175,11 @@ const Specialization: React.FC = () => {
                 READ MORE
               </button>
             </div>
-            <div className="order-1 lg:order-2">
+            <div className="order-1 overflow-hidden lg:order-2">
               <img
-                src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="/about (6).jpg"
                 alt="DJ Equipment and Sound Systems"
-                className="w-full h-96 object-cover rounded-sm shadow-lg"
+                className="w-full h-96 hover:scale-110 duration-300 transition-all object-cover rounded-sm shadow-lg"
               />
             </div>
           </div>
@@ -187,12 +187,12 @@ const Specialization: React.FC = () => {
 
         {/* Project Management & Turnkey Solutions Section */}
         <div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
+            <div className="overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="/about (7).jpg"
                 alt="Project Management Planning"
-                className="w-full h-96 object-cover rounded-sm shadow-lg"
+                className="w-full h-96 hover:scale-110 duration-300 transition-all object-cover rounded-sm shadow-lg"
               />
             </div>
             <div className="lg:pl-8">
