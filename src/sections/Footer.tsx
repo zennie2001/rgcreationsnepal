@@ -176,19 +176,19 @@ const Footer = () => {
               <h3 className="text-white border-2 border-gray-400 p-2 text-center font-semibold text-base mb-4">
                 CONTACT US
               </h3>
-              <div className="space-y-6">
-                <div className="flex pt-4 items-center space-x-3">
-                  <Phone className="w-4 h-4 text-gray-400" />
+              <div className="space-y-4">
+                <div className="flex pt-4 border-b pb-4 border-gray-600 items-center space-x-3">
+                  <Phone className="w-6 h-6 text-gray-400 fill-black bg-white rounded-full p-1 " color="black"  />
                   <span className="text-gray-400 text-sm ">+01-4524806</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <MapPin className="w-4 h-4 text-gray-400" />
+                <div className="flex items-center border-b border-gray-600 pb-4 space-x-3">
+                  <MapPin className="w-6 h-6 text-gray-400 fill-black bg-white rounded-full p-1 " color="black"  />
                   <span className="text-gray-400 text-sm">
                     Balkuwatar Kathmandu, Nepal. 44600
                   </span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Mail className="w-4 h-4 text-gray-400" />
+                <div className="flex items-center border-b border-gray-600 pb-4 space-x-3">
+                  <Mail className="w-6 h-6 text-gray-400 fill-black bg-white rounded-full p-1 " color="black"  />
                   <span className="text-gray-400 text-sm">
                     rgcreationsnp@gmail.com
                   </span>
@@ -197,8 +197,8 @@ const Footer = () => {
             </div>
 
             {/* Newsletter */}
-            <div className="space-y-4 ">
-              <h3 className="text-white font-semibold text-lg">
+            <div className="space-y-4  ">
+              <h3 className="text-white font-semibold mt-20  text-lg">
                 Join our newsletter to keep up to date with us!
               </h3>
               <div className="flex flex-col gap-3">
@@ -220,46 +220,15 @@ const Footer = () => {
                 </button>
               </div>
             </div>
-
-            {/* Social Media */}
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <FaFacebookF className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <FaTwitter className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <FaYoutube className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors"
-              >
-                <FaLinkedinIn className="w-5 h-5" />
-              </a>
-            </div>
-            <p className="text-gray-400 text-sm">
-              © 2025 RG Creations. All rights reserved.
-            </p>
           </div>
         </div>
 
         {/* Contact Section */}
-        <div className="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="mt-16 flex justify-between items-end gap-12">
           {/* Left - Logo and Description */}
           <div className="space-y-6">
             <img src="/logo.png" className="invert brightness-0" />
-            <p className="text-gray-400 text-sm leading-relaxed max-w-md">
+            <p className="text-gray-400 text-xs leading-relaxed max-w-sm">
               Welcome to RG Creations. We envision a future where our projects,
               adorned with a royal touch, stand as timeless masterpieces.
             </p>
@@ -267,27 +236,57 @@ const Footer = () => {
           <div className="flex space-x-6 mb-4 md:mb-0">
             <Link
               href="#"
-              className="text-gray-400 text-sm hover:text-white transition-colors"
+              className="text-white text-sm hover:text-white transition-colors"
             >
               Privacy Policy
             </Link>
             <Link
               href="#"
-              className="text-gray-400 text-sm hover:text-white transition-colors"
+              className="text-white text-sm hover:text-white transition-colors"
             >
               Terms & Conditions
             </Link>
             <Link
               href="#"
-              className="text-gray-400 text-sm hover:text-white transition-colors"
+              className="text-white text-sm hover:text-white transition-colors"
             >
               Cookies
             </Link>
           </div>
+          <div>
+            {/* Social Media */}
+            <div className="flex justify-end space-x-4">
+              <a
+                href="#"
+                className="text-white hover:text-white transition-colors"
+              >
+                <FaFacebookF className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="text-white hover:text-white transition-colors"
+              >
+                <FaTwitter className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="text-white hover:text-white transition-colors"
+              >
+                <FaYoutube className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                className="text-white hover:text-white transition-colors"
+              >
+                <FaLinkedinIn className="w-5 h-5" />
+              </a>
+            </div>
+            <p className="text-white pt-4 text-sm">
+              © 2025 RG Creations. <span className="text-gray-300">All rights reserved.</span> 
+            </p>
+          </div>
         </div>
       </div>
-
-      
     </footer>
   );
 };

@@ -7,17 +7,22 @@ import Header from "./Header";
 const slides = [
   {
     id: 1,
-    image: "/rambagh.jpg",
+    image: "/main-slider1.jpg",
     title: "Best Architectural Firm for Sustainable Design",
   },
   {
     id: 2,
-    image: "/royal.jpg",
+    image: "/main-slider2.jpg",
     title: "Innovative Architecture Solutions",
   },
   {
     id: 3,
-    image: "/taaj.jpg",
+    image: "/main-slider3.jpg",
+    title: "Creating Tomorrow's Spaces Today",
+  },
+  {
+    id: 3,
+    image: "/main-slider4.jpg",
     title: "Creating Tomorrow's Spaces Today",
   },
 ];
@@ -42,10 +47,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative md:w-[94%] w-full mx-auto h-screen overflow-hidden">
-      {/* Header */}
-      <Header />
-
+    <div className="relative w-full h-screen overflow-hidden">
       {/* Background Slides */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
@@ -108,15 +110,15 @@ const Hero = () => {
         ))}
       </div>
       {/* Services Section */}
-      <div className="absolute hidden  md:block -bottom-10 py-16 px-4">
-        <div className="max-w-5xl ">
-          <div className="grid grid-cols-1 mx-auto md:grid-cols-3 gap-4">
+      <div className="absolute hidden  md:block w-full -bottom-10 py-16 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* Night Clubs Design */}
             <div className="text-left p-6 rounded-2xl text-white backdrop-blur-md bg-white/10 group cursor-pointer">
               <div className="mb-6 flex justify-start">
                 <svg
-                  width="51"
-                  height="51"
+                  width="40"
+                  height="40"
                   viewBox="0 0 51 51"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -142,8 +144,8 @@ const Hero = () => {
             <div className="text-left p-6 rounded-2xl text-white backdrop-blur-md bg-white/10 group cursor-pointer">
               <div className="mb-6 flex justify-start">
                 <svg
-                  width="58"
-                  height="51"
+                  width="40"
+                  height="41"
                   viewBox="0 0 58 51"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -168,8 +170,8 @@ const Hero = () => {
             <div className="text-left p-6 rounded-2xl text-white backdrop-blur-md bg-white/10 group cursor-pointer">
               <div className="mb-6 flex justify-start">
                 <svg
-                  width="53"
-                  height="53"
+                  width="40"
+                  height="40"
                   viewBox="0 0 53 53"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
