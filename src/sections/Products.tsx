@@ -132,10 +132,10 @@ const LatestProjects = () => {
             </svg>
           </button>
         </div>
-        <div className="flex justify-end  ">
+        <div className="flex justify-end  px-4 md:px-0 py-8 ">
           <div className="border-r-8  border-darkGreen pr-4">
             <div className="text-[#bfbfbf]/50 text-right">
-              <span className="text-6xl font-extrabold">AWESOME</span>
+              <span className="text-4xl md:text-6xl font-extrabold">AWESOME</span>
               <div className="mt-2">
                 <span className="text-xl font-medium text-gray-800">
                   DESIGNS

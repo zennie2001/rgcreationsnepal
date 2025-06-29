@@ -68,10 +68,10 @@ const Collection: React.FC = () => {
         </div>
 
         {/* Bottom Text Section */}
-        <div className="flex justify-start  ">
+        <div className="flex justify-start  px-4 md:px-0 py-8 ">
           <div className="border-l-8  border-darkGreen pl-4">
             <div className="text-[#bfbfbf]/50 text-left">
-              <span className="text-6xl font-extrabold">LATEST DESIGN</span>
+              <span className="text-4xl md:text-6xl font-extrabold">LATEST DESIGN</span>
               <div className="mt-2">
                 <span className="text-xl font-medium text-gray-800">
                   TRENDS
