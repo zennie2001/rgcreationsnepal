@@ -14,9 +14,10 @@ export default function Header() {
   const aboutUsItems = [
     { title: "About Us", href: "/about/about-us" },
     { title: "Our Values", href: "/about/values" },
-    { title: "What Sets Us Apart", href: "/about/unique" },
+    { title: "What Sets Us Apart", href: "/about/sets-apart" },
     { title: "How We Help Our Clients", href: "/about/help-clients" },
     { title: "Health and Safety", href: "/about/health-safety" },
+    { title: "Message from Chairman", href: "/about/message-from-chairman" },
   ];
 
   const servicesItems = [
