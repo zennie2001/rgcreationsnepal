@@ -20,12 +20,6 @@ export default function Header() {
     { title: "Message from Chairman", href: "/about/message-from-chairman" },
   ];
 
-  const servicesItems = [
-    { title: "Residential Construction", href: "/services/residential" },
-    { title: "Commercial Construction", href: "/services/commercial" },
-    { title: "Interior Design", href: "/services/interior" },
-  ];
-
   return (
     <header
       className={`w-full z-50 ${
@@ -34,10 +28,7 @@ export default function Header() {
           : "absolute top-0 left-0 backdrop-blur-sm bg-transparent text-white"
       }`}
     >
-      <div
-        className="container mx-auto px-4 py-4 flex justify-between items-center "
-          
-      >
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center ">
         {/* Logo */}
         <a href="/" className="font-bold text-lg">
           <img src="/logo.png" alt="Company Logo" className="h-16 w-auto" />
@@ -74,33 +65,15 @@ export default function Header() {
             </HeadlessMenu>
           </div>
 
-          {/* Services Dropdown */}
-          <div className="relative group">
-            <HeadlessMenu>
-              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium">
-                Services
-                <ChevronDown size={16} />
-              </HeadlessMenu.Button>
-              <div className="absolute hidden group-hover:block  bg-white text-gray-800 shadow-lg rounded-md py-2 w-64 z-50">
-                {servicesItems.map((item, index) => (
-                  <a
-                    key={index}
-                    href={item.href}
-                    className="block px-4 py-2 text-base hover:bg-gray-100"
-                  >
-                    {item.title}
-                  </a>
-                ))}
-              </div>
-            </HeadlessMenu>
-          </div>
-
+          <a href="/services" className="hover:text-green-500 font-medium">
+            Services
+          </a>
           <a href="/projects" className="hover:text-green-500 font-medium">
             Projects
           </a>
-          
+
           <a href="/projects" className="hover:text-green-500 font-medium">
-          Work Process
+            Work Process
           </a>
           <a href="/contact" className="hover:text-green-500 font-medium">
             Blogs
@@ -139,20 +112,9 @@ export default function Header() {
               ))}
             </div>
           </div>
-          <div>
-            <p className="font-medium">Services</p>
-            <div className="ml-4 space-y-1">
-              {servicesItems.map((item, index) => (
-                <a
-                  key={index}
-                  href={item.href}
-                  className="block text-sm hover:text-green-500"
-                >
-                  {item.title}
-                </a>
-              ))}
-            </div>
-          </div>
+          <a href="/services" className="block hover:text-green-500">
+            Services
+          </a>
           <a href="/projects" className="block hover:text-green-500">
             Projects
           </a>

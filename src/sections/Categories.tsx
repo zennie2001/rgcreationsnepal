@@ -2,10 +2,10 @@ import React from "react";
 
 const WelcomeSection = () => {
   return (
-    <section className="w-full py-20 bg-[#f6f7f8] overflow-hidden">
+    <section className="w-full py-20 bg-[#f6f7f8] ">
       {/* Background Text */}
       <div className="container mx-auto relative">
-        <div className="container mx-auto px-4 md:px-0">
+        <div className="container px-4 md:px-0">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center">
             {/* Left Content */}
             <div className="space-y-8 z-10 relative">
@@ -39,24 +39,24 @@ const WelcomeSection = () => {
             </div>
 
             {/* Right Content - Image with Frame */}
-            <div className="relative z-10 me-20">
+            <div className="relative z-10 md:me-20 ">
               <div>
                 {/* Main Image Container */}
                 <div className="border-[#244d4d] border-[24px] w-full h-60 md:h-72 p-4 md:p-6">
                   <img
                     src="/welcome.jpg"
                     alt="Luxury restaurant interior"
-                    className=" absolute -top-14 left-14 object-contain"
+                    className=" absolute -top-14 left-14 object-cover w-full h-full"
                   />
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex justify-end  ">
+        <div className="flex justify-end px-4 md:px-0 py-8  ">
           <div className="border-r-8  border-darkGreen pr-4">
             <div className="text-[#bfbfbf]/50 text-right">
-              <span className="text-6xl font-extrabold">15 YEARS</span>
+              <span className="text-4xl md:text-6xl font-extrabold">15 YEARS</span>
               <div className="mt-2">
                 <span className="text-xl font-medium text-gray-800">EXPERIENCE WORKING</span>
               </div>

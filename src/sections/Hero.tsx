@@ -47,7 +47,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full md:h-[90vh] h-[70vh] 2xl:h-[85vh] overflow-hidden">
       {/* Background Slides */}
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
@@ -70,13 +70,13 @@ const Hero = () => {
       {/* Decorative Elements */}
 
       {/* Hero Content */}
-      <div className="absolute inset-0 flex items-center md:items-start mt-20 justify-center z-30">
-        <div className="text-center  text-white px-14 container mx-auto ">
-          <p className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+      <div className="absolute inset-0 flex items-center md:items-start mt-20 xxl:mt-40 justify-center z-30">
+        <div className="text-center  text-white px-14 max-w-4xl mx-auto ">
+          <p className="text-3xl md:text-6xl 2xl:text-7xl font-bold  mb-3 leading-tight">
             {slides[currentSlide].title}
           </p>
 
-          <button className="border-4 border-white text-white px-4 py-2 md:px-8 md:py-2.5 font-semibold text-base md:text-lg hover:bg-darkGreen hover:text-white duration-500 transition-colors shadow-lg">
+          <button className="border-4 border-white text-white px-4 py-2 md:px-8 2xl:py-2.5 font-semibold text-base md:text-lg hover:bg-darkGreen hover:text-white duration-500 transition-colors shadow-lg">
             Read More
           </button>
         </div>
@@ -110,15 +110,15 @@ const Hero = () => {
         ))}
       </div>
       {/* Services Section */}
-      <div className="absolute hidden  md:block w-full -bottom-10 py-16 px-4">
+      <div className="absolute hidden  md:block w-full bottom-12  px-4">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* Night Clubs Design */}
             <div className="text-left p-6 rounded-2xl text-white backdrop-blur-md bg-white/10 group cursor-pointer">
-              <div className="mb-6 flex justify-start">
+              <div className="mb-3 flex justify-start">
                 <svg
-                  width="40"
-                  height="40"
+                  width="30"
+                  height="30"
                   viewBox="0 0 51 51"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -129,23 +129,23 @@ const Hero = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-4">Night Clubs Design</h3>
-              <p className="text-gray-300 text-sm leading-relaxed mb-6">
+              <h3 className="text-lg 2xl:text-xl font-bold mb-2">Night Clubs Design</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-3 ">
                 Our architectural design ethos integrates innovation,
                 sustainability, and client satisfaction from inception to
                 realization.
               </p>
-              <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors underline">
+              <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors ">
                 View More
               </button>
             </div>
 
             {/* Hotel Design */}
             <div className="text-left p-6 rounded-2xl text-white backdrop-blur-md bg-white/10 group cursor-pointer">
-              <div className="mb-6 flex justify-start">
+              <div className="mb-3 flex justify-start">
                 <svg
-                  width="40"
-                  height="41"
+                  width="30"
+                  height="31"
                   viewBox="0 0 58 51"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -156,22 +156,22 @@ const Hero = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-4">Hotel Design</h3>
-              <p className="text-gray-300 text-sm leading-relaxed mb-6">
+              <h3 className="text-lg 2xl:text-xl font-bold mb-2">Hotel Design</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-3">
                 Elevate your interior spaces with our bespoke design service
                 tailored to your unique style and needs.
               </p>
-              <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors underline">
+              <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors ">
                 View More
               </button>
             </div>
 
             {/* Banquet Design */}
             <div className="text-left p-6 rounded-2xl text-white backdrop-blur-md bg-white/10 group cursor-pointer">
-              <div className="mb-6 flex justify-start">
+              <div className="mb-3 flex justify-start">
                 <svg
-                  width="40"
-                  height="40"
+                  width="30"
+                  height="30"
                   viewBox="0 0 53 53"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -196,12 +196,12 @@ const Hero = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-4">Banquet Design</h3>
-              <p className="text-gray-300 text-sm leading-relaxed mb-6">
+              <h3 className="text-lg 2xl:text-xl font-bold mb-2">Banquet Design</h3>
+              <p className="text-gray-300 text-sm leading-relaxed mb-3">
                 From landscaping to architectural detailing, our exterior design
                 service crafts outdoor spaces that captivate.
               </p>
-              <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors underline">
+              <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors ">
                 View More
               </button>
             </div>

@@ -9,6 +9,7 @@
     @apply scroll-smooth;
     @apply box-border;
     font-family: var(--font-sans), serif;
+    overflow-x:hidden;
   }
   .flex_center {
     @apply flex justify-center items-center;
