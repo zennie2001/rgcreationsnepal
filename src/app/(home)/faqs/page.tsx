@@ -13,13 +13,13 @@ const StatsSection: React.FC = () => {
   ];
 
   return (
-    <div className="h-[530px] bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 flex items-center justify-center relative overflow-hidden">
+    <div className="md:h-[530px] h-auto bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 flex items-center justify-center relative overflow-hidden">
       {/* Background atmospheric effects */}
       <div className="absolute inset-0 bg-black/80 overflow-hidden z-20"></div>
       <img
         src="/background.jpg"
         alt="background"
-        className="absolute inset-0"
+        className="absolute inset-0 w-full h-full object-cover z-10"
       />
 
       {/* Decorative grass silhouette */}
@@ -59,12 +59,12 @@ const StatsSection: React.FC = () => {
       </div>
 
       {/* Main content container */}
-      <div className="container mx-auto px-6 z-30">
-        <div className="max-w-6xl mx-auto">
+      <div className="container mx-auto px-6 md:px-0 z-30">
+        <div className="w-full mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left side - Text content */}
-            <div className="lg:col-span-1">
-              <div className=" border-[16px] h-[370px] w-[585px] border-[#244d4d] p-8  relative ">
+            <div className="">
+              <div className=" border-[16px] md:h-[370px] mt-10 md:mt-0 md:w-[585px] border-[#244d4d] p-8  relative ">
                 {/* Subtle background pattern */}
                 <div className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-transparent"></div>
 
@@ -88,8 +88,8 @@ const StatsSection: React.FC = () => {
             </div>
 
             {/* Right side - Statistics */}
-            <div className="lg:col-span-1">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="">
+              <div className="grid grid-cols-1 md:grid-cols-3 md:gap-6">
                 {stats.map((stat, index) => (
                   <div key={index} className="group relative">
                     {/* Dark card background */}

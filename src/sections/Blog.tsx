@@ -35,8 +35,7 @@ const ModernBlogDesign: React.FC = () => {
       description:
         "Exploring modern architectural trends and innovative design solutions for contemporary living spaces.",
       category: "ARCHITECTURE",
-      image:
-        "/blog (1).jpg",
+      image: "/blog (1).jpg",
       date: "18 AUG 2023",
     },
     {
@@ -45,8 +44,7 @@ const ModernBlogDesign: React.FC = () => {
       description:
         "Modern interior design concepts that blend functionality with aesthetic appeal.",
       category: "INTERIOR DESIGN",
-      image:
-        "/blog (3).jpg",
+      image: "/blog (3).jpg",
       date: "15 AUG 2023",
     },
     {
@@ -55,8 +53,7 @@ const ModernBlogDesign: React.FC = () => {
       description:
         "typefaces and layouts, and in appearance most of different generational content of dummy text is nonsensical typefaces dummy text is nonsensical.",
       category: "ARCHITECTURE",
-      image:
-        "/blog (2).jpg",
+      image: "/blog (2).jpg",
       date: "10 AUG 2023",
       featured: true,
     },
@@ -84,24 +81,25 @@ const ModernBlogDesign: React.FC = () => {
           <div className="w-16 h-1 bg-black"></div>
         </div>
 
-        
-
         {/* Blog Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 relative">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch relative">
           {/* Left Column - Regular Posts */}
-          <div className="space-y-8">
+          <div className="h-full flex flex-col justify-between gap-8">
             {regularPosts.map((post) => (
-              <article key={post.id} className="group cursor-pointer relative">
-                <div className="relative  rounded-sm">
-                  <div className="absolute inset-0 bg-black/30 overflow-hidden"></div>
+              <article
+                key={post.id}
+                className="group cursor-pointer relative h-full flex-1"
+              >
+                <div className="relative rounded-sm h-full">
+                  <div className="absolute inset-0 bg-black/30 overflow-hidden z-10 rounded-sm"></div>
                   <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 rounded-sm"
                   />
                   {/* Overlay Card */}
-                  <div className="absolute bottom-4 -left-4 bg-[#244d4d]  text-white h-24 px-4 rounded-sm max-w-sm">
-                    <div className="text-[10px] ms-2 font-medium rotate-90 origin-top-left  my-4  opacity-75">
+                  <div className="absolute bottom-4 -left-4 bg-[#244d4d] text-white h-24 px-4 rounded-sm max-w-sm z-20">
+                    <div className="text-[10px] ms-2 font-medium rotate-90 origin-top-left my-4 opacity-75">
                       {post.date}
                     </div>
                     <h3 className="text-lg font-bold ms-4 leading-tight -my-2 mb-2">
@@ -115,18 +113,17 @@ const ModernBlogDesign: React.FC = () => {
 
           {/* Right Column - Featured Post */}
           {featuredPost && (
-            <div className="relative">
-              
+            <div className="relative h-full">
               <article className="group cursor-pointer h-full">
-                <div className="relative  rounded-sm h-full min-h-[500px]">
-                  <div className="absolute inset-0 bg-black/50 overflow-hidden"></div>
+                <div className="relative rounded-sm h-full min-h-full">
+                  <div className="absolute inset-0 bg-black/50 overflow-hidden z-10 rounded-sm"></div>
                   <img
                     src={featuredPost.image}
                     alt={featuredPost.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 rounded-sm"
                   />
                   {/* Large Overlay Card */}
-                  <div className="absolute top-1/2 left-60 transform  -translate-y-1/2 border-[16px] border-darkGreen text-white p-6 rounded-sm max-w-md">
+                  <div className="absolute top-1/2 left-60 transform -translate-y-1/2 border-[16px] border-[#244d4d] text-white p-6 rounded-sm max-w-md z-20">
                     <div className="text-xs font-medium mb-3 opacity-75">
                       {featuredPost.date}
                     </div>
@@ -146,17 +143,16 @@ const ModernBlogDesign: React.FC = () => {
           )}
         </div>
 
-        {/* Large "BLOG POST" Text Overlay */}
-        <div className="relative mt-16">
-          <div className="absolute right-0 top-0 text-gray-200 text-8xl md:text-9xl font-bold leading-none opacity-50 pointer-events-none select-none">
-            BLOG
-          </div>
-          <div className="absolute right-0 top-20 md:top-24 text-gray-400 text-2xl md:text-3xl font-medium opacity-50 pointer-events-none select-none">
-            POST
+        <div className="flex justify-end px-4 md:px-0 py-8  ">
+          <div className="border-r-8  border-darkGreen pr-4">
+            <div className="text-[#bfbfbf]/50 text-right">
+              <span className="text-4xl md:text-6xl font-extrabold">BLOG</span>
+              <div className="mt-2">
+                <span className="text-xl font-medium text-gray-800">POST</span>
+              </div>
+            </div>
           </div>
         </div>
-
-       
       </div>
     </div>
   );
