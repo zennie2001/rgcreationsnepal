@@ -224,7 +224,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="mt-16 flex justify-between items-end gap-12">
+        <div className="mt-16 flex flex-col md:flex-row justify-between items-end gap-12">
           {/* Left - Logo and Description */}
           <div className="space-y-6">
             <img src="/logo.png" className="invert brightness-0" />
@@ -255,7 +255,7 @@ const Footer = () => {
           </div>
           <div>
             {/* Social Media */}
-            <div className="flex justify-end space-x-4">
+            <div className="flex justify-start md:justify-end space-x-4">
               <a
                 href="#"
                 className="text-white hover:text-white transition-colors"

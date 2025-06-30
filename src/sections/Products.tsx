@@ -78,7 +78,7 @@ const LatestProjects = () => {
               key={project.id}
               className="group relative overflow-hidden bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
             >
-              <div className="w-[373px] h-[518px] overflow-hidden">
+              <div className="md:w-[373px] w-full h-auto md:h-[518px] overflow-hidden">
                 <img
                   src={project.image}
                   alt={project.title}
