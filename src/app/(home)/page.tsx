@@ -14,12 +14,15 @@ import Youtube from "@/sections/Blog";
 import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
 import BlogDesign from "@/sections/Blog";
+import ProjectImageVideo from "@/sections/ProjectImageVideo";
 
 export default function Home() {
   return (
     <main className="overflow-hidden">
       <Hero />
       <Categories />
+
+      <ProjectImageVideo/>
 
       <Products />
        <Collection />
