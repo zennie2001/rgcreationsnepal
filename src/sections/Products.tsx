@@ -1,8 +1,11 @@
 "use client";
+
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const LatestProjects = () => {
   const [activeFilter, setActiveFilter] = useState("All Project");
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const filters = ["All Project", "Building", "Interior", "Restaurant"];
 
@@ -36,7 +39,9 @@ const LatestProjects = () => {
   const filteredProjects =
     activeFilter === "All Project"
       ? projects
-      : projects.filter((project) => project.category === activeFilter);
+      : projects.filter(
+          (project) => project.category === activeFilter
+        );
 
   return (
     <section className="w-full py-14 bg-white relative overflow-hidden">
@@ -71,33 +76,62 @@ const LatestProjects = () => {
           </div>
         </div>
 
-        {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
-          {filteredProjects.map((project, index) => (
-            <div
-              key={project.id}
-              className="group relative overflow-hidden bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
-            >
-              <div className="md:w-[373px] w-full h-auto md:h-[518px] overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
+        {/* Projects Flex Layout */}
+        <motion.div
+          layout
+          className="flex gap-4 flex-wrap md:flex-nowrap mb-12"
+        >
+          {filteredProjects.map((project, index) => {
+            // Determine width depending on hover
+            const isHovered = hoveredIndex === index;
 
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
-                <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-lg font-semibold mb-2">
-                    {project.title}
-                  </h3>
-                  <p className="text-sm text-gray-300">{project.category}</p>
+            // if one is hovered:
+            // - hovered = large width
+            // - others = small width
+            // else: all equal
+
+            const widthClass =
+              hoveredIndex === null
+                ? "md:w-1/4 w-full" // default when nothing hovered
+                : isHovered
+                ? "w-[500px]"
+                : "w-[200px]";
+
+            return (
+              <motion.div
+                layout
+                key={project.id}
+                className={`group relative overflow-hidden bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${widthClass}`}
+                onMouseEnter={() => setHoveredIndex(index)}
+                onMouseLeave={() => setHoveredIndex(null)}
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
+              >
+                <motion.div className="w-full h-auto md:h-[518px]">
+                  <motion.img
+                    src={project.image}
+                    alt={project.title}
+                    className={`w-full h-full object-cover transition-transform duration-500`}
+                    animate={{
+                      scale: isHovered ? 1.1 : 1,
+                    }}
+                  />
+                </motion.div>
+
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
+                  <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <h3 className="text-lg font-semibold mb-2">
+                      {project.title}
+                    </h3>
+                    <p className="text-sm text-gray-300">
+                      {project.category}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </div>
-          ))}
-        </div>
+              </motion.div>
+            );
+          })}
+        </motion.div>
 
         {/* Navigation Arrows */}
         <div className="flex gap-2">
@@ -132,10 +166,13 @@ const LatestProjects = () => {
             </svg>
           </button>
         </div>
-        <div className="flex justify-end  px-4 md:px-0 py-8 ">
-          <div className="border-r-8  border-darkGreen pr-4">
+
+        <div className="flex justify-end px-4 md:px-0 py-8">
+          <div className="border-r-8 border-darkGreen pr-4">
             <div className="text-[#bfbfbf]/50 text-right">
-              <span className="text-4xl md:text-6xl font-extrabold">AWESOME</span>
+              <span className="text-4xl md:text-6xl font-extrabold">
+                AWESOME
+              </span>
               <div className="mt-2">
                 <span className="text-xl font-medium text-gray-800">
                   DESIGNS
