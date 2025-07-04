@@ -3,13 +3,11 @@ import ProjectListHero from '@/sections/ProjectListHero';
 import React from 'react';
 
 type Props = {
-  params: {
-    id: string;
-  };
+  params: Promise<{ id: string }>
 };
 
-export default function page({ params }: Props) {
-  const { id } = params;
+export default async function page({ params }: Props) {
+  const { id } = await params;
 
   return (
    
