@@ -8,7 +8,7 @@ type Props = {
   };
 };
 
-export default function ProjectDetailsPage({ params }: Props) {
+export default function page({ params }: Props) {
   const { id } = params;
 
   return (
