@@ -9,7 +9,7 @@ export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const isHome = pathname === "/";
+  const isHome = pathname === "/" || "/projectss/completed/[id]";
 
   const aboutUsItems = [
     { title: "About Us", href: "/about/about-us" },
@@ -20,8 +20,8 @@ export default function Header() {
     { title: "Message from Chairman", href: "/about/message-from-chairman" },
   ];
   const projectItems = [
-    { title: "On Going Projects", href: "/projects/on-going" },
-    { title: "Completed Projects", href: "/projects/completed" },
+    { title: "On Going Projects", href: "/projectss/on-going" },
+    { title: "Completed Projects", href: "/projectss/completed" },
     
   ];
    const galleryItems = [
