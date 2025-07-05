@@ -56,7 +56,7 @@ export default function Gallery() {
   ];
 
   return (
-    <main>
+    <main className="overflow-hidden ">
       <PageHeader link="/gallery" title="Gallery" />
       <section className="w-full flex_center flex-col lg:px-24 px-4 lg:py-16 py-10 gap-12">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 w-full">
