@@ -88,17 +88,26 @@ const ModernBlogDesign: React.FC = () => {
             {regularPosts.map((post) => (
               <article
                 key={post.id}
-                className="group cursor-pointer relative h-full flex-1"
+                className="group cursor-pointer relative h-full sm:h-[250px] flex-1"
               >
                 <div className="relative rounded-sm h-full">
                   <div className="absolute inset-0 bg-black/30 overflow-hidden z-10 rounded-sm"></div>
+                  
+                  {/* ✅ UPDATED - LEFT IMAGE SIZE */}
                   <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 rounded-sm"
+                    className="
+                      w-[327px] h-[250px]
+                      sm:w-[327px] sm:h-[250px]
+                      md:w-full md:h-full
+                      mx-auto
+                      object-cover group-hover:scale-105 transition-transform duration-500 rounded-sm
+                    "
                   />
+
                   {/* Overlay Card */}
-                  <div className="absolute bottom-4 -left-4 bg-[#244d4d] text-white h-24 px-4 rounded-sm max-w-sm z-20">
+                  <div className="absolute bottom-4  -left-4 bg-[#244d4d] text-white h-24 px-4 rounded-sm max-w-sm z-20">
                     <div className="text-[10px] ms-2 font-medium rotate-90 origin-top-left my-4 opacity-75">
                       {post.date}
                     </div>
@@ -115,19 +124,29 @@ const ModernBlogDesign: React.FC = () => {
           {featuredPost && (
             <div className="relative h-full">
               <article className="group cursor-pointer h-full">
-                <div className="relative rounded-sm h-full min-h-full">
+                <div className="relative rounded-sm h-full">
                   <div className="absolute inset-0 bg-black/50 overflow-hidden z-10 rounded-sm"></div>
+                  
+                  {/* ✅ UPDATED - RIGHT IMAGE SIZE */}
                   <img
                     src={featuredPost.image}
                     alt={featuredPost.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 rounded-sm"
+                    className="
+                      w-[276.6946105957031px] h-[439px]
+                      sm:w-[276.6946105957031px] sm:h-[439px]
+                      md:w-full md:h-full
+                      mx-auto
+                      object-cover group-hover:scale-105 transition-transform duration-500 rounded-sm
+                    "
                   />
+
                   {/* Large Overlay Card */}
-                  <div className="absolute top-1/2 left-60 transform -translate-y-1/2 border-[16px] border-[#244d4d] text-white p-6 rounded-sm max-w-md z-20">
-                    <div className="text-xs font-medium mb-3 opacity-75">
+                  <div className="absolute  top-1/2 lg:left-60 md:left-60 left-16 transform -translate-y-1/2  text-white  rounded-sm max-w-md z-20">
+                    <div className="transform text-xs font-medium mb-3 -rotate-90 lg:-translate-x-52 lg:-translate-y-20 -translate-x-36   opacity-75">
                       {featuredPost.date}
                     </div>
-                    <h3 className="text-2xl font-bold leading-tight mb-4">
+                    <div className="border-[16px] border-[#244d4d] py-6 pl-6 lg:pb-36 lg:pr-6 pr-1 md:py-16">
+                      <h3 className="text-2xl font-bold leading-tight mb-4">
                       {featuredPost.title}
                     </h3>
                     <p className="text-sm opacity-90 leading-relaxed mb-4">
@@ -136,15 +155,20 @@ const ModernBlogDesign: React.FC = () => {
                     <button className="text-xs font-medium tracking-widest hover:underline">
                       READ MORE
                     </button>
+                    </div>
                   </div>
+
+
+
+
                 </div>
               </article>
             </div>
           )}
         </div>
 
-        <div className="flex justify-end px-4 md:px-0 py-8  ">
-          <div className="border-r-8  border-darkGreen pr-4">
+        <div className="flex justify-end px-4 md:px-0 py-8">
+          <div className="border-r-8 border-darkGreen pr-4">
             <div className="text-[#bfbfbf]/50 text-right">
               <span className="text-4xl md:text-6xl font-extrabold">BLOG</span>
               <div className="mt-2">
