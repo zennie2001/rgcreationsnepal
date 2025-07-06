@@ -52,14 +52,14 @@ export default function Header() {
           }`}
         >
           <a href="/" className="hover:text-green-500 font-medium">
-            Home
+            HOME
           </a>
 
           {/* About Us Dropdown */}
           <div className="relative group">
             <HeadlessMenu>
               <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium">
-                About Us
+                ABOUT US
                 <ChevronDown size={16} />
               </HeadlessMenu.Button>
               <div className="absolute hidden group-hover:block  bg-white text-gray-800 shadow-lg rounded-md py-2 w-64 z-50">
@@ -77,31 +77,15 @@ export default function Header() {
           </div>
 
           <a href="/services" className="hover:text-green-500 font-medium">
-            Services
+            SERVICES
           </a>
           <div className="relative group">
-            <HeadlessMenu>
-              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium">
-                Gallery
-                <ChevronDown size={16} />
-              </HeadlessMenu.Button>
-              <div className="absolute hidden group-hover:block  bg-white text-gray-800 shadow-lg rounded-md py-2 w-64 z-50">
-                {galleryItems.map((item, index) => (
-                  <a
-                    key={index}
-                    href={item.href}
-                    className="block px-4 py-2 text-base hover:bg-gray-100"
-                  >
-                    {item.title}
-                  </a>
-                ))}
-              </div>
-            </HeadlessMenu>
+            
           </div>
           <div className="relative group">
             <HeadlessMenu>
               <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium">
-                Projects
+                PROJECTS
                 <ChevronDown size={16} />
               </HeadlessMenu.Button>
               <div className="absolute hidden group-hover:block  bg-white text-gray-800 shadow-lg rounded-md py-2 w-64 z-50">
@@ -119,13 +103,30 @@ export default function Header() {
           </div>
 
           <a href="/projects" className="hover:text-green-500 font-medium">
-            Work Process
+            WORK PROCESS
           </a>
           <a href="/blogs" className="hover:text-green-500 font-medium">
-            Blogs
+            BLOGS
           </a>
+          <HeadlessMenu>
+              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium">
+                GALLERY
+                <ChevronDown size={16} />
+              </HeadlessMenu.Button>
+              <div className="absolute hidden group-hover:block  bg-white text-gray-800 shadow-lg rounded-md py-2 w-64 z-50">
+                {galleryItems.map((item, index) => (
+                  <a
+                    key={index}
+                    href={item.href}
+                    className="block px-4 py-2 text-base hover:bg-gray-100"
+                  >
+                    {item.title}
+                  </a>
+                ))}
+              </div>
+            </HeadlessMenu>
           <a href="/contact" className="hover:text-green-500 font-medium">
-            Contact Us
+            CONTACT US
           </a>
         </nav>
 

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 
 const LatestProjects = () => {
@@ -49,7 +49,7 @@ const LatestProjects = () => {
     if (video) {
       video.currentTime = 0;
       video.play().catch(() => {
-        // ignored
+        // ignore autoplay errors
       });
       setPlayingIndexes((prev) => [...prev, index]);
     }
@@ -157,7 +157,9 @@ const LatestProjects = () => {
 
                   {/* Video */}
                   <video
-                    ref={(el) => (videoRefs.current[index] = el)}
+                    ref={(el) => {
+                      videoRefs.current[index] = el;
+                    }}
                     src={project.video}
                     muted
                     loop
@@ -168,9 +170,11 @@ const LatestProjects = () => {
                   />
 
                   {/* Overlay Text bottom-left */}
-                  <div className={`absolute left-4 bottom-4 text-white transition-opacity duration-300 ${
-                    isHovered ? "opacity-100" : "opacity-0"
-                  }`}>
+                  <div
+                    className={`absolute left-4 bottom-4 text-white transition-opacity duration-300 ${
+                      isHovered ? "opacity-100" : "opacity-0"
+                    }`}
+                  >
                     <h3 className="text-lg font-semibold mb-2">
                       {project.title}
                     </h3>
