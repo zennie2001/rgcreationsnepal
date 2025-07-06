@@ -79,9 +79,7 @@ export default function Header() {
           <a href="/services" className="hover:text-green-500 font-medium">
             SERVICES
           </a>
-          <div className="relative group">
-            
-          </div>
+         
           <div className="relative group">
             <HeadlessMenu>
               <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium">
@@ -108,6 +106,11 @@ export default function Header() {
           <a href="/blogs" className="hover:text-green-500 font-medium">
             BLOGS
           </a>
+
+
+
+          {/* Gallery Dropdown */}
+          <div className="relative group">
           <HeadlessMenu>
               <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium">
                 GALLERY
@@ -125,6 +128,11 @@ export default function Header() {
                 ))}
               </div>
             </HeadlessMenu>
+            </div>
+
+
+
+
           <a href="/contact" className="hover:text-green-500 font-medium">
             CONTACT US
           </a>
