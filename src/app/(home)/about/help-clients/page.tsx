@@ -3,6 +3,7 @@ import AboutHero from "@/sections/AboutHero";
 import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
 import Image from "next/image";
+import AboutHelpHero from "@/sections/AboutHelpHero";
 
 const howWeHelpItems = [
   {
@@ -51,7 +52,7 @@ const howWeHelpItems = [
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      <AboutHero />
+      <AboutHelpHero/>
       <section className="px-6 py-12 md:px-20 md:py-20 bg-white">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>

@@ -3,10 +3,11 @@ import AboutHero from "@/sections/AboutHero";
 import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
 import Image from "next/image";
+import AboutApartHero from "@/sections/AboutApartHero";
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      <AboutHero />
+      <AboutApartHero/>
       <section className="bg-white px-4 py-20 container md:px-0 text-gray-800">
         {/* Title and Intro */}
         <div className="mb-12 w-full flex justify-between">

@@ -3,6 +3,7 @@ import AboutHero from "@/sections/AboutHero";
 import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
 import Image from "next/image";
+import AboutChairmanHero from "@/sections/AboutChairmanHero";
 
 const safetyItems = [
   {
@@ -40,7 +41,7 @@ const safetyItems = [
 export default function Home() {
   return (
     <main className="w-full">
-      <AboutHero />
+      <AboutChairmanHero />
       <section className="px-4 container mx-auto py-12 md:px-0 md:py-20 bg-white">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>

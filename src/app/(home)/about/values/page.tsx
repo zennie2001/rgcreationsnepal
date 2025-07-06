@@ -3,10 +3,11 @@ import AboutHero from "@/sections/AboutHero";
 import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
 import Image from "next/image";
+import AboutValuesHero from "@/sections/AboutValuesHero";
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      <AboutHero />
+      <AboutValuesHero />
       <section className="relative bg-white container mx-auto px-4 md:px-0 py-20  text-gray-800 overflow-hidden">
         {/* Section Header */}
         <div className="flex w-full justify-between">

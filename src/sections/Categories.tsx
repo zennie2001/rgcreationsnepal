@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const WelcomeSection = () => {
@@ -11,7 +12,7 @@ const WelcomeSection = () => {
             <div className="space-y-8 z-10 relative">
               <div className="space-y-4">
                 <p className="text-sm text-gray-600 uppercase tracking-widest font-medium">
-                  WELCOME
+                  Welcome to RG Creations Nepal
                 </p>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                   WE ARE <span className="text-[#244d4d]">CREATIVE</span>
@@ -23,7 +24,7 @@ const WelcomeSection = () => {
               </div>
 
               <div className="space-y-6">
-                <p className="text-gray-700 text-base leading-relaxed max-w-xl">
+                <p className="text-gray-700 text-base leading-relaxed max-w-xl text-justify">
                   AT RG CREATIONS PVT. LTD., WE DON'T JUST DESIGN BUILDINGS—WE
                   CRAFT ENVIRONMENTS THAT INSPIRE, ENGAGE, AND ELEVATE. BASED IN
                   KATHMANDU, NEPAL AND BACKED BY OVER 15 YEARS OF HANDS-ON
@@ -32,9 +33,11 @@ const WelcomeSection = () => {
                   NIGHTLIFE, AND COMMERCIAL SECTORS.
                 </p>
 
+                <Link href={'/about/about-us'}>
                 <button className="bg-[#244d4d] hover:bg-teal-800 text-white px-8 py-3 font-medium text-sm tracking-wide uppercase transition-colors duration-300">
                   READ MORE
                 </button>
+                </Link>
               </div>
             </div>
 
@@ -44,7 +47,7 @@ const WelcomeSection = () => {
                 {/* Main Image Container */}
                 <div className="border-[#244d4d] border-[24px] w-full h-60 md:h-72 p-4 md:p-6">
                   <img
-                    src="/welcome.jpg"
+                    src="/about/mission.jpg"
                     alt="Luxury restaurant interior"
                     className=" absolute -top-14 left-14 object-cover w-full h-full"
                   />

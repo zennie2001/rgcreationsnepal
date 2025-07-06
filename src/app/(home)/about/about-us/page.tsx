@@ -3,10 +3,11 @@ import AboutHero from "@/sections/AboutHero";
 import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
 import Image from "next/image";
+import AboutusHero from "@/sections/AboutusHero";
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      <AboutHero />
+      <AboutusHero />
       <section className="bg-[#f6f7f8] py-16 px-4">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Image Section */}
@@ -28,38 +29,26 @@ export default function Home() {
           <div className="text-gray-800 ">
             <p className="uppercase text-sm tracking-wide mb-2">About Us</p>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
-              Our Mission is the Best Interior Design & Development.
+              Our Designing Dreams. Building Futures. Innovative Architecture. Strategic Execution.
             </h2>
-            <p className="text-sm text-gray-700 mb-6 leading-relaxed">
-              <span className="font-semibold text-black uppercase block mb-2">
-                At RG Creations Pvt. Ltd, we don’t just design buildings—we
-                craft environments that inspire, engage, and elevate. Based in
-                Kathmandu, Nepal and backed by over 15 years of hands-on
-                industry experience, we specialize in architectural and interior
-                design with a strong focus on the hospitality, nightlife, and
-                commercial sectors.
+            <p className="text-sm text-gray-700 mb-6 leading-relaxed text-justify">
+              <span className="font-semibold text-black  block mb-2">
+
+                RG Creations is a comprehensive architecture, construction, and material supply company headquartered in Baluwatar, Kathmandu, Nepal. With an international sourcing and R&D hub- Link World Tech in Shenzhen, China- we bring global innovation and materials into locally grounded design and construction practices.
+
               </span>
-              From iconic nightclubs and boutique hotels to dynamic lounges,
-              pubs, and event venues, our portfolio of 30+ premium landmark
-              projects speaks to our commitment to creativity, precision, and
-              purposeful design. Each space we create is tailored to tell a
-              story—one that aligns with our client’s vision, resonates with
-              their audience, and delivers exceptional user experiences. <br />
+              Our work is deeply personalized. Every project is custom-tailored to reflect the investor’s vision, respond to the psychology of the intended users, and harness the full potential of the site. From concept to completion, we create environments that are both purposeful and inspiring. <br />
               <br />
-              With our international sourcing and tech hubs, like world tech in
-              Shenzhen, China, we combine global design intelligence with local
-              insight. Our multidisciplinary team—comprising architects,
-              interior designers, engineers, acousticians, and lighting
-              experts—works together to bring innovative, energy-efficient, and
-              culturally relevant designs to life.
+             We offer end-to-end expertise across architectural design, master planning, interior design, structural engineering, and full MEP (mechanical, electrical, and plumbing) systems. In addition, we excel in lighting design, acoustics, landscaping, BIM modeling, and high-fidelity 3D visualization.
+
             </p>
 
-            <a
+            {/* <a
               href="#"
               className="inline-block bg-emerald-900 text-white text-sm tracking-wide px-6 py-3 rounded-md hover:bg-emerald-800 transition"
             >
               READ MORE
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
@@ -67,7 +56,7 @@ export default function Home() {
         {/* Vision Section */}
         <div className="relative grid md:grid-cols-2 items-center gap-6">
           <Image
-            src="/vision.jpg" // replace with your actual image path
+            src="/about/vision.jpg" // replace with your actual image path
             alt="Vision"
             width={800}
             height={600}
@@ -75,10 +64,9 @@ export default function Home() {
           />
           <div className="absolute right-36 top-1/2 -translate-y-1/2 bg-white p-8 shadow-lg max-w-md md:max-w-lg">
             <h2 className="text-2xl font-bold mb-4">OUR VISION</h2>
-            <p className="text-sm leading-relaxed text-gray-700">
-              TO BE THE MOST TRUSTED NAME IN ARCHITECTURAL INNOVATION, KNOWN FOR
-              TRANSFORMING IDEAS INTO IMMERSIVE, HIGH–PERFORMANCE SPACES THAT
-              INSPIRE AND ENDURE.
+            <p className="text-sm leading-relaxed text-gray-700 text-justify">
+              To become a globally recognized leader in innovative design, integrated construction and strategic business empowerment- delivering transformative spaces and solutions from research to reality. We envision a world where entrepreneurs everywhere have access to world-class environments, expert guidance and the tools to build lasting success.
+
             </p>
           </div>
         </div>
@@ -89,16 +77,14 @@ export default function Home() {
           {/* Text box overlaying from left inside the image half */}
           <div className="absolute left-36 top-1/2 -translate-y-1/2 bg-black text-white p-8 shadow-lg max-w-lg z-10">
             <h2 className="text-2xl font-bold mb-4">OUR MISSION</h2>
-            <p className="text-sm leading-relaxed">
-              TO DESIGN ENVIRONMENTS THAT ELEVATE HUMAN EXPERIENCE, DRIVE
-              BUSINESS SUCCESS, AND CONTRIBUTE TO THE SUSTAINABLE GROWTH OF
-              NEPAL'S BUILT ENVIRONMENT.
+            <p className="text-sm leading-relaxed text-justify">
+              At RG Creations, our mission is to empower entrepreneurs by delivering innovative architectural design, high-quality construction services, and end-to-end material solutions. We go beyond building structures- we guide business owners with proven strategies and personalized business models to turn bold ideas into sustainable success.
             </p>
           </div>
           <div className="relative w-full flex justify-end items-center">
             {/* Image */}
             <Image
-              src="/mission.jpg"
+              src="/about/mission.jpg"
               alt="Mission"
               width={800}
               height={600}

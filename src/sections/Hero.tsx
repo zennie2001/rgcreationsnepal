@@ -8,22 +8,22 @@ const slides = [
   {
     id: 1,
     image: "/main-slider1.jpg",
-    title: "Building Iconic Spaces - That Define Nepal’s Future",
+    title: "Building Iconic Spaces \n That Define Nepal’s Future",
   },
   {
     id: 2,
     image: "/main-slider2.jpg",
-    title: "Luxury Construction. Timeless Design. Trusted Excellence.",
+    title: "Luxury Construction. Timeless Design.\n Trusted Excellence",
   },
   {
     id: 3,
     image: "/main-slider3.jpg",
-    title: "Where Vision Meets Structure – Premium Construction in Nepal.",
+    title: "Where Vision Meets Structure \n Premium Construction in Nepal",
   },
   {
     id: 4,
     image: "/main-slider4.jpg",
-    title: "From Nightlife to Luxury Living – We Build Experiences.",
+    title: "From Nightlife to Luxury Living \n We Build Experiences",
   },
 ];
 
@@ -72,13 +72,11 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="absolute inset-0 flex items-center md:items-start mt-20 xxl:mt-40 justify-center z-30">
         <div className="text-center  text-white  mx-8  ">
-          <p className="text-3xl md:text-6xl 4xl:text-4xl font-bold  mb-3 leading-tight">
+          <p style={{ whiteSpace: "pre-line" }} className="text-3xl md:text-6xl 4xl:text-4xl font-bold  mb-3 leading-tight">
             {slides[currentSlide].title}
           </p>
 
-          <button className="border-4 border-white text-white px-4 py-2 md:px-8 2xl:py-2.5 font-semibold text-base md:text-lg hover:bg-darkGreen hover:text-white duration-500 transition-colors shadow-lg">
-            Read More
-          </button>
+          
         </div>
       </div>
 
