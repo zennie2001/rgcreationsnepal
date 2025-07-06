@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const LatestProjects = () => {
   const [activeFilter, setActiveFilter] = useState("All Project");
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [playingIndexes, setPlayingIndexes] = useState<number[]>([]);
 
   const filters = ["All Project", "Building", "Interior", "Restaurant"];
 
@@ -14,27 +15,67 @@ const LatestProjects = () => {
       id: 1,
       category: "Interior",
       image: "/rambagh.jpg",
+      video: "/RGVideo2.mp4",
       title: "Luxury Hotel Lobby",
     },
     {
       id: 2,
       category: "Restaurant",
       image: "/taaj.jpg",
+      video: "/RGVideo1.mp4",
       title: "Fine Dining Restaurant",
     },
     {
       id: 3,
       category: "Interior",
       image: "/taj.jpg",
+      video: "/Harshah.mp4",
       title: "Grand Ballroom",
     },
     {
       id: 4,
       category: "Building",
       image: "/royal.jpg",
+      video: "/RGVideo3.mp4",
       title: "Modern Architecture",
     },
   ];
+
+  const videoRefs = useRef<Record<number, HTMLVideoElement | null>>({});
+
+  const handleMouseEnter = (index: number) => {
+    setHoveredIndex(index);
+    const video = videoRefs.current[index];
+    if (video) {
+      video.currentTime = 0;
+      video.play().catch(() => {
+        // ignored
+      });
+      setPlayingIndexes((prev) => [...prev, index]);
+    }
+  };
+
+  const handleMouseLeave = (index: number) => {
+    setHoveredIndex(null);
+    const video = videoRefs.current[index];
+    if (video) {
+      video.pause();
+      setPlayingIndexes((prev) => prev.filter((i) => i !== index));
+    }
+  };
+
+  const togglePlayPause = (index: number) => {
+    const video = videoRefs.current[index];
+    if (!video) return;
+
+    if (video.paused) {
+      video.play().catch(() => {});
+      setPlayingIndexes((prev) => [...prev, index]);
+    } else {
+      video.pause();
+      setPlayingIndexes((prev) => prev.filter((i) => i !== index));
+    }
+  };
 
   const filteredProjects =
     activeFilter === "All Project"
@@ -83,6 +124,7 @@ const LatestProjects = () => {
         >
           {filteredProjects.map((project, index) => {
             const isHovered = hoveredIndex === index;
+            const isPlaying = playingIndexes.includes(index);
 
             const widthClass =
               hoveredIndex === null
@@ -96,24 +138,39 @@ const LatestProjects = () => {
                 layout
                 key={project.id}
                 className={`group relative overflow-hidden bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${widthClass} min-w-0`}
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={() => handleMouseLeave(index)}
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
               >
-                <motion.div className="w-full h-auto md:h-[518px]">
+                <div className="relative w-full h-auto md:h-[518px]">
+                  {/* Thumbnail Image */}
                   <motion.img
                     src={project.image}
                     alt={project.title}
-                    className={`w-full h-full object-cover transition-transform duration-500`}
+                    className={`w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-300 ${
+                      isHovered ? "opacity-0" : "opacity-100"
+                    }`}
                     animate={{
                       scale: isHovered ? 1.1 : 1,
                     }}
                   />
-                </motion.div>
 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
-                  <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  {/* Video */}
+                  <video
+                    ref={(el) => (videoRefs.current[index] = el)}
+                    src={project.video}
+                    muted
+                    loop
+                    playsInline
+                    className={`w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-300 ${
+                      isHovered ? "opacity-100" : "opacity-0"
+                    }`}
+                  />
+
+                  {/* Overlay Text bottom-left */}
+                  <div className={`absolute left-4 bottom-4 text-white transition-opacity duration-300 ${
+                    isHovered ? "opacity-100" : "opacity-0"
+                  }`}>
                     <h3 className="text-lg font-semibold mb-2">
                       {project.title}
                     </h3>
@@ -121,6 +178,19 @@ const LatestProjects = () => {
                       {project.category}
                     </p>
                   </div>
+
+                  {/* Play/Pause Button */}
+                  {isHovered && (
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        togglePlayPause(index);
+                      }}
+                      className="absolute right-4 bottom-4 bg-black/50 text-white px-3 py-1 rounded hover:bg-black/70 transition"
+                    >
+                      {isPlaying ? "Pause" : "Play"}
+                    </button>
+                  )}
                 </div>
               </motion.div>
             );
