@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="relative h-screen w-full text-white">
       {/* Background Image */}
       <Image
-        src="/about.jpg" // Replace with your actual image path
+        src="/about/2.jpg" // Replace with your actual image path
         alt="Hero Background"
         fill
         className="object-cover z-0"

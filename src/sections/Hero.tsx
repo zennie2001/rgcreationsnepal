@@ -8,22 +8,22 @@ const slides = [
   {
     id: 1,
     image: "/main-slider1.jpg",
-    title: "Best Architectural Firm for Sustainable Design",
+    title: "Building Iconic Spaces - That Define Nepal’s Future",
   },
   {
     id: 2,
     image: "/main-slider2.jpg",
-    title: "Innovative Architecture Solutions",
+    title: "Luxury Construction. Timeless Design. Trusted Excellence.",
   },
   {
     id: 3,
     image: "/main-slider3.jpg",
-    title: "Creating Tomorrow's Spaces Today",
+    title: "Where Vision Meets Structure – Premium Construction in Nepal.",
   },
   {
     id: 4,
     image: "/main-slider4.jpg",
-    title: "Creating Tomorrow's Spaces Today",
+    title: "From Nightlife to Luxury Living – We Build Experiences.",
   },
 ];
 
@@ -71,8 +71,8 @@ const Hero = () => {
 
       {/* Hero Content */}
       <div className="absolute inset-0 flex items-center md:items-start mt-20 xxl:mt-40 justify-center z-30">
-        <div className="text-center  text-white px-14 max-w-4xl mx-auto ">
-          <p className="text-3xl md:text-6xl 2xl:text-7xl font-bold  mb-3 leading-tight">
+        <div className="text-center  text-white  mx-8  ">
+          <p className="text-3xl md:text-6xl 4xl:text-4xl font-bold  mb-3 leading-tight">
             {slides[currentSlide].title}
           </p>
 
@@ -129,11 +129,10 @@ const Hero = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg 2xl:text-xl font-bold mb-2">Night Clubs Design</h3>
+              <h3 className="text-lg 2xl:text-xl font-bold mb-2">Luxury Nightclub Construction</h3>
               <p className="text-gray-300 text-sm leading-relaxed mb-3 ">
-                Our architectural design ethos integrates innovation,
-                sustainability, and client satisfaction from inception to
-                realization.
+                RG Creations Nepal builds high-end nightclubs with stunning interiors, vibrant lighting, and superior acoustics—designed for unforgettable nightlife experiences.
+
               </p>
               <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors ">
                 View More
@@ -156,10 +155,10 @@ const Hero = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg 2xl:text-xl font-bold mb-2">Hotel Design</h3>
+              <h3 className="text-lg 2xl:text-xl font-bold mb-2">Elegant Banquet Hall Construction</h3>
               <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                Elevate your interior spaces with our bespoke design service
-                tailored to your unique style and needs.
+                We design luxurious banquet halls ideal for weddings and events—featuring seamless flow, grand entrances, and elegant finishes.
+
               </p>
               <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors ">
                 View More
@@ -196,10 +195,9 @@ const Hero = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg 2xl:text-xl font-bold mb-2">Banquet Design</h3>
+              <h3 className="text-lg 2xl:text-xl font-bold mb-2">Hotel & Resort Construction Experts</h3>
               <p className="text-gray-300 text-sm leading-relaxed mb-3">
-                From landscaping to architectural detailing, our exterior design
-                service crafts outdoor spaces that captivate.
+                From boutique hotels to grand resorts, we create stylish, durable spaces that deliver comfort, elegance, and lasting value.
               </p>
               <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors ">
                 View More

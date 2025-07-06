@@ -8,33 +8,33 @@ const LatestProjects = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [playingIndexes, setPlayingIndexes] = useState<number[]>([]);
 
-  const filters = ["All Project", "Building", "Interior", "Restaurant"];
+  const filters = ["All Project", "Completed Projects", "Ongoing Projects"];
 
   const projects = [
     {
       id: 1,
-      category: "Interior",
+      category: "Completed Projects",
       image: "/rambagh.jpg",
       video: "/RGVideo2.mp4",
       title: "Luxury Hotel Lobby",
     },
     {
       id: 2,
-      category: "Restaurant",
+      category: "Completed Projects",
       image: "/taaj.jpg",
       video: "/RGVideo1.mp4",
       title: "Fine Dining Restaurant",
     },
     {
       id: 3,
-      category: "Interior",
+      category: "Ongoing Projects",
       image: "/taj.jpg",
       video: "/Harshah.mp4",
       title: "Grand Ballroom",
     },
     {
       id: 4,
-      category: "Building",
+      category: "Completed Projects",
       image: "/royal.jpg",
       video: "/RGVideo3.mp4",
       title: "Modern Architecture",
@@ -48,9 +48,7 @@ const LatestProjects = () => {
     const video = videoRefs.current[index];
     if (video) {
       video.currentTime = 0;
-      video.play().catch(() => {
-        // ignore autoplay errors
-      });
+      video.play().catch(() => {});
       setPlayingIndexes((prev) => [...prev, index]);
     }
   };
@@ -80,9 +78,7 @@ const LatestProjects = () => {
   const filteredProjects =
     activeFilter === "All Project"
       ? projects
-      : projects.filter(
-          (project) => project.category === activeFilter
-        );
+      : projects.filter((project) => project.category === activeFilter);
 
   return (
     <section className="w-full py-14 bg-white relative overflow-hidden">
@@ -91,7 +87,7 @@ const LatestProjects = () => {
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12">
           <div className="mb-8 lg:mb-0">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
-              LATEST PROJECT
+              LATEST PROJECTS
             </h2>
             <div className="w-16 h-1 bg-[#244d4d]"></div>
           </div>
@@ -117,21 +113,24 @@ const LatestProjects = () => {
           </div>
         </div>
 
-        {/* Projects Flex Layout */}
+        {/* Projects Layout */}
         <motion.div
           layout
-          className="flex gap-4 flex-wrap md:flex-nowrap mb-12"
+          className="flex flex-col md:flex-row gap-4 mb-12"
         >
           {filteredProjects.map((project, index) => {
             const isHovered = hoveredIndex === index;
             const isPlaying = playingIndexes.includes(index);
 
+            // ✅ Only width shrinks
             const widthClass =
               hoveredIndex === null
-                ? "flex-1"
+                ? "w-full md:flex-1"
                 : isHovered
-                ? "flex-[2]"
-                : "flex-1";
+                ? "w-full md:flex-[2]"
+                : filteredProjects.length > 1
+                  ? "w-full md:flex-[0.5]"
+                  : "w-full md:flex-1";
 
             return (
               <motion.div
@@ -140,10 +139,11 @@ const LatestProjects = () => {
                 className={`group relative overflow-hidden bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${widthClass} min-w-0`}
                 onMouseEnter={() => handleMouseEnter(index)}
                 onMouseLeave={() => handleMouseLeave(index)}
+                onClick={() => handleMouseEnter(index)}
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
               >
-                <div className="relative w-full h-auto md:h-[518px]">
-                  {/* Thumbnail Image */}
+                <div className="relative w-full h-[300px] md:h-[518px]">
+                  {/* Image */}
                   <motion.img
                     src={project.image}
                     alt={project.title}
@@ -169,7 +169,7 @@ const LatestProjects = () => {
                     }`}
                   />
 
-                  {/* Overlay Text bottom-left */}
+                  {/* Overlay */}
                   <div
                     className={`absolute left-4 bottom-4 text-white transition-opacity duration-300 ${
                       isHovered ? "opacity-100" : "opacity-0"
