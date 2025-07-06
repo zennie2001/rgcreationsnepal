@@ -14,6 +14,8 @@ import { RiInstagramFill } from "react-icons/ri";
 import { Phone } from "lucide-react";
 import { MailOpen } from "lucide-react";
 import NewPageHeader from "@/components/NewPageHeader";
+import ContactHero from "@/sections/ContactHero";
+import FAQContact from "@/sections/FAQ";
 
 const contactInfos = [
   {
@@ -58,7 +60,7 @@ const socialMedia = [
 export default function ContactUs() {
   return (
     <main className="w-full overflow-hidden">
-      <NewPageHeader title="Contact" />
+      <ContactHero/>
       {/* Contact Section */}
       <div className="container mx-auto mt-20 mb-20 shadow-lg rounded-3xl overflow-hidden flex flex-col md:flex-row">
         {/* Left side - Form */}
@@ -199,7 +201,10 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-      <FAQ />
+      
+          
+      <FAQContact />
+      
       {/* <Contact className="pt-0 pb-16" /> */}
       {/* <div className="w-full flex_center h-max">
         <iframe

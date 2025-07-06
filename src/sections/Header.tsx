@@ -9,7 +9,7 @@ export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  const isHome = pathname === "/" || "/projectss/completed/[id]";
+  const isHome = pathname === "/" ;
 
   const aboutUsItems = [
     { title: "About Us", href: "/about/about-us" },
@@ -121,7 +121,7 @@ export default function Header() {
           <a href="/projects" className="hover:text-green-500 font-medium">
             Work Process
           </a>
-          <a href="/contact" className="hover:text-green-500 font-medium">
+          <a href="/blogs" className="hover:text-green-500 font-medium">
             Blogs
           </a>
           <a href="/contact" className="hover:text-green-500 font-medium">

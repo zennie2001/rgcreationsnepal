@@ -82,26 +82,20 @@ const LatestProjects = () => {
           className="flex gap-4 flex-wrap md:flex-nowrap mb-12"
         >
           {filteredProjects.map((project, index) => {
-            // Determine width depending on hover
             const isHovered = hoveredIndex === index;
-
-            // if one is hovered:
-            // - hovered = large width
-            // - others = small width
-            // else: all equal
 
             const widthClass =
               hoveredIndex === null
-                ? "md:w-1/4 w-full" // default when nothing hovered
+                ? "flex-1"
                 : isHovered
-                ? "w-[500px]"
-                : "w-[200px]";
+                ? "flex-[2]"
+                : "flex-1";
 
             return (
               <motion.div
                 layout
                 key={project.id}
-                className={`group relative overflow-hidden bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${widthClass}`}
+                className={`group relative overflow-hidden bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${widthClass} min-w-0`}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
