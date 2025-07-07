@@ -73,9 +73,9 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex flex-col h-[500px] items-center text-center">
+          <div className="flex flex-col h-[500px] items-center text-center pt-16">
             <Image
-              src="/chairman.jpg"
+              src="/about/hero-ram2 (1).jpg"
               alt="Ram Giri"
               width={300}
               height={400}

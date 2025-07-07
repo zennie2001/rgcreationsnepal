@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Building, ChevronRight, PenTool, Users } from "lucide-react";
 import Header from "./Header";
+import Link from "next/link";
 
 // Hero slides data
 const slides = [
@@ -108,7 +109,7 @@ const Hero = () => {
         ))}
       </div>
       {/* Services Section */}
-      <div className="absolute hidden  md:block w-full bottom-12  px-4">
+      <div className="absolute hidden  md:block w-full bottom-12  px-4 z-50">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* Night Clubs Design */}
@@ -132,9 +133,11 @@ const Hero = () => {
                 RG Creations Nepal builds high-end nightclubs with stunning interiors, vibrant lighting, and superior acoustics—designed for unforgettable nightlife experiences.
 
               </p>
-              <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors ">
+              <Link href={'/nightclub'}>
+              <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors cursor-pointer ">
                 View More
               </button>
+              </Link>
             </div>
 
             {/* Hotel Design */}
@@ -158,9 +161,11 @@ const Hero = () => {
                 We design luxurious banquet halls ideal for weddings and events—featuring seamless flow, grand entrances, and elegant finishes.
 
               </p>
+              <Link href={'/banquet'}>
               <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors ">
                 View More
               </button>
+              </Link>
             </div>
 
             {/* Banquet Design */}
@@ -193,13 +198,16 @@ const Hero = () => {
                   />
                 </svg>
               </div>
+              
               <h3 className="text-lg 2xl:text-xl font-bold mb-2">Hotel & Resort Construction Experts</h3>
               <p className="text-gray-300 text-sm leading-relaxed mb-3">
                 From boutique hotels to grand resorts, we create stylish, durable spaces that deliver comfort, elegance, and lasting value.
               </p>
-              <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors ">
+              <Link href="/hotel">
+              <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors cursor-pointer">
                 View More
               </button>
+              </Link>
             </div>
           </div>
         </div>

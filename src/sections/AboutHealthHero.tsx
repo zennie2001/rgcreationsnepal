@@ -26,8 +26,8 @@ export default function AboutHealthHero() {
         </div>
 
         <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
-          Helping Each other – From <br className="hidden md:block" /> Families
-          to Families
+          Safety First in Every Project. Protecting Lives, <br className="hidden md:block" /> 
+           Ensuring Excellence.
         </h1>
 
         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">

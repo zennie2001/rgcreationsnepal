@@ -47,8 +47,8 @@ const Collection: React.FC = () => {
             <h3 className="text-2xl font-semibold text-gray-900">
               Modern design with new look
             </h3>
-            <p className="text-gray-600 leading-relaxed">
-              pictures doesn't hurt but let's pull the curtain back<br/> and be
+            <p className="text-gray-600 leading-relaxed ">
+              pictures doesn't hurt but let's pull the curtain back and<br/>  be
               honest here for a minute. Architects communicate<br/> through their
               drawings - we aren't making art.
             </p>

@@ -100,7 +100,7 @@ export default function Header() {
             </HeadlessMenu>
           </div>
 
-          <a href="/projects" className="hover:text-green-500 font-medium">
+          <a href="/work-process" className="hover:text-green-500 font-medium">
             WORK PROCESS
           </a>
           <a href="/blogs" className="hover:text-green-500 font-medium">

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Specialization: React.FC = () => {
@@ -36,14 +37,16 @@ const Specialization: React.FC = () => {
                 <br />
                 CONSTRUCTION
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-8">
+              <p className="text-gray-600 text-sm leading-relaxed mb-8 text-justify">
                 DESIGNING AND BUILDING WORLD-CLASS NIGHTCLUBS FEATURING FLAWLESS
                 ARCHITECTURE, CUTTING-EDGE ACOUSTICS, AND IMMERSIVE LIGHTING TO
                 CREATE UNFORGETTABLE NIGHTLIFE EXPERIENCES.
               </p>
+              <Link href={'/nightclub'}>
               <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
                 READ MORE
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -57,13 +60,15 @@ const Specialization: React.FC = () => {
                 <br />
                 DEVELOPMENTS
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-8">
+              <p className="text-gray-600 text-sm leading-relaxed mb-8 text-justify">
                 CREATING ELEGANT, HIGH-END HOMES AND APARTMENT COMPLEXES THAT
                 COMBINE TIMELESS DESIGN, COMFORT, AND MODERN FUNCTIONALITY.
               </p>
+              <Link href={'/hotel'}>
               <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
                 READ MORE
               </button>
+              </Link>
             </div>
             <div className="order-1 lg:order-2 overflow-hidden">
               <img
@@ -91,14 +96,16 @@ const Specialization: React.FC = () => {
                 <br />
                 CONSTRUCTION
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-8">
+              <p className="text-gray-600 text-sm leading-relaxed mb-8 text-justify">
                 DEVELOPING OFFICE BUILDINGS, RETAIL SPACES, HOTELS, AND OTHER
                 COMMERCIAL PROJECTS TAILORED TO MEET YOUR BUSINESS GOALS AND
                 ENHANCE OPERATIONAL SUCCESS.
               </p>
+              <Link href={'/hotel'}>
               <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
                 READ MORE
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -111,14 +118,16 @@ const Specialization: React.FC = () => {
                 ARCHITECTURAL &<br />
                 INTERIOR DESIGN
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed mb-8">
+              <p className="text-gray-600 text-sm leading-relaxed mb-8 text-justify">
                 PROVIDING INNOVATIVE DESIGNS FOR HOSPITALITY VENUES, LUXURY
                 BOUTIQUE HOTELS, EXCLUSIVE RESIDENCES, AND COMMERCIAL PROPERTIES
                 - EACH CUSTOMIZED TO YOUR VISION.
               </p>
+               <Link href={'/services'}>
               <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
                 READ MORE
               </button>
+              </Link>
             </div>
             <div className="order-1 overflow-hidden lg:order-2">
               <img
@@ -151,9 +160,11 @@ const Specialization: React.FC = () => {
                 BLEND STYLE, COMFORT, AND DURABILITY, PERFECT FOR UPSCALE
                 ENVIRONMENTS.
               </p>
+              <Link href={'/services'}>
               <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
                 READ MORE
               </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -171,9 +182,11 @@ const Specialization: React.FC = () => {
                 SUPPLYING STATE-OF-THE-ART SOUND SYSTEMS, DYNAMIC LIGHTING, AND
                 SPECIALIZED NIGHTCLUB GEAR THAT ELEVATE ENTERTAINMENT VENUES.
               </p>
+              <Link href={'/nightclub'}>
               <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
                 READ MORE
               </button>
+              </Link>
             </div>
             <div className="order-1 overflow-hidden lg:order-2">
               <img
@@ -204,9 +217,11 @@ const Specialization: React.FC = () => {
                 ENSURING SEAMLESS PROJECT DELIVERY FROM CONCEPT TO COMPLETION -
                 ON TIME, WITHIN BUDGET, AND BEYOND EXPECTATIONS.
               </p>
+               <Link href={'/services'}>
               <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
                 READ MORE
               </button>
+              </Link>
             </div>
           </div>
         </div>
