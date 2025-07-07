@@ -8,12 +8,12 @@ import Link from "next/link";
 const slides = [
   {
     id: 1,
-    image: "/main-slider1.jpg",
+    image: "/mainbanner1.jpg",
     title: "Building Iconic Spaces \n That Define Nepal’s Future",
   },
   {
     id: 2,
-    image: "/main-slider2.jpg",
+    image: "/mainbanner2.jpg",
     title: "Luxury Construction. Timeless Design.\n Trusted Excellence",
   },
   {

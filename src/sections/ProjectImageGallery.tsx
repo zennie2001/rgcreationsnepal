@@ -2,16 +2,20 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import {
+  AiOutlineZoomIn,
+  AiOutlineZoomOut,
+  AiOutlineClose,
+  AiOutlineLeft,
+  AiOutlineRight,
+} from "react-icons/ai";
 
 const ProjectImageGallery = () => {
-  const [hoveredIndexes, setHoveredIndexes] = useState<Record<string, number | null>>({
-    row1: null,
-    row2: null,
-    row3: null,
-  });
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [zoom, setZoom] = useState(1);
 
-  const projects1 = [
+  // ✅ Single array for all images
+  const projects = [
     {
       id: 1,
       category: "Image",
@@ -30,9 +34,6 @@ const ProjectImageGallery = () => {
       image: "/ImageVideo/Image3.jpg",
       title: "Luxury Hotel Lobby",
     },
-  ];
-
-  const projects2 = [
     {
       id: 4,
       category: "Image",
@@ -51,9 +52,6 @@ const ProjectImageGallery = () => {
       image: "/ImageVideo/Image6.jpg",
       title: "Luxury Hotel Lobby",
     },
-  ];
-
-  const projects3 = [
     {
       id: 7,
       category: "Image",
@@ -74,77 +72,20 @@ const ProjectImageGallery = () => {
     },
   ];
 
-  const renderRow = (
-    projects: typeof projects1,
-    rowKey: string
-  ) => {
-    return (
-      <motion.div
-        layout
-        className="flex gap-4 flex-wrap md:flex-nowrap mb-12"
-      >
-        {projects.map((project, index) => {
-          const isHovered = hoveredIndexes[rowKey] === index;
+  const handlePrev = () => {
+    if (selectedIndex !== null) {
+      setSelectedIndex(
+        (selectedIndex - 1 + projects.length) % projects.length
+      );
+      setZoom(1);
+    }
+  };
 
-          const widthClass =
-            hoveredIndexes[rowKey] === null
-              ? "md:w-1/3 w-full"
-              : isHovered
-              ? "md:w-[500px] w-[360px]"
-              : "md:w-[300px] w-[180px]";
-
-          const heightClass =
-            hoveredIndexes[rowKey] === null
-              ? "md:h-[518px] h-[240px]"
-              : isHovered
-              ? "md:h-[518px] h-[300px]"
-              : "md:h-[518px] h-[200px]";
-
-          return (
-            <motion.div
-              layout
-              key={project.id}
-              className={`group relative overflow-hidden bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 ${widthClass} ${heightClass}`}
-              onMouseEnter={() =>
-                setHoveredIndexes((prev) => ({
-                  ...prev,
-                  [rowKey]: index,
-                }))
-              }
-              onMouseLeave={() =>
-                setHoveredIndexes((prev) => ({
-                  ...prev,
-                  [rowKey]: null,
-                }))
-              }
-              transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            >
-              <motion.div className="w-full h-full">
-                <motion.img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500"
-                  animate={{
-                    scale: isHovered ? 1.1 : 1,
-                  }}
-                />
-              </motion.div>
-
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center">
-                <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <h3 className="text-lg font-semibold mb-2">
-                    {project.title}
-                  </h3>
-                  <p className="text-sm text-gray-300">
-                    {project.category}
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          );
-        })}
-      </motion.div>
-    );
+  const handleNext = () => {
+    if (selectedIndex !== null) {
+      setSelectedIndex((selectedIndex + 1) % projects.length);
+      setZoom(1);
+    }
   };
 
   return (
@@ -173,13 +114,86 @@ const ProjectImageGallery = () => {
             </div>
           </div>
 
-          <div className="flex flex-col">
-            {renderRow(projects1, "row1")}
-            {renderRow(projects2, "row2")}
-            {renderRow(projects3, "row3")}
+          {/* Grid of Images */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {projects.map((project, index) => (
+              <div
+                key={project.id}
+                className="relative cursor-pointer overflow-hidden bg-white shadow hover:shadow-lg  transition-all duration-300"
+                onClick={() => {
+                  setSelectedIndex(index);
+                  setZoom(1);
+                }}
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-[550px] object-cover hover:scale-110 transition-all duration-300"
+                />
+                {/* <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                  <div className="text-white text-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <h3 className="text-lg font-semibold mb-2">
+                      {project.title}
+                    </h3>
+                    <p className="text-sm text-gray-300">
+                      {project.category}
+                    </p>
+                  </div>
+                </div> */}
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+      {/* Modal Overlay */}
+      {selectedIndex !== null && (
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center">
+          <div className="relative max-w-[90vw] max-h-[90vh] overflow-hidden flex items-center justify-center">
+            <img
+              src={projects[selectedIndex].image}
+              alt={projects[selectedIndex].title}
+              className="object-contain max-w-full max-h-full transition-transform duration-300"
+              style={{ transform: `scale(${zoom})` }}
+            />
+            {/* Close Button */}
+            <button
+              className="absolute top-4 right-4 text-white text-3xl"
+              onClick={() => setSelectedIndex(null)}
+            >
+              <AiOutlineClose />
+            </button>
+            {/* Zoom Controls */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-4">
+              <button
+                className="bg-white p-3 rounded-full shadow hover:bg-gray-200 transition"
+                onClick={() => setZoom((z) => Math.min(z + 0.2, 3))}
+              >
+                <AiOutlineZoomIn className="text-xl text-gray-700" />
+              </button>
+              <button
+                className="bg-white p-3 rounded-full shadow hover:bg-gray-200 transition"
+                onClick={() => setZoom((z) => Math.max(z - 0.2, 1))}
+              >
+                <AiOutlineZoomOut className="text-xl text-gray-700" />
+              </button>
+            </div>
+            {/* Navigation Arrows */}
+            <button
+              className="absolute left-4 text-white text-4xl bg-black/50 p-2 rounded-full hover:bg-black/70 transition"
+              onClick={handlePrev}
+            >
+              <AiOutlineLeft />
+            </button>
+            <button
+              className="absolute right-4 text-white text-4xl bg-black/50 p-2 rounded-full hover:bg-black/70 transition"
+              onClick={handleNext}
+            >
+              <AiOutlineRight />
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

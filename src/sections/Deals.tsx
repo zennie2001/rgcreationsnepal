@@ -6,11 +6,13 @@ import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 
 const clients = [
-  { name: "Harshah Batika", logo: "/logo (1).png" },
-  { name: "Taaj Palace", logo: "/logo (2).png" },
-  { name: "Rambagh Mahal", logo: "/logo (3).png" },
-  { name: "Royal Empire", logo: "/logo (4).png" },
-  { name: "Déjà Vu", logo: "/logo (5).png" },
+  { name: "Royal Empire", logo: "/logo/logo1(1).jpg" },
+  { name: "Harshah Batika", logo: "/logo/logo1(2).jpg" },
+  { name: "Deja vu", logo: "/logo/logo1(3).jpg" },
+  { name: "Rambagh Mahal", logo: "/logo/logo1(4).jpg" },
+  { name: "Boudha Heritage", logo: "/logo/logo1(5).jpg" },
+  { name: "Taaj Heritage", logo: "/logo/logo1(6).jpg" },
+  { name: "PANAS", logo: "/logo/logo1(7).jpg" },
 ];
 
 const LogoSlide = ({ logo, name }: { logo: string; name: string }) => (
@@ -24,7 +26,7 @@ const Deals: React.FC = () => {
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <section className="md:py-16 py-6 bg-white">
+    <section className="md:py-16 py-6 bg-gray-900">
       <div className="container mx-auto px-4 text-center">
 
         {/* Slider for small screens only */}
@@ -53,7 +55,7 @@ const Deals: React.FC = () => {
                 key={index}
                 onClick={() => swiperRef.current?.slideToLoop(index)} // use slideToLoop for looping
                 className={`w-3 h-3 rounded-full transition-colors ${
-                  index === activeIndex ? "bg-gray-800" : "bg-gray-300"
+                  index === activeIndex ? "bg-blue-800" : "bg-gray-300"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
@@ -62,7 +64,7 @@ const Deals: React.FC = () => {
         </div>
 
         {/* Grid for medium and larger screens */}
-        <div className="hidden md:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 items-center justify-center">
+        <div className="hidden md:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 items-center justify-center">
           {clients.map((client, index) => (
             <div
               key={index}

@@ -7,7 +7,7 @@ export default function AboutChairmanHero() {
     <section className="relative h-screen w-full text-white">
       {/* Background Image */}
       <Image
-        src="/about/7.jpg" // Replace with your actual image path
+        src="/about/chairman-banner.jpg" // Replace with your actual image path
         alt="Hero Background"
         fill
         className="object-cover z-0"

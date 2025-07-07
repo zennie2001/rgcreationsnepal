@@ -26,7 +26,7 @@ const Specialization: React.FC = () => {
           <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
             <div className="relative overflow-hidden">
               <img
-                src="/premium.jpg "
+                src="/about/nightclub.jpg "
                 alt="Premium Nightclub Interior"
                 className="w-full h-96 object-cover hover:scale-110 duration-300 transition-all rounded-sm shadow-lg"
               />
@@ -131,7 +131,7 @@ const Specialization: React.FC = () => {
             </div>
             <div className="order-1 overflow-hidden lg:order-2">
               <img
-               src="/about (4).jpg"
+               src="/about/20(1).jpg"
                 alt="Modern Interior Design"
                 className="w-full h-96 hover:scale-110 duration-300 transition-all object-cover rounded-sm shadow-lg"
               />
@@ -190,7 +190,7 @@ const Specialization: React.FC = () => {
             </div>
             <div className="order-1 overflow-hidden lg:order-2">
               <img
-                src="/about (6).jpg"
+                src="/about (7).jpg"
                 alt="DJ Equipment and Sound Systems"
                 className="w-full h-96 hover:scale-110 duration-300 transition-all object-cover rounded-sm shadow-lg"
               />
@@ -203,7 +203,7 @@ const Specialization: React.FC = () => {
           <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
             <div className="overflow-hidden">
               <img
-                src="/about (7).jpg"
+                src="/about (6).jpg"
                 alt="Project Management Planning"
                 className="w-full h-96 hover:scale-110 duration-300 transition-all object-cover rounded-sm shadow-lg"
               />

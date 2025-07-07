@@ -40,6 +40,12 @@ export default function Home() {
               Our work is deeply personalized. Every project is custom-tailored to reflect the investor’s vision, respond to the psychology of the intended users, and harness the full potential of the site. From concept to completion, we create environments that are both purposeful and inspiring. <br />
               <br />
              We offer end-to-end expertise across architectural design, master planning, interior design, structural engineering, and full MEP (mechanical, electrical, and plumbing) systems. In addition, we excel in lighting design, acoustics, landscaping, BIM modeling, and high-fidelity 3D visualization.
+             <br/>
+             <br/>
+             Our support services include in-house legal advisory, digital marketing and branding for real estate ventures, sustainability consulting, and total project management. With our own material sourcing and logistics chain, we ensure quality, timely procurement and cost efficiency across all projects.
+             <br/>
+             <br/>
+             At the heart of RG Creations is Ram Giri, a visionary founder whose leadership bridges creative foresight and business execution. Under his guidance, the company continues to shape spaces that inspire, function and endure.
 
             </p>
 

@@ -17,6 +17,7 @@ export default function Header() {
     { title: "What Sets Us Apart", href: "/about/sets-apart" },
     { title: "How We Help Our Clients", href: "/about/help-clients" },
     { title: "Health and Safety", href: "/about/health-safety" },
+    { title: "Organizational Chart", href: "/about/organizational-chart" },
     { title: "Message from Chairman", href: "/about/message-from-chairman" },
   ];
   const projectItems = [

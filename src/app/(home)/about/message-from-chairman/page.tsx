@@ -43,43 +43,35 @@ export default function Home() {
     <main className="w-full">
       <AboutChairmanHero />
       <section className="px-4 container mx-auto py-12 md:px-0 md:py-20 bg-white">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-32 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Visionary Leadership,
+              Building Beyond Structures - 
               <br />
-              Boundless Impact
+              Crafting a Legacy for Nepal
             </h2>
             <p className="text-gray-700 text-base mb-4">
-              Ram Giri’s entrepreneurial journey is defined by innovation,
-              resilience, and a steadfast commitment to crafting exceptional
-              experiences. As Executive Chairman of RG Creations Nepal, Ram has
-              been instrumental in raising the bar for the hospitality industry
-              by blending luxury, sustainability, and cultural authenticity into
-              iconic architectural projects.
+              It is with great pride and purpose that I welcome you to RG Creations Nepal—a company built on a foundation of trust, creativity, and uncompromising quality. From day one, our mission has been clear: to raise the standard of construction in Nepal by delivering premium, future-ready spaces that inspire, perform, and endure.
             </p>
             <p className="text-gray-700 text-base mb-4">
-              His leadership style is visionary yet grounded, driving the
-              company to deliver world-class venues that leave lasting
-              impressions on guests and investors alike. Beyond the boardroom,
-              Ram’s passion for sports and social engagement fuels his
-              dedication to empowering Nepal’s next generation — inspiring youth
-              to dream bigger and shape a brighter future for the country.
+              Whether it’s the electrifying ambiance of a world-class nightclub, the sophistication of a luxurious residence, or the refined functionality of a commercial property, we approach every project with passion and precision. Our work on LOD Nepal, ranked #44 in DJ Mag’s Top 100 Clubs 2025, stands as a global example of what Nepali vision and expertise can achieve.
             </p>
             <p className="text-gray-700 text-base">
-              Under Ram’s guidance, RG Creations Nepal continues to grow as a
-              pioneer in architecture and design, turning ambitious ideas into
-              transformative realities.
+             But construction is only part of our story. At RG Creations, we are equally committed to interior design, premium furniture supply, and sustainable architecture—providing full-spectrum solutions that transform ideas into iconic realities.
+            </p>
+            <p className="text-gray-700 text-base">
+             As Chairman, I believe our true success lies not just in what we build, but in how we uplift our people, empower the next generation, and contribute to the future of Nepal. Thank you for being a part of this journey with us.
+            </p>
+            <p className="text-gray-800 text-base mt-2">
+             Warm regards,
             </p>
           </div>
 
-          <div className="flex flex-col h-[500px] items-center text-center pt-16">
-            <Image
+          <div className="flex flex-col w-[400px] h-[600px] items-center text-center pt-16 pl-12">
+            <img
               src="/about/hero-ram2 (1).jpg"
               alt="Ram Giri"
-              width={300}
-              height={400}
-              className=" object-contain"
+              className="h-[600px] w-[400px] object-cover"
             />
             <div className="mt-4 text-left">
               <h4 className="text-lg font-semibold">Ram Giri</h4>

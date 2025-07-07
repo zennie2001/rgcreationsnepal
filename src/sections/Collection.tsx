@@ -13,7 +13,7 @@ const Collection: React.FC = () => {
               {/* Green rectangle decoration */}
               <div className="absolute -top-8 left-0 w-16 h-20 bg-darkGreen z-10"></div>
               <img
-                src="/latest-image (1).jpg"
+                src="/about/newimg.jpg"
                 alt="Traditional Building"
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
@@ -23,7 +23,7 @@ const Collection: React.FC = () => {
           {/* Middle Column - Interior Design */}
           <div className="lg:col-span-6">
             <img
-              src="/latest-image (3).jpg"
+              src="/about/rgcreations1(1).jpg"
               alt="Modern Interior Design"
               className="w-full h-80 object-cover rounded-lg shadow-lg"
             />
@@ -45,12 +45,12 @@ const Collection: React.FC = () => {
           {/* Left Column - Text Content */}
           <div className="lg:col-span-6 text-right space-y-6">
             <h3 className="text-2xl font-semibold text-gray-900">
-              Modern design with new look
+             Stylish & Innovative Construction Designs
+
             </h3>
-            <p className="text-gray-600 leading-relaxed ">
-              pictures doesn't hurt but let's pull the curtain back and<br/>  be
-              honest here for a minute. Architects communicate<br/> through their
-              drawings - we aren't making art.
+            <p className="text-gray-600 leading-relaxed text-left pl-[205px] lg:pl-24 ">
+              At RG Creations Nepal, we blend creativity with functionality to deliver<br/> construction designs that are both modern and timeless. From bold <br/>interiors to smart architectural layouts, our projects reflect the latest<br/> trends with a focus on quality and innovation.
+
             </p>
             <button className="bg-darkGreen hover:bg-darkGreen text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300">
               Explore More
@@ -60,7 +60,7 @@ const Collection: React.FC = () => {
           {/* Right Column - Modern House Image */}
           <div className="lg:col-span-6">
             <img
-              src="/latest-image (2).jpg"
+              src="/about/home-page-img.jpg"
               alt="Modern House Design"
               className="w-full h-96 object-cover rounded-lg shadow-lg"
             />

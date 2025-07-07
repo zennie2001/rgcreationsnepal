@@ -7,9 +7,9 @@ interface StatItem {
 
 const StatsSection: React.FC = () => {
   const stats: StatItem[] = [
-    { number: "451", label: "HAPPY CLIENTS" },
-    { number: "532", label: "FINISHED PROJECTS" },
-    { number: "299", label: "WORKING DAYS" },
+    { number: "25+", label: "Years of industry Expertise" },
+    { number: "15+", label: "Signature Projects Completed" },
+    { number: "100%", label: "Customer Satisfaction" },
   ];
 
   return (
@@ -107,7 +107,7 @@ const StatsSection: React.FC = () => {
                         <div className="w-12 h-0.5 bg-white mx-auto mb-4 group-hover:w-16 group-hover:bg-[#d5dd02] transition-all duration-300"></div>
 
                         {/* Label */}
-                        <div className="text-white text-xs whitespace-nowrap font-medium tracking-widest uppercase group-hover:text-gray-300 transition-colors duration-300">
+                        <div className="text-white text-xs whitespace-normal font-medium tracking-widest uppercase group-hover:text-gray-300 transition-colors duration-300">
                           {stat.label}
                         </div>
                       </div>
