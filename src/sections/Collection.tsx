@@ -44,15 +44,15 @@ const Collection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
           {/* Left Column - Text Content */}
           <div className="lg:col-span-6 text-right space-y-6">
-            <h3 className="text-2xl font-semibold text-gray-900">
+            <h3 className="text-2xl font-semibold text-left  text-gray-900">
              Stylish & Innovative Construction Designs
 
             </h3>
-            <p className="text-gray-600 leading-relaxed text-left pl-[205px] lg:pl-24 ">
+            <p className="text-gray-600 leading-relaxed text-left  ">
               At RG Creations Nepal, we blend creativity with functionality to deliver<br/> construction designs that are both modern and timeless. From bold <br/>interiors to smart architectural layouts, our projects reflect the latest<br/> trends with a focus on quality and innovation.
 
             </p>
-            <button className="bg-darkGreen hover:bg-darkGreen text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300">
+            <button className="bg-darkGreen hover:bg-darkGreen text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300 flex justify-start">
               Explore More
             </button>
           </div>

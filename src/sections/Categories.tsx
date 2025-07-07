@@ -34,7 +34,7 @@ const WelcomeSection = () => {
                 </p>
 
                 <Link href={'/about/about-us'}>
-                <button className="bg-[#244d4d] hover:bg-teal-800 text-white px-8 py-3 font-medium text-sm tracking-wide uppercase transition-colors duration-300">
+                <button className="bg-[#244d4d] hover:bg-teal-800 text-white px-8 py-3 mb-20 font-medium text-sm tracking-wide uppercase transition-colors duration-300">
                   READ MORE
                 </button>
                 </Link>
