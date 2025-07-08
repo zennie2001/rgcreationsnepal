@@ -1,8 +1,6 @@
 "use client";
 
-import Deals from "@/sections/Deals";
-import FAQ from "@/app/(home)/faqs/page";
-import Image from "next/image";
+
 import ServiceHero from "@/sections/ServiceHero";
 import { ArrowRight, CheckCircle, Clock } from "lucide-react";
 export default function Home() {

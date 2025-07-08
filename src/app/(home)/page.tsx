@@ -14,6 +14,7 @@ import Youtube from "@/sections/Blog";
 import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
 import BlogDesign from "@/sections/Blog";
+import Video from "@/sections/Video";
 
 
 export default function Home() {
@@ -27,7 +28,7 @@ export default function Home() {
       <Products />
        <Collection />
       <About />
-     
+     <Video/>
       <BlogDesign />
       <Deals />
       <FAQ/>
