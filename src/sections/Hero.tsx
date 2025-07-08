@@ -18,12 +18,12 @@ const slides = [
   },
   {
     id: 3,
-    image: "/main-slider3.jpg",
+    image: "/about/news2.jpg",
     title: "Where Vision Meets Structure \n Premium Construction in Nepal",
   },
   {
     id: 4,
-    image: "/main-slider4.jpg",
+    image: "/about/news3.jpg",
     title: "From Nightlife to Luxury Living \n We Build Experiences",
   },
 ];
