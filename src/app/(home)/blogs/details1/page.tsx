@@ -41,38 +41,37 @@ const BlogPost = () => {
               {/* Article Content */}
               <div className="prose prose-lg max-w-none">
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Structured gripped tape invisible moulded cups for sauppor firm hold strong powermesh front liner sport detail. Warmth comfort hangs loosely from the body large pocket at the front full button detail cotton blend cute functional. Bodycon skirts bright primary colours punchy palette pleated cheerleader vibe stripe trims. Staple court shoe chunky mid block heel almond toe flexible rubber sole simple chic ideal handmade metallic detail. Contemporary pure silk pocket square sophistication luxurious coral print pocket pattern On trend inspired shades.
+                  Nepal, a land of breathtaking landscapes and rich culture, is experiencing a significant transformation in its urban and rural infrastructure. As the country modernizes, the need for innovative, sustainable, and high-quality architecture and construction services grows stronger every day. RG Creations Nepal Pvt Ltd stands as a beacon of excellence in this evolving market. With a commitment to delivering cutting-edge designs and superior construction solutions, RG Creations has earned a reputation as one of the best architecture and construction companies in Nepal.
                 </p>
 
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Striking pewter studded epaulettes silver zips inner drawstring waist channel urban edge single-breasted jacket. Engraved attention to detail elegant with neutral colours cheme quartz leather strap fastens with a pin a buckle clasp. Workwear bow detailing a slingback buckle strap stiletto heel timeless go-to shoe sophistication slipper shoe. Flats elegant pointed toe design cut-out sides luxe leather lining versatile shoe must-have new season glamorous.
+                  Our expertise covers a broad spectrum of services from conceptual architectural design to full-scale construction and project management. Whether building contemporary residential homes, large-scale commercial complexes, or eco-friendly public infrastructures, RG Creations combines creative vision with practical experience to bring dreams into reality.
                 </p>
                 <h2 className="text-3xl font-bold flex gap-6  leading-relaxed mb-8 uppercase">
                   <FaQuoteRight className="text-5xl" />
-                  <span>Knicker lining concealed back zip fasten swing style high waisted double layer full pattern floral.</span>
+                  <span>About RG Creations Nepal Pvt Ltd</span>
                   </h2>
 
                 <p className="text-gray-700 leading-relaxed mb-8">
-                  Foam padding in the insoles leather finest quality staple flat slip-on design pointed toe off-duty shoe. Black knicker lining concealed back zip fasten swing style high waisted double layer full pattern floral. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten heel this ladylike design
-                </p>
-                <p className="text-gray-700 leading-relaxed mb-8">
+                  Established with the mission to elevate construction standards across Nepal, RG Creations Nepal Pvt Ltd is headquartered in Kathmandu and operates nationwide. We pride ourselves on integrating traditional Nepalese architectural principles with modern technology and sustainable building practices. Our multidisciplinary team comprises experienced architects, civil engineers, interior designers, and construction experts who collaborate closely to ensure every project is completed with precision, efficiency, and the highest quality standards.                </p>
+                {/* <p className="text-gray-700 leading-relaxed mb-8">
                   Eget aenean tellus venenatis. Donec odio tempus. Felis arcu nullam quam aenean sociis quis sem neque vici libero. Venenatis nullam fringilla pretium magnis aliquam nunc vulputate integer augue ultricies cras. Eget viverra feugiat cras ut. Sit natoque montes tempus ligula eget vitae pede rhoncus maecenas consectetuer commodo condimentum aenean.
-                </p>
+                </p> */}
 
-                <h2 className="text-2xl font-bold flex gap-6  leading-relaxed mb-8 uppercase">
+                {/* <h2 className="text-2xl font-bold flex gap-6  leading-relaxed mb-8 uppercase">
                   Eu ridiculus fringilla aenean
-                  </h2>
+                  </h2> */}
                   <p className="text-gray-700 leading-relaxed mb-8">
-                  Sociis consequat adipiscing sit curabitur donec sem luctus cras natoque vulputate dolor eget dapibus. Nec vitae eros ullamcorper laoreet dapibus mus ac ante viverra. A aenean sit augue curabitur et parturient nisi sed enim. Nulla nec quis sit quisque sem commodo ultricies neque. Lorem eget venenatis dui ante luctus ultricies tellus montes. Quis in sapien tempus.
+                  Our portfolio includes a diverse range of projects:
                 </p>
-                <ul className="text-gray-700 leading-relaxed mb-8 pr-8">
-                  <li>Crisp fresh iconic elegant timeless clean perfume</li>
-                  <li>Neck straight sharp silhouette and dart detail</li>
-                  <li>Machine wash cold slim fit premium stretch selvedge denim comfortable low waist</li>
+                <ul className="list-disc pl-6 text-gray-700 leading-relaxed mb-8 pr-8">
+                  <li>Residential villas and apartments</li>
+                  <li>Commercial office buildings and retail outlets</li>
+                  <li>Hospitality and tourism infrastructure such as hotels and resorts</li>
+                  <li>Healthcare and educational facilities</li>
+                  <li>Renovation and restoration of heritage buildings</li>
                 </ul>
-                <p className="text-gray-700 leading-relaxed mb-8">
-                  See-through delicate embroidered organza blue lining luxury acetate-mix stretch pleat detailing. Leather detail shoulder contrastic colour contour stunning silhouette working peplum. Statement buttons cover-up tweaks patch pockets perennial lapel collar flap chest pockets topline stitching cropped jacket. Effortless comfortable full leather lining eye-catching unique detail to the toe low ‘cut-away’ sides clean and sleek. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten heel this ladylike design.
-                </p>
+               
 
               </div>
 
@@ -80,7 +79,7 @@ const BlogPost = () => {
               <div className="border-t border-gray-200 pt-6 mt-8">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
-                    <span className="text-sm text-gray-600">Joanna Wellick</span>
+                    {/* <span className="text-sm text-gray-600">Joanna Wellick</span> */}
                     <span className="text-sm text-gray-400">•</span>
                     <span className="text-sm text-gray-600">2 min read</span>
                   </div>
@@ -127,7 +126,7 @@ const BlogPost = () => {
                   
                   {/* ✅ UPDATED - LEFT IMAGE SIZE */}
                   <img
-                    src='/blog (2).jpg'
+                    src='/about/news3.jpg'
                     alt='blog'
                     className="
                       w-[327px] h-[190px]
@@ -140,11 +139,11 @@ const BlogPost = () => {
 
                   {/* Overlay Card */}
                   <div className="absolute bottom-4  -left-4 bg-[#244d4d] text-white h-24 px-4 rounded-sm max-w-sm z-20">
-                    <div className="text-[10px] ms-2 font-medium rotate-90 origin-top-left my-4 opacity-75">
+                    {/* <div className="text-[10px] ms-2 font-medium rotate-90 origin-top-left my-4 opacity-75">
                       10 AUG 2023
-                    </div>
-                    <h3 className="text-lg font-bold ms-4 leading-tight -my-2 mb-2">
-                      Title of first blog <br/>post
+                    </div> */}
+                    <h3 className="text-lg font-bold ms-4 leading-tight -my-2 mb-2 pt-4">
+                      Transforming Nightlife: Our Journey Designing One of the World’s Top 40 Nightclubs – Dejavu Club Nepal
                     </h3>
                   </div>
                 </div>
@@ -164,7 +163,7 @@ const BlogPost = () => {
                   
                   {/* ✅ UPDATED - LEFT IMAGE SIZE */}
                   <img
-                    src='/blog (2).jpg'
+                    src='/about/news2.jpg'
                     alt='blog'
                     className="
                       w-[327px] h-[190px]
@@ -177,11 +176,11 @@ const BlogPost = () => {
 
                   {/* Overlay Card */}
                   <div className="absolute bottom-4  -left-4 bg-[#244d4d] text-white h-24 px-4 rounded-sm max-w-sm z-20">
-                    <div className="text-[10px] ms-2 font-medium rotate-90 origin-top-left my-4 opacity-75">
+                    {/* <div className="text-[10px] ms-2 font-medium rotate-90 origin-top-left my-4 opacity-75">
                       10 AUG 2023
-                    </div>
-                    <h3 className="text-lg font-bold ms-4 leading-tight -my-2 mb-2">
-                      Title of first blog <br/>post
+                    </div> */}
+                    <h3 className="text-lg font-bold ms-4 leading-tight -my-2 mb-2 pt-4">
+                     Nepal’s Best Premium Construction Company: Delivering Excellence for Budget-Savvy and Luxury Clients
                     </h3>
                   </div>
                 </div>

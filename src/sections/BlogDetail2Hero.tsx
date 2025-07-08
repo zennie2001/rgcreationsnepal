@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 
-export default function BlogDetailHero() {
+export default function BlogDetail2Hero() {
   return (
     <section className="relative h-screen w-full text-white">
       {/* Background Image */}
       <Image
-        src="/about/rgcreations1(1).jpg" // Replace with your actual image path
+        src="/about/news2.jpg" // Replace with your actual image path
         alt="Hero Background"
         fill
         className="object-cover z-0"
@@ -26,7 +26,7 @@ export default function BlogDetailHero() {
         </div> */}
 
         <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
-          RG Creations Nepal Pvt Ltd – The Leading Architecture and Construction Company in Nepal <br className="hidden md:block" /> 
+          Nepal’s Best Premium Construction Company: Delivering Excellence for Budget-Savvy and Luxury Clients <br className="hidden md:block" /> 
           
         </h1>
 
