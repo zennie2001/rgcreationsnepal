@@ -27,7 +27,9 @@ export default function ServicesResidentialHero() {
 
         <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
            {/* <br className="hidden md:block" />  */}
-           Transform Your Venue into the Ultimate Nightlife Experience
+           Redefining Modern Living with Exclusive, Elegant Homes and Sustainable Communities 
+
+
 
         </h1>
 

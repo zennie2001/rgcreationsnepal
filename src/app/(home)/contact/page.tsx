@@ -194,7 +194,7 @@ export default function ContactUs() {
           <div className="absolute bg-darkGreen right-0 h-full w-1/2 z-10"></div>
           <div className="relative w-[70%] md:w-[77%] mx-auto h-[77%]  m-20 z-20">
             <img
-              src="/third-image.jpg" // Replace with your actual image
+              src="/about/contact.jpg" // Replace with your actual image
               alt="Contact Person"
               className="object-cover w-full h-full  rounded-sm "
             />

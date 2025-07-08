@@ -34,6 +34,12 @@ export default function Header() {
     { title: "Completed Projects", href: "/projectss/completed" },
     
   ];
+  const newsItems = [
+    { title: "Media Coverage", href: "/blogs/media-coverage" },
+    { title: "Blogs", href: "/blogs" },
+    { title: "Events", href: "/blogs/events" },
+    
+  ];
    const galleryItems = [
     { title: "Photo Gallery", href: "/gallery/photo" },
     { title: "Video Gallery", href: "/gallery/video" },
@@ -49,10 +55,10 @@ export default function Header() {
           : "absolute top-0 left-0 backdrop-blur-sm bg-transparent text-white"
       }`}
     >
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center ">
+      <div className="container mx-auto  py-0 flex justify-between items-center ">
         {/* Logo */}
-        <a href="/" className="font-bold text-lg">
-          <img src="/logo.png" alt="Company Logo" className="h-16 w-auto" />
+        <a href="/" className="font-bold text-xl">
+          <img src="/Rg Logo .svg" alt="Company Logo" className="h-28 w-28" />
         </a>
 
         {/* Desktop Menu */}
@@ -127,12 +133,30 @@ export default function Header() {
             </HeadlessMenu>
           </div>
 
-          <a href="/work-process" className="hover:text-green-500 font-medium">
+          {/* <a href="/work-process" className="hover:text-green-500 font-medium">
             WORK PROCESS
-          </a>
-          <a href="/blogs" className="hover:text-green-500 font-medium">
-            BLOGS
-          </a>
+          </a> */}
+
+
+          <div className="relative group">
+            <HeadlessMenu>
+              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium">
+                NEWS & UPDATES
+                <ChevronDown size={16} />
+              </HeadlessMenu.Button>
+              <div className="absolute hidden group-hover:block  bg-white text-gray-800 shadow-lg rounded-md py-2 w-64 z-50">
+                {newsItems.map((item, index) => (
+                  <a
+                    key={index}
+                    href={item.href}
+                    className="block px-4 py-2 text-base hover:bg-gray-100"
+                  >
+                    {item.title}
+                  </a>
+                ))}
+              </div>
+            </HeadlessMenu>
+          </div>
 
 
 
@@ -161,8 +185,13 @@ export default function Header() {
 
 
           <a href="/contact" className="hover:text-green-500 font-medium">
-            CONTACT US
+            CONTACT 
           </a>
+          <a href="/book-appointment" className="hover:bg-[#398181] text-white bg-[#244D4D] p-2  font-medium">
+            BOOK A CONSULTATION
+          </a>
+
+          
         </nav>
 
         {/* Mobile Menu Button */}

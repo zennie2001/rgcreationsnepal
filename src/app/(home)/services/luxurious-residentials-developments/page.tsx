@@ -1,6 +1,7 @@
 import ServicesResidentialHero from '@/sections/ServicesResidentialHero'
 import React from 'react'
 import { ArrowRight, CheckCircle, Clock } from "lucide-react";
+import Link from 'next/link';
 
 const page = () => {
   return (
@@ -121,9 +122,12 @@ const page = () => {
                       dapibus rutrum leo consectetur accumsan. Vivamus viverra
                       ante turpis.
                     </p>
-                    <button className="my-10 inline-flex items-center justify-center w-12 h-12 bg-white  text-darkGreen hover:bg-gray-100 transition-colors">
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
+                     <Link
+                        href="/book-appointment"
+                        className="my-10 inline-flex items-center justify-center w-12 h-12 bg-white text-darkGreen hover:bg-gray-100 transition-colors"
+                        >
+                        <ArrowRight className="w-5 h-5" />
+                    </Link>
                   </div>
                 </div>
               </div>

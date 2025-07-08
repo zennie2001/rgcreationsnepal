@@ -1,6 +1,7 @@
 import ServicesNightclubHero from '@/sections/ServicesNightclubHero'
 import React from 'react'
 import { ArrowRight, CheckCircle, Clock } from "lucide-react";
+import Link from 'next/link';
 
 const page = () => {
   return (
@@ -10,50 +11,6 @@ const page = () => {
 
         <section className="w-full container mx-auto">
         <div className=" py-20 bg-white">
-          {/* Hero Section */}
-          {/* <section className="relative">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 h-[85vh]">
-              Image 1
-              <div className="relative overflow-hidden">
-                <div className="absolute inset-0 ">
-                  <div className="w-full h-full  flex items-center justify-center">
-                    <img
-                      src="/s1.jpg"
-                      alt="Image 1"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              Image 2
-              <div className="relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-gray-100 to-gray-200">
-                  <div className="w-full h-full bg-gradient-to-br from-slate-200 to-slate-300 flex items-center justify-center">
-                    <img
-                      src="/s3.jpg"
-                      alt="Image 1"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              Image 3 with Text Overlay
-              <div className="relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-b from-blue-300 to-blue-400">
-                  <div className="w-full h-full bg-gradient-to-br from-blue-300 to-blue-500 flex items-center justify-center">
-                    <img
-                      src="/s2.jpg"
-                      alt="Image 1"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section> */}
-
           {/* Main Content Section */}
           <section className="py-16 px-4 lg:px-8">
             <div className="max-w-7xl mx-auto">
@@ -66,9 +23,8 @@ const page = () => {
                     </h1>
                     <p className="text-gray-600 text-lg leading-relaxed">
                       At RG Creations Pvt. Ltd., we specialize in turning bold visions into iconic nightlife destinations. Our premium nightclub construction services are tailored to entrepreneurs, hospitality brands, and entertainment groups looking to create vibrant, unforgettable experiences. We go beyond conventional construction — we build atmospheres that pulse with energy, style, and exclusivity.
-                        <br/>
-                        <br/>From architectural planning to interior design, lighting, acoustics, and technology integration, our turnkey solutions are engineered to impress, perform, and endure.
-
+                      <br />
+                      <br />From architectural planning to interior design, lighting, acoustics, and technology integration, our turnkey solutions are engineered to impress, perform, and endure.
                     </p>
                   </div>
 
@@ -112,16 +68,19 @@ const page = () => {
                 <div className="lg:pl-8 md:mt-20">
                   <div className="bg-darkGreen text-white p-8">
                     <h2 className="text-2xl font-bold mb-4">
-                      Get a appointment with our Expert
+                      Get an appointment with our Expert
                     </h2>
                     <p className="pt-2">
                       Cras tincidunt tellus at mi tristique rhoncus. Etiam
                       dapibus rutrum leo consectetur accumsan. Vivamus viverra
                       ante turpis.
                     </p>
-                    <button className="my-10 inline-flex items-center justify-center w-12 h-12 bg-white  text-darkGreen hover:bg-gray-100 transition-colors">
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
+                    <Link
+                        href="/book-appointment"
+                        className="my-10 inline-flex items-center justify-center w-12 h-12 bg-white text-darkGreen hover:bg-gray-100 transition-colors"
+                        >
+                        <ArrowRight className="w-5 h-5" />
+                    </Link>
                   </div>
                 </div>
               </div>

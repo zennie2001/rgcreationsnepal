@@ -27,7 +27,7 @@ export default function ServicesProjectHero() {
 
         <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
            {/* <br className="hidden md:block" />  */}
-           Transform Your Venue into the Ultimate Nightlife Experience
+           Seamlessly Transforming Visions into Reality with End-to-End Expertise Across Residential, Commercial, and Hospitality Projects
 
         </h1>
 

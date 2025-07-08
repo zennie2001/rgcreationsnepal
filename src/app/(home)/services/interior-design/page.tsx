@@ -2,6 +2,7 @@
 import React from 'react'
 import { ArrowRight, CheckCircle, Clock } from "lucide-react";
 import ServicesInteriorHero from '@/sections/ServicesInteriorHero';
+import Link from 'next/link';
 
 const page = () => {
   return (
@@ -62,14 +63,22 @@ const page = () => {
                 <div className="space-y-8 col-span-2">
                   <div>
                     <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
-                      Premium Nightclub Construction
+                      Architectural & Interior Design
                     </h1>
                     <p className="text-gray-600 text-lg leading-relaxed">
-                      At RG Creations Pvt. Ltd., we specialize in turning bold visions into iconic nightlife destinations. Our premium nightclub construction services are tailored to entrepreneurs, hospitality brands, and entertainment groups looking to create vibrant, unforgettable experiences. We go beyond conventional construction — we build atmospheres that pulse with energy, style, and exclusivity.
-                        <br/>
-                        <br/>From architectural planning to interior design, lighting, acoustics, and technology integration, our turnkey solutions are engineered to impress, perform, and endure.
+At RG Creations Pvt. Ltd., we bring visions to life through distinctive architectural and interior design services that blend creativity, functionality, and elegance. Whether you're building from the ground up or transforming an existing space, our team of architects and interior designers ensures every detail aligns with your identity, purpose, and lifestyle.                        <br/>
 
+                    <br/>
+                    We don’t just design buildings — we craft experiences. From the flow of natural light to the textures underfoot, every element is intentionally selected to create cohesive, inspiring, and efficient environments that stand the test of time.
                     </p>
+                    
+                    <h3 className="text-xl font-semibold text-gray-900 py-4">
+                        Our Design Philosophy
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed text-justify">
+                        We believe great design is the harmony of form, function, and feeling. Our approach focuses on intelligent spatial planning, aesthetic innovation, and user-centered design that reflects both personality and practicality.
+                        Whether it’s a luxury villa, a commercial tower, a nightclub, or a retail outlet, we design each space to tell a story — your story.
+                      </p>
                   </div>
 
                   {/* Feature Cards */}
@@ -79,12 +88,15 @@ const page = () => {
                       <div className="w-12 h-12 bg-darkGreen rounded-lg flex items-center justify-center">
                         <CheckCircle className="w-6 h-6 text-white" />
                       </div>
-                      <h3 className="text-xl font-semibold text-gray-900">
-                        Experience-Driven Design for Maximum Impact
+                        <h3 className="text-xl font-semibold text-gray-900">
+                        Our Architectural Design Services Include:
                       </h3>
-                      <p className="text-gray-600 leading-relaxed text-justify">
-                        We believe a nightclub is more than just a venue — it’s a lifestyle experience. Every space we design is carefully curated to guide customer flow, encourage interaction, and enhance comfort while delivering that unmistakable wow factor. Whether you envision a modern industrial vibe, luxury lounge ambiance, or high-tech dance arena, our team transforms your concept into reality with a strong focus on user experience.
-                      </p>
+                      <ul className="list-disc text-gray-600 leading-relaxed pl-8">
+                        <li>Conceptual Design & 3D Rendering</li>
+                        <li>Site Planning & Master Layouts</li>
+                        <li>Structural & MEP Integration</li>
+                        <li>Sustainable Design Solutions</li>
+                        </ul>
                     </div>
 
                     {/* Operational Efficiency */}
@@ -93,16 +105,15 @@ const page = () => {
                         <Clock className="w-6 h-6 text-white" />
                       </div>
                       <h3 className="text-xl font-semibold text-gray-900">
-                        Comprehensive Services Include
+                        Our Interior Design Expertise Covers:
+
                       </h3>
                       <ul className="list-disc text-gray-600 leading-relaxed pl-8">
-                        <li>Feasibility Study & Site Analysis</li>
-                        <li>Architectural Design & 3D Visualization</li>
-                        <li>Structural & MEP Works</li>
-                        <li>Interior & Theme Development</li>
-                        <li>Lighting & Audio Integration</li>
-                        <li>Bar, Lounge & VIP Area Customization</li>
-                        <li>Security, Access & Surveillance Systems</li>
+                        <li>Residential Interiors</li>
+                        <li>Commercial & Office Interiors</li>
+                        <li>Hospitality & Nightlife Interiors</li>
+                        <li>Retail Spaces & Showrooms</li>
+                        
                       </ul>
                     </div>
                   </div>
@@ -119,9 +130,12 @@ const page = () => {
                       dapibus rutrum leo consectetur accumsan. Vivamus viverra
                       ante turpis.
                     </p>
-                    <button className="my-10 inline-flex items-center justify-center w-12 h-12 bg-white  text-darkGreen hover:bg-gray-100 transition-colors">
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
+                    <Link
+                        href="/book-appointment"
+                        className="my-10 inline-flex items-center justify-center w-12 h-12 bg-white text-darkGreen hover:bg-gray-100 transition-colors"
+                        >
+                        <ArrowRight className="w-5 h-5" />
+                    </Link>
                   </div>
                 </div>
               </div>

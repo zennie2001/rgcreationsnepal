@@ -1,6 +1,7 @@
 import React from 'react'
 import { ArrowRight, CheckCircle, Clock } from "lucide-react";
 import ServicesProjectHero from '@/sections/ServicesProjectHero';
+import Link from 'next/link';
 
 const page = () => {
   return (
@@ -61,7 +62,7 @@ const page = () => {
                 <div className="space-y-8 col-span-2">
                   <div>
                     <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
-                      Premium Nightclub Construction
+                     Project Management & Turnkey Solutions
                     </h1>
                     <p className="text-gray-600 text-lg leading-relaxed">
                       At RG Creations Pvt. Ltd., we specialize in turning bold visions into iconic nightlife destinations. Our premium nightclub construction services are tailored to entrepreneurs, hospitality brands, and entertainment groups looking to create vibrant, unforgettable experiences. We go beyond conventional construction — we build atmospheres that pulse with energy, style, and exclusivity.
@@ -118,9 +119,12 @@ const page = () => {
                       dapibus rutrum leo consectetur accumsan. Vivamus viverra
                       ante turpis.
                     </p>
-                    <button className="my-10 inline-flex items-center justify-center w-12 h-12 bg-white  text-darkGreen hover:bg-gray-100 transition-colors">
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
+                    <Link
+                        href="/book-appointment"
+                        className="my-10 inline-flex items-center justify-center w-12 h-12 bg-white text-darkGreen hover:bg-gray-100 transition-colors"
+                        >
+                        <ArrowRight className="w-5 h-5" />
+                    </Link>
                   </div>
                 </div>
               </div>

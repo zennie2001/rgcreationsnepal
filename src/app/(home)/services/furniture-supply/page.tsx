@@ -2,6 +2,7 @@
 import React from 'react'
 import { ArrowRight, CheckCircle, Clock } from "lucide-react";
 import ServicesFirnitureHero from '@/sections/ServicesFurtinutreHero';
+import Link from 'next/link';
 
 const page = () => {
   return (
@@ -62,12 +63,12 @@ const page = () => {
                 <div className="space-y-8 col-span-2">
                   <div>
                     <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
-                      Premium Nightclub Construction
+                      Premium Furniture Supply
                     </h1>
                     <p className="text-gray-600 text-lg leading-relaxed">
-                      At RG Creations Pvt. Ltd., we specialize in turning bold visions into iconic nightlife destinations. Our premium nightclub construction services are tailored to entrepreneurs, hospitality brands, and entertainment groups looking to create vibrant, unforgettable experiences. We go beyond conventional construction — we build atmospheres that pulse with energy, style, and exclusivity.
+                        At RG Creations Pvt. Ltd., we supply premium furniture solutions that blend sophistication, comfort, and durability. Our curated collection is crafted to elevate residential, commercial, hospitality, and entertainment spaces with timeless style and world-class craftsmanship. Whether you're furnishing a luxury villa, an upscale office, or a high-end nightclub, we deliver bespoke furniture that complements your space and reflects your brand or lifestyle.                        <br/>
                         <br/>
-                        <br/>From architectural planning to interior design, lighting, acoustics, and technology integration, our turnkey solutions are engineered to impress, perform, and endure.
+                        From modern minimalist designs to opulent classics, every piece we offer is carefully selected for its quality, functionality, and visual appeal.
 
                     </p>
                   </div>
@@ -80,11 +81,15 @@ const page = () => {
                         <CheckCircle className="w-6 h-6 text-white" />
                       </div>
                       <h3 className="text-xl font-semibold text-gray-900">
-                        Experience-Driven Design for Maximum Impact
+                        What We Offer:
                       </h3>
-                      <p className="text-gray-600 leading-relaxed text-justify">
-                        We believe a nightclub is more than just a venue — it’s a lifestyle experience. Every space we design is carefully curated to guide customer flow, encourage interaction, and enhance comfort while delivering that unmistakable wow factor. Whether you envision a modern industrial vibe, luxury lounge ambiance, or high-tech dance arena, our team transforms your concept into reality with a strong focus on user experience.
-                      </p>
+                      <ul className="list-disc text-gray-600 leading-relaxed text-justify">
+                        <li>Residential Furniture</li>
+                        <li>Office & Corporate Furniture</li>
+                        <li>Hospitality & Nightclub Furniture</li>
+                        <li>Retail & Display Fixtures</li>
+                        <li>Custom-Made Solutions</li>
+                      </ul>
                     </div>
 
                     {/* Operational Efficiency */}
@@ -93,16 +98,15 @@ const page = () => {
                         <Clock className="w-6 h-6 text-white" />
                       </div>
                       <h3 className="text-xl font-semibold text-gray-900">
-                        Comprehensive Services Include
+                        Why Choose RG Creations for Furniture Supply?
                       </h3>
                       <ul className="list-disc text-gray-600 leading-relaxed pl-8">
-                        <li>Feasibility Study & Site Analysis</li>
-                        <li>Architectural Design & 3D Visualization</li>
-                        <li>Structural & MEP Works</li>
-                        <li>Interior & Theme Development</li>
-                        <li>Lighting & Audio Integration</li>
-                        <li>Bar, Lounge & VIP Area Customization</li>
-                        <li>Security, Access & Surveillance Systems</li>
+                        <li>Direct Import from Global Manufacturers</li>
+                        <li>Premium Finishes & Materials</li>
+                        <li>Design + Supply Integration</li>
+                        <li>Bulk Supply & Custom Orders</li>
+                        <li>Timely Delivery & Assembly</li>
+                       
                       </ul>
                     </div>
                   </div>
@@ -119,9 +123,12 @@ const page = () => {
                       dapibus rutrum leo consectetur accumsan. Vivamus viverra
                       ante turpis.
                     </p>
-                    <button className="my-10 inline-flex items-center justify-center w-12 h-12 bg-white  text-darkGreen hover:bg-gray-100 transition-colors">
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
+                   <Link
+                        href="/book-appointment"
+                        className="my-10 inline-flex items-center justify-center w-12 h-12 bg-white text-darkGreen hover:bg-gray-100 transition-colors"
+                        >
+                        <ArrowRight className="w-5 h-5" />
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -1,18 +1,20 @@
 import ServicesCommercialHero from '@/sections/SevicesCommercialHero'
 import React from 'react'
 import { ArrowRight, CheckCircle, Clock } from "lucide-react";
+import Link from "next/link";
+
 
 const page = () => {
   return (
     <div className='overflow-hidden'>
         <ServicesCommercialHero />
 
-        <section className="w-full container mx-auto">
+         <section className="w-full container mx-auto">
         <div className=" py-20 bg-white">
           {/* Hero Section */}
-          {/* <section className="relative">
+          <section className="relative">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 h-[85vh]">
-              Image 1
+              {/* Image 1 */}
               <div className="relative overflow-hidden">
                 <div className="absolute inset-0 ">
                   <div className="w-full h-full  flex items-center justify-center">
@@ -25,7 +27,7 @@ const page = () => {
                 </div>
               </div>
 
-              Image 2
+              {/* Image 2 */}
               <div className="relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-b from-gray-100 to-gray-200">
                   <div className="w-full h-full bg-gradient-to-br from-slate-200 to-slate-300 flex items-center justify-center">
@@ -38,7 +40,7 @@ const page = () => {
                 </div>
               </div>
 
-              Image 3 with Text Overlay
+              {/* Image 3 with Text Overlay */}
               <div className="relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-b from-blue-300 to-blue-400">
                   <div className="w-full h-full bg-gradient-to-br from-blue-300 to-blue-500 flex items-center justify-center">
@@ -51,7 +53,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-          </section> */}
+          </section>
 
           {/* Main Content Section */}
           <section className="py-16 px-4 lg:px-8">
@@ -61,13 +63,20 @@ const page = () => {
                 <div className="space-y-8 col-span-2">
                   <div>
                     <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
-                      Premium Nightclub Construction
+                      Commercial Construction
                     </h1>
                     <p className="text-gray-600 text-lg leading-relaxed">
-                      At RG Creations Pvt. Ltd., we specialize in turning bold visions into iconic nightlife destinations. Our premium nightclub construction services are tailored to entrepreneurs, hospitality brands, and entertainment groups looking to create vibrant, unforgettable experiences. We go beyond conventional construction — we build atmospheres that pulse with energy, style, and exclusivity.
-                        <br/>
-                        <br/>From architectural planning to interior design, lighting, acoustics, and technology integration, our turnkey solutions are engineered to impress, perform, and endure.
-
+                      We develop versatile commercial properties, including
+                      office buildings, retail centers, hotels, and mixed-use
+                      complexes. Understanding the diverse needs of businesses,
+                      we deliver designs that maximize functionality,
+                      flexibility, and brand identity. Our commercial projects
+                      are engineered to enhance operational efficiency while
+                      providing inviting, professional environments for clients,
+                      employees, and visitors alike. From large-scale
+                      developments to boutique commercial spaces, RG Creations
+                      offers tailored solutions that support sustainable growth
+                      and long-term value creation.
                     </p>
                   </div>
 
@@ -79,10 +88,13 @@ const page = () => {
                         <CheckCircle className="w-6 h-6 text-white" />
                       </div>
                       <h3 className="text-xl font-semibold text-gray-900">
-                        Experience-Driven Design for Maximum Impact
+                        Quality Craftsmanship
                       </h3>
-                      <p className="text-gray-600 leading-relaxed text-justify">
-                        We believe a nightclub is more than just a venue — it’s a lifestyle experience. Every space we design is carefully curated to guide customer flow, encourage interaction, and enhance comfort while delivering that unmistakable wow factor. Whether you envision a modern industrial vibe, luxury lounge ambiance, or high-tech dance arena, our team transforms your concept into reality with a strong focus on user experience.
+                      <p className="text-gray-600 leading-relaxed">
+                        Uncompromising quality and exemplary craftsmanship are
+                        hallmarks of our constructions. We prioritize precision
+                        and excellence in every detail, ensuring that our
+                        projects are enduring works of art.
                       </p>
                     </div>
 
@@ -92,17 +104,14 @@ const page = () => {
                         <Clock className="w-6 h-6 text-white" />
                       </div>
                       <h3 className="text-xl font-semibold text-gray-900">
-                        Comprehensive Services Include
+                        Operational Efficiency
                       </h3>
-                      <ul className="list-disc text-gray-600 leading-relaxed pl-8">
-                        <li>Feasibility Study & Site Analysis</li>
-                        <li>Architectural Design & 3D Visualization</li>
-                        <li>Structural & MEP Works</li>
-                        <li>Interior & Theme Development</li>
-                        <li>Lighting & Audio Integration</li>
-                        <li>Bar, Lounge & VIP Area Customization</li>
-                        <li>Security, Access & Surveillance Systems</li>
-                      </ul>
+                      <p className="text-gray-600 leading-relaxed">
+                        Our dedication to project management efficiency ensures
+                        timely completion, allowing clients to enjoy their
+                        luxurious spaces sooner. We optimize timelines without
+                        compromising quality.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -118,9 +127,12 @@ const page = () => {
                       dapibus rutrum leo consectetur accumsan. Vivamus viverra
                       ante turpis.
                     </p>
-                    <button className="my-10 inline-flex items-center justify-center w-12 h-12 bg-white  text-darkGreen hover:bg-gray-100 transition-colors">
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
+                    <Link
+                        href="/book-appointment"
+                        className="my-10 inline-flex items-center justify-center w-12 h-12 bg-white text-darkGreen hover:bg-gray-100 transition-colors"
+                        >
+                        <ArrowRight className="w-5 h-5" />
+                    </Link>
                   </div>
                 </div>
               </div>

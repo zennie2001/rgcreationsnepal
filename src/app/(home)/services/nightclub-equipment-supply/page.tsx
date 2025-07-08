@@ -2,6 +2,7 @@
 import React from 'react'
 import { ArrowRight, CheckCircle, Clock } from "lucide-react";
 import ServicesEquipmentHero from '@/sections/ServicesEquipHero';
+import Link from 'next/link';
 
 const page = () => {
   return (
@@ -62,12 +63,13 @@ const page = () => {
                 <div className="space-y-8 col-span-2">
                   <div>
                     <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
-                      Premium Nightclub Construction
+                      Nightclub Equipment Supply
                     </h1>
                     <p className="text-gray-600 text-lg leading-relaxed">
-                      At RG Creations Pvt. Ltd., we specialize in turning bold visions into iconic nightlife destinations. Our premium nightclub construction services are tailored to entrepreneurs, hospitality brands, and entertainment groups looking to create vibrant, unforgettable experiences. We go beyond conventional construction — we build atmospheres that pulse with energy, style, and exclusivity.
+                        At RG Creations Pvt. Ltd., we are your trusted partner for sourcing and supplying world-class nightclub equipment tailored to elevate the energy, performance, and profitability of nightlife venues across Nepal. From lighting and sound systems to DJ consoles and special effects, we provide everything you need to create a fully immersive and unforgettable nightclub experience.                        <br/>
+                        
                         <br/>
-                        <br/>From architectural planning to interior design, lighting, acoustics, and technology integration, our turnkey solutions are engineered to impress, perform, and endure.
+                        We work closely with global manufacturers and maintain a direct import channel through our office in Gonjau, China, ensuring access to the latest technology, competitive pricing, and uncompromising quality.
 
                     </p>
                   </div>
@@ -80,11 +82,17 @@ const page = () => {
                         <CheckCircle className="w-6 h-6 text-white" />
                       </div>
                       <h3 className="text-xl font-semibold text-gray-900">
-                        Experience-Driven Design for Maximum Impact
+                        Our Nightclub Equipment Portfolio Includes:
                       </h3>
-                      <p className="text-gray-600 leading-relaxed text-justify">
-                        We believe a nightclub is more than just a venue — it’s a lifestyle experience. Every space we design is carefully curated to guide customer flow, encourage interaction, and enhance comfort while delivering that unmistakable wow factor. Whether you envision a modern industrial vibe, luxury lounge ambiance, or high-tech dance arena, our team transforms your concept into reality with a strong focus on user experience.
-                      </p>
+                      <ul className="list-disc text-gray-600 leading-relaxed text-justify pl-8">
+                        <li>DJ Consoles & Booths</li>
+                        <li>Professional Sound Systems</li>
+                        <li>Lighting & Visual Effects</li>
+                        <li>Special FX & Atmosphere Machines</li>
+                        <li>Visuals & Projection</li>
+                        <li>Control Systems & Software</li>
+                        <li>Rigging & Mounting Hardware</li>
+                    </ul>
                     </div>
 
                     {/* Operational Efficiency */}
@@ -93,16 +101,15 @@ const page = () => {
                         <Clock className="w-6 h-6 text-white" />
                       </div>
                       <h3 className="text-xl font-semibold text-gray-900">
-                        Comprehensive Services Include
+                        Why Choose RG Creations?
                       </h3>
                       <ul className="list-disc text-gray-600 leading-relaxed pl-8">
-                        <li>Feasibility Study & Site Analysis</li>
-                        <li>Architectural Design & 3D Visualization</li>
-                        <li>Structural & MEP Works</li>
-                        <li>Interior & Theme Development</li>
-                        <li>Lighting & Audio Integration</li>
-                        <li>Bar, Lounge & VIP Area Customization</li>
-                        <li>Security, Access & Surveillance Systems</li>
+                        <li>End-to-End Supply</li>
+                        <li>Direct Import & Competitive Pricing</li>
+                        <li>Expert Installation & Calibration</li>
+                        <li>Customized Equipment Packages</li>
+                        <li>After-Sales Support</li>
+                        
                       </ul>
                     </div>
                   </div>
@@ -119,9 +126,12 @@ const page = () => {
                       dapibus rutrum leo consectetur accumsan. Vivamus viverra
                       ante turpis.
                     </p>
-                    <button className="my-10 inline-flex items-center justify-center w-12 h-12 bg-white  text-darkGreen hover:bg-gray-100 transition-colors">
-                      <ArrowRight className="w-5 h-5" />
-                    </button>
+                    <Link
+                        href="/book-appointment"
+                        className="my-10 inline-flex items-center justify-center w-12 h-12 bg-white text-darkGreen hover:bg-gray-100 transition-colors"
+                        >
+                        <ArrowRight className="w-5 h-5" />
+                    </Link>
                   </div>
                 </div>
               </div>
