@@ -144,7 +144,7 @@ const Specialization: React.FC = () => {
           <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
             <div className="overflow-hidden">
               <img
-               src="/about (5).jpg"
+               src="/premium-furniture.jpg"
                 alt="Premium Furniture Collection"
                 className="w-full h-96 hover:scale-110 duration-300 transition-all object-cover rounded-sm shadow-lg"
               />

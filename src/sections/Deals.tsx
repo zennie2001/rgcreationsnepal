@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
@@ -13,11 +14,13 @@ const clients = [
   { name: "Boudha Heritage", logo: "/logo/logo1(5).jpg" },
   { name: "Taaj Heritage", logo: "/logo/logo1(6).jpg" },
   { name: "PANAS", logo: "/logo/logo1(7).jpg" },
+  { name: "White Lotus", logo: "/logo/logo8.svg" },
+  { name: "Utsav Kunj", logo: "/logo/logo9.svg" },
 ];
 
 const LogoSlide = ({ logo, name }: { logo: string; name: string }) => (
   <div className="rounded-lg p-3 flex items-center justify-center hover:scale-105 transition-transform duration-300">
-    <img src={logo} alt={name} className="h-20 object-contain" />
+    <img src={logo} alt={name} className="h-20 md:h-28 object-contain" />
   </div>
 );
 
@@ -28,57 +31,46 @@ const Deals: React.FC = () => {
   return (
     <section className="md:py-16 py-6 bg-[#333d49]">
       <div className="container mx-auto px-4 text-center">
-
-        {/* Slider for small screens only */}
-        <div className="block md:hidden">
-          <Swiper
-            modules={[Pagination]}
-            pagination={false} // disable default pagination
-            spaceBetween={20}
-            slidesPerView={2}
-            loop
-            onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)} 
-            onSwiper={(swiper) => (swiperRef.current = swiper)}
-            className="px-4"
-          >
-            {clients.map((client, index) => (
-              <SwiperSlide key={index}>
-                <LogoSlide logo={client.logo} name={client.name} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
-          {/* Custom Pagination Dots */}
-          <div className="flex justify-center gap-2 mt-8">
-            {clients.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => swiperRef.current?.slideToLoop(index)} // use slideToLoop for looping
-                className={`w-3 h-3 rounded-full transition-colors ${
-                  index === activeIndex ? "bg-[#133950]" : "bg-gray-300"
-                }`}
-                aria-label={`Go to slide ${index + 1}`}
-              />
-            ))}
-          </div>
-        </div>
-
-        {/* Grid for medium and larger screens */}
-        <div className="hidden md:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-6 items-center justify-center">
+        <Swiper
+          modules={[Pagination]}
+          pagination={false}
+          spaceBetween={20}
+          loop
+          breakpoints={{
+            0: {
+              slidesPerView: 2,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 5,
+            },
+          }}
+          onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          className="px-4"
+        >
           {clients.map((client, index) => (
-            <div
+            <SwiperSlide key={index}>
+              <LogoSlide logo={client.logo} name={client.name} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        {/* Custom Pagination Dots */}
+        <div className="flex justify-center gap-2 mt-8">
+          {clients.map((_, index) => (
+            <button
               key={index}
-              className="rounded-lg p-3 flex items-center justify-center hover:scale-105 transition-transform duration-300"
-            >
-              <img
-                src={client.logo}
-                alt={client.name}
-                className="h-20 md:h-32 object-contain"
-              />
-            </div>
+              onClick={() => swiperRef.current?.slideToLoop(index)}
+              className={`w-3 h-3 rounded-full transition-colors ${
+                index === activeIndex ? "bg-[#133950]" : "bg-gray-300"
+              }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
           ))}
         </div>
-
       </div>
     </section>
   );
