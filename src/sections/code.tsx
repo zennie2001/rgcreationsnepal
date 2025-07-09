@@ -9,7 +9,22 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Quote } from "lucide-react";
 
-const testimonials = [
+// Types
+type UserTestimonial = {
+  name: string;
+  rating: number;
+  time: string;
+  image: string;
+  description: string;
+};
+
+type VideoTestimonial = {
+  name: string;
+  videoUrl: string;
+};
+
+// User testimonials
+const testimonials: UserTestimonial[] = [
   {
     name: "Saurav Bhattrai",
     rating: 5,
@@ -44,7 +59,8 @@ const testimonials = [
   },
 ];
 
-const videoTestimonials = [
+// Video testimonials
+const videoTestimonials: VideoTestimonial[] = [
   {
     name: "John Doe",
     videoUrl: "https://www.youtube.com/embed/caQyABPk5L4",
@@ -59,19 +75,14 @@ const videoTestimonials = [
   },
 ];
 
+// User testimonial card
 const TestimonialCard = ({
   name,
   rating,
   time,
   image,
   description,
-}: {
-  name: string;
-  rating: number;
-  time: string;
-  image: string;
-  description: string;
-}) => {
+}: UserTestimonial) => {
   const [expanded, setExpanded] = useState(false);
 
   const CLAMP_CHAR_LIMIT = 200;
@@ -129,13 +140,11 @@ const TestimonialCard = ({
   );
 };
 
+// Video testimonial card
 const VideoTestimonialCard = ({
   name,
   videoUrl,
-}: {
-  name: string;
-  videoUrl: string;
-}) => {
+}: VideoTestimonial) => {
   return (
     <div className="bg-white rounded-sm p-4 shadow-xl max-w-xl mx-auto h-[400px] flex flex-col justify-between">
       <iframe
@@ -145,17 +154,15 @@ const VideoTestimonialCard = ({
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
-      {/* <h3 className="font-bold text-sm text-gray-900 text-center">{name}</h3> */}
     </div>
   );
 };
 
+// Main component
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [tab, setTab] = useState<"user" | "video">("user");
   const swiperRef = useRef<SwiperType | null>(null);
-
-  const currentData = tab === "user" ? testimonials : videoTestimonials;
 
   return (
     <div className="bg-gray-50 py-16">
@@ -218,28 +225,34 @@ export default function Testimonials() {
             }}
             className="px-4 md:px-0"
           >
-            {currentData.map((item, index) => (
-              <SwiperSlide key={index}>
-                {tab === "user" ? (
+            {tab === "user" &&
+              testimonials.map((item, index) => (
+                <SwiperSlide key={index}>
                   <TestimonialCard {...item} />
-                ) : (
+                </SwiperSlide>
+              ))}
+
+            {tab === "video" &&
+              videoTestimonials.map((item, index) => (
+                <SwiperSlide key={index}>
                   <VideoTestimonialCard {...item} />
-                )}
-              </SwiperSlide>
-            ))}
+                </SwiperSlide>
+              ))}
           </Swiper>
 
           {/* Custom Pagination Dots */}
           <div className="flex justify-center gap-2 mt-8">
-            {currentData.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => swiperRef.current?.slideTo(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${
-                  index === activeIndex ? "bg-gray-800" : "bg-gray-300"
-                }`}
-              ></button>
-            ))}
+            {(tab === "user" ? testimonials : videoTestimonials).map(
+              (_, index) => (
+                <button
+                  key={index}
+                  onClick={() => swiperRef.current?.slideTo(index)}
+                  className={`w-3 h-3 rounded-full transition-colors ${
+                    index === activeIndex ? "bg-gray-800" : "bg-gray-300"
+                  }`}
+                ></button>
+              )
+            )}
           </div>
         </div>
 
@@ -248,7 +261,9 @@ export default function Testimonials() {
           <div className="text-[#bfbfbf]/50">
             <span className="text-6xl font-extrabold">CLIENTS</span>
             <div className="mt-2">
-              <span className="text-xl font-medium text-gray-800">SAYS</span>
+              <span className="text-xl font-medium text-gray-800">
+                SAYS
+              </span>
             </div>
           </div>
         </div>
