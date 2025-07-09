@@ -1,6 +1,5 @@
 import React from 'react'
-import { FaQuoteRight } from "react-icons/fa";
-import { Share2, MessageCircle, User } from "lucide-react";
+import { Share2} from "lucide-react";
 import Image from 'next/image';
 
 const page = () => {
