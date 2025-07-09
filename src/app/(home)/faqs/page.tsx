@@ -64,7 +64,7 @@ const StatsSection: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left side - Text content */}
             <div className="">
-              <div className=" border-[16px] md:h-[370px] mt-10 md:mt-0 md:w-[585px] border-[#244d4d] p-8  relative ">
+              <div className=" border-[16px] md:h-[370px] mt-10 md:mt-0 md:w-[585px] border-[#133950] p-8  relative ">
                 {/* Subtle background pattern */}
                 <div className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-transparent"></div>
 
@@ -72,7 +72,7 @@ const StatsSection: React.FC = () => {
                   <h2 className="text-white text-2xl md:text-4xl  font-light mb-2 tracking-wide">
                     SOME
                   </h2>
-                  <h2 className="text-[#d5dd02] text-2xl md:text-5xl font-bold mb-6 tracking-wide">
+                  <h2 className="text-white text-2xl md:text-5xl font-bold mb-6 tracking-wide">
                     INTRESTING FACTS
                   </h2>
 
@@ -99,7 +99,7 @@ const StatsSection: React.FC = () => {
 
                       <div className="relative z-10 text-center">
                         {/* Large number */}
-                        <div className="text-5xl md:text-6xl font-semibold text-[#d5dd02] mb-3  transition-colors duration-300">
+                        <div className="text-5xl md:text-6xl font-semibold text-white mb-3  transition-colors duration-300">
                           {stat.number}
                         </div>
 

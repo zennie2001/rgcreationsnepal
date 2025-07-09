@@ -69,7 +69,7 @@ export default function Home() {
             <div className="space-y-6">
               {howWeHelpItems.map((item, index) => (
                 <div key={index} className="flex items-start gap-4">
-                  <div className="bg-[#0C5B56] text-white font-semibold px-3 py-1  text-sm min-w-[32px] text-center">
+                  <div className="bg-[#133950] text-white font-semibold px-3 py-1  text-sm min-w-[32px] text-center">
                     {item.number}
                   </div>
                   <div>

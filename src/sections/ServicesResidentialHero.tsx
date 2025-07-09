@@ -40,7 +40,7 @@ export default function ServicesResidentialHero() {
 
         <a
           href="#"
-          className="bg-darkGreen text-white text-sm px-6 py-3 rounded-md font-medium transition"
+          className="bg-[#133950] text-white text-sm px-6 py-3 rounded-md font-medium transition"
         >
           GET STARTED
         </a>

@@ -18,7 +18,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-[#333d49] text-white">
       {/* Main Footer Content */}
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
@@ -28,28 +28,25 @@ const Footer = () => {
               The Rise of Smart Homes: Revolutionizing Technology
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Exercitations with consequatur on lorem of quaerat in a encounters
-              rationals and happiness taken fugiat by suscipit occasional
+              At the heart of RG Creations is Ram Giri, a visionary founder whose leadership bridges creative foresight and business execution.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-4">
                 <h4 className="text-white text-base font-semibold">
-                  Our Plain
+                  Our Mission: 
                 </h4>
                 <p className="text-gray-400 text-sm">
-                  Teaching lorem dislikes find distinctio dolore selections and
-                  circumstances distinctio
+                  To empower entrepreneurs by delivering innovative architectural design, high-quality construction services, and end-to-end material solutions.
                 </p>
 
                 <h4 className="text-white font-medium">
-                  Many blinded Frequently
+                  Our vision:
                 </h4>
                 <p className="text-gray-400 text-sm">
-                  Survive largest who use making obscures the consectetur
-                  available
+                  To become a globally recognized leader in innovative design, integrated construction and strategic business
                 </p>
 
-                <h4 className="text-white font-medium">Structures Interest</h4>
+                <h4 className="text-white font-medium">What Sets Us Apart</h4>
                 <p className="text-gray-400 text-sm">
                   Always, original humour undoubtable was our simply way many
                   looked
@@ -58,18 +55,16 @@ const Footer = () => {
               {/* Second Column - Consequuntures */}
               <div className="space-y-6">
                 <h3 className="text-white font-semibold text-base mb-6">
-                  Consequuntures
+                 Our Specialization
                 </h3>
                 <div className="space-y-4">
                   <p className="text-gray-400 text-sm">
-                    Ex qui aut Consequuntures ut denouncing happiness lorem's
-                    pursues laborious
+                    Giving us unmatched insight into the psychology of guests, traffic flow, ambience, sound dynamics
                   </p>
 
-                  <h4 className="text-white font-medium">Ipsum</h4>
+                  <h4 className="text-white font-medium">Areas of expertise</h4>
                   <p className="text-gray-400 text-sm">
-                    Many ducimus pain know-those circumstance, human is the
-                    lorem
+                    Premium Nightclub Construction, Luxurious Residential Developments, Commercial Construction
                   </p>
                 </div>
               </div>
@@ -82,7 +77,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="#"
+                  href="/about/about-us"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   Company History
@@ -90,7 +85,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/about/about-us"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   Mission & Vision
@@ -282,7 +277,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-white pt-4 text-sm">
-              © 2025 RG Creations. <span className="text-gray-300">All rights reserved.</span> 
+              © 2025 RG Creations Nepal. <span className="text-gray-300">All rights reserved.</span> 
             </p>
           </div>
         </div>

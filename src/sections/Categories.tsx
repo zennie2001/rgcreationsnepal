@@ -15,7 +15,7 @@ const WelcomeSection = () => {
                   Welcome to RG Creations Nepal
                 </p>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                  WE ARE <span className="text-[#244d4d]">CREATIVE</span>
+                  WE ARE <span className="text-[#333d49]">CREATIVE</span>
                   <br />
                   BUILDING - DESIGN
                   <br />
@@ -34,7 +34,7 @@ const WelcomeSection = () => {
                 </p>
 
                 <Link href={'/about/about-us'}>
-                <button className="bg-[#244d4d] hover:bg-teal-800 text-white px-8 py-3 mb-20 font-medium text-sm tracking-wide uppercase transition-colors duration-300">
+                <button className="bg-[#133950] hover:bg-teal-800 text-white px-8 py-3 mb-20 font-medium text-sm tracking-wide uppercase transition-colors duration-300">
                   READ MORE
                 </button>
                 </Link>
@@ -45,7 +45,7 @@ const WelcomeSection = () => {
             <div className="relative z-10 md:me-20 ">
               <div>
                 {/* Main Image Container */}
-                <div className="border-[#244d4d] border-[24px] w-full h-60 md:h-72 p-4 md:p-6">
+                <div className="border-[#333d49] border-[24px] w-full h-60 md:h-72 p-4 md:p-6">
                   <img
                     src="/about/mission.jpg"
                     alt="Luxury restaurant interior"
@@ -57,7 +57,7 @@ const WelcomeSection = () => {
           </div>
         </div>
         <div className="flex justify-end px-4 md:px-0 py-8  ">
-          <div className="border-r-8  border-darkGreen pr-4">
+          <div className="border-r-8  border-[#133950] pr-4">
             <div className="text-[#bfbfbf]/50 text-right">
               <span className="text-4xl md:text-6xl font-extrabold">15 YEARS</span>
               <div className="mt-2">

@@ -58,7 +58,7 @@ export default function Header() {
       <div className="container mx-auto  py-0 flex justify-between items-center ">
         {/* Logo */}
         <a href="/" className="font-bold text-xl">
-          <img src="/Rg Logo .svg" alt="Company Logo" className="h-28 w-28" />
+          <img src="/Rg Logo .svg" alt="RG Creation Nepal" className="lg:h-28 lg:w-28 h-20 w-auto" />
         </a>
 
         {/* Desktop Menu */}
@@ -202,7 +202,7 @@ export default function Header() {
 
 
           
-          <a href="/book-appointment" className="hover:bg-[#398181] text-white bg-[#244D4D] p-2  font-medium">
+          <a href="/book-appointment" className="hover:bg-[#333d49] text-white bg-[#133950] p-2  font-medium">
             BOOK A CONSULTATION
           </a>
 

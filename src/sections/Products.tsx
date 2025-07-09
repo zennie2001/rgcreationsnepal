@@ -89,7 +89,7 @@ const LatestProjects = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
               LATEST PROJECTS
             </h2>
-            <div className="w-16 h-1 bg-[#244d4d]"></div>
+            <div className="w-16 h-1 bg-[#133950]"></div>
           </div>
 
           {/* Filter Tabs */}
@@ -203,7 +203,7 @@ const LatestProjects = () => {
 
         {/* Navigation Arrows */}
         <div className="flex gap-2">
-          <button className="w-10 h-10 bg-[#244d4d] hover:bg-[#244d4d] text-white flex items-center justify-center transition-colors duration-300">
+          <button className="w-10 h-10 bg-[#133950] hover:bg-[#244d4d] text-white flex items-center justify-center transition-colors duration-300">
             <svg
               className="w-5 h-5"
               fill="none"
@@ -236,7 +236,7 @@ const LatestProjects = () => {
         </div>
 
         <div className="flex justify-end px-4 md:px-0 py-8">
-          <div className="border-r-8 border-darkGreen pr-4">
+          <div className="border-r-8 border-[#133950] pr-4">
             <div className="text-[#bfbfbf]/50 text-right">
               <span className="text-4xl md:text-6xl font-extrabold">
                 AWESOME

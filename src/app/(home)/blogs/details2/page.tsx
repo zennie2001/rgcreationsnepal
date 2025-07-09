@@ -119,7 +119,7 @@ When the owners of Dejavu Club approached RG Creations, their ambition was clear
                         <h2 className="text-3xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">
                           LATEST BLOGS
                         </h2>
-                        <div className="w-16 h-1 bg-[#244d4d]"></div>
+                        <div className="w-16 h-1 bg-[#133950]"></div>
                       </div>
       
                         {/* blog 1 */}
@@ -146,7 +146,7 @@ When the owners of Dejavu Club approached RG Creations, their ambition was clear
                         />
       
                         {/* Overlay Card */}
-                        <div className="absolute bottom-4  -left-4 bg-[#244d4d] text-white h-24 px-4 rounded-sm max-w-sm z-20">
+                        <div className="absolute bottom-4  -left-4 bg-[#133950] text-white h-24 px-4 rounded-sm max-w-sm z-20">
                           {/* <div className="text-[10px] ms-2 font-medium rotate-90 origin-top-left my-4 opacity-75">
                             10 AUG 2023
                           </div> */}
@@ -183,7 +183,7 @@ When the owners of Dejavu Club approached RG Creations, their ambition was clear
                         />
       
                         {/* Overlay Card */}
-                        <div className="absolute bottom-4  -left-4 bg-[#244d4d] text-white h-24 px-4 rounded-sm max-w-sm z-20">
+                        <div className="absolute bottom-4  -left-4 bg-[#133950] text-white h-24 px-4 rounded-sm max-w-sm z-20">
                           {/* <div className="text-[10px] ms-2 font-medium rotate-90 origin-top-left my-4 opacity-75">
                             10 AUG 2023
                           </div> */}

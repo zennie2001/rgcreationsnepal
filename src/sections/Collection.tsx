@@ -11,7 +11,7 @@ const Collection: React.FC = () => {
           <div className="lg:col-span-3">
             <div className="relative">
               {/* Green rectangle decoration */}
-              <div className="absolute -top-8 left-0 w-16 h-20 bg-darkGreen z-10"></div>
+              <div className="absolute -top-8 left-0 w-16 h-20 bg-[#133950] z-10"></div>
               <img
                 src="/about/newimg.jpg"
                 alt="Traditional Building"
@@ -52,7 +52,7 @@ const Collection: React.FC = () => {
               At RG Creations Nepal, we blend creativity with functionality to deliver<br/> construction designs that are both modern and timeless. From bold <br/>interiors to smart architectural layouts, our projects reflect the latest<br/> trends with a focus on quality and innovation.
 
             </p>
-            <button className="bg-darkGreen hover:bg-darkGreen text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300 flex justify-start">
+            <button className="bg-[#133950] hover:bg-darkGreen text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300 flex justify-start">
               Explore More
             </button>
           </div>
@@ -69,7 +69,7 @@ const Collection: React.FC = () => {
 
         {/* Bottom Text Section */}
         <div className="flex justify-start  px-4 md:px-0 py-8 ">
-          <div className="border-l-8  border-darkGreen pl-4">
+          <div className="border-l-8  border-[#133950] pl-4">
             <div className="text-[#bfbfbf]/50 text-left">
               <span className="text-4xl md:text-6xl font-extrabold">LATEST DESIGN</span>
               <div className="mt-2">

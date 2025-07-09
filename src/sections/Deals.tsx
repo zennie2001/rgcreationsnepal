@@ -26,7 +26,7 @@ const Deals: React.FC = () => {
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
-    <section className="md:py-16 py-6 bg-gray-900">
+    <section className="md:py-16 py-6 bg-[#333d49]">
       <div className="container mx-auto px-4 text-center">
 
         {/* Slider for small screens only */}
@@ -55,7 +55,7 @@ const Deals: React.FC = () => {
                 key={index}
                 onClick={() => swiperRef.current?.slideToLoop(index)} // use slideToLoop for looping
                 className={`w-3 h-3 rounded-full transition-colors ${
-                  index === activeIndex ? "bg-blue-800" : "bg-gray-300"
+                  index === activeIndex ? "bg-[#133950]" : "bg-gray-300"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />

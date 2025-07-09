@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 
-export default function HotelHero() {
+export default function MediaHero() {
   return (
     <section className="relative h-screen w-full text-white">
       {/* Background Image */}
       <Image
-        src="/latest-image (2).jpg" // Replace with your actual image path
+        src="/blog-banner.jpg" // Replace with your actual image path
         alt="Hero Background"
         fill
         className="object-cover z-0"
@@ -21,13 +21,13 @@ export default function HotelHero() {
       <div className="relative z-20 flex flex-col justify-center  items-center text-center h-full px-6">
         <div className=" text-center border-b-2 w-[500px] mb-8">
           <p className="uppercase tracking-wider text-base font-medium mb-4" >
-           Hotel & Resort Construction Experts
+            Media coverage
           </p>
         </div>
 
         <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
-         Build Premier Hotels & Resorts<br className="hidden md:block" /> 
-          with RG Creations Nepal
+          Dive into media coverage stories
+          
         </h1>
 
         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">

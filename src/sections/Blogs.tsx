@@ -42,7 +42,7 @@ function BlogsSection() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start mb-12">
           <div>
-            <p className="text-darkGreen font-medium text-base md:text-lg text-center md:text-left mb-2">
+            <p className="text-[#133950] font-medium text-base md:text-lg text-center md:text-left mb-2">
               Blogs
             </p>
             <h2 className="text-2xl hidden md:flex md:text-3xl lg:text-4xl text-black font-semibold mb-2 text-center md:text-left ">
@@ -55,7 +55,7 @@ function BlogsSection() {
 
           <Link
             href="/blogs"
-            className="bg-darkGreen hover:darkGreen text-white px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-14 rounded-md transition-all"
+            className="bg-[#133950] hover:darkGreen text-white px-4 py-2 md:px-6 md:py-3 mt-4 md:mt-14 rounded-md transition-all"
           >
             Learn More
           </Link>

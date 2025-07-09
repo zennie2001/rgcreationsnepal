@@ -73,7 +73,7 @@ const TestimonialCard = ({
       <div>
         {/* Photo + Name */}
         <div className="relative inline-block">
-          <div className="absolute -top-1 -left-1 w-6 h-6 border-t-4 border-l-4 border-green-900 z-0"></div>
+          <div className="absolute -top-1 -left-1 w-6 h-6 border-t-4 border-l-4 border-[#133950] z-0"></div>
           <img
             src={image}
             alt={name}
@@ -96,7 +96,7 @@ const TestimonialCard = ({
 
         <div className="relative mt-4">
           <Quote
-            className="rotate-180 text-darkGreen fill-darkGreen mb-2"
+            className="rotate-180 text-[#133950] fill-[#133950] mb-2"
             size={16}
           />
           <p className="text-sm text-gray-700 leading-relaxed">
@@ -172,7 +172,7 @@ export default function Testimonials() {
         </div>
 
         {/* Clients Says Section */}
-        <div className="border-l-8 border-darkGreen pl-2">
+        <div className="border-l-8 border-[#133950] pl-2">
           <div className="text-[#bfbfbf]/50">
             <span className="text-6xl font-extrabold">CLIENTS</span>
             <div className="mt-2">

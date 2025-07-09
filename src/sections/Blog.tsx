@@ -79,7 +79,7 @@ const ModernBlogDesign: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
             NEWS & UPDATES
           </h2>
-          <div className="w-16 h-1 bg-black"></div>
+          <div className="w-16 h-1 bg-[#133950]"></div>
         </div>
 
         {/* Blog Layout */}
@@ -109,11 +109,11 @@ const ModernBlogDesign: React.FC = () => {
                   />
 
                   {/* Overlay Card */}
-                  <div className="absolute bottom-4  -left-4 bg-[#244d4d] text-white h-24 px-4 rounded-sm max-w-sm z-20">
+                  <div className="absolute bottom-4  -left-4 bg-[#133950] text-white h-24 px-4 rounded-sm max-w-sm z-20">
                     {/* <div className="text-[10px] ms-2 font-medium rotate-90 origin-top-left my-4 opacity-75">
                       {post.date}
                     </div> */}
-                    <h3 className="text-lg font-bold ms-4 leading-tight -my-2 mb-2 pt-5">
+                    <h3 className=" text-[16px] lg:text-lg font-bold ms-4 leading-tight -my-2 mb-2 pt-5 lg:pt-3">
                       {post.title}
                     </h3>
                   </div>
@@ -149,7 +149,7 @@ const ModernBlogDesign: React.FC = () => {
                     {/* <div className="transform text-xs font-medium mb-3 -rotate-90 lg:-translate-x-52 lg:-translate-y-20 -translate-x-36   opacity-75">
                       {featuredPost.date}
                     </div> */}
-                    <div className="border-[16px] border-[#244d4d] py-6 pl-6 lg:pb-36 lg:pr-6 pr-1 md:py-16">
+                    <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6 lg:pb-36 lg:pr-6 pr-1 md:py-16">
                       <h3 className="text-2xl font-bold leading-tight mb-4">
                       {featuredPost.title}
                     </h3>
@@ -173,7 +173,7 @@ const ModernBlogDesign: React.FC = () => {
         </div>
 
         <div className="flex justify-end px-4 md:px-0 py-8">
-          <div className="border-r-8 border-darkGreen pr-4">
+          <div className="border-r-8 border-[#133950] pr-4">
             <div className="text-[#bfbfbf]/50 text-right">
               <span className="text-4xl md:text-6xl font-extrabold">BLOG</span>
               <div className="mt-2">

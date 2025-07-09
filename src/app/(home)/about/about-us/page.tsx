@@ -13,7 +13,7 @@ export default function Home() {
           {/* Image Section */}
           <div className="relative w-full  md:w-[50%]  md:ms-60 h-[500px]">
             {/* Decorative Border Box */}
-            <div className="absolute top-8 right-14 w-full h-full border-8 border-darkGreen z-0" />
+            <div className="absolute top-8 right-14 w-full h-full border-8 border-[#133950] z-0" />
             {/* Main Image */}
             <div className="relative z-10 w-full h-full overflow-hidden ">
               <Image
