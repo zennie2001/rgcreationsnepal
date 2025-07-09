@@ -36,20 +36,20 @@ const page = () => {
                     <div>
                         <h2 className="text-3xl font-bold flex gap-6  leading-relaxed mb-8 uppercase">
                       
-                        <span>RG Creations Nepal Leads Architectural Innovation in Hospitality Design</span>
+                        <span>RG Creations Nepal driving innovation in hospitality and nightlife architecture</span>
                         </h2>
                         <div className='flex justify-between pb-10'>
                             <div>
-                                <p className='text-lg font-semibold'>- Deshsanchar</p>
-                                <p>June 27, 2025</p>
+                                <p className='text-lg font-semibold'>- Aarthiknews</p>
+                                <p>June 28, 2025</p>
                             </div>
-                            <p>46 Shares</p>
+                            <p>3 Shares</p>
                         </div>
                     </div>
 
                     <div className="w-96 h-64 lg:h-[500px] lg:w-full relative mb-12">
                     <Image
-                        src="/media1.jpg"        // Your image path (public folder or remote)
+                        src="/media3.webp"        // Your image path (public folder or remote)
                         alt="media1" // Alt text for accessibility
                         fill                        // Makes the image fill its parent div
                         style={{ objectFit: 'cover' }} // Optional: crop image to fill div
@@ -59,23 +59,29 @@ const page = () => {
 
 
                     <p className="text-gray-700 leading-relaxed mb-6">
-                      Kathmandu – With 15 years of service in Nepal’s hospitality sector, RG Creations has established itself as a specialist in the design, construction, and operation of premium outlets such as nightclubs, hotels, event venues, and cafés.
+                      KATHMANDU, JUNE 28:  RG Creations Nepal, an architectural and interior design firm based in Baluwatar, Kathmandu, is gaining attention for its growing influence in Nepal’s hospitality and nightlife sectors. With over 15 years of industry experience and a portfolio exceeding 30 projects, the company is redefining the design and functionality of nightclubs, pubs, lounges, boutique hotels, and event venues.
                     </p>
     
                     <p className="text-gray-700 leading-relaxed mb-6">
-                    “We offer exceptional design solutions tailored to investors’ budgets. Our specialty lies in adapting global trends to fit the Nepali market,” said Ram Giri, Executive Chairman of RG Creations.
+                    The firm operates with a 360-degree project approach, involving a multidisciplinary team of architects, interior designers, engineers, acousticians, and lighting specialists. RG Creations is also supported by an international sourcing and research hub, Link World Tech, located in Shenzhen, China.
                     </p>
                      <p className="text-gray-700 leading-relaxed mb-6">
-                        Currently, the company is constructing ‘Legend Nepal,’ an international-standard nightclub in Lazimpat, which will feature over 300 state-of-the-art elements. Previously, RG Creations has developed renowned outlets like Rambagh Mahal, Majestic Grand, and Deja Vu Discotheque.
+                       According to Executive Chairman Ram Giri, RG Creations focuses on blending innovation, cost-efficiency, and cultural relevance. “We don’t just build spaces; we create lasting impressions,” Giri said, emphasizing the firm’s commitment to both aesthetics and functionality.
                     </p>
                      <p className="text-gray-700 leading-relaxed mb-6">
-                        The company operates offices across Nepal and also maintains a presence in Shenzhen, China. Its mission is to contribute to Nepal’s tourism sector through the application of cutting-edge technology.                   
+                        The company has completed several prominent projects in Kathmandu, Pokhara, Dharan, and Itahari, including Deja Vu, Victory Lounge, Full Moon, Faces Lounge, and Rokers Magic. It has also delivered premium venues such as Rambagh Mahal, Majestic Grand, Harshah Batika, Taj Reception, Imperial Banquet, Boudha Heritage, and Royal Empire Boutique Hotel.                  
                      </p>
                      <p className="text-gray-700 leading-relaxed mb-6">
-                        “Our priority is to provide high-quality yet affordable construction services,” said Sumitra Paudel Upreti, Director at RG Creations. The company is executing projects not only in cities like Dharan and Pokhara but also in international locations.                 
+                       One of the firm is ongoing projects is the Legend Nepal Club in Lazimpat, Kathmandu, initiated by entrepreneur Ramesh Karki. Initially exploring foreign designers for the project, Karki later awarded the contract to RG Creations after being introduced to its capabilities and approach.                 
                      </p>
                      <p className="text-gray-700 leading-relaxed mb-6">
-                        “With 20 years of experience, we’re setting new standards by using unique concepts and high-quality materials,” added Giri. The company continues to move forward with the goal of contributing to tourism development in Nepal.                 
+                       Director Sumitra Paudel Upreti stated that the company prioritizes long-term impact over short-term profit. “Our goal is not just to complete a project but to deliver something memorable and meaningful for every client,” she said.                
+                     </p>
+                     <p className="text-gray-700 leading-relaxed mb-6">
+                        RG Creations is also contributing to workforce development in Nepal, employing over 200 individuals across technical and creative disciplines. The company regularly provides international exposure and internal training to its staff, aiming to maintain global standards in design and execution.
+                     </p>
+                     <p className="text-gray-700 leading-relaxed mb-6">
+                        With Nepal witnessing a rise in tourism infrastructure and urban development, RG Creations is positioning itself as a key player in shaping the future of hospitality design in the region.
                      </p>
                     
     
@@ -89,11 +95,19 @@ const page = () => {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-4">
                         {/* <span className="text-sm text-gray-600">Joanna Wellick</span> */}
-                        <span className="text-sm text-gray-400">•</span>
+                        <a
+                            href="https://english.aarthiknews.com/news/detail/18496/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className=" text-[#133950] "
+                            >
+                            Source
+                            </a>
+                                                    <span className="text-sm text-gray-400">•</span>
                         <span className="text-sm text-gray-600">5 min read</span>
                       </div>
                       <div className="flex items-center space-x-4">
-                        <span className="text-sm text-gray-600">46 Shares </span>
+                        <span className="text-sm text-gray-600">3 Shares </span>
                         <div className="flex space-x-2">
                           <button className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
                             <span className="text-white text-xs">f</span>

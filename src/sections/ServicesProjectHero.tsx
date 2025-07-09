@@ -21,11 +21,11 @@ export default function ServicesProjectHero() {
       <div className="relative z-20 flex flex-col justify-center  items-center text-center h-full px-6">
         <div className=" text-center border-b-2 w-[500px] mb-8">
           <p className="uppercase tracking-wider text-base font-medium mb-4" >
-           Project Management & Turnkey Solutions
+           Project Management &<br className="lg:hidden block" /> Turnkey Solutions
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+        <h1 className="text-2xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
            {/* <br className="hidden md:block" />  */}
            Seamlessly Transforming Visions into Reality with End-to-End Expertise Across Residential, Commercial, and Hospitality Projects
 

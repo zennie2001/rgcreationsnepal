@@ -17,7 +17,7 @@ export default function Header() {
     { title: "What Sets Us Apart", href: "/about/sets-apart" },
     { title: "How We Help Our Clients", href: "/about/help-clients" },
     { title: "Health and Safety", href: "/about/health-safety" },
-    { title: "Organizational Chart", href: "/about/organizational-chart" },
+    { title: "Organizational Chart", href: "https://drive.google.com/file/d/1x4dbiNt6LJQjVSZjd0dCGqEvX6BEmkvC/view" },
     { title: "Message from Chairman", href: "/about/message-from-chairman" },
   ];
   const servicesItems = [
@@ -284,6 +284,21 @@ export default function Header() {
                 </a>
               ))}
             </div>
+
+            <div>
+            <p className="font-medium mt-1">News & Updates</p>
+            <div className="ml-4 space-y-1">
+              {newsItems.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.href}
+                  className="block text-sm hover:text-green-500"
+                >
+                  {item.title}
+                </a>
+              ))}
+            </div>
+          </div>
           </div>
           <a href="/contact" className="block hover:text-green-500">
             Contact

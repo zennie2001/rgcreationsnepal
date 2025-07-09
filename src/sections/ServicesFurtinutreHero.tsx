@@ -25,7 +25,7 @@ export default function ServicesFirnitureHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+        <h1 className="text-2xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
            {/* <br className="hidden md:block" />  */}
            Timeless Style and Bespoke Elegance, Delivering Sophisticated, High-Quality Pieces that Transform Residential
 

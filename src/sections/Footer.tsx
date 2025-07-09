@@ -4,9 +4,9 @@ import { User, Phone, MapPin, Mail } from "lucide-react";
 import Link from "next/link";
 import {
   FaFacebookF,
-  FaTwitter,
   FaYoutube,
-  FaLinkedinIn,
+  FaInstagram,
+  FaTiktok,
 } from "react-icons/fa6";
 
 const Footer = () => {
@@ -252,28 +252,36 @@ const Footer = () => {
             {/* Social Media */}
             <div className="flex justify-start md:justify-end space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61557679596813"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white hover:text-white transition-colors"
               >
                 <FaFacebookF className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Frgcreationsnp%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExODRiQnlMY1BMa2duVWlYUAEe1rd0mb7YcDXx3TbVxtrfwQlVVQjudfR6CqXO8F8F0mgtlnGs7-VWFoBzNxg_aem_3Omu_acknpc8Zt2MFvxI-A&h=AT0MTZGwN6ogpJTTWTzTfOvsxDl_TaM1HeIdP0FsgH4K1cUykqnSTaXcfPjPTFj7ZtE0zLdmtYWuQVotnsknnKd0UJMrzuC1jV6ULLqeq_U3yAURVb45j51qpHpLDeSdeV9b"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white hover:text-white transition-colors"
               >
-                <FaTwitter className="w-5 h-5" />
+                <FaInstagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                 href="https://www.youtube.com/@RGCreationsNepal"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white hover:text-white transition-colors"
               >
                 <FaYoutube className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                 href="https://www.tiktok.com/@rgcreationsnp?fbclid=IwY2xjawLbIVNleHRuA2FlbQIxMABicmlkETE4NGJCeUxjUExrZ25VaVhQAR5vzMqzw3k_iFTznoXy5PMYDOBnf20F1UcGrOLeCT3_cVlO3n-GgWAZuzp0kA_aem_gP4OpF90nyrirL88BJ_5Zg"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white hover:text-white transition-colors"
               >
-                <FaLinkedinIn className="w-5 h-5" />
+                <FaTiktok className="w-5 h-5" />
               </a>
             </div>
             <p className="text-white pt-4 text-sm">

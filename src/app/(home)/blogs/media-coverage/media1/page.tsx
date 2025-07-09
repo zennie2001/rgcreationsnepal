@@ -89,8 +89,17 @@ const page = () => {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-4">
                         {/* <span className="text-sm text-gray-600">Joanna Wellick</span> */}
-                        <span className="text-sm text-gray-400">•</span>
-                        <span className="text-sm text-gray-600">5 min read</span>
+                        <a
+                            href="https://english.deshsanchar.com/rg-creations-nepal-leads-architectural-innovation-in-hospitality-design/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className=" text-[#133950] "
+                            
+                            >
+                            Source
+                            </a>
+                                                    <span className="text-sm text-gray-400">•</span>
+                        <span className="text-sm text-gray-600">3 min read</span>
                       </div>
                       <div className="flex items-center space-x-4">
                         <span className="text-sm text-gray-600">46 Shares </span>

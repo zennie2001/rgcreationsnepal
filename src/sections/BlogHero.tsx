@@ -25,7 +25,7 @@ export default function BlogHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+        <h1 className="text-2xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
           Dive into inspiring stories, architectural trends, and behind-the-scenes insights from Nepal’s premier luxury construction company <br className="hidden md:block" /> 
           
         </h1>

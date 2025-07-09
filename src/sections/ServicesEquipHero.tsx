@@ -25,7 +25,7 @@ export default function ServicesEquipmentHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+        <h1 className="text-2xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
            {/* <br className="hidden md:block" />  */}
            Unmatched Sound, Lighting, and Special Effects, Empowering Nightlife Venues
 

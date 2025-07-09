@@ -91,7 +91,7 @@ const page = () => {
                   
                   <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
                    
-                    <div className="border-[16px] border-[#133950] py-6 pl-6  lg:pr-6 pr-1 ">
+                    <div className="lg:border-[16px] lg:border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
                       <h3 className="text-2xl font-bold leading-tight mb-4">
                         RG Creations Nepal Leads Architectural Innovation in Hospitality Design
                       </h3>
@@ -112,7 +112,7 @@ const page = () => {
               </article>
             </Link>
     
-               <Link href={'/blogs/media-coverage/media1'}>
+               <Link href={'/blogs/media-coverage/media2'}>
               <article  className="group cursor-pointer h-full">
                 <div className="relative rounded-sm h-full">
                   {/* Overlay */}
@@ -135,7 +135,7 @@ const page = () => {
                   
                   <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
                    
-                    <div className="border-[16px] border-[#133950] py-6 pl-6  lg:pr-6 pr-1 ">
+                    <div className="lg:border-[16px] lg:border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
                       <h3 className="text-2xl font-bold leading-tight mb-4">
                         RG Creations Nepal Takes The Lead In Architectural Innovation And Hospitality Design
                       </h3>
@@ -156,7 +156,7 @@ const page = () => {
               </article>
               </Link>
     
-               <Link href={'/blogs/media-coverage/media1'}>
+               <Link href={'/blogs/media-coverage/media3'}>
               <article  className="group cursor-pointer h-full">
                 <div className="relative rounded-sm h-full">
                   {/* Overlay */}
@@ -179,7 +179,7 @@ const page = () => {
                   
                   <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
                    
-                    <div className="border-[16px] border-[#133950] py-6 pl-6  lg:pr-6 pr-1 ">
+                    <div className="lg:border-[16px] lg:border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
                       <h3 className="text-2xl font-bold leading-tight mb-4">
                         RG Creations Nepal driving innovation in hospitality and nightlife architecture
                       </h3>
