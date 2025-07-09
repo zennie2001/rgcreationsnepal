@@ -109,7 +109,7 @@ const Hero = () => {
         ))}
       </div>
       {/* Services Section */}
-      <div className="absolute hidden  md:block w-full bottom-12  px-4 z-50">
+      <div className="absolute hidden  md:block w-full bottom-12  px-4 z-30">
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* Night Clubs Design */}

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 
 interface BlogPost {
@@ -31,29 +32,29 @@ const ModernBlogDesign: React.FC = () => {
   const blogPosts: BlogPost[] = [
     {
       id: 1,
-      title: "TITLE OF FIRST BLOG POST",
+      title: "RG Creations Nepal Pvt Ltd – The Leading Architecture and Construction Company in Nepal",
       description:
-        "Exploring modern architectural trends and innovative design solutions for contemporary living spaces.",
+        "RG Creations Nepal Pvt Ltd – The Leading Architecture and Construction Company in Nepal",
       category: "ARCHITECTURE",
-      image: "/blog (1).jpg",
+      image: "/about/rgcreations1(1).jpg",
       date: "18 AUG 2023",
     },
     {
       id: 2,
-      title: "TITLE OF FIRST BLOG POST",
+      title: "Transforming Nightlife: Our Journey Designing One of the World’s Top 40 Nightclubs – Dejavu Club Nepal",
       description:
-        "Modern interior design concepts that blend functionality with aesthetic appeal.",
+        "Transforming Nightlife: Our Journey Designing One of the World’s Top 40 Nightclubs – Dejavu Club Nepal",
       category: "INTERIOR DESIGN",
-      image: "/blog (3).jpg",
+      image: "/about/news3.jpg",
       date: "15 AUG 2023",
     },
     {
       id: 3,
-      title: "SMALL & MINIMAL HOUSE ON PATERS ON HILL",
+      title: " Nepal’s Best Premium Construction Company: Delivering Excellence for Budget-Savvy and Luxury Clients",
       description:
-        "typefaces and layouts, and in appearance most of different generational content of dummy text is nonsensical typefaces dummy text is nonsensical.",
+        " We pride ourselves on being Nepal’s best premium construction company, delivering excellence to both budget-savvy and luxury clients.",
       category: "ARCHITECTURE",
-      image: "/blog (2).jpg",
+      image: "/about/news2.jpg",
       date: "10 AUG 2023",
       featured: true,
     },
@@ -76,7 +77,7 @@ const ModernBlogDesign: React.FC = () => {
         {/* Header */}
         <div className="mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
-            LATEST BLOG
+            NEWS & UPDATES
           </h2>
           <div className="w-16 h-1 bg-black"></div>
         </div>
@@ -84,6 +85,7 @@ const ModernBlogDesign: React.FC = () => {
         {/* Blog Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch relative">
           {/* Left Column - Regular Posts */}
+          <Link href={'/blogs'} >
           <div className="h-full flex flex-col justify-between gap-8">
             {regularPosts.map((post) => (
               <article
@@ -108,10 +110,10 @@ const ModernBlogDesign: React.FC = () => {
 
                   {/* Overlay Card */}
                   <div className="absolute bottom-4  -left-4 bg-[#244d4d] text-white h-24 px-4 rounded-sm max-w-sm z-20">
-                    <div className="text-[10px] ms-2 font-medium rotate-90 origin-top-left my-4 opacity-75">
+                    {/* <div className="text-[10px] ms-2 font-medium rotate-90 origin-top-left my-4 opacity-75">
                       {post.date}
-                    </div>
-                    <h3 className="text-lg font-bold ms-4 leading-tight -my-2 mb-2">
+                    </div> */}
+                    <h3 className="text-lg font-bold ms-4 leading-tight -my-2 mb-2 pt-5">
                       {post.title}
                     </h3>
                   </div>
@@ -119,8 +121,10 @@ const ModernBlogDesign: React.FC = () => {
               </article>
             ))}
           </div>
+          </Link>
 
           {/* Right Column - Featured Post */}
+          <Link href={'/blogs'} >
           {featuredPost && (
             <div className="relative h-full">
               <article className="group cursor-pointer h-full">
@@ -142,9 +146,9 @@ const ModernBlogDesign: React.FC = () => {
 
                   {/* Large Overlay Card */}
                   <div className="absolute  top-1/2 lg:left-60 md:left-60 left-16 transform -translate-y-1/2  text-white  rounded-sm max-w-md z-20">
-                    <div className="transform text-xs font-medium mb-3 -rotate-90 lg:-translate-x-52 lg:-translate-y-20 -translate-x-36   opacity-75">
+                    {/* <div className="transform text-xs font-medium mb-3 -rotate-90 lg:-translate-x-52 lg:-translate-y-20 -translate-x-36   opacity-75">
                       {featuredPost.date}
-                    </div>
+                    </div> */}
                     <div className="border-[16px] border-[#244d4d] py-6 pl-6 lg:pb-36 lg:pr-6 pr-1 md:py-16">
                       <h3 className="text-2xl font-bold leading-tight mb-4">
                       {featuredPost.title}
@@ -165,6 +169,7 @@ const ModernBlogDesign: React.FC = () => {
               </article>
             </div>
           )}
+          </Link>
         </div>
 
         <div className="flex justify-end px-4 md:px-0 py-8">

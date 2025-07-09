@@ -92,14 +92,16 @@ export default function Header() {
             </HeadlessMenu>
           </div>
 
-          {/* About Us Dropdown */}
+          
+            {/* About Us Dropdown */}
+          <nav className="relative z-[9999]">
           <div className="relative group">
             <HeadlessMenu>
               <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium">
                 SERVICES
                 <ChevronDown size={16} />
               </HeadlessMenu.Button>
-              <div className="absolute hidden group-hover:block  bg-white text-gray-800 shadow-lg rounded-md py-2 w-64 z-50">
+              <div className="fixed hidden group-hover:block  bg-white text-gray-800 shadow-lg rounded-md py-2 w-64 z-[9999]">
                 {servicesItems.map((item, index) => (
                   <a
                     key={index}
@@ -112,14 +114,17 @@ export default function Header() {
               </div>
             </HeadlessMenu>
           </div>
-         
+          </nav>
+
+
+           <nav className="relative z-[9999]">
           <div className="relative group">
             <HeadlessMenu>
-              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium">
+              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium ">
                 PROJECTS
                 <ChevronDown size={16} />
               </HeadlessMenu.Button>
-              <div className="absolute hidden group-hover:block  bg-white text-gray-800 shadow-lg rounded-md py-2 w-64 z-50">
+              <div className="absolute hidden group-hover:block  bg-white text-gray-800 shadow-lg rounded-md py-2 w-64 z-[9999] ">
                 {projectItems.map((item, index) => (
                   <a
                     key={index}
@@ -132,6 +137,10 @@ export default function Header() {
               </div>
             </HeadlessMenu>
           </div>
+          </nav>
+         
+        
+         
 
           {/* <a href="/work-process" className="hover:text-green-500 font-medium">
             WORK PROCESS
@@ -181,12 +190,18 @@ export default function Header() {
             </HeadlessMenu>
             </div>
 
+            
+
 
 
 
           <a href="/contact" className="hover:text-green-500 font-medium">
             CONTACT 
           </a>
+
+
+
+          
           <a href="/book-appointment" className="hover:bg-[#398181] text-white bg-[#244D4D] p-2  font-medium">
             BOOK A CONSULTATION
           </a>

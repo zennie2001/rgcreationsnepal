@@ -1,4 +1,5 @@
 "use client";
+
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -6,64 +7,115 @@ import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Quote } from 'lucide-react';
+import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "TAYLOR ROBERTS",
-    role: "Co-manager associated",
-    image: "/person-1.jpg",
+    name: "Saurav Bhattrai",
+    rating: 5,
+    time: "2 months ago",
+    image: "review/unnamed1.png",
     description:
-      "typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces of dummy text is nonsensical.",
+      "Recently I had plan to build a new house for my family. I was seeking for a unique design for my house. I seeked to many architects and engineers for my design. I was not satisfied with the Designs. I finally found RG Creations a perfect place for Construction works. I am very much satisfied with the design and suggestions made by the team. I am very much happy with this organization for engineering works.",
   },
   {
-    name: "ROBERT WILLSON",
-    role: "Co-manager associated",
-    image: "/person-2.jpg",
+    name: "Aagya Bhnadari",
+    rating: 5,
+    time: "4 weeks ago",
+    image: "review/unnamed2.png",
     description:
-      "typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces of dummy text is nonsensical.",
+      "Great designs in RG creations. I have seen the potential in the team of architect, designers, logistic, marketers, editor, field staffs everyone, from developing the projects from concept to launch. Highly recommended consultant for any commercial project.",
   },
   {
-    name: "SARAH JOHNSON",
-    role: "Co-manager associated",
-    image: "/person-1.jpg",
+    name: "Bishal Baral",
+    rating: 5,
+    time: "6 days ago",
+    image: "review/unnamed3.png",
     description:
-      "typefaces and layouts, and in appearance of different general the content of dummy text is nonsensical.typefaces of dummy text is nonsensical.",
+      "Venue, Pricing, Food quality, Cleanliness Hospitality and Service all are awesome. My rating is 9/10",
+  },
+  {
+    name: "Sudeep Acharya",
+    rating: 5,
+    time: "3 months ago",
+    image: "review/unnamed4.png",
+    description:
+      "I had an excellent experience working with RG creation . From start to finish, their team demonstrated professionalism, expertise, and a strong commitment to quality. The project was completed on time and within budget, exceeding my expectations. Their attention to detail and craftsmanship were outstanding, and they maintained clear communication throughout the entire process. I highly recommend RG creation for anyone looking for a reliable and skilled construction company!",
   },
 ];
 
 const TestimonialCard = ({
   name,
-  role,
+  rating,
+  time,
   image,
   description,
 }: {
   name: string;
-  role: string;
+  rating: number;
+  time: string;
   image: string;
   description: string;
-}) => (
-  <div className="bg-white rounded-sm p-8 shadow-xl max-w-xl mx-auto">
-    <div className="relative inline-block">
-      <div className="absolute -top-1 -left-1 w-6 h-6 border-t-4 border-l-4 border-green-900 z-0"></div>
-      <img
-        src={image}
-        alt={name}
-        className="w-16 h-16 object-cover relative flex-shrink-0"
-      />
-    </div>
+}) => {
+  const [expanded, setExpanded] = useState(false);
 
-    <div className="pt-4">
-      <h3 className="font-bold text-sm text-gray-900 mb-1">{name}</h3>
-      <p className="text-xs text-gray-600">{role}</p>
-    </div>
+  const CLAMP_CHAR_LIMIT = 200;
+  const isLong = description.length > CLAMP_CHAR_LIMIT;
 
-    <div className="relative ">
-      <Quote className="rotate-180 text-darkGreen fill-darkGreen my-4" size={16}/>
-      <p className="text-sm text-gray-700 leading-relaxed">{description}</p>
+  const displayedText = expanded
+    ? description
+    : isLong
+      ? description.slice(0, CLAMP_CHAR_LIMIT) + "..."
+      : description;
+
+  return (
+    <div className="bg-white rounded-sm p-8 shadow-xl max-w-xl mx-auto h-[400px] flex flex-col justify-between">
+      <div>
+        {/* Photo + Name */}
+        <div className="relative inline-block">
+          <div className="absolute -top-1 -left-1 w-6 h-6 border-t-4 border-l-4 border-green-900 z-0"></div>
+          <img
+            src={image}
+            alt={name}
+            className="w-16 h-16 object-cover relative flex-shrink-0 rounded-full"
+          />
+        </div>
+
+        <div className="pt-4">
+          <h3 className="font-bold text-sm text-gray-900 mb-1">{name}</h3>
+
+          <div className="flex items-center gap-4 text-xs text-gray-500 mb-1">
+            <div className="flex items-center text-yellow-500">
+              {Array.from({ length: rating }).map((_, i) => (
+                <span key={i}>★</span>
+              ))}
+            </div>
+            <span>{time}</span>
+          </div>
+        </div>
+
+        <div className="relative mt-4">
+          <Quote
+            className="rotate-180 text-darkGreen fill-darkGreen mb-2"
+            size={16}
+          />
+          <p className="text-sm text-gray-700 leading-relaxed">
+            {displayedText}
+          </p>
+          {isLong && !expanded && (
+            <button
+              onClick={() => setExpanded(true)}
+              className="mt-2 text-xs text-darkGreen font-semibold hover:underline"
+            >
+              Read more
+            </button>
+          )}
+        </div>
+      </div>
+      <div></div>
     </div>
-  </div>
-);
+  );
+};
 
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -80,7 +132,7 @@ export default function Testimonials() {
           <div className="w-12 h-0.5 bg-gray-400 mx-auto"></div>
         </div>
 
-        {/* Testimonials Slider */}
+        {/* Swiper Slider */}
         <div className="mb-16">
           <Swiper
             modules={[Navigation, Pagination]}
@@ -114,7 +166,7 @@ export default function Testimonials() {
                 className={`w-3 h-3 rounded-full transition-colors ${
                   index === activeIndex ? "bg-gray-800" : "bg-gray-300"
                 }`}
-              />
+              ></button>
             ))}
           </div>
         </div>
