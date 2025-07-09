@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from "react";
-import { Building, ChevronRight, PenTool, Users } from "lucide-react";
+import React, { useEffect, useState } from "react";
+import { Building, ChevronRight, PenTool, Users , Pause, Play } from "lucide-react";
 import Header from "./Header";
 import Link from "next/link";
 
@@ -9,7 +9,7 @@ const slides = [
   {
     id: 1,
     image: "/mainbanner1.jpg",
-    title: "We are experts and brand creators in the hospitality and \n entertainment industry - from hotels and banquets \n to nightclubs and casinos",
+    title: "We are experts and brand creators in the hospitality and \n entertainment industry - from hotels and banquets  to nightclubs   and casinos",
   },
   {
     id: 2,
@@ -29,15 +29,19 @@ const slides = [
 ];
 
 const Hero = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+ const [currentSlide, setCurrentSlide] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
-  // Auto-play functionality
-  React.useEffect(() => {
+  // Autoplay logic
+  useEffect(() => {
+    if (isPaused) return;
+
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, 6000);
+
     return () => clearInterval(interval);
-  }, []);
+  }, [isPaused]);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -45,6 +49,10 @@ const Hero = () => {
 
   const prevSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
+  const togglePause = () => {
+    setIsPaused((prev) => !prev);
   };
 
   return (
@@ -94,6 +102,14 @@ const Hero = () => {
         className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-2 md:p-3 rounded-full transition-colors"
       >
         <ChevronRight size={20} />
+      </button>
+
+      {/* Pause/Play Button */}
+      <button
+        onClick={togglePause}
+        className="absolute left-1/2 lg:top-[37%] top-[76%]  z-30 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-2 md:p-3 rounded-full transition-colors"
+      >
+        {isPaused ? <Play size={20} /> : <Pause size={20} />}
       </button>
 
       {/* Pagination Dots */}
