@@ -85,7 +85,7 @@ At RG Creations Pvt. Ltd., we bring visions to life through distinctive architec
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Quality Craftsmanship */}
                     <div className="space-y-4">
-                      <div className="w-12 h-12 bg-darkGreen rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 bg-[#133950] rounded-lg flex items-center justify-center">
                         <CheckCircle className="w-6 h-6 text-white" />
                       </div>
                         <h3 className="text-xl font-semibold text-gray-900">
@@ -101,7 +101,7 @@ At RG Creations Pvt. Ltd., we bring visions to life through distinctive architec
 
                     {/* Operational Efficiency */}
                     <div className="space-y-4">
-                      <div className="w-12 h-12 bg-darkGreen rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 bg-[#133950] rounded-lg flex items-center justify-center">
                         <Clock className="w-6 h-6 text-white" />
                       </div>
                       <h3 className="text-xl font-semibold text-gray-900">
@@ -121,7 +121,7 @@ At RG Creations Pvt. Ltd., we bring visions to life through distinctive architec
 
                 {/* Right Content - CTA Card */}
                 <div className="lg:pl-8 md:mt-20">
-                  <div className="bg-darkGreen text-white p-8">
+                  <div className="bg-[#133950] text-white p-8">
                     <h2 className="text-2xl font-bold mb-4">
                       Get a appointment with our Expert
                     </h2>

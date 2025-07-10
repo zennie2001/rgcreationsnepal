@@ -9,6 +9,7 @@ const slides = [
   {
     id: 1,
     image: "/mainbanner1.jpg",
+    description: "First banner",
     title: (
       <>We are experts and brand creators in the hospitality <br />  and  entertainment industry -from hotels <br className="lg:block sm:hidden" /> and  banquets <br className="block lg:hidden" /> to nightclubs   and casinos
       </>
@@ -17,16 +18,19 @@ const slides = [
   {
     id: 2,
     image: "/mainbanner2.jpg",
+    description: "Second banner",
     title: "Luxury Construction. Timeless \n Design. Trusted Excellence",
   },
   {
     id: 3,
     image: "/third.jpg",
+    description: "Third banner",
     title: "Where Vision Meets Structure \n Premium Construction in Nepal",
   },
   {
     id: 4,
     image: "/about/news3.jpg",
+    description: "Forth banner",
     title: "From Nightlife to Luxury Living \n We Build Experiences",
   },
 ];
@@ -71,7 +75,7 @@ const Hero = () => {
           >
             <img
               src={slide.image}
-              alt={slide.title}
+              alt={slide.description}
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/50"></div>
