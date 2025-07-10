@@ -1,42 +1,49 @@
+'use client';
+
+import React, { useState } from 'react';
 import Link from 'next/link';
-import React from 'react';
 
 const ProjectVideoGallery = () => {
   const projects = [
     {
       id: 11,
-      image: "/ImageVideo/Video1.jpg",
-      title: "Luxury Hotel Lobby Video",
+      image: '/ImageVideo/Video1.jpg',
+      title: 'Luxury Hotel Lobby Video',
       width: 1023,
       height: 570,
+      youtubeUrl: 'https://www.youtube.com/embed/Z4ERfjwOJcs',
     },
     {
       id: 12,
-      image: "/ImageVideo/Video2.jpg",
-      title: "Luxury Hotel Lobby Video",
+      image: '/ImageVideo/Video2.jpg',
+      title: 'Luxury Hotel Lobby Video',
       width: 504,
       height: 570,
+      youtubeUrl: 'https://www.youtube.com/embed/tgPWNX0Modc',
     },
     {
       id: 13,
-      image: "/ImageVideo/Video3.jpg",
-      title: "Luxury Hotel Lobby Video",
+      image: '/ImageVideo/Video3.jpg',
+      title: 'Luxury Hotel Lobby Video',
       width: 1566,
       height: 699,
+      youtubeUrl: 'https://www.youtube.com/embed/72Y7GQ_LTls',
     },
     {
       id: 14,
-      image: "/ImageVideo/Video4.jpg",
-      title: "Luxury Hotel Lobby Video",
+      image: '/ImageVideo/Video4.jpg',
+      title: 'Luxury Hotel Lobby Video',
       width: 762,
       height: 699,
+      youtubeUrl: 'https://www.youtube.com/embed/aRdZ5IrQenM',
     },
     {
       id: 15,
-      image: "/ImageVideo/Video5.jpg",
-      title: "Luxury Hotel Lobby Video",
+      image: '/ImageVideo/Video5.jpg',
+      title: 'Luxury Hotel Lobby Video',
       width: 762,
       height: 699,
+      youtubeUrl: 'https://www.youtube.com/embed/KL6GjVHCRS0',
     },
   ];
 
@@ -48,8 +55,10 @@ const ProjectVideoGallery = () => {
     'area-video5',
   ];
 
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
+
   return (
-    <div>
+    <div >
       <section className="w-full py-24 mb-16 bg-white relative overflow-hidden">
         <div className="container mx-auto px-6 lg:px-0 relative z-20">
           {/* Header */}
@@ -63,36 +72,40 @@ const ProjectVideoGallery = () => {
             {/* Filter Tabs */}
             <div className="flex flex-wrap gap-2 md:gap-4">
               <div className="px-4 py-2 text-sm md:text-base font-medium transition-all duration-300">
-                <Link href={'/gallery/photo'}>
-                  <button className='text-gray-400 hover:text-[#244D4D]'>Image</button>
+                <Link href="/gallery/photo">
+                  <button className="text-gray-400 hover:text-[#244D4D]">
+                    Image
+                  </button>
                 </Link>
                 <span className="ml-4 text-gray-300">/ &nbsp; </span>
-                <button className='text-[#244D4D]'>Video</button>
+                <button className="text-[#244D4D]">Video</button>
               </div>
             </div>
           </div>
 
           {/* Gallery Grid */}
-          <div className="
+          <div
+            className="
             grid grid-cols-1
             sm:grid-cols-2
             gap-8
             lg:video-gallery-grid
-          ">
+          "
+          >
             {projects.map((project, index) => (
               <div
                 key={project.id}
                 className={`
-                  rounded overflow-hidden shadow
+                  rounded overflow-hidden shadow cursor-pointer
                   ${areaClasses[index]}
                 `}
+                onClick={() => setActiveVideo(project.youtubeUrl)}
               >
                 <img
                   src={project.image}
                   alt={project.title}
                   className={`
-                    w-full h-[200px] object-cover
-                    lg:w-[${project.width}px] lg:h-[${project.height}px]
+                    w-full h-[400px] object-cover
                   `}
                 />
               </div>
@@ -100,8 +113,32 @@ const ProjectVideoGallery = () => {
           </div>
         </div>
       </section>
+
+      {/* Video Modal */}
+      {activeVideo && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+          <div className="px-8 lg:w-2/3 w-full relative">
+            <button
+              className="absolute -top-4 -right-4 text-white text-3xl font-bold"
+              onClick={() => setActiveVideo(null)}
+            >
+              &times;
+            </button>
+            <div className="w-full  sm:h-[400px] lg:h-[500px]">
+              <iframe
+                src={activeVideo}
+                title="Video Player"
+                frameBorder="0"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+                className="w-full h-full rounded"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
-}
+};
 
 export default ProjectVideoGallery;

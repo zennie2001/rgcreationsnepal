@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Building, ChevronRight, PenTool, Users , Pause, Play } from "lucide-react";
-import Header from "./Header";
+import { ChevronRight , Pause, Play } from "lucide-react";
 import Link from "next/link";
 
 // Hero slides data

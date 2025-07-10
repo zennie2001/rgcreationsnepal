@@ -21,19 +21,18 @@ export default function GalleryHero() {
       <div className="relative z-20 flex flex-col justify-center  items-center text-center h-full px-6">
         <div className=" text-center border-b-2 w-[500px] mb-8">
           <p className="uppercase tracking-wider text-base font-medium mb-4" >
-            Gallery
+            Photo Gallery
           </p>
         </div>
 
         <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
-          Helping Each other – From <br className="hidden md:block" /> Families
-          to Families
+          Captured Moments of Design Excellence – A Visual Showcase
         </h1>
-
+{/* 
         <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">
           Lorem ipsum dolor sit amet consectetur. Consequat ornare morbi aliquet
           porta convallis ultricies imperdiet.
-        </p>
+        </p> */}
 
         <a
           href="#"

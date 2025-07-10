@@ -1,13 +1,11 @@
-import ProjectHero from '@/sections/ProjectHero'
-import ProjectList from '@/sections/ProjectList'
+
+import ProjectOnGoingHero from '@/sections/ProjectOngoingHero'
 import React from 'react'
 
 const page = () => {
   return (
     <div className="overflow-hidden ">
-       <div className='pt-32'>
-        Comming soon....
-       </div>
+       <ProjectOnGoingHero />
         
     </div>
   )

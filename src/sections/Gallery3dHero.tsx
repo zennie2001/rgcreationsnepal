@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-export default function ProjectHero() {
+export default function Gallery3DHero() {
   return (
     <section className="relative h-screen w-full text-white">
       {/* Background Image */}
@@ -21,15 +21,15 @@ export default function ProjectHero() {
       <div className="relative z-20 flex flex-col justify-center  items-center text-center h-full px-6">
         <div className=" text-center border-b-2 w-[500px] mb-8">
           <p className="uppercase tracking-wider text-base font-medium mb-4" >
-           Completed Projects
+            3D Gallery
           </p>
         </div>
 
         <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
-          Each project tells a story — discover our completed works that reflect creativity, craftsmanship, and commitment to quality
+          Immersive Ideas, Intelligent Design – Explore Our 3D Concepts
         </h1>
-
-        {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">
+{/* 
+        <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">
           Lorem ipsum dolor sit amet consectetur. Consequat ornare morbi aliquet
           porta convallis ultricies imperdiet.
         </p> */}

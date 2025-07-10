@@ -6,6 +6,11 @@ import BlogCard from "@/components/BlogCard";
 import Image from "next/image";
 import BlogDetailHero from "@/sections/BlogDetailHero";
 import { FaQuoteRight } from "react-icons/fa";
+import { FaMapPin } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
+import { TbWorld } from "react-icons/tb";
+
 
 
 const BlogPost = () => {
@@ -71,7 +76,276 @@ const BlogPost = () => {
                   <li>Healthcare and educational facilities</li>
                   <li>Renovation and restoration of heritage buildings</li>
                 </ul>
-               
+
+                <h2 className="text-3xl font-bold flex gap-6  leading-relaxed mb-8 uppercase">
+                  <span>Our Mission and Vision</span>
+                  </h2>
+               <div>
+                 <h2 className="lg:text-3xl text-2xl font-bold   leading-relaxed mb-4 uppercase">
+                  <span>Our Mission </span>
+                  </h2>
+                 <h2 className="lg:text-xl font-bold  leading-relaxed mb-4 ">
+                  <span>Excellence in Residential and Commercial Construction</span>
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed mb-8">
+                    At RG Creations Nepal Pvt Ltd, quality construction for residential and commercial projects is now more accessible than ever. We strive to be synonymous with opulence, exceptional craftsmanship, and innovation—delivering projects that leave a lasting impression with timeless sophistication.
+                  </p>
+                  <h2 className="lg:text-xl font-bold  leading-relaxed mb-4 ">
+                  <span>Luxurious Quality and Craftsmanship</span>
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed mb-8">
+                    We are pioneers in architectural innovation, dedicated to crafting distinctive, elegant, and opulent spaces that set the highest standards for uniqueness and creativity.
+                  </p>
+                  <h2 className="lg:text-xl font-bold  leading-relaxed mb-4 ">
+                  <span>Technological Advancements</span>
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed mb-8">
+                   Committed to integrating the latest technologies and premium materials, we ensure our constructions lead in innovation, efficiency, and sustainability.
+                  </p>
+                   <h2 className="lg:text-xl font-bold  leading-relaxed mb-4 ">
+                  <span>Customer-Centric Approach</span>
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed mb-8">
+                   Our mission centers on understanding the unique aspirations of every client, tailoring each project to reflect their personal vision of luxury and sophistication.
+                  </p>
+                   <h2 className="lg:text-xl font-bold  leading-relaxed mb-4 ">
+                  <span>Building Trust, Building Quality</span>
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed mb-8">
+                  More than structures, we build lasting relationships with our clients. At every stage of the construction process, we prioritize quality, transparency, and trust.
+                  </p>
+                   <h2 className="lg:text-xl font-bold  leading-relaxed mb-4 ">
+                  <span>Where Vision Meets Precision</span>
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed mb-8">
+                   We blend our clients’ vision with our construction expertise to create functional, aesthetically pleasing, and durable buildings that consistently exceed expectations.
+                  </p>
+                   <h2 className="lg:text-xl font-bold  leading-relaxed mb-4 ">
+                  <span>RG Creations Nepal Pvt Ltd — The No. 1 Choice for Quality Construction in Residential and Commercial Buildings</span>
+                  </h2>
+
+                  <h2 className="lg:text-3xl text-2xl font-bold   leading-relaxed mb-4 uppercase">
+                  <span>Our Vision </span>
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed mb-8">
+                   To become Nepal’s most trusted and respected architecture and construction firm, known for creativity, reliability, and commitment to sustainable development.
+                  </p>
+                  
+               </div>
+
+               {/* comprehensive services we offer */}
+                <h2 className="text-3xl font-bold flex gap-6  leading-relaxed mb-8 uppercase">
+                  <span>Comprehensive Services We Offer</span>
+                  </h2>
+               <div>
+                 
+                 <h2 className="lg:text-xl font-bold  leading-relaxed mb-4 ">
+                  <span>1. Architectural Design & Planning</span>
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed mb-8">
+                    Our architects combine creativity with technical expertise to deliver bespoke designs that align with client needs, local culture, and environmental conditions. We offer full master planning, conceptualization, and detailed architectural drawings.
+                  </p>
+                  <h2 className="lg:text-xl font-bold  leading-relaxed mb-4 ">
+                  <span>2. Residential Construction</span>
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed mb-8">
+                    From cozy family homes to luxurious villas, our construction teams ensure that every detail, from foundation to finishing, is handled with utmost care and professionalism.
+                  </p>
+                  <h2 className="lg:text-xl font-bold  leading-relaxed mb-4 ">
+                  <span>3. Commercial and Industrial Construction</span>
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed mb-8">
+                   We have vast experience building office complexes, shopping centers, factories, and warehouses. Our solutions prioritize efficiency, safety, and scalability.
+                  </p>
+                   <h2 className="lg:text-xl font-bold  leading-relaxed mb-4 ">
+                  <span>4. Interior Designh</span>
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed mb-8">
+                   Our interior design experts craft functional and aesthetically pleasing interiors that reflect the client’s personality and optimize space usage.
+                  </p>
+                   <h2 className="lg:text-xl font-bold  leading-relaxed mb-4 ">
+                  <span>5. Renovation and Retrofitting</span>
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed mb-8">
+                  We specialize in upgrading existing structures for improved safety, modern amenities, and enhanced aesthetics, while preserving architectural heritage where applicable.
+                  </p>
+                   <h2 className="lg:text-xl font-bold  leading-relaxed mb-4 ">
+                  <span>6. Sustainable and Green Building Solutions</span>
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed mb-8">
+                  We incorporate eco-friendly materials, energy-efficient technologies, and sustainable construction methods to minimize environmental impact.
+
+                  </p>
+                   <h2 className="lg:text-xl font-bold  leading-relaxed mb-4 ">
+                  <span>7. Project Management and Consultation</span>
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed mb-8">
+                  Our dedicated project managers oversee every phase, ensuring timely delivery, budget adherence, and clear communication with clients.
+
+                  </p>
+
+      
+                  
+               </div>
+
+
+               {/* Why Choose RG Creations Nepal Pvt Ltd? */}
+               <h2 className="text-3xl font-bold flex gap-6  leading-relaxed mb-8 uppercase">
+                  <span>Why Choose RG Creations Nepal Pvt Ltd?</span>
+                  </h2>
+                <div className="mb-8">
+                  <ul className="list-disc pl-6 text-gray-700 leading-relaxed space-y-2">
+              <li>
+                <strong>Experience and Expertise:</strong> Years of successful project delivery in Nepal’s diverse geographic and climatic zones.
+              </li>
+              <li>
+                <strong>Client-Centric Approach:</strong> We prioritize your vision, budget, and timeline, offering customized solutions and transparent communication.
+              </li>
+              <li>
+                <strong>Cutting-Edge Technology:</strong> Use of the latest software like BIM (Building Information Modeling) for precise planning and construction.
+              </li>
+              <li>
+                <strong>Quality Assurance:</strong> Strong quality control measures and use of premium materials to ensure durability and safety.
+              </li>
+              <li>
+                <strong>Sustainability Focus:</strong> Commitment to green building practices that reduce carbon footprint and operational costs.
+              </li>
+              <li>
+                <strong>Compliance:</strong> Full adherence to Nepal’s building codes, safety standards, and environmental regulations.
+              </li>
+            </ul>
+
+                </div>
+
+                <h2 className="text-3xl font-bold flex gap-6  leading-relaxed mb-8 uppercase">
+                  <span>Key SEO Keywords We Target</span>
+                  </h2>
+                  <div className="mb-8">
+                    <ul className="list-disc pl-6 text-gray-700 leading-relaxed space-y-2">
+                      <li>Best architecture firm in Nepal</li>
+                      <li>Construction company Kathmandu</li>
+                      <li>Sustainable architecture Nepal</li>
+                      <li>Residential construction Nepal</li>
+                      <li>Commercial building contractors Nepal</li>
+                      <li>Interior design services Kathmandu</li>
+                      <li>Earthquake-resistant building Nepal</li>
+                    </ul>
+
+                  </div>
+
+                  {/* Current Trends in Nepal’s Architecture and Construction */}
+                  <h2 className="text-3xl font-bold flex gap-6  leading-relaxed mb-8 uppercase">
+                  <span>Current Trends in Nepal’s Architecture and Construction</span>
+                  </h2>
+                  <div className="mb-8">
+                    <p className="text-gray-700 leading-relaxed mb-8">
+                      The construction and architectural sectors in Nepal are evolving rapidly, influenced by both local needs and global trends:
+                    </p>
+                     <ul className="list-disc pl-6 text-gray-700 leading-relaxed space-y-2">
+                    <li>
+                      <strong>Earthquake-Resistant Construction:</strong> After the 2015 earthquake, there is a heightened emphasis on seismic safety and resilient designs.
+                    </li>
+                    <li>
+                      <strong>Green and Sustainable Buildings:</strong> Use of solar energy, rainwater harvesting, eco-friendly materials, and energy-efficient HVAC systems is growing.
+                    </li>
+                    <li>
+                      <strong>Smart Homes and Automation:</strong> Increasing adoption of IoT (Internet of Things) devices to enhance comfort and security.
+                    </li>
+                    <li>
+                      <strong>Urban Vertical Growth:</strong> Kathmandu and other cities are witnessing more multi-story residential and commercial buildings due to land scarcity.
+                    </li>
+                    <li>
+                      <strong>Heritage Conservation:</strong> Renovation and adaptive reuse of traditional buildings to preserve Nepal’s rich cultural heritage.
+                    </li>
+                  </ul>
+                  </div>
+
+                  {/* Our Recent Projects */}
+                   <h2 className="text-3xl font-bold flex gap-6  leading-relaxed mb-4 uppercase">
+                  <span>Our Recent Projects</span>
+                  </h2>
+                  <div className="mb-8">
+                    <p className="text-gray-700 leading-relaxed mb-8">
+                      We are proud to showcase some of our recently completed projects:
+                    </p>
+                    <ul className="list-disc pl-6 text-gray-700 leading-relaxed space-y-2">
+                      <li>
+                        <strong>Luxury Residential Villa in Lalitpur:</strong> A blend of modern minimalism and traditional Nepalese style with sustainable building materials.
+                      </li>
+                      <li>
+                        <strong>Commercial Office Building in Kathmandu:</strong> Featuring smart energy systems and open-plan interiors to boost productivity.
+                      </li>
+                      <li>
+                        <strong>Boutique Hotel in Pokhara:</strong> Designed to maximize mountain views while using green building techniques.
+                      </li>
+                      <li>
+                        <strong>Renovation of Historic Building:</strong> Preserving architectural elements while modernizing for safety and functionality.
+                      </li>
+                    </ul>
+
+                   
+
+                  </div>
+
+                    {/* Client Testimonials */}
+                    <h2 className="text-3xl font-bold flex gap-6  leading-relaxed mb-4 uppercase">
+                  <span>Client Testimonials</span>
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed mb-8">
+                    “RG Creations transformed our ideas into a stunning home that fits perfectly into the landscape and our lifestyle. Their team was professional and communicative throughout the project.”<br/>
+                    — Prakash B., Kathmandu
+                  </p>
+                  <p className="text-gray-700 leading-relaxed mb-8">
+                    “Thanks to RG Creations, our office building is not only beautiful but also energy efficient and safe. Their expertise in project management made the whole process seamless.”<br/>
+                    — Shristi R., Lalitpur
+                  </p>
+
+                    {/* How We Work – Our Process */}
+                   <h2 className="text-3xl font-bold flex gap-6  leading-relaxed mb-4 uppercase">
+                  <span>How We Work – Our Process</span>
+                  </h2>
+                  <ol className="list-decimal pl-10 pb-8 text-gray-700 leading-relaxed space-y-2">
+                    <li>
+                      <strong>Initial Consultation:</strong> Understanding your vision, budget, and timeline.
+                    </li>
+                    <li>
+                      <strong>Site Analysis:</strong> Assessing location, terrain, and local regulations.
+                    </li>
+                    <li>
+                      <strong>Design Development:</strong> Creating sketches, 3D models, and detailed plans.
+                    </li>
+                    <li>
+                      <strong>Material Selection:</strong> Advising on durable and sustainable materials.
+                    </li>
+                    <li>
+                      <strong>Construction:</strong> Skilled execution by experienced contractors under expert supervision.
+                    </li>
+                    <li>
+                      <strong>Quality Checks:</strong> Rigorous inspections to ensure standards are met.
+                    </li>
+                    <li>
+                      <strong>Project Handover:</strong> Final walkthrough and client approval.
+                    </li>
+                  </ol>
+
+
+
+                    {/* How We Work – Our Process */}
+                   <h2 className="text-3xl font-bold flex gap-6  leading-relaxed mb-4 uppercase">
+                  <span>Contact RG Creations Nepal Pvt Ltd</span>
+                  </h2>
+                   <p className="text-gray-700 leading-relaxed mb-8">
+                    Are you ready to bring your architectural dreams to life? Whether it’s a new home, commercial space, or renovation project, RG Creations Nepal Pvt Ltd offers unmatched expertise and commitment. Contact us today to discuss your project or schedule a free consultation.
+                   </p>
+                   <p className="text-gray-700 leading-relaxed flex items-center gap-2"><FaMapPin /> Address: Baluwatar, Kathmandu, Nepal</p>
+                   <p className="text-gray-700 leading-relaxed flex items-center gap-2"><FaPhoneAlt /> Phone: +977-1-4524806</p>
+                   <p className="text-gray-700 leading-relaxed flex items-center gap-2"><MdOutlineMail /> Email: info@rgcreationsnepal.com </p>
+                   <p className="text-gray-700 leading-relaxed flex items-center gap-2"> <TbWorld />Website: www.rgcreationsnepal.com</p>
+
+
+                  
+
+
 
               </div>
 
@@ -81,7 +355,7 @@ const BlogPost = () => {
                   <div className="flex items-center space-x-4">
                     {/* <span className="text-sm text-gray-600">Joanna Wellick</span> */}
                     <span className="text-sm text-gray-400">•</span>
-                    <span className="text-sm text-gray-600">2 min read</span>
+                    <span className="text-sm text-gray-600">10 min read</span>
                   </div>
                   <div className="flex items-center space-x-4">
                     <span className="text-sm text-gray-600">Share this</span>

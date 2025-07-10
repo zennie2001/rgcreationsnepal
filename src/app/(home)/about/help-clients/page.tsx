@@ -83,35 +83,36 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 ">
-            <div className="flex flex-col gap-2">
+          <div className="grid lg:grid-cols-2 gap-2 pl-6">
+            <div className="flex flex-col gap-4 ">
               <Image
-                src="/img-rg.png"
+                src="/ImageVideo/image7.jpg"
                 alt="Help Image 1"
-                width={200}
+                width={310}
                 height={300}
                 className="object-cover"
               />
               <Image
-                src="/img-rg3.png"
+                src="/ImageVideo/image4.jpg"
                 alt="Help Image 2"
-                width={200}
+                width={310}
                 height={300}
                 className=""
               />
+              
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-4">
               <Image
-                src="/img-rg4.png"
+                src="/ImageVideo/image3.jpg"
                 alt="Help Image 3"
-                width={200}
+                width={310}
                 height={300}
                 className=""
               />
               <Image
-                src="/third-image.jpg"
+                src="/ImageVideo/image6.jpg"
                 alt="Help Image 4"
-                width={200}
+                width={310}
                 height={300}
                 className=""
               />

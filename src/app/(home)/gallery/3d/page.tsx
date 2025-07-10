@@ -1,10 +1,11 @@
-import GalleryHero from '@/sections/GalleryHero'
+import Gallery3DHero from '@/sections/Gallery3dHero'
+
 import React from 'react'
 
 const page = () => {
   return (
     <div className="overflow-hidden ">
-        <GalleryHero/>
+        <Gallery3DHero/>
     </div>
   )
 }

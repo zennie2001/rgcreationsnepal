@@ -55,7 +55,7 @@ export default function Header() {
           : "absolute top-0 left-0 backdrop-blur-sm bg-transparent text-white"
       }`}
     >
-      <div className="container mx-auto  py-0 flex justify-between items-center ">
+      <div className="container mx-auto  px-4 flex justify-between items-center ">
         {/* Logo */}
         <a href="/" className="font-bold text-xl">
           <img src="/Rg Logo .svg" alt="RG Creation Nepal" className="lg:h-28 lg:w-28 h-20 w-auto" />
