@@ -9,16 +9,19 @@ const slides = [
   {
     id: 1,
     image: "/mainbanner1.jpg",
-    title: "We are experts and brand creators in the hospitality and \n entertainment industry - from hotels and banquets  to nightclubs   and casinos",
+    title: (
+      <>We are experts and brand creators in the hospitality <br />  and  entertainment industry -from hotels <br className="lg:block sm:hidden" /> and  banquets <br className="block lg:hidden" /> to nightclubs   and casinos
+      </>
+    ),
   },
   {
     id: 2,
     image: "/mainbanner2.jpg",
-    title: "Luxury Construction. Timeless Design.\n Trusted Excellence",
+    title: "Luxury Construction. Timeless \n Design. Trusted Excellence",
   },
   {
     id: 3,
-    image: "/about/news2.jpg",
+    image: "/third.jpg",
     title: "Where Vision Meets Structure \n Premium Construction in Nepal",
   },
   {
@@ -81,7 +84,7 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="absolute inset-0 flex items-center md:items-start mt-20 xxl:mt-40 justify-center z-30">
         <div className="text-center  text-white  mx-8  ">
-          <p style={{ whiteSpace: "pre-line" }} className="text-3xl md:text-5xl 4xl:text-4xl font-bold  mb-3 leading-tight">
+          <p style={{ whiteSpace: "pre-line" }} className="text-xl md:text-5xl  font-bold  mb-3 leading-tight  ">
             {slides[currentSlide].title}
           </p>
 

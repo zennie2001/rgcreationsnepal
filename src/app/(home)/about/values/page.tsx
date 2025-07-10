@@ -90,7 +90,7 @@ export default function Home() {
             {/* Foreground image */}
             <div className="relative z-10 overflow-hidden rounded-b-[190px] w-[400px] max-w-full">
               <Image
-                src="/about-values.png"
+                src="/about/1000.jpg"
                 alt="Our Values"
                 width={400}
                 height={600}

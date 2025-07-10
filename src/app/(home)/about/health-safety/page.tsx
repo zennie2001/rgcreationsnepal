@@ -79,7 +79,7 @@ export default function Home() {
 
           <div className="flex justify-center">
             <Image
-              src="/health-safety.jpg"
+              src="/about/3092.jpg"
               alt="Safety Equipment"
               width={300}
               height={400}
