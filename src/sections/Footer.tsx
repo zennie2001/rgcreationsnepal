@@ -8,6 +8,8 @@ import {
   FaInstagram,
   FaTiktok,
 } from "react-icons/fa6";
+import { HiOfficeBuilding } from "react-icons/hi";
+
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -172,6 +174,10 @@ const Footer = () => {
                 CONTACT US
               </h3>
               <div className="space-y-4">
+                <div className="flex pt-4 border-b pb-4 border-gray-600 items-center space-x-3">
+                  <HiOfficeBuilding className="w-6 h-6 text-gray-400 fill-black bg-white rounded-full p-1 " color="black"  />
+                  <span className="text-gray-400 text-sm ">RG Creation Nepal</span>
+                </div>
                 <div className="flex pt-4 border-b pb-4 border-gray-600 items-center space-x-3">
                   <Phone className="w-6 h-6 text-gray-400 fill-black bg-white rounded-full p-1 " color="black"  />
                   <span className="text-gray-400 text-sm ">+01-4524806</span>

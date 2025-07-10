@@ -77,7 +77,7 @@ export default function ContactUs() {
                   Phone
                 </span>
                 <span className="text-gray-500 text-base font-semibold">
-                  2222 4444 8685
+                 +977-01-4524806
                 </span>
               </div>
             </div>
@@ -88,7 +88,7 @@ export default function ContactUs() {
                   Email
                 </span>
                 <span className="text-gray-500 text-base font-semibold">
-                  orders@RGCreation.com
+                  info@rgcreation.com
                 </span>
               </div>
             </div>
