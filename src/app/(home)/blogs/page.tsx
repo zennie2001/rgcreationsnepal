@@ -90,7 +90,7 @@ function Blog() {
               
               <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
                
-                <div className="border-[16px] border-[#133950] py-6 pl-6  lg:pr-6 pr-1 ">
+                <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
                   <h3 className="text-2xl font-bold leading-tight mb-4">
                     RG Creations Nepal Pvt Ltd – The Leading Architecture and Construction Company in Nepal
                   </h3>
@@ -130,7 +130,7 @@ function Blog() {
               
               <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
                
-                <div className="border-[16px] border-[#133950] py-6 pl-6  lg:pr-6 pr-1 ">
+                <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
                   <h3 className="text-2xl font-bold leading-tight mb-4">
                     Transforming Nightlife: Our Journey Designing One of the World’s Top 40 Nightclubs – Dejavu Club Nepal
                   </h3>
@@ -171,9 +171,9 @@ function Blog() {
               
               <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
                
-                <div className="border-[16px] border-[#133950] py-6 pl-6  lg:pr-6 pr-1 ">
+                <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
                   <h3 className="text-2xl font-bold leading-tight mb-4">
-                    Nepal’s Best Premium Construction Company: Delivering Excellence for Budget-Savvy and Luxury Clients
+                    Nepal’s Best Premium Construction Company: Delivering Excellence for Budget-Savvy 
                   </h3>
                   <p className="text-sm opacity-90 leading-relaxed mb-4">
                     We pride ourselves on being Nepal’s best premium construction company, delivering excellence to both budget-savvy and luxury clients.

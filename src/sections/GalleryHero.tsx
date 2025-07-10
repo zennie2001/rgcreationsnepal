@@ -25,7 +25,7 @@ export default function GalleryHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
           Captured Moments of Design Excellence – A Visual Showcase
         </h1>
 {/* 
@@ -35,7 +35,7 @@ export default function GalleryHero() {
         </p> */}
 
         <a
-          href="#"
+          href="/book-appointment"
           className="bg-[#133950] text-white text-sm px-6 py-3 rounded-md font-medium transition"
         >
           GET STARTED

@@ -40,26 +40,27 @@ const safetyItems = [
 
 export default function Home() {
   return (
-    <main className="w-full">
+    <main className="overflow-hidden">
       <AboutChairmanHero />
-      <section className="px-4 container mx-auto py-12 md:px-0 md:py-20 bg-white">
-        <div className="grid md:grid-cols-2 gap-32 items-center">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <div className="">
+        <section className="px-8   py-12  md:py-20 bg-white">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-32 items-center">
+          <div className="lg:pl-12 md:pl-12">
+            <h2 className="text-2xl md:text-4xl font-bold mb-6">
               Building Beyond Structures - 
-              <br />
+              <br className="hidden lg:block" />
               Crafting a Legacy for Nepal
             </h2>
-            <p className="text-gray-700 text-base mb-4">
+            <p className="text-gray-700 text-base mb-4 pr-4">
               It is with great pride and purpose that I welcome you to RG Creations Nepal—a company built on a foundation of trust, creativity, and uncompromising quality. From day one, our mission has been clear: to raise the standard of construction in Nepal by delivering premium, future-ready spaces that inspire, perform, and endure.
             </p>
-            <p className="text-gray-700 text-base mb-4">
+            <p className="text-gray-700 text-base mb-4 pr-4">
               Whether it’s the electrifying ambiance of a world-class nightclub, the sophistication of a luxurious residence, or the refined functionality of a commercial property, we approach every project with passion and precision. Our work on LOD Nepal, ranked #44 in DJ Mag’s Top 100 Clubs 2025, stands as a global example of what Nepali vision and expertise can achieve.
             </p>
-            <p className="text-gray-700 text-base">
+            <p className="text-gray-700 text-base pr-4">
              But construction is only part of our story. At RG Creations, we are equally committed to interior design, premium furniture supply, and sustainable architecture—providing full-spectrum solutions that transform ideas into iconic realities.
             </p>
-            <p className="text-gray-700 text-base">
+            <p className="text-gray-700 text-base pr-4">
              As Chairman, I believe our true success lies not just in what we build, but in how we uplift our people, empower the next generation, and contribute to the future of Nepal. Thank you for being a part of this journey with us.
             </p>
             <p className="text-gray-800 text-base mt-2">
@@ -67,7 +68,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex flex-col w-[400px] h-[600px] items-center text-center pt-16 pl-12">
+          <div className="flex flex-col w-full lg:w-[400px] h-[600px] items-center text-center pt-16 ">
             <img
               src="/about/hero-ram2 (1).jpg"
               alt="Ram Giri"
@@ -82,6 +83,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </div>
 
       <FAQ />
       <Deals />

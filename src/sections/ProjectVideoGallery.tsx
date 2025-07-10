@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useState } from 'react';
 import Link from 'next/link';
@@ -55,10 +55,10 @@ const ProjectVideoGallery = () => {
     'area-video5',
   ];
 
-  const [activeVideo, setActiveVideo] = useState<string | null>(null);
+  const [activeVideoId, setActiveVideoId] = useState<number | null>(null);
 
   return (
-    <div >
+    <div>
       <section className="w-full py-24 mb-16 bg-white relative overflow-hidden">
         <div className="container mx-auto px-6 lg:px-0 relative z-20">
           {/* Header */}
@@ -86,11 +86,11 @@ const ProjectVideoGallery = () => {
           {/* Gallery Grid */}
           <div
             className="
-            grid grid-cols-1
-            sm:grid-cols-2
-            gap-8
-            lg:video-gallery-grid
-          "
+              grid grid-cols-1
+              sm:grid-cols-2
+              gap-8
+              lg:video-gallery-grid
+            "
           >
             {projects.map((project, index) => (
               <div
@@ -99,44 +99,33 @@ const ProjectVideoGallery = () => {
                   rounded overflow-hidden shadow cursor-pointer
                   ${areaClasses[index]}
                 `}
-                onClick={() => setActiveVideo(project.youtubeUrl)}
+                onClick={() =>
+                  setActiveVideoId(
+                    activeVideoId === project.id ? null : project.id
+                  )
+                }
               >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className={`
-                    w-full h-[400px] object-cover
-                  `}
-                />
+                {activeVideoId === project.id ? (
+                  <iframe
+                    src={project.youtubeUrl + "?autoplay=1"}
+                    title={project.title}
+                    frameBorder="0"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                    className="w-full h-[400px] rounded"
+                  ></iframe>
+                ) : (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-[400px] object-cover"
+                  />
+                )}
               </div>
             ))}
           </div>
         </div>
       </section>
-
-      {/* Video Modal */}
-      {activeVideo && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
-          <div className="px-8 lg:w-2/3 w-full relative">
-            <button
-              className="absolute -top-4 -right-4 text-white text-3xl font-bold"
-              onClick={() => setActiveVideo(null)}
-            >
-              &times;
-            </button>
-            <div className="w-full  sm:h-[400px] lg:h-[500px]">
-              <iframe
-                src={activeVideo}
-                title="Video Player"
-                frameBorder="0"
-                allow="autoplay; encrypted-media"
-                allowFullScreen
-                className="w-full h-full rounded"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

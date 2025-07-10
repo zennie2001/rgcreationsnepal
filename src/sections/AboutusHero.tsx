@@ -25,7 +25,7 @@ export default function AboutusHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
           Turning Ideas into Iconic Structures. Driven by Design, <br className="hidden md:block" /> 
             Defined by Excellence
         </h1>
@@ -36,7 +36,7 @@ export default function AboutusHero() {
         </p> */}
 
         <a
-          href={'/about/about-us'}
+          href="/book-appointment"
           className="bg-[#133950] text-white text-sm px-6 py-3 rounded-md font-medium transition"
         >
           GET STARTED

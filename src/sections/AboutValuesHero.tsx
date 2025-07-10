@@ -25,7 +25,7 @@ export default function AboutValuesHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
            Delivering Exceptional Spaces. Committed <br className="hidden md:block" /> 
           to Service, Guaranteed Excellence.
         </h1>
@@ -36,7 +36,7 @@ export default function AboutValuesHero() {
         </p> */}
 
         <a
-          href="#"
+          href="/book-appointment"
           className="bg-[#133950] text-white text-sm px-6 py-3 rounded-md font-medium transition"
         >
           GET STARTED

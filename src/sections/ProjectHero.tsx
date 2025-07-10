@@ -7,7 +7,7 @@ export default function ProjectHero() {
     <section className="relative h-screen w-full text-white">
       {/* Background Image */}
       <Image
-        src="/GalleryHero.jpg" // Replace with your actual image path
+        src="/about/news3.jpg" // Replace with your actual image path
         alt="Hero Background"
         fill
         className="object-cover z-0"
@@ -25,7 +25,7 @@ export default function ProjectHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
           Each project tells a story — discover our completed works that reflect creativity, craftsmanship, and commitment to quality
         </h1>
 

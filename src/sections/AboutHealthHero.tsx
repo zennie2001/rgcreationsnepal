@@ -25,7 +25,7 @@ export default function AboutHealthHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
           Safety First in Every Project. Protecting Lives, <br className="hidden md:block" /> 
            Ensuring Excellence.
         </h1>
@@ -36,7 +36,7 @@ export default function AboutHealthHero() {
         </p> */}
 
         <a
-          href="#"
+          href="/book-appointment"
           className="bg-[#133950] text-white text-sm px-6 py-3 rounded-md font-medium transition"
         >
           GET STARTED

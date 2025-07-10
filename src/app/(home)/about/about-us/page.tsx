@@ -58,9 +58,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="w-full bg-white py-16 px-4 md:px-10 lg:px-20 space-y-16">
+      <div className="w-full bg-white py-16 px-4 md:px-10 lg:px-20 space-y-16 mb-44">
         {/* Vision Section */}
-        <div className="relative grid md:grid-cols-2 items-center gap-6">
+        <div className="relative  grid sm:grid-cols-1 md:grid-cols-2 items-center gap-6">
           <Image
             src="/about/vision.jpg" // replace with your actual image path
             alt="Vision"
@@ -68,7 +68,7 @@ export default function Home() {
             height={600}
             className="w-full h-auto object-cover"
           />
-          <div className="absolute right-36 top-1/2 -translate-y-1/2 bg-white p-8 shadow-lg max-w-md md:max-w-lg">
+          <div className="absolute lg:right-36 lg:top-1/2 lg:-translate-y-1/2 bg-white p-8 shadow-lg max-w-md md:max-w-lg">
             <h2 className="text-2xl font-bold mb-4">OUR VISION</h2>
             <p className="text-sm leading-relaxed text-gray-700 text-justify">
               To become a globally recognized leader in innovative design, integrated construction and strategic business empowerment- delivering transformative spaces and solutions from research to reality. We envision a world where entrepreneurs everywhere have access to world-class environments, expert guidance and the tools to build lasting success.
@@ -81,7 +81,7 @@ export default function Home() {
           {/* Right Half - Image with overlay */}
 
           {/* Text box overlaying from left inside the image half */}
-          <div className="absolute left-36 top-1/2 -translate-y-1/2 bg-black text-white p-8 shadow-lg max-w-lg z-10">
+          <div className="absolute lg:left-36 lg:top-1/2 lg:-translate-y-1/2 bg-black text-white p-8  shadow-lg max-w-lg z-10">
             <h2 className="text-2xl font-bold mb-4">OUR MISSION</h2>
             <p className="text-sm leading-relaxed text-justify">
               At RG Creations, our mission is to empower entrepreneurs by delivering innovative architectural design, high-quality construction services, and end-to-end material solutions. We go beyond building structures- we guide business owners with proven strategies and personalized business models to turn bold ideas into sustainable success.

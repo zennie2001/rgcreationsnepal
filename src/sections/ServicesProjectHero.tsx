@@ -25,7 +25,7 @@ export default function ServicesProjectHero() {
           </p>
         </div>
 
-        <h1 className="text-2xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+        <h1 className="text-2xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
            {/* <br className="hidden md:block" />  */}
            Seamlessly Transforming Visions into Reality with End-to-End Expertise Across Residential, Commercial, and Hospitality Projects
 
@@ -37,7 +37,7 @@ export default function ServicesProjectHero() {
         </p> */}
 
         <a
-          href="#"
+          href="/book-appointment"
           className="bg-[#133950] text-white text-sm px-6 py-3 rounded-md font-medium transition"
         >
           GET STARTED

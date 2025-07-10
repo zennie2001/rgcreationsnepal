@@ -25,13 +25,13 @@ export default function BlogDetail2Hero() {
           </p>
         </div> */}
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
           Nepal’s Best Premium Construction Company: Delivering Excellence for Budget-Savvy and Luxury Clients <br className="hidden md:block" /> 
           
         </h1>
 
          <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">
-         - 2 minute read - 1.6k views - 1.2k shares
+          -10 minute read - 1.6k views - 1.2k shares
         </p> 
 
         {/* <a

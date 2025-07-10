@@ -60,7 +60,7 @@ export default function Home() {
           <div className="flex justify-center items-center">
             <div className="h-full w-full overflow-hidden">
               <Image
-                src="/sets-apart.jpg" 
+                src="/about/contact.jpg" 
                 alt="What Sets Us Apart"
                 width={500}
                 height={700}

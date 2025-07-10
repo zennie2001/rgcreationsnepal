@@ -25,7 +25,7 @@ export default function ServicesNightclubHero() {
           </p>
         </div>
 
-        <h1 className="text-2xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+        <h1 className="text-2xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
            {/* <br className="hidden md:block" />  */}
            Transform Your Venue into the Ultimate Nightlife Experience
 
@@ -37,7 +37,7 @@ export default function ServicesNightclubHero() {
         </p> */}
 
         <a
-          href="#"
+          href="/book-appointment"
           className="bg-[#133950] text-white text-sm px-6 py-3 rounded-md font-medium transition"
         >
           GET STARTED

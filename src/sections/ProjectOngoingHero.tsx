@@ -7,7 +7,7 @@ export default function ProjectOnGoingHero() {
     <section className="relative h-screen w-full text-white">
       {/* Background Image */}
       <Image
-        src="/GalleryHero.jpg" // Replace with your actual image path
+        src="/about/news3.jpg" // Replace with your actual image path
         alt="Hero Background"
         fill
         className="object-cover z-0"
@@ -25,7 +25,7 @@ export default function ProjectOnGoingHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
           Every great design begins with a bold idea — take a closer look at the architectural journeys we’re building right now
         </h1>
 
@@ -35,7 +35,7 @@ export default function ProjectOnGoingHero() {
         </p> */}
 
         <a
-          href="#"
+          href="/book-appointment"
           className="bg-[#133950] text-white text-sm px-6 py-3 rounded-md font-medium transition"
         >
           GET STARTED

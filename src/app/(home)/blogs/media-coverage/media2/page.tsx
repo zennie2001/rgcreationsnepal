@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const page = () => {
   return (
-     <div className="min-h-screen  ">
+     <div className="min-h-screen  overflow-hidden">
           
           <div className='bg-[#133950] h-28 w-full'></div>
           
@@ -47,7 +47,7 @@ const page = () => {
                         </div>
                     </div>
 
-                    <div className="w-96 h-64 lg:h-[500px] lg:w-full relative mb-12">
+                    <div className="w-full h-64 lg:h-[500px] lg:w-full relative mb-12 ">
                     <Image
                         src="/media2.jpeg"        // Your image path (public folder or remote)
                         alt="media1" // Alt text for accessibility

@@ -40,7 +40,7 @@ const safetyItems = [
 
 export default function Home() {
   return (
-    <main className="w-full">
+    <main className="w-full overflow-hidden">
       <AboutHealthHero />
       <section className="px-4 container mx-auto py-12 md:px-0  md:py-20 bg-white text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -77,7 +77,7 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex justify-center py-4">
             <Image
               src="/about/3092.jpg"
               alt="Safety Equipment"

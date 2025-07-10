@@ -100,7 +100,7 @@ const page = () => {
                       </p>
 
                       <p className="text-sm opacity-90 leading-relaxed mb-4 ">
-                        With 15 years of service in Nepal’s hospitality sector, RG Creations has established itself as a specialist in the design, construction, and operation of premium outlets such as nightclubs, hotels, event venues, and cafés.
+                        With 15 years of service in Nepal’s hospitality sector, RG Creations has established itself as a specialist in the design, construction, and operation of premium outlets.
                       </p>
                       <button className="text-xs font-medium tracking-widest hover:underline">
                         READ MORE
