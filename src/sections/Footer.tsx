@@ -207,12 +207,12 @@ const Footer = () => {
                 <div className="flex items-center border-b border-gray-600 pb-4 space-x-3">
                   <MapPin className="w-6 h-6 text-gray-400 fill-black bg-white rounded-full p-1 " color="black"  />
                   <span className="text-gray-400 text-sm">
-                    Balkuwatar Kathmandu, Nepal. 44600
+                    Baluwatar Kathmandu, Nepal. 44600
                   </span>
                 </div>
                  <div className="flex pt-4 border-b pb-4 border-gray-600 items-center space-x-3">
                   <Phone className="w-6 h-6 text-gray-400 fill-black bg-white rounded-full p-1 " color="black"  />
-                  <span className="text-gray-400 text-sm ">+977-01-4524806</span>
+                  <span className="text-gray-400 text-sm ">+977-9802357231 <br/> +977-01-4524806</span>
                 </div>
                 <div className="flex items-center border-b border-gray-600 pb-4 space-x-3">
                   <Mail className="w-6 h-6 text-gray-400 fill-black bg-white rounded-full p-1 " color="black"  />

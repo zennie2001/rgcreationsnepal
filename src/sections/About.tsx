@@ -190,9 +190,10 @@ const Specialization: React.FC = () => {
             </div>
             <div className="order-1 overflow-hidden lg:order-2">
               <img
-                src="/about (7).jpg"
+                // src="/about (7).jpg"
+                src="about/night.jpg"
                 alt="DJ Equipment and Sound Systems"
-                className="w-full h-96 hover:scale-110 duration-300 transition-all object-cover rounded-sm shadow-lg"
+                className="w-auto h-96 hover:scale-110 duration-300 transition-all object-cover rounded-sm shadow-lg"
               />
             </div>
           </div>

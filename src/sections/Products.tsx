@@ -28,8 +28,8 @@ const LatestProjects = () => {
     {
       id: 3,
       category: "Ongoing Projects",
-      image: "/about/majestic.jpg",
-      video: "/Harshah.mp4",
+      image: "/about/poland.png",
+      video: "/poland.mp4",
       title: "Grand Ballroom",
     },
     {

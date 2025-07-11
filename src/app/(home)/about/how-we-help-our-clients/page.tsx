@@ -87,14 +87,14 @@ export default function Home() {
             <div className="flex flex-col gap-4 ">
               <Image
                 src="/ImageVideo/image7.jpg"
-                alt="Help Image 1"
+                alt=" Image 1"
                 width={310}
                 height={300}
                 className="object-cover"
               />
               <Image
                 src="/ImageVideo/image4.jpg"
-                alt="Help Image 2"
+                alt=" Image 2"
                 width={310}
                 height={300}
                 className=""
@@ -104,14 +104,14 @@ export default function Home() {
             <div className="flex flex-col gap-4">
               <Image
                 src="/ImageVideo/image3.jpg"
-                alt="Help Image 3"
+                alt=" Image 3"
                 width={310}
                 height={300}
                 className=""
               />
               <Image
                 src="/ImageVideo/image6.jpg"
-                alt="Help Image 4"
+                alt=" Image 4"
                 width={310}
                 height={300}
                 className=""
