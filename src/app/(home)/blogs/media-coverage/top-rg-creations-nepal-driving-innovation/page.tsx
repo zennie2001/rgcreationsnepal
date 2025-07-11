@@ -43,10 +43,10 @@ const page = () => {
                         </h2>
                         <div className='flex justify-between pb-10'>
                             <div>
-                                <p className='text-lg font-semibold'>- Aarthiknews</p>
+                                <p className='text-lg font-semibold'>Aarthiknews</p>
                                 <p>June 28, 2025</p>
                             </div>
-                            <p>3 Shares</p>
+                            
                         </div>
                     </div>
 
@@ -110,7 +110,7 @@ const page = () => {
                             
                       </div>
                       <div className="flex items-center space-x-4">
-                        <span className="text-sm text-gray-600">3 Shares </span>
+                        
                         <div className="flex space-x-2">
                           {/* Facebook Share */}
                           <a

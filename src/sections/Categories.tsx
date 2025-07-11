@@ -3,7 +3,7 @@ import React from "react";
 
 const WelcomeSection = () => {
   return (
-    <section className="w-full py-20 bg-[#f6f7f8] ">
+    <section className="w-full pt-12 pb-12 bg-[#f6f7f8] ">
       {/* Background Text */}
       <div className="container mx-auto relative">
         <div className="container px-4 md:px-0">
@@ -23,8 +23,8 @@ const WelcomeSection = () => {
                 </h2>
               </div>
 
-              <div className="space-y-6">
-                <p className="text-gray-700 text-sm lg:pr-24 lg:leading-relaxed  text-justify">
+              <div className="space-y-6  lg:w-[450px]">
+                <p className="text-gray-700 text-sm  lg:leading-relaxed pb-4 text-justify">
                   AT RG CREATIONS PVT. LTD., WE DON'T JUST DESIGN BUILDINGS—WE
                   CRAFT ENVIRONMENTS THAT INSPIRE, ENGAGE, AND ELEVATE. BASED IN
                   KATHMANDU, NEPAL AND BACKED BY OVER 15 YEARS OF HANDS-ON
@@ -56,7 +56,7 @@ const WelcomeSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-end px-4 md:px-0 py-8  ">
+        <div className="flex justify-end px-4 md:px-0 pt-8  ">
           <div className="border-r-8  border-[#133950] pr-4">
             <div className="text-[#bfbfbf]/50 text-right">
               <span className="text-4xl md:text-6xl font-extrabold">15 YEARS</span>

@@ -121,7 +121,7 @@ const ProjectVideoGallery = () => {
                       alt={project.title}
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition">
+                    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 hover:bg-opacity-40 transition">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-16 w-16 text-white"

@@ -13,24 +13,24 @@ export default function Header() {
 
   const aboutUsItems = [
     { title: "About Us", href: "/about/about-us" },
-    { title: "Our Values", href: "/about/values" },
-    { title: "What Sets Us Apart", href: "/about/sets-apart" },
-    { title: "How We Help Our Clients", href: "/about/help-clients" },
+    { title: "Our Values", href: "/about/our-values" },
+    { title: "What Sets Us Apart", href: "/about/what-sets-us-apart" },
+    { title: "How We Help Our Clients", href: "/about/how-we-help-our-clients" },
     { title: "Health and Safety", href: "/about/health-safety" },
-    { title: "Organizational Chart", href: "https://drive.google.com/file/d/1x4dbiNt6LJQjVSZjd0dCGqEvX6BEmkvC/view" },
+    { title: "Organizational Chart", href: "https://drive.google.com/file/d/1x4dbiNt6LJQjVSZjd0dCGqEvX6BEmkvC/view"},
     { title: "Message from Chairman", href: "/about/message-from-chairman" },
   ];
   const servicesItems = [
-    { title: "Premium Nightclub Construction", href: "/services/premium-nightclub-construction" },
-    { title: "Luxurious Residential Developments", href: "/services/luxurious-residentials-developments" },
-    { title: "Commercial Construction", href: "/services/commercial-construction" },
-    { title: " Architectural & Interior Design", href: "/services/interior-design" },
-    { title: "Premium Furniture Supply", href: "/services/furniture-supply" },
-    { title: "Nightclub Equipment Supply", href: "/services/nightclub-equipment-supply" },
-    { title: "Project Management & Turnkey Solutions", href: "/services/project-management" },
+    { title: "Premium Nightclub Construction", href: "/services/top-premium-nightclub-construction" },
+    { title: "Luxurious Residential Developments", href: "/services/top-luxurious-residential-developments" },
+    { title: "Commercial Construction", href: "/services/top-commercial-construction" },
+    { title: " Architectural & Interior Design", href: "/services/top-architectural-interior-design" },
+    { title: "Premium Furniture Supply", href: "/services/top-premium-furniture-supply" },
+    { title: "Nightclub Equipment Supply", href: "/services/top-nightclub-equipment-supply" },
+    { title: "Project Management & Turnkey Solutions", href: "/services/top-project-management-turnkey-solutions" },
   ]
   const projectItems = [
-    { title: "On Going Projects", href: "/projectss/on-going" },
+    { title: "On Going Projects", href: "/projectss/ongoing-projects" },
     { title: "Completed Projects", href: "/projectss/completed" },
     
   ];
@@ -41,9 +41,9 @@ export default function Header() {
     
   ];
    const galleryItems = [
-    { title: "Photo Gallery", href: "/gallery/photo" },
-    { title: "Video Gallery", href: "/gallery/video" },
-    { title: "3D Gallery", href: "/gallery/3d" },
+    { title: "Photo Gallery", href: "/gallery/photo-gallery" },
+    { title: "Video Gallery", href: "/gallery/video-gallery" },
+    { title: "3D Gallery", href: "/gallery/3d-gallery" },
     
   ];
 
@@ -85,6 +85,8 @@ export default function Header() {
                   <a
                     key={index}
                     href={item.href}
+                     target={item.title === "Organizational Chart" ? "_blank" : undefined}
+                     rel={item.title === "Organizational Chart" ? "noopener noreferrer" : undefined}
                     className="block px-4 py-2 text-base hover:bg-gray-100"
                   >
                     {item.title}

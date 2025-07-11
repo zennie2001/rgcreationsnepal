@@ -29,10 +29,10 @@ export default function BlogDetail2Hero() {
           Transforming Nightlife: Our Journey Designing One of the World's Top 40 Nightclubs - Dejavu Club Nepal <br className="hidden md:block" /> 
           
         </h1>
-
+{/* 
          <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">
           -10 minute read - 1.6k views - 1.2k shares
-        </p> 
+        </p>  */}
 
         {/* <a
           href="#"

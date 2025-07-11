@@ -30,9 +30,9 @@ export default function BlogDetail3Hero() {
           
         </h1>
 
-         <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">
+         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">
           - 10 minute read - 1.6k views - 1.2k shares
-        </p> 
+        </p>  */}
 
         {/* <a
           href="#"

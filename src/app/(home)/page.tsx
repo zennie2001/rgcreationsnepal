@@ -15,11 +15,18 @@ import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
 import BlogDesign from "@/sections/Blog";
 import Video from "@/sections/Video";
+import SEOContent from "@/components/SEOContent";
 
+export const metadata = {
+  title: "RG Creations Nepal - Top Architecture and Construction Company",
+  description:
+    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+};
 
 export default function Home() {
   return (
     <main className="overflow-hidden">
+      <SEOContent />
       <Hero />
       <Categories />
 

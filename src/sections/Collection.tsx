@@ -1,10 +1,11 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 
 const Collection: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-4">
-      <div className="container mx-auto max-w-7xl">
+    <div className="min-h-screen bg-gray-50 pt-16 px-4">
+      <div className="container mx-auto ">
         {/* Top Section */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-12">
           {/* Left Column - Building Image */}
@@ -52,9 +53,11 @@ const Collection: React.FC = () => {
               At RG Creations Nepal, we blend creativity with functionality to deliver<br/> construction designs that are both modern and timeless. From bold <br/>interiors to smart architectural layouts, our projects reflect the latest<br/> trends with a focus on quality and innovation.
 
             </p>
+            <Link href="/gallery/photo-gallery">
             <button className="bg-[#133950] hover:bg-darkGreen text-white px-8 py-3 rounded-lg font-medium transition-colors duration-300 flex justify-start">
               Explore More
             </button>
+            </Link>
           </div>
 
           {/* Right Column - Modern House Image */}

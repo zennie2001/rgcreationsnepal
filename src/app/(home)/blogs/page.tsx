@@ -67,7 +67,7 @@ function Blog() {
       
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 px-10 lg:px-12">
        
-        <Link href={'/blogs/details1'}>
+        <Link href={'/blogs/top-rg-creations-nepal-the-leading-architecture'}>
           <article  className="group cursor-pointer h-full lg:h-[500px]">
             <div className="relative rounded-sm h-full">
               {/* Overlay */}
@@ -107,7 +107,7 @@ function Blog() {
           </article>
         </Link>
 
-           <Link href={'/blogs/details2'}>
+           <Link href={'/blogs/top-transforming-nightlife-our-journey'}>
           <article  className="group cursor-pointer h-full">
             <div className="relative rounded-sm h-full">
               {/* Overlay */}
@@ -148,7 +148,7 @@ function Blog() {
           </article>
           </Link>
 
-           <Link href={'/blogs/details3'}>
+           <Link href={'/blogs/top-nepals-best-premium-construction-company'}>
           <article  className="group cursor-pointer h-full">
             <div className="relative rounded-sm h-full">
               {/* Overlay */}

@@ -9,10 +9,7 @@ const slides = [
     id: 1,
     image: "/mainbanner1.jpg",
     description: "First banner",
-    title: (
-      <>We are experts and brand creators in the hospitality   and  entertainment industry -from hotels <br className="lg:block hidden" /> and  banquets <br className="block lg:hidden" /> to nightclubs   and casinos
-      </>
-    ),
+    title: "We are experts and brand \n creators in hospitality industry",
   },
   {
     id: 2,

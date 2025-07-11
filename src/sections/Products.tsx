@@ -28,7 +28,7 @@ const LatestProjects = () => {
     {
       id: 3,
       category: "Ongoing Projects",
-      image: "/taj.jpg",
+      image: "/about/majestic.jpg",
       video: "/Harshah.mp4",
       title: "Grand Ballroom",
     },
@@ -81,7 +81,7 @@ const LatestProjects = () => {
       : projects.filter((project) => project.category === activeFilter);
 
   return (
-    <section className="w-full py-14 bg-white relative overflow-hidden">
+    <section className="w-full pt-14 bg-white relative overflow-hidden">
       <div className="container mx-auto px-6 lg:px-0 relative z-20">
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12">

@@ -72,7 +72,7 @@ const ModernBlogDesign: React.FC = () => {
   const featuredPost = filteredPosts.find((post) => post.featured);
 
   return (
-    <div className="w-full bg-gray-50 py-16 px-6 md:px-0">
+    <div className="w-full bg-gray-50 pt-16 px-6 md:px-0">
       <div className="container mx-auto">
         {/* Header */}
         <div className="mb-16">
@@ -153,7 +153,7 @@ const ModernBlogDesign: React.FC = () => {
                       <h3 className="text-2xl font-bold leading-tight mb-4">
                       {featuredPost.title}
                     </h3>
-                    <p className="text-sm opacity-90 leading-relaxed mb-4">
+                    <p className="text-sm opacity-90 hidden lg:block leading-relaxed mb-4">
                       {featuredPost.description}
                     </p>
                     <button className="text-xs font-medium tracking-widest hover:underline">

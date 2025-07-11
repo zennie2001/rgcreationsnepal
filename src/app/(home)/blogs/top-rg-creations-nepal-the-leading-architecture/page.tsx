@@ -350,10 +350,10 @@ const BlogPost = () => {
               </div>
 
               {/* Author and Share Section */}
-              <div className="border-t border-gray-200 pt-6 mt-8">
+              {/* <div className="border-t border-gray-200 pt-6 mt-8">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
-                    {/* <span className="text-sm text-gray-600">Joanna Wellick</span> */}
+                  
                     <span className="text-sm text-gray-400">•</span>
                     <span className="text-sm text-gray-600">10 min read</span>
                   </div>
@@ -372,7 +372,7 @@ const BlogPost = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </article>
           </div>
 
@@ -467,60 +467,7 @@ const BlogPost = () => {
             </div>
           </div>
         </div>
-        {/* Comments Section */}
-        <div className="mt-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">Comments</h2>
-
-          {/* Comment Form */}
-          <div className="mb-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-              <input
-                type="text"
-                placeholder="Name"
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
-              />
-            </div>
-            <textarea
-              placeholder="Your Comment"
-              rows={4}
-              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent mb-4"
-            />
-            <button className="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition-colors">
-              Comment
-            </button>
-          </div>
-
-          {/* Existing Comments */}
-          {/* <div className="space-y-6">
-            {[1, 2, 3].map((comment) => (
-              <div key={comment} className="flex space-x-4">
-                <div className="flex-shrink-0">
-                  <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
-                    <User className="w-6 h-6 text-gray-600" />
-                  </div>
-                </div>
-                <div className="flex-1">
-                  <div className="bg-gray-50 rounded-lg p-4">
-                    <p className="text-gray-700 mb-2">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Duis augue elit, eleifend non mauris et, semper dictum
-                      nunc.
-                    </p>
-                    <div className="flex items-center space-x-4 text-sm text-gray-500">
-                      <span>Jane</span>
-                      <button className="hover:text-gray-700">Reply</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div> */}
-        </div>
+       
       </div>
     </div>
   );

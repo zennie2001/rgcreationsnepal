@@ -75,14 +75,14 @@ const Footer = () => {
 
           {/* Third Column - About RG */}
           <div className="space-y-6">
-            <h3 className="text-white font-semibold text-lg mb-6">About RG</h3>
+            <h3 className="text-white font-semibold text-lg mb-6">About </h3>
             <ul className="space-y-3">
               <li>
                 <Link
                   href="/about/about-us"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
-                  Company History
+                  About Us
                 </Link>
               </li>
               <li>
@@ -90,31 +90,39 @@ const Footer = () => {
                   href="/about/about-us"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
-                  Mission & Vision
+                  Our Values
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/about/what-sets-us-apart"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
-                  Our Team
+                 What Sets Us Apart
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/about/how-we-help-our-clients"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
-                  Certifications & Licenses
+                  How We Help Our Clients
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/about/health-safety"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
-                  Awards & Recognitions
+                  Health and Safety
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about/message-from-chairman"
+                  className="text-gray-400 text-sm hover:text-white transition-colors"
+                >
+                  Message from Chairman
                 </Link>
               </li>
             </ul>
@@ -122,46 +130,63 @@ const Footer = () => {
 
           {/* Fourth Column - We Offer */}
           <div className="space-y-6">
-            <h3 className="text-white font-semibold text-lg mb-6">We Offer</h3>
+            <h3 className="text-white font-semibold text-lg mb-6">Services</h3>
             <ul className="space-y-3">
+              
               <li>
                 <Link
-                  href="#"
+                  href="/services/top-premium-nightclub-construction"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
-                  Architectural Design
+                  Premium Nightclub Construction
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/services/top-luxurious-residential-developments"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
-                  Interior Design
+                  Luxurious Residential Developments
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/services/top-commercial-construction"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
-                  Quality Assurance
+                 Commercial Construction
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/services/top-architectural-interior-design"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
-                  Utilities Installation
+                  Architectural & Interior Design
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/services/top-premium-furniture-supply"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
-                  Finishing Touches
+                  Premium Furniture Supply
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/top-nightclub-equipment-supply"
+                  className="text-gray-400 text-sm hover:text-white transition-colors"
+                >
+                  Nightclub Equipment Supply
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/top-project-management-turnkey-solutions"
+                  className="text-gray-400 text-sm hover:text-white transition-colors"
+                >
+                  Project Management & Turnkey Solutions
                 </Link>
               </li>
             </ul>

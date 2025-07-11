@@ -68,7 +68,7 @@ const page = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 px-10 lg:px-12">
            
-            <Link href={'/blogs/media-coverage/media1'}>
+            <Link href={'/blogs/media-coverage/top-rg-creations-nepal-leads-architectural-innovation-in-hospitality-design'}>
               <article  className="group cursor-pointer h-full lg:h-[500px]">
                 <div className="relative rounded-sm h-full">
                   {/* Overlay */}
@@ -112,7 +112,7 @@ const page = () => {
               </article>
             </Link>
     
-               <Link href={'/blogs/media-coverage/media2'}>
+               <Link href={'/blogs/media-coverage/top-rg-creations-nepal-takes-the-lead-in-innovation'}>
               <article  className="group cursor-pointer h-full">
                 <div className="relative rounded-sm h-full">
                   {/* Overlay */}
@@ -156,7 +156,7 @@ const page = () => {
               </article>
               </Link>
     
-               <Link href={'/blogs/media-coverage/media3'}>
+               <Link href={'/blogs/media-coverage/top-rg-creations-nepal-driving-innovation'}>
               <article  className="group cursor-pointer h-full">
                 <div className="relative rounded-sm h-full">
                   {/* Overlay */}

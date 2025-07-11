@@ -42,7 +42,7 @@ const Specialization: React.FC = () => {
                 ARCHITECTURE, CUTTING-EDGE ACOUSTICS, AND IMMERSIVE LIGHTING TO
                 CREATE UNFORGETTABLE NIGHTLIFE EXPERIENCES.
               </p>
-              <Link href={'/services/premium-nightclub-construction'}>
+              <Link href={'/services/top-premium-nightclub-construction'}>
               <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
                 READ MORE
               </button>
@@ -64,7 +64,7 @@ const Specialization: React.FC = () => {
                 CREATING ELEGANT, HIGH-END HOMES AND APARTMENT COMPLEXES THAT
                 COMBINE TIMELESS DESIGN, COMFORT, AND MODERN FUNCTIONALITY.
               </p>
-              <Link href={'/services/luxurious-residentials-developments'}>
+              <Link href={'/services/top-luxurious-residential-developments'}>
               <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
                 READ MORE
               </button>
@@ -101,7 +101,7 @@ const Specialization: React.FC = () => {
                 COMMERCIAL PROJECTS TAILORED TO MEET YOUR BUSINESS GOALS AND
                 ENHANCE OPERATIONAL SUCCESS.
               </p>
-              <Link href={'/services/commercial-construction'}>
+              <Link href={'/services/top-commercial-construction'}>
               <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
                 READ MORE
               </button>
@@ -123,7 +123,7 @@ const Specialization: React.FC = () => {
                 BOUTIQUE HOTELS, EXCLUSIVE RESIDENCES, AND COMMERCIAL PROPERTIES
                 - EACH CUSTOMIZED TO YOUR VISION.
               </p>
-               <Link href={'/services/interior-design'}>
+               <Link href={'/services/top-architectural-interior-design'}>
               <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
                 READ MORE
               </button>
@@ -160,7 +160,7 @@ const Specialization: React.FC = () => {
                 BLEND STYLE, COMFORT, AND DURABILITY, PERFECT FOR UPSCALE
                 ENVIRONMENTS.
               </p>
-              <Link href={'/services/furniture-supply'}>
+              <Link href={'/services/top-premium-furniture-supply'}>
               <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
                 READ MORE
               </button>
@@ -182,7 +182,7 @@ const Specialization: React.FC = () => {
                 SUPPLYING STATE-OF-THE-ART SOUND SYSTEMS, DYNAMIC LIGHTING, AND
                 SPECIALIZED NIGHTCLUB GEAR THAT ELEVATE ENTERTAINMENT VENUES.
               </p>
-              <Link href={'/services/nightclub-equipment-supply'}>
+              <Link href={'/services/top-nightclub-equipment-supply'}>
               <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
                 READ MORE
               </button>
@@ -217,7 +217,7 @@ const Specialization: React.FC = () => {
                 ENSURING SEAMLESS PROJECT DELIVERY FROM CONCEPT TO COMPLETION -
                 ON TIME, WITHIN BUDGET, AND BEYOND EXPECTATIONS.
               </p>
-               <Link href={'/services/project-management'}>
+               <Link href={'/services/top-project-management-turnkey-solutions'}>
               <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
                 READ MORE
               </button>
