@@ -28,7 +28,7 @@ const slides = [
   },
   {
     id: 4,
-    image: "/about/news3.jpg",
+    image: "/forth.png",
     description: "Forth banner",
     title: "From Nightlife to Luxury Living \n We Build Experiences",
   },

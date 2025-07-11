@@ -7,7 +7,7 @@ export default function BlogDetail2Hero() {
     <section className="relative h-screen w-full text-white">
       {/* Background Image */}
       <Image
-        src="/about/news2.jpg" // Replace with your actual image path
+        src="/about/news3.jpg" // Replace with your actual image path
         alt="Hero Background"
         fill
         className="object-cover z-0"
@@ -26,7 +26,7 @@ export default function BlogDetail2Hero() {
         </div> */}
 
         <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
-          Nepal’s Best Premium Construction Company: Delivering Excellence for Budget-Savvy and Luxury Clients <br className="hidden md:block" /> 
+          Transforming Nightlife: Our Journey Designing One of the World's Top 40 Nightclubs - Dejavu Club Nepal <br className="hidden md:block" /> 
           
         </h1>
 

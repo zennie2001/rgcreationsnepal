@@ -100,9 +100,9 @@ const page = () => {
                       </p>
 
                       <p className="text-sm opacity-90 leading-relaxed mb-4 ">
-                        With 15 years of service in Nepal’s hospitality sector, RG Creations has established itself as a specialist in the design, construction, and operation of premium outlets.
+                        With 15 years of service in Nepal’s hospitality sector, RG Creations has established itself as a specialist in the design, construction, and operation of premium outlets. <span className='hidden lg:block'>We offer exceptional design solutions tailored to investors’ budgets.</span>
                       </p>
-                      <button className="text-xs font-medium tracking-widest hover:underline">
+                      <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
                         READ MORE
                       </button>
                     </div>
@@ -142,11 +142,11 @@ const page = () => {
                        <p className="text-sm opacity-90 leading-relaxed mb-4 text-end">
                         June 27, 2025
                       </p>
-                      <p className="text-sm opacity-90 leading-relaxed mb-4">
-                         RG Creations Nepal is rapidly emerging as a trailblazer in Nepal’s architecture and design scene, particularly within the hospitality and nightlife sectors.
+                      <p className="text-sm  opacity-90 leading-relaxed mb-4">
+                         RG Creations Nepal is rapidly emerging as a trailblazer in Nepal’s architecture and design scene, particularly within the hospitality and nightlife sectors.<span className='hidden lg:block'>With over 15 years of hands-on industry experience and a portfolio of more than 30 recognized, standout projects</span>
     
                       </p>
-                      <button className="text-xs font-medium tracking-widest hover:underline">
+                      <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
                         READ MORE
                       </button>
                     </div>
@@ -187,10 +187,10 @@ const page = () => {
                         June 28, 2025
                       </p>
                       <p className="text-sm opacity-90 leading-relaxed mb-4">
-                        With over 30 landmark projects and a growing national presence, the Kathmandu-based firm is setting new benchmarks in design, functionality, and commercial impact
+                        With over 15 years of industry experience and a portfolio exceeding 30 projects, the company is redefining the design and functionality of nightclubs, pubs, lounges, boutique hotels, and event venues.<span className='hiiden lg:block'>The firm operates with a 360-degree project approach.</span>
     
                       </p>
-                      <button className="text-xs font-medium tracking-widest hover:underline">
+                      <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
                         READ MORE
                       </button>
                     </div>

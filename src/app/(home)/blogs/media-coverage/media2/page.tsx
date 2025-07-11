@@ -1,8 +1,9 @@
 import React from 'react'
-import { Share2} from "lucide-react";
 import Image from 'next/image';
+import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 
 const page = () => {
+  
   return (
      <div className="min-h-screen  overflow-hidden">
           
@@ -95,33 +96,62 @@ const page = () => {
     
                   {/* Author and Share Section */}
                   <div className="border-t border-gray-200 pt-6 mt-8">
-                    <div className="flex items-center justify-between">
+                    <div className="lg:flex items-center justify-between">
                       <div className="flex items-center space-x-4">
                         {/* <span className="text-sm text-gray-600">Joanna Wellick</span> */}
+                        <span className=" text-[#133950]">Source:</span>
                         <a
                             href="https://en.ekagaj.com/articles/rg-creations-nepal-takes-the-lead-in-architectural-innovation-and-hospitality-design/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className=" text-[#133950] "
+                            className=" text-blue-600 hover:text-blue-400  "
                             >
-                            Source
+                            https://en.ekagaj.com/articles/rg-creations-nepal
                             </a>
-                                                    <span className="text-sm text-gray-400">•</span>
-                        <span className="text-sm text-gray-600">6 min read</span>
+                                                   
                       </div>
                       <div className="flex items-center space-x-4">
                         <span className="text-sm text-gray-600">32 Shares </span>
                         <div className="flex space-x-2">
-                          <button className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-                            <span className="text-white text-xs">f</span>
-                          </button>
-                          <button className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-                            <span className="text-white text-xs">t</span>
-                          </button>
-                          <button className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-                            <Share2 className="w-4 h-4 text-white" />
-                          </button>
+                          {/* Facebook Share */}
+                          <a
+                            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                              "https://www.rgcreationsnepal.com/blogs/media-coverage/media2"
+                            )}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-8 h-8 bg-black rounded-full flex items-center justify-center"
+                          >
+                            <FaFacebook className="text-white text-xs" />
+                          </a>
+
+                          {/* Twitter Share */}
+                          <a
+                            href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
+                              "https://www.rgcreationsnepal.com/blogs/media-coverage/media2"
+                            )}&text=${encodeURIComponent(
+                              "Check out this article from RG Creations Nepal!"
+                            )}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-8 h-8 bg-black rounded-full flex items-center justify-center"
+                          >
+                            <FaTwitter className="text-white text-xs" />
+                          </a>
+
+                          {/* WhatsApp Share */}
+                          <a
+                            href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
+                              "Check out this article from RG Creations Nepal! https://www.rgcreationsnepal.com/blogs/media-coverage/media2"
+                            )}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-8 h-8 bg-black rounded-full flex items-center justify-center"
+                          >
+                            <FaWhatsapp className="w-4 h-4 text-white" />
+                          </a>
                         </div>
+
                       </div>
                     </div>
                   </div>
@@ -130,60 +160,7 @@ const page = () => {
     
               
             </div>
-            {/* Comments Section */}
-            <div className="mt-12">
-              <h2 className="text-2xl font-bold text-gray-900 mb-8">Comments</h2>
-    
-              {/* Comment Form */}
-              <div className="mb-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                  />
-                </div>
-                <textarea
-                  placeholder="Your Comment"
-                  rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent mb-4"
-                />
-                <button className="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 transition-colors">
-                  Comment
-                </button>
-              </div>
-    
-              {/* Existing Comments */}
-              {/* <div className="space-y-6">
-                {[1, 2, 3].map((comment) => (
-                  <div key={comment} className="flex space-x-4">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
-                        <User className="w-6 h-6 text-gray-600" />
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <div className="bg-gray-50 rounded-lg p-4">
-                        <p className="text-gray-700 mb-2">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                          Duis augue elit, eleifend non mauris et, semper dictum
-                          nunc.
-                        </p>
-                        <div className="flex items-center space-x-4 text-sm text-gray-500">
-                          <span>Jane</span>
-                          <button className="hover:text-gray-700">Reply</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div> */}
-            </div>
+            
           </div>
         </div>
   )

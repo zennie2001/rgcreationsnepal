@@ -9,7 +9,7 @@ const StatsSection: React.FC = () => {
   const stats: StatItem[] = [
     { number: "25+", label: "Years of industry Expertise" },
     { number: "15+", label: "Signature Projects Completed" },
-    { number: "100%", label: "Customer Satisfaction" },
+    { number: "99%", label: "Customer Satisfaction" },
   ];
 
   return (
@@ -77,11 +77,10 @@ const StatsSection: React.FC = () => {
                   </h2>
 
                   <p className="text-gray-300 text-sm leading-relaxed uppercase tracking-wider font-light">
-                    MORBI MATTIS EX NON URNA CONDIMENTUM, EGET
+                    Numbers that showcase our creativity, 
                     <br />
-                    ELIT ENIM DIAM MOLESTIE. CURABITUR LOREM ENIM,
-                    <br />
-                    MAXIMUS NON NULLA SED, EGESTAS VENENATIS FELIS.
+                    growth, and impact
+                    
                   </p>
                 </div>
               </div>

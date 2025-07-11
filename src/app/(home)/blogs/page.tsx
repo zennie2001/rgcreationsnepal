@@ -91,13 +91,13 @@ function Blog() {
               <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
                
                 <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
-                  <h3 className="text-2xl font-bold leading-tight mb-4">
+                  <h3 className="text-2xl font-bold  leading-tight mb-4">
                     RG Creations Nepal Pvt Ltd – The Leading Architecture and Construction Company in Nepal
                   </h3>
-                  <p className="text-sm opacity-90 leading-relaxed mb-4">
-                    RG Creations has earned a reputation as one of the best architecture and construction companies in Nepal With a commitment to delivering cutting-edge designs.
+                  <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
+                      RG Creations Nepal Pvt Ltd stands as a beacon of excellence in this evolving market. With a commitment to delivering cutting-edge designs and superior construction solutions, RG Creations has earned a reputation as one of the best architecture and construction companies in Nepal.
                   </p>
-                  <button className="text-xs font-medium tracking-widest hover:underline">
+                  <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
                     READ MORE
                   </button>
                 </div>
@@ -134,11 +134,11 @@ function Blog() {
                   <h3 className="text-2xl font-bold leading-tight mb-4">
                     Transforming Nightlife: Our Journey Designing One of the World’s Top 40 Nightclubs – Dejavu Club Nepal
                   </h3>
-                  <p className="text-sm opacity-90 leading-relaxed mb-4">
-                     We proudly undertook this challenge while designing Dejavu Club, which has now earned recognition as one of the world’s top 40 nightclubs.
+                  <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
+                      we share the journey behind the creation of Dejavu Club—a masterpiece of nightclub design that has transformed Nepal’s nightlife scene and placed it firmly on the international map. From concept development to the final execution, discover how our team blended innovative interior design.
 
                   </p>
-                  <button className="text-xs font-medium tracking-widest hover:underline">
+                  <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
                     READ MORE
                   </button>
                 </div>
@@ -175,11 +175,11 @@ function Blog() {
                   <h3 className="text-2xl font-bold leading-tight mb-4">
                     Nepal’s Best Premium Construction Company: Delivering Excellence for Budget-Savvy 
                   </h3>
-                  <p className="text-sm opacity-90 leading-relaxed mb-4">
-                    We pride ourselves on being Nepal’s best premium construction company, delivering excellence to both budget-savvy and luxury clients.
+                  <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
+                    We pride ourselves on being Nepal’s best premium construction company, delivering excellence to both budget-savvy and luxury clients. This comprehensive article explores how RG Creations balances quality and affordability, our approach to construction.
 
                   </p>
-                  <button className="text-xs font-medium tracking-widest hover:underline">
+                  <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
                     READ MORE
                   </button>
                 </div>

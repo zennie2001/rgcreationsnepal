@@ -24,7 +24,7 @@ const WelcomeSection = () => {
               </div>
 
               <div className="space-y-6">
-                <p className="text-gray-700 text-base leading-relaxed max-w-xl text-justify">
+                <p className="text-gray-700 text-sm lg:pr-24 lg:leading-relaxed  text-justify">
                   AT RG CREATIONS PVT. LTD., WE DON'T JUST DESIGN BUILDINGS—WE
                   CRAFT ENVIRONMENTS THAT INSPIRE, ENGAGE, AND ELEVATE. BASED IN
                   KATHMANDU, NEPAL AND BACKED BY OVER 15 YEARS OF HANDS-ON
@@ -34,7 +34,7 @@ const WelcomeSection = () => {
                 </p>
 
                 <Link href={'/about/about-us'}>
-                <button className="bg-[#133950] hover:bg-teal-800 text-white px-8 py-3 mb-20 font-medium text-sm tracking-wide uppercase transition-colors duration-300">
+                <button className="bg-[#133950] hover:bg-teal-800 text-white px-4 py-2 mb-20 font-medium text-sm tracking-wide uppercase transition-colors duration-300">
                   READ MORE
                 </button>
                 </Link>
