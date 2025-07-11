@@ -7,7 +7,7 @@ const ProjectVideoGallery = () => {
   const projects = [
     {
       id: 11,
-      image: '/ImageVideo/Video1.jpg',
+      image: '/about/news3.jpg',
       title: 'Luxury Hotel Lobby Video',
       width: 1023,
       height: 570,
@@ -15,7 +15,7 @@ const ProjectVideoGallery = () => {
     },
     {
       id: 12,
-      image: '/ImageVideo/Video2.jpg',
+      image: '/main-slider2.jpg',
       title: 'Luxury Hotel Lobby Video',
       width: 504,
       height: 570,
@@ -23,7 +23,7 @@ const ProjectVideoGallery = () => {
     },
     {
       id: 13,
-      image: '/ImageVideo/Video3.jpg',
+      image: '/about/rgcreations1(1).jpg',
       title: 'Luxury Hotel Lobby Video',
       width: 1566,
       height: 699,
@@ -39,7 +39,7 @@ const ProjectVideoGallery = () => {
     },
     {
       id: 15,
-      image: '/ImageVideo/Video5.jpg',
+      image: '/dejavu.png',
       title: 'Luxury Hotel Lobby Video',
       width: 762,
       height: 699,
@@ -115,11 +115,23 @@ const ProjectVideoGallery = () => {
                     className="w-full h-[400px] rounded"
                   ></iframe>
                 ) : (
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-[400px] object-cover"
-                  />
+                  <div className="relative w-full h-[400px]">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 transition">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-16 w-16 text-white"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                  </div>
                 )}
               </div>
             ))}

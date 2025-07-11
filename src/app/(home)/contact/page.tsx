@@ -69,11 +69,11 @@ export default function ContactUs() {
             <div className="flex items-center -ms-20 md:ms-0  gap-2 mb-8">
               <Phone
                 size={20}
-                className="text-darkGreen font-semibold"
+                className="text-[#133950] font-semibold"
                 fill="darkGreen"
               />
               <div className="flex flex-col items-start">
-                <span className="text-darkGreen text-base font-semibold">
+                <span className="text-[#133950] text-base font-semibold">
                   Phone
                 </span>
                 <span className="text-gray-500 text-base font-semibold">
@@ -82,23 +82,22 @@ export default function ContactUs() {
               </div>
             </div>
             <div className="flex items-center gap-2 -ms-3 mb-8">
-              <MailOpen size={20} className="text-darkGreen" fill="darkGreen" />
+              <MailOpen size={20} className="text-[#133950" fill="darkGreen" />
               <div className="flex flex-col items-start">
-                <span className="text-darkGreen text-base font-semibold">
+                <span className="text-[#133950] text-base font-semibold">
                   Email
                 </span>
                 <span className="text-gray-500 text-base font-semibold">
-                  info@rgcreation.com
+                  info@rgcreationsnepal.com
                 </span>
               </div>
             </div>
           </div>
           <h2 className="text-3xl text-left font-extrabold text-black mb-4">
-            Get in <span className="text-darkGreen">Touch</span>
+            Get in <span className="text-[#133950">Touch</span>
           </h2>
           <p className="text-gray-600 text-sm mb-6">
-            Contact us anytime. We're happy to assist with product info, orders,
-            or anything else you need.
+           Have a project in mind? Let’s build something extraordinary together. Contact RG Creations Nepal for expert architecture and construction solutions that bring your vision to life.
           </p>
 
           <form className="space-y-4">
@@ -140,7 +139,7 @@ export default function ContactUs() {
 
             <button
               type="submit"
-              className="w-full bg-darkGreen text-white py-2 px-4 rounded"
+              className="w-full bg-[#133950] text-white py-2 px-4 rounded"
               // disabled={status === "loading"}
             >
               Submit
@@ -191,7 +190,7 @@ export default function ContactUs() {
 
         {/* Right side - Image */}
         <div className="w-[90%] mx-auto relative md:w-1/2  ">
-          <div className="absolute bg-darkGreen right-0 h-full w-1/2 z-10"></div>
+          <div className="absolute bg-[#133950] right-0 h-full w-1/2 z-10"></div>
           <div className="relative w-[70%] md:w-[77%] mx-auto h-[77%]  m-20 z-20">
             <img
               src="/about/contact.jpg" // Replace with your actual image

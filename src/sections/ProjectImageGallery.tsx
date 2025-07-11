@@ -28,12 +28,7 @@ const ProjectImageGallery = () => {
       image: "/ImageVideo/Image2.jpg",
       title: "Luxury Hotel Lobby",
     },
-    {
-      id: 3,
-      category: "Image",
-      image: "/ImageVideo/Image3.jpg",
-      title: "Luxury Hotel Lobby",
-    },
+    
     {
       id: 4,
       category: "Image",
@@ -115,7 +110,7 @@ const ProjectImageGallery = () => {
           </div>
 
           {/* Grid of Images */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {projects.map((project, index) => (
               <div
                 key={project.id}
