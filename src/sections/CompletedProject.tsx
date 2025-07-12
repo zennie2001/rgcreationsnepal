@@ -8,66 +8,66 @@ const CompletedProjects = () => {
     {
       id: 1,
       category: "Image",
-      image: "/ImageVideo/Image1.jpg",
-      title: "Harshah Batika",
+      image: "/rambagh.jpg",
+      title: "Rambagh Mahal",
       description:
-        "Harshah Batika, a escape from the city’s hustle and bustle and discovering all-in-one party venue, nestled in a serene and family-friendly location.",
+        "Rambagh Mahal is one of the largest and most luxurious banquet venues, designed to make your special occasions unforgettable. With a seating capacity of up to 2000 guests, our grand banquet hall provides ample parking space for your convenience. Spanning a total area of 22,000 sq. ft., our venue features a stunning 15,000 sq. ft. main hall, a 7,000 sq. ft. upstairs mini hall, and an expansive 10,000 sq. ft. outdoor garden area, offering the perfect setting for any event.",
     },
     {
       id: 2,
       category: "Image",
-      image: "/ImageVideo/Image2.jpg",
-      title: "Modern Suite Interior",
+      image: "/media1.jpg",
+      title: "Harshah Batika",
       description:
-        "Harshah Batika, a escape from the city’s hustle and bustle and discovering all-in-one party venue, nestled in a serene and family-friendly location.",
+        "Harshah Batika is a serene and family- friendly party venue in Kathmandu, spanning over 11 ropani of land. It features a charming Neo-Classical architectural design, making it ideal for various events, including corporate meetings and weddings. With elegant interiors and state-of-the-art facilities, it promises meticulous planning and exceptional service for an unforgettable experience.",
     },
     {
       id: 4,
       category: "Image",
       image: "/ImageVideo/Image4.jpg",
-      title: "Banquet Hall Design",
+      title: "Royal Empire Boutique Hotel",
       description:
-        "Harshah Batika, a escape from the city’s hustle and bustle and discovering all-in-one party venue, nestled in a serene and family-friendly location."
+        "Royal Empire Boutique Hotel is the ideal choice for a memorable stay in the vibrant city of Kathmandu. As you step into the hotel, you will be greeted by a warm and friendly staff, ready to cater to your every need. With a total of 15 well-appointed rooms, each thoughtfully designed to provide a tranquil oasis amidst the bustling city, you are guaranteed a peaceful and restful night's sleep. The rooms are tastefully decorated with modern amenities and feature comfortable beds, ensuring that you wake up refreshed and ready to explore all that Kathmandu has to offer. "
     },
     {
       id: 5,
       category: "Image",
       image: "/ImageVideo/Image5.jpg",
-      title: "Nightclub Lighting",
+      title: "Club Deja vu",
       description:
-        "Harshah Batika, a escape from the city’s hustle and bustle and discovering all-in-one party venue, nestled in a serene and family-friendly location.",
+        "Déjà Vu Lounge, located in Durbar Marg, Kathmandu, offers a vibrant nightlife experience with a dance club atmosphere and gourmet dining. As an upscale venue, it caters to locals and tourists seeking memorable evenings. With a focus on entertainment and special events, Déjà Vu Lounge promotes active engagement on social media, showcasing its inviting ambiance and upcoming nightlife happenings.",
     },
     {
       id: 6,
       category: "Image",
-      image: "/ImageVideo/Image6.jpg",
-      title: "Luxury Outdoor Pool",
+      image: "/about/majestic.jpg",
+      title: "Majestic Grand Nepal",
       description:
-        "A serene outdoor pool area surrounded by modern architecture and landscaping.",
+        "The Majestic Grand is a beautifully designed banquet hall ideal for special occasions. It features elegant decor and a charming ambiance, enhancing the overall experience for guests. With convenient access to nearby attractions, the venue offers comprehensive event planning assistance, catering, and transportation arrangements, ensuring that each celebration is memorable and fits within budget.",
     },
     {
       id: 7,
       category: "Image",
-      image: "/ImageVideo/Image7.jpg",
-      title: "Restaurant Interior",
+      image: "/bouddha.jpg",
+      title: "Boudha Heritage",
       description:
-        "An inviting restaurant interior blending warmth and modern sophistication.",
+        "Boudha Heritage in Kathmandu is a versatile venue perfect for weddings, receptions, and intimate gatherings, blending cultural richness with serenity. It offers various event services, including anniversaries and rice feeding ceremonies, fostering memorable celebrations. For bookings and inquiries, contact them via email or phone. The venue also shares visual highlights of recent events on social media, showcasing its unique charm.",
     },
     {
       id: 8,
       category: "Image",
-      image: "/ImageVideo/Image8.jpg",
-      title: "Hotel Reception Area",
+      image: "/media2.jpeg",
+      title: "Imperial Banquet",
       description:
-        "A contemporary reception area offering a luxurious welcome experience.",
+        "The Imperial Banquet is an opulent feast held to celebrate significant events or dignitaries in a monarchy. Attendees included nobility and esteemed guests, with an extravagant menu showcasing rare delicacies and fine wines. The banquet featured artistic presentations, performances, and elaborate decorations, reflecting the empire's wealth and cultural heritage. It served both as a diplomatic gesture and a display of power and prestige."
     },
     {
       id: 9,
       category: "Image",
       image: "/ImageVideo/Image9.jpg",
-      title: "VIP Lounge Design",
+      title: "Taaj Reception",
       description:
-        "Exclusive VIP lounge with plush seating and bespoke interior details.",
+        "Taaj Reception, located in Baluwatar, Kathmandu, offers an opulent ballroom and customizable event spaces perfect for weddings and special occasions. The venue features a dedicated professional team, state-of- the-art amenities, and flexible catering options to suit various budgets. With its elegant ambiance and prime location, Taaj Reception aims to create unforgettable experiences for guests and hosts alike.",
     },
   ];
 

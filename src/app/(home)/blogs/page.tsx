@@ -1,9 +1,15 @@
-"use client";
+
 
 import Link from "next/link";
 import React from "react";
 import { FiChevronDown } from "react-icons/fi";
 import BlogHero from "@/sections/BlogHero";
+
+export const metadata = {
+  title: "Blogs - RG Creations Nepal ",
+  description:
+    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+};
 
 const blogs = [
   {

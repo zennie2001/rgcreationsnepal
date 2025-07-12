@@ -9,6 +9,13 @@ import { FaQuoteRight } from "react-icons/fa";
 import BlogDetail3Hero from "@/sections/BlogDetail3Hero";
 
 
+
+export const metadata = {
+  title: "Nepal’s Best Premium Construction Company: Delivering Excellence for Budget-Savvy ",
+  description:
+    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+};
+
 const BlogPost = () => {
   return (
     <div className="min-h-screen  ">

@@ -3,6 +3,13 @@ import React from 'react'
 import { ArrowRight, CheckCircle, Clock } from "lucide-react";
 import ServicesEquipmentHero from '@/sections/ServicesEquipHero';
 import Link from 'next/link';
+import EquipmentVideo from '@/sections/EquipmentVideo';
+
+export const metadata = {
+  title: "Nightclub Equipment Supply - RG Creations Nepal ",
+  description:
+    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+};
 
 const page = () => {
   return (
@@ -56,7 +63,7 @@ const page = () => {
           </section> */}
 
           {/* Main Content Section */}
-          <section className="py-16 px-4 lg:px-8">
+          <section className="pt-16 px-4 lg:px-8">
             <div className="max-w-7xl mx-auto">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                 {/* Left Content */}
@@ -135,10 +142,53 @@ const page = () => {
                   </div>
                 </div>
               </div>
+
+
+              <div className=" pt-12
+                grid 
+                grid-cols-2 
+                lg:grid-cols-4 
+                gap-4
+              ">
+                <div className="overflow-hidden">
+                  <img
+                    src="/about/equip1.jpg"
+                    alt="Image 1"
+                    className="w-auto h-64 object-cover rounded-sm hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="overflow-hidden">
+                  <img
+                    src="/about/equip4.jpg"
+                    alt="Image 2"
+                    className="w-auto h-64 object-cover rounded-sm hover:scale-110 transition-transform duration-300 "
+                  />
+                </div>
+
+                <div className="overflow-hidden">
+                  <img
+                    src="/about/equip3.jpg"
+                    alt="Image 3"
+                    className="w-64 h-auto object-cover rounded-sm hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+
+                <div className="overflow-hidden">
+                  <img
+                    src="/about/equip2.jpg"
+                    alt="Image 4"
+                    className="w-64 h-auto object-cover rounded-sm hover:scale-110 transition-transform duration-300 "
+                  />
+                </div>
+              </div>
+
             </div>
           </section>
         </div>
       </section>
+
+      <EquipmentVideo/>
 
     </div>
   )

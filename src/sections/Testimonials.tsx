@@ -63,7 +63,7 @@ const testimonials: UserTestimonial[] = [
 const videoTestimonials: VideoTestimonial[] = [
   {
     name: "John Doe",
-    videoUrl: "https://www.youtube.com/embed/caQyABPk5L4",
+    videoUrl: "https://www.youtube.com/embed/Bj_luIBQ7n0",
   },
   {
     name: "Jane Smith",
@@ -71,11 +71,11 @@ const videoTestimonials: VideoTestimonial[] = [
   },
   {
     name: "Michael Johnson",
-    videoUrl: "https://www.youtube.com/embed/E45U5jpfZ8s",
+    videoUrl: "https://www.youtube.com/embed/6fRTBd98gGk",
   },
   {
     name: "Michael Johnson",
-    videoUrl: "https://www.youtube.com/embed/jzZ1uJQWQq8",
+    videoUrl: "https://www.youtube.com/embed/uH8RtWx-nRI",
   },
 ];
 

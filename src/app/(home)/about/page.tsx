@@ -1,4 +1,4 @@
-"use client";
+
 import knifeImage from "@/assets/images/image-about.jpg";
 import PageHeader from "@/components/PageHeader";
 import aboutSecondImage from "@/assets/images/about-blade2.jpg";
@@ -31,7 +31,7 @@ const socialMedia = [
 ];
 
 export default function AboutPage() {
-  const [showMessage, setShowMessage] = useState<boolean>(false);
+  
 
   return (
     <main className="w-full  overflow-hidden">

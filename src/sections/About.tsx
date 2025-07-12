@@ -170,7 +170,36 @@ const Specialization: React.FC = () => {
         </div>
 
         {/* Nightclub Equipment Supply Section */}
-        <div className="mb-10">
+           <div className="mb-10">
+          <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1 lg:pr-8">
+               <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
+                NIGHTCLUB EQUIPMENT
+                <br />
+                SUPPLY
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed mb-8 text-justify">
+               SUPPLYING STATE-OF-THE-ART SOUND SYSTEMS, DYNAMIC LIGHTING, AND
+                SPECIALIZED NIGHTCLUB GEAR THAT ELEVATE ENTERTAINMENT VENUES.
+              </p>
+               <Link href={'/services/top-architectural-interior-design'}>
+              <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
+                READ MORE
+              </button>
+              </Link>
+            </div>
+            <div className="order-1 overflow-hidden lg:order-2">
+              <img
+               src="/about (7).jpg"
+                alt="Modern Interior Design"
+                className="w-auto h-96 hover:scale-110 duration-300 transition-all object-cover rounded-sm shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+
+
+        {/* <div className="mb-10">
           <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 lg:pr-8">
               <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
@@ -188,16 +217,14 @@ const Specialization: React.FC = () => {
               </button>
               </Link>
             </div>
-            <div className="order-1 overflow-hidden lg:order-2">
-              <img
-                // src="/about (7).jpg"
-                src="about/night.jpg"
-                alt="DJ Equipment and Sound Systems"
-                className="w-auto h-96 hover:scale-110 duration-300 transition-all object-cover rounded-sm shadow-lg"
-              />
+           <div className="flex flex-col lg:flex-row gap-4">
+             
+              
+             
             </div>
+
           </div>
-        </div>
+        </div> */}
 
         {/* Project Management & Turnkey Solutions Section */}
         <div>

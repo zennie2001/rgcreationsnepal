@@ -8,6 +8,12 @@ import BlogDetailHero from "@/sections/BlogDetailHero";
 import { FaQuoteRight } from "react-icons/fa";
 import BlogDetail2Hero from "@/sections/BlogDetail2Hero";
 
+export const metadata = {
+  title: "Transforming Nightlife: Our Journey Designing One of the World’s Top 40 Nightclubs – Dejavu Club Nepal",
+  description:
+    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+};
+
 
 const BlogPost = () => {
   return (
@@ -45,7 +51,7 @@ const BlogPost = () => {
                         Nightclubs are more than just venues for music and dance—they are cultural hubs that define the pulse of a city’s nightlife. Designing a nightclub that stands out on the global stage demands a blend of creative vision, technical expertise, and a deep understanding of ambiance and guest experience. At RG Creations Nepal Pvt Ltd, we proudly undertook this challenge while designing Dejavu Club, which has now earned recognition as one of the world’s top 40 nightclubs.                      </p>
       
                       <p className="text-gray-700 leading-relaxed mb-6">
-In this article, we share the journey behind the creation of Dejavu Club—a masterpiece of nightclub design that has transformed Nepal’s nightlife scene and placed it firmly on the international map. From concept development to the final execution, discover how our team blended innovative interior design, cutting-edge technology, and tailored product supply to create an unforgettable nightlife experience.                      </p>
+                        In this article, we share the journey behind the creation of Dejavu Club—a masterpiece of nightclub design that has transformed Nepal’s nightlife scene and placed it firmly on the international map. From concept development to the final execution, discover how our team blended innovative interior design, cutting-edge technology, and tailored product supply to create an unforgettable nightlife experience.                      </p>
                       <h2 className="text-3xl font-bold flex gap-6  leading-relaxed mb-8 uppercase">
                         <FaQuoteRight className="text-5xl" />
                         <span>The Vision Behind Dejavu Club</span>

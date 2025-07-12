@@ -1,7 +1,13 @@
 // app/book-appointment/page.tsx
-"use client";
+
 
 import React from "react";
+
+export const metadata = {
+  title: "Book a Consultation - RG Creations Nepal ",
+  description:
+    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+};
 
 const BookAppointmentPage = () => {
   return (

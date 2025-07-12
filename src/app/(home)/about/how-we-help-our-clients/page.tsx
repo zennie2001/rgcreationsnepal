@@ -1,9 +1,15 @@
-"use client";
+
 import AboutHero from "@/sections/AboutHero";
 import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
 import Image from "next/image";
 import AboutHelpHero from "@/sections/AboutHelpHero";
+
+export const metadata = {
+  title: "How We Help Our Clients - RG Creations Nepal ",
+  description:
+    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+};
 
 const howWeHelpItems = [
   {

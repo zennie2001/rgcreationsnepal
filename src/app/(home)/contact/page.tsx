@@ -17,6 +17,12 @@ import NewPageHeader from "@/components/NewPageHeader";
 import ContactHero from "@/sections/ContactHero";
 import FAQContact from "@/sections/FAQ";
 
+export const metadata = {
+  title: "Contact Us - RG Creations Nepal ",
+  description:
+    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+};
+
 const contactInfos = [
   {
     logo: FaPhoneAlt,

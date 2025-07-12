@@ -1,9 +1,17 @@
-"use client";
+
 import AboutHero from "@/sections/AboutHero";
 import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
 import Image from "next/image";
 import AboutusHero from "@/sections/AboutusHero";
+
+
+export const metadata = {
+  title: "About Us - RG Creations Nepal ",
+  description:
+    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+};
+
 export default function Home() {
   return (
     <main className="overflow-hidden">

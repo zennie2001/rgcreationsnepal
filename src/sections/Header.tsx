@@ -31,7 +31,7 @@ export default function Header() {
   ]
   const projectItems = [
     { title: "On Going Projects", href: "/projectss/ongoing-projects" },
-    { title: "Completed Projects", href: "/projectss/completed" },
+    { title: "Completed Projects", href: "/projectss/rg-creations-completed-projects" },
     
   ];
   const newsItems = [

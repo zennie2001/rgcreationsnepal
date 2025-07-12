@@ -1,10 +1,19 @@
-"use client";
+
 import AboutHero from "@/sections/AboutHero";
 import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
 import Image from "next/image";
 import AboutValuesHero from "@/sections/AboutValuesHero";
+
+
+export const metadata = {
+  title: "Our Values - RG Creations Nepal ",
+  description:
+    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+};
+
 export default function Home() {
+
   return (
     <main className="overflow-hidden">
       <AboutValuesHero />
