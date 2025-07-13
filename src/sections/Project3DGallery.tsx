@@ -16,6 +16,37 @@ const Project3DGallery = () => {
 
   // ✅ Single array for all images
   const projects = [
+     {
+      id: 11,
+      category: "Image",
+      image: "/ImageVideo/11.jpg",
+      title: "Luxury Hotel Lobby",
+    },
+    {
+      id: 12,
+      category: "Image",
+      image: "/ImageVideo/12.jpg",
+      title: "Luxury Hotel Lobby",
+    },
+    
+    {
+      id: 14,
+      category: "Image",
+      image: "/ImageVideo/14.jpg",
+      title: "Luxury Hotel Lobby",
+    },
+    {
+      id: 15,
+      category: "Image",
+      image: "/ImageVideo/13.jpg",
+      title: "Luxury Hotel Lobby",
+    },
+    {
+      id: 15,
+      category: "Image",
+      image: "/ImageVideo/15.jpg",
+      title: "Luxury Hotel Lobby",
+    },
     {
       id: 1,
       category: "Image",
