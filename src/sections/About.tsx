@@ -182,7 +182,7 @@ const Specialization: React.FC = () => {
                SUPPLYING STATE-OF-THE-ART SOUND SYSTEMS, DYNAMIC LIGHTING, AND
                 SPECIALIZED NIGHTCLUB GEAR THAT ELEVATE ENTERTAINMENT VENUES.
               </p>
-               <Link href={'/services/top-architectural-interior-design'}>
+               <Link href={'/services/top-nightclub-equipment-supply'}>
               <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
                 READ MORE
               </button>
