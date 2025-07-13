@@ -62,7 +62,7 @@ const page = () => {
 
           {/* Main Content Section */}
           <section className="py-16 px-4 lg:px-8">
-            <div className="max-w-7xl mx-auto">
+            <div className=" mx-auto">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                 {/* Left Content */}
                 <div className="space-y-8 col-span-2">
@@ -115,8 +115,8 @@ const page = () => {
                 </div>
 
                 {/* Right Content - CTA Card */}
-                <div className="lg:pl-8 md:mt-20">
-                  <div className="bg-[#133950] text-white p-8">
+                <div className="w-full lg:w-auto lg:pl-8 md:mt-20 ">
+                  <div className="w-full bg-[#133950] text-white p-8">
                     <h2 className="text-2xl font-bold mb-4">
                       Get a appointment with our Expert
                     </h2>

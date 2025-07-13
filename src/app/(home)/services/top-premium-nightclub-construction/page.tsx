@@ -71,7 +71,7 @@ const page = () => {
                 </div>
 
                 {/* Right Content - CTA Card */}
-                <div className="lg:pl-8 md:mt-20">
+                <div className="w-full lg:pl-8 md:mt-20">
                   <div className="bg-[#133950] text-white p-8">
                     <h2 className="text-2xl font-bold mb-4">
                       Get an appointment with our Expert

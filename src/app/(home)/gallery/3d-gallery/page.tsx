@@ -1,4 +1,5 @@
 import Gallery3DHero from '@/sections/Gallery3dHero'
+import Project3DGallery from '@/sections/Project3DGallery';
 
 import React from 'react'
 
@@ -12,6 +13,7 @@ const page = () => {
   return (
     <div className="overflow-hidden ">
         <Gallery3DHero/>
+        <Project3DGallery/>
     </div>
   )
 }

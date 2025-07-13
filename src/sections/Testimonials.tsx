@@ -165,7 +165,7 @@ const VideoTestimonialCard = ({
 // Main component
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [tab, setTab] = useState<"user" | "video">("user");
+  const [tab, setTab] = useState<"user" | "video">("video"); // DEFAULT CHANGED HERE
   const swiperRef = useRef<SwiperType | null>(null);
 
   return (
@@ -180,20 +180,7 @@ export default function Testimonials() {
             <div className="w-12 h-0.5 bg-gray-400"></div>
           </div>
           <div className="flex gap-4 mt-4 lg:mt-0">
-            <button
-              onClick={() => {
-                setTab("user");
-                setActiveIndex(0);
-                swiperRef.current?.slideTo(0);
-              }}
-              className={`px-4 py-2 rounded ${
-                tab === "user"
-                  ? "bg-[#133950] text-white"
-                  : "bg-gray-200 text-gray-700"
-              }`}
-            >
-              User Testimonial
-            </button>
+            {/* Swapped button order */}
             <button
               onClick={() => {
                 setTab("video");
@@ -207,6 +194,20 @@ export default function Testimonials() {
               }`}
             >
               Video Testimonial
+            </button>
+            <button
+              onClick={() => {
+                setTab("user");
+                setActiveIndex(0);
+                swiperRef.current?.slideTo(0);
+              }}
+              className={`px-4 py-2 rounded ${
+                tab === "user"
+                  ? "bg-[#133950] text-white"
+                  : "bg-gray-200 text-gray-700"
+              }`}
+            >
+              User Testimonial
             </button>
           </div>
         </div>

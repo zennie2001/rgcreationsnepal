@@ -90,7 +90,7 @@ const page = () => {
                       <h3 className="text-xl font-semibold text-gray-900">
                         What We Offer:
                       </h3>
-                      <ul className="list-disc text-gray-600 leading-relaxed text-justify">
+                      <ul className="list-disc text-gray-600 leading-relaxed text-justify pl-8">
                         <li>Residential Furniture</li>
                         <li>Office & Corporate Furniture</li>
                         <li>Hospitality & Nightclub Furniture</li>

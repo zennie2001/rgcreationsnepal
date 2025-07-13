@@ -9,25 +9,41 @@ const slides = [
     id: 1,
     image: "/mainbanner1.jpg",
     description: "First banner",
-    title: "We are experts and brand \n creators in hospitality industry",
+    title: (
+      <>
+      We are experts <br className="lg:hidden sm:block"/> and brand <br className="hidden lg:block"/> creators in<br className="lg:hidden sm:block"/> hospitality industry
+      </>
+    ),
   },
   {
     id: 2,
     image: "/mainbanner2.jpg",
     description: "Second banner",
-    title: "Luxury Construction. Timeless \n Design. Trusted Excellence",
+    title:(
+      <>
+      Luxury Construction.<br className="lg:hidden sm:block"/> Timeless <br className="hidden lg:block"/> Design. <br className="lg:hidden sm:block"/> Trusted Excellence
+      </>
+    ) ,
   },
   {
     id: 3,
     image: "/third.jpg",
     description: "Third banner",
-    title: "Where Vision Meets Structure \n Premium Construction in Nepal",
+    title: (
+      <>
+      Where Vision Meets <br className="lg:hidden sm:block"/> Structure <br className="hidden lg:block"/> Premium <br className="lg:hidden sm:block"/> Construction in Nepal
+      </>
+    ),
   },
   {
     id: 4,
     image: "/forth.png",
     description: "Forth banner",
-    title: "From Nightlife to Luxury Living \n We Build Experiences",
+    title: (
+      <>
+      From Nightlife to  <br className="lg:hidden sm:block"/> Luxury Living <br className="hidden lg:block"/> We  <br className="lg:hidden sm:block"/> Build Experiences
+      </>
+    ),
   },
 ];
 
@@ -84,7 +100,7 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="absolute inset-0 flex items-center md:items-start mt-20 xxl:mt-40 justify-center z-30">
         <div className="text-center  text-white  mx-8  ">
-          <p style={{ whiteSpace: "pre-line" }} className="text-lg md:text-5xl  font-bold  mb-3 leading-tight  ">
+          <p style={{ whiteSpace: "pre-line" }} className="text-2xl md:text-5xl  font-bold  mb-3 leading-tight  ">
             {slides[currentSlide].title}
           </p>
 
