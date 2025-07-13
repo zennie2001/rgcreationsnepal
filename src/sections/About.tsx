@@ -188,9 +188,16 @@ const Specialization: React.FC = () => {
               </button>
               </Link>
             </div>
-            <div className="order-1 overflow-hidden lg:order-2">
+            <div className="order-1 flex overflow-hidden lg:order-2">
               <img
-               src="/about (7).jpg"
+              //  src="/about (7).jpg"
+              src= "about/light1.jpg"
+                alt="Modern Interior Design"
+                className="w-auto h-96 hover:scale-110 duration-300 transition-all object-cover rounded-sm shadow-lg"
+              />
+               <img
+              //  src="/about (7).jpg"
+              src= "about/light2.jpg"
                 alt="Modern Interior Design"
                 className="w-auto h-96 hover:scale-110 duration-300 transition-all object-cover rounded-sm shadow-lg"
               />

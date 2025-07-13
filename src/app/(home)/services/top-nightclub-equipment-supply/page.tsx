@@ -152,17 +152,17 @@ const page = () => {
               ">
                 <div className="overflow-hidden">
                   <img
-                    src="/about/equip1.jpg"
+                    src="/about/light1.jpg"
                     alt="Image 1"
-                    className="w-auto h-64 object-cover rounded-sm hover:scale-110 transition-transform duration-300"
+                    className="w-auto h-80 object-cover rounded-sm hover:scale-110 transition-transform duration-300"
                   />
                 </div>
 
                 <div className="overflow-hidden">
                   <img
-                    src="/about/equip4.jpg"
+                    src="/about/equip1.jpg"
                     alt="Image 2"
-                    className="w-auto h-64 object-cover rounded-sm hover:scale-110 transition-transform duration-300 "
+                    className="w-auto h-80 object-cover rounded-sm hover:scale-110 transition-transform duration-300 bg-white"
                   />
                 </div>
 
