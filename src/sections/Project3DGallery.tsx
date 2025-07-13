@@ -11,8 +11,8 @@ import {
 } from "react-icons/ai";
 
 const Project3DGallery = () => {
-//   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
-//   const [zoom, setZoom] = useState(1);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [zoom, setZoom] = useState(1);
 
   // ✅ Single array for all images
   const projects = [
@@ -67,21 +67,21 @@ const Project3DGallery = () => {
     },
   ];
 
-//   const handlePrev = () => {
-//     if (selectedIndex !== null) {
-//       setSelectedIndex(
-//         (selectedIndex - 1 + projects.length) % projects.length
-//       );
-//       setZoom(1);
-//     }
-//   };
+  const handlePrev = () => {
+    if (selectedIndex !== null) {
+      setSelectedIndex(
+        (selectedIndex - 1 + projects.length) % projects.length
+      );
+      setZoom(1);
+    }
+  };
 
-//   const handleNext = () => {
-//     if (selectedIndex !== null) {
-//       setSelectedIndex((selectedIndex + 1) % projects.length);
-//       setZoom(1);
-//     }
-//   };
+  const handleNext = () => {
+    if (selectedIndex !== null) {
+      setSelectedIndex((selectedIndex + 1) % projects.length);
+      setZoom(1);
+    }
+  };
 
   return (
     <div>
@@ -115,7 +115,10 @@ const Project3DGallery = () => {
               <div
                 key={project.id}
                 className="relative cursor-pointer overflow-hidden bg-white shadow hover:shadow-lg  transition-all duration-300"
-                
+                onClick={() => {
+                  setSelectedIndex(index);
+                  setZoom(1);
+                }}
               >
                 <img
                   src={project.image}
@@ -139,7 +142,7 @@ const Project3DGallery = () => {
       </section>
 
       {/* Modal Overlay */}
-      {/* {selectedIndex !== null && (
+      {selectedIndex !== null && (
         <div className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center">
           <div className="relative max-w-[90vw] max-h-[90vh] overflow-hidden flex items-center justify-center">
             <img
@@ -148,14 +151,14 @@ const Project3DGallery = () => {
               className="object-contain max-w-full max-h-full transition-transform duration-300"
               style={{ transform: `scale(${zoom})` }}
             />
-             Close Button 
+            {/* Close Button */}
             <button
               className="absolute top-4 right-4 text-white text-3xl"
               onClick={() => setSelectedIndex(null)}
             >
               <AiOutlineClose />
             </button>
-             Zoom Controls
+            {/* Zoom Controls */}
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-4">
               <button
                 className="bg-white p-3 rounded-full shadow hover:bg-gray-200 transition"
@@ -170,7 +173,7 @@ const Project3DGallery = () => {
                 <AiOutlineZoomOut className="text-xl text-gray-700" />
               </button>
             </div>
-             Navigation Arrows 
+            {/* Navigation Arrows */}
             <button
               className="absolute left-4 text-white text-4xl bg-black/50 p-2 rounded-full hover:bg-black/70 transition"
               onClick={handlePrev}
@@ -185,7 +188,7 @@ const Project3DGallery = () => {
             </button>
           </div>
         </div>
-      )} */}
+      )}
     </div>
   );
 };
