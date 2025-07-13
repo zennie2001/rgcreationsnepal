@@ -29,12 +29,12 @@ const Project3DGallery = () => {
       title: "Luxury Hotel Lobby",
     },
     
-    {
-      id: 14,
-      category: "Image",
-      image: "/ImageVideo/14.jpg",
-      title: "Luxury Hotel Lobby",
-    },
+    // {
+    //   id: 14,
+    //   category: "Image",
+    //   image: "/ImageVideo/14.jpg",
+    //   title: "Luxury Hotel Lobby",
+    // },
     {
       id: 15,
       category: "Image",
