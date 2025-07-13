@@ -21,7 +21,7 @@ const LatestProjects = () => {
     {
       id: 2,
       category: "Completed Projects",
-      image: "/taaj.jpg",
+      image: "/about/newimg.jpg",
       video: "/RGVideo1.mp4",
       title: "Fine Dining Restaurant",
     },
