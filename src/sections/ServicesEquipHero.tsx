@@ -21,7 +21,7 @@ export default function ServicesEquipmentHero() {
       <div className="relative z-20 flex flex-col justify-center  items-center text-center h-full px-6">
         <div className=" text-center border-b-2 w-[500px] mb-8">
           <p className="uppercase tracking-wider text-base font-medium mb-4" >
-           Nightclub Equipment Supply
+           Nightclub Equipment <br className="lg:hidden block" /> Supply
           </p>
         </div>
 

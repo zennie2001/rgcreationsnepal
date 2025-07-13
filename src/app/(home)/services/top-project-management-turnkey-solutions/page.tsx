@@ -115,7 +115,7 @@ const page = () => {
                 </div>
 
                 {/* Right Content - CTA Card */}
-                <div className="w-[370px] pr-4  lg:w-auto lg:pl-8 md:mt-20 ">
+                <div className="  lg:w-auto lg:pl-8 md:mt-20 ">
                   <div className="w-full bg-[#133950] text-white p-8">
                     <h2 className="text-2xl font-bold mb-4">
                       Get a appointment with our Expert
