@@ -24,7 +24,7 @@ const Collection: React.FC = () => {
           {/* Middle Column - Interior Design */}
           <div className="lg:col-span-6">
             <img
-              src="/about/rgcreations1(1).jpg"
+              src="/about/middle-img.jpg"
               alt="Modern Interior Design"
               className="w-full h-80 object-cover rounded-lg shadow-lg"
             />

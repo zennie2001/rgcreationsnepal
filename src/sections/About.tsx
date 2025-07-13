@@ -72,7 +72,7 @@ const Specialization: React.FC = () => {
             </div>
             <div className="order-1 lg:order-2 overflow-hidden">
               <img
-                src="/about (2).jpg"
+                src="/about/residential.jpg"
                 alt="Luxurious Residential Interior"
                 className="w-full h-96 object-cover hover:scale-110 duration-300 transition-all rounded-sm shadow-lg"
               />

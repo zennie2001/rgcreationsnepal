@@ -217,7 +217,7 @@ const Footer = () => {
                 <div className="flex items-center border-b border-gray-600 pb-4 space-x-3">
                   <Mail className="w-6 h-6 text-gray-400 fill-black bg-white rounded-full p-1 " color="black"  />
                   <span className="text-gray-400 text-sm">
-                    rgcreationsnp@gmail.com
+                    info@rgcreationsnepal.com
                   </span>
                 </div>
               </div>
