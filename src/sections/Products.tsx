@@ -35,8 +35,8 @@ const LatestProjects = () => {
     {
       id: 4,
       category: "Completed Projects",
-      image: "/royal.jpg",
-      video: "/RGVideo3.mp4",
+      image: "/main-slider2.jpg",
+      video: "/magestic.mp4",
       title: "Modern Architecture",
     },
   ];
