@@ -6,7 +6,7 @@ import { projects } from "@/constants/completedData";
 import { notFound } from "next/navigation";
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export async function generateStaticParams() {
@@ -15,8 +15,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function Page({ params }: Props) {
-  const { slug } = params;
+export default async function Page({ params }: Props) {
+  const { slug } = await  params;
 
   // Find the project by slug
   const project = projects.find((p) => p.slug === slug);

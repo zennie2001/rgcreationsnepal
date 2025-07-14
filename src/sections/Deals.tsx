@@ -8,8 +8,13 @@ import "swiper/css";
 
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const clients = [
-  ,
+type Client = {
+  name: string;
+  logo: string;
+};
+
+const clients: (Client)[] = [
+  
   { name: "Royal Empire", logo: "/logo/logo1(1).jpg" },
   { name: "Harshah Batika", logo: "/logo/logo1(2).jpg" },
   { name: "Deja vu", logo: "/logo/logo1(3).jpg" },
@@ -19,7 +24,7 @@ const clients = [
   { name: "PANAS", logo: "/logo/logo1(7).jpg" },
   { name: "White Lotus", logo: "/logo/logo8.svg" },
   { name: "Utsav Kunj", logo: "/logo/logo9.svg" },
-  { name: "Majestic Grand", logo: "/logo/majestic.svg" },
+  { name: "Majestic Grand", logo: "/logo/majestic.svg" }
 ];
 
 const LogoSlide = ({ logo, name }: { logo: string; name: string }) => (
