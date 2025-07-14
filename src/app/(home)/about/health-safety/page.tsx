@@ -6,9 +6,9 @@ import Image from "next/image";
 import AboutHealthHero from "@/sections/AboutHealthHero";
 
 export const metadata = {
-  title: "Health And Safety - RG Creations Nepal ",
+  title: "Health & Safety | Trusted Architecture Firm Nepal ",
   description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+    "At RG Creations, health and safety are paramount—ensuring secure and compliant construction practices across all architectural projects in Nepal.",
 };
 
 const safetyItems = [
@@ -86,7 +86,7 @@ export default function Home() {
           <div className="flex justify-center py-4">
             <Image
               src="/about/3092.jpg"
-              alt="Safety Equipment"
+              alt="Safety Equipmenta"
               width={300}
               height={400}
               className="object-contain"

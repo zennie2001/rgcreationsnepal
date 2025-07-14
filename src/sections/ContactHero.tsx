@@ -8,7 +8,7 @@ export default function ContactHero() {
       {/* Background Image */}
       <Image
         src="/contactus.jpg" // Replace with your actual image path
-        alt="Hero Background"
+        alt="Contact Top Architecture Firm in Nepal"
         fill
         className="object-cover z-0"
         priority
@@ -25,10 +25,10 @@ export default function ContactHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
           Let’s Build Something Extraordinary Together <br className="hidden md:block" /> 
          
-        </h1>
+        </h2>
 
         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">
           At RG Creations Nepal, we believe that every great structure begins with a strong conversation. Whether you're planning a luxury residence, a commercial complex, or an interior transformation, our expert team is here to guide you from concept to creation.

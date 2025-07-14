@@ -23,7 +23,7 @@ export default async function page({ params }: Props) {
       <div className="lg:w-[60%] w-full flex flex-col gap-8">
         {/* Description area */}
         <div>
-          <h1 className="font-semibold text-lg md:text-xl mb-2">Harshah Batika {id}</h1>
+          <h2 className="font-semibold text-lg md:text-xl mb-2">Harshah Batika {id}</h2>
           <p className="text-gray-700 text-sm md:text-base leading-relaxed">
             Harshah Batika, a escape from the city’s hustle and bustle and discovering all-in-one
             party venue, nestled in a serene and family-friendly location.

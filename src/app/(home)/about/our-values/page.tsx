@@ -7,10 +7,8 @@ import AboutValuesHero from "@/sections/AboutValuesHero";
 
 
 export const metadata = {
-  title: "Our Values - RG Creations Nepal ",
-  description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
-};
+  title: "Our Values | Leading Construction Company Nepal",
+  description:"Learn about RG Creations’ core values that drive quality, sustainability, and client satisfaction as a leading construction company in Nepal."};
 
 export default function Home() {
 
@@ -100,7 +98,7 @@ export default function Home() {
             <div className="relative z-10 overflow-hidden rounded-b-[190px] w-[400px] max-w-full">
               <Image
                 src="/about/1000.jpg"
-                alt="Our Values"
+                alt="Our Values - RG Creations Nepal"
                 width={400}
                 height={600}
                 className="object-cover w-full h-full"
@@ -149,7 +147,7 @@ export default function Home() {
           <div className="border-2 rounded-full mt-20 border-gray-300 px-6 py-4 inline-flex items-center gap-4">
             <Image
               src="/logo.png" // replace with your logo path
-              alt="Logo"
+              alt="Logo - RG Creations Nepal"
               width={50}
               height={50}
               className="object-contain  w-24 h-24"

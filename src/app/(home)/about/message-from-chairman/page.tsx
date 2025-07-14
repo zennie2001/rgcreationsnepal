@@ -6,10 +6,8 @@ import Image from "next/image";
 import AboutChairmanHero from "@/sections/AboutChairmanHero";
 
 export const metadata = {
-  title: "Message From Chairman - RG Creations Nepal ",
-  description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
-};
+  title: "Message from Chairman | Leading Architecture Firm Nepal",
+  description:"Meet the expert team behind RG Creations, a top construction company in Nepal committed to delivering quality and excellence."};
 
 const safetyItems = [
   {
@@ -77,7 +75,7 @@ export default function Home() {
           <div className="flex flex-col w-full lg:w-[400px] h-[600px] items-center text-center pt-16 ">
             <img
               src="/about/hero-ram2 (1).jpg"
-              alt="Ram Giri"
+              alt="Ram Giri - RG Creations Nepal"
               className="h-[600px] w-[400px] object-cover"
             />
             <div className="mt-4 text-left">

@@ -8,7 +8,7 @@ const ProjectVideoGallery = () => {
     {
       id: 11,
       image: '/about/news3.jpg',
-      title: 'Luxury Hotel Lobby Video',
+      title: 'Smart construction',
       width: 1023,
       height: 570,
       youtubeUrl: 'https://www.youtube.com/embed/Z4ERfjwOJcs',
@@ -24,7 +24,7 @@ const ProjectVideoGallery = () => {
     {
       id: 13,
       image: '/about/rgcreations1(1).jpg',
-      title: 'Luxury Hotel Lobby Video',
+      title: 'Smart construction',
       width: 1566,
       height: 699,
       youtubeUrl: 'https://www.youtube.com/embed/72Y7GQ_LTls',
@@ -32,7 +32,7 @@ const ProjectVideoGallery = () => {
     {
       id: 14,
       image: '/ImageVideo/Video4.jpg',
-      title: 'Luxury Hotel Lobby Video',
+      title: 'Smart construction',
       width: 762,
       height: 699,
       youtubeUrl: 'https://www.youtube.com/embed/aRdZ5IrQenM',
@@ -40,7 +40,7 @@ const ProjectVideoGallery = () => {
     {
       id: 15,
       image: '/dejavu.png',
-      title: 'Luxury Hotel Lobby Video',
+      title: 'Smart construction',
       width: 762,
       height: 699,
       youtubeUrl: 'https://www.youtube.com/embed/KL6GjVHCRS0',

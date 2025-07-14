@@ -8,7 +8,7 @@ export default function BlogHero() {
       {/* Background Image */}
       <Image
         src="/blog-banner.jpg" // Replace with your actual image path
-        alt="Hero Background"
+        alt="Nepal’s premier luxury construction company"
         fill
         className="object-cover z-0"
         priority
@@ -25,10 +25,10 @@ export default function BlogHero() {
           </p>
         </div>
 
-        <h1 className="text-2xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h2 className="text-2xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
           Dive into inspiring stories, architectural trends, and behind-the-scenes insights from Nepal’s premier luxury construction company <br className="hidden md:block" /> 
           
-        </h1>
+        </h2>
 
         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">
           Lorem ipsum dolor sit amet consectetur. Consequat ornare morbi aliquet

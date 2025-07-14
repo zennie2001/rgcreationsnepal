@@ -4,9 +4,9 @@ import { ArrowRight, CheckCircle, Clock } from "lucide-react";
 import Link from 'next/link';
 
 export const metadata = {
-  title: "Premium Furniture Supply - RG Creations Nepal ",
+  title: "Premium Nightclub Construction | Top Builder Nepal",
   description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+    "Meet the expert team behind RG Creations, a top construction company in Nepal committed to delivering quality and excellence.",
 };
 
 const page = () => {
@@ -24,9 +24,9 @@ const page = () => {
                 {/* Left Content */}
                 <div className="space-y-8 col-span-2">
                   <div>
-                    <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
                       Premium Nightclub Construction
-                    </h1>
+                    </h2>
                     <p className="text-gray-600 text-lg leading-relaxed">
                       At RG Creations Pvt. Ltd., we specialize in turning bold visions into iconic nightlife destinations. Our premium nightclub construction services are tailored to entrepreneurs, hospitality brands, and entertainment groups looking to create vibrant, unforgettable experiences. We go beyond conventional construction — we build atmospheres that pulse with energy, style, and exclusivity.
                       <br />

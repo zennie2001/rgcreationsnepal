@@ -20,13 +20,13 @@ const Project3DGallery = () => {
       id: 11,
       category: "Image",
       image: "/ImageVideo/11.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Smart construction",
     },
     {
       id: 12,
       category: "Image",
       image: "/ImageVideo/12.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Interior and Exterior 3D building designs",
     },
     
     // {
@@ -39,62 +39,62 @@ const Project3DGallery = () => {
       id: 15,
       category: "Image",
       image: "/ImageVideo/13.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Modern House 3D Concepts",
     },
     {
       id: 15,
       category: "Image",
       image: "/ImageVideo/15.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "3D visualization services for architecture",
     },
     {
       id: 1,
       category: "Image",
       image: "/ImageVideo/1.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Commercial and Residential 3D Building",
     },
     {
       id: 2,
       category: "Image",
       image: "/ImageVideo/2.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "RG Creations Nepal 3D project",
     },
     
     {
       id: 4,
       category: "Image",
       image: "/ImageVideo/4.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Green building construction",
     },
     {
       id: 5,
       category: "Image",
       image: "/ImageVideo/3.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Luxury home construction",
     },
     {
       id: 6,
       category: "Image",
       image: "/ImageVideo/6.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Industrial construction",
     },
     {
       id: 7,
       category: "Image",
       image: "/ImageVideo/7.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Luxury home construction",
     },
     {
       id: 8,
       category: "Image",
       image: "/ImageVideo/8.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Luxury home construction",
     },
     {
       id: 9,
       category: "Image",
       image: "/ImageVideo/9.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Luxury home construction",
     },
   ];
 

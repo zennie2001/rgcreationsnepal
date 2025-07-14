@@ -6,9 +6,8 @@ import Image from "next/image";
 import AboutApartHero from "@/sections/AboutApartHero";
 
 export const metadata = {
-  title: "What Sets Us Apart - RG Creations Nepal ",
-  description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+  title: "What Sets Us Apart | Top Architecture & Construction",
+  description:"Learn about RG Creations’ core values that drive quality, sustainability, and client satisfaction as a leading construction company in Nepal."
 };
 
 export default function Home() {
@@ -68,7 +67,7 @@ export default function Home() {
             <div className="h-full w-full overflow-hidden">
               <Image
                  src="/about/rg.jpg" 
-                alt="What Sets Us Apart"
+                alt="Top Architecture Firm in Nepal "
                 width={500}
                 height={800}
                 className="w-full h-full object-cover"

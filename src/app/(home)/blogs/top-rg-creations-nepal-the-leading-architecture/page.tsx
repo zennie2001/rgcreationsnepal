@@ -13,7 +13,7 @@ import { TbWorld } from "react-icons/tb";
 
 
 export const metadata = {
-  title: "RG Creations Nepal Pvt Ltd – The Leading Architecture and Construction Company in Nepal",
+  title: "The Leading Architecture Company in Nepal",
   description:
     "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
 };
@@ -406,7 +406,7 @@ const BlogPost = () => {
                   {/* ✅ UPDATED - LEFT IMAGE SIZE */}
                   <img
                     src='/about/news3.jpg'
-                    alt='blog'
+                    alt='Transforming Nightlife: The World’s Top 40 Nightclubs'
                     className="
                       w-[327px] h-[190px]
                       sm:w-[327px] sm:h-[250px]
@@ -443,7 +443,7 @@ const BlogPost = () => {
                   {/* ✅ UPDATED - LEFT IMAGE SIZE */}
                   <img
                     src='/about/news2.jpg'
-                    alt='blog'
+                    alt='Nepal’s Best Premium Construction Company'
                     className="
                       w-[327px] h-[190px]
                       sm:w-[327px] sm:h-[250px]

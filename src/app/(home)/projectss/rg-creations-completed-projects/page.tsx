@@ -4,10 +4,8 @@ import ProjectList from '@/sections/ProjectList'
 import React from 'react'
 
 export const metadata = {
-  title: "Completed Projects - RG Creations Nepal ",
-  description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
-};
+  title: "Completed Projects | Leading Construction Nepal",
+  description:"Explore RG Creations’ ongoing projects showcasing innovative architecture and construction expertise across Nepal."};
 
 const page = () => {
   return (

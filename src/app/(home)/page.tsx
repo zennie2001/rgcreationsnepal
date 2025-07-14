@@ -26,6 +26,7 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="overflow-hidden">
+      
       <SEOContent />
       <Hero />
       <Categories />

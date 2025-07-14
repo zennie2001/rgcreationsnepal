@@ -25,10 +25,10 @@ export default function HotelHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
          Build Premier Hotels & Resorts<br className="hidden md:block" /> 
           with RG Creations Nepal
-        </h1>
+        </h2>
 
         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">
           Lorem ipsum dolor sit amet consectetur. Consequat ornare morbi aliquet

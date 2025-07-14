@@ -8,7 +8,7 @@ export default function MediaHero() {
       {/* Background Image */}
       <Image
         src="/blog-banner.jpg" // Replace with your actual image path
-        alt="Hero Background"
+        alt="Top Architecture Firm in Nepal | RG Creations"
         fill
         className="object-cover z-0"
         priority

@@ -7,9 +7,9 @@ import AboutusHero from "@/sections/AboutusHero";
 
 
 export const metadata = {
-  title: "About Us - RG Creations Nepal ",
+  title: "About Us | Top Architecture Firm Nepal | RG Creations",
   description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+    "Discover RG Creations, a top architecture firm in Nepal delivering innovative design and expert construction services across residential and commercial projects.",
 };
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
             <div className="relative z-10 w-full h-full overflow-hidden ">
               <Image
                 src="/about-us.jpg" // Replace with your image path
-                alt="About Us"
+                alt="Innovative Architecture"
                 fill
                 className="object-contain"
               />
@@ -71,7 +71,7 @@ export default function Home() {
         <div className="relative  grid sm:grid-cols-1 md:grid-cols-2 items-center gap-6">
           <Image
             src="/about/vision.jpg" // replace with your actual image path
-            alt="Vision"
+            alt="Vision - RG Creations Nepal"
             width={800}
             height={600}
             className="w-full h-auto object-cover"
@@ -99,7 +99,7 @@ export default function Home() {
             {/* Image */}
             <Image
               src="/about/mission.jpg"
-              alt="Mission"
+              alt="Mission - RG Creations Nepal"
               width={800}
               height={600}
               className="w-1/2   h-auto object-cover"

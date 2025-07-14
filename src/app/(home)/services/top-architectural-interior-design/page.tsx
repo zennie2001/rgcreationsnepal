@@ -5,10 +5,8 @@ import ServicesInteriorHero from '@/sections/ServicesInteriorHero';
 import Link from 'next/link';
 
 export const metadata = {
-  title: "Architectural And Interior Design - RG Creations Nepal ",
-  description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
-};
+  title: "Architectural & Interior Design | Nepal Leaders",
+  description:"Experience cutting-edge architectural and interior design solutions by RG Creations, leaders in Nepal’s construction industry."};
 
 const page = () => {
   return (
@@ -68,9 +66,9 @@ const page = () => {
                 {/* Left Content */}
                 <div className="space-y-8 col-span-2">
                   <div>
-                    <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
                       Architectural & Interior Design
-                    </h1>
+                    </h2>
                     <p className="text-gray-600 text-lg leading-relaxed">
 At RG Creations Pvt. Ltd., we bring visions to life through distinctive architectural and interior design services that blend creativity, functionality, and elegance. Whether you're building from the ground up or transforming an existing space, our team of architects and interior designers ensures every detail aligns with your identity, purpose, and lifestyle.                        <br/>
 

@@ -62,19 +62,19 @@ const testimonials: UserTestimonial[] = [
 // Video testimonials
 const videoTestimonials: VideoTestimonial[] = [
   {
-    name: "John Doe",
+    name: "Top Architecture Firm in Nepal | RG Creations",
     videoUrl: "https://www.youtube.com/embed/Bj_luIBQ7n0",
   },
   {
-    name: "Jane Smith",
+    name: "Top Architecture Firm in Nepal | RG Creations",
     videoUrl: "https://www.youtube.com/embed/bjQEJf2MUm0",
   },
   {
-    name: "Michael Johnson",
+    name: "Top Architecture Firm in Nepal | RG Creations",
     videoUrl: "https://www.youtube.com/embed/6fRTBd98gGk",
   },
   {
-    name: "Michael Johnson",
+    name: "Top Architecture Firm in Nepal | RG Creations",
     videoUrl: "https://www.youtube.com/embed/uH8RtWx-nRI",
   },
 ];

@@ -15,9 +15,9 @@ const NewsLetter: React.FC = () => {
 
         {/* Form */}
         <div className="p-8">
-          <h1 className="text-2xl font-semibold text-gray-800 mb-6">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-6">
             Request Us A Callback
-          </h1>
+          </h2>
 
           <form className="space-y-5">
             {/* Name Row */}

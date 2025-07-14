@@ -4,7 +4,7 @@ import React from 'react'
 import { FiChevronDown } from "react-icons/fi";
 
 export const metadata = {
-  title: "Media Coverage - RG Creations Nepal ",
+  title: "Media Coverage | Best Construction Company Nepal",
   description:
     "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
 };
@@ -171,7 +171,7 @@ const page = () => {
                   {/* Image */}
                   <img
                     src='/media3.webp'
-                    alt='blog'
+                    alt=' RG Creations Nepal - Lead In Architectural Innovation'
                     className="
                       w-[276.6946105957031px] h-[439px]
                       sm:w-[276.6946105957031px] sm:h-[439px]

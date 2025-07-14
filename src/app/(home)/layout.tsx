@@ -17,7 +17,7 @@ const jakarta = Inter({
 export const metadata: Metadata = {
   title: {
     default: "Top-Rated Construction Company for Nightclubs, Hotels & Banquets",
-    template: "%s | RG Creations",
+    template: "%s ",
   },
   description:
     "RG Creations is a leading construction company in Nepal, specializing in residential and commercial projects. We are committed to delivering high-quality construction services with a focus on innovation, sustainability, and customer satisfaction.",

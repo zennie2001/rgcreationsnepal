@@ -18,7 +18,7 @@ const StatsSection: React.FC = () => {
       <div className="absolute inset-0 bg-black/80 overflow-hidden z-20"></div>
       <img
         src="/background.jpg"
-        alt="background"
+        alt="Construction companies"
         className="absolute inset-0 w-full h-full object-cover z-10"
       />
 

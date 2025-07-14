@@ -5,7 +5,7 @@ import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 
 
 export const metadata = {
-  title: "RG Creations Nepal driving innovation in hospitality and nightlife architecture",
+  title: "RG Creations | Innovation in nightlife architecture",
   description:
     "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
 };
@@ -59,7 +59,7 @@ const page = () => {
                     <div className="w-full h-64 lg:h-[500px] lg:w-full relative mb-12">
                     <Image
                         src="/media3.webp"        // Your image path (public folder or remote)
-                        alt="media1" // Alt text for accessibility
+                        alt="Nepal driving innovation in hospitality and nightlife architecture" // Alt text for accessibility
                         fill                        // Makes the image fill its parent div
                         style={{ objectFit: 'cover' }} // Optional: crop image to fill div
                     />

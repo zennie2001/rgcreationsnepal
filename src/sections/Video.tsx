@@ -15,10 +15,10 @@ const Video = () => {
 
   return (
     <div className="w-full lg:h-[950px] h-[550px] bg-gray-900 relative flex flex-col items-center justify-center">
-      <h1 className="lg:text-5xl text-3xl font-bold text-white text-center mb-10">
+      <h2 className="lg:text-5xl text-3xl font-bold text-white text-center mb-10">
         Walk Through Your Vision <br className="hidden lg:block" />
         Before It’s Built
-      </h1>
+      </h2>
 
       <section
         className="
@@ -42,7 +42,7 @@ const Video = () => {
           <div className="absolute inset-0">
             <img
               src="/GalleryHero.jpg" // Replace with your thumbnail
-              alt="Video thumbnail"
+              alt="Sustainable construction"
               className="w-full h-full object-cover"
             />
             <button

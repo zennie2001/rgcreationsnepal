@@ -4,9 +4,9 @@ import { ArrowRight, CheckCircle, Clock } from "lucide-react";
 import Link from 'next/link';
 
 export const metadata = {
-  title: "Luxurious Residential Developments - RG Creations Nepal ",
+  title: "Luxurious Residential Developments Nepal ",
   description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+    "Discover luxurious residential developments by RG Creations, Nepal’s trusted name for high-end, custom-built homes.",
 };
 
 const page = () => {
@@ -66,10 +66,10 @@ const page = () => {
                 {/* Left Content */}
                 <div className="space-y-8 col-span-2">
                   <div>
-                    <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
                       Luxurious Residential Developments
 
-                    </h1>
+                    </h2>
                     <p className="text-gray-600 text-lg leading-relaxed">
                         At RG Creations Pvt. Ltd., we redefine the essence of modern living through our luxurious residential developments. Combining architectural brilliance with refined aesthetics, we design and build exclusive homes and communities that offer unmatched comfort, functionality, and style. Each project is thoughtfully curated to meet the evolving lifestyle needs of urban dwellers, families, and discerning investors across Nepal.                        <br/>
                         <br/>From high-rise apartment towers to gated villa communities, our residential projects embody elegance, quality, and sustainability — delivering more than just a place to live, but a place to belong.

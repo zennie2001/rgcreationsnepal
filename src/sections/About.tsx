@@ -192,7 +192,7 @@ const Specialization: React.FC = () => {
               <img
               //  src="/about (7).jpg"
               src= "about/light1.jpg"
-                alt="Modern Interior Design"
+                alt="Premium Nightclub Equipment"
                 className="w-auto h-96 hover:scale-110 duration-300 transition-all object-cover rounded-sm shadow-lg"
               />
                <img

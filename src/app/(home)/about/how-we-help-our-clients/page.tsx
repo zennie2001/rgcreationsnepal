@@ -6,7 +6,7 @@ import Image from "next/image";
 import AboutHelpHero from "@/sections/AboutHelpHero";
 
 export const metadata = {
-  title: "How We Help Our Clients - RG Creations Nepal ",
+  title: "How We Help Clients | Best Construction Company Nepal",
   description:
     "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
 };
@@ -93,14 +93,14 @@ export default function Home() {
             <div className="flex flex-col gap-4 ">
               <Image
                 src="/ImageVideo/image7.jpg"
-                alt=" Image 1"
+                alt="RG Creations Nepal services"
                 width={310}
                 height={300}
                 className="object-cover"
               />
               <Image
                 src="/ImageVideo/image4.jpg"
-                alt=" Image 2"
+                alt="RG Creations Nepal services"
                 width={310}
                 height={300}
                 className=""
@@ -110,14 +110,14 @@ export default function Home() {
             <div className="flex flex-col gap-4">
               <Image
                 src="/ImageVideo/image3.jpg"
-                alt=" Image 3"
+                alt=" RG Creations Nepal services"
                 width={310}
                 height={300}
                 className=""
               />
               <Image
                 src="/ImageVideo/image6.jpg"
-                alt=" Image 4"
+                alt="RG Creations Nepal services"
                 width={310}
                 height={300}
                 className=""

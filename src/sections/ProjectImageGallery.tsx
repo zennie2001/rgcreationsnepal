@@ -20,50 +20,50 @@ const ProjectImageGallery = () => {
       id: 1,
       category: "Image",
       image: "/ImageVideo/Image1.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Commercial and Residential Construction",
     },
     {
       id: 2,
       category: "Image",
       image: "/ImageVideo/Image2.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Commercial and Residential Construction",
     },
     
     {
       id: 4,
       category: "Image",
       image: "/ImageVideo/Image4.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Commercial and Residential Construction",
     },
     {
       id: 5,
       category: "Image",
       image: "/ImageVideo/Image5.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Commercial and Residential Construction",
     },
     {
       id: 6,
       category: "Image",
       image: "/ImageVideo/Image6.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Commercial and Residential Construction",
     },
     {
       id: 7,
       category: "Image",
       image: "/ImageVideo/Image7.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Commercial and Residential Construction",
     },
     {
       id: 8,
       category: "Image",
       image: "/ImageVideo/Image8.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Commercial and Residential Construction",
     },
     {
       id: 9,
       category: "Image",
       image: "/ImageVideo/Image9.jpg",
-      title: "Luxury Hotel Lobby",
+      title: "Commercial and Residential Construction",
     },
   ];
 

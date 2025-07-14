@@ -6,10 +6,8 @@ import Link from 'next/link';
 import FurnitureVideo from '@/sections/FurnitureVideo';
 
 export const metadata = {
-  title: "Premium Furniture Supply - RG Creations Nepal ",
-  description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
-};
+  title: "Premium Furniture Supply | Nepal Construction Partner",
+  description:"Experience cutting-edge architectural and interior design solutions by RG Creations, leaders in Nepal’s construction industry."};
 
 const page = () => {
   return (
@@ -69,9 +67,9 @@ const page = () => {
                 {/* Left Content */}
                 <div className="space-y-8 col-span-2">
                   <div>
-                    <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
                       Premium Furniture Supply
-                    </h1>
+                    </h2>
                     <p className="text-gray-600 text-lg leading-relaxed">
                         At RG Creations Pvt. Ltd., we supply premium furniture solutions that blend sophistication, comfort, and durability. Our curated collection is crafted to elevate residential, commercial, hospitality, and entertainment spaces with timeless style and world-class craftsmanship. Whether you're furnishing a luxury villa, an upscale office, or a high-end nightclub, we deliver bespoke furniture that complements your space and reflects your brand or lifestyle.                        <br/>
                         <br/>

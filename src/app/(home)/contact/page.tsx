@@ -18,7 +18,7 @@ import ContactHero from "@/sections/ContactHero";
 import FAQContact from "@/sections/FAQ";
 
 export const metadata = {
-  title: "Contact Us - RG Creations Nepal ",
+  title: "Contact Us | RG Creations Nepal ",
   description:
     "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
 };
@@ -200,7 +200,7 @@ export default function ContactUs() {
           <div className="relative w-[70%] md:w-[77%] mx-auto h-[77%]  m-20 z-20">
             <img
               src="/about/rg.jpg" // Replace with your actual image
-              alt="Contact Person"
+              alt="Top Construction company"
               className="object-cover w-full h-full  rounded-sm "
             />
           </div>

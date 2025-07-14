@@ -254,7 +254,9 @@ const Footer = () => {
         <div className="mt-16 flex flex-col md:flex-row justify-between items-end gap-12">
           {/* Left - Logo and Description */}
           <div className="space-y-6">
-            <img src="/Rg Logo .svg" className="h-28 w-auto  invert brightness-0" />
+            <img src="/Rg Logo .svg"
+            alt={"Top Architecture Firm in Nepal | RG Creations"}
+             className="h-28 w-auto  invert brightness-0" />
             <p className="text-gray-400 text-xs leading-relaxed max-w-sm">
               Welcome to RG Creations. We envision a future where our projects,
               adorned with a royal touch, stand as timeless masterpieces.

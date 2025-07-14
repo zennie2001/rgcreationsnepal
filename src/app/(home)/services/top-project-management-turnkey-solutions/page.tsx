@@ -4,10 +4,8 @@ import ServicesProjectHero from '@/sections/ServicesProjectHero';
 import Link from 'next/link';
 
 export const metadata = {
-  title: "Project Management And Turnkey Solutions - RG Creations Nepal ",
-  description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
-};
+  title: "Project Management & Turnkey Solutions Nepal",
+  description:"Get quality nightclub equipment from RG Creations, a trusted supplier supporting Nepal’s hospitality and entertainment construction sectors."};
 
 const page = () => {
   return (
@@ -67,9 +65,9 @@ const page = () => {
                 {/* Left Content */}
                 <div className="space-y-8 col-span-2">
                   <div>
-                    <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
                      Project Management & Turnkey Solutions
-                    </h1>
+                    </h2>
                     <p className="text-gray-600 text-lg leading-relaxed">
                       At RG Creations Pvt. Ltd., we specialize in turning bold visions into iconic nightlife destinations. Our premium nightclub construction services are tailored to entrepreneurs, hospitality brands, and entertainment groups looking to create vibrant, unforgettable experiences. We go beyond conventional construction — we build atmospheres that pulse with energy, style, and exclusivity.
                         <br/>

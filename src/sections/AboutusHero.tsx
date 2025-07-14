@@ -8,7 +8,7 @@ export default function AboutusHero() {
       {/* Background Image */}
       <Image
         src="/about/main.jpg" // Replace with your actual image path
-        alt="Hero Background"
+        alt="Top Architecture Firm in Nepal"
         fill
         className="object-cover z-0"
         priority
@@ -25,10 +25,10 @@ export default function AboutusHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
           Turning Ideas into Iconic Structures. Driven by Design, <br className="hidden md:block" /> 
             Defined by Excellence
-        </h1>
+        </h2>
 
         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">
           Lorem ipsum dolor sit amet consectetur. Consequat ornare morbi aliquet

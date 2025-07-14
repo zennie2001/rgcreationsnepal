@@ -6,10 +6,8 @@ import Link from 'next/link';
 import EquipmentVideo from '@/sections/EquipmentVideo';
 
 export const metadata = {
-  title: "Nightclub Equipment Supply - RG Creations Nepal ",
-  description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
-};
+  title: "Nightclub Equipment Supply | Trusted Nepal Supplier",
+  description:"Get quality nightclub equipment from RG Creations, a trusted supplier supporting Nepal’s hospitality and entertainment construction sectors."};
 
 const page = () => {
   return (
@@ -69,9 +67,9 @@ const page = () => {
                 {/* Left Content */}
                 <div className="space-y-8 col-span-2">
                   <div>
-                    <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
                       Nightclub Equipment Supply
-                    </h1>
+                    </h2>
                     <p className="text-gray-600 text-lg leading-relaxed">
                         At RG Creations Pvt. Ltd., we are your trusted partner for sourcing and supplying world-class nightclub equipment tailored to elevate the energy, performance, and profitability of nightlife venues across Nepal. From lighting and sound systems to DJ consoles and special effects, we provide everything you need to create a fully immersive and unforgettable nightclub experience.                        <br/>
                         
@@ -153,7 +151,7 @@ const page = () => {
                 <div className="overflow-hidden">
                   <img
                     src="/about/light1.jpg"
-                    alt="Image 1"
+                    alt="Premium Nightclub Equipment"
                     className="w-auto h-80 object-cover rounded-sm hover:scale-110 transition-transform duration-300"
                   />
                 </div>
@@ -161,7 +159,7 @@ const page = () => {
                 <div className="overflow-hidden">
                   <img
                     src="/about/equip1.jpg"
-                    alt="Image 2"
+                    alt="Premium Nightclub Equipment"
                     className="w-auto h-80 object-cover rounded-sm hover:scale-110 transition-transform duration-300 bg-white"
                   />
                 </div>
@@ -169,7 +167,7 @@ const page = () => {
                 <div className="overflow-hidden">
                   <img
                     src="/about/equip3.jpg"
-                    alt="Image 3"
+                    alt="Premium Nightclub Equipment"
                     className="w-64 h-auto object-cover rounded-sm hover:scale-110 transition-transform duration-300"
                   />
                 </div>
@@ -177,7 +175,7 @@ const page = () => {
                 <div className="overflow-hidden">
                   <img
                     src="/about/equip2.jpg"
-                    alt="Image 4"
+                    alt="Premium Nightclub Equipment"
                     className="w-64 h-auto object-cover rounded-sm hover:scale-110 transition-transform duration-300 "
                   />
                 </div>

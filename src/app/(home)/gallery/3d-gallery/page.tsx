@@ -4,7 +4,7 @@ import Project3DGallery from '@/sections/Project3DGallery';
 import React from 'react'
 
 export const metadata = {
-  title: "3D Gallery - RG Creations Nepal ",
+  title: "3D Gallery | Top Architecture Visualization ",
   description:
     "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
 };

@@ -6,7 +6,7 @@ import { FiChevronDown } from "react-icons/fi";
 import BlogHero from "@/sections/BlogHero";
 
 export const metadata = {
-  title: "Blogs - RG Creations Nepal ",
+  title: "Blogs | Leading Construction Company Nepal",
   description:
     "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
 };
@@ -82,7 +82,7 @@ function Blog() {
               {/* Image */}
               <img
                 src='/about/rgcreations1(1).jpg'
-                alt='blog image'
+                alt='The Leading Architecture and Construction Company'
                 className="
                   w-[276.6946105957031px] h-[439px]
                   sm:w-[276.6946105957031px] sm:h-[439px]
@@ -122,7 +122,7 @@ function Blog() {
               {/* Image */}
               <img
                 src='/about/news3.jpg'
-                alt='blog'
+                alt='Transforming Nightlife: The World’s Top 40 Nightclubs'
                 className="
                   w-[276.6946105957031px] h-[439px]
                   sm:w-[276.6946105957031px] sm:h-[439px]
@@ -163,7 +163,7 @@ function Blog() {
               {/* Image */}
               <img
                 src='/about/news2.jpg'
-                alt='blog'
+                alt='Nepal’s Best Premium Construction Company'
                 className="
                   w-[276.6946105957031px] h-[439px]
                   sm:w-[276.6946105957031px] sm:h-[439px]

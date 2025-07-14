@@ -5,10 +5,8 @@ import Link from "next/link";
 
 
 export const metadata = {
-  title: "Commercial Construction - RG Creations Nepal ",
-  description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
-};
+  title: "Commercial Construction Experts | Nepal’s Top Firm",
+  description:"Discover luxurious residential developments by RG Creations, Nepal’s trusted name for high-end, custom-built homes."};
 
 const page = () => {
   return (
@@ -26,7 +24,7 @@ const page = () => {
                   <div className="w-full h-full  flex items-center justify-center">
                     <img
                       src="/s1.jpg"
-                      alt="Image 1"
+                      alt="Top Commercial Construction "
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -39,7 +37,7 @@ const page = () => {
                   <div className="w-full h-full bg-gradient-to-br from-slate-200 to-slate-300 flex items-center justify-center">
                     <img
                       src="/s3.jpg"
-                      alt="Image 1"
+                      alt="Top Commercial Construction"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -52,7 +50,7 @@ const page = () => {
                   <div className="w-full h-full bg-gradient-to-br from-blue-300 to-blue-500 flex items-center justify-center">
                     <img
                       src="/s2.jpg"
-                      alt="Image 1"
+                      alt="Top Commercial Construction"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -68,9 +66,9 @@ const page = () => {
                 {/* Left Content */}
                 <div className="space-y-8 col-span-2">
                   <div>
-                    <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
                       Commercial Construction
-                    </h1>
+                    </h2>
                     <p className="text-gray-600 text-lg leading-relaxed">
                       We develop versatile commercial properties, including
                       office buildings, retail centers, hotels, and mixed-use

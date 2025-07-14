@@ -16,28 +16,28 @@ const LatestProjects = () => {
       category: "Completed Projects",
       image: "/rambagh.jpg",
       video: "/RGVideo2.mp4",
-      title: "Luxury Hotel Lobby",
+      title: "Rambagh Mahal",
     },
     {
       id: 2,
       category: "Completed Projects",
       image: "/about/newimg.jpg",
       video: "/RGVideo1.mp4",
-      title: "Fine Dining Restaurant",
+      title: "Harshah Batika",
     },
     {
       id: 3,
       category: "Ongoing Projects",
       image: "/about/poland.png",
       video: "/poland.mp4",
-      title: "Grand Ballroom",
+      title: "Modern Villa in Poland",
     },
     {
       id: 4,
       category: "Completed Projects",
       image: "/main-slider2.jpg",
       video: "/magestic.mp4",
-      title: "Modern Architecture",
+      title: "Magestic Grand",
     },
   ];
 
