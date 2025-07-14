@@ -37,7 +37,7 @@ const LatestProjects = () => {
       category: "Completed Projects",
       image: "/main-slider2.jpg",
       video: "/magestic.mp4",
-      title: "Magestic Grand",
+      title: "Majestic Grand",
     },
   ];
 

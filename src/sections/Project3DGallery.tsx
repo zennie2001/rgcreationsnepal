@@ -154,7 +154,7 @@ const Project3DGallery = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-[550px] object-cover hover:scale-110 transition-all duration-300"
+                  className="w-full h-[350px] object-cover hover:scale-110 transition-all duration-300"
                 />
                 {/* <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
                   <div className="text-white text-center opacity-0 hover:opacity-100 transition-opacity duration-300">
