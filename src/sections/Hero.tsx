@@ -168,7 +168,7 @@ const Hero = () => {
                 RG Creations Nepal builds high-end nightclubs with stunning interiors, vibrant lighting, and superior acoustics—designed for unforgettable nightlife experiences.
 
               </p>
-              <Link href={'/luxury-nightclub-construction'} >
+              <Link href={'/luxury-nightclub-construction'} aria-label="Luxury Nightclub & Casino Construction">
               <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors cursor-pointer ">
                 View More
               </button>
@@ -196,7 +196,7 @@ const Hero = () => {
                 We design luxurious banquet halls ideal for weddings and events—featuring seamless flow, grand entrances, and elegant finishes.
 
               </p>
-              <Link href={'/elegant-banquet-hall-construction'}>
+              <Link href={'/elegant-banquet-hall-construction'} aria-label="Elegant Banquet Hall & Event venues Construction">
               <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors ">
                 View More
               </button>
@@ -238,7 +238,7 @@ const Hero = () => {
               <p className="text-gray-300 text-sm leading-relaxed mb-3">
                 From boutique hotels to grand resorts, we create stylish, durable spaces that deliver comfort, elegance, and lasting value.
               </p>
-              <Link href="/hotel-resort-construction">
+              <Link href="/hotel-resort-construction" aria-label="Hotel & Resort Construction Experts">
               <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors cursor-pointer">
                 View More
               </button>

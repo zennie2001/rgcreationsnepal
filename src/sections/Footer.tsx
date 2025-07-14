@@ -79,7 +79,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/about/about-us"
+                  href="/about/about-us" aria-label="About Us"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   About Us
@@ -87,7 +87,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/about/about-us"
+                  href="/about/about-us" aria-label="Our Values"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   Our Values
@@ -95,7 +95,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/about/what-sets-us-apart"
+                  href="/about/what-sets-us-apart" aria-label="What-sets-us-apart"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                  What Sets Us Apart
@@ -103,7 +103,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/about/how-we-help-our-clients"
+                  href="/about/how-we-help-our-clients" aria-label="how we help our clients"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   How We Help Our Clients
@@ -111,7 +111,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/about/health-safety"
+                  href="/about/health-safety" aria-label="health & safety"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   Health and Safety
@@ -119,7 +119,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/about/message-from-chairman"
+                  href="/about/message-from-chairman" aria-label="Message from Chairman"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   Message from Chairman
@@ -135,7 +135,7 @@ const Footer = () => {
               
               <li>
                 <Link
-                  href="/services/top-premium-nightclub-construction"
+                  href="/services/top-premium-nightclub-construction" aria-label="Premium Nightclub Construction"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   Premium Nightclub Construction
@@ -143,7 +143,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/services/top-luxurious-residential-developments"
+                  href="/services/top-luxurious-residential-developments" aria-label="Luxurious Residential Developments"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   Luxurious Residential Developments
@@ -151,7 +151,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/services/top-commercial-construction"
+                  href="/services/top-commercial-construction" aria-label="Commercial Construction"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                  Commercial Construction
@@ -159,7 +159,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/services/top-architectural-interior-design"
+                  href="/services/top-architectural-interior-design" aria-label="Architectural & Interior Design"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   Architectural & Interior Design
@@ -167,7 +167,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/services/top-premium-furniture-supply"
+                  href="/services/top-premium-furniture-supply" aria-label=" Premium Furniture Supply"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   Premium Furniture Supply
@@ -175,7 +175,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/services/top-nightclub-equipment-supply"
+                  href="/services/top-nightclub-equipment-supply" aria-label=" Nightclub Equipment Supply" 
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   Nightclub Equipment Supply
@@ -183,7 +183,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/services/top-project-management-turnkey-solutions"
+                  href="/services/top-project-management-turnkey-solutions" aria-label="Project Management & Turnkey Solutions"
                   className="text-gray-400 text-sm hover:text-white transition-colors"
                 >
                   Project Management & Turnkey Solutions

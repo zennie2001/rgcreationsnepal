@@ -107,6 +107,7 @@ const ProjectVideoGallery = () => {
               >
                 {activeVideoId === project.id ? (
                   <iframe
+                  loading="lazy"
                     src={project.youtubeUrl + "?autoplay=1"}
                     title={project.title}
                     frameBorder="0"

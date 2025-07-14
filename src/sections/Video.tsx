@@ -30,6 +30,7 @@ const Video = () => {
         "
       >
        <iframe
+       loading="lazy"
           src="https://www.youtube.com/embed/8-x2IvYZ9Og?autoplay=1&controls=1&loop=1&playlist=8-x2IvYZ9Og"
           title="My Video"
           className="w-full h-full object-cover"

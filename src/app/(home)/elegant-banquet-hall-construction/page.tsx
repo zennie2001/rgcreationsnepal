@@ -23,6 +23,7 @@ const page = () => {
         "
       >
         <iframe
+        loading="lazy"
           className="w-full h-full rounded-xl"
           src="https://www.youtube.com/embed/Vqq1rA8RkLA"
           title="Premium Furniture Supply"

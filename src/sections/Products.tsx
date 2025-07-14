@@ -157,6 +157,7 @@ const LatestProjects = () => {
 
                   {/* Video */}
                   <iframe
+                  loading="lazy"
                    src={`${project.video}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0`}
                   title={project.title}
                   allow="autoplay; encrypted-media"

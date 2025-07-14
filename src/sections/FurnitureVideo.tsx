@@ -18,6 +18,7 @@ const FurnitureVideo = () => {
         "
       >
         <iframe
+        loading="lazy"
           className="w-full h-full rounded-xl"
           src="https://www.youtube.com/embed/U0N8bFhPijQ"
           title="Premium Furniture Supply"

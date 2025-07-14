@@ -124,7 +124,7 @@ const ModernBlogDesign: React.FC = () => {
           </Link>
 
           {/* Right Column - Featured Post */}
-          <Link href={'/blogs'} >
+          <Link href={'/blogs'} aria-label="blogs">
           {featuredPost && (
             <div className="relative h-full">
               <article className="group cursor-pointer h-full">

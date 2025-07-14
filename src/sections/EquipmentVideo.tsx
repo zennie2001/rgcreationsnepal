@@ -19,6 +19,7 @@ const EquipmentVideo = () => {
         "
       >
         <iframe
+        loading="lazy"
           className="w-full h-full rounded-xl"
           src="https://www.youtube.com/embed/nUAGfEXMyjc?autoplay=0&modestbranding=1&rel=0"
           title="Premium Nightclubs Equipment Supply"

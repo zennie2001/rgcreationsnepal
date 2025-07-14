@@ -67,7 +67,7 @@ const videoTestimonials: VideoTestimonial[] = [
   },
   {
     name: "Top Architecture Firm in Nepal | RG Creations",
-    videoUrl: "https://www.youtube.com/embed/bjQEJf2MUm0",
+    videoUrl: "https://www.youtube.com/embed/-rgWdG-eUmk",
   },
   {
     name: "Top Architecture Firm in Nepal | RG Creations",
@@ -152,6 +152,7 @@ const VideoTestimonialCard = ({
   return (
     <div className="bg-white rounded-sm p-4 shadow-xl max-w-xl mx-auto h-[400px] flex flex-col justify-between">
       <iframe
+      loading="lazy"
         src={videoUrl}
         title={name}
         className="w-full h-full rounded-md mb-4"

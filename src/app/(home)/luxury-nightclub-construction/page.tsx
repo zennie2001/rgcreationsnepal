@@ -25,6 +25,7 @@ const page = () => {
         "
       >
         <iframe
+        loading="lazy"
           className="w-full h-[250px] md:h-[400px] lg:h-[500px] rounded-xl"
           src="https://www.youtube.com/embed/KL6GjVHCRS0"
           title="Luxury Nightclub Casino Construction"
@@ -33,6 +34,7 @@ const page = () => {
         ></iframe>
 
         <iframe
+        loading="lazy"
           className="w-full h-[250px] md:h-[400px] lg:h-[500px] rounded-xl"
           src="https://www.youtube.com/embed/nUAGfEXMyjc"
           title="Luxury Nightclub Casino Construction"
