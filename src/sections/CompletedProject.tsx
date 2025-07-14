@@ -19,6 +19,7 @@ const CompletedProjects = () => {
     },
     {
       id: 2,
+      slug:"harshah-batika",
       category: "Image",
       image: "/media1.jpg",
       title: "Harshah Batika",
@@ -116,6 +117,9 @@ const CompletedProjects = () => {
                     </h3>
                     <p className="text-gray-200 text-sm">
                       {project.description}
+                    </p>
+                    <p className="text-gray-200 text-sm  pt-12">
+                      Read More
                     </p>
                   </div>
                 </div>

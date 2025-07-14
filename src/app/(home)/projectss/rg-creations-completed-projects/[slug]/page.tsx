@@ -30,7 +30,7 @@ export default function Page({ params }: Props) {
         <div className="relative w-full h-screen text-white">
           {/* Background Image */}
           <Image
-            src={`/images/${project.bgImg}`}
+            src={`${project.bgImg}`}
             alt={project.name}
             fill
             className="object-cover z-0"
@@ -55,6 +55,7 @@ export default function Page({ params }: Props) {
         </div>
 
         {/* Video section */}
+        {project.video && (
         <div className="lg:px-[215px] lg:py-18 px-4">
           <div className="w-full lg:h-[500px] h-[350px] rounded-lg overflow-hidden relative shadow-lg">
             {/* YouTube iframe */}
@@ -67,6 +68,7 @@ export default function Page({ params }: Props) {
             />
           </div>
         </div>
+        )}
       </div>
 
       {/* Content and sidebar */}
@@ -93,15 +95,15 @@ export default function Page({ params }: Props) {
         </div>
 
         {/* Sidebar with project details */}
-        <aside className="lg:w-[30%] sm:w-full bg-white shadow-md rounded-b-lg text-gray-900 self-start">
+        <aside className="lg:w-[30%] w-full bg-white shadow-md rounded-b-lg  text-gray-900 self-start">
           <h3 className="text-white bg-teal-800 py-6 font-bold text-center">
             Project Details
           </h3>
-          <dl className="divide-y-2 divide-[#244D4D] bg-gray-100 px-6">
+          <dl className="divide-y-2 divide-[#244D4D] bg-gray-100 px-6 rounded-b-lg">
             <div className="py-3 flex flex-col">
               <dt className="font-semibold text-sm">Client</dt>
               <dd className="text-gray-600 dark:text-gray-400 text-xs mt-1">
-                RG Creations Nepal Pvt. Ltd.
+                {project.name}
               </dd>
             </div>
 
