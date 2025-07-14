@@ -29,14 +29,14 @@ const Video = () => {
           rounded-xl overflow-hidden
         "
       >
-        <video
-          ref={videoRef}
+       <iframe
+          src="https://www.youtube.com/embed/8-x2IvYZ9Og?autoplay=1&controls=1&loop=1&playlist=8-x2IvYZ9Og"
+          title="My Video"
           className="w-full h-full object-cover"
-          loop
-          muted
-          controls={isPlaying}
-          src="/video1.mp4"
-        ></video>
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+        ></iframe>
+
 
         {!isPlaying && (
           <div className="absolute inset-0">

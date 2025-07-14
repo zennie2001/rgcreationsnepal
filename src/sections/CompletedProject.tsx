@@ -1,12 +1,16 @@
 "use client";
 
-
+import { useRouter } from "next/navigation";
 
 const CompletedProjects = () => {
+
+  const router = useRouter();
+
   // ✅ Single array for all images
   const projects = [
     {
       id: 1,
+      slug: "rambagh-mahal",
       category: "Image",
       image: "/rambagh.jpg",
       title: "Rambagh Mahal",
@@ -99,7 +103,13 @@ const CompletedProjects = () => {
                 />
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-80 transition duration-300 flex flex-col justify-center items-center p-4">
+                <div
+                 onClick={() =>
+                  router.push(
+                    `/projectss/rg-creations-completed-projects/${project.slug}`
+                  )
+                }
+                 className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-80 transition duration-300 flex flex-col justify-center items-center p-4">
                   <div className="opacity-0 group-hover:opacity-100 text-center transition duration-300">
                     <h3 className="text-white text-xl font-semibold mb-2">
                       {project.title}

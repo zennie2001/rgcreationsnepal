@@ -15,28 +15,28 @@ const LatestProjects = () => {
       id: 1,
       category: "Completed Projects",
       image: "/rambagh.jpg",
-      video: "/RGVideo2.mp4",
+      video: "https://www.youtube.com/embed/Z4ERfjwOJcs",
       title: "Rambagh Mahal",
     },
     {
       id: 2,
       category: "Completed Projects",
       image: "/about/newimg.jpg",
-      video: "/RGVideo1.mp4",
+      video: "https://www.youtube.com/embed/72Y7GQ_LTls",
       title: "Harshah Batika",
     },
     {
       id: 3,
       category: "Ongoing Projects",
       image: "/about/poland.png",
-      video: "/poland.mp4",
+      video: "https://www.youtube.com/embed/crejH20zYz8",
       title: "Modern Villa in Poland",
     },
     {
       id: 4,
       category: "Completed Projects",
       image: "/main-slider2.jpg",
-      video: "/magestic.mp4",
+      video: "https://www.youtube.com/embed/8-x2IvYZ9Og",
       title: "Majestic Grand",
     },
   ];
@@ -156,14 +156,11 @@ const LatestProjects = () => {
                   />
 
                   {/* Video */}
-                  <video
-                    ref={(el) => {
-                      videoRefs.current[index] = el;
-                    }}
-                    src={project.video}
-                    muted
-                    loop
-                    playsInline
+                  <iframe
+                   src={`${project.video}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0`}
+                  title={project.title}
+                  allow="autoplay; encrypted-media"
+                  allowFullScreen
                     className={`w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-300 ${
                       isHovered ? "opacity-100" : "opacity-0"
                     }`}
@@ -184,7 +181,7 @@ const LatestProjects = () => {
                   </div>
 
                   {/* Play/Pause Button */}
-                  {isHovered && (
+                  {/* {isHovered && (
                     <button
                       onClick={(e) => {
                         e.stopPropagation();
@@ -194,7 +191,7 @@ const LatestProjects = () => {
                     >
                       {isPlaying ? "Pause" : "Play"}
                     </button>
-                  )}
+                  )} */}
                 </div>
               </motion.div>
             );
