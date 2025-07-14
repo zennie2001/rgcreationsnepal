@@ -146,7 +146,7 @@ export default function Home() {
 
           <div className="border-2 rounded-full mt-20 border-gray-300 px-6 py-4 inline-flex items-center gap-4">
             <Image
-              src="/logo.png" // replace with your logo path
+              src="/Rg Logo .svg" // replace with your logo path
               alt="Logo - RG Creations Nepal"
               width={50}
               height={50}
