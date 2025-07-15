@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Gallery3DHero() {
   return (
-    <section className="relative h-screen w-full text-white">
+    <section className="relative h-[500px] w-full text-white">
       {/* Background Image */}
       <Image
         src="/GalleryHero.jpg" // Replace with your actual image path
@@ -25,7 +25,7 @@ export default function Gallery3DHero() {
           </p>
         </div>
 
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h2 className="text-3xl md:text-3xl font-bold mb-4 tracking-wider  max-w-3xl">
           Immersive Ideas, Intelligent Design – Explore Our 3D Concepts
         </h2>
 {/* 

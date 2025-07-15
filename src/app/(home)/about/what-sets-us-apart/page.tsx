@@ -52,7 +52,7 @@ export default function Home() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="border-2 border-black p-4 text-sm space-y-2 text-right bg-white shadow-sm"
+                className="border-2 border-black p-4 mb-1 text-sm space-y-2 text-right bg-white shadow-sm"
               >
                 <h3 className="font-semibold text-md uppercase">
                   {item.title}
@@ -66,10 +66,10 @@ export default function Home() {
           <div className="flex justify-center items-center">
             <div className="h-full w-full overflow-hidden">
               <Image
-                 src="/about/rg.jpg" 
+                 src="/rg-creations(1).jpg" 
                 alt="Top Architecture Firm in Nepal "
                 width={500}
-                height={800}
+                height={900}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -97,7 +97,7 @@ export default function Home() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="border-2 border-black p-4 text-sm space-y-2 bg-white shadow-sm"
+                className="border-2 border-black p-4 mb-1 text-sm space-y-2 bg-white shadow-sm"
               >
                 <h3 className="font-semibold text-md uppercase">
                   {item.title}
