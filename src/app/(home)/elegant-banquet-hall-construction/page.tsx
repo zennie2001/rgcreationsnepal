@@ -2,6 +2,12 @@ import Banquet from '@/sections/Banquet'
 import BanquetHero from '@/sections/BanquetHero'
 import React from 'react'
 
+export const metadata = {
+  title: "Elegant Banquet Construction | Top Builder Nepal",
+  description:
+    "Meet the expert team behind RG Creations, a top construction company in Nepal committed to delivering quality and excellence.",
+};
+
 const page = () => {
   return (
     <div className='overflow-hidden'>

@@ -18,6 +18,7 @@ const clients: (Client)[] = [
   { name: "Royal Empire", logo: "/logo/logo1(1).jpg" },
   { name: "Harshah Batika", logo: "/logo/logo1(2).jpg" },
   { name: "Deja vu", logo: "/logo/logo1(3).jpg" },
+  { name: "Sangam batika", logo: "/logo/sangam.jpg" },
   { name: "Rambagh Mahal", logo: "/logo/logo1(4).jpg" },
   { name: "Boudha Heritage", logo: "/logo/logo1(5).jpg" },
   { name: "Taaj Heritage", logo: "/logo/logo1(6).jpg" },

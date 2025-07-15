@@ -28,6 +28,7 @@ const CompletedProjects = () => {
     },
     {
       id: 4,
+      slug:"royal-empire-boutique-hotel",
       category: "Image",
       image: "/ImageVideo/Image4.jpg",
       title: "Royal Empire Boutique Hotel",
@@ -36,6 +37,7 @@ const CompletedProjects = () => {
     },
     {
       id: 5,
+      slug:"club-deja-vu",
       category: "Image",
       image: "/ImageVideo/Image5.jpg",
       title: "Club Deja vu",
@@ -44,6 +46,7 @@ const CompletedProjects = () => {
     },
     {
       id: 6,
+      slug:"magestic-grand-nepal",
       category: "Image",
       image: "/about/majestic.jpg",
       title: "Majestic Grand Nepal",
@@ -52,6 +55,7 @@ const CompletedProjects = () => {
     },
     {
       id: 7,
+      slug:"boudha-heritage",
       category: "Image",
       image: "/bouddha.jpg",
       title: "Boudha Heritage",
@@ -60,6 +64,7 @@ const CompletedProjects = () => {
     },
     {
       id: 8,
+       slug:"imperial-banquet",
       category: "Image",
       image: "/media2.jpeg",
       title: "Imperial Banquet",
@@ -68,11 +73,48 @@ const CompletedProjects = () => {
     },
     {
       id: 9,
+      slug:"taaj-reception",
       category: "Image",
       image: "/ImageVideo/Image9.jpg",
       title: "Taaj Reception",
       description:
         "Taaj Reception, located in Baluwatar, Kathmandu, offers an opulent ballroom and customizable event spaces perfect for weddings and special occasions. The venue features a dedicated professional team, state-of- the-art amenities, and flexible catering options to suit various budgets. With its elegant ambiance and prime location, Taaj Reception aims to create unforgettable experiences for guests and hosts alike.",
+    },
+    {
+      id: 10,
+      slug:"faces-lounge",
+      category: "Image",
+      image: "/ImageVideo/Image9.jpg",
+      title: "Faces Lounge",
+      description:
+        "A stylish urban lounge that blends comfort, ambiance, and design. Faces Lounge is a popular social spot known for its inviting interiors, vibrant vibe, and focus on experience-based design elements.",
+    },
+    {
+      id: 11,
+      slug:"victory-lounge",
+      category: "Image",
+      image: "/ImageVideo/Image9.jpg",
+      title: "Victory Lounge",
+      description:
+        "Victory Lounge is a high-end lounge bar project focused on luxury entertainment. With bold lighting, plush seating, and signature design features, it offers an elite experience for the nightlife crowd.",
+    },
+    {
+      id: 12,
+      slug:"station-pub",
+      category: "Image",
+      image: "/ImageVideo/Image9.jpg",
+      title: "Station Pub",
+      description:
+        "Designed with an industrial-modern aesthetic, Station Pub is a lively urban venue ideal for casual hangouts and weekend get-togethers. The design prioritizes functionality, edgy visuals, and a vibrant atmosphere.",
+    },
+     {
+      id: 13,
+      slug:"panas-banquet-event-hall",
+      category: "Image",
+      image: "/ImageVideo/Image9.jpg",
+      title: "Panas Banquet and Event Hall",
+      description:
+        "A multifunctional event venue with modern design sensibilities, Panas Banquet is suitable for weddings, social gatherings, and business functions. Its flexible layout and elegant finish make it a favorite for diverse occasions.",
     },
   ];
 
