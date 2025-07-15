@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function BlogHero() {
   return (
-    <section className="relative h-screen w-full text-white">
+    <section className="relative h-[500px] w-full text-white">
       {/* Background Image */}
       <Image
         src="/blog-banner.jpg" // Replace with your actual image path
@@ -25,7 +25,7 @@ export default function BlogHero() {
           </p>
         </div>
 
-        <h2 className="text-2xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4 tracking-wider  max-w-3xl">
           Dive into inspiring stories, architectural trends, and behind-the-scenes insights from Nepal’s premier luxury construction company <br className="hidden md:block" /> 
           
         </h2>
