@@ -21,7 +21,7 @@ const LatestProjects = () => {
     {
       id: 2,
       category: "Completed Projects",
-      image: "/about/newimg.jpg",
+      image: "harsa-batika-new.jpg",
       video: "https://www.youtube.com/embed/72Y7GQ_LTls",
       title: "Harshah Batika",
     },
@@ -35,7 +35,7 @@ const LatestProjects = () => {
     {
       id: 4,
       category: "Completed Projects",
-      image: "/main-slider2.jpg",
+      image: "/mj.jpg",
       video: "https://www.youtube.com/embed/8-x2IvYZ9Og",
       title: "Majestic Grand",
     },

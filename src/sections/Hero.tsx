@@ -37,11 +37,11 @@ const slides = [
   },
   {
     id: 4,
-    image: "/forth.png",
+    image: "/main-banner4(1).jpg",
     description: "Residential architecture",
     title: (
       <>
-      From Nightlife to  <br className="lg:hidden sm:block"/> Luxury Living <br className="hidden lg:block"/> We  <br className="lg:hidden sm:block"/> Build Experiences
+      Top-Rated Banquet <br className="lg:hidden sm:block"/> Hall Construction Experts  <br className="hidden lg:block"/> in <br className="lg:hidden sm:block"/> Nepal – Where Elegance <br className="lg:hidden sm:block"/> Meets Engineering
       </>
     ),
   },

@@ -7,7 +7,7 @@ export default function ServicesFirnitureHero() {
     <section className="relative h-screen w-full text-white">
       {/* Background Image */}
       <Image
-        src="/premium-furniture.jpg" // Replace with your actual image path
+        src="/premium-furniture(1).jpg" // Replace with your actual image path
         alt="Premium Furniture Supply"
         fill
         className="object-cover z-0"

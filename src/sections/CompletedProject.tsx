@@ -84,7 +84,7 @@ const CompletedProjects = () => {
       id: 10,
       slug:"faces-lounge",
       category: "Image",
-      image: "/ImageVideo/Image9.jpg",
+      image: "/faces.jpg",
       title: "Faces Lounge",
       description:
         "A stylish urban lounge that blends comfort, ambiance, and design. Faces Lounge is a popular social spot known for its inviting interiors, vibrant vibe, and focus on experience-based design elements.",
@@ -93,7 +93,7 @@ const CompletedProjects = () => {
       id: 11,
       slug:"victory-lounge",
       category: "Image",
-      image: "/ImageVideo/Image9.jpg",
+      image: "/victory.jpg",
       title: "Victory Lounge",
       description:
         "Victory Lounge is a high-end lounge bar project focused on luxury entertainment. With bold lighting, plush seating, and signature design features, it offers an elite experience for the nightlife crowd.",
@@ -102,7 +102,7 @@ const CompletedProjects = () => {
       id: 12,
       slug:"station-pub",
       category: "Image",
-      image: "/ImageVideo/Image9.jpg",
+      image: "/station.jpg",
       title: "Station Pub",
       description:
         "Designed with an industrial-modern aesthetic, Station Pub is a lively urban venue ideal for casual hangouts and weekend get-togethers. The design prioritizes functionality, edgy visuals, and a vibrant atmosphere.",
@@ -111,7 +111,7 @@ const CompletedProjects = () => {
       id: 13,
       slug:"panas-banquet-event-hall",
       category: "Image",
-      image: "/ImageVideo/Image9.jpg",
+      image: "/panas.jpg",
       title: "Panas Banquet and Event Hall",
       description:
         "A multifunctional event venue with modern design sensibilities, Panas Banquet is suitable for weddings, social gatherings, and business functions. Its flexible layout and elegant finish make it a favorite for diverse occasions.",
