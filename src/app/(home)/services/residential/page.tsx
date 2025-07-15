@@ -1,4 +1,4 @@
-import NewPageHeader from "@/components/NewPageHeader";
+// import NewPageHeader from "@/components/NewPageHeader";
 import About from "@/sections/About";
 import BlogDesign from "@/sections/Blog";
 import MissionSection from "@/sections/Mission";
@@ -11,7 +11,7 @@ import Services from "@/sections/Services";
 export default function RGMission() {
   return (
     <main>
-      <NewPageHeader title="Residential Construction" />
+      {/* <NewPageHeader title="Residential Construction" /> */}
       <div className="container mx-auto w-full py-10 bg-white">
         {/* Top Section */}
 
