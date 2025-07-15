@@ -2,6 +2,12 @@ import Nightclub from '@/sections/NIghtclub'
 import NightclubHero from '@/sections/NightclubHero'
 import React from 'react'
 
+export const metadata = {
+  title: "Luxury Nightclub Construction | Top Builder Nepal",
+  description:
+    "Meet the expert team behind RG Creations, a top construction company in Nepal committed to delivering quality and excellence.",
+};
+
 const page = () => {
   return (
     <div className='overflow-hidden'>
@@ -11,7 +17,7 @@ const page = () => {
 
      <div className="w-full lg:h-[950px] h-auto px-8 bg-gray-100 relative flex flex-col items-center  pt-12">
       <h2 className="lg:text-5xl text-2xl font-bold text-[#133950] text-center mb-16">
-        Luxury Nightclub &<br /> Casino Construction
+        Luxury Nightclub Construction
       </h2>
 
       <section

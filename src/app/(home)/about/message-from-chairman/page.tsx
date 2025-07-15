@@ -56,19 +56,19 @@ export default function Home() {
               Crafting a Legacy for Nepal
             </h2>
             <p className="text-gray-700 text-base mb-4 pr-4">
-              It is with great pride and purpose that I welcome you to RG Creations Nepal—a company built on a foundation of trust, creativity, and uncompromising quality. From day one, our mission has been clear: to raise the standard of construction in Nepal by delivering premium, future-ready spaces that inspire, perform, and endure.
+              At RG Creations, we believe that architecture is not just about building structures—it’s about shaping dreams, creating meaningful experiences, and building lasting legacies. Since our inception, our mission has been to blend innovation with tradition, bringing global insights into the heart of Nepal to deliver exceptional design and construction solutions.
             </p>
             <p className="text-gray-700 text-base mb-4 pr-4">
-              Whether it’s the electrifying ambiance of a world-class nightclub, the sophistication of a luxurious residence, or the refined functionality of a commercial property, we approach every project with passion and precision. Our work on LOD Nepal, ranked #44 in DJ Mag’s Top 100 Clubs 2025, stands as a global example of what Nepali vision and expertise can achieve.
+             Our commitment is to every client’s unique vision. We strive to understand not only their goals but also the people and environment those spaces serve. This philosophy drives our personalized approach and fuels our passion for excellence across every project.
             </p>
             <p className="text-gray-700 text-base pr-4">
-             But construction is only part of our story. At RG Creations, we are equally committed to interior design, premium furniture supply, and sustainable architecture—providing full-spectrum solutions that transform ideas into iconic realities.
+             With a strong foundation in research, design, engineering, and project management, combined with an integrated supply chain and cutting-edge technology, RG Creations is equipped to meet the evolving demands of today’s built environment. We are dedicated to sustainability, quality, and efficiency, ensuring every space we create is functional, beautiful, and future-ready.
             </p>
             <p className="text-gray-700 text-base pr-4">
-             As Chairman, I believe our true success lies not just in what we build, but in how we uplift our people, empower the next generation, and contribute to the future of Nepal. Thank you for being a part of this journey with us.
+             I am proud of the talented team we have built and the trust our clients place in us. Together, we will continue to push boundaries, set new standards, and contribute to shaping Nepal’s architectural landscape.
             </p>
             <p className="text-gray-800 text-base mt-2">
-             Warm regards,
+             Thank you for being part of our journey.
             </p>
           </div>
 

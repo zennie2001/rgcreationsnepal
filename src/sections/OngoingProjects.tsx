@@ -8,7 +8,7 @@ const OngoingProjects = () => {
     {
       id: 1,
       category: "Image",
-      image: "/ImageVideo/6.jpg",
+      image: "/ImageVideo/ongoing.jpg",
       title: "Ramalaya Batika",
       description:
         "Ramalaya Batika is an upcoming five- star luxury hotel in Pokhara, designed to blend traditional Nepali elegance with modern sophistication. Currently under development, it promises stunning architecture, world-class amenities, and a serene atmosphere. Once complete, Ramalaya Batika will offer an unforgettable experience for leisure, events, and business in the heart of Nepal's most scenic city.",
@@ -16,10 +16,50 @@ const OngoingProjects = () => {
     {
       id: 2,
       category: "Image",
-      image: "/ImageVideo/legend.png",
+      image: "/ImageVideo/ongoing.jpg",
       title: "Legend Nepal Club",
       description:
         "Legend Nepal Club is an upcoming nightclub in Kathmandu, currently under construction. Designed to offer an unparalleled nightlife experience, the club will feature exciting music, a lively atmosphere, and unforgettable events. Once completed, it will become a top destination for those seeking entertainment and fun, bringing people together for vibrant nights of celebration.",
+    },
+     {
+      id: 3,
+      category: "Image",
+      image: "/ImageVideo/ongoing.jpg",
+      title: "White Lotus",
+      description:
+        " White Lotus is a serene and elegant fine-dining destination designed to offer a luxurious culinary experience in the heart of the city. The ambiance blends sophistication with calm, creating a memorable atmosphere for guests.",
+    },
+     {
+      id: 4,
+      category: "Image",
+      image: "/ImageVideo/ongoing.jpg",
+      title: "Utsav Kunj",
+      description:
+        " Utsav Kunj is a modern venue crafted for grand celebrations, including weddings and corporate events. With a seamless indoor-outdoor layout, it provides the perfect setting for both intimate and large gatherings.",
+    },
+     {
+      id: 5,
+      category: "Image",
+      image: "/ImageVideo/ongoing.jpg",
+      title: "Sangam Batika",
+      description:
+        " Sangam Batika is a cultural and contemporary fusion space that brings charm and versatility to every occasion. Ideal for both traditional and modern events, it reflects a unique architectural identity.",
+    },
+     {
+      id: 6,
+      category: "Image",
+      image: "/ImageVideo/ongoing.jpg",
+      title: "Classic Hotel",
+      description:
+        " Classic Hotel is a timeless retreat that blends heritage charm with modern comfort. Designed with elegance and warmth in mind, it caters to discerning travelers looking for sophistication and tradition in one place.",
+    },
+    {
+      id: 7,
+      category: "Image",
+      image: "/ImageVideo/ongoing.jpg",
+      title: "Swarnim Sansar",
+      description:
+        " Swarnim Sansar is a grand event venue where architectural elegance meets modern functionality. Designed to host life’s most cherished moments, it offers an unforgettable setting for weddings, receptions, and special events.",
     },
     
   ];
@@ -52,8 +92,8 @@ const OngoingProjects = () => {
                 />
 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-80 transition duration-300 flex flex-col justify-center items-center p-4">
-                  <div className="opacity-0 group-hover:opacity-100 text-center transition duration-300">
+                <div className="absolute inset-0 bg-black bg-opacity-0  transition duration-300 flex flex-col justify-center items-center p-4">
+                  <div className=" opacity-80 text-center transition duration-300">
                     <h3 className="text-white text-xl font-semibold mb-2">
                       {project.title}
                     </h3>

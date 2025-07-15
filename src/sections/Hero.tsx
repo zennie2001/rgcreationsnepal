@@ -163,7 +163,7 @@ const Hero = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg 2xl:text-xl font-bold mb-2">Luxury Nightclub & Casino Construction</h3>
+              <h3 className="text-lg 2xl:text-xl font-bold mb-2">Luxury Nightclub Construction</h3>
               <p className="text-gray-300 text-sm leading-relaxed mb-3 ">
                 RG Creations Nepal builds high-end nightclubs with stunning interiors, vibrant lighting, and superior acoustics—designed for unforgettable nightlife experiences.
 
@@ -234,7 +234,7 @@ const Hero = () => {
                 </svg>
               </div>
               
-              <h3 className="text-lg 2xl:text-xl font-bold mb-2">Hotel & Resort Construction Experts</h3>
+              <h3 className="text-lg 2xl:text-xl font-bold mb-2">Hotel, Resort & Casino Construction Experts</h3>
               <p className="text-gray-300 text-sm leading-relaxed mb-3">
                 From boutique hotels to grand resorts, we create stylish, durable spaces that deliver comfort, elegance, and lasting value.
               </p>
