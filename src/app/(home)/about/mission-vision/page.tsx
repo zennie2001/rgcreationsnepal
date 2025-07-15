@@ -1,4 +1,4 @@
-import NewPageHeader from "@/components/NewPageHeader";
+
 import BlogDesign from "@/sections/Blog";
 import NewsLetter from "@/sections/NewsLetter";
 import Image from "next/image";
@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function RGMission() {
   return (
     <main>
-      <NewPageHeader title="Mission & Vision" />
+      {/* <NewPageHeader title="Mission & Vision" /> */}
       <div className="container mx-auto py-10 bg-white">
         {/* Top Section */}
         <div className="flex flex-col md:flex-row items-start gap-10">

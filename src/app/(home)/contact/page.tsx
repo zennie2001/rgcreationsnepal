@@ -1,4 +1,4 @@
-import PageHeader from "@/components/PageHeader";
+// import PageHeader from "@/components/PageHeader";
 import Contact from "@/sections/Contact";
 import FAQ from "@/app/(home)/faqs/page";
 import {
@@ -13,7 +13,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
 import { Phone } from "lucide-react";
 import { MailOpen } from "lucide-react";
-import NewPageHeader from "@/components/NewPageHeader";
+// import NewPageHeader from "@/components/NewPageHeader";
 import ContactHero from "@/sections/ContactHero";
 import FAQContact from "@/sections/FAQ";
 
