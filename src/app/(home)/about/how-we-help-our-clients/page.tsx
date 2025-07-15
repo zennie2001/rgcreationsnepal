@@ -60,89 +60,62 @@ export default function Home() {
     <main className="overflow-hidden">
       <AboutHelpHero/>
       <section className="px-6 py-12 md:px-20 md:py-20 bg-white">
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              How We Help Our Clients
-            </h2>
-            <p className="text-gray-700 text-sm mb-8 max-w-2xl">
-              At RG Creations Pvt. Ltd., our goal is to turn your vision into
-              reality by delivering architectural and design solutions that
-              inspire, perform, and create lasting value. Here’s how we partner
-              with our clients to make every project a success:
-            </p>
+  <div className="grid md:grid-cols-2 gap-12 items-stretch">
+    {/* LEFT COLUMN */}
+    <div>
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        How We Help Our Clients
+      </h2>
+      <p className="text-gray-700 text-sm mb-8 max-w-2xl">
+        At RG Creations Pvt. Ltd., our goal is to turn your vision into
+        reality by delivering architectural and design solutions that
+        inspire, perform, and create lasting value. Here’s how we partner
+        with our clients to make every project a success:
+      </p>
 
-            <div className="space-y-6">
-              {howWeHelpItems.map((item, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="bg-[#133950] text-white font-semibold px-3 py-1  text-sm min-w-[32px] text-center">
-                    {item.number}
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-sm mb-1">{item.title}</h4>
-                    <p className="text-sm text-gray-600 max-w-md">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
+      <div className="space-y-6">
+        {howWeHelpItems.map((item, index) => (
+          <div key={index} className="flex items-start gap-4">
+            <div className="bg-[#133950] text-white font-semibold px-3 py-1 text-sm min-w-[32px] text-center">
+              {item.number}
+            </div>
+            <div>
+              <h4 className="font-semibold text-sm mb-1">{item.title}</h4>
+              <p className="text-sm text-gray-600 max-w-md">
+                {item.description}
+              </p>
             </div>
           </div>
+        ))}
+      </div>
+    </div>
 
-          <div className="grid lg:grid-cols-2 gap-2 pl-6">
-            <div className="flex flex-col gap-4 ">
-              <Image
-                src="/2324.jpg"
-                alt="RG Creations Nepal services"
-                width={310}
-                height={300}
-                className="object-cover"
-              />
-              <Image
-                src="/2224.jpg"
-                alt="RG Creations Nepal services"
-                width={310}
-                height={300}
-                className=""
-              />
-              
-            </div>
-            <div className="flex flex-col gap-4">
-              <Image
-                src="/2024.jpg"
-                alt=" RG Creations Nepal services"
-                width={310}
-                height={300}
-                className=""
-              />
-              <Image
-                src="/about/4.jpg"
-                alt="RG Creations Nepal services"
-                width={310}
-                height={300}
-                className=""
-              />
-            </div>
-            <div className="flex  gap-4 ">
-              <Image
-                src="/client14.jpg"
-                alt="RG Creations Nepal services"
-                width={310}
-                height={300}
-                className="object-cover"
-              />
-              <Image
-                src="/client6.jpg"
-                alt="RG Creations Nepal services"
-                width={310}
-                height={300}
-                className=""
-              />
-              
-            </div>
+    {/* RIGHT COLUMN */}
+    <div className="h-full w-full pl-6">
+      <div className="grid grid-cols-2 grid-rows-3 gap-2 h-full">
+        {[
+          "/2324.jpg",
+          "/2224.jpg",
+          "/client14.jpg",
+          "/2024.jpg",
+          "/about/4.jpg",
+          "/client6.jpg",
+          
+        ].map((src, i) => (
+          <div key={i} className="relative w-full h-full">
+            <Image
+              src={src}
+              alt={`RG Creations Nepal services ${i + 1}`}
+              fill
+              className="object-cover"
+            />
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <FAQ />
       <Deals />

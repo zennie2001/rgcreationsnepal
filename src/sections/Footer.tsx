@@ -264,19 +264,19 @@ const Footer = () => {
           </div>
           <div className="flex space-x-6 mb-4 md:mb-0">
             <Link
-              href="#"
+              href="#" aria-label="Privacy Policy"
               className="text-white text-sm hover:text-white transition-colors"
             >
               Privacy Policy
             </Link>
             <Link
-              href="#"
+              href="#" aria-label="Terms & Condition"
               className="text-white text-sm hover:text-white transition-colors"
             >
               Terms & Conditions
             </Link>
             <Link
-              href="#"
+              href="#" aria-label="Cookies"
               className="text-white text-sm hover:text-white transition-colors"
             >
               Cookies
