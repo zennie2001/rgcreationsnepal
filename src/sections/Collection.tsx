@@ -12,9 +12,9 @@ const Collection: React.FC = () => {
           <div className="lg:col-span-3">
             <div className="relative">
               {/* Green rectangle decoration */}
-              <div className="absolute -top-8 left-0 w-16 h-20 bg-[#133950] z-10"></div>
+              {/* <div className="absolute -top-8 left-0 w-16 h-20 bg-[#133950] z-10"></div> */}
               <img
-                src="/about/newimg.jpg"
+                src="harsa-batika2.jpg"
                 alt="Traditional Building"
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
               />

@@ -3,17 +3,18 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { FiChevronDown } from "react-icons/fi";
+import { AiOutlineClose, AiOutlineZoomIn, AiOutlineZoomOut } from "react-icons/ai";
 
 type MediaTab = "english" | "nepali" | "paper";
 
 type NewsItem = {
-id: number;
-title?: string;
-description?: string;
-category?: string;
-image: string;
-date?: string;
-path?: string;
+  id: number;
+  title?: string;
+  description?: string;
+  category?: string;
+  image: string;
+  date?: string;
+  path?: string;
 };
 
 const mediaNews: Record<MediaTab, NewsItem[]> = {
@@ -58,7 +59,7 @@ description:
 category: "ARCHITECTURE",
 image: "/media1.jpg",
 date: "असार ३०, २०८२",
-path: "/blogs/nepali/details"
+// path: "/blogs/media-coverage/premium-hospitality-outlet"
 },
 {
 id: 2,
@@ -68,7 +69,7 @@ description:
 category: "DESIGN",
 image: "/rambagh.jpg",
 date: "२४ असार, २०८२",
-path: "/blogs/nepali/details"
+//path: "/blogs/media-coverage/premium-hospitality-sunaulo-nepal"
 },
 {
 id: 3,
@@ -78,158 +79,197 @@ description:
 category: "LIFESTYLE",
 image: "/media3.webp",
 date: "२४ असार २०८२",
-path: "/blogs/nepali/details"
+//path: "/blogs/media-coverage/premium-hospitality-newspolar"
 },
 ],
-// paper: Array.from({ length: 9 }, (_, i) => ({
-// id: i + 1,
-// image: `/paper${(i % 3) + 1}.jpg`,
-// })),
-
-paper: [
-{
-id:1,
-image: "/news1.jpg"
-},
-{
-id:2,
-image: "/news22.jpg"
-},
-{
-id:3,
-image: "/news33.jpg"
-},
-{
-id:4,
-image: "/news44.jpg"
-},
-{
-id:5,
-image: "/news55.jpg"
-},
-{
-id:6,
-image: "/news66.jpg"
-},
-{
-id:7,
-image: "/news77.jpg"
-},
-{
-id:8,
-image: "/news88.jpg"
-},
-{
-id:9,
-image: "/news99.jpg"
-},
-]
+  paper: [
+    { id: 1, image: "/news1.jpg" },
+    { id: 2, image: "/news22.jpg" },
+    { id: 3, image: "/news33.jpg" },
+    { id: 4, image: "/news44.jpg" },
+    { id: 5, image: "/news55.jpg" },
+    { id: 6, image: "/news66.jpg" },
+    { id: 7, image: "/news77.jpg" },
+    { id: 8, image: "/news88.jpg" },
+    { id: 9, image: "/news99.jpg" },
+  ]
 };
 
 const tabs: MediaTab[] = ["english", "nepali", "paper"];
 
 const MediaCoverage = () => {
-const [activeTab, setActiveTab] = useState<MediaTab>("english");
+  const [activeTab, setActiveTab] = useState<MediaTab>("english");
+  const blogs = mediaNews[activeTab];
 
-const blogs = mediaNews[activeTab];
+  // Modal state
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState<string | null>(null);
+  const [zoom, setZoom] = useState(1);
 
-return (
-<div>
-{/* Header */}
-<div className="flex flex-col lg:flex-row lg:items-center lg:justify-between lg:px-12 px-10 pt-16 mb-12">
-<div className="mb-8 lg:mb-0">
-<h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
-MEDIA COVERAGE
-</h2>
-<div className="w-16 h-1 bg-[#133950]"></div>
-</div>
+  const openModal = (image: string) => {
+    setModalImage(image);
+    setZoom(1);
+    setModalOpen(true);
+  };
 
-{/* Filter Tabs */}
-<div className="flex items-center gap-4 flex-wrap">
-{tabs.map((tab) => (
-<button
-key={tab}
-onClick={() => setActiveTab(tab)}
-className={`px-4 py-2 rounded-full border text-sm font-medium
-${activeTab === tab ? "bg-[#133950] text-white" : "text-gray-600 border-gray-300 hover:bg-gray-100"}`}
->
-{tab === "english" && "English News"}
-{tab === "nepali" && "Nepali News"}
-{tab === "paper" && "Paper News"}
-</button>
-))}
-</div>
-</div>
+  const closeModal = () => {
+    setModalOpen(false);
+    setModalImage(null);
+  };
 
-{/* Subheader */}
-<div className="flex justify-between items-center lg:px-12 px-10 mb-8">
-<span className="text-sm text-gray-400">
-Showing 1-{blogs.length} News
-</span>
-<p className="flex items-center gap-1">
-Sort by:
-<span className="text-[#002C6D] flex items-center gap-1">
-Most Recent <FiChevronDown />
-</span>
-</p>
-</div>
+  const handleZoomIn = () => {
+    setZoom((z) => Math.min(z + 0.25, 3));
+  };
 
-{/* Content */}
-{activeTab === "paper" ? (
-<div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-10 lg:px-12">
-{blogs.map((blog) => (
-<img
-key={blog.id}
-src={blog.image}
-alt=""
-className="w-full h-[400px] object-cover rounded-sm shadow hover:scale-105 transition-transform duration-300"
-/>
-))}
-</div>
-) : (
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-10 lg:px-12">
-{blogs.map((blog) => (
-<Link href={blog.path || "#"} key={blog.id}>
-<article className="group cursor-pointer h-full">
-<div className="relative rounded-sm h-full">
-{/* Overlay */}
-<div className="absolute inset-0 bg-black/50 overflow-hidden z-10 rounded-sm"></div>
+  const handleZoomOut = () => {
+    setZoom((z) => Math.max(z - 0.25, 0.5));
+  };
 
-{/* Image */}
-<img
-src={blog.image}
-alt={blog.title || ""}
-className="
-w-full h-[480px]
-object-cover group-hover:scale-105 transition-transform duration-500 rounded-sm
-"
-/>
+  return (
+    <div>
+      {/* Header */}
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between lg:px-12 px-10 pt-16 mb-12">
+        <div className="mb-8 lg:mb-0">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
+            MEDIA COVERAGE
+          </h2>
+          <div className="w-16 h-1 bg-[#133950]"></div>
+        </div>
 
-{/* Overlay Content */}
-<div className="absolute top-1/2 left-8 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
-<div className="lg:border-[16px] lg:border-[#133950] py-6 lg:px-6 pr-1">
-<h3 className="text-2xl font-bold leading-tight mb-4">
-{blog.title}
-</h3>
-<p className="text-sm opacity-90 leading-relaxed mb-4 text-end">
-{blog.date}
-</p>
-<p className="text-sm opacity-90 leading-relaxed mb-4">
-{blog.description}
-</p>
-<button className="text-xs font-medium mt-8 tracking-widest hover:underline">
-READ MORE
-</button>
-</div>
-</div>
-</div>
-</article>
-</Link>
-))}
-</div>
+        {/* Filter Tabs */}
+        <div className="flex items-center gap-4 flex-wrap">
+          {tabs.map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`px-4 py-2 rounded-full border text-sm font-medium 
+                ${activeTab === tab ? "bg-[#133950] text-white" : "text-gray-600 border-gray-300 hover:bg-gray-100"}`}
+            >
+              {tab === "english" && "English News"}
+              {tab === "nepali" && "Nepali News"}
+              {tab === "paper" && "Paper News"}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Subheader */}
+      <div className="flex justify-between items-center lg:px-12 px-10 mb-8">
+        <span className="text-sm text-gray-400">
+          Showing 1-{blogs.length} News
+        </span>
+        <p className="flex items-center gap-1">
+          Sort by:
+          <span className="text-[#002C6D] flex items-center gap-1">
+            Most Recent <FiChevronDown />
+          </span>
+        </p>
+      </div>
+
+      {/* Content */}
+      {activeTab === "paper" ? (
+        <>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-10 lg:px-12">
+            {blogs.map((blog) => (
+              <img
+                key={blog.id}
+                src={blog.image}
+                alt=""
+                onClick={() => openModal(blog.image)}
+                className="w-full h-[400px] object-cover rounded-sm shadow cursor-pointer hover:scale-105 transition-transform duration-300"
+              />
+            ))}
+          </div>
+
+          {/* Modal */}
+          {modalOpen && (
+  <div className="fixed inset-0 bg-black/80 flex justify-center items-center z-50">
+    {/* Close button */}
+    <button
+      onClick={closeModal}
+      className="absolute top-6 right-6 text-white hover:text-gray-300 z-50"
+    >
+      <AiOutlineClose size={40} />
+    </button>
+
+    <div className="relative w-[90vw] h-[80vh] bg-black flex flex-col items-center justify-center">
+      {/* Scrollable container */}
+      <div className="overflow-auto w-full h-full">
+        <img
+          src={modalImage!}
+          alt=""
+          style={{
+            width: `${zoom * 100}%`,
+            height: "auto",
+          }}
+          className="object-contain mx-auto transition-all duration-300"
+        />
+      </div>
+
+      {/* Zoom controls */}
+      <div className="absolute bottom-6 flex gap-4 justify-center">
+        <button
+          onClick={handleZoomOut}
+          className="p-3 bg-white rounded-full hover:bg-gray-200"
+        >
+          <AiOutlineZoomOut size={24} className="text-gray-800" />
+        </button>
+        <button
+          onClick={handleZoomIn}
+          className="p-3 bg-white rounded-full hover:bg-gray-200"
+        >
+          <AiOutlineZoomIn size={24} className="text-gray-800" />
+        </button>
+      </div>
+    </div>
+  </div>
 )}
-</div>
-);
+
+        </>
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-10 lg:px-12">
+          {blogs.map((blog) => (
+            <Link href={blog.path || "#"} key={blog.id}>
+              <article className="group cursor-pointer h-full">
+                <div className="relative rounded-sm h-full">
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-black/50 overflow-hidden z-10 rounded-sm"></div>
+
+                  {/* Image */}
+                  <img
+                    src={blog.image}
+                    alt={blog.title || ""}
+                    className="
+                      w-full h-[480px]
+                      object-cover group-hover:scale-105 transition-transform duration-500 rounded-sm
+                    "
+                  />
+
+                  {/* Overlay Content */}
+                  <div className="absolute top-1/2 left-8 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
+                    <div className="lg:border-[16px] lg:border-[#133950] py-6 lg:px-6 pr-1">
+                      <h3 className="text-2xl font-bold leading-tight mb-4">
+                        {blog.title}
+                      </h3>
+                      <p className="text-sm opacity-90 leading-relaxed mb-4 text-end">
+                        {blog.date}
+                      </p>
+                      <p className="text-sm opacity-90 leading-relaxed mb-4">
+                        {blog.description}
+                      </p>
+                      <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
+                        READ MORE
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 };
 
 export default MediaCoverage;

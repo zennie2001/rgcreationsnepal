@@ -92,14 +92,14 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-2 pl-6">
             <div className="flex flex-col gap-4 ">
               <Image
-                src="/ImageVideo/image7.jpg"
+                src="/2324.jpg"
                 alt="RG Creations Nepal services"
                 width={310}
                 height={300}
                 className="object-cover"
               />
               <Image
-                src="/ImageVideo/image4.jpg"
+                src="/2224.jpg"
                 alt="RG Creations Nepal services"
                 width={310}
                 height={300}
@@ -109,19 +109,36 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-4">
               <Image
-                src="/ImageVideo/image3.jpg"
+                src="/2024.jpg"
                 alt=" RG Creations Nepal services"
                 width={310}
                 height={300}
                 className=""
               />
               <Image
-                src="/ImageVideo/image6.jpg"
+                src="/about/4.jpg"
                 alt="RG Creations Nepal services"
                 width={310}
                 height={300}
                 className=""
               />
+            </div>
+            <div className="flex  gap-4 ">
+              <Image
+                src="/client14.jpg"
+                alt="RG Creations Nepal services"
+                width={310}
+                height={300}
+                className="object-cover"
+              />
+              <Image
+                src="/client6.jpg"
+                alt="RG Creations Nepal services"
+                width={310}
+                height={300}
+                className=""
+              />
+              
             </div>
           </div>
         </div>
