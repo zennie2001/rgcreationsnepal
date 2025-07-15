@@ -85,7 +85,7 @@ export const projects = [
     {
         slug:"faces-lounge",
         name:"Faces Lounge",
-        bgImg: "/ImageVideo/Image9.jpg",
+        bgImg: "/faces.jpg",
         video: "",
         description1: "A stylish urban lounge that blends comfort, ambiance, and design. Faces Lounge is a popular social spot known for its inviting interiors, vibrant vibe, and focus on experience-based design elements.",
         description2: "Faces Lounge is a restaurant, bar and lounge with variety musical bands performing live music every evening and a late night club.",
@@ -97,7 +97,7 @@ export const projects = [
     {
         slug:"victory-lounge",
         name:"Victory Lounge",
-        bgImg: "/media2.jpeg",
+        bgImg: "/victory.jpg",
         video: "",
         description1: "Victory Lounge is a high-end lounge bar project focused on luxury entertainment. With bold lighting, plush seating, and signature design features, it offers an elite experience for the nightlife crowd.",
         description2: "Victory Restaurant & Lounge was born out of an idea to create a place where people could enjoy 5-Star meals in a relaxing, welcoming environment.  Ricardo, a decorated businessman, had visions of opening an elite restaurant with an ambiance Miami had never seen before. The mixture of a dynamic ambiance, unmatched vibe, impeccable food and hookah came to life with Victory Restaurant & Lounge.",
@@ -109,7 +109,7 @@ export const projects = [
     {
         slug:"station-pub",
         name:"Station Pub",
-        bgImg: "/media2.jpeg",
+        bgImg: "/station.jpg",
         video: "",
         description1: "Designed with an industrial-modern aesthetic, Station Pub is a lively urban venue ideal for casual hangouts and weekend get-togethers. The design prioritizes functionality, edgy visuals, and a vibrant atmosphere.",
         description2: "Station Pub is a gem in the bustling city of Kathmandu, where locals and tourists alike gather to unwind and enjoy a laid-back atmosphere. This bar features a cozy interior and a welcoming outdoor space, perfect for sipping on a range of beverages—from classic cocktails to local brews. The ambiance is relaxed, making it an ideal spot to take a break from your busy sightseeing schedule. The pub is known for its friendly staff, who are always ready to recommend the best drinks to suit your taste.",
@@ -121,7 +121,7 @@ export const projects = [
     {
         slug:"panas-banquet-event-hall",
         name:"Panas Banquet and Event Hall",
-        bgImg: "/media2.jpeg",
+        bgImg: "/panas.jpg",
         video: "",
         description1: "A multifunctional event venue with modern design sensibilities, Panas Banquet is suitable for weddings, social gatherings, and business functions. Its flexible layout and elegant finish make it a favorite for diverse occasions.",
         description2: "Panas Events & Banquet, one of the finest party venue located in the heart of Kathmandu City(Capital) at Ringroad Basundhara having 15000 Sq. Ft Area with multistory double deck fabulous, well decorated indoor-hall. We comfortably can serve 2000+ people at a time. This is our capacity which we believe is our Strength. Parking for the bikes are available at our basement along with few cars. Besides, parking can also be done alongside Ringroad area at open space.",

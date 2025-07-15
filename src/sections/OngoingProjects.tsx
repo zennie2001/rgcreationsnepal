@@ -78,33 +78,31 @@ const OngoingProjects = () => {
             </div>
           </div>
 
-          {/* Grid of Images */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        {/* Grid of Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="relative group overflow-hidden rounded-lg shadow hover:shadow-lg cursor-pointer transition-all duration-300"
+                className="bg-white rounded-lg shadow hover:shadow-lg transition duration-300 flex flex-col overflow-hidden"
               >
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-[550px] object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-[250px] object-cover p-4 hover:scale-110 transition duration-300 "
                 />
 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-0  transition duration-300 flex flex-col justify-center items-center p-4">
-                  <div className=" opacity-80 text-center transition duration-300">
-                    <h3 className="text-white text-xl font-semibold mb-2">
-                      {project.title}
-                    </h3>
-                    <p className="text-gray-200 text-sm">
-                      {project.description}
-                    </p>
-                  </div>
+                <div className="p-4 flex flex-col flex-grow">
+                  <h3 className="text-lg font-bold text-gray-800 mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    {project.description}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
+        
         </div>
       </section>
     </div>
