@@ -1,4 +1,3 @@
-
 import AboutHero from "@/sections/AboutHero";
 import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
@@ -7,20 +6,23 @@ import AboutApartHero from "@/sections/AboutApartHero";
 
 export const metadata = {
   title: "What Sets Us Apart | Top Architecture & Construction",
-  description:"Learn about RG Creations’ core values that drive quality, sustainability, and client satisfaction as a leading construction company in Nepal."
+  description:
+    "Learn about RG Creations’ core values that drive quality, sustainability, and client satisfaction as a leading construction company in Nepal.",
 };
 
 export default function Home() {
   return (
     <main className="overflow-hidden">
-      <AboutApartHero/>
+      <AboutApartHero />
       <section className="bg-white px-4 py-20 container md:px-0 text-gray-800">
         {/* Title and Intro */}
-        <div className="mb-12 w-full flex justify-between">
-          <h2 className="text-3xl md:text-4xl font-bold w-1/2 mb-4">
-            WHAT SETS US<br/>APART
+        <div className="mb-12 w-full flex flex-col md:flex-row justify-between gap-6">
+          <h2 className="text-3xl md:text-4xl font-bold w-full md:w-1/2 mb-4">
+            WHAT SETS US
+            <br />
+            APART
           </h2>
-          <p className="text-sm text-gray-600 w-1/2">
+          <p className="text-sm text-gray-600 w-full md:w-1/2">
             At RG Creations Pvt. Ltd., we don’t follow trends—we set them.
             Here’s what makes us the preferred architectural partner for
             visionary developers, hospitality leaders, and entrepreneurs across
@@ -29,9 +31,9 @@ export default function Home() {
         </div>
 
         {/* Main Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
           {/* Left Column */}
-          <div className="">
+          <div className="h-full flex flex-col justify-between">
             {[
               {
                 title: "END-TO-END EXPERTISE",
@@ -52,7 +54,7 @@ export default function Home() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="border-2 border-black p-4 mb-1 text-sm space-y-2 text-right bg-white shadow-sm"
+                className="border-2 border-black p-4 mb-1 text-sm space-y-2 text-right bg-white shadow-sm flex-1"
               >
                 <h3 className="font-semibold text-md uppercase">
                   {item.title}
@@ -63,20 +65,18 @@ export default function Home() {
           </div>
 
           {/* Center Image */}
-          <div className="flex justify-center items-center">
-            <div className="h-full w-full overflow-hidden">
-              <Image
-                 src="/rg-creations(1).jpg" 
-                alt="Top Architecture Firm in Nepal "
-                width={500}
-                height={900}
-                className="w-full h-full object-cover"
-              />
-            </div>
+          <div className="h-full w-full overflow-hidden flex">
+            <Image
+              src="/rg-creations(1).jpg"
+              alt="Top Architecture Firm in Nepal"
+              width={500}
+              height={900}
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* Right Column */}
-          <div className="">
+          <div className="h-full flex flex-col justify-between">
             {[
               {
                 title: "UNMATCHED INDUSTRY FOCUS",
@@ -97,7 +97,7 @@ export default function Home() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="border-2 border-black p-4 mb-1 text-sm space-y-2 bg-white shadow-sm"
+                className="border-2 border-black p-4 mb-1 text-sm space-y-2 bg-white shadow-sm flex-1"
               >
                 <h3 className="font-semibold text-md uppercase">
                   {item.title}

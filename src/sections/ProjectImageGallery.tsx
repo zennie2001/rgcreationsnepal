@@ -17,6 +17,102 @@ const ProjectImageGallery = () => {
   // ✅ Single array for all images
   const projects = [
     {
+      id: 11,
+      category: "Image",
+      image: "/ImageVideo/1(8).jpg",
+      title: "Commercial and Residential Construction",
+    },
+    {
+      id: 12,
+      category: "Image",
+      image: "/ImageVideo/1(9).jpg",
+      title: "Commercial and Residential Construction",
+    },
+    {
+      id: 13,
+      category: "Image",
+      image: "/ImageVideo/1(10).jpg",
+      title: "Commercial and Residential Construction",
+    },
+    {
+      id: 14,
+      category: "Image",
+      image: "/ImageVideo/2(3).jpg",
+      title: "Commercial and Residential Construction",
+    },
+    {
+      id: 15,
+      category: "Image",
+      image: "/ImageVideo/2(4).jpg",
+      title: "Commercial and Residential Construction",
+    },
+    {
+      id: 16,
+      category: "Image",
+      image: "/ImageVideo/2(5).jpg",
+      title: "Commercial and Residential Construction",
+    },
+    {
+      id: 17,
+      category: "Image",
+      image: "/ImageVideo/3(3).jpg",
+      title: "Commercial and Residential Construction",
+    },
+    {
+      id: 18,
+      category: "Image",
+      image: "/ImageVideo/3(2).jpg",
+      title: "Commercial and Residential Construction",
+    },
+    {
+      id: 19,
+      category: "Image",
+      image: "/ImageVideo/3(4).jpg",
+      title: "Commercial and Residential Construction",
+    },
+    {
+      id: 20,
+      category: "Image",
+      image: "/ImageVideo/4(3).jpg",
+      title: "Commercial and Residential Construction",
+    },
+    {
+      id: 21,
+      category: "Image",
+      image: "/ImageVideo/4(4).jpg",
+      title: "Commercial and Residential Construction",
+    },
+    {
+      id: 22,
+      category: "Image",
+      image: "/ImageVideo/4(5).jpg",
+      title: "Commercial and Residential Construction",
+    },
+    {
+      id: 23,
+      category: "Image",
+      image: "/ImageVideo/5(6).jpg",
+      title: "Commercial and Residential Construction",
+    },
+    {
+      id: 24,
+      category: "Image",
+      image: "/ImageVideo/5(7).jpg",
+      title: "Commercial and Residential Construction",
+    },
+    {
+      id: 25,
+      category: "Image",
+      image: "/ImageVideo/5(8).jpg",
+      title: "Commercial and Residential Construction",
+    },
+    {
+      id: 26,
+      category: "Image",
+      image: "/ImageVideo/6(2).jpg",
+      title: "Commercial and Residential Construction",
+    },
+    {
       id: 1,
       category: "Image",
       image: "/ImageVideo/Image1.jpg",
