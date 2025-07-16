@@ -59,7 +59,7 @@ description:
 category: "ARCHITECTURE",
 image: "/media1.jpg",
 date: "असार ३०, २०८२",
-// path: "/blogs/media-coverage/premium-hospitality-outlet"
+path: "/blogs/media-coverage/premium-hospitality-outlet"
 },
 {
 id: 2,
@@ -69,7 +69,7 @@ description:
 category: "DESIGN",
 image: "/rambagh.jpg",
 date: "२४ असार, २०८२",
-//path: "/blogs/media-coverage/premium-hospitality-sunaulo-nepal"
+path: "/blogs/media-coverage/premium-hospitality-sunaulo-nepal"
 },
 {
 id: 3,
@@ -79,7 +79,7 @@ description:
 category: "LIFESTYLE",
 image: "/media3.webp",
 date: "२४ असार २०८२",
-//path: "/blogs/media-coverage/premium-hospitality-newspolar"
+path: "/blogs/media-coverage/premium-hospitality-newspolar"
 },
 ],
   paper: [

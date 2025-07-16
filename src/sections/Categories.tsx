@@ -35,7 +35,7 @@ const WelcomeSection = () => {
 
                 <Link href={'/about/about-us'} aria-label="Learn more about our company on the About page">
                 <button className="bg-[#133950] hover:bg-teal-800 text-white px-4 py-2 mb-20 font-medium text-sm tracking-wide uppercase transition-colors duration-300">
-                  READ MORE
+                 Explore Our Company
                 </button>
                 </Link>
               </div>

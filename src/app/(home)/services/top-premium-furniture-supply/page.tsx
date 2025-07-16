@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle, Clock } from "lucide-react";
 import ServicesFirnitureHero from '@/sections/ServicesFurtinutreHero';
 import Link from 'next/link';
 import FurnitureVideo from '@/sections/FurnitureVideo';
+import FurnitureImage from '@/sections/furnitureimage';
 
 export const metadata = {
   title: "Premium Furniture Supply | Nepal Construction Partner",
@@ -15,7 +16,7 @@ const page = () => {
         <ServicesFirnitureHero />
 
         <section className="w-full container mx-auto">
-        <div className=" py-20 bg-white">
+        <div className=" pt-20 bg-white">
           {/* Hero Section */}
           {/* <section className="relative">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 h-[85vh]">
@@ -141,6 +142,8 @@ const page = () => {
           </section>
         </div>
       </section>
+
+      <FurnitureImage />
 
       <FurnitureVideo />
 

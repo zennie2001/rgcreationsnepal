@@ -59,7 +59,7 @@ function Blog() {
 
         {/* Filter Tabs */}
         <div className="flex items-center gap-4">
-          <span className="text-sm text-gray-400">Showing 1-{blogs.length} Blogs</span>
+          <span className="text-sm text-gray-400">Showing 1-7 Blogs</span>
           <p className="flex items-center gap-1">
             Sort by:
             <span className="text-[#002C6D] flex items-center gap-1">
@@ -73,7 +73,7 @@ function Blog() {
       
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 px-10 lg:px-12">
        
-        <Link href={'/blogs/top-rg-creations-nepal-the-leading-architecture'}>
+        
           <article  className="group cursor-pointer h-full lg:h-[500px]">
             <div className="relative rounded-sm h-full">
               {/* Overlay */}
@@ -103,17 +103,19 @@ function Blog() {
                   <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
                       RG Creations Nepal Pvt Ltd stands as a beacon of excellence in this evolving market. With a commitment to delivering cutting-edge designs and superior construction solutions, RG Creations has earned a reputation as one of the best architecture and construction companies in Nepal.
                   </p>
+                  <Link href={'/blogs/top-rg-creations-nepal-the-leading-architecture'}>
                   <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
                     READ MORE
                   </button>
+                  </Link>
                 </div>
               </div>
              
             </div>
           </article>
-        </Link>
+        
 
-           <Link href={'/blogs/top-transforming-nightlife-our-journey'}>
+           
           <article  className="group cursor-pointer h-full">
             <div className="relative rounded-sm h-full">
               {/* Overlay */}
@@ -144,17 +146,19 @@ function Blog() {
                       we share the journey behind the creation of Dejavu Club—a masterpiece of nightclub design that has transformed Nepal’s nightlife scene and placed it firmly on the international map. From concept development to the final execution, discover how our team blended innovative interior design.
 
                   </p>
+                  <Link href={'/blogs/top-transforming-nightlife-our-journey'}>
                   <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
                     READ MORE
                   </button>
+                  </Link>
                 </div>
               </div>
              
             </div>
           </article>
-          </Link>
+          
 
-           <Link href={'/blogs/top-nepals-best-premium-construction-company'}>
+           
           <article  className="group cursor-pointer h-full">
             <div className="relative rounded-sm h-full">
               {/* Overlay */}
@@ -185,15 +189,185 @@ function Blog() {
                     We pride ourselves on being Nepal’s best premium construction company, delivering excellence to both budget-savvy and luxury clients. This comprehensive article explores how RG Creations balances quality and affordability, our approach to construction.
 
                   </p>
+                  <Link href={'/blogs/top-nepals-best-premium-construction-company'}>
                   <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
                     READ MORE
                   </button>
+                  </Link>
                 </div>
               </div>
+
+              
+             
+
+
              
             </div>
           </article>
-          </Link>
+
+           <article  className="group cursor-pointer h-full lg:h-[500px]" >
+            <div className="relative rounded-sm h-full">
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/50 overflow-hidden z-10 rounded-sm"></div>
+
+              {/* Image */}
+              <img
+                src='/about/residential.jpg'
+                alt='Nepal’s Best Premium Construction Company'
+                className="
+                  w-[276.6946105957031px] h-[439px]
+                  sm:w-[276.6946105957031px] sm:h-[439px]
+                  md:w-full md:h-full
+                  mx-auto
+                  object-cover group-hover:scale-105 transition-transform duration-500 rounded-sm
+                "
+              />
+
+              {/* Overlay Content */}
+              
+             <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
+               
+                <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
+                  <h3 className="text-2xl font-bold leading-tight mb-4">
+                    How to Choose the Best Architect in Nepal for Your Dream Project?
+                  </h3>
+                  <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
+                    Nepal has witnessed a growing demand for innovative and sustainable architecture over the last decade. From traditional Newari craftsmanship to cutting-edge contemporary designs, today’s top Nepali architects are reshaping skylines with thoughtful, client-centered approaches.
+
+                  </p>
+                  <Link href={'/blogs/how-to-choose-best-architect-in-nepal'}>
+                  <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
+                    READ MORE
+                  </button>
+                  </Link>
+                </div>
+              </div> 
+            </div>
+          </article>
+
+          <article  className="group cursor-pointer h-full lg:h-[500px]" >
+            <div className="relative rounded-sm h-full">
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/50 overflow-hidden z-10 rounded-sm"></div>
+
+              {/* Image */}
+              <img
+                src='/about/nightclub.jpg'
+                alt='Nepal’s Best Premium Construction Company'
+                className="
+                  w-[276.6946105957031px] h-[439px]
+                  sm:w-[276.6946105957031px] sm:h-[439px]
+                  md:w-full md:h-full
+                  mx-auto
+                  object-cover group-hover:scale-105 transition-transform duration-500 rounded-sm
+                "
+              />
+
+              {/* Overlay Content */}
+              
+             <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
+               
+                <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
+                  <h3 className="text-2xl font-bold leading-tight mb-4">
+                   The Ultimate Guide to Nightclub Design, Construction, and Equipment Supply in Nepal
+                  </h3>
+                  <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
+                    The nightlife scene in Nepal—especially in cities like Kathmandu, Pokhara, and Itahari—is rapidly evolving, with an increasing demand for immersive nightclub experiences. Whether you're an investor, entrepreneur, or hospitality brand.
+
+                  </p>
+                  <Link href={'/blogs/the-ultimate-guide-to-nightclub-design'}>
+                  <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
+                    READ MORE
+                  </button>
+                  </Link>
+                </div>
+              </div> 
+            </div>
+          </article>
+
+            <article  className="group cursor-pointer h-full lg:h-[500px]" >
+            <div className="relative rounded-sm h-full">
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/50 overflow-hidden z-10 rounded-sm"></div>
+
+              {/* Image */}
+              <img
+                src='/GalleryHero.jpg'
+                alt='Nepal’s Best Premium Construction Company'
+                className="
+                  w-[276.6946105957031px] h-[439px]
+                  sm:w-[276.6946105957031px] sm:h-[439px]
+                  md:w-full md:h-full
+                  mx-auto
+                  object-cover group-hover:scale-105 transition-transform duration-500 rounded-sm
+                "
+              />
+
+              {/* Overlay Content */}
+              
+             <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
+               
+                <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
+                  <h3 className="text-2xl font-bold leading-tight mb-4">
+                   Building Dreams: Nepal’s Leading Luxury Residential and Premium Villa Construction Experts
+                  </h3>
+                  <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
+                    Nepal has seen a significant rise in demand for luxurious residential properties and premium villas. As urbanization expands and high-net-worth individuals seek quality living spaces that combine aesthetic beauty, functionality, and exclusivity
+
+                  </p>
+                  <Link href={'/blogs/nepals-leading-luxury-residential-construction'}>
+                  <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
+                    READ MORE
+                  </button>
+                  </Link>
+                </div>
+              </div> 
+            </div>
+          </article>
+
+            <article  className="group cursor-pointer h-full lg:h-[500px]" >
+            <div className="relative rounded-sm h-full">
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/50 overflow-hidden z-10 rounded-sm"></div>
+
+              {/* Image */}
+              <img
+                src='/ImageVideo/1(10).jpg'
+                alt='Nepal’s Best Premium Construction Company'
+                className="
+                  w-[276.6946105957031px] h-[439px]
+                  sm:w-[276.6946105957031px] sm:h-[439px]
+                  md:w-full md:h-full
+                  mx-auto
+                  object-cover group-hover:scale-105 transition-transform duration-500 rounded-sm
+                "
+              />
+
+              {/* Overlay Content */}
+              
+             <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
+               
+                <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
+                  <h3 className="text-2xl font-bold leading-tight mb-4">
+                   Transform Your Land into a Profitable Banquet Hall Business – We Build, Lease, or Partner
+                  </h3>
+                  <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
+                    In today’s fast-growing hospitality and event management industry, banquet halls are in constant demand. From weddings and birthdays to corporate functions and high-end social events, venues that offer luxury, convenience, and ample space are highly sought after.
+
+                  </p>
+                  <Link href={'/blogs/transform-your-land-into-profitable-banquet-hall'}>
+                  <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
+                    READ MORE
+                  </button>
+                  </Link>
+                </div>
+              </div> 
+            </div>
+          </article>
+
+
+           
+          
        
       </div>
       

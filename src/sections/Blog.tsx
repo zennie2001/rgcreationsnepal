@@ -85,7 +85,7 @@ const ModernBlogDesign: React.FC = () => {
         {/* Blog Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch relative">
           {/* Left Column - Regular Posts */}
-          <Link href={'/blogs'} >
+         
           <div className="h-full flex flex-col justify-between gap-8">
             {regularPosts.map((post) => (
               <article
@@ -121,10 +121,10 @@ const ModernBlogDesign: React.FC = () => {
               </article>
             ))}
           </div>
-          </Link>
+          
 
           {/* Right Column - Featured Post */}
-          <Link href={'/blogs'} aria-label="blogs">
+          
           {featuredPost && (
             <div className="relative h-full">
               <article className="group cursor-pointer h-full">
@@ -156,9 +156,11 @@ const ModernBlogDesign: React.FC = () => {
                     <p className="text-sm opacity-90 hidden lg:block leading-relaxed mb-4">
                       {featuredPost.description}
                     </p>
+                    <Link href={'/blogs'} aria-label="blogs">
                     <button className="text-xs font-medium tracking-widest hover:underline">
-                      READ MORE
+                      Read Full Article
                     </button>
+                    </Link>
                     </div>
                   </div>
 
@@ -169,7 +171,7 @@ const ModernBlogDesign: React.FC = () => {
               </article>
             </div>
           )}
-          </Link>
+          
         </div>
 
         <div className="flex justify-end px-4 md:px-0 py-8">
