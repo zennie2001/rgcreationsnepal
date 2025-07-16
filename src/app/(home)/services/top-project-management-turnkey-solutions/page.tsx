@@ -137,7 +137,7 @@ const page = () => {
         </div>
       </section>
 
-       <div className="w-full lg:h-[950px] h-[550px] px-8 bg-gray-100 relative flex flex-col items-center pt-16c:\Users\Dell\Downloads\2324.jpg c:\Users\Dell\Downloads\client6.jpg c:\Users\Dell\Downloads\client14.jpg c:\Users\Dell\Downloads\2024.jpg c:\Users\Dell\Downloads\2224.jpgc:\Users\Dell\Downloads\2324.jpg c:\Users\Dell\Downloads\client6.jpg c:\Users\Dell\Downloads\client14.jpg c:\Users\Dell\Downloads\2024.jpg c:\Users\Dell\Downloads\2224.jpgc:\Users\Dell\Downloads\2324.jpg c:\Users\Dell\Downloads\client6.jpg c:\Users\Dell\Downloads\client14.jpg c:\Users\Dell\Downloads\2024.jpg c:\Users\Dell\Downloads\2224.jpg">
+       <div className="w-full lg:h-[950px] h-[550px] px-8 bg-gray-100 relative flex flex-col items-center pt-16">
       <h2 className="lg:text-5xl text-2xl font-bold text-[#133950] text-center mb-10">
         Project Management & Turnkey Solutions 
       </h2>

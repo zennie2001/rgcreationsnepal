@@ -36,7 +36,7 @@ export default function AboutHelpHero() {
         </p> */}
 
         <a
-          href="/book-appointment"
+          href="/book-appointment" aria-label="book-appointmet"
           className="bg-[#133950] text-white text-sm px-6 py-3 rounded-md font-medium transition"
         >
           GET STARTED

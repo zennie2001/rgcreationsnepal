@@ -170,7 +170,7 @@ const Hero = () => {
               </p>
               <Link href={'/luxury-nightclub-construction'} aria-label="Luxury Nightclub & Casino Construction">
               <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors cursor-pointer ">
-                View More
+                View Our Nightclub Construction
               </button>
               </Link>
             </div>
@@ -198,7 +198,7 @@ const Hero = () => {
               </p>
               <Link href={'/elegant-banquet-hall-construction'} aria-label="Elegant Banquet Hall & Event venues Construction">
               <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors ">
-                View More
+                View Our Banquet & Event Builds
               </button>
               </Link>
             </div>
@@ -240,7 +240,7 @@ const Hero = () => {
               </p>
               <Link href="/hotel-resort-construction" aria-label="Hotel & Resort Construction Experts">
               <button className="text-white text-sm font-medium hover:text-teal-400 transition-colors cursor-pointer">
-                View More
+                View Our Hotel & Resort Designs
               </button>
               </Link>
             </div>
