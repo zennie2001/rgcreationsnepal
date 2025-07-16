@@ -48,7 +48,7 @@ const CompletedProjects = () => {
       id: 6,
       slug:"magestic-grand-nepal",
       category: "Image",
-      image: "/about/majestic.jpg",
+      image: "/ImageVideo/1(9).jpg",
       title: "Majestic Grand Nepal",
       description:
         "The Majestic Grand is a beautifully designed banquet hall ideal for special occasions. It features elegant decor and a charming ambiance, enhancing the overall experience for guests. With convenient access to nearby attractions, the venue offers comprehensive event planning assistance, catering, and transportation arrangements, ensuring that each celebration is memorable and fits within budget.",

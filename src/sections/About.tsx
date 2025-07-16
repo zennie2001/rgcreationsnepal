@@ -32,19 +32,21 @@ const Specialization: React.FC = () => {
               />
             </div>
             <div className="lg:pl-8">
+               <Link href={'/services/top-premium-nightclub-construction'} aria-label="Learn more about PREMIUM NIGHTCLUB ">
               <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
                 PREMIUM NIGHTCLUB
                 <br />
                 CONSTRUCTION
               </h3>
+              </Link>
               <p className="text-gray-600 text-sm leading-relaxed mb-8 text-justify">
                 DESIGNING AND BUILDING WORLD-CLASS NIGHTCLUBS FEATURING FLAWLESS
                 ARCHITECTURE, CUTTING-EDGE ACOUSTICS, AND IMMERSIVE LIGHTING TO
                 CREATE UNFORGETTABLE NIGHTLIFE EXPERIENCES.
               </p>
               <Link href={'/services/top-premium-nightclub-construction'} aria-label="Learn more about PREMIUM NIGHTCLUB ">
-              <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
-                READ MORE
+              <button className="text-blue-500 text-sm font-medium tracking-widest hover:text-blue-700 transition-colors">
+                Explore Our Nightclub Construction Expertise
               </button>
               </Link>
             </div>
@@ -55,18 +57,20 @@ const Specialization: React.FC = () => {
         <div className="mb-10">
           <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 lg:pr-8">
+              <Link href={'/services/top-luxurious-residential-developments'} aria-label="Learn more about LUXURIOUS RESIDENTIAL ">
               <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
                 LUXURIOUS RESIDENTIAL
                 <br />
                 DEVELOPMENTS
               </h3>
+              </Link>
               <p className="text-gray-600 text-sm leading-relaxed mb-8 text-justify">
                 CREATING ELEGANT, HIGH-END HOMES AND APARTMENT COMPLEXES THAT
                 COMBINE TIMELESS DESIGN, COMFORT, AND MODERN FUNCTIONALITY.
               </p>
               <Link href={'/services/top-luxurious-residential-developments'} aria-label="Learn more about LUXURIOUS RESIDENTIAL ">
-              <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
-                READ MORE
+              <button className="text-blue-500 text-sm font-medium tracking-widest hover:text-blue-700 transition-colors">
+               Explore Luxurious Residential Developments
               </button>
               </Link>
             </div>
@@ -91,19 +95,21 @@ const Specialization: React.FC = () => {
               />
             </div>
             <div className="lg:pl-8">
+              <Link href={'/services/top-commercial-construction'} aria-label="Learn more about  COMMERCIAL">
               <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
                 COMMERCIAL
                 <br />
                 CONSTRUCTION
               </h3>
+              </Link>
               <p className="text-gray-600 text-sm leading-relaxed mb-8 text-justify">
                 DEVELOPING OFFICE BUILDINGS, RETAIL SPACES, HOTELS, AND OTHER
                 COMMERCIAL PROJECTS TAILORED TO MEET YOUR BUSINESS GOALS AND
                 ENHANCE OPERATIONAL SUCCESS.
               </p>
               <Link href={'/services/top-commercial-construction'} aria-label="Learn more about  COMMERCIAL">
-              <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
-                READ MORE
+              <button className="text-blue-500 text-sm font-medium tracking-widest hover:text-blue-700 transition-colors">
+                Explore Commercial Construction Services
               </button>
               </Link>
             </div>
@@ -114,18 +120,20 @@ const Specialization: React.FC = () => {
         <div className="mb-10">
           <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 lg:pr-8">
+              <Link href={'/services/top-architectural-interior-design'} aria-label="Learn more about ARCHITECTURAL">
               <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
                 ARCHITECTURAL &<br />
                 INTERIOR DESIGN
               </h3>
+              </Link>
               <p className="text-gray-600 text-sm leading-relaxed mb-8 text-justify">
                 PROVIDING INNOVATIVE DESIGNS FOR HOSPITALITY VENUES, LUXURY
                 BOUTIQUE HOTELS, EXCLUSIVE RESIDENCES, AND COMMERCIAL PROPERTIES
                 - EACH CUSTOMIZED TO YOUR VISION.
               </p>
                <Link href={'/services/top-architectural-interior-design'} aria-label="Learn more about ARCHITECTURAL">
-              <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
-                READ MORE
+              <button className="text-blue-500 text-sm font-medium tracking-widest hover:text-blue-700 transition-colors">
+                Explore Architectural & Interior Design Services
               </button>
               </Link>
             </div>
@@ -150,19 +158,21 @@ const Specialization: React.FC = () => {
               />
             </div>
             <div className="lg:pl-8">
+              <Link href={'/services/top-premium-furniture-supply'} aria-label="Learn more about PREMIUM FURNITURE">
               <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
                 PREMIUM FURNITURE
                 <br />
                 SUPPLY
               </h3>
+              </Link>
               <p className="text-gray-600 text-sm leading-relaxed mb-8">
                 PROVIDING EXCLUSIVE, HIGH-QUALITY FURNITURE COLLECTIONS THAT
                 BLEND STYLE, COMFORT, AND DURABILITY, PERFECT FOR UPSCALE
                 ENVIRONMENTS.
               </p>
               <Link href={'/services/top-premium-furniture-supply'} aria-label="Learn more about PREMIUM FURNITURE">
-              <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
-                READ MORE
+              <button className="text-blue-500 text-sm font-medium tracking-widest hover:text-blue-700 transition-colors">
+                Explore Premium Furniture Supply Services
               </button>
               </Link>
             </div>
@@ -173,18 +183,20 @@ const Specialization: React.FC = () => {
            <div className="mb-10">
           <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 lg:pr-8">
+              <Link href={'/services/top-nightclub-equipment-supply'} aria-label="Learn more about  NIGHTCLUB EQUIPMENT ">
                <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
                 NIGHTCLUB EQUIPMENT
                 <br />
                 SUPPLY
               </h3>
+              </Link>
               <p className="text-gray-600 text-sm leading-relaxed mb-8 text-justify">
                SUPPLYING STATE-OF-THE-ART SOUND SYSTEMS, DYNAMIC LIGHTING, AND
                 SPECIALIZED NIGHTCLUB GEAR THAT ELEVATE ENTERTAINMENT VENUES.
               </p>
                <Link href={'/services/top-nightclub-equipment-supply'} aria-label="Learn more about  NIGHTCLUB EQUIPMENT ">
-              <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
-                READ MORE
+              <button className="text-blue-500 text-sm font-medium tracking-widest hover:text-blue-700 transition-colors">
+                Explore Nightclub Equipment Supply Services
               </button>
               </Link>
             </div>
@@ -244,17 +256,19 @@ const Specialization: React.FC = () => {
               />
             </div>
             <div className="lg:pl-8">
+              <Link href={'/services/top-project-management-turnkey-solutions'} aria-label="Learn more about PPROJECT MANAGEMENT ">
               <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
                 PROJECT MANAGEMENT &<br />
                 TURNKEY SOLUTIONS
               </h3>
+              </Link>
               <p className="text-gray-600 text-sm leading-relaxed mb-8">
                 ENSURING SEAMLESS PROJECT DELIVERY FROM CONCEPT TO COMPLETION -
                 ON TIME, WITHIN BUDGET, AND BEYOND EXPECTATIONS.
               </p>
                <Link href={'/services/top-project-management-turnkey-solutions'} aria-label="Learn more about PPROJECT MANAGEMENT ">
-              <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
-                READ MORE
+              <button className="text-blue-500 text-sm font-medium tracking-widest hover:text-blue-700 transition-colors">
+                Explore our turnkey project management services
               </button>
               </Link>
             </div>

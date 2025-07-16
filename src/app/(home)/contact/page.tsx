@@ -199,7 +199,7 @@ export default function ContactUs() {
           <div className="absolute bg-[#133950] right-0 h-full w-1/2 z-10"></div>
           <div className="relative w-[70%] md:w-[77%] mx-auto h-[77%]  m-20 z-20">
             <img
-              src="/about/rg.jpg" // Replace with your actual image
+              src="/rg-logo-frame.jpg" // Replace with your actual image
               alt="Top Construction company"
               className="object-cover w-full h-full  rounded-sm "
             />
