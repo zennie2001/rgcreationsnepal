@@ -216,8 +216,8 @@ export default function Header() {
                   <a
                     key={index}
                     href={item.href}
-                     target={item.title === "Organizational Chart" ? "_blank" : undefined}
-                     rel={item.title === "Organizational Chart" ? "noopener noreferrer" : undefined}
+                    target="_blank"
+                     rel="noopener noreferrer"
                     className="block px-4 py-2 text-base hover:bg-gray-100"
                   >
                     {item.title}
