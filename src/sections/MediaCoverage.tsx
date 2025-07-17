@@ -158,12 +158,12 @@ date: "June 28, 2025"
 { id: 2, image: "/news22.jpg",
     mediaName: "The Himalayan Times",
 mediaLogo: "/medialogo/himalayan.jpg",
-date: "July 1, 2025"
+// date: "July 1, 2025"
  },
 { id: 4, image: "/news44.jpg",
     mediaName: "The Himalayan Times",
 mediaLogo: "/medialogo/himalayan.jpg",
-date: "July 1, 2025"
+// date: "July 1, 2025"
  },
 
 { id: 6, image: "/news66.jpg" ,
@@ -174,7 +174,7 @@ date: "May 21, 2025"
 { id: 7, image: "/news77.jpg" ,
     mediaName: "The Himalayan Times",
 mediaLogo: "/medialogo/himalayan.jpg",
-date: "July 1, 2025"
+// date: "July 1, 2025"
 },
 { id: 8, image: "/news88.jpg",
     mediaName: "Karobar Daily",
@@ -184,7 +184,7 @@ date: "June 28, 2025"
 { id: 9, image: "/news99.jpg" ,
     mediaName: "The Himalayan Times",
 mediaLogo: "/medialogo/himalayan.jpg",
-date: "July 1, 2025"
+// date: "July 1, 2025"
 },
 ]
 };
@@ -252,12 +252,12 @@ ${activeTab === tab ? "bg-[#133950] text-white" : "text-gray-600 border-gray-300
 <span className="text-sm text-gray-400">
 Showing 1-{blogs.length} News
 </span>
-<p className="flex items-center gap-1">
+{/* <p className="flex items-center gap-1">
 Sort by:
 <span className="text-[#002C6D] flex items-center gap-1">
 Most Recent <FiChevronDown />
 </span>
-</p>
+</p> */}
 </div>
 
 {/* Content */}
