@@ -11,37 +11,37 @@ export const metadata = {
     "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
 };
 
-const blogs = [
-  {
-    id: 1,
-    title: "RG Creations Nepal Pvt Ltd – The Leading Architecture and Construction Company in Nepal",
-    description:
-      "RG Creations has earned a reputation as one of the best architecture and construction companies in Nepal.",
-    category: "ARCHITECTURE",
-    image: "/blog (2).jpg",
-    date: "10 AUG 2023",
-    path: "/blogs/details"
-  },
-  {
-    id: 2,
-    title: "Transforming Nightlife: Our Journey Designing One of the World’s Top 40 Nightclubs – Dejavu Club Nepal",
-    description:
-      "We proudly undertook this challenge while designing Dejavu Club, which has now earned recognition as one of the world’s top 40 nightclubs.",
-    category: "DESIGN",
-    image: "/blog (2).jpg",
-    date: "12 AUG 2023",
-  },
-  {
-    id: 3,
-    title: "Nepal’s Best Premium Construction Company: Delivering Excellence for Budget-Savvy and Luxury Clients",
-    description:
-      "We pride ourselves on being Nepal’s best premium construction company, delivering excellence to both budget-savvy and luxury clients.",
-    category: "LIFESTYLE",
-    image: "/blog (2).jpg",
-    date: "15 AUG 2023",
-  },
+// const blogs = [
+//   {
+//     id: 1,
+//     title: "RG Creations Nepal Pvt Ltd – The Leading Architecture and Construction Company in Nepal",
+//     description:
+//       "RG Creations has earned a reputation as one of the best architecture and construction companies in Nepal.",
+//     category: "ARCHITECTURE",
+//     image: "/blog (2).jpg",
+//     date: "10 AUG 2023",
+//     path: "/blogs/details"
+//   },
+//   {
+//     id: 2,
+//     title: "Transforming Nightlife: Our Journey Designing One of the World’s Top 40 Nightclubs – Dejavu Club Nepal",
+//     description:
+//       "We proudly undertook this challenge while designing Dejavu Club, which has now earned recognition as one of the world’s top 40 nightclubs.",
+//     category: "DESIGN",
+//     image: "/blog (2).jpg",
+//     date: "12 AUG 2023",
+//   },
+//   {
+//     id: 3,
+//     title: "Nepal’s Best Premium Construction Company: Delivering Excellence for Budget-Savvy and Luxury Clients",
+//     description:
+//       "We pride ourselves on being Nepal’s best premium construction company, delivering excellence to both budget-savvy and luxury clients.",
+//     category: "LIFESTYLE",
+//     image: "/blog (2).jpg",
+//     date: "15 AUG 2023",
+//   },
   
-];
+// ];
 
 function Blog() {
   return (
@@ -97,9 +97,11 @@ function Blog() {
               <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
                
                 <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
+                  <Link href={'/blogs/top-rg-creations-nepal-the-leading-architecture'}>
                   <h3 className="text-2xl font-bold  leading-tight mb-4">
                     RG Creations Nepal Pvt Ltd – The Leading Architecture and Construction Company in Nepal
                   </h3>
+                  </Link>
                   <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
                       RG Creations Nepal Pvt Ltd stands as a beacon of excellence in this evolving market. With a commitment to delivering cutting-edge designs and superior construction solutions, RG Creations has earned a reputation as one of the best architecture and construction companies in Nepal.
                   </p>
@@ -139,9 +141,11 @@ function Blog() {
               <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
                
                 <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
+                  <Link href={'/blogs/top-transforming-nightlife-our-journey'}>
                   <h3 className="text-2xl font-bold leading-tight mb-4">
                     Transforming Nightlife: Our Journey Designing One of the World’s Top 40 Nightclubs – Dejavu Club Nepal
                   </h3>
+                  </Link>
                   <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
                       we share the journey behind the creation of Dejavu Club—a masterpiece of nightclub design that has transformed Nepal’s nightlife scene and placed it firmly on the international map. From concept development to the final execution, discover how our team blended innovative interior design.
 
@@ -182,9 +186,11 @@ function Blog() {
               <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
                
                 <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
+                  <Link href={'/blogs/top-nepals-best-premium-construction-company'}>
                   <h3 className="text-2xl font-bold leading-tight mb-4">
                     Nepal’s Best Premium Construction Company: Delivering Excellence for Budget-Savvy 
                   </h3>
+                  </Link>
                   <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
                     We pride ourselves on being Nepal’s best premium construction company, delivering excellence to both budget-savvy and luxury clients. This comprehensive article explores how RG Creations balances quality and affordability, our approach to construction.
 
@@ -228,9 +234,11 @@ function Blog() {
              <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
                
                 <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
+                  <Link href={'/blogs/how-to-choose-best-architect-in-nepal'}>
                   <h3 className="text-2xl font-bold leading-tight mb-4">
                     How to Choose the Best Architect in Nepal for Your Dream Project?
                   </h3>
+                  </Link>
                   <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
                     Nepal has witnessed a growing demand for innovative and sustainable architecture over the last decade. From traditional Newari craftsmanship to cutting-edge contemporary designs, today’s top Nepali architects are reshaping skylines with thoughtful, client-centered approaches.
 
@@ -268,9 +276,11 @@ function Blog() {
              <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
                
                 <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
+                   <Link href={'/blogs/the-ultimate-guide-to-nightclub-design'}>
                   <h3 className="text-2xl font-bold leading-tight mb-4">
                    The Ultimate Guide to Nightclub Design, Construction, and Equipment Supply in Nepal
                   </h3>
+                  </Link>
                   <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
                     The nightlife scene in Nepal—especially in cities like Kathmandu, Pokhara, and Itahari—is rapidly evolving, with an increasing demand for immersive nightclub experiences. Whether you're an investor, entrepreneur, or hospitality brand.
 
@@ -308,14 +318,16 @@ function Blog() {
              <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
                
                 <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
+                  <Link href={'/blogs/quality-construction-for-residential'}>
                   <h3 className="text-2xl font-bold leading-tight mb-4">
                    Building Dreams: Nepal’s Leading Luxury Residential and Premium Villa Construction Experts
                   </h3>
+                  </Link>
                   <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
                     Nepal has seen a significant rise in demand for luxurious residential properties and premium villas. As urbanization expands and high-net-worth individuals seek quality living spaces that combine aesthetic beauty, functionality, and exclusivity
 
                   </p>
-                  <Link href={'/blogs/nepals-leading-luxury-residential-construction'}>
+                  <Link href={'/blogs/quality-construction-for-residential'}>
                   <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
                     READ MORE
                   </button>
@@ -348,9 +360,11 @@ function Blog() {
              <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
                
                 <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
+                  <Link href={'/blogs/transform-your-land-into-profitable-banquet-hall'}>
                   <h3 className="text-2xl font-bold leading-tight mb-4">
                    Transform Your Land into a Profitable Banquet Hall Business – We Build, Lease, or Partner
                   </h3>
+                  </Link>
                   <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
                     In today’s fast-growing hospitality and event management industry, banquet halls are in constant demand. From weddings and birthdays to corporate functions and high-end social events, venues that offer luxury, convenience, and ample space are highly sought after.
 
