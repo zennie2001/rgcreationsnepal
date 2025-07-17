@@ -19,6 +19,8 @@ export default function Header() {
     { title: "Health and Safety", href: "/about/health-safety" },
     { title: "Organizational Chart", href: "https://drive.google.com/file/d/1x4dbiNt6LJQjVSZjd0dCGqEvX6BEmkvC/view"},
     { title: "Message from Chairman", href: "/about/message-from-chairman" },
+    { title: "Awards and Recognition", href: "/about/award-recognition" },
+    { title: "Case Studies", href: "/about/case-studies" },
   ];
   const servicesItems = [
     { title: "Premium Nightclub Construction", href: "/services/top-premium-nightclub-construction" },
@@ -37,13 +39,20 @@ export default function Header() {
   const newsItems = [
     { title: "Media Coverage", href: "/blogs/media-coverage" },
     { title: "Blogs", href: "/blogs" },
-    { title: "Events", href: "/blogs/events" },
+    { title: "Announcements", href: "/blogs/announcements" },
     
   ];
    const galleryItems = [
     { title: "Photo Gallery", href: "/gallery/photo-gallery" },
     { title: "Video Gallery", href: "/gallery/video-gallery" },
     { title: "3D Gallery", href: "/gallery/3d-gallery" },
+    
+  ];
+
+  const careerItems = [
+    { title: "Apply For Internship", href: "https://docs.google.com/forms/d/143e8-xUnFKfDCheS24clN4fjbdHXjRs_3AEy9Ngrmrw/viewform?edit_requested=true#responses" },
+    { title: "Apply For Job", href: "https://docs.google.com/forms/d/1dDuNos-qDH4AqTXWn8cI-6zOB3ZopFlWD6FHd6nzyX0/viewform?edit_requested=true" },
+   
     
   ];
 
@@ -65,7 +74,7 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <nav
-          className={`hidden lg:flex space-x-8 items-center ${
+          className={`hidden lg:flex space-x-5 items-center ${
             isHome ? "text-gray-800" : "text-white"
           }`}
         >
@@ -196,12 +205,34 @@ export default function Header() {
 
             
 
-
+            <div className="relative group">
+            <HeadlessMenu>
+              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium">
+                CAREER
+                <ChevronDown size={16} />
+              </HeadlessMenu.Button>
+              <div className="absolute hidden group-hover:block  bg-white text-gray-800 shadow-lg rounded-md py-2 w-64 z-50">
+                {careerItems.map((item, index) => (
+                  <a
+                    key={index}
+                    href={item.href}
+                     target={item.title === "Organizational Chart" ? "_blank" : undefined}
+                     rel={item.title === "Organizational Chart" ? "noopener noreferrer" : undefined}
+                    className="block px-4 py-2 text-base hover:bg-gray-100"
+                  >
+                    {item.title}
+                  </a>
+                ))}
+              </div>
+            </HeadlessMenu>
+          </div>
 
 
           <a href="/contact" className="hover:text-green-500 font-medium">
             CONTACT 
           </a>
+
+          
 
 
 

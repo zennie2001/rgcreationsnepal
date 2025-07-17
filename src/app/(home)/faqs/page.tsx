@@ -73,7 +73,7 @@ const StatsSection: React.FC = () => {
                     SOME
                   </h2>
                   <h2 className="text-white text-2xl md:text-5xl font-bold mb-6 tracking-wide">
-                    INTRESTING FACTS
+                    INTERESTING FACTS
                   </h2>
 
                   <p className="text-gray-300 text-sm leading-relaxed uppercase tracking-wider font-light">
