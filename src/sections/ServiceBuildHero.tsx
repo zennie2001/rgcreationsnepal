@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 
-export default function ServicesProjectHero() {
+export default function ServicesBuildHero() {
   return (
     <section className="relative h-screen w-full text-white">
       {/* Background Image */}
       <Image
-        src="/2224.jpg" // Replace with your actual image path
-        alt="Turnkey construction services"
+        src="/about/main.jpg" // Replace with your actual image path
+        alt="Premium Nightclub Construction"
         fill
         className="object-cover z-0"
         priority
@@ -21,13 +21,13 @@ export default function ServicesProjectHero() {
       <div className="relative z-20 flex flex-col justify-center  items-center text-center h-full px-6">
         <div className=" text-center border-b-2 w-[500px] mb-8">
           <p className="uppercase tracking-wider text-base font-medium mb-4" >
-           Project Management &<br className="lg:hidden block" /> Turnkey Solutions
+            We Build, Lease, or Partner
           </p>
         </div>
 
         <h2 className="text-2xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
            {/* <br className="hidden md:block" />  */}
-           Unlock Lasting Value Through Tailored Hospitality Solutions
+          Unlock Lasting Value Through Tailored Hospitality Solutions
 
         </h2>
 

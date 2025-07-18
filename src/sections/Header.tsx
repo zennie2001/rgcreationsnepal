@@ -22,6 +22,7 @@ export default function Header() {
     { title: "Awards and Recognition", href: "/about/award-recognition" },
     { title: "Case Studies", href: "/about/case-studies" },
     { title: "Research and Technology", href: "/about/research-technology" },
+    { title: "SWOT Analysis", href: "/about/swot-analysis" },
   ];
   const servicesItems = [
     { title: "Premium Nightclub Construction", href: "/services/top-premium-nightclub-construction" },
@@ -31,6 +32,7 @@ export default function Header() {
     { title: "Premium Furniture Supply", href: "/services/top-premium-furniture-supply" },
     { title: "Nightclub Equipment Supply", href: "/services/top-nightclub-equipment-supply" },
     { title: "Project Management & Turnkey Solutions", href: "/services/top-project-management-turnkey-solutions" },
+    { title: "We Build, Lease, or Partner", href: "/services/we-build-lease-partner" },
   ]
   const projectItems = [
     { title: "On Going Projects", href: "/projectss/ongoing-projects" },

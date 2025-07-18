@@ -60,12 +60,12 @@ function Blog() {
         {/* Filter Tabs */}
         <div className="flex items-center gap-4">
           <span className="text-sm text-gray-400">Showing 1-7 Blogs</span>
-          <p className="flex items-center gap-1">
+          {/* <p className="flex items-center gap-1">
             Sort by:
             <span className="text-[#002C6D] flex items-center gap-1">
               Most Recent <FiChevronDown />
             </span>
-          </p>
+          </p> */}
         </div>
       </div>
 
