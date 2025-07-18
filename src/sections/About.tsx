@@ -26,7 +26,7 @@ const Specialization: React.FC = () => {
           <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
             <div className="relative overflow-hidden">
               <img
-                src="/about/nightclub.jpg "
+                src="dejavu.png"
                 alt="Premium Nightclub Interior"
                 className="w-full h-96 object-cover hover:scale-110 duration-300 transition-all rounded-sm shadow-lg"
               />

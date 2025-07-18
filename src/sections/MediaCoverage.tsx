@@ -97,6 +97,18 @@ mediaLogo: "/medialogo/arthiknews.png",
 ],
 nepali: [
   {
+id: 7,
+title: "‘प्रिमियम हस्पिटालिटी आउटलेट’मा ‘आरजी क्रिएसन्स’को विशिष्ट पहिचान",
+description:
+"आरजी क्रियसन्सले डिजाइन तथा निर्माण गरेका प्रोजेक्ट अन्यभन्दा भिन्न र विशिष्ट देखिन्छन् । ‘हामी सुन्दर डिजाइनमा त्यसको भव्यतालाई कसरी प्रस्तुत गर्न सकिन्छ भनेर गहन अनुसन्धान गर्छौं, कार्यकारी अध्यक्ष गिरी भन्छन्, ‘हामीले प्रयोग गर्ने सामग्री, कन्सेप्ट र डिजाइनअनुसार कस्टमाइज गरिने भएकाले हाम्रा प्रडक्टहरूमा भव्यता झल्किन्छ ।",
+category: "ARCHITECTURE",
+image: "/media3.webp",
+date: "२असार ५, २०८२ ",
+path: "/blogs/media-coverage/premium-hospitality-outlet-annapurna",
+mediaName: "अन्नपूर्ण",
+mediaLogo: "/medialogo/annapurna.png",
+},
+  {
 id: 1,
 title: "प्रिमियम हस्पिटालिटी आउटलेट’ निर्माणमा ‘आरजी क्रिएसन्स",
 description:
@@ -128,7 +140,7 @@ description:
 category: "ARCHITECTURE",
 image: "/harshah-b.jpeg",
 date: "२o८२ जेठ १४ ",
-path: "/blogs/media-coverage/premium-hospitality-outlet-nagarik",
+path: "/blogs/media-coverage/premium-hospitality-outlet-nayapatrika",
 mediaName: "नयाँ पत्रिका",
 mediaLogo: "/medialogo/nayapatrika.jpg",
 },
@@ -144,6 +156,55 @@ path: "/blogs/media-coverage/premium-hospitality-outlet",
 mediaName: "आर्थिक दैनिक",
 mediaLogo: "/medialogo/arthikdainik.png",
 },
+{
+id: 9,
+title: "प्रिमियम हस्पिटालिटी आउटलेट निर्माणमा विशिष्ट पहिचान बनाउँदै आरजी क्रियसन्स",
+description:
+"आरजी क्रिएसन्सले १५ वर्षदेखि काठमाडौं उपत्यकालगायत देशका विभिन्न सहर र विदेशमा समेत होटल, इभेन्ट भेन्यू, नाइट क्लब, डिस्को थेक, क्यासिनो, बैंक्वेट, लाउन्ज, क्याफे, बार, पब लगायत हस्पिटालिटी क्षेत्रसँग सम्बन्धित प्रडक्टको कन्सेप्ट डिजाइन, कन्स्ट्रक्सन र सञ्चालन गरी आफ्नो छुट्टै मापदण्ड स्थापित गरिसकेको छ। ",
+category: "ARCHITECTURE",
+image: "/ImageVideo/4(4).jpg",
+date: "असार २५, २०८२",
+path: "/blogs/media-coverage/premium-hospitality-outlet",
+mediaName: "क्यापिटल नेपाल",
+mediaLogo: "/medialogo/capitalnepal.png",
+},
+{
+id: 10,
+title: "प्रिमियम हस्पिटालिटी आउटलेट’ मा फरक पहिचान बनाउँदै आरजी क्रिएसन्स",
+description:
+"नेपालको हस्पिटालिटी तथा नाइट क्लब क्षेत्रको एक चिरपरिचित नाम आरजी क्रिएसन्सले ‘प्रिमियम हस्पिटालिटी आउटलेट’ निर्माणमा फरक पहिचान बनाउँदै आएको छ । कम्पनीको मुख्य कार्यालय काठमाडौंको बालुवाटारमा रहेको छ भने चीनको ग्वाङ्दोङ प्रान्तको सेन्जेन सहरमा ‘लिंक वर्ल्ड टेक’ नामक साझेदार कम्पनी पनि सञ्चालनमा छ ।",
+category: "ARCHITECTURE",
+image: "/rg-creation.jpg",
+date: "२०८२, जेठ ९",
+path: "/blogs/media-coverage/premium-hospitality-outlet",
+mediaName: "नेपाल प्रेस",
+mediaLogo: "/medialogo/nepalpress.png",
+},
+{
+id: 11,
+title: "प्रिमियम हस्पिटालिटी आउटलेट’ निर्माणमा अघि बढ्दै ‘आरजी",
+description:
+"कम्पनीले विदेशमा समेत होटल, इभेन्ट भेन्यू, नाइट क्लब, डिस्को थेक, क्यासिनो, ब्यांक्वेट, लाउञ्ज, क्याफे, बार, पब लगायत हस्पिटालिटी क्षेत्रसँग सम्बन्धित प्रडक्टको कन्सेप्ट डिजाइन, कन्स्ट्रक्सन र सञ्चालन गरेको छ । कम्पनीका कार्यकारी अध्यक्ष राम गिरीले लगानीकर्ताको बजेट र सोच अनुसार कमभन्दा कम लागतमा उत्कृष्ट प्रडक्ट डिजाइन एवं निर्माण गर्दै आइरहेको बताए । ",
+category: "ARCHITECTURE",
+image: "/ImageVideo/2(4).jpg",
+date: "२०८२, जेठ ९",
+path: "/blogs/media-coverage/premium-hospitality-outlet",
+mediaName: "अभियान ",
+mediaLogo: "/medialogo/abhiyan.png",
+},
+{
+id: 12,
+title: "प्रिमियम हस्पिटालिटी आउटलेट’ निर्माणमा विशिष्ट पहिचान बनाउँदै ‘आरजी क्रिएसन्स’",
+description:
+"कम्पनीले विदेशमा समेत होटल, इभेन्ट भेन्यू, नाइट क्लब, डिस्को थेक, क्यासिनो, ब्यांक्वेट, लाउञ्ज, क्याफे, बार, पब लगायत हस्पिटालिटी क्षेत्रसँग सम्बन्धित प्रडक्टको कन्सेप्ट डिजाइन, कन्स्ट्रक्सन र सञ्चालन गरेको छ । कम्पनीका कार्यकारी अध्यक्ष राम गिरीले लगानीकर्ताको बजेट र सोच अनुसार कमभन्दा कम लागतमा उत्कृष्ट प्रडक्ट डिजाइन एवं निर्माण गर्दै आइरहेको बताए । ",
+category: "ARCHITECTURE",
+image: "/taajPalace.jpg",
+date: "असार १४, २०८२",
+path: "/blogs/media-coverage/premium-hospitality-outlet",
+mediaName: "इकागज",
+mediaLogo: "/medialogo/ekagaj.jpg",
+},
+
 {
 id: 3,
 title: "प्रिमियम हस्पिटालिटी आउटलेट’ निर्माणमा विशिष्ट पहिचान बनाउँदै ‘आरजी क्रिएसन्स",
@@ -182,6 +243,11 @@ mediaLogo: "/medialogo/newspolar.png",
 },
 ],
 paper: [
+   { id: 11, image: "/newsAnnapurna.jpg" ,
+  mediaName: "Annapurna Post",
+mediaLogo: "/medialogo/annapurna.png",
+date: "June 19, 2025"
+},
   { id: 10, image: "/new1st.jpg" ,
   mediaName: "The Himalayan Times",
 mediaLogo: "/medialogo/himalayan.jpg",
@@ -192,15 +258,15 @@ date: "July 1, 2025"
 mediaLogo: "/medialogo/arthiknews.png",
 date: "June 28, 2025"
 },
-{ id: 2, image: "/news22.jpg",
-    mediaName: "The Himalayan Times",
-mediaLogo: "/medialogo/himalayan.jpg",
-// date: "July 1, 2025"
+{ id: 2, image: "/newsNagrik.jpg",
+    mediaName: "Nagrik Daily",
+mediaLogo: "/medialogo/republica.svg",
+ date: "June 4, 2025"
  },
-{ id: 4, image: "/news44.jpg",
-    mediaName: "The Himalayan Times",
-mediaLogo: "/medialogo/himalayan.jpg",
-// date: "July 1, 2025"
+{ id: 4, image: "/newsKarobar.jpg",
+    mediaName: "Karobar Daily",
+mediaLogo: "/medialogo/karobar.jpg",
+ date: "June 6, 2025"
  },
 
 { id: 6, image: "/news66.jpg" ,
@@ -208,21 +274,17 @@ mediaLogo: "/medialogo/himalayan.jpg",
 mediaLogo: "/medialogo/risingnepal.jpg",
 date: "May 21, 2025"
 },
-{ id: 7, image: "/news77.jpg" ,
-    mediaName: "The Himalayan Times",
-mediaLogo: "/medialogo/himalayan.jpg",
-// date: "July 1, 2025"
+{ id: 7, image: "/newsAbhiyanDaily.jpg" ,
+    mediaName: "Abhiyan",
+mediaLogo: "/medialogo/abhiyan.png",
+date: "May 23, 2025"
 },
 { id: 8, image: "/news88.jpg",
     mediaName: "Karobar Daily",
 mediaLogo: "/medialogo/karobar.jpg",
 date: "June 28, 2025"
  },
-{ id: 9, image: "/news99.jpg" ,
-    mediaName: "The Himalayan Times",
-mediaLogo: "/medialogo/himalayan.jpg",
-// date: "July 1, 2025"
-},
+
 ]
 };
 
