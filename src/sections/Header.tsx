@@ -21,6 +21,7 @@ export default function Header() {
     { title: "Message from Chairman", href: "/about/message-from-chairman" },
     { title: "Awards and Recognition", href: "/about/award-recognition" },
     { title: "Case Studies", href: "/about/case-studies" },
+    { title: "Research and Technology", href: "/about/research-technology" },
   ];
   const servicesItems = [
     { title: "Premium Nightclub Construction", href: "/services/top-premium-nightclub-construction" },
