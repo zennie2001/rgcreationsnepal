@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="w-full bg-white py-16 px-4 md:px-10 lg:px-20 space-y-16 mb-44">
+      <div className="w-full bg-white py-16 px-4 md:px-10 lg:px-20 space-y-16 mb-40">
         {/* Vision Section */}
         <div className="relative  grid sm:grid-cols-1 md:grid-cols-2 items-center gap-6">
           <Image
@@ -107,6 +107,57 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+    {/* SWOT Analysis Section */}
+<div className="w-full bg-[#f6f7f8] py-16 px-4 md:px-10 lg:px-20">
+  <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">SWOT Analysis for RG Creations Pvt. Ltd.</h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-gray-700 text-[15px] leading-relaxed">
+
+    {/* Strengths */}
+    <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border-l-4 border-[#133950]">
+      <h3 className="text-xl font-semibold uppercase mb-4">Strengths</h3>
+      <ul className="space-y-3">
+        <li><strong>Specialization in Premium Projects:</strong> We excel in designing and constructing high-end banquet halls, nightclubs, and luxury hospitality venues.</li>
+        <li><strong>Turnkey Project Management:</strong> Complete solutions under one roof ensure seamless project delivery.</li>
+        <li><strong>Experienced Team:</strong> Architects, engineers, and consultants with a strong track record.</li>
+        <li><strong>Strong Industry Network:</strong> Top-tier vendors and contractors ensure quality.</li>
+        <li><strong>Reputation for Excellence:</strong> Iconic projects like Rambagh Mahal and Harsa Batika highlight our capability.</li>
+      </ul>
+    </div>
+
+    {/* Weaknesses */}
+    <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border-l-4 border-[#133950]">
+      <h3 className="text-xl font-semibold uppercase mb-4">Weaknesses</h3>
+      <ul className="space-y-3">
+        <li><strong>Selective Project Range:</strong> Focus on premium projects limits reach in mid-tier markets.</li>
+        <li><strong>Higher Entry Cost for Clients:</strong> Premium quality makes it inaccessible for budget-conscious clients.</li>
+      </ul>
+    </div>
+
+    {/* Opportunities */}
+    <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border-l-4 border-[#133950] ">
+      <h3 className="text-xl font-semibold uppercase mb-4">Opportunities</h3>
+      <ul className="space-y-3">
+        <li><strong>Urban Nightlife Growth:</strong> Increasing demand for premium venues in urban Nepal and South Asia.</li>
+        <li><strong>Partnership with Landowners:</strong> Build-lease-partner model creates new investment channels.</li>
+        <li><strong>Franchise or Licensing:</strong> Replicating our model for expansion with minimal overhead.</li>
+        <li><strong>Sustainable Construction:</strong> Eco-friendly solutions attract conscious clients and certifications.</li>
+      </ul>
+    </div>
+
+    {/* Threats */}
+    <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 border-l-4 border-[#133950] ">
+      <h3 className="text-xl font-semibold uppercase  mb-4">Threats</h3>
+      <ul className="space-y-3">
+        <li><strong>Market Saturation:</strong> Rising competition in major urban centers.</li>
+        <li><strong>Economic Instability:</strong> Luxury projects are vulnerable during downturns.</li>
+        <li><strong>Rising Construction Costs:</strong> Fluctuating prices and delays affect timelines and profits.</li>
+        <li><strong>Regulatory Changes:</strong> New rules can disrupt planned developments.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 
       <FAQ />
       <Deals />
