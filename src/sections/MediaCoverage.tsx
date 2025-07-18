@@ -34,6 +34,19 @@ mediaName: "The Himalayan Times",
 mediaLogo: "/medialogo/himalayan.jpg",
 },
 {
+id: 8,
+title: "RG Creations expands role in Nepal’s hospitality and architecture sectors",
+description:
+"RG Creations Nepal is expanding its influence in architecture and design, focusing on hospitality and nightlife infrastructure. With over 15 years of experience, the company has completed more than 30 projects across Nepal, including venues in Kathmandu, Pokhara, Dharan, and Itahari.",
+category: "ARCHITECTURE",
+image: "/Royal-Empire-Boutique.jpg",
+date: "June 3, 2025",
+path: "/blogs/media-coverage/top-rg-creations-expand-role-in-nepals-hospitality",
+mediaName: "Online Khabar",
+mediaLogo: "/medialogo/onlinekhabar.png",
+},
+
+{
 id: 2,
 title: "RG Creations Nepal emerges as pioneer in hospitality architecture",
 description:
@@ -108,6 +121,18 @@ mediaName: "नागरिक",
 mediaLogo: "/medialogo/republica.svg",
 },
 {
+id: 6,
+title: "प्रिमियम हस्पिटालिटी आउटलेट’ निर्माणमा जोड दिँदै ‘आरजी क्रिएसन्स",
+description:
+"आरजी क्रिएसन्सले विगत १५ वर्षदेखि काठमाडौं उपत्यकालगायत देशका विभिन्न सहर र विदेशमा समेत होटेल, इभेन्ट भेन्यू, नाइट क्लब, डिस्को थेक, क्यासिनो, ब्यांक्वेट, लाउन्ज, क्याफे, बार, पबलगायत हस्पिटालिटी क्षेत्रसँग सम्बन्धित प्रडक्टको कन्सेप्ट डिजाइन, कन्स्ट्रक्सन र सञ्चालन गरी आफ्नो छुट्टै मापदण्ड स्थापित गरिसकेको छ।",
+category: "ARCHITECTURE",
+image: "/harshah-b.jpeg",
+date: "२o८२ जेठ १४ ",
+path: "/blogs/media-coverage/premium-hospitality-outlet-nagarik",
+mediaName: "नयाँ पत्रिका",
+mediaLogo: "/medialogo/nayapatrika.jpg",
+},
+{
 id: 2,
 title: "प्रिमियम हस्पिटालिटी आउटलेट’ निर्माणमा विशिष्ट पहिचान बनाउँदै ‘आरजी क्रिएसन्स",
 description:
@@ -130,6 +155,18 @@ date: "२४ असार, २०८२",
 path: "/blogs/media-coverage/premium-hospitality-sunaulo-nepal",
 mediaName: "सुनौलो नेपाल",
 mediaLogo: "/medialogo/sunaulo.png",
+},
+{
+id: 7,
+title: "प्रिमियम हस्पिटालिटी आउटलेट निर्माणमा अग्रणी आरजी क्रिएसन्स",
+description:
+"हाल कम्पनीले लाजिम्पाटमा अन्तर्राष्ट्रिय स्तरको ‘लिजेण्ड नेपाल’ नाइट क्लब निर्माण गरिरहेको छ, जसमा ३०० भन्दा बढी अत्याधुनिक सामग्री प्रयोग हुनेछ। यसअघि रामबाग महल, म्याजेस्टिक ग्रान्ड, डेजाभु डिस्को थेक जस्ता प्रख्यात आउटलेटहरू निर्माण गरिसकेको छ।",
+category: "ARCHITECTURE",
+image: "/harshah-b.jpeg",
+date: "असार १३, २०८२",
+path: "/blogs/media-coverage/premium-hospitality-outlet-nagarik",
+mediaName: "देश सञ्चार",
+mediaLogo: "/medialogo/deshsanchar.png",
 },
 {
 id: 4,
