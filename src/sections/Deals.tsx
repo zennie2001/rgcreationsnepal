@@ -5,35 +5,53 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
-
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+// ✅ Client type with optional URL
 type Client = {
   name: string;
   logo: string;
+  url?: string; // Optional website link
 };
 
-const clients: (Client)[] = [
-  
+// ✅ Client data
+const clients: Client[] = [
   { name: "Royal Empire", logo: "/logo/logo1(1).jpg" },
-  { name: "Harshah Batika", logo: "/logo/logo1(2).jpg" },
+  { name: "Harshah Batika", logo: "/logo/logo1(2).jpg", url:"https://harshahbatika.com/" },
   { name: "Deja vu", logo: "/logo/logo1(3).jpg" },
   { name: "Sangam batika", logo: "/logo/sangam.jpg" },
-  { name: "Rambagh Mahal", logo: "/logo/logo1(4).jpg" },
+  { name: "Rambagh Mahal", logo: "/logo/logo1(4).jpg", url: "https://rambaghmahal.com" },
   { name: "Boudha Heritage", logo: "/logo/logo1(5).jpg" },
   { name: "Taaj Heritage", logo: "/logo/logo1(6).jpg" },
   { name: "PANAS", logo: "/logo/logo1(7).jpg" },
   { name: "White Lotus", logo: "/logo/logo8.svg" },
   { name: "Utsav Kunj", logo: "/logo/logo9.svg" },
-  { name: "Majestic Grand", logo: "/logo/majestic.svg" }
+  { name: "Majestic Grand", logo: "/logo/majestic.svg", url:"https://majesticgrandnepal.com/" },
 ];
 
-const LogoSlide = ({ logo, name }: { logo: string; name: string }) => (
-  <div className="rounded-lg p-3 flex items-center justify-center hover:scale-105 transition-transform duration-300">
+// ✅ LogoSlide component
+const LogoSlide = ({ logo, name, url }: Client) => {
+  const image = (
     <img src={logo} alt={name} className="h-20 md:h-28 object-contain" />
-  </div>
-);
+  );
 
+  return (
+    <div
+      className="rounded-lg p-3 flex items-center justify-center hover:scale-105 transition-transform duration-300"
+      title={url ? `Visit ${name}` : name}
+    >
+      {url ? (
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          {image}
+        </a>
+      ) : (
+        image
+      )}
+    </div>
+  );
+};
+
+// ✅ Deals section component
 const Deals: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef<SwiperType | null>(null);
@@ -49,27 +67,27 @@ const Deals: React.FC = () => {
   return (
     <section className="md:py-16 py-6 bg-[#333d49]">
       <div className="container mx-auto px-4 text-center relative">
-        {/* Left Arrow inside container, vertically centered */}
+        {/* Left arrow */}
         <button
-        
           onClick={slidePrev}
           aria-label="Previous Slide"
           className="absolute lg:left-0 left-8 top-1/2 -translate-y-3/4 z-20 bg-white bg-opacity-20 hover:bg-opacity-40 text-white rounded-full p-3 transition"
-          style={{ marginLeft: '-1.5rem' }} // adjust horizontal offset so it’s just outside logos
+          style={{ marginLeft: "-1.5rem" }}
         >
           <ChevronLeft size={24} />
         </button>
 
-        {/* Right Arrow inside container, vertically centered */}
+        {/* Right arrow */}
         <button
           onClick={slideNext}
           aria-label="Next Slide"
           className="absolute lg:right-0 right-8 top-1/2 -translate-y-3/4 z-20 bg-white bg-opacity-20 hover:bg-opacity-40 text-white rounded-full p-3 transition"
-          style={{ marginRight: '-1.5rem' }} // adjust horizontal offset
+          style={{ marginRight: "-1.5rem" }}
         >
           <ChevronRight size={24} />
         </button>
 
+        {/* Swiper carousel */}
         <Swiper
           modules={[Pagination]}
           pagination={false}
@@ -86,7 +104,11 @@ const Deals: React.FC = () => {
         >
           {clients.map((client, index) => (
             <SwiperSlide key={index}>
-              <LogoSlide logo={client.logo} name={client.name} />
+              <LogoSlide
+                logo={client.logo}
+                name={client.name}
+                url={client.url}
+              />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -95,7 +117,6 @@ const Deals: React.FC = () => {
         <div className="flex justify-center gap-2 mt-8">
           {clients.map((_, index) => (
             <button
-            
               key={index}
               onClick={() => swiperRef.current?.slideToLoop(index)}
               className={`w-3 h-3 rounded-full transition-colors ${
