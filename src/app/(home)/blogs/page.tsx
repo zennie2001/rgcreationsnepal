@@ -380,6 +380,50 @@ function Blog() {
           </article>
 
 
+            <article  className="group cursor-pointer h-full lg:h-[500px]" >
+            <div className="relative rounded-sm h-full">
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/50 overflow-hidden z-10 rounded-sm"></div>
+
+              {/* Image */}
+              <img
+                src='/royal.jpg'
+                alt='Nepal’s Best Premium Construction Company'
+                className="
+                  w-[276.6946105957031px] h-[439px]
+                  sm:w-[276.6946105957031px] sm:h-[439px]
+                  md:w-full md:h-full
+                  mx-auto
+                  object-cover group-hover:scale-105 transition-transform duration-500 rounded-sm
+                "
+              />
+
+              {/* Overlay Content */}
+              
+             <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
+               
+                <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
+                  <Link href={'/blogs/how-rg-creations-shaping-nepals-future'}>
+                  <h3 className="text-2xl font-bold leading-tight mb-4">
+                   How RG Creations is Shaping Nepal’s Future through Employment, Training & Sustainable Growth
+                  </h3>
+                  </Link>
+                  <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
+                    In a country where economic migration has long been the default path for many young Nepalis, RG Creations Pvt. Ltd. is breaking the cycle by creating real opportunities — right here at home. One of Nepal’s leading premium construction and turnkey solution providers.
+
+
+                  </p>
+                  <Link href={'/blogs/how-rg-creations-shaping-nepals-future'}>
+                  <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
+                    READ MORE
+                  </button>
+                  </Link>
+                </div>
+              </div> 
+            </div>
+          </article>
+
+
            
           
        
