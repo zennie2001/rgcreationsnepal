@@ -92,11 +92,30 @@ export default async function Page({ params }: Props) {
               {project.description2}
             </p>
           </div>
+
+           <div>
+            <h2 className="font-semibold text-base md:text-lg mb-2">
+              Learn More & Make Reservations
+            </h2>
+            <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+              Explore detailed information—including venue features, gallery, packages, and booking options—on their official website:&emsp; 
+              <span>
+                  <a 
+                  href={project.website}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  {project.name}
+                </a>
+              </span>
+            </p>
+          </div>
         </div>
 
         {/* Sidebar with project details */}
         <aside className="lg:w-[30%] w-full bg-white shadow-md rounded-b-lg  text-gray-900 self-start">
-          <h3 className="text-white bg-teal-800 py-6 font-bold text-center">
+          <h3 className="text-white bg-[#133950] py-6 font-bold text-center">
             Project Details
           </h3>
           <dl className="divide-y-2 divide-[#244D4D] bg-gray-100 px-6 rounded-b-lg">

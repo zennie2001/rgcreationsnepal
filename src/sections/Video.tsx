@@ -47,6 +47,7 @@ const Video = () => {
               className="w-full h-full object-cover"
             />
             <button
+            aria-label="Play Button"
               onClick={handlePlay}
               className="
                 absolute 

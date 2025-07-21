@@ -183,6 +183,7 @@ export default function Testimonials() {
           <div className="flex gap-4 mt-4 lg:mt-0">
             {/* Swapped button order */}
             <button
+           
               onClick={() => {
                 setTab("video");
                 setActiveIndex(0);
@@ -251,6 +252,7 @@ export default function Testimonials() {
             {(tab === "user" ? testimonials : videoTestimonials).map(
               (_, index) => (
                 <button
+                 aria-label="Pagination Dots"
                   key={index}
                   onClick={() => swiperRef.current?.slideTo(index)}
                   className={`w-3 h-3 rounded-full transition-colors ${

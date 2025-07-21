@@ -9,7 +9,8 @@ export const projects = [
         location: "Bhanimandal, Lalitpur",
         contact: "+977-9802357234",
         category:"Banquet Hall & Party Palace",
-        projectDemand: "Interior & Exterior"
+        projectDemand: "Interior & Exterior",
+        website: "https://rambaghmahal.com/"
     },
     {
         slug:"harshah-batika",
@@ -21,7 +22,8 @@ export const projects = [
         location: "Balkumari, Lalitpur",
         contact: "+977-9802357232",
         category:" Luxurious and top banquet and wedding venue",
-        projectDemand: "Interior & Exterior"
+        projectDemand: "Interior & Exterior",
+         website: "https://harshahbatika.com/"
     },
     {
         slug:"royal-empire-boutique-hotel",
@@ -33,7 +35,8 @@ export const projects = [
         location: "Baluwatar, Kathmandu",
         contact: "+977-01-4000542",
         category:"Luxury Hotel",
-        projectDemand: "Interior & Exterior"
+        projectDemand: "Interior & Exterior",
+        website: "https://royal-empire-boutique.kathmandubesthotels.com/en/"
     },
     {
         slug:"club-deja-vu",
@@ -45,7 +48,8 @@ export const projects = [
         location: "Bhanimandal, Lalitpur",
         contact: "+977-01-4440744",
         category:"Nighclun & Lounge",
-        projectDemand: "Interior & Exterior Construction"
+        projectDemand: "Interior & Exterior Construction",
+         website: "https://www.facebook.com/dejavuktm/"
     },
     {
         slug:"magestic-grand-nepal",
@@ -56,7 +60,8 @@ export const projects = [
         description2: "The Majestic Grand Gallery provides unforgettable memories are captured in the most elegant setting. As the best events venue in Lalitpur, we take immense pride in hosting some of the most stunning weddings, grand receptions, corporate functions, and social celebrations in Nepal.",
         contact: "+977-9802357236",
         category:"Luxurious and top banquet and wedding venue",
-        projectDemand: "Interior & Exterior Construction"
+        projectDemand: "Interior & Exterior Construction",
+        website:"https://majesticgrandnepal.com/"
     },
     {
         slug:"boudha-heritage",
@@ -68,7 +73,8 @@ export const projects = [
         location: "Boudha, Kathmandu",
         contact: "+977-9803848330",
         category:"Banquet Hall & Party Palace",
-        projectDemand: "Interior & Exterior"
+        projectDemand: "Interior & Exterior",
+         website: "https://www.facebook.com/boudhaheritage1/"
     },
     {
         slug:"imperial-banquet",
@@ -80,7 +86,8 @@ export const projects = [
         location: "Chabahil, Bhaktapur, Itahari",
         contact: "+977-9801881672",
         category:"Banquet Hall & Party Palace",
-        projectDemand: "Interior & Exterior"
+        projectDemand: "Interior & Exterior",
+         website: "https://imperialbanquetnepal.com/"
     },
     {
         slug:"faces-lounge",
@@ -92,7 +99,8 @@ export const projects = [
         location: "Thamel, Kathmandu",
         contact: "+977-9843144638",
         category:"Restaurant, bar and lounge",
-        projectDemand: "Interior & Exterior"
+        projectDemand: "Interior & Exterior",
+         website: "https://www.tripadvisor.com/Restaurant_Review-g293890-d5981039-Reviews-Faces_Lounge-Kathmandu_Kathmandu_Valley_Bagmati_Zone_Central_Region.html"
     },
     {
         slug:"victory-lounge",
@@ -104,7 +112,8 @@ export const projects = [
         location: "kathmandu",
         contact: "+977-9840581889",
         category:"Restaurant, bar and lounge",
-        projectDemand: "Interior & Exterior"
+        projectDemand: "Interior & Exterior",
+         website: "https://www.facebook.com/lounge.victory/"
     },
     {
         slug:"station-pub",
@@ -116,7 +125,8 @@ export const projects = [
         location: "kathmandu",
         contact: "+977-9819052751",
         category:"Restaurant, bar and lounge",
-        projectDemand: "Interior & Exterior"
+        projectDemand: "Interior & Exterior",
+         website: "https://evendo.com/locations/nepal/gosaikunda/bar/station-pub"
     },
     {
         slug:"panas-banquet-event-hall",
@@ -128,7 +138,8 @@ export const projects = [
         location: "Kathmandu",
         contact: "+977-01-4970941",
         category:"Banquet Hall & Party Palace",
-        projectDemand: "Interior & Exterior"
+        projectDemand: "Interior & Exterior",
+         website: "https://panasbanquet.com/"
     },
     
 ]
