@@ -18,16 +18,25 @@ export default function page() {
       </div>
 
       {/* Project Info */}
-      <div className="grid md:grid-cols-2 gap-6 bg-gray-50 p-6 rounded-xl shadow-sm">
-        <div>
-          <p><strong>Client:</strong> Rambagh Mahal</p>
-          <p><strong>Location:</strong> Rambagh Mahal Bhanimandal, Lalitpur, Nepal</p>
+        <div className="flex flex-col md:flex-row items-center gap-10">
+          {/* Text Section */}
+          <div className="md:w-1/2 text-2xl pr-12 space-y-6">
+            <p><strong>Client:</strong> Rambagh Mahal</p>
+            <p><strong>Location:</strong> Rambagh Mahal Bhanimandal, Lalitpur, Nepal</p>
+            <p><strong>Scope:</strong> Full Construction, Interior Design & Branding</p>
+            <p><strong>Completed By:</strong> RG Creations Nepal Pvt. Ltd.</p>
+          </div>
+
+          {/* Image Section */}
+          <div className="md:w-1/2">
+            <img
+              src="/rambagh.jpg" // Replace with your image path
+              alt="Rambagh Mahal"
+              className="rounded-xl shadow-md w-full object-cover"
+            />
+          </div>
         </div>
-        <div>
-          <p><strong>Scope:</strong> Full Construction, Interior Design & Branding</p>
-          <p><strong>Completed By:</strong> RG Creations Nepal Pvt. Ltd.</p>
-        </div>
-      </div>
+
 
       {/* Section */}
       <div className="space-y-6">
@@ -124,17 +133,23 @@ export default function page() {
       </div>
 
       {/* Project Info */}
-      <div className="grid md:grid-cols-2 gap-6 bg-gray-50 p-6 rounded-xl shadow-sm">
-        <div>
-          <p><strong>Client:</strong> Harsa Batika</p>
-          <p><strong>Location:</strong> Lalitpur, Nepal</p>
+        <div className="flex flex-col md:flex-row items-center gap-10  p-6 rounded-xl shadow-sm">
+          <div className="md:w-1/2 text-2xl pr-12 space-y-6">
+            <p><strong>Client:</strong> Harsa Batika</p>
+            <p><strong>Location:</strong> Lalitpur, Nepal</p>
+            <p><strong>Scope:</strong> Complete Construction, Landscape Design, Interior Styling, and Branding</p>
+            <p><strong>Executed By:</strong> RG Creations Nepal Pvt. Ltd.</p>
+            <p><strong>Project Type:</strong> Outdoor-Inspired Banquet Venue & Event Space</p>
+          </div>
+          <div className="md:w-1/2">
+            <img
+              src="/harsa-batika-new.jpg" // Replace with actual image path
+              alt="Harsa Batika"
+              className="rounded-lg shadow w-full object-cover"
+            />
+          </div>
         </div>
-        <div>
-          <p><strong>Scope:</strong> Complete Construction, Landscape Design, Interior Styling, and Branding</p>
-          <p><strong>Executed By:</strong> RG Creations Nepal Pvt. Ltd.</p>
-          <p><strong>Project Type:</strong> Outdoor-Inspired Banquet Venue & Event Space</p>
-        </div>
-      </div>
+
 
       {/* Project Overview */}
       <div className="space-y-6">
