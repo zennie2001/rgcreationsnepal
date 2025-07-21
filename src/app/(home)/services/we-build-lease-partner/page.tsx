@@ -66,7 +66,7 @@ const page = () => {
                 {/* Left Content */}
                 <div className="space-y-8 col-span-2">
                   <div>
-                    <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
+                    <h2 className="text-3xl lg:text-4xl font-bold text-[#333d49] leading-tight mb-6">
                       We Build, Lease, or Partner
                     </h2>
                     <p className="text-gray-600 text-lg leading-relaxed">

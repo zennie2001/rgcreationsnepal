@@ -14,7 +14,7 @@ const WelcomeSection = () => {
                 <p className="text-sm text-gray-600 uppercase tracking-widest font-medium">
                   Welcome to RG Creations Nepal
                 </p>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#333d49] leading-tight">
                   WE ARE <span className="text-[#333d49]">CREATIVE</span>
                   <br />
                   BUILDING - DESIGN

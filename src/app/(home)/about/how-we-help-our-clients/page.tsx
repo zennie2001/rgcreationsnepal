@@ -63,7 +63,7 @@ export default function Home() {
   <div className="grid md:grid-cols-2 gap-12 items-stretch">
     {/* LEFT COLUMN */}
     <div>
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <h2 className="text-3xl md:text-4xl text-[#333d49] font-bold mb-4">
         How We Help Our Clients
       </h2>
       <p className="text-gray-700 text-sm mb-8 max-w-2xl">

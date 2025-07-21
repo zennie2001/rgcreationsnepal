@@ -86,7 +86,7 @@ const LatestProjects = () => {
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12">
           <div className="mb-8 lg:mb-0">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#333d49] mb-2">
               LATEST PROJECTS
             </h2>
             <div className="w-16 h-1 bg-[#133950]"></div>

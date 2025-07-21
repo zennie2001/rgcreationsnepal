@@ -7,7 +7,7 @@ const Specialization: React.FC = () => {
       <div className="container mx-auto">
         {/* Header */}
         <div className="mb-16 grid grid-cols-1 md:grid-cols-2">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#333d49] mb-6">
             OUR
             <br />
             SPECIALIZATION
@@ -33,7 +33,7 @@ const Specialization: React.FC = () => {
             </div>
             <div className="lg:pl-8">
                <Link href={'/services/top-premium-nightclub-construction'} aria-label="Learn more about PREMIUM NIGHTCLUB ">
-              <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
+              <h3 className="text-3xl md:text-4xl font-bold text-[#333d49] mb-6">
                 PREMIUM NIGHTCLUB
                 <br />
                 CONSTRUCTION
@@ -58,7 +58,7 @@ const Specialization: React.FC = () => {
           <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 lg:pr-8">
               <Link href={'/services/top-luxurious-residential-developments'} aria-label="Learn more about LUXURIOUS RESIDENTIAL ">
-              <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
+            <h3 className="text-3xl md:text-4xl font-bold text-[#333d49] mb-6">
                 LUXURIOUS RESIDENTIAL
                 <br />
                 DEVELOPMENTS
@@ -96,7 +96,7 @@ const Specialization: React.FC = () => {
             </div>
             <div className="lg:pl-8">
               <Link href={'/services/top-commercial-construction'} aria-label="Learn more about  COMMERCIAL">
-              <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
+              <h3 className="text-3xl md:text-4xl font-bold text-[#333d49] mb-6">
                 COMMERCIAL
                 <br />
                 CONSTRUCTION
@@ -121,7 +121,7 @@ const Specialization: React.FC = () => {
           <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 lg:pr-8">
               <Link href={'/services/top-architectural-interior-design'} aria-label="Learn more about ARCHITECTURAL">
-              <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
+              <h3 className="text-3xl md:text-4xl font-bold text-[#333d49] mb-6">
                 ARCHITECTURAL &<br />
                 INTERIOR DESIGN
               </h3>
@@ -159,7 +159,7 @@ const Specialization: React.FC = () => {
             </div>
             <div className="lg:pl-8">
               <Link href={'/services/top-premium-furniture-supply'} aria-label="Learn more about PREMIUM FURNITURE">
-              <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
+              <h3 className="text-3xl md:text-4xl font-bold text-[#333d49] mb-6">
                 PREMIUM FURNITURE
                 <br />
                 SUPPLY
@@ -184,7 +184,7 @@ const Specialization: React.FC = () => {
           <div className="grid grid-cols-1 bg-[#f6f7f8] lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 lg:pr-8">
               <Link href={'/services/top-nightclub-equipment-supply'} aria-label="Learn more about  NIGHTCLUB EQUIPMENT ">
-               <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
+               <h3 className="text-3xl md:text-4xl font-bold text-[#333d49] mb-6">
                 NIGHTCLUB EQUIPMENT
                 <br />
                 SUPPLY
@@ -257,7 +257,7 @@ const Specialization: React.FC = () => {
             </div>
             <div className="lg:pl-8">
               <Link href={'/services/top-project-management-turnkey-solutions'} aria-label="Learn more about PPROJECT MANAGEMENT ">
-              <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
+              <h3 className="text-3xl md:text-4xl font-bold text-[#333d49] mb-6">
                 PROJECT MANAGEMENT &<br />
                 TURNKEY SOLUTIONS
               </h3>

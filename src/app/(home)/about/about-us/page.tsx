@@ -36,7 +36,7 @@ export default function Home() {
           {/* Text Section */}
           <div className="text-gray-800 ">
             <p className="uppercase text-sm tracking-wide mb-2">About Us</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
+            <h2 className="text-3xl md:text-4xl text-[#333d49] font-bold mb-4 leading-tight">
               Our Designing Dreams. Building Futures. Innovative Architecture. Strategic Execution.
             </h2>
             <p className="text-sm text-gray-700 mb-6 leading-relaxed text-justify">
@@ -77,7 +77,7 @@ export default function Home() {
             className="w-full h-auto object-cover"
           />
           <div className="absolute lg:right-36 lg:top-1/2 lg:-translate-y-1/2 bg-white p-8 shadow-lg max-w-md md:max-w-lg">
-            <h2 className="text-2xl font-bold mb-4">OUR VISION</h2>
+            <h2 className="text-2xl text-[#333d49] font-bold mb-4">OUR VISION</h2>
             <p className="text-sm leading-relaxed text-gray-700 text-justify">
               To become a globally recognized leader in innovative design, integrated construction and strategic business empowerment- delivering transformative spaces and solutions from research to reality. We envision a world where entrepreneurs everywhere have access to world-class environments, expert guidance and the tools to build lasting success.
 

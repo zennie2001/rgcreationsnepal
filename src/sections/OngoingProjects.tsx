@@ -8,7 +8,7 @@ const OngoingProjects = () => {
     {
       id: 1,
       category: "Image",
-      image: "/ImageVideo/ongoing.jpg",
+      image: "/mainbanner2.jpg",
       title: "Ramalaya Batika",
       description:
         "Ramalaya Batika is an upcoming five- star luxury hotel in Pokhara, designed to blend traditional Nepali elegance with modern sophistication. Currently under development, it promises stunning architecture, world-class amenities, and a serene atmosphere. Once complete, Ramalaya Batika will offer an unforgettable experience for leisure, events, and business in the heart of Nepal's most scenic city.",
@@ -32,7 +32,7 @@ const OngoingProjects = () => {
      {
       id: 4,
       category: "Image",
-      image: "/ImageVideo/ongoing.jpg",
+      image: "/utsavkunj.jpg",
       title: "Utsav Kunj",
       description:
         " Utsav Kunj is a modern venue crafted for grand celebrations, including weddings and corporate events. With a seamless indoor-outdoor layout, it provides the perfect setting for both intimate and large gatherings.",
@@ -71,33 +71,41 @@ const OngoingProjects = () => {
           {/* Header */}
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-12">
             <div className="mb-8 lg:mb-0">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#333d49] mb-2">
                 Ongoing Projects
               </h2>
               <div className="w-16 h-1 bg-[#244d4d]"></div>
             </div>
           </div>
 
-        {/* Grid of Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+       {/* Grid of Images */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="bg-white rounded-lg shadow hover:shadow-lg transition duration-300 flex flex-col overflow-hidden"
+                className="relative group overflow-hidden rounded-lg shadow hover:shadow-lg cursor-pointer transition-all duration-300"
               >
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-[250px] object-cover p-4 hover:scale-110 transition duration-300 "
+                  className="w-full h-[550px] object-cover group-hover:scale-110 transition-transform duration-300"
                 />
 
-                <div className="p-4 flex flex-col flex-grow">
-                  <h3 className="text-lg font-bold text-gray-800 mb-2">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm">
-                    {project.description}
-                  </p>
+                {/* Overlay */}
+                <div
+                
+                 className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-80 transition duration-300 flex flex-col justify-center items-center p-4">
+                  <div className="opacity-0 group-hover:opacity-100 text-center transition duration-300">
+                    <h3 className="text-white text-xl font-semibold mb-2">
+                      {project.title}
+                    </h3>
+                    <p className="text-gray-200 text-sm">
+                      {project.description}
+                    </p>
+                    {/* <p className="text-gray-200 text-sm  pt-12">
+                      Read More
+                    </p> */}
+                  </div>
                 </div>
               </div>
             ))}

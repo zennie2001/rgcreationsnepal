@@ -17,7 +17,7 @@ export default function Home() {
       <section className="bg-white px-4 py-20 container md:px-0 text-gray-800">
         {/* Title and Intro */}
         <div className="mb-12 w-full flex flex-col md:flex-row justify-between gap-6">
-          <h2 className="text-3xl md:text-4xl font-bold w-full md:w-1/2 mb-4">
+          <h2 className="text-3xl md:text-4xl text-[#333d49] font-bold w-full md:w-1/2 mb-4">
             WHAT SETS US
             <br />
             APART

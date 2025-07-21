@@ -13,7 +13,7 @@ const BookAppointmentPage = () => {
   return (
     <main className="min-h-screen py-20 px-4  bg-gray-400 overflow-hidden">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl lg:text-5xl font-bold text-darkGreen mb-8 text-center pt-16">
+        <h1 className="text-3xl lg:text-5xl font-bold text-[#333d49] mb-8 text-center pt-16">
           Book an Appointment
         </h1>
         <div className="w-full h-[700px] rounded-lg overflow-hidden shadow-lg">
