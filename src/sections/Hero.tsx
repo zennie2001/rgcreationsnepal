@@ -110,6 +110,7 @@ const Hero = () => {
 
       {/* Navigation Arrows */}
       <button
+      aria-label="move left"
         onClick={prevSlide}
         className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-2 md:p-3 rounded-full transition-colors"
       >
@@ -117,6 +118,7 @@ const Hero = () => {
       </button>
 
       <button
+      aria-label="move right"
         onClick={nextSlide}
         className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-2 md:p-3 rounded-full transition-colors"
       >
@@ -125,6 +127,7 @@ const Hero = () => {
 
       {/* Pause/Play Button */}
       <button
+      aria-label="pause-play"
         onClick={togglePause}
         className="absolute left-1/2 lg:top-[37%] top-[76%]  z-30 bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white p-2 md:p-3 rounded-full transition-colors"
       >
@@ -135,6 +138,7 @@ const Hero = () => {
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex space-x-3">
         {slides.map((_, index) => (
           <button
+          aria-label="Pagination Dots"
             key={index}
             onClick={() => setCurrentSlide(index)}
             className={`w-3 h-3 rounded-full transition-colors ${

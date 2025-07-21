@@ -51,6 +51,7 @@ const Deals: React.FC = () => {
       <div className="container mx-auto px-4 text-center relative">
         {/* Left Arrow inside container, vertically centered */}
         <button
+        
           onClick={slidePrev}
           aria-label="Previous Slide"
           className="absolute lg:left-0 left-8 top-1/2 -translate-y-3/4 z-20 bg-white bg-opacity-20 hover:bg-opacity-40 text-white rounded-full p-3 transition"
@@ -94,6 +95,7 @@ const Deals: React.FC = () => {
         <div className="flex justify-center gap-2 mt-8">
           {clients.map((_, index) => (
             <button
+            
               key={index}
               onClick={() => swiperRef.current?.slideToLoop(index)}
               className={`w-3 h-3 rounded-full transition-colors ${
