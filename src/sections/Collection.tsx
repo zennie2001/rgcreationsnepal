@@ -32,7 +32,7 @@ const Collection: React.FC = () => {
 
           {/* Right Column - Text */}
           <div className="lg:col-span-3 flex flex-col justify-center">
-            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#333d49] leading-tight">
               Best &<br />
               Trendy
               <br />

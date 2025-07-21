@@ -175,7 +175,7 @@ export default function Testimonials() {
         {/* Header */}
         <div className="lg:flex justify-between mb-12">
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-2 tracking-wide">
+            <h2 className="text-2xl font-bold text-[#333d49] mb-2 tracking-wide">
               TESTIMONIALS
             </h2>
             <div className="w-12 h-0.5 bg-gray-400"></div>

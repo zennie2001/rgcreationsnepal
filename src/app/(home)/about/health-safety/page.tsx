@@ -49,7 +49,7 @@ export default function Home() {
     <main className="w-full overflow-hidden">
       <AboutHealthHero />
       <section className="px-4 container mx-auto py-12 md:px-0  md:py-20 bg-white text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl text-[#333d49] font-bold mb-4">
           Health and Safety
         </h2>
         <p className="max-w-2xl mx-auto text-gray-700 mb-12">

@@ -10,7 +10,7 @@ export default function page() {
       <div className="bg-white text-gray-800 px-6 lg:px-20 py-12 space-y-12 pb-44">
       {/* Header */}
       <div className="text-center">
-        <h2 className="text-4xl font-extrabold text-gray-900 mb-4">Case Study: Rambagh Mahal</h2>
+        <h2 className="text-4xl font-extrabold text-[#333d49] mb-4">Case Study: Rambagh Mahal</h2>
         <div className="w-24 h-1 bg-gray-700 mx-auto mb-4 rounded-full" />
         <p className="text-xl font-medium text-gray-600">
           Transforming a Vision of Royalty into a Landmark of Luxury
@@ -57,7 +57,7 @@ export default function page() {
 
       {/* Interior Design */}
       <div className="space-y-6">
-        <h2 className="text-2xl font-bold border-b pb-2">Interior Design – Where Tradition Meets Modern Luxury</h2>
+        <h2 className="text-2xl font-bold border-b pb-2">Phase 2: Interior Design – Where Tradition Meets Modern Luxury</h2>
         <p>
           Our next focus was crafting a sensory-rich interior that evoked a royal ambience. As one of the best interior designers in Nepal, our approach combined handcrafted details with high-end materials and smart space functionality.
         </p>
@@ -116,7 +116,7 @@ export default function page() {
         <div className="bg-white text-gray-800 px-6 lg:px-20 py-12 space-y-12">
       {/* Header */}
       <div className="text-center">
-        <h2 className="text-4xl font-extrabold text-gray-900 mb-4">Case Study: Harsa Batika</h2>
+        <h2 className="text-4xl font-extrabold text-[#333d49] mb-4">Case Study: Harsa Batika</h2>
         <div className="w-24 h-1 bg-gray-700 mx-auto mb-4 rounded-full" />
         <p className="text-xl font-medium text-gray-600">
           A Celebration of Elegance in Nature

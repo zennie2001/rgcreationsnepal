@@ -1,20 +1,14 @@
-"use client"
-import React, { useRef, useState } from 'react';
-import { FaPlay } from 'react-icons/fa';
+"use client";
+import React, { useState } from "react";
+import { FaPlay } from "react-icons/fa";
 
 const Video = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  const handlePlay = () => {
-    if (videoRef.current) {
-      videoRef.current.play();
-      setIsPlaying(true);
-    }
-  };
+  const embedSrc = `https://www.youtube.com/embed/8-x2IvYZ9Og?autoplay=1&controls=1&loop=1&playlist=8-x2IvYZ9Og`;
 
   return (
-    <div className="w-full lg:h-[950px] h-[550px] bg-gray-900 relative flex flex-col items-center justify-center">
+    <div className="w-full lg:h-[950px] h-[550px] bg-[#333d49] relative flex flex-col items-center justify-center">
       <h2 className="lg:text-5xl text-3xl font-bold text-white text-center mb-10">
         Walk Through Your Vision <br className="hidden lg:block" />
         Before It’s Built
@@ -29,26 +23,25 @@ const Video = () => {
           rounded-xl overflow-hidden
         "
       >
-       <iframe
-       loading="lazy"
-          src="https://www.youtube.com/embed/8-x2IvYZ9Og?autoplay=1&controls=1&loop=1&playlist=8-x2IvYZ9Og"
-          title="My Video"
-          className="w-full h-full object-cover"
-          allow="autoplay; encrypted-media"
-          allowFullScreen
-        ></iframe>
-
-
-        {!isPlaying && (
-          <div className="absolute inset-0">
+        {isPlaying ? (
+          <iframe
+            loading="lazy"
+            src={embedSrc}
+            title="My Video"
+            className="w-full h-full object-cover"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+          ></iframe>
+        ) : (
+          <div className="absolute inset-0 w-full h-full">
             <img
-              src="/GalleryHero.jpg" // Replace with your thumbnail
+              src="/GalleryHero.jpg"
               alt="Sustainable construction"
               className="w-full h-full object-cover"
             />
             <button
-            aria-label="Play Button"
-              onClick={handlePlay}
+              aria-label="Play Button"
+              onClick={() => setIsPlaying(true)}
               className="
                 absolute 
                 top-1/2 left-1/2 

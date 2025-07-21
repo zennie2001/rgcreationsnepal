@@ -76,7 +76,7 @@ const ModernBlogDesign: React.FC = () => {
       <div className="container mx-auto">
         {/* Header */}
         <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#333d49] mb-4">
             NEWS & UPDATES
           </h2>
           <div className="w-16 h-1 bg-[#133950]"></div>

@@ -7,7 +7,7 @@ const page = () => {
         <AboutSwotHero/>
          {/* SWOT Analysis Section */}
 <div className="w-full bg-[#f6f7f8] py-16 px-4 md:px-10 lg:px-20">
-  <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">SWOT Analysis for RG Creations Pvt. Ltd.</h2>
+  <h2 className="text-3xl font-bold text-center text-[#333d49] mb-12">SWOT Analysis for RG Creations Pvt. Ltd.</h2>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-gray-700 text-[15px] leading-relaxed">
 
     {/* Strengths */}

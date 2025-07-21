@@ -50,7 +50,7 @@ export default function Home() {
         <section className="px-8   py-12  md:py-20 bg-white">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-32 items-center">
           <div className="lg:pl-12 md:pl-12">
-            <h2 className="text-2xl md:text-4xl font-bold mb-6">
+            <h2 className="text-2xl md:text-4xl text-[#333d49] font-bold mb-6">
               Building Beyond Structures - 
               <br className="hidden lg:block" />
               Crafting a Legacy for Nepal

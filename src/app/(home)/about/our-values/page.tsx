@@ -18,7 +18,7 @@ export default function Home() {
       <section className="relative bg-white container mx-auto px-4 md:px-0 py-20  text-gray-800 overflow-hidden">
         {/* Section Header */}
         <div className="flex w-full justify-between">
-          <div className="text-3xl md:text-5xl font-extrabold mb-6 w-1/2">OUR<br/> VALUES</div>
+          <div className="text-3xl md:text-5xl text-[#333d49] font-extrabold mb-6 w-1/2">OUR<br/> VALUES</div>
           <p className="text-sm text-gray-600 max-w-2xl w-1/2 mb-12">
             We provide best services with guarantee. We are the best realtor in
             country and always bring best option for our customer or clients. We
