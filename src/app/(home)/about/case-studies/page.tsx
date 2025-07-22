@@ -17,39 +17,30 @@ export default function page() {
         </p>
       </div>
 
-      {/* Project Info */}
-        <div className="flex flex-col md:flex-row items-center gap-10">
-          {/* Text Section */}
-          <div className="md:w-1/2 text-2xl pr-12 space-y-6">
-            <p><strong>Client:</strong> Rambagh Mahal</p>
-            <p><strong>Location:</strong> Rambagh Mahal Bhanimandal, Lalitpur, Nepal</p>
-            <p><strong>Scope:</strong> Full Construction, Interior Design & Branding</p>
-            <p><strong>Completed By:</strong> RG Creations Nepal Pvt. Ltd.</p>
-          </div>
+      {/* Project Info + Background Section */}
+<div className="flex flex-col md:flex-row justify-between gap-10 items-start">
+  {/* Left: Text Content */}
+  <div className="md:w-1/2 space-y-8">
+    {/* Project Info */}
+    <div className="text-2xl space-y-4 md:py-12">
+      <p><strong>Client:</strong> Rambagh Mahal</p>
+      <p><strong>Location:</strong> Rambagh Mahal Bhanimandal, Lalitpur, Nepal</p>
+      <p><strong>Scope:</strong> Full Construction, Interior Design & Branding</p>
+      <p><strong>Completed By:</strong> RG Creations Nepal Pvt. Ltd.</p>
+    </div>
 
-          {/* Image Section */}
-          <div className="md:w-1/2">
-            <img
-              src="/rambagh.jpg" // Replace with your image path
-              alt="Rambagh Mahal"
-              className="rounded-xl shadow-md w-full object-cover"
-            />
-          </div>
-        </div>
+    {/* Project Background */}
+    <div className="space-y-4">
+      <h2 className="text-2xl font-bold border-b pb-2">Project Background</h2>
+      <p>
+        Rambagh Mahal was envisioned as a one-of-a-kind venue in Nepal—a luxury banquet hall and party palace built to host grand celebrations, royal weddings, and high-profile events. The client’s goal was to create an architectural marvel inspired by the royal palaces of Rajasthan and Mughal design while incorporating all the functionalities and comforts expected in a modern hospitality venue.
+      </p>
+      <p>
+        RG Creations Nepal Pvt. Ltd., known for its expertise in banquet hall construction in Nepal, interior design, and turnkey project management, was brought on board as the lead execution partner. Our multidisciplinary team worked across design, architecture, branding, and project delivery to bring Rambagh Mahal to life.
+      </p>
+    </div>
 
-
-      {/* Section */}
-      <div className="space-y-6">
-        <h2 className="text-2xl font-bold border-b pb-2">Project Background</h2>
-        <p>
-          Rambagh Mahal was envisioned as a one-of-a-kind venue in Nepal—a luxury banquet hall and party palace built to host grand celebrations, royal weddings, and high-profile events. The client’s goal was to create an architectural marvel inspired by the royal palaces of Rajasthan and Mughal design while incorporating all the functionalities and comforts expected in a modern hospitality venue.
-        </p>
-        <p>
-          RG Creations Nepal Pvt. Ltd., known for its expertise in banquet hall construction in Nepal, interior design, and turnkey project management, was brought on board as the lead execution partner. Our multidisciplinary team worked across design, architecture, branding, and project delivery to bring Rambagh Mahal to life.
-        </p>
-      </div>
-
-      {/* Phase 1 */}
+       {/* Phase 1 */}
       <div className="space-y-6">
         <h2 className="text-2xl font-bold border-b pb-2">Phase 1: Architectural Design & Construction</h2>
         <p>
@@ -63,6 +54,30 @@ export default function page() {
           <li><strong>Smart Space Planning:</strong> Included dedicated kitchen zones, green rooms, storage areas, and accessible restrooms.</li>
         </ul>
       </div>
+  </div>
+
+  {/* Right: 3 Images Stacked */}
+  <div className="md:w-1/3 flex flex-col gap-4">
+    <img
+      src="/rambagh.jpg"
+      alt="Rambagh Image 1"
+      className="rounded-xl shadow-md w-full object-cover aspect-[4/3]"
+    />
+    <img
+      src="/ImageVideo/2(5).jpg"
+      alt="Rambagh Image 2"
+      className="rounded-xl shadow-md w-full object-cover aspect-[4/3]"
+    />
+    <img
+      src="/ImageVideo/1(10).jpg"
+      alt="Rambagh Image 3"
+      className="rounded-xl shadow-md w-full object-cover aspect-[4/3]"
+    />
+  </div>
+</div>
+
+
+   
 
       {/* Interior Design */}
       <div className="space-y-6">
@@ -122,7 +137,7 @@ export default function page() {
       </div>
     </div>
 
-        <div className="bg-white text-gray-800 px-6 lg:px-20 py-12 space-y-12">
+        <div className="bg-white text-gray-800 px-6 lg:px-20 py-12 space-y-12 pb-24">
       {/* Header */}
       <div className="text-center">
         <h2 className="text-4xl font-extrabold text-[#333d49] mb-4">Case Study: Harsa Batika</h2>
@@ -132,53 +147,69 @@ export default function page() {
         </p>
       </div>
 
-      {/* Project Info */}
-        <div className="flex flex-col md:flex-row items-center gap-10  p-6 rounded-xl shadow-sm">
-          <div className="md:w-1/2 text-2xl pr-12 space-y-6">
-            <p><strong>Client:</strong> Harsa Batika</p>
-            <p><strong>Location:</strong> Lalitpur, Nepal</p>
-            <p><strong>Scope:</strong> Complete Construction, Landscape Design, Interior Styling, and Branding</p>
-            <p><strong>Executed By:</strong> RG Creations Nepal Pvt. Ltd.</p>
-            <p><strong>Project Type:</strong> Outdoor-Inspired Banquet Venue & Event Space</p>
-          </div>
-          <div className="md:w-1/2">
-            <img
-              src="/harsa-batika-new.jpg" // Replace with actual image path
-              alt="Harsa Batika"
-              className="rounded-lg shadow w-full object-cover"
-            />
-          </div>
-        </div>
+{/* Project Info + Overview + Architecture Section */}
+<div className="flex flex-col md:flex-row justify-between gap-10 items-start">
+  {/* Left: Text Content */}
+  <div className="md:w-1/2 space-y-10">
+    {/* Project Info */}
+    <div className="text-2xl space-y-4 md:py-12">
+      <p><strong>Client:</strong> Harsa Batika</p>
+      <p><strong>Location:</strong> Lalitpur, Nepal</p>
+      <p><strong>Scope:</strong> Complete Construction, Landscape Design, Interior Styling, and Branding</p>
+      <p><strong>Executed By:</strong> RG Creations Nepal Pvt. Ltd.</p>
+      <p><strong>Project Type:</strong> Outdoor-Inspired Banquet Venue & Event Space</p>
+    </div>
 
+    {/* Project Overview */}
+    <div className="space-y-4">
+      <h2 className="text-2xl font-bold border-b pb-2">Project Overview</h2>
+      <p>
+        Harsa Batika is a unique event destination that blends natural elements with refined architecture. Conceptualized as a garden-style banquet and celebration space, it was designed to host weddings, receptions, corporate gatherings, and lifestyle events in a peaceful yet luxurious atmosphere.
+      </p>
+      <p>
+        RG Creations Nepal was entrusted with designing and delivering the entire project — from civil structure and landscaping to interior detailing and brand identity creation. Our goal was to create an event space that felt open, organic, and premium — a refreshing alternative to traditional closed banquet halls.
+      </p>
+    </div>
 
-      {/* Project Overview */}
-      <div className="space-y-6">
-        <h2 className="text-2xl font-bold border-b pb-2">Project Overview</h2>
-        <p>
-          Harsa Batika is a unique event destination that blends natural elements with refined architecture. Conceptualized as a garden-style banquet and celebration space, it was designed to host weddings, receptions, corporate gatherings, and lifestyle events in a peaceful yet luxurious atmosphere.
-        </p>
-        <p>
-          RG Creations Nepal was entrusted with designing and delivering the entire project — from civil structure and landscaping to interior detailing and brand identity creation. Our goal was to create an event space that felt open, organic, and premium — a refreshing alternative to traditional closed banquet halls.
-        </p>
-      </div>
+    {/* Construction & Architecture */}
+    <div className="space-y-4">
+      <h2 className="text-2xl font-bold border-b pb-2">Construction & Architectural Vision</h2>
+      <p>
+        The design concept revolved around merging indoor functionality with outdoor ambiance. RG Creations crafted structural designs that support large-scale events while preserving a natural, open-air experience.
+      </p>
+      <ul className="list-disc list-inside space-y-2">
+        <li><strong>Elegant pavilion-style halls</strong> with open beams and high ceilings</li>
+        <li><strong>Durable yet elegant exterior flooring</strong> for garden paths and seating areas</li>
+        <li><strong>Rain-ready roofing</strong> with proper drainage to ensure year-round use</li>
+        <li><strong>Wide, open landscape zones</strong> for photoshoots, ceremonies, and guest mingling</li>
+        <li><strong>Seamless transition</strong> from indoor to outdoor zones</li>
+      </ul>
+      <p>
+        Our civil and architectural team coordinated closely with horticulturists and landscape designers to ensure the greenery thrives without interfering with infrastructure.
+      </p>
+    </div>
+  </div>
 
-      {/* Construction & Architecture */}
-      <div className="space-y-6">
-        <h2 className="text-2xl font-bold border-b pb-2">Construction & Architectural Vision</h2>
-        <p>
-          The design concept revolved around merging indoor functionality with outdoor ambiance. RG Creations crafted structural designs that support large-scale events while preserving a natural, open-air experience.
-        </p>
-        <ul className="list-disc list-inside space-y-2">
-          <li><strong>Elegant pavilion-style halls</strong> with open beams and high ceilings</li>
-          <li><strong>Durable yet elegant exterior flooring</strong> for garden paths and seating areas</li>
-          <li><strong>Rain-ready roofing</strong> with proper drainage to ensure year-round use</li>
-          <li><strong>Wide, open landscape zones</strong> for photoshoots, ceremonies, and guest mingling</li>
-          <li><strong>Seamless transition</strong> from indoor to outdoor zones</li>
-        </ul>
-        <p>
-          Our civil and architectural team coordinated closely with horticulturists and landscape designers to ensure the greenery thrives without interfering with infrastructure.
-        </p>
-      </div>
+  {/* Right: 3 Smaller Images Stacked */}
+  <div className="md:w-1/3 flex flex-col gap-4">
+    <img
+      src="/harsa-batika-new.jpg"
+      alt="Harsa Batika 1"
+      className="rounded-xl shadow-md w-full object-cover aspect-[4/3]"
+    />
+    <img
+      src="/harsa-batika2.jpg"
+      alt="Harsa Batika 2"
+      className="rounded-xl shadow-md w-full object-cover aspect-[4/3]"
+    />
+    <img
+      src="/harshah.jpg"
+      alt="Harsa Batika 3"
+      className="rounded-xl shadow-md w-full object-cover aspect-[4/3]"
+    />
+  </div>
+</div>
+
 
       {/* Landscaping */}
       <div className="space-y-6">

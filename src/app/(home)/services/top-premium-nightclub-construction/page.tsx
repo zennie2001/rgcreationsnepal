@@ -16,7 +16,7 @@ const page = () => {
         <ServicesNightclubHero />
 
         <section className="w-full container mx-auto">
-        <div className=" py-20 bg-white">
+        <div className=" pt-20 bg-white">
           {/* Main Content Section */}
           <section className="py-16 px-4 lg:px-8">
             <div className="max-w-7xl mx-auto">
@@ -28,11 +28,14 @@ const page = () => {
                       Premium Nightclub Construction
                     </h2>
                     <p className="text-gray-600 text-lg leading-relaxed">
-                      At RG Creations Pvt. Ltd., we specialize in turning bold visions into iconic nightlife destinations. Our premium nightclub construction services are tailored to entrepreneurs, hospitality brands, and entertainment groups looking to create vibrant, unforgettable experiences. We go beyond conventional construction — we build atmospheres that pulse with energy, style, and exclusivity.
-                      <br />
-                      <br />From architectural planning to interior design, lighting, acoustics, and technology integration, our turnkey solutions are engineered to impress, perform, and endure.
+                      <i>Building Iconic Nightlife Destinations Across Nepal</i><br/><br/>
+                      At RG Creations Nepal, we don’t just build nightclubs — we create immersive, high-energy destinations that captivate your guests from the moment they walk in. Our premium nightclub construction services are trusted by some of Nepal’s most successful hospitality brands, setting the benchmark for elegance, innovation, and functionality.
+                        <br />
+                      <br />From sleek VIP lounges and futuristic dance floors to intelligent soundproofing and mood lighting systems, every element is curated to deliver unforgettable experiences. Whether you're targeting high-end clientele or the vibrant youth crowd, RG Creations crafts venues that speak your brand’s language and stay relevant for years to come.
                     </p>
                   </div>
+
+                 
 
                   {/* Feature Cards */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -42,11 +45,15 @@ const page = () => {
                         <CheckCircle className="w-6 h-6 text-white" />
                       </div>
                       <h3 className="text-xl font-semibold text-gray-900">
-                        Experience-Driven Design for Maximum Impact
+                        Our Services Include:
                       </h3>
-                      <p className="text-gray-600 leading-relaxed text-justify">
-                        We believe a nightclub is more than just a venue — it’s a lifestyle experience. Every space we design is carefully curated to guide customer flow, encourage interaction, and enhance comfort while delivering that unmistakable wow factor. Whether you envision a modern industrial vibe, luxury lounge ambiance, or high-tech dance arena, our team transforms your concept into reality with a strong focus on user experience.
-                      </p>
+                      <ul className="text-gray-600 list-disc list-inside leading-relaxed text-justify">
+                         <li>Architectural planning and approval</li>
+                        <li>Civil and structural construction</li>
+                        <li>Electrical and lighting systems</li>
+                        <li>HVAC and acoustic insulation</li>
+                        <li>Interior decor and luxury finishes</li>
+                      </ul>
                     </div>
 
                     {/* Operational Efficiency */}
@@ -55,19 +62,19 @@ const page = () => {
                         <Clock className="w-6 h-6 text-white" />
                       </div>
                       <h3 className="text-xl font-semibold text-gray-900">
-                        Comprehensive Services Include
+                       Our Branding & Support Solutions:
                       </h3>
-                      <ul className="list-disc text-gray-600 leading-relaxed pl-8">
-                        <li>Feasibility Study & Site Analysis</li>
-                        <li>Architectural Design & 3D Visualization</li>
-                        <li>Structural & MEP Works</li>
-                        <li>Interior & Theme Development</li>
-                        <li>Lighting & Audio Integration</li>
-                        <li>Bar, Lounge & VIP Area Customization</li>
-                        <li>Security, Access & Surveillance Systems</li>
+                      <ul className="list-disc text-gray-600 leading-relaxed list-inside">
+                         <li>Club logo design, theme development, and signage</li>
+                          <li>Social media setup and launch campaign support</li>
+                          <li>Website and event booking system integration</li>
+                          <li>Guidance on lighting/music branding for ambiance consistency</li>
+                          <li>Post-launch maintenance and upgrades</li>
                       </ul>
                     </div>
                   </div>
+
+                   
                 </div>
 
                 {/* Right Content - CTA Card */}
@@ -89,14 +96,42 @@ const page = () => {
                     </Link>
                   </div>
                 </div>
+
+                
               </div>
+               <div className='pt-10'>
+                    <h2 className="text-2xl lg:text-3xl font-bold text-[#333d49] leading-tight mb-6">
+                      Designing for Impact: Where Vision Meets Vibe
+                    </h2>
+                    <p className="text-gray-600 text-lg leading-relaxed">
+                      
+                      Every great nightclub starts with a bold idea — and we know how to bring that idea to life. Our design team collaborates closely with you to develop visually striking concepts that reflect your brand identity while keeping flow, safety, and functionality at the core.
+                       
+                    </p>
+                     <h3 className="text-xl font-semibold text-gray-900 pt-6">
+                       Key Design Highlights:
+                      </h3>
+                      <ul className="text-gray-600 list-disc list-inside leading-relaxed text-justify">
+                           <li>Ambient and programmable LED lighting systems</li>
+                            <li>Custom bar and stage structures</li>
+                            <li>Premium acoustic treatments and sound system support</li>
+                            <li>Luxury furniture and elegant space zoning</li>
+                            <li>Interactive features like digital walls, themed decor, and more</li>
+                      </ul>
+                      <h3 className="text-xl font-semibold text-gray-900 pt-6">
+                       End-to-End Construction Services
+                      </h3>
+                       <p className="text-gray-600 text-lg leading-relaxed">
+                        RG Creations Nepal offers complete turnkey nightclub construction, managing everything from permits and civil works to interiors and finishing touches. We work with certified engineers, architects, and interior designers to ensure that every detail matches the approved plan, timeline, and budget.
+                       </p>
+                  </div>
             </div>
           </section>
         </div>
       </section>
 
-       <div className="w-full lg:h-[950px] h-[550px] px-8 bg-gray-100 relative flex flex-col items-center pt-16">
-      <h2 className="lg:text-5xl text-2xl font-bold text-[#133950] text-center mb-10">
+       <div className="w-full lg:h-[950px] h-[550px] px-8 bg-gray-100 relative flex flex-col items-center ">
+      <h2 className="lg:text-5xl text-2xl font-bold text-[#133950] text-center mb-10 mt-16">
         Premium Nightclub Construction
       </h2>
 

@@ -71,6 +71,28 @@ export default async function Page({ params }: Props) {
         )}
       </div>
 
+      {/* Optional Image Gallery Section */}
+       {Array.isArray(project.images) && project.images.length > 0 && (
+
+          <div className="px-4 lg:px-[215px] flex flex-col gap-6">
+            <h2 className="text-xl font-semibold border-b pb-2">Project Gallery</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {project.images.map((img, index) => (
+                <div key={index} className="w-full">
+                  <Image
+                    src={img}
+                    alt={`Project Image ${index + 1}`}
+                    width={800}
+                    height={600}
+                    className="rounded-lg shadow-md object-cover w-full h-64"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+
       {/* Content and sidebar */}
       <div className="lg:px-[215px] px-8 flex justify-between lg:flex-row flex-col gap-16">
         {/* Description area */}
