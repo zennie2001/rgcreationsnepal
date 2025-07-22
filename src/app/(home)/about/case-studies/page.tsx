@@ -22,7 +22,7 @@ export default function page() {
   {/* Left: Text Content */}
   <div className="md:w-1/2 space-y-8">
     {/* Project Info */}
-    <div className="text-2xl space-y-4 pt-12 pb-12">
+    <div className="text-2xl space-y-4 md:py-12">
       <p><strong>Client:</strong> Rambagh Mahal</p>
       <p><strong>Location:</strong> Rambagh Mahal Bhanimandal, Lalitpur, Nepal</p>
       <p><strong>Scope:</strong> Full Construction, Interior Design & Branding</p>
@@ -137,7 +137,7 @@ export default function page() {
       </div>
     </div>
 
-        <div className="bg-white text-gray-800 px-6 lg:px-20 py-12 space-y-12">
+        <div className="bg-white text-gray-800 px-6 lg:px-20 py-12 space-y-12 pb-24">
       {/* Header */}
       <div className="text-center">
         <h2 className="text-4xl font-extrabold text-[#333d49] mb-4">Case Study: Harsa Batika</h2>
@@ -152,7 +152,7 @@ export default function page() {
   {/* Left: Text Content */}
   <div className="md:w-1/2 space-y-10">
     {/* Project Info */}
-    <div className="text-2xl space-y-4 pt-12 pb-12">
+    <div className="text-2xl space-y-4 md:py-12">
       <p><strong>Client:</strong> Harsa Batika</p>
       <p><strong>Location:</strong> Lalitpur, Nepal</p>
       <p><strong>Scope:</strong> Complete Construction, Landscape Design, Interior Styling, and Branding</p>
