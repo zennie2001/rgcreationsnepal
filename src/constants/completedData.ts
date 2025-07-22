@@ -126,7 +126,11 @@ export const projects = [
         contact: "+977-9819052751",
         category:"Restaurant, bar and lounge",
         projectDemand: "Interior & Exterior",
-         website: "https://evendo.com/locations/nepal/gosaikunda/bar/station-pub"
+         website: "https://evendo.com/locations/nepal/gosaikunda/bar/station-pub",
+          images: [
+            "/station1.jpg",
+            "/station2.jpg",
+  ]
     },
     {
         slug:"panas-banquet-event-hall",

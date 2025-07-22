@@ -5,9 +5,24 @@ import Link from 'next/link';
 
 const ProjectVideoGallery = () => {
   const projects = [
+     {
+      id: 8, 
+      title: 'Smart construction 15',
+      youtubeUrl: 'https://www.youtube.com/embed/crejH20zYz8',
+    },
+      {
+      id: 9, 
+      title: 'Smart construction 15',
+      youtubeUrl: 'https://www.youtube.com/embed/8-x2IvYZ9Og',
+    },
+      {
+      id: 10, 
+      title: 'Smart construction 15',
+      youtubeUrl: 'https://www.youtube.com/embed/joYu4krAWZ4',
+    },
     {
       id: 11,
-      title: 'Smart construction',
+      title: 'Smart construction 1',
       youtubeUrl: 'https://www.youtube.com/embed/Z4ERfjwOJcs',
     },
     {
@@ -17,50 +32,66 @@ const ProjectVideoGallery = () => {
     },
     {
       id: 13,
-      title: 'Smart construction',
+      title: 'Smart construction 3',
       youtubeUrl: 'https://www.youtube.com/embed/72Y7GQ_LTls',
     },
     {
       id: 14,
-      title: 'Smart construction',
+      title: 'Smart construction 4',
       youtubeUrl: 'https://www.youtube.com/embed/aRdZ5IrQenM',
     },
     
     {
       id: 15,
-      title: 'Smart construction',
+      title: 'Smart construction 5',
       youtubeUrl: 'https://www.youtube.com/embed/KL6GjVHCRS0',
     },
     {
       id: 16,
-      title: 'Smart construction',
+      title: 'Smart construction 6',
       youtubeUrl: 'https://www.youtube.com/embed/jEuvXUUV1bE',
     },
     {
       id: 17,
-      title: 'Smart construction',
+      title: 'Smart construction 7',
       youtubeUrl: 'https://www.youtube.com/embed/hS2KrcTFYYs',
     },
     {
       id: 18,
-      title: 'Smart construction',
+      title: 'Smart construction 8',
       youtubeUrl: 'https://www.youtube.com/embed/qCKsFSBQY7s',
     },
     {
       id: 19,
-      title: 'Smart construction',
+      title: 'Smart construction 9',
       youtubeUrl: 'https://www.youtube.com/embed/EzyavYAtHuM',
     },
     {
       id: 20,
-      title: 'Smart construction',
+      title: 'Smart construction 10',
       youtubeUrl: 'https://www.youtube.com/embed/6k-ds11dRAQ',
     },
     {
-      id: 21,
-      title: 'Smart construction',
+      id: 21, 
+      title: 'Smart construction 11',
       youtubeUrl: 'https://www.youtube.com/embed/SAKIGuUUQ5o',
     },
+    {
+      id: 22,
+      title: 'Smart construction 12 ',
+      youtubeUrl: 'https://www.youtube.com/embed/nt0KP2xBCAc',
+    },
+    {
+      id: 21,
+      title: 'Smart construction 13',
+      youtubeUrl: 'https://www.youtube.com/embed/81-Sur0D3pU',
+    },
+    {
+      id: 21,
+      title: 'Smart construction 14',
+      youtubeUrl: 'https://www.youtube.com/embed/yeyLbdq7UGs',
+    },
+
   ];
 
   return (

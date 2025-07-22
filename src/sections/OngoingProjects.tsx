@@ -24,7 +24,7 @@ const OngoingProjects = () => {
      {
       id: 3,
       category: "Image",
-      image: "/ImageVideo/ongoing.jpg",
+      image: "/whitelotus.jpg",
       title: "White Lotus",
       description:
         " White Lotus is a serene and elegant fine-dining destination designed to offer a luxurious culinary experience in the heart of the city. The ambiance blends sophistication with calm, creating a memorable atmosphere for guests.",
