@@ -56,11 +56,20 @@ const Nightclub = () => {
           </div>
         </div>
 
-         <div className="lg:pl-8 pt-8 pl-2 ">
+         <div className="mb-10">
+          <div className="grid grid-cols-1  lg:grid-cols-2 gap-12 items-center">
+            <div className="relative overflow-hidden">
+              <img
+                src="/about/4.jpg "
+                alt="Premium Nightclub Interior"
+                className="w-full h-[500px] object-cover hover:scale-110 duration-300 transition-all rounded-sm shadow-lg"
+              />
+            </div>
+            <div className="lg:pl-8 pt-8 pl-2 bg-white shadow-md rounded-md">
               <h3 className="text-3xl md:text-4xl font-bold text-[#333d49] mb-6">
                  Our Nightclub Construction Services
               </h3>
-               <p className="text-gray-600 text-sm leading-relaxed mb-8  space-y-2">
+               <p className="text-gray-600 text-sm leading-relaxed space-y-2">
                    Our comprehensive service approach helps you get started quicker, smarter, and with a focus on long-term success. We take care of everything — from the initial idea to the final touches — all in one place. 
                 </p>
 
@@ -87,6 +96,10 @@ const Nightclub = () => {
                       </li>
                 </ul>
             </div>
+          </div>
+        </div>
+
+        
 
       </div>
       </section>
