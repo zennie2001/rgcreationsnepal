@@ -8,9 +8,9 @@ export default function Home() {
     <main className="overflow-hidden">
       <ServiceHero />
       <section className="w-full container mx-auto">
-        <div className="  bg-white">
+        <div className=" py-20 bg-white">
           {/* Hero Section */}
-          {/* <section className="relative">
+          <section className="relative">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 h-[85vh]">
               {/* Image 1 */}
               <div className="relative overflow-hidden">
@@ -51,7 +51,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </section> */}
+          </section>
 
           {/* Main Content Section */}
           <section className=" px-4 lg:px-8">
