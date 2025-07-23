@@ -74,6 +74,8 @@ const page = () => {
                     </div>
                   </div>
 
+                  
+
                    
                 </div>
 
@@ -99,7 +101,11 @@ const page = () => {
 
                 
               </div>
-               <div className='pt-10'>
+
+               <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                {/* Left Content */}
+                <div className="space-y-8 col-span-2">
+                  <div className='pt-10'>
                     <h2 className="text-2xl lg:text-3xl font-bold text-[#333d49] leading-tight mb-6">
                       Designing for Impact: Where Vision Meets Vibe
                     </h2>
@@ -125,6 +131,125 @@ const page = () => {
                         RG Creations Nepal offers complete turnkey nightclub construction, managing everything from permits and civil works to interiors and finishing touches. We work with certified engineers, architects, and interior designers to ensure that every detail matches the approved plan, timeline, and budget.
                        </p>
                   </div>
+
+                 
+
+                 
+
+                  
+
+                   
+                </div>
+
+                {/* Right Content - CTA Card */}
+                <div className=" lg:pl-8 md:mt-20">
+                  <div className="relative overflow-hidden">
+                  <img
+                    src="/about/8.jpg "
+                    alt="Premium Nightclub Interior"
+                    className="w-full h-96 object-cover hover:scale-110 duration-300 transition-all rounded-sm shadow-lg"
+                  />
+                </div>
+                </div>
+
+                
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                {/* Left Content */}
+                <div className="space-y-8 col-span-2">
+                  <div className='pt-10'>
+                    <h2 className="text-2xl lg:text-3xl font-bold text-[#333d49] leading-tight mb-6">
+                     Turnkey Nightclub Construction Solutions in Nepal
+                    </h2>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      
+                      RG Creations is your go-to for complete construction services tailored for nightclubs, bars, lounges, and event venues throughout Nepal. We handle everything from permits and blueprints to civil work and finishing touches. Our team of certified architects, engineers, and project managers is dedicated to making sure every step of the process is timely, compliant, and stays within budget. 
+                    </p>
+                     <h3 className="text-xl font-semibold text-[#333d49] pt-6">
+                       Areas We Serve
+                      </h3>
+                      <ul className="text-gray-600 text-sm list-disc list-inside leading-relaxed text-justify">
+                           <li>Kathmandu</li>
+                            <li>Pokhara</li>
+                            <li>Chitwan</li>
+                            <li>Dharan</li>
+                            <li>Biratnagar</li>
+                            <li>Bhairahawa</li>
+                            <li>Lumbini</li>
+                            <li>and other major cities in Nepal</li>
+                      </ul>
+                      <h3 className="text-xl font-semibold text-[#333d49] pt-6">
+                       Book a Consultation Today
+                      </h3>
+                       <p className="text-gray-600 text-sm leading-relaxed">
+                        {/* Ready to build Nepal’s next iconic nightlife venue? Let’s talk. At RG Creations Nepal, we combine vision, technology, and experience to deliver premium nightclub environments that attract the crowd, impress your investors, and outperform competitors.
+                        <br/><br/> */}
+                        Book a free consultation today with our nightclub design specialists.<br/>
+                         Visit:  
+                         <a
+                            href="https://www.rgcreationsnepal.com/services/top-architectural-interior-design"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 underline hover:text-blue-800"
+                          >
+                            www.rgcreationsnepal.com/services/top-architectural-interior-design
+                          </a>
+                       </p>
+                  </div>
+
+                 
+
+                 
+
+                  
+
+                   
+                </div>
+
+                {/* Right Content - CTA Card */}
+                <div className=" lg:pl-8 md:mt-20">
+                  <div className="relative overflow-hidden">
+                  <img
+                    src="/about/7.jpg "
+                    alt="Premium Nightclub Interior"
+                    className="w-full h-96 object-cover hover:scale-110 duration-300 transition-all rounded-sm shadow-lg"
+                  />
+                </div>
+                </div>
+
+                
+              </div>
+               
+               
+               
+               
+               {/* <div className='pt-10'>
+                    <h2 className="text-2xl lg:text-3xl font-bold text-[#333d49] leading-tight mb-6">
+                      Designing for Impact: Where Vision Meets Vibe
+                    </h2>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      
+                      Every great nightclub starts with a bold idea — and we know how to bring that idea to life. Our design team collaborates closely with you to develop visually striking concepts that reflect your brand identity while keeping flow, safety, and functionality at the core.
+                       
+                    </p>
+                     <h3 className="text-xl font-semibold text-[#333d49] pt-6">
+                       Key Design Highlights:
+                      </h3>
+                      <ul className="text-gray-600 text-sm list-disc list-inside leading-relaxed text-justify">
+                           <li>Ambient and programmable LED lighting systems</li>
+                            <li>Custom bar and stage structures</li>
+                            <li>Premium acoustic treatments and sound system support</li>
+                            <li>Luxury furniture and elegant space zoning</li>
+                            <li>Interactive features like digital walls, themed decor, and more</li>
+                      </ul>
+                      <h3 className="text-xl font-semibold text-[#333d49] pt-6">
+                       End-to-End Construction Services
+                      </h3>
+                       <p className="text-gray-600 text-sm leading-relaxed">
+                        RG Creations Nepal offers complete turnkey nightclub construction, managing everything from permits and civil works to interiors and finishing touches. We work with certified engineers, architects, and interior designers to ensure that every detail matches the approved plan, timeline, and budget.
+                       </p>
+                  </div> */}
             </div>
           </section>
         </div>

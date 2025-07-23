@@ -196,7 +196,7 @@ export default function ContactUs() {
 
         {/* Right side - Image */}
         <div className="w-[90%] mx-auto relative md:w-1/2  ">
-          <div className="absolute bg-[#133950] right-0 h-full w-1/2 z-10"></div>
+          <div className="absolute bg-[#333d49] right-0 h-full w-1/2 z-10"></div>
           <div className="relative w-[70%] md:w-[77%] mx-auto h-[77%]  m-20 z-20">
             <img
               src="/rg-logo-frame.jpg" // Replace with your actual image

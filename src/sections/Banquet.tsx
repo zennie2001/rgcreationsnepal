@@ -33,7 +33,7 @@ const Banquet = () => {
           <div className="grid grid-cols-1  lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 lg:pr-8 pl-4 pt-6 bg-white shadow-md rounded-md">
               <h3 className="text-3xl md:text-4xl font-bold text-black mb-6 uppercase">
-                Banquet Designer Nepal – Custom Architectural Designs That Make a Statement
+                Banquet Designer Nepal 
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-4">
                 Are you planning a stunning wedding venue, a space for corporate events, or a versatile event center? Look no further than RG Creations, where we excel in:
@@ -41,7 +41,7 @@ const Banquet = () => {
               <ul className="text-gray-600 text-sm leading-relaxed mb-6 list-disc list-inside space-y-2">
                 <li>Crafting unique banquet designs and 3D models</li>
                 <li>Creating personalized interior designs for banquet halls</li>
-                <li>Enhancing guest experiences with top-notch sound management and lighting solutions</li>
+                <li>Enhancing experiences with top-notch sound management and lighting solutions</li>
                 <li>Strategically planning staging, kitchen, and lounge areas</li>
                 <li>Incorporating Vastu principles into banquet design right here in Nepal</li>
               </ul>
@@ -59,16 +59,24 @@ const Banquet = () => {
           </div>
         </div>
 
-        {/* Best Banquet Construction Company Section */}
+
         <div className="mb-10">
-          <div className="bg-white shadow-md rounded-md px-6 py-10">
+          <div className="grid grid-cols-1  lg:grid-cols-2 gap-12 items-center">
+            <div className="relative overflow-hidden">
+              <img
+                src="/about/4.jpg "
+                alt="Premium Nightclub Interior"
+                className="w-full h-96 object-cover hover:scale-110 duration-300 transition-all rounded-sm shadow-lg"
+              />
+            </div>
+            <div className="bg-white shadow-md rounded-md px-6 py-10">
             <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
               Best Banquet Construction Company in Nepal
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed mb-4">
               Looking for the top banquet construction company in Nepal? You've come to the right place! Our dedication to luxurious design, impeccable execution, and smart space planning has earned us the trust of developers and entrepreneurs all over the country.
             </p>
-            <p className="text-gray-600 text-sm leading-relaxed mb-4">
+            <p className="text-gray-600 text-sm leading-relaxed ">
               Here’s what we specialize in:
             </p>
             <ul className="list-disc list-inside text-gray-600 text-sm space-y-2">
@@ -77,15 +85,17 @@ const Banquet = () => {
               <li>Rooftop and open-air event venues</li>
               <li>Compact banquet solutions for urban settings</li>
             </ul>
-            <p className="text-gray-600 text-sm leading-relaxed mt-4">
+            <p className="text-gray-600 text-sm leading-relaxed">
               If you’re on the hunt for the best banquet space in Nepal, there’s a good chance we’ve already had a hand in creating it!
             </p>
           </div>
+          </div>
         </div>
 
-        {/* Best Event Venue Designers Section */}
+
         <div className="mb-10">
-          <div className="bg-white shadow-md rounded-md px-6 py-10">
+          <div className="grid grid-cols-1  lg:grid-cols-2 gap-12 items-center">
+            <div className="bg-white shadow-md rounded-md px-6 py-10">
             <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
               Best Event Venue Designers in Nepal
             </h3>
@@ -103,18 +113,34 @@ const Banquet = () => {
               <li>Instagram-worthy interiors that go viral!</li>
             </ul>
           </div>
+            <div className="order-1 overflow-hidden lg:order-2">
+              <img
+                src="/about/7.jpg"
+                alt="Modern Interior Design"
+                className="w-full h-96 hover:scale-110 duration-300 transition-all object-cover rounded-sm shadow-lg"
+              />
+            </div>
+          </div>
         </div>
 
-        {/* Hospitality Construction Experts Section */}
+
         <div className="mb-10">
-          <div className="bg-white shadow-md rounded-md px-6 py-10">
+          <div className="grid grid-cols-1  lg:grid-cols-2 gap-12 items-center">
+            <div className="relative overflow-hidden">
+              <img
+                src="/about/8.jpg "
+                alt="Premium Nightclub Interior"
+                className="w-full h-96 object-cover hover:scale-110 duration-300 transition-all rounded-sm shadow-lg"
+              />
+            </div>
+           <div className="bg-white shadow-md rounded-md px-6 py-10">
             <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
               Hospitality Construction Experts
             </h3>
             <p className="text-gray-600 text-sm leading-relaxed mb-4">
               From 5-star hotels and luxury resorts to banquet complexes and private clubs, we’re known for elevating the hospitality landscape in Nepal.
             </p>
-            <p className="text-gray-600 text-sm leading-relaxed mb-4">
+            <p className="text-gray-600 text-sm leading-relaxed ">
               Our hospitality construction services cover:
             </p>
             <ul className="list-disc list-inside text-gray-600 text-sm space-y-2">
@@ -124,7 +150,14 @@ const Banquet = () => {
               <li>Energy-efficient building systems</li>
             </ul>
           </div>
+          </div>
         </div>
+
+        
+
+        
+
+       
 
       </div>
     </section>
