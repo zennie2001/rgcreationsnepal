@@ -60,7 +60,7 @@ const page = () => {
           </section> */}
 
           {/* Main Content Section */}
-          <section className="py-16 px-4 lg:px-8">
+          <section className=" px-4 lg:px-8">
             <div className="max-w-7xl mx-auto">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                 {/* Left Content */}
@@ -69,17 +69,17 @@ const page = () => {
                     <h2 className="text-3xl lg:text-4xl font-bold text-[#333d49] leading-tight mb-6">
                       Architectural & Interior Design
                     </h2>
-                    <p className="text-gray-600 text-lg leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed">
 At RG Creations Pvt. Ltd., we bring visions to life through distinctive architectural and interior design services that blend creativity, functionality, and elegance. Whether you're building from the ground up or transforming an existing space, our team of architects and interior designers ensures every detail aligns with your identity, purpose, and lifestyle.                        <br/>
 
                     <br/>
                     We don’t just design buildings — we craft experiences. From the flow of natural light to the textures underfoot, every element is intentionally selected to create cohesive, inspiring, and efficient environments that stand the test of time.
                     </p>
                     
-                    <h3 className="text-xl font-semibold text-gray-900 py-4">
+                    <h3 className="text-xl font-semibold text-[#333d49] py-4">
                         Our Design Philosophy
                       </h3>
-                      <p className="text-gray-600 leading-relaxed text-justify">
+                      <p className="text-gray-600 text-sm leading-relaxed text-justify">
                         We believe great design is the harmony of form, function, and feeling. Our approach focuses on intelligent spatial planning, aesthetic innovation, and user-centered design that reflects both personality and practicality.
                         Whether it’s a luxury villa, a commercial tower, a nightclub, or a retail outlet, we design each space to tell a story — your story.
                       </p>
@@ -92,10 +92,10 @@ At RG Creations Pvt. Ltd., we bring visions to life through distinctive architec
                       <div className="w-12 h-12 bg-[#133950] rounded-lg flex items-center justify-center">
                         <CheckCircle className="w-6 h-6 text-white" />
                       </div>
-                        <h3 className="text-xl font-semibold text-gray-900">
+                        <h3 className="text-xl font-semibold text-[#333d49]">
                         Our Architectural Design Services Include:
                       </h3>
-                      <ul className="list-disc text-gray-600 leading-relaxed pl-8">
+                      <ul className="list-disc text-sm text-gray-600 leading-relaxed pl-8">
                         <li>Conceptual Design & 3D Rendering</li>
                         <li>Site Planning & Master Layouts</li>
                         <li>Structural & MEP Integration</li>
@@ -108,11 +108,11 @@ At RG Creations Pvt. Ltd., we bring visions to life through distinctive architec
                       <div className="w-12 h-12 bg-[#133950] rounded-lg flex items-center justify-center">
                         <Clock className="w-6 h-6 text-white" />
                       </div>
-                      <h3 className="text-xl font-semibold text-gray-900">
+                      <h3 className="text-xl font-semibold text-[#333d49]">
                         Our Interior Design Expertise Covers:
 
                       </h3>
-                      <ul className="list-disc text-gray-600 leading-relaxed pl-8">
+                      <ul className="list-disc text-sm  text-gray-600 leading-relaxed pl-8">
                         <li>Residential Interiors</li>
                         <li>Commercial & Office Interiors</li>
                         <li>Hospitality & Nightlife Interiors</li>
@@ -129,7 +129,7 @@ At RG Creations Pvt. Ltd., we bring visions to life through distinctive architec
                     <h2 className="text-2xl font-bold mb-4">
                       Get a appointment with our Expert
                     </h2>
-                    <p className="pt-2">
+                    <p className="pt-2 text-sm">
                       Cras tincidunt tellus at mi tristique rhoncus. Etiam
                       dapibus rutrum leo consectetur accumsan. Vivamus viverra
                       ante turpis.

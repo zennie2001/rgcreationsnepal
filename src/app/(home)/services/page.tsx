@@ -54,7 +54,7 @@ export default function Home() {
           </section>
 
           {/* Main Content Section */}
-          <section className="py-16 px-4 lg:px-8">
+          <section className=" px-4 lg:px-8">
             <div className="max-w-7xl mx-auto">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                 {/* Left Content */}
@@ -63,7 +63,7 @@ export default function Home() {
                     <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-6">
                       Commercial Construction
                     </h1>
-                    <p className="text-gray-600 text-lg leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed">
                       We develop versatile commercial properties, including
                       office buildings, retail centers, hotels, and mixed-use
                       complexes. Understanding the diverse needs of businesses,
@@ -85,10 +85,10 @@ export default function Home() {
                       <div className="w-12 h-12 bg-[#133950] rounded-lg flex items-center justify-center">
                         <CheckCircle className="w-6 h-6 text-white" />
                       </div>
-                      <h3 className="text-xl font-semibold text-gray-900">
+                      <h3 className="text-xl font-semibold text-[#133950]">
                         Quality Craftsmanship
                       </h3>
-                      <p className="text-gray-600 leading-relaxed">
+                      <p className="text-gray-600 text-sm leading-relaxed">
                         Uncompromising quality and exemplary craftsmanship are
                         hallmarks of our constructions. We prioritize precision
                         and excellence in every detail, ensuring that our
@@ -101,10 +101,10 @@ export default function Home() {
                       <div className="w-12 h-12 bg-[#133950] rounded-lg flex items-center justify-center">
                         <Clock className="w-6 h-6 text-white" />
                       </div>
-                      <h3 className="text-xl font-semibold text-gray-900">
+                      <h3 className="text-xl font-semibold text-[#133950]">
                         Operational Efficiency
                       </h3>
-                      <p className="text-gray-600 leading-relaxed">
+                      <p className="text-gray-600 text-sm leading-relaxed">
                         Our dedication to project management efficiency ensures
                         timely completion, allowing clients to enjoy their
                         luxurious spaces sooner. We optimize timelines without
@@ -120,7 +120,7 @@ export default function Home() {
                     <h2 className="text-2xl font-bold mb-4">
                       Get a appointment with our Expert
                     </h2>
-                    <p className="pt-2">
+                    <p className="pt-2 text-sm">
                       Cras tincidunt tellus at mi tristique rhoncus. Etiam
                       dapibus rutrum leo consectetur accumsan. Vivamus viverra
                       ante turpis.

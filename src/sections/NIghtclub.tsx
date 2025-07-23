@@ -16,43 +16,35 @@ const Nightclub = () => {
               />
             </div>
             <div className="lg:pl-8 pt-6 pl-2 bg-white shadow-md rounded-md">
-              <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
-                Designing Experiences. Building Icons.
-               
+              <h3 className="text-3xl md:text-4xl font-bold text-[#333d49] mb-6">
+                Designing Iconic Nightlife Spaces That Drive Business and Buzz
               </h3>
                <p className="text-gray-600 text-sm leading-relaxed mb-8  space-y-2">
-                    At RG Creations Nepal, we’re not just builders—we're creators of iconic nightlife destinations that redefine entertainment in Nepal and beyond. Recognized as one of the best nightclub designers in Nepal, our work seamlessly blends architecture, ambiance, sound, lighting, and performance into a single unforgettable experience.
+                    At RG Creations Pvt. Ltd., we take pride in our expertise in crafting top-notch nightclub spaces across Nepal. Our mission is to design visually captivating, tech-savvy, and highly functional nightlife venues that not only draw in crowds but also enhance the reputation of hospitality brands. Whether you're setting up a luxurious club in Kathmandu, a trendy bar-lounge in Pokhara, or a unique underground venue in Chitwan, our talented team combines architectural flair, creative interiors, and event-ready features to ensure your space becomes a must-visit destination. We don’t just construct nightclubs.
                     <br/>
-                    We are proud to share that one of our flagship projects has secured the 44th position on DJ Mag’s prestigious list of the World's Top 100 Clubs for 2025—a historic moment for Nepal's nightlife and a testament to our craftsmanship, creativity, and commitment to world-class quality.
-                    <br/>
-Whether you're building a rooftop lounge in Kathmandu, an underground club in Pokhara, or an exclusive VIP venue in a resort town, RG Creations Nepal offers a complete solution—from concept to execution.
+                   we create immersive experiences that resonate with the atmosphere, provide exceptional sound and lighting, and leave a memorable mark on your guests. With a keen insight into the latest trends in hospitality construction and an understanding of nightlife audiences, RG Creations guarantees that every project we undertake meets international standards while showcasing your brand's distinct personality.
                 </p>
-                            
-              {/* <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
-                READ MORE
-              </button> */}
             </div>
           </div>
         </div>
-
 
         {/* why choose us */}
         <div className="mb-10">
           <div className="grid grid-cols-1  lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 lg:pr-8 pl-4 pt-6 bg-white shadow-md rounded-md">
-              <h3 className="text-3xl md:text-4xl font-bold text-black mb-6">
-               Why We’re the Best Nightclub Construction Company in Nepal
+              <h3 className="text-3xl md:text-4xl font-bold text-[#333d49] mb-6">
+               Why RG Creations is Nepal’s Trusted Nightclub Construction Expert
               </h3>
                <ul className="text-gray-600 text-sm leading-relaxed mb-8 list-disc pl-4 list-inside space-y-2">
-                    <li> <strong>Globally Recognized Projects:</strong> From design to delivery, our club build ranked #44 on DJ Mag’s Top 100 Clubs, putting Nepal on the global nightlife map.</li>
-  <li> <strong>Turnkey Design & Build:</strong> We handle everything—planning, permits, architecture, interiors, MEP, lighting, and AV integration.</li>
-  <li><strong>Nightclub Equipment Supply:</strong> We source and supply world-class gear—professional DJ setups, intelligent lighting, LED walls, CO2 jets, bar units, and sound systems.</li>
-  <li><strong>Expert Consulting Services:</strong> We help clients refine their business model, club layout, licensing strategy, and ROI optimization.</li>
-  <li><strong>Trusted by Top Venues:</strong> From Legend Nepal and Faces Lounge to Victory Lounge and Taaj Palace, our footprint spans Nepal’s top-tier nightlife destinations.</li>
+                     <li>Specialized in hospitality and entertainment venue construction</li>
+                      <li>End-to-end service covering architecture, interiors, branding, and MEP</li>
+                      <li>Expertise in soundproofing, acoustic design, and club lighting systems</li>
+                      <li>Track record of delivering trendsetting clubs and lounges in Nepal</li>
+                      <li>Trusted by leading event venues, casinos, bars, and private resorts</li>
                 </ul>
-              {/* <button className="text-gray-500 text-sm font-medium tracking-widest hover:text-black transition-colors">
-                READ MORE
-              </button> */}
+                <p className="text-gray-600 text-sm leading-relaxed mb-8  space-y-2">
+                  Whether you’re targeting high-end clientele, the millennial nightlife crowd, or hosting events and concerts, our designs ensure optimal layout, safety, ambiance, and impact.
+                </p>
             </div>
             <div className="order-1 overflow-hidden lg:order-2">
               <img
@@ -64,6 +56,37 @@ Whether you're building a rooftop lounge in Kathmandu, an underground club in Po
           </div>
         </div>
 
+         <div className="lg:pl-8 pt-8 pl-2 ">
+              <h3 className="text-3xl md:text-4xl font-bold text-[#333d49] mb-6">
+                 Our Nightclub Construction Services
+              </h3>
+               <p className="text-gray-600 text-sm leading-relaxed mb-8  space-y-2">
+                   Our comprehensive service approach helps you get started quicker, smarter, and with a focus on long-term success. We take care of everything — from the initial idea to the final touches — all in one place. 
+                </p>
+
+                 <ul className="text-gray-600 text-sm leading-relaxed mb-8 list-disc pl-4 list-inside space-y-2">
+                      <li>
+                        <strong>Architectural Design & Planning:</strong>  
+                        We create conceptual layouts, 3D designs, and drawings ready for municipal approval, ensuring structural and MEP integration.
+                      </li>
+                      <li>
+                        <strong>Civil & Structural Construction:</strong>  
+                        Our skilled construction and project management teams oversee everything from the foundation to the roofing and club zoning.
+                      </li>
+                      <li>
+                        <strong>Lighting, Sound & Electrical:</strong>  
+                        We set up advanced lighting systems with programmable LEDs, integrate DJ booths, and provide high-capacity wiring for powerful sound.
+                      </li>
+                      <li>
+                        <strong>HVAC and Acoustic Insulation:</strong>  
+                        We offer tailored solutions for climate control and noise reduction, using top-notch materials and technology.
+                      </li>
+                      <li>
+                        <strong>Interior Design & Finishing:</strong>  
+                        Whether you prefer modern, luxury, or industrial styles, we design interiors with carefully selected materials, custom furnishings, and spatial planning that enhances crowd flow and energy.
+                      </li>
+                </ul>
+            </div>
 
       </div>
       </section>
