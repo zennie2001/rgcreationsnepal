@@ -40,7 +40,7 @@ export default function Home() {
               Our Designing Dreams. Building Futures. Innovative Architecture. Strategic Execution.
             </h2>
             <p className="text-sm text-gray-700 mb-6 leading-relaxed text-justify">
-              <span className="font-semibold text-black  block mb-2">
+              <span className="font-semibold text-[#333d49]  block mb-2">
 
                 RG Creations is a comprehensive architecture, construction, and material supply company headquartered in Baluwatar, Kathmandu, Nepal. With an international sourcing and R&D hub- Link World Tech in Shenzhen, China- we bring global innovation and materials into locally grounded design and construction practices.
 

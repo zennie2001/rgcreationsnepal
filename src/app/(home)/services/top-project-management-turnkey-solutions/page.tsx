@@ -59,7 +59,7 @@ const page = () => {
           </section> */}
 
           {/* Main Content Section */}
-          <section className="py-16 px-4 lg:px-8">
+          <section className=" px-4 lg:px-8">
             <div className=" mx-auto">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                 {/* Left Content */}
@@ -68,7 +68,7 @@ const page = () => {
                     <h2 className="text-3xl lg:text-4xl font-bold text-[#333d49] leading-tight mb-6">
                      Project Management & Turnkey Solutions
                     </h2>
-                    <p className="text-gray-600 text-lg leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed">
                       At RG Creations Pvt. Ltd., we specialize in turning bold visions into iconic nightlife destinations. Our premium nightclub construction services are tailored to entrepreneurs, hospitality brands, and entertainment groups looking to create vibrant, unforgettable experiences. We go beyond conventional construction — we build atmospheres that pulse with energy, style, and exclusivity.
                         <br/>
                         <br/>From architectural planning to interior design, lighting, acoustics, and technology integration, our turnkey solutions are engineered to impress, perform, and endure.
@@ -83,10 +83,10 @@ const page = () => {
                       <div className="w-12 h-12 bg-[#133950] rounded-lg flex items-center justify-center">
                         <CheckCircle className="w-6 h-6 text-white" />
                       </div>
-                      <h3 className="text-xl font-semibold text-gray-900">
+                      <h3 className="text-xl font-semibold text-[#333d49]">
                         Experience-Driven Design for Maximum Impact
                       </h3>
-                      <p className="text-gray-600 leading-relaxed text-justify">
+                      <p className="text-gray-600 text-sm leading-relaxed text-justify">
                         We believe a nightclub is more than just a venue — it’s a lifestyle experience. Every space we design is carefully curated to guide customer flow, encourage interaction, and enhance comfort while delivering that unmistakable wow factor. Whether you envision a modern industrial vibe, luxury lounge ambiance, or high-tech dance arena, our team transforms your concept into reality with a strong focus on user experience.
                       </p>
                     </div>
@@ -96,10 +96,10 @@ const page = () => {
                       <div className="w-12 h-12 bg-[#133950] rounded-lg flex items-center justify-center">
                         <Clock className="w-6 h-6 text-white" />
                       </div>
-                      <h3 className="text-xl font-semibold text-gray-900">
+                      <h3 className="text-xl font-semibold text-[#333d49]">
                         Comprehensive Services Include
                       </h3>
-                      <ul className="list-disc text-gray-600 leading-relaxed pl-8">
+                      <ul className="list-disc text-gray-600 text-sm leading-relaxed pl-8">
                         <li>Feasibility Study & Site Analysis</li>
                         <li>Architectural Design & 3D Visualization</li>
                         <li>Structural & MEP Works</li>
@@ -118,7 +118,7 @@ const page = () => {
                     <h2 className="text-2xl font-bold mb-4">
                       Get a appointment with our Expert
                     </h2>
-                    <p className="pt-2">
+                    <p className="pt-2 text-sm">
                       Cras tincidunt tellus at mi tristique rhoncus. Etiam
                       dapibus rutrum leo consectetur accumsan. Vivamus viverra
                       ante turpis.

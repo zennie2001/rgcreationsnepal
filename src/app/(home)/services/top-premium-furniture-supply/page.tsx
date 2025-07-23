@@ -62,7 +62,7 @@ const page = () => {
           </section> */}
 
           {/* Main Content Section */}
-          <section className="py-16 px-4 lg:px-8">
+          <section className="pb-16 px-4 lg:px-8">
             <div className="max-w-7xl mx-auto">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                 {/* Left Content */}
@@ -71,7 +71,7 @@ const page = () => {
                     <h2 className="text-3xl lg:text-4xl font-bold text-[#333d49] leading-tight mb-6">
                       Premium Furniture Supply
                     </h2>
-                    <p className="text-gray-600 text-lg leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed">
                         At RG Creations Pvt. Ltd., we supply premium furniture solutions that blend sophistication, comfort, and durability. Our curated collection is crafted to elevate residential, commercial, hospitality, and entertainment spaces with timeless style and world-class craftsmanship. Whether you're furnishing a luxury villa, an upscale office, or a high-end nightclub, we deliver bespoke furniture that complements your space and reflects your brand or lifestyle.                        <br/>
                         <br/>
                         From modern minimalist designs to opulent classics, every piece we offer is carefully selected for its quality, functionality, and visual appeal.
@@ -86,10 +86,10 @@ const page = () => {
                       <div className="w-12 h-12 bg-[#133950] rounded-lg flex items-center justify-center">
                         <CheckCircle className="w-6 h-6 text-white" />
                       </div>
-                      <h3 className="text-xl font-semibold text-gray-900">
+                      <h3 className="text-xl font-semibold text-[#333d49]">
                         What We Offer:
                       </h3>
-                      <ul className="list-disc text-gray-600 leading-relaxed text-justify pl-8">
+                      <ul className="list-disc text-sm text-gray-600 leading-relaxed text-justify pl-8">
                         <li>Residential Furniture</li>
                         <li>Office & Corporate Furniture</li>
                         <li>Hospitality & Nightclub Furniture</li>
@@ -103,10 +103,10 @@ const page = () => {
                       <div className="w-12 h-12 bg-[#133950] rounded-lg flex items-center justify-center">
                         <Clock className="w-6 h-6 text-white" />
                       </div>
-                      <h3 className="text-xl font-semibold text-gray-900">
+                      <h3 className="text-xl font-semibold text-[#333d49]">
                         Why Choose RG Creations for Furniture Supply?
                       </h3>
-                      <ul className="list-disc text-gray-600 leading-relaxed pl-8">
+                      <ul className="list-disc text-sm text-gray-600 leading-relaxed pl-8">
                         <li>Direct Import from Global Manufacturers</li>
                         <li>Premium Finishes & Materials</li>
                         <li>Design + Supply Integration</li>
@@ -124,7 +124,7 @@ const page = () => {
                     <h2 className="text-2xl font-bold mb-4">
                       Get a appointment with our Expert
                     </h2>
-                    <p className="pt-2">
+                    <p className="pt-2 text-sm">
                       Cras tincidunt tellus at mi tristique rhoncus. Etiam
                       dapibus rutrum leo consectetur accumsan. Vivamus viverra
                       ante turpis.

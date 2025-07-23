@@ -60,7 +60,7 @@ const page = () => {
           </section> */}
 
           {/* Main Content Section */}
-          <section className="py-16 px-4 lg:px-8">
+          <section className=" px-4 lg:px-8">
             <div className="max-w-7xl mx-auto">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                 {/* Left Content */}
@@ -70,7 +70,7 @@ const page = () => {
                       Luxurious Residential Developments
 
                     </h2>
-                    <p className="text-gray-600 text-lg leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed">
                         At RG Creations Pvt. Ltd., we redefine the essence of modern living through our luxurious residential developments. Combining architectural brilliance with refined aesthetics, we design and build exclusive homes and communities that offer unmatched comfort, functionality, and style. Each project is thoughtfully curated to meet the evolving lifestyle needs of urban dwellers, families, and discerning investors across Nepal.                        <br/>
                         <br/>From high-rise apartment towers to gated villa communities, our residential projects embody elegance, quality, and sustainability — delivering more than just a place to live, but a place to belong.
 
@@ -84,10 +84,10 @@ const page = () => {
                       <div className="w-12 h-12 bg-[#133950] rounded-lg flex items-center justify-center">
                         <CheckCircle className="w-6 h-6 text-white" />
                       </div>
-                      <h3 className="text-xl font-semibold text-gray-900">
+                      <h3 className="text-xl font-semibold text-[#333d49]">
                         What Sets Our Residential Projects Apart
                       </h3>
-                      <ul className="list-disc text-gray-600 leading-relaxed text-justify">
+                      <ul className="list-disc text-sm text-gray-600 leading-relaxed text-justify">
                         <li>Elegant Design Philosophy</li>
                         <li>Smart Living, Naturally</li>
                         <li>Premium Construction & Materials</li>
@@ -101,10 +101,10 @@ const page = () => {
                       <div className="w-12 h-12 bg-[#133950] rounded-lg flex items-center justify-center">
                         <Clock className="w-6 h-6 text-white" />
                       </div>
-                      <h3 className="text-xl font-semibold text-gray-900">
+                      <h3 className="text-xl font-semibold text-[#333d49]">
                         Comprehensive Services Include
                       </h3>
-                      <ul className="list-disc text-gray-600 leading-relaxed pl-8">
+                      <ul className="list-disc text-sm text-gray-600 leading-relaxed pl-8">
                         <li>Land development and master planning</li>
                         <li>Luxury apartment, villa, and duplex construction</li>
                         <li>Custom interior finishing and design consultation</li>
@@ -123,7 +123,7 @@ const page = () => {
                     <h2 className="text-2xl font-bold mb-4">
                       Get a appointment with our Expert
                     </h2>
-                    <p className="pt-2">
+                    <p className="pt-2 text-sm">
                       Cras tincidunt tellus at mi tristique rhoncus. Etiam
                       dapibus rutrum leo consectetur accumsan. Vivamus viverra
                       ante turpis.
