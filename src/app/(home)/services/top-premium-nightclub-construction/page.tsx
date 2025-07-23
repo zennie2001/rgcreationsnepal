@@ -182,20 +182,19 @@ const page = () => {
                       <h3 className="text-xl font-semibold text-[#333d49] pt-6">
                        Book a Consultation Today
                       </h3>
-                       <p className="text-gray-600 text-sm leading-relaxed">
+                       <p className="text-gray-600 text-sm leading-relaxed pb-2">
                         {/* Ready to build Nepal’s next iconic nightlife venue? Let’s talk. At RG Creations Nepal, we combine vision, technology, and experience to deliver premium nightclub environments that attract the crowd, impress your investors, and outperform competitors.
                         <br/><br/> */}
                         Book a free consultation today with our nightclub design specialists.<br/>
-                         Visit:  
-                         <a
-                            href="https://www.rgcreationsnepal.com/services/top-architectural-interior-design"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-blue-600 underline hover:text-blue-800"
-                          >
-                            www.rgcreationsnepal.com/services/top-architectural-interior-design
-                          </a>
+                         
+                        
                        </p>
+                        <Link href="/book-appointment">
+                          <button className='bg-[#333d49] text-white px-2 py-1'>
+                            Get Started
+                          </button>
+                        </Link>
+                          
                   </div>
 
                  
