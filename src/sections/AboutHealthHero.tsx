@@ -25,8 +25,8 @@ export default function AboutHealthHero() {
           </p>
         </div>
 
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
-          Safety First in Every Project. Protecting Lives, <br className="hidden md:block" /> 
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
+          Safety First in Every Project. <br className="hidden md:block" /> Protecting Lives, 
            Ensuring Excellence.
         </h2>
 

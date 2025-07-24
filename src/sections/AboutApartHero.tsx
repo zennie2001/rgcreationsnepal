@@ -25,7 +25,7 @@ export default function AboutApartHero() {
           </p>
         </div>
 
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
         we don’t follow trends -  <br className="hidden md:block" /> 
           we set them
         </h2>

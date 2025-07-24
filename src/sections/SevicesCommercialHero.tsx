@@ -25,7 +25,7 @@ export default function ServicesCommercialHero() {
           </p>
         </div>
 
-        <h2 className="text-2xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
            {/* <br className="hidden md:block" />  */}
            High-Quality, Future-Ready Spaces Elevating Brands and Business Growth Across Nepal
 
