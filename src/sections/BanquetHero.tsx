@@ -25,7 +25,7 @@ export default function BanquetHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
           Sophisticated Banquet Halls <br className="hidden md:block" /> 
           for Every Occasion
         </h1>

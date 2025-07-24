@@ -25,7 +25,7 @@ export default function ProcessHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
           Helping Each other – From <br className="hidden md:block" /> Families
           to Families
         </h1>

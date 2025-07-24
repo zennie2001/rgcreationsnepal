@@ -25,9 +25,9 @@ export default function ServicesInteriorHero() {
           </p>
         </div>
 
-        <h2 className="text-2xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
            {/* <br className="hidden md:block" />  */}
-           Creating Elegant, Functional Spaces Tailored to Your Vision
+           Creating Elegant, Functional<br className="hidden md:block" />  Spaces Tailored to Your Vision
 
         </h2>
 

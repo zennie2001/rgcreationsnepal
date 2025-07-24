@@ -25,7 +25,7 @@ export default function AboutusHero() {
           </p>
         </div>
 
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
           Turning Ideas into Iconic Structures. Driven by Design, <br className="hidden md:block" /> 
             Defined by Excellence
         </h2>

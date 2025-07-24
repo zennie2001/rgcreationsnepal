@@ -25,7 +25,7 @@ export default function BlogDetail3Hero() {
           </p>
         </div> */}
 
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
            Nepal’s Best Premium Construction Company: Delivering Excellence for Budget-Savvy and Luxury Clients
           
         </h2>

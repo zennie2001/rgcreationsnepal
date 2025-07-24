@@ -25,7 +25,7 @@ export default function ServicesResidentialHero() {
           </p>
         </div>
 
-        <h2 className="text-2xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
            {/* <br className="hidden md:block" />  */}
            Redefining Modern Living with Exclusive, Elegant Homes and Sustainable Communities 
 

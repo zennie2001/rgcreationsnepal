@@ -25,9 +25,9 @@ export default function NightclubHero() {
           </p>
         </div>
 
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
-          Delivering Cutting-Edge Sound and Lighting Solutions <br className="hidden md:block" /> 
-          That Transform Your Venue into the Ultimate Nightlife Experience
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
+          Delivering Cutting-Edge <br className="hidden md:block" />  and Lighting Solutions 
+          That<br className="hidden md:block" />  Transform Your Venue into the<br className="hidden md:block" />  Ultimate Nightlife Experience
 
         </h2>
 

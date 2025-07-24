@@ -25,7 +25,7 @@ export default function BlogDetailHero() {
           </p>
         </div> */}
 
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
           RG Creations Nepal Pvt Ltd – The Leading Architecture and Construction Company in Nepal <br className="hidden md:block" /> 
           
         </h2>

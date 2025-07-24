@@ -25,8 +25,8 @@ export default function AboutValuesHero() {
           </p>
         </div>
 
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
-           Delivering Exceptional Spaces. Committed <br className="hidden md:block" /> 
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
+           Delivering Exceptional Spaces. Committed 
           to Service, Guaranteed Excellence.
         </h2>
 

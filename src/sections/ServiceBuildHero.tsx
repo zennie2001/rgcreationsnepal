@@ -25,9 +25,9 @@ export default function ServicesBuildHero() {
           </p>
         </div>
 
-        <h2 className="text-2xl md:text-5xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
            {/* <br className="hidden md:block" />  */}
-          Unlock Lasting Value Through Tailored Hospitality Solutions
+          Unlock Lasting Value Through<br className="hidden md:block" />  Tailored Hospitality Solutions
 
         </h2>
 
