@@ -18,13 +18,14 @@ type Client = {
 const clients: Client[] = [
   { name: "Royal Empire", logo: "/logo/logo1(1).jpg" },
   { name: "Harshah Batika", logo: "/logo/logo1(2).jpg", url:"https://harshahbatika.com/" },
-  { name: "Deja vu", logo: "/logo/logo1(3).jpg" },
+  { name: "Deja vu", logo: "/logo/logo1(3).jpg", url:"https://www.facebook.com/dejavuktm" },
   { name: "Sangam batika", logo: "/logo/sangam.jpg" },
   { name: "Rambagh Mahal", logo: "/logo/logo1(4).jpg", url: "https://rambaghmahal.com" },
-  { name: "Boudha Heritage", logo: "/logo/logo1(5).jpg" },
-  { name: "Taaj Heritage", logo: "/logo/logo1(6).jpg" },
-  { name: "PANAS", logo: "/logo/logo1(7).jpg" },
+  { name: "Boudha Heritage", logo: "/logo/logo1(5).jpg" , url:"https://www.facebook.com/boudhaheritage1"},
+  { name: "Taaj Heritage", logo: "/logo/logo1(6).jpg", url:"https://taajreception.com/" },
+  { name: "PANAS", logo: "/logo/logo1(7).jpg" , url:"https://www.facebook.com/panas.banquet5"},
   { name: "White Lotus", logo: "/logo/logo8.svg" },
+   { name: "Imperial banquet", logo: "/logo/logo8.svg", url:"https://imperialbanquetnepal.com/" },
   { name: "Utsav Kunj", logo: "/logo/logo9.svg" },
   { name: "Majestic Grand", logo: "/logo/majestic.svg", url:"https://majesticgrandnepal.com/" },
 ];
