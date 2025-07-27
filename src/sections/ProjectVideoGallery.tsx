@@ -5,6 +5,11 @@ import Link from 'next/link';
 
 const ProjectVideoGallery = () => {
   const projects = [
+    {
+      id: 25, 
+      title: 'Smart construction 15',
+      youtubeUrl: 'https://www.youtube.com/embed/XdJBGJbY6mo',
+    },
      {
       id: 8, 
       title: 'Smart construction 15',
@@ -82,12 +87,12 @@ const ProjectVideoGallery = () => {
       youtubeUrl: 'https://www.youtube.com/embed/nt0KP2xBCAc',
     },
     {
-      id: 21,
+      id: 23,
       title: 'Smart construction 13',
       youtubeUrl: 'https://www.youtube.com/embed/81-Sur0D3pU',
     },
     {
-      id: 21,
+      id: 24,
       title: 'Smart construction 14',
       youtubeUrl: 'https://www.youtube.com/embed/yeyLbdq7UGs',
     },
