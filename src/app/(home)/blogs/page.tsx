@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import React from "react";
-import { FiChevronDown } from "react-icons/fi";
 import BlogHero from "@/sections/BlogHero";
 
 export const metadata = {
@@ -72,6 +71,49 @@ function Blog() {
       {/* Blog Cards */}
       
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 px-10 lg:px-12">
+
+         <article  className="group cursor-pointer h-full lg:h-[500px]">
+            <div className="relative rounded-sm h-full">
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/50 overflow-hidden z-10 rounded-sm"></div>
+
+              {/* Image */}
+              <img
+                src='/service-hero.jpg'
+                alt='The Leading Architecture and Construction Company'
+                className="
+                  w-[276.6946105957031px] h-[439px]
+                  sm:w-[276.6946105957031px] sm:h-[439px]
+                  md:w-full md:h-full
+                  mx-auto
+                  object-cover group-hover:scale-105 transition-transform duration-500 rounded-sm
+                "
+              />
+
+              {/* Overlay Content */}
+              
+              <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
+               
+                <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
+                  <Link href={'/blogs/top-rg-creations-building-nepals-future'}>
+                  <h3 className="text-2xl font-bold  leading-tight mb-4">
+                   Building Nepal&apos;s Future: Exploring Architecture, Nightclub Design, and Hospitality Construction
+                  </h3>
+                  </Link>
+                  <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
+                      Architecture in Nepal has evolved significantly in recent years. While the country&apos;s architectural history is rooted in its centuries-old temples, stupas, and traditional Newari houses, the present-day scene is influenced by minimalist, eco-friendly, and tech-enabled design philosophies.
+                  </p>
+                  <Link href={'/blogs/top-rg-creations-building-nepals-future'}>
+                  <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
+                    READ MORE
+                  </button>
+                  </Link>
+                </div>
+              </div>
+             
+            </div>
+          </article>
+        
        
         
           <article  className="group cursor-pointer h-full lg:h-[500px]">
