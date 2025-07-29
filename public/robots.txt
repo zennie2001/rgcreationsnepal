@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.rgcreationsnepal.com
+
+# Sitemaps
+Sitemap: https://www.rgcreationsnepal.com/sitemap.xml
