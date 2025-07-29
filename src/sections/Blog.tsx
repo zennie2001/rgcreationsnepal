@@ -6,6 +6,7 @@ interface BlogPost {
   id: number;
   title: string;
   description: string;
+  alt:string;
   category: string;
   image: string;
   date: string;
@@ -36,6 +37,7 @@ const ModernBlogDesign: React.FC = () => {
       description:
         "RG Creations Nepal Pvt Ltd – The Leading Architecture and Construction Company in Nepal",
       category: "ARCHITECTURE",
+      alt:"Award-winning architecture company  ",
       image: "/about/rgcreations1(1).jpg",
       date: "18 AUG 2023",
     },
@@ -45,6 +47,7 @@ const ModernBlogDesign: React.FC = () => {
       description:
         "Transforming Nightlife: Our Journey Designing One of the World’s Top 40 Nightclubs – Dejavu Club Nepal",
       category: "INTERIOR DESIGN",
+      alt:"Trusted architecture company  ",
       image: "/about/news3.jpg",
       date: "15 AUG 2023",
     },
@@ -54,6 +57,7 @@ const ModernBlogDesign: React.FC = () => {
       description:
         " We pride ourselves on being Nepal’s best premium construction company, delivering excellence to both budget-savvy and luxury clients.",
       category: "ARCHITECTURE",
+      alt:"Top banquet design company",
       image: "/about/news2.jpg",
       date: "10 AUG 2023",
       featured: true,
@@ -98,7 +102,7 @@ const ModernBlogDesign: React.FC = () => {
                   {/* ✅ UPDATED - LEFT IMAGE SIZE */}
                   <img
                     src={post.image}
-                    alt={post.title}
+                    alt={post.alt}
                     className="
                       w-[327px] h-[250px]
                       sm:w-[327px] sm:h-[250px]

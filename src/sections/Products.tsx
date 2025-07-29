@@ -17,6 +17,7 @@ const LatestProjects = () => {
       image: "/rambagh.jpg",
       video: "https://www.youtube.com/embed/Z4ERfjwOJcs",
       title: "Rambagh Mahal",
+      alt:"Premium banquet design company",
     },
     {
       id: 2,
@@ -24,6 +25,7 @@ const LatestProjects = () => {
       image: "harsa-batika-new.jpg",
       video: "https://www.youtube.com/embed/72Y7GQ_LTls",
       title: "Harshah Batika",
+      alt:"Innovative architecture company Nepal",
     },
     {
       id: 3,
@@ -31,6 +33,7 @@ const LatestProjects = () => {
       image: "/about/poland.png",
       video: "https://www.youtube.com/embed/crejH20zYz8",
       title: "Modern Villa in Poland",
+      alt:"Elegant architecture company ",
     },
     {
       id: 4,
@@ -38,6 +41,7 @@ const LatestProjects = () => {
       image: "/mj.jpg",
       video: "https://www.youtube.com/embed/8-x2IvYZ9Og",
       title: "Majestic Grand",
+      alt:"Architecture company with 5-star reviews"
     },
   ];
 
@@ -146,7 +150,7 @@ const LatestProjects = () => {
                   {/* Image */}
                   <motion.img
                     src={project.image}
-                    alt={project.title}
+                    alt={project.alt}
                     className={`w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-300 ${
                       isHovered ? "opacity-0" : "opacity-100"
                     }`}

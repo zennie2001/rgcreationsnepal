@@ -8,7 +8,7 @@ const slides = [
   {
     id: 1,
     image: "/mainbanner1.jpg",
-    description: "Architectural design services",
+    description: "Top Architectural design services",
     title: (
       <>
       We are experts <br className="lg:hidden sm:block"/> and brand <br className="hidden lg:block"/> creators in<br className="lg:hidden sm:block"/> hospitality industry
@@ -18,7 +18,7 @@ const slides = [
   {
     id: 2,
     image: "/mainbanner2.jpg",
-    description: "Luxury Construction.",
+    description: "Best Luxury Construction.",
     title:(
       <>
       Luxury Construction.<br className="lg:hidden sm:block"/> Timeless <br className="hidden lg:block"/> Design. <br className="lg:hidden sm:block"/> Trusted Excellence
@@ -28,7 +28,7 @@ const slides = [
   {
     id: 3,
     image: "/third.jpg",
-    description: "Commercial architecture",
+    description: "Premium Commercial architecture",
     title: (
       <>
       Where Vision Meets <br className="lg:hidden sm:block"/> Structure <br className="hidden lg:block"/> Premium <br className="lg:hidden sm:block"/> Construction in Nepal
@@ -38,7 +38,7 @@ const slides = [
   {
     id: 4,
     image: "/main-banner4(1).jpg",
-    description: "Residential architecture",
+    description: "Elegant Residential architecture",
     title: (
       <>
       Top-Rated Banquet <br className="lg:hidden sm:block"/> Hall Construction Experts  <br className="hidden lg:block"/> in <br className="lg:hidden sm:block"/> Nepal – Where Elegance <br className="lg:hidden sm:block"/> Meets Engineering

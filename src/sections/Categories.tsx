@@ -14,12 +14,12 @@ const WelcomeSection = () => {
                 <p className="text-sm text-gray-600 uppercase tracking-widest font-medium">
                   Welcome to RG Creations Nepal
                 </p>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#333d49] leading-tight">
-                  WE ARE <span className="text-[#333d49]">CREATIVE</span>
+                <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-[#333d49] leading-tight">
+                  Top-Rated <span className="text-[#333d49]">Architecture</span>
                   <br />
-                  BUILDING - DESIGN
+                  Firm in Nepal– Your 
                   <br />
-                  COMPANY
+                  Vision, Our Design
                 </h2>
               </div>
 
@@ -48,7 +48,7 @@ const WelcomeSection = () => {
                 <div className="border-[#333d49] border-[24px] w-full h-60 md:h-72 p-4 md:p-6">
                   <img
                     src="/about/mission.jpg"
-                    alt="Luxury restaurant interior"
+                    alt="Trusted architecture company  "
                     className=" absolute -top-14 left-14 object-cover w-full h-full"
                   />
                 </div>

@@ -15,7 +15,7 @@ const Collection: React.FC = () => {
               {/* <div className="absolute -top-8 left-0 w-16 h-20 bg-[#133950] z-10"></div> */}
               <img
                 src="harsa-batika2.jpg"
-                alt="Traditional Building"
+                alt="Highly recommended architecture company"
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
             </div>
@@ -25,7 +25,7 @@ const Collection: React.FC = () => {
           <div className="lg:col-span-6">
             <img
               src="/about/middle-img.jpg"
-              alt="Modern Interior Design"
+              alt="Nepal’s leading architecture company "
               className="w-full h-80 object-cover rounded-lg shadow-lg"
             />
           </div>
@@ -64,7 +64,7 @@ const Collection: React.FC = () => {
           <div className="lg:col-span-6">
             <img
               src="/about/home-page-img.jpg"
-              alt="Modern House Design"
+              alt="Modern Interior Design"
               className="w-full h-96 object-cover rounded-lg shadow-lg"
             />
           </div>
