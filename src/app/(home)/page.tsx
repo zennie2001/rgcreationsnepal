@@ -17,6 +17,7 @@ import BlogDesign from "@/sections/Blog";
 import Video from "@/sections/Video";
 import SEOContent from "@/components/SEOContent";
 
+
 export const metadata = {
   title: "RG Creations - Top Architecture and Construction Company",
   description:
@@ -26,6 +27,8 @@ export const metadata = {
 export default function Home() {
   return (
     <main className="overflow-hidden">
+  
+
       
       <SEOContent />
       <Hero />
