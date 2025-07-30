@@ -10,7 +10,14 @@ export const projects = [
         contact: "+977-9802357234",
         category:"Banquet Hall & Party Palace",
         projectDemand: "Interior & Exterior",
-        website: "https://rambaghmahal.com/"
+        website: "https://rambaghmahal.com/",
+         images: [
+            "/rambagh1 (1).jpg",
+            "/rambagh2 (1).jpg",
+        "/rambagh3 (1).jpg",
+        "/rambagh4 (1).jpg",
+        "/rambagh5 (1).jpg",
+        "/rambagh6 (2).jpg",]
     },
     {
         slug:"harshah-batika",
@@ -23,7 +30,17 @@ export const projects = [
         contact: "+977-9802357232",
         category:" Luxurious and top banquet and wedding venue",
         projectDemand: "Interior & Exterior",
-         website: "https://harshahbatika.com/"
+         website: "https://harshahbatika.com/",
+          images: [
+            "/harshah-b.jpeg",
+            "/harsa-2 (1).jpg",
+            "/harsa-batika2.jpg",
+            "/harsa-1 (1).jpg",
+        "/harsa-batika-new.jpg",
+        
+        
+    
+        ]
     },
     {
         slug:"royal-empire-boutique-hotel",
@@ -36,7 +53,14 @@ export const projects = [
         contact: "+977-01-4000542",
         category:"Luxury Hotel",
         projectDemand: "Interior & Exterior",
-        website: "https://royal-empire-boutique.kathmandubesthotels.com/en/"
+        website: "https://royal-empire-boutique.kathmandubesthotels.com/en/",
+         images: [
+            "/royal-5_11zon.jpg",
+             "/royal-2 (1).jpg",
+            "/royal-4_11zon.jpg",
+            "/royal (1).jpg",
+             "/royal-3_11zon.jpg",
+        ]
     },
     {
         slug:"club-deja-vu",
@@ -49,7 +73,14 @@ export const projects = [
         contact: "+977-01-4440744",
         category:"Nighclun & Lounge",
         projectDemand: "Interior & Exterior Construction",
-         website: "https://www.facebook.com/dejavuktm/"
+         website: "https://www.facebook.com/dejavuktm/",
+          images: [
+            "/dejavu_11zon.jpg",
+             "/dejavu-2_11zon.jpg",
+            "/dejavu-3_11zon.jpg",
+           "/dejavu-4_11zon.jpg",
+             
+        ]
     },
     {
         slug:"magestic-grand-nepal",
@@ -61,7 +92,16 @@ export const projects = [
         contact: "+977-9802357236",
         category:"Luxurious and top banquet and wedding venue",
         projectDemand: "Interior & Exterior Construction",
-        website:"https://majesticgrandnepal.com/"
+        website:"https://majesticgrandnepal.com/",
+        images: [
+            "/majestic-1_11zon.jpg",
+             "/majestic-2_11zon.jpg",
+            "/majestic-3_11zon.jpg",
+           "/majestic-4_11zon.jpg",
+           "/majestic-5_11zon.jpg",
+           "/majestic-6_11zon.jpg",
+             
+        ]
     },
     {
         slug:"boudha-heritage",
@@ -74,7 +114,16 @@ export const projects = [
         contact: "+977-9803848330",
         category:"Banquet Hall & Party Palace",
         projectDemand: "Interior & Exterior",
-         website: "https://www.facebook.com/boudhaheritage1/"
+         website: "https://www.facebook.com/boudhaheritage1/",
+          images: [
+            "/boudha-1_11zon.jpg",
+             "/boudha-2_11zon.jpg",
+            "/boudha-3_11zon.jpg",
+           "/boudha-4_11zon.jpg",
+           "/boudha-5_11zon.jpg",
+           "/majestic-6_11zon.jpg",
+             
+        ]
     },
     {
         slug:"imperial-banquet",
@@ -87,7 +136,34 @@ export const projects = [
         contact: "+977-9801881672",
         category:"Banquet Hall & Party Palace",
         projectDemand: "Interior & Exterior",
-         website: "https://imperialbanquetnepal.com/"
+         website: "https://imperialbanquetnepal.com/",
+          images: [
+            "/imperial-1_11zon.jpg",
+             "/imperial-2_11zon.jpg",
+            "/imperial-3.jpg",
+           "/imperial-4_11zon.jpg",
+          
+             
+        ]
+    },
+    {
+        slug:"taaj-reception",
+        name:"Taaj Reception",
+        bgImg: "/ImageVideo/Image9.jpg",
+        video: "",
+        description1: "Taaj Reception, located in Baluwatar, Kathmandu, offers an opulent ballroom and customizable event spaces perfect for weddings and special occasions. The venue features a dedicated professional team, state-of- the-art amenities, and flexible catering options to suit various budgets. With its elegant ambiance and prime location, Taaj Reception aims to create unforgettable experiences for guests and hosts alike.",
+        description2: "Taaj Reception boasts a luxurious ballroom adorned with dazzling crystal chandeliers, elegant drapery, and exquisite architectural details, providing a grand and sophisticated ambiance for your wedding celebration.",
+        location: "Baluwatar, Kathmandu, Nepal",
+        contact: " 01-4441224, +977-9803264292",
+        category:"Banquet Hall & Party Palace",
+        projectDemand: "Interior & Exterior",
+         website: "https://taajreception.com/",
+         images: [
+            "/taaj-1_11zon.jpg",
+             "/taaj-2_11zon.jpg",
+            "/taaj-3_11zon.jpg", 
+             
+        ]
     },
     {
         slug:"faces-lounge",
@@ -113,7 +189,14 @@ export const projects = [
         contact: "+977-9840581889",
         category:"Restaurant, bar and lounge",
         projectDemand: "Interior & Exterior",
-         website: "https://www.facebook.com/lounge.victory/"
+         website: "https://www.facebook.com/lounge.victory/",
+         images: [
+            
+            "/victory-1_11zon.jpg", 
+            "/victory-2_11zon.jpg", 
+             
+  ]
+         
     },
     {
         slug:"station-pub",
@@ -126,10 +209,13 @@ export const projects = [
         contact: "+977-9819052751",
         category:"Restaurant, bar and lounge",
         projectDemand: "Interior & Exterior",
-         website: "https://evendo.com/locations/nepal/gosaikunda/bar/station-pub",
+         website: "https://www.facebook.com/profile.php?id=100066715534252",
           images: [
             "/station1.jpg",
             "/station2.jpg",
+            "/station-1_11zon.jpg", 
+            "/station-2_11zon.jpg", 
+             
   ]
     },
     {
@@ -143,7 +229,14 @@ export const projects = [
         contact: "+977-01-4970941",
         category:"Banquet Hall & Party Palace",
         projectDemand: "Interior & Exterior",
-         website: "https://panasbanquet.com/"
+         website: "https://panasbanquet.com/",
+         images: [
+            "/panas-1_11zon.jpg",
+             "/panas-2_11zon.jpg",
+            "/panas-3_11zon.jpg", 
+            "/panas-4_11zon.jpg", 
+             
+        ]
     },
     
 ]
