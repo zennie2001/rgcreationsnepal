@@ -3,6 +3,7 @@ import { ArrowRight, CheckCircle, Clock } from "lucide-react";
 import ServicesProjectHero from '@/sections/ServicesProjectHero';
 import Link from 'next/link';
 import ServicesBuildHero from '@/sections/ServiceBuildHero';
+import Script from 'next/script';
 
 export const metadata = {
   title: "Project Management & Turnkey Solutions Nepal",
@@ -10,6 +11,64 @@ export const metadata = {
 
 const page = () => {
   return (
+    <>
+     <Script
+      id="we-build-lease-partner-schema"
+      type="application/ld+json"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "url": "https://www.rgcreationsnepal.com/services/we-build-lease-partner",
+          "name": "We Build & Lease Partner - RG Creations Nepal Pvt. Ltd.",
+          "description": "RG Creations Nepal Pvt. Ltd. offers build and lease partnership services, collaborating with clients to develop premium real estate projects with flexible lease options and expert management.",
+          "provider": {
+            "@type": "Organization",
+            "name": "RG Creations Nepal Pvt. Ltd.",
+            "url": "https://www.rgcreationsnepal.com",
+            "logo": "https://www.rgcreationsnepal.com/logo.png",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-9802357231",
+                "contactType": "customer service",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-01-4524806",
+                "contactType": "office",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Baluwatar",
+              "addressLocality": "Kathmandu",
+              "postalCode": "44600",
+              "addressCountry": "NP"
+            },
+            "foundingDate": "2016",
+            "description": "RG Creations Nepal specializes in real estate build and lease partnerships, offering strategic development and management for clients seeking flexible leasing solutions."
+          },
+          "serviceType": "Build and Lease Partnership",
+          "areaServed": {
+            "@type": "Country",
+            "name": "Nepal"
+          },
+          "keywords": [
+            "Build and lease Nepal",
+            "Real estate lease partnership Nepal",
+            "Flexible leasing Nepal",
+            "Property development Nepal",
+            "RG Creations lease partner"
+          ]
+        }),
+      }}
+    />
     <div className='overflow-hidden'>
         <ServicesBuildHero />
 
@@ -211,6 +270,7 @@ const page = () => {
     </div> */}
 
     </div>
+    </>
   )
 }
 

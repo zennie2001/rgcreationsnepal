@@ -2,6 +2,7 @@ import ServicesCommercialHero from '@/sections/SevicesCommercialHero'
 import React from 'react'
 import { ArrowRight, CheckCircle, Clock } from "lucide-react";
 import Link from "next/link";
+import Script from 'next/script';
 
 
 export const metadata = {
@@ -10,6 +11,65 @@ export const metadata = {
 
 const page = () => {
   return (
+    <>
+     <Script
+      id="top-commercial-construction-schema"
+      type="application/ld+json"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "url": "https://www.rgcreationsnepal.com/services/top-commercial-construction",
+          "name": "Top Commercial Construction Services - RG Creations Nepal Pvt. Ltd.",
+          "description": "RG Creations Nepal Pvt. Ltd. specializes in top commercial construction services, delivering innovative, sustainable, and efficient commercial buildings tailored to your business needs.",
+          "provider": {
+            "@type": "Organization",
+            "name": "RG Creations Nepal Pvt. Ltd.",
+            "url": "https://www.rgcreationsnepal.com",
+            "logo": "https://www.rgcreationsnepal.com/logo.png",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-9802357231",
+                "contactType": "customer service",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-01-4524806",
+                "contactType": "office",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Baluwatar",
+              "addressLocality": "Kathmandu",
+              "postalCode": "44600",
+              "addressCountry": "NP"
+            },
+            "foundingDate": "2016",
+            "description": "RG Creations Nepal is a leading construction and architecture firm known for delivering outstanding commercial building projects across Nepal."
+          },
+          "serviceType": "Commercial Construction",
+          "areaServed": {
+            "@type": "Country",
+            "name": "Nepal"
+          },
+          "keywords": [
+            "Commercial construction Nepal",
+            "Top commercial builders Nepal",
+            "Commercial building design Nepal",
+            "Sustainable commercial construction",
+            "RG Creations commercial projects",
+            "Business infrastructure Nepal"
+          ]
+        }),
+      }}
+    />
     <div className='overflow-hidden'>
         <ServicesCommercialHero />
 
@@ -146,6 +206,7 @@ const page = () => {
       </section>
 
     </div>
+    </>
   )
 }
 

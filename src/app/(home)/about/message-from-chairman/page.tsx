@@ -1,50 +1,54 @@
 
-import AboutHero from "@/sections/AboutHero";
+
 import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
-import Image from "next/image";
 import AboutChairmanHero from "@/sections/AboutChairmanHero";
+import Script from "next/script";
 
 export const metadata = {
   title: "Message from Chairman | Leading Architecture Firm Nepal",
   description:"Meet the expert team behind RG Creations, a top construction company in Nepal committed to delivering quality and excellence."};
 
-const safetyItems = [
-  {
-    title: "Rigorous Safety Protocols",
-    description:
-      "Implementing comprehensive health and safety measures on all project sites to prevent accidents and ensure well-being.",
-  },
-  {
-    title: "Employee Training",
-    description:
-      "Regular safety training and awareness programs equip our team with the knowledge and skills to work safely and responsibly.",
-  },
-  {
-    title: "Compliance & Regulations",
-    description:
-      "Strict adherence to local and international health and safety laws, regulations, and best practices.",
-  },
-  {
-    title: "Risk Management",
-    description:
-      "Proactive identification, assessment, and mitigation of potential hazards throughout the project lifecycle.",
-  },
-  {
-    title: "Safe Work Environment",
-    description:
-      "Ensuring that all equipment, tools, and materials are handled and maintained in accordance with safety guidelines.",
-  },
-  {
-    title: "Emergency Preparedness",
-    description:
-      "Establishing clear procedures and communication plans to respond efficiently to emergencies or incidents.",
-  },
-];
 
 export default function Home() {
   return (
-    <main className="overflow-hidden">
+    <>
+     <Script
+      id="message-from-chairman-schema"
+      type="application/ld+json"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "url": "https://www.rgcreationsnepal.com/about/message-from-chairman",
+          "name": "Message from Chairman - RG Creations Nepal Pvt. Ltd.",
+          "description": "Read the inspiring message from Ram Giri, Chairman of RG Creations Nepal, sharing the vision, commitment, and values driving the company’s success in architecture and construction.",
+          "mainEntity": {
+            "@type": "Person",
+            "name": "Ram Giri",
+            "jobTitle": "Chairman",
+            "affiliation": {
+              "@type": "Organization",
+              "name": "RG Creations Nepal Pvt. Ltd.",
+              "url": "https://www.rgcreationsnepal.com"
+            },
+            "description": "Ram Giri leads RG Creations Nepal with visionary leadership, blending creative foresight and business execution to deliver innovative architectural and construction solutions."
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "RG Creations Nepal Pvt. Ltd.",
+            "url": "https://www.rgcreationsnepal.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.rgcreationsnepal.com/logo.png"
+            }
+          }
+        }),
+      }}
+    />
+
+     <main className="overflow-hidden">
       <AboutChairmanHero />
       <div className="">
         <section className="px-8   py-12  md:py-20 bg-white">
@@ -92,5 +96,7 @@ export default function Home() {
       <FAQ />
       <Deals />
     </main>
+    </>
+   
   );
 }

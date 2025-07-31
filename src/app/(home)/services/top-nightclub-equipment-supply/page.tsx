@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle, Clock } from "lucide-react";
 import ServicesEquipmentHero from '@/sections/ServicesEquipHero';
 import Link from 'next/link';
 import EquipmentVideo from '@/sections/EquipmentVideo';
+import Script from 'next/script';
 
 export const metadata = {
   title: "Nightclub Equipment Supply | Trusted Nepal Supplier",
@@ -11,6 +12,65 @@ export const metadata = {
 
 const page = () => {
   return (
+    <>
+     <Script
+      id="top-nightclub-equipment-supply-schema"
+      type="application/ld+json"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "url": "https://www.rgcreationsnepal.com/services/top-nightclub-equipment-supply",
+          "name": "Top Nightclub Equipment Supply - RG Creations Nepal Pvt. Ltd.",
+          "description": "RG Creations Nepal Pvt. Ltd. specializes in supplying premium nightclub equipment, offering state-of-the-art sound, lighting, and DJ gear tailored for Nepal’s nightlife venues.",
+          "provider": {
+            "@type": "Organization",
+            "name": "RG Creations Nepal Pvt. Ltd.",
+            "url": "https://www.rgcreationsnepal.com",
+            "logo": "https://www.rgcreationsnepal.com/logo.png",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-9802357231",
+                "contactType": "customer service",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-01-4524806",
+                "contactType": "office",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Baluwatar",
+              "addressLocality": "Kathmandu",
+              "postalCode": "44600",
+              "addressCountry": "NP"
+            },
+            "foundingDate": "2016",
+            "description": "RG Creations Nepal is a trusted supplier of nightclub equipment, delivering high-quality sound, lighting, and DJ systems to enhance Nepal’s entertainment venues."
+          },
+          "serviceType": "Nightclub Equipment Supply",
+          "areaServed": {
+            "@type": "Country",
+            "name": "Nepal"
+          },
+          "keywords": [
+            "Nightclub equipment Nepal",
+            "Sound system supplier Nepal",
+            "Lighting equipment Nepal",
+            "DJ gear Nepal",
+            "Entertainment venue equipment Nepal",
+            "RG Creations nightclub supply"
+          ]
+        }),
+      }}
+    />
     <div className='overflow-hidden'>
         <ServicesEquipmentHero/>
 
@@ -189,6 +249,7 @@ const page = () => {
       <EquipmentVideo/>
 
     </div>
+    </>
   )
 }
 

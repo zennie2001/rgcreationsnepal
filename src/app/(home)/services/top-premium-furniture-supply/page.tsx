@@ -5,6 +5,7 @@ import ServicesFirnitureHero from '@/sections/ServicesFurtinutreHero';
 import Link from 'next/link';
 import FurnitureVideo from '@/sections/FurnitureVideo';
 import FurnitureImage from '@/sections/furnitureimage';
+import Script from 'next/script';
 
 export const metadata = {
   title: "Premium Furniture Supply | Nepal Construction Partner",
@@ -12,6 +13,66 @@ export const metadata = {
 
 const page = () => {
   return (
+    <>
+        <Script
+      id="top-premium-furniture-supply-schema"
+      type="application/ld+json"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "url": "https://www.rgcreationsnepal.com/services/top-premium-furniture-supply",
+          "name": "Top Premium Furniture Supply - RG Creations Nepal Pvt. Ltd.",
+          "description": "RG Creations Nepal Pvt. Ltd. offers premium furniture supply services, delivering high-quality, custom, and stylish furniture solutions for residential, commercial, and hospitality projects across Nepal.",
+          "provider": {
+            "@type": "Organization",
+            "name": "RG Creations Nepal Pvt. Ltd.",
+            "url": "https://www.rgcreationsnepal.com",
+            "logo": "https://www.rgcreationsnepal.com/logo.png",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-9802357231",
+                "contactType": "customer service",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-01-4524806",
+                "contactType": "office",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Baluwatar",
+              "addressLocality": "Kathmandu",
+              "postalCode": "44600",
+              "addressCountry": "NP"
+            },
+            "foundingDate": "2016",
+            "description": "RG Creations Nepal is a leading company in premium furniture supply, offering customized, quality furniture solutions tailored to client needs in Nepal."
+          },
+          "serviceType": "Premium Furniture Supply",
+          "areaServed": {
+            "@type": "Country",
+            "name": "Nepal"
+          },
+          "keywords": [
+            "Premium furniture Nepal",
+            "Furniture supply Kathmandu",
+            "Custom furniture Nepal",
+            "High-quality furniture Nepal",
+            "Furniture supplier Nepal",
+            "RG Creations furniture supply"
+          ]
+        }),
+      }}
+    />
+
     <div className='overflow-hidden'>
         <ServicesFirnitureHero />
 
@@ -148,6 +209,7 @@ const page = () => {
       <FurnitureVideo />
 
     </div>
+    </>
   )
 }
 

@@ -1,9 +1,9 @@
 
-import AboutHero from "@/sections/AboutHero";
 import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
 import Image from "next/image";
 import AboutHealthHero from "@/sections/AboutHealthHero";
+import Script from "next/script";
 
 export const metadata = {
   title: "Health & Safety | Trusted Architecture Firm Nepal ",
@@ -46,7 +46,67 @@ const safetyItems = [
 
 export default function Home() {
   return (
-    <main className="w-full overflow-hidden">
+    <>
+    <Script
+      id="health-safety-schema"
+      type="application/ld+json"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "url": "https://www.rgcreationsnepal.com/about/health-safety",
+          "name": "Health & Safety at RG Creations Nepal Pvt. Ltd.",
+          "description":
+            "Learn about RG Creations Nepal's commitment to health and safety in all construction and architectural projects, ensuring a safe environment for clients, workers, and the community.",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "RG Creations Nepal Pvt. Ltd.",
+            "url": "https://www.rgcreationsnepal.com",
+            "logo": "https://www.rgcreationsnepal.com/logo.png",
+            "email": "info@rgcreationsnepal.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Baluwatar",
+              "addressLocality": "Kathmandu",
+              "postalCode": "44600",
+              "addressCountry": "NP"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-9802357231",
+                "contactType": "customer service",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-01-4524806",
+                "contactType": "office",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              }
+            ],
+            "description":
+              "RG Creations Nepal is a leading construction and architecture company committed to upholding the highest health and safety standards across all projects.",
+            "foundingDate": "2016",
+            "numberOfEmployees": "200+"
+          },
+          "keywords": [
+            "Health and Safety Nepal",
+            "Construction safety Nepal",
+            "Architecture safety standards",
+            "Workplace safety Nepal",
+            "Safety compliance construction",
+            "RG Creations Nepal health policy",
+            "Safe building practices Nepal"
+          ]
+        }),
+      }}
+    />
+
+     <main className="w-full overflow-hidden">
       <AboutHealthHero />
       <section className="px-4 container mx-auto py-12 md:px-0  md:py-20 bg-white text-center">
         <h2 className="text-3xl md:text-4xl text-[#333d49] font-bold mb-4">
@@ -128,5 +188,7 @@ export default function Home() {
       <FAQ />
       <Deals />
     </main>
+    </>
+   
   );
 }

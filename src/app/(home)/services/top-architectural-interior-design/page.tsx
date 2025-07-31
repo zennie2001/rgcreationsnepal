@@ -3,6 +3,7 @@ import React from 'react'
 import { ArrowRight, CheckCircle, Clock } from "lucide-react";
 import ServicesInteriorHero from '@/sections/ServicesInteriorHero';
 import Link from 'next/link';
+import Script from 'next/script';
 
 export const metadata = {
   title: "Architectural & Interior Design | Nepal Leaders",
@@ -10,6 +11,65 @@ export const metadata = {
 
 const page = () => {
   return (
+    <>
+    <Script
+      id="top-architectural-interior-design-schema"
+      type="application/ld+json"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "url": "https://www.rgcreationsnepal.com/services/top-architectural-interior-design",
+          "name": "Top Architectural & Interior Design Services - RG Creations Nepal Pvt. Ltd.",
+          "description": "RG Creations Nepal Pvt. Ltd. offers premier architectural and interior design services that blend creativity, functionality, and sustainability to craft inspiring spaces.",
+          "provider": {
+            "@type": "Organization",
+            "name": "RG Creations Nepal Pvt. Ltd.",
+            "url": "https://www.rgcreationsnepal.com",
+            "logo": "https://www.rgcreationsnepal.com/logo.png",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-9802357231",
+                "contactType": "customer service",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-01-4524806",
+                "contactType": "office",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Baluwatar",
+              "addressLocality": "Kathmandu",
+              "postalCode": "44600",
+              "addressCountry": "NP"
+            },
+            "foundingDate": "2016",
+            "description": "RG Creations Nepal is a leading architectural and interior design firm in Nepal, known for innovative, sustainable, and client-focused design solutions."
+          },
+          "serviceType": "Architectural and Interior Design",
+          "areaServed": {
+            "@type": "Country",
+            "name": "Nepal"
+          },
+          "keywords": [
+            "Architectural design Nepal",
+            "Interior design Nepal",
+            "Top interior designers Nepal",
+            "Sustainable architecture Nepal",
+            "Creative interior solutions Nepal",
+            "RG Creations interior design"
+          ]
+        }),
+      }}
+    />
     <div className='overflow-hidden'>
         <ServicesInteriorHero />
 
@@ -174,6 +234,7 @@ At RG Creations Pvt. Ltd., we bring visions to life through distinctive architec
     </div>
 
     </div>
+    </>
   )
 }
 

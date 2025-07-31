@@ -16,6 +16,7 @@ import { MailOpen } from "lucide-react";
 // import NewPageHeader from "@/components/NewPageHeader";
 import ContactHero from "@/sections/ContactHero";
 import FAQContact from "@/sections/FAQ";
+import Script from "next/script";
 
 export const metadata = {
   title: "Contact Us | RG Creations Nepal ",
@@ -65,6 +66,52 @@ const socialMedia = [
 
 export default function ContactUs() {
   return (
+    <>
+     <Script
+      id="contact-schema"
+      type="application/ld+json"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "url": "https://www.rgcreationsnepal.com/contact",
+          "name": "Contact Us - RG Creations Nepal Pvt. Ltd.",
+          "description": "Contact RG Creations Nepal Pvt. Ltd., a leading construction and architecture company. Reach out for inquiries about projects, partnerships, and services.",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "RG Creations Nepal Pvt. Ltd.",
+            "url": "https://www.rgcreationsnepal.com",
+            "logo": "https://www.rgcreationsnepal.com/logo.png",
+            "email": "info@rgcreationsnepal.com",
+            "telephone": "+977-9802357231",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Baluwatar",
+              "addressLocality": "Kathmandu",
+              "postalCode": "44600",
+              "addressCountry": "NP"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-9802357231",
+                "contactType": "customer service",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-01-4524806",
+                "contactType": "office",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              }
+            ]
+          }
+        }),
+      }}
+    />
     <main className="w-full overflow-hidden">
       <ContactHero/>
       {/* Contact Section */}
@@ -220,5 +267,6 @@ export default function ContactUs() {
         ></iframe>
       </div> */}
     </main>
+    </>
   );
 }

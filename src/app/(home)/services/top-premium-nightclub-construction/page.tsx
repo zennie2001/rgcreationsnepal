@@ -2,6 +2,7 @@ import ServicesNightclubHero from '@/sections/ServicesNightclubHero'
 import React from 'react'
 import { ArrowRight, CheckCircle, Clock } from "lucide-react";
 import Link from 'next/link';
+import Script from 'next/script';
 
 export const metadata = {
   title: "Premium Nightclub Construction | Top Builder Nepal",
@@ -11,6 +12,65 @@ export const metadata = {
 
 const page = () => {
   return (
+    <>
+     <Script
+      id="nightclub-construction-schema"
+      type="application/ld+json"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "url": "https://www.rgcreationsnepal.com/services/top-premium-nightclub-construction",
+          "name": "Top Premium Nightclub Construction - RG Creations Nepal Pvt. Ltd.",
+          "description": "RG Creations Nepal specializes in top premium nightclub construction, delivering innovative designs, expert engineering, and turnkey solutions tailored for the nightlife industry.",
+          "provider": {
+            "@type": "Organization",
+            "name": "RG Creations Nepal Pvt. Ltd.",
+            "url": "https://www.rgcreationsnepal.com",
+            "logo": "https://www.rgcreationsnepal.com/logo.png",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-9802357231",
+                "contactType": "customer service",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-01-4524806",
+                "contactType": "office",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Baluwatar",
+              "addressLocality": "Kathmandu",
+              "postalCode": "44600",
+              "addressCountry": "NP"
+            },
+            "foundingDate": "2016",
+            "description": "RG Creations Nepal is a leading architecture and construction company in Nepal specializing in hospitality, nightlife, and commercial projects with a focus on premium nightclub design and construction."
+          },
+          "serviceType": "Nightclub Construction",
+          "areaServed": {
+            "@type": "Country",
+            "name": "Nepal"
+          },
+          "keywords": [
+            "Premium nightclub construction Nepal",
+            "Nightclub design and build Nepal",
+            "Top nightclub construction company Nepal",
+            "Nightlife architecture Nepal",
+            "RG Creations nightclub services",
+            "Turnkey nightclub solutions Nepal"
+          ]
+        }),
+      }}
+    />
     <main className='overflow-hidden'>
 
         <ServicesNightclubHero />
@@ -279,6 +339,8 @@ const page = () => {
       </section>
     </div>
     </main>
+
+    </>
   )
 }
 
