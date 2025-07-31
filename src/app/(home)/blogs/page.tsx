@@ -3,6 +3,7 @@
 import Link from "next/link";
 import React from "react";
 import BlogHero from "@/sections/BlogHero";
+import Script from "next/script";
 
 export const metadata = {
   title: "Blogs | Leading Construction Company Nepal",
@@ -44,6 +45,30 @@ export const metadata = {
 
 function Blog() {
   return (
+    <>
+      <Script
+      id="blogs-schema"
+      type="application/ld+json"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Blog",
+          "url": "https://www.rgcreationsnepal.com/blogs",
+          "name": "Blogs - RG Creations Nepal Pvt. Ltd.",
+          "description": "Explore the latest insights, news, and updates on architecture, construction, design, and sustainability by RG Creations Nepal Pvt. Ltd.",
+          "publisher": {
+            "@type": "Organization",
+            "name": "RG Creations Nepal Pvt. Ltd.",
+            "url": "https://www.rgcreationsnepal.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.rgcreationsnepal.com/logo.png"
+            }
+          }
+        }),
+      }}
+    />
     <main className="overflow-hidden mb-16">
       <BlogHero />
 
@@ -472,6 +497,7 @@ function Blog() {
       </div>
       
     </main>
+    </>
   );
 }
 

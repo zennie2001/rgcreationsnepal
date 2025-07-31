@@ -1,8 +1,89 @@
 import AboutSwotHero from '@/sections/AboutSwotHero'
+import Script from 'next/script'
 import React from 'react'
 
 const page = () => {
   return (
+    <>
+    <Script
+      id="swot-analysis-schema"
+      type="application/ld+json"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "url": "https://www.rgcreationsnepal.com/about/swot-analysis",
+          "name": "SWOT Analysis - RG Creations Nepal Pvt. Ltd.",
+          "description": "Explore the SWOT analysis of RG Creations Nepal Pvt. Ltd., highlighting strengths, weaknesses, opportunities, and threats that shape our strategic approach in architecture and construction.",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "RG Creations Nepal Pvt. Ltd.",
+            "url": "https://www.rgcreationsnepal.com",
+            "logo": "https://www.rgcreationsnepal.com/logo.png",
+            "description": "RG Creations Nepal is a leading architecture and construction firm, leveraging strengths and opportunities while addressing challenges through innovation and sustainable practices.",
+            "foundingDate": "2016",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-9802357231",
+                "contactType": "customer service",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-01-4524806",
+                "contactType": "office",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              }
+            ],
+            "hasPart": [
+              {
+                "@type": "CreativeWork",
+                "name": "Strengths",
+                "description": "Experienced team, strong local market presence, comprehensive service offering, and commitment to quality and sustainability."
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Weaknesses",
+                "description": "Limited international project exposure and dependency on local supply chains."
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Opportunities",
+                "description": "Growing demand for sustainable construction, increasing tourism infrastructure, and expansion into new market segments."
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Threats",
+                "description": "Economic fluctuations, competitive industry landscape, and regulatory changes."
+              }
+            ]
+          },
+          "keywords": [
+            "SWOT analysis architecture Nepal",
+            "Construction company strengths and weaknesses",
+            "Business opportunities Nepal construction",
+            "Threats in architecture sector Nepal",
+            "RG Creations SWOT",
+            "Sustainable construction Nepal",
+            "Architecture market Nepal",
+            "Nepal construction challenges"
+          ],
+          "publisher": {
+            "@type": "Organization",
+            "name": "RG Creations Nepal Pvt. Ltd.",
+            "url": "https://www.rgcreationsnepal.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.rgcreationsnepal.com/logo.png"
+            }
+          }
+        }),
+      }}
+    />
     <div className='overflow-hidden'>
         <AboutSwotHero/>
          {/* SWOT Analysis Section */}
@@ -55,6 +136,7 @@ const page = () => {
   </div>
 </div>
     </div>
+    </>
   )
 }
 

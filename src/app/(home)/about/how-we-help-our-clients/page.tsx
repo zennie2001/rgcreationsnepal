@@ -1,9 +1,10 @@
 
-import AboutHero from "@/sections/AboutHero";
+
 import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
 import Image from "next/image";
 import AboutHelpHero from "@/sections/AboutHelpHero";
+import Script from "next/script";
 
 export const metadata = {
   title: "How We Help Clients | Best Construction Company Nepal",
@@ -57,7 +58,75 @@ const howWeHelpItems = [
 ];
 export default function Home() {
   return (
-    <main className="overflow-hidden">
+    <>
+     <Script
+      id="how-we-help-clients-schema"
+      type="application/ld+json"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "url": "https://www.rgcreationsnepal.com/about/how-we-help",
+          "name": "How We Help Clients - RG Creations Nepal Pvt. Ltd.",
+          "description":
+            "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "RG Creations Nepal Pvt. Ltd.",
+            "url": "https://www.rgcreationsnepal.com",
+            "logo": "https://www.rgcreationsnepal.com/logo.png",
+            "email": "info@rgcreationsnepal.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Baluwatar",
+              "addressLocality": "Kathmandu",
+              "postalCode": "44600",
+              "addressCountry": "NP"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-9802357231",
+                "contactType": "customer service",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-01-4524806",
+                "contactType": "office",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              }
+            ],
+            "description":
+              "RG Creations Nepal is a design and construction firm specializing in luxury resorts, banquet halls, clubs, and more with a commitment to client success and sustainability.",
+            "foundingDate": "2016",
+            "numberOfEmployees": "200+"
+          },
+          "keywords": [
+            "Construction company Nepal",
+            "Architecture services Nepal",
+            "Luxury resorts design Nepal",
+            "Banquet hall architecture Nepal",
+            "Sustainable construction Nepal",
+            "Client-centric design Nepal",
+            "Project management Nepal",
+            "Innovative construction Nepal",
+            "Nepali construction firm",
+            "Building partnerships Nepal"
+          ],
+          "hasPart": howWeHelpItems.map(item => ({
+            "@type": "CreativeWork",
+            "name": item.title,
+            "description": item.description,
+          }))
+        }, null, 2),
+      }}
+    />
+
+      <main className="overflow-hidden">
       <AboutHelpHero/>
       <section className="px-6 py-12 md:px-20 md:py-20 bg-white">
   <div className="grid md:grid-cols-2 gap-12 items-stretch">
@@ -120,5 +189,7 @@ export default function Home() {
       <FAQ />
       <Deals />
     </main>
+    </>
+  
   );
 }

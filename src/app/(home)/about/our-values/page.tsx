@@ -1,9 +1,10 @@
 
-import AboutHero from "@/sections/AboutHero";
 import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
 import Image from "next/image";
 import AboutValuesHero from "@/sections/AboutValuesHero";
+import Script from "next/script";
+
 
 
 export const metadata = {
@@ -13,7 +14,70 @@ export const metadata = {
 export default function Home() {
 
   return (
-    <main className="overflow-hidden">
+    <>
+
+    <Script
+  id="our-values-schema"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "url": "https://www.rgcreationsnepal.com/about/our-values",
+      "name": "Our Values - RG Creations Nepal Pvt. Ltd.",
+      "description": "Learn about RG Creations’ core values that drive quality, sustainability, and client satisfaction as a leading construction company in Nepal.",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "RG Creations Nepal Pvt. Ltd.",
+        "url": "https://www.rgcreationsnepal.com",
+        "logo": "https://www.rgcreationsnepal.com/logo.png",
+        "email": "info@rgcreationsnepal.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Baluwatar",
+          "addressLocality": "Kathmandu",
+          "postalCode": "44600",
+          "addressCountry": "NP"
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+977-9802357231",
+            "contactType": "customer service",
+            "areaServed": "NP",
+            "availableLanguage": ["English", "Nepali"]
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+977-01-4524806",
+            "contactType": "office",
+            "areaServed": "NP",
+            "availableLanguage": ["English", "Nepali"]
+          }
+        ],
+        "description": "RG Creations Nepal Pvt. Ltd. is a leading construction and architecture company in Nepal, guided by core values such as integrity, sustainability, people-first design, and client-centered innovation."
+      },
+      "keywords": [
+        "Construction company values Nepal",
+        "Core values of architecture firm Nepal",
+        "Integrity in construction Nepal",
+        "Sustainable architecture principles Nepal",
+        "Client-centered architecture Nepal",
+        "RG Creations core values",
+        "Best construction company Nepal",
+        "Ethical architecture Nepal",
+        "People-first architecture company Nepal",
+        "Trusted construction firm Nepal",
+        "Top builder ethics Nepal"
+      ]
+    })
+  }}
+/>
+
+    
+
+ <main className="overflow-hidden">
       <AboutValuesHero />
       <section className="relative bg-white container mx-auto px-4 md:px-0 py-20  text-gray-800 overflow-hidden">
         {/* Section Header */}
@@ -171,5 +235,8 @@ export default function Home() {
       <FAQ />
       <Deals />
     </main>
+
+    </>
+   
   );
 }

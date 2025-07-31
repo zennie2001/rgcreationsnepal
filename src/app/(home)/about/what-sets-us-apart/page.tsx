@@ -1,8 +1,10 @@
-import AboutHero from "@/sections/AboutHero";
+
 import Deals from "@/sections/Deals";
 import FAQ from "@/app/(home)/faqs/page";
 import Image from "next/image";
 import AboutApartHero from "@/sections/AboutApartHero";
+import Script from "next/script";
+
 
 export const metadata = {
   title: "What Sets Us Apart | Top Architecture & Construction",
@@ -12,6 +14,111 @@ export const metadata = {
 
 export default function Home() {
   return (
+   <>
+
+   <Script
+  id="what-sets-us-apart-schema"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "url": "https://www.rgcreationsnepal.com/about/what-sets-us-apart",
+      "name": "What Sets Us Apart - RG Creations Nepal Pvt. Ltd.",
+      "description": "Discover what makes RG Creations the top architecture and construction company in Nepal. From end-to-end expertise to sustainability and client collaboration, we stand apart.",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "RG Creations Nepal Pvt. Ltd.",
+        "url": "https://www.rgcreationsnepal.com",
+        "logo": "https://www.rgcreationsnepal.com/logo.png",
+        "email": "info@rgcreationsnepal.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Baluwatar",
+          "addressLocality": "Kathmandu",
+          "postalCode": "44600",
+          "addressCountry": "NP"
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+977-9802357231",
+            "contactType": "customer service",
+            "areaServed": "NP",
+            "availableLanguage": ["English", "Nepali"]
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+977-01-4524806",
+            "contactType": "office",
+            "areaServed": "NP",
+            "availableLanguage": ["English", "Nepali"]
+          }
+        ],
+        "description": "RG Creations Nepal is a design and construction firm known for its innovative approach, sustainability focus, and extensive experience in hospitality and commercial architecture in Nepal.",
+        "foundingDate": "2016",
+        "numberOfEmployees": "200+"
+      },
+      "keywords": [
+        "Top construction company Nepal",
+        "Best architecture company Nepal",
+        "Hospitality architecture Nepal",
+        "Sustainable construction Nepal",
+        "Commercial building design Nepal",
+        "Nightlife architecture Nepal",
+        "End-to-end construction service",
+        "Local architects Nepal",
+        "Smart building design Nepal",
+        "Eco-friendly architecture Nepal"
+      ],
+      "hasPart": [
+        {
+          "@type": "CreativeWork",
+          "name": "End-to-End Expertise",
+          "description": "Comprehensive turnkey service across architecture, interior design, engineering, lighting, acoustics, and project management."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Client-Centric Collaboration",
+          "description": "Every design is a partnership. We tailor each space to your brand, audience, and business goals."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Global Reach, Local Soul",
+          "description": "International sourcing with cultural sensitivity and relevance to the Nepali context."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Proven Track Record",
+          "description": "30+ projects including top venues like Deja Vu, Victory Lounge, Rakers Magic, and more."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Unmatched Industry Focus",
+          "description": "Expertise in nightlife, hospitality, and commercial architecture with guest psychology at the center."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Innovation at the Core",
+          "description": "Advanced acoustics, smart lighting, sustainable design—delivering future-ready architecture."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Sustainability by Design",
+          "description": "Eco-friendly materials, energy-efficient layouts, and minimal-waste methods in all projects."
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Commitment to Local Growth",
+          "description": "Empowering 200+ Nepali professionals while reducing foreign outsourcing."
+        }
+      ]
+    })
+  }}
+/>
+
+
     <main className="overflow-hidden">
       <AboutApartHero />
       <section className="bg-white px-4 py-20 container md:px-0 text-gray-800">
@@ -112,5 +219,6 @@ export default function Home() {
       <FAQ />
       <Deals />
     </main>
+   </>
   );
 }

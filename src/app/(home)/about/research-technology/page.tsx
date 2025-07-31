@@ -1,9 +1,92 @@
 import AboutResearchHero from '@/sections/AboutResearch'
+import Script from 'next/script'
 import React from 'react'
 
 const page = () => {
   return (
-    <div className='overflow-hidden'>
+    <>
+    <Script
+      id="research-technology-schema"
+      type="application/ld+json"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "url": "https://www.rgcreationsnepal.com/about/research-technology",
+          "name": "Research & Technology - RG Creations Nepal Pvt. Ltd.",
+          "description": "Learn about RG Creations Nepal Pvt. Ltd.'s commitment to innovation through research and technology integration, enhancing architecture and construction projects with global expertise and local insights.",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "RG Creations Nepal Pvt. Ltd.",
+            "url": "https://www.rgcreationsnepal.com",
+            "logo": "https://www.rgcreationsnepal.com/logo.png",
+            "description": "RG Creations Nepal leads in architecture and construction by leveraging cutting-edge research and technology to deliver innovative, sustainable, and client-focused solutions.",
+            "foundingDate": "2016",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-9802357231",
+                "contactType": "customer service",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-01-4524806",
+                "contactType": "office",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              }
+            ],
+            "hasPart": [
+              {
+                "@type": "CreativeWork",
+                "name": "International Sourcing Hub",
+                "description": "Our R&D and sourcing office in Shenzhen, China provides access to global materials, technology, and design trends."
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Advanced BIM Modeling",
+                "description": "Utilizing Building Information Modeling (BIM) for precise planning, visualization, and coordination across projects."
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Sustainability Research",
+                "description": "Focused research on energy-efficient materials and eco-friendly construction methods that reduce environmental impact."
+              },
+              {
+                "@type": "CreativeWork",
+                "name": "Smart Construction Technologies",
+                "description": "Incorporating automation, lighting, acoustics, and smart building systems to create future-ready spaces."
+              }
+            ]
+          },
+          "keywords": [
+            "Research and development architecture Nepal",
+            "Construction technology Nepal",
+            "Sustainable building materials Nepal",
+            "Innovative architecture Nepal",
+            "Smart building design Nepal",
+            "BIM modeling Nepal",
+            "Global sourcing Nepal",
+            "Eco-friendly construction Nepal"
+          ],
+          "publisher": {
+            "@type": "Organization",
+            "name": "RG Creations Nepal Pvt. Ltd.",
+            "url": "https://www.rgcreationsnepal.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.rgcreationsnepal.com/logo.png"
+            }
+          }
+        }),
+      }}
+    />
+    
+  
+    <main className='overflow-hidden'>
         <AboutResearchHero/>
 
 
@@ -65,7 +148,8 @@ const page = () => {
         </div>
       </div>
     </div>
-    </div>
+    </main>
+    </>
   )
 }
 

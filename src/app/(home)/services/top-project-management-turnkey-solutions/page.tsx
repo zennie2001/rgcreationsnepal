@@ -2,6 +2,7 @@ import React from 'react'
 import { ArrowRight, CheckCircle, Clock } from "lucide-react";
 import ServicesProjectHero from '@/sections/ServicesProjectHero';
 import Link from 'next/link';
+import Script from 'next/script';
 
 export const metadata = {
   title: "Project Management & Turnkey Solutions Nepal",
@@ -9,6 +10,64 @@ export const metadata = {
 
 const page = () => {
   return (
+    <>
+     <Script
+      id="top-project-management-schema"
+      type="application/ld+json"
+      strategy="afterInteractive"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "url": "https://www.rgcreationsnepal.com/services/top-project-management-turnkey-solutions",
+          "name": "Top Project Management & Turnkey Solutions - RG Creations Nepal Pvt. Ltd.",
+          "description": "RG Creations Nepal Pvt. Ltd. offers expert project management and turnkey construction solutions, delivering efficient, on-time, and budget-friendly construction projects across Nepal.",
+          "provider": {
+            "@type": "Organization",
+            "name": "RG Creations Nepal Pvt. Ltd.",
+            "url": "https://www.rgcreationsnepal.com",
+            "logo": "https://www.rgcreationsnepal.com/logo.png",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-9802357231",
+                "contactType": "customer service",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+977-01-4524806",
+                "contactType": "office",
+                "areaServed": "NP",
+                "availableLanguage": ["English", "Nepali"]
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Baluwatar",
+              "addressLocality": "Kathmandu",
+              "postalCode": "44600",
+              "addressCountry": "NP"
+            },
+            "foundingDate": "2016",
+            "description": "RG Creations Nepal specializes in project management and turnkey construction services, ensuring seamless delivery of residential, commercial, and hospitality projects."
+          },
+          "serviceType": "Project Management and Turnkey Construction Solutions",
+          "areaServed": {
+            "@type": "Country",
+            "name": "Nepal"
+          },
+          "keywords": [
+            "Project management Nepal",
+            "Turnkey construction Nepal",
+            "Construction management Nepal",
+            "Turnkey solutions Nepal",
+            "RG Creations project management"
+          ]
+        }),
+      }}
+    />
     <div className='overflow-hidden'>
         <ServicesProjectHero />
 
@@ -163,6 +222,7 @@ const page = () => {
     </div>
 
     </div>
+    </>
   )
 }
 

@@ -24,6 +24,7 @@ export default async function Page({ params }: Props) {
   if (!project) return notFound();
 
   return (
+    <>
     <div className="overflow-hidden min-h-screen flex flex-col md:mb-32 mb-4 gap-16">
       {/* Hero images and video */}
       <div className="w-full flex flex-col justify-center gap-20">
@@ -181,5 +182,6 @@ export default async function Page({ params }: Props) {
         )}
 
     </div>
+    </>
   );
 }
