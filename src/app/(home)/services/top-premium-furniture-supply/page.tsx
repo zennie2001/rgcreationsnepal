@@ -9,7 +9,8 @@ import Script from 'next/script';
 
 export const metadata = {
   title: "Premium Furniture Supply | Nepal Construction Partner",
-  description:"Experience cutting-edge architectural and interior design solutions by RG Creations, leaders in Nepal’s construction industry."};
+  description: "Discover RG Creations Nepal’s premium furniture solutions that complement our architectural and interior design projects, delivering style and quality across Nepal.",
+};
 
 const page = () => {
   return (

@@ -1,6 +1,13 @@
 import Image from 'next/image'
 import React from 'react'
 
+export const metadata = {
+  title: "RG Creations Nepal – Empowering Employment & Sustainable Growth",
+  description:
+    "Discover how RG Creations is shaping Nepal’s future by creating local jobs, utilizing domestic resources, and promoting sustainable development.",
+};
+
+
 const page = () => {
   return (
     <div className='overflow-hidden'>

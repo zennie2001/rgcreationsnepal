@@ -1,6 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 
+export const metadata = {
+  title: "Building Nepal's Future | Architecture, Nightclubs Construction",
+  description: "Explore modern architecture, nightlife design, and hospitality construction trends in Nepal with RG Creations Nepal Pvt. Ltd.",
+};
+
+
 const page = () => {
   return (
     <div className='overflow-hidden'>

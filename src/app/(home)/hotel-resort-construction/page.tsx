@@ -5,8 +5,9 @@ import React from 'react'
 export const metadata = {
   title: "Hotel Resort Construction | Top Builder Nepal",
   description:
-    "Meet the expert team behind RG Creations, a top construction company in Nepal committed to delivering quality and excellence.",
+    "RG Creations Nepal specializes in hotel and resort construction, delivering luxurious, sustainable, and innovative hospitality spaces tailored to Nepal’s unique landscape.",
 };
+
 
 const page = () => {
   return (

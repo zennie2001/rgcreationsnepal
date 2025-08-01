@@ -1,6 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 
+export const metadata = {
+  title: "Ultimate Guide to Nightclub Design | RG Creations Nepal",
+  description: "Learn everything about nightclub design, construction, and equipment supply in Nepal. RG Creations Nepal offers turnkey solutions for building premium nightlife venues.",
+};
+
+
 const page = () => {
   return (
     <div className='overflow-hidden'>

@@ -7,7 +7,7 @@ import React from 'react'
 export const metadata = {
   title: "Video Gallery | Top Architecture & Interior Design",
   description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+    "Watch captivating videos showcasing RG Creations Nepal’s architectural and interior design projects, highlighting our craftsmanship, innovation, and client successes.",
 };
 
 const page = () => {

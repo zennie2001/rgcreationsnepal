@@ -6,7 +6,8 @@ import Script from 'next/script';
 
 export const metadata = {
   title: "Project Management & Turnkey Solutions Nepal",
-  description:"Get quality nightclub equipment from RG Creations, a trusted supplier supporting Nepal’s hospitality and entertainment construction sectors."};
+  description: "Experience seamless project management and turnkey construction solutions with RG Creations, delivering quality architecture and hospitality projects across Nepal.",
+};
 
 const page = () => {
   return (

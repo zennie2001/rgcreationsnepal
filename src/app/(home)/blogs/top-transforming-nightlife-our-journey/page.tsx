@@ -11,8 +11,9 @@ import BlogDetail2Hero from "@/sections/BlogDetail2Hero";
 export const metadata = {
   title: "Transforming Nightlife | Nepal Leaders",
   description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+    "RG Creations Nepal leads in designing and constructing luxury nightclubs and entertainment venues, reshaping Nepal’s nightlife with innovative architecture and exceptional quality.",
 };
+
 
 
 const BlogPost = () => {

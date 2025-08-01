@@ -6,8 +6,9 @@ import ServicesBuildHero from '@/sections/ServiceBuildHero';
 import Script from 'next/script';
 
 export const metadata = {
-  title: "Project Management & Turnkey Solutions Nepal",
-  description:"Get quality nightclub equipment from RG Creations, a trusted supplier supporting Nepal’s hospitality and entertainment construction sectors."};
+  title: "We Build & Lease Partner | Banquet Hall Construction Nepal",
+  description: "Partner with RG Creations Nepal to build, lease, or jointly develop palace-style banquet halls with expert project management and turnkey solutions that maximize your land’s value.",
+};
 
 const page = () => {
   return (

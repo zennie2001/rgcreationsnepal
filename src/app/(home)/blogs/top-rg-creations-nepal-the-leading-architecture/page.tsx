@@ -15,8 +15,9 @@ import { TbWorld } from "react-icons/tb";
 export const metadata = {
   title: "The Leading Architecture Company in Nepal",
   description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+    "RG Creations Nepal Pvt. Ltd. is a premier construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
 };
+
 
 const BlogPost = () => {
   return (

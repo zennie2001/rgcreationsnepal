@@ -7,7 +7,8 @@ import Script from 'next/script';
 
 export const metadata = {
   title: "Commercial Construction Experts | Nepal’s Top Firm",
-  description:"Discover luxurious residential developments by RG Creations, Nepal’s trusted name for high-end, custom-built homes."};
+  description: "Discover RG Creations Nepal’s expertise in commercial construction, delivering innovative and high-quality office buildings, retail spaces, and mixed-use developments.",
+};
 
 const page = () => {
   return (
