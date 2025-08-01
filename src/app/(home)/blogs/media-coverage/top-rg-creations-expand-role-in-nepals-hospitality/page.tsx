@@ -3,12 +3,13 @@ import React from 'react'
 import Image from 'next/image';
 import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 
-
 export const metadata = {
-  title: "RG Creations | Innovation in nightlife architecture",
+  title: "RG Creations Expands Role in Hospitality and Architecture Sectors",
   description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+    "Learn how RG Creations Nepal is broadening its impact with innovative architecture and design in hospitality and nightlife, delivering iconic projects while fostering local talent and sustainable growth.",
 };
+
+
 
 const page = () => {
 

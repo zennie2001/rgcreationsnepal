@@ -1,6 +1,13 @@
 import Script from "next/script";
 import React from "react";
 
+export const metadata = {
+  title: "Announcements | RG Creations Nepal Blog",
+  description:
+    "Stay updated with the latest announcements, news, and insights from RG Creations Nepal Pvt. Ltd., a leading construction and architecture firm in Nepal.",
+};
+
+
 export default function page() {
   return (
     <>

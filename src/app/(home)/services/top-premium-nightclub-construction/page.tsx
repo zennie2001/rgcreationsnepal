@@ -7,8 +7,9 @@ import Script from 'next/script';
 export const metadata = {
   title: "Premium Nightclub Construction | Top Builder Nepal",
   description:
-    "Meet the expert team behind RG Creations, a top construction company in Nepal committed to delivering quality and excellence.",
+    "RG Creations Nepal specializes in premium nightclub construction, combining innovative design and expert craftsmanship to create vibrant and luxurious nightlife venues.",
 };
+
 
 const page = () => {
   return (

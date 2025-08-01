@@ -7,8 +7,9 @@ import React from 'react'
 export const metadata = {
   title: "Media Coverage | Best Construction Company Nepal",
   description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+    "Explore news articles, press releases, and media features highlighting RG Creations Nepal’s achievements and projects in construction and architecture across Nepal.",
 };
+
 
 
 

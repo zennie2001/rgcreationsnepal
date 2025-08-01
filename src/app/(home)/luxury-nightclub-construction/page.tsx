@@ -5,7 +5,7 @@ import React from 'react'
 export const metadata = {
   title: "Luxury Nightclub Construction | Top Builder Nepal",
   description:
-    "Meet the expert team behind RG Creations, a top construction company in Nepal committed to delivering quality and excellence.",
+    "RG Creations Nepal delivers cutting-edge luxury nightclub construction with stylish designs, premium finishes, and exceptional craftsmanship to create unforgettable nightlife venues.",
 };
 
 const page = () => {

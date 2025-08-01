@@ -9,8 +9,9 @@ import Script from "next/script";
 export const metadata = {
   title: "What Sets Us Apart | Top Architecture & Construction",
   description:
-    "Learn about RG Creations’ core values that drive quality, sustainability, and client satisfaction as a leading construction company in Nepal.",
+    "Discover what makes RG Creations Nepal unique — from innovative design and precise execution to a client-first approach, setting new benchmarks in architecture and construction across Nepal.",
 };
+
 
 export default function Home() {
   return (

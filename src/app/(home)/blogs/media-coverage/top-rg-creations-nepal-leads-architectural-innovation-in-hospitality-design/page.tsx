@@ -4,10 +4,11 @@ import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 
 
 export const metadata = {
-  title: "RG Creations Leads Architectural Innovation",
+  title: "RG Creations Nepal Leads Architectural Innovation in Hospitality Design",
   description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+    "With over 15 years of experience, RG Creations Nepal specializes in premium hospitality design, developing iconic nightclubs, hotels, and event venues across Nepal while integrating global trends with local expertise.",
 };
+
 
 const page = () => {
    

@@ -9,8 +9,9 @@ import Script from "next/script";
 export const metadata = {
   title: "How We Help Clients | Best Construction Company Nepal",
   description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+    "See how RG Creations Nepal transforms client visions into reality. Our case studies highlight successful projects across luxury resorts, banquet halls, clubs, and architectural landmarks in Nepal.",
 };
+
 
 const howWeHelpItems = [
   {

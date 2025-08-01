@@ -2,6 +2,12 @@ import AboutCaseHero from "@/sections/AboutCaseHero";
 import Script from "next/script";
 import React from "react";
 
+export const metadata = {
+  title: "Case Studies | Architecture & Design Projects in Nepal",
+  description:
+    "Explore detailed case studies of RG Creations Nepal’s standout projects in architecture, interior design, and hospitality. See how our designs come to life through innovation, sustainability, and craftsmanship.",
+};
+
 export default function page() {
   return (
     <>

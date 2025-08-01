@@ -6,9 +6,9 @@ import OurProjectHero from "@/sections/OurProjectsHero";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Our Projects | Architecture, Interior & Nightclub Construction in Nepal – RG Creations",
+  title: "Our Projects | Architecture, Interior & Nightclub Construction in Nepal – RG Creations",
   description:
-    "Explore RG Creations Nepal’s featured projects, including luxury villas, nightclubs, banquet halls, offices, and commercial spaces. See how we blend design, innovation, and functionality across Nepal.",
+    "Explore RG Creations Nepal’s featured projects, including luxury villas, nightclubs, banquet halls, offices, and commercial spaces. See how we blend design, innovation, and functionality across Nepal.",
 };
 
 export default function Home() {

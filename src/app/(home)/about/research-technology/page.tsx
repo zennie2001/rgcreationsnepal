@@ -2,6 +2,13 @@ import AboutResearchHero from '@/sections/AboutResearch'
 import Script from 'next/script'
 import React from 'react'
 
+export const metadata = {
+  title: "Research and Technology | Best Construction Company Nepal",
+  description:
+    "Discover how RG Creations Nepal integrates advanced research, cutting-edge technology, and modern design methodologies to deliver innovative and sustainable construction solutions across Nepal.",
+};
+
+
 const page = () => {
   return (
     <>

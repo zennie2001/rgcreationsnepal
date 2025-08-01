@@ -5,6 +5,24 @@ import React from "react";
 import { projects } from "@/constants/completedData";
 import { notFound } from "next/navigation";
 
+export async function generateMetadata({ params }: Props) {
+  const { slug } = await params;
+  const project = projects.find((p) => p.slug === slug);
+
+  if (!project) {
+    return {
+      title: "Project Not Found | RG Creations Nepal",
+      description: "The requested project does not exist. Explore other projects by RG Creations Nepal.",
+    };
+  }
+
+  return {
+    title: `${project.name} | RG Creations Nepal`,
+    description: `${project.description1.slice(0, 160)}${project.description1.length > 160 ? "..." : ""} Explore project details, location, client, and gallery.`,
+  };
+}
+
+
 type Props = {
   params: Promise<{ slug: string }>;
 };

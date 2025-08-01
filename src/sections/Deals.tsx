@@ -16,20 +16,25 @@ type Client = {
 
 // ✅ Client data
 const clients: Client[] = [
+  { name: "Majestic Grand", logo: "/logo/majestic.svg", url:"https://majesticgrandnepal.com/" },
+   { name: "Harshah Batika", logo: "/logo/logo1(2).jpg", url:"https://harshahbatika.com/" },
+   { name: "Rambagh Mahal", logo: "/logo/logo1(4).jpg", url: "https://rambaghmahal.com" },
+    { name: "Deja vu", logo: "/logo/logo1(3).jpg", url:"https://www.facebook.com/dejavuktm" },
+    { name: "Imperial banquet Kathmandu", logo: "/logo/impiral-kathmandu(1).jpg", url:"https://imperialbanquetnepal.com/" },
   { name: "Royal Empire", logo: "/logo/logo1(1).jpg", url:"https://www.facebook.com/RoyalEmpireBoutiqueHotel" },
-  { name: "Imperial banquet Kathmandu", logo: "/logo/impiral-kathmandu(1).jpg", url:"https://imperialbanquetnepal.com/" },
-  { name: "Harshah Batika", logo: "/logo/logo1(2).jpg", url:"https://harshahbatika.com/" },
-  { name: "Deja vu", logo: "/logo/logo1(3).jpg", url:"https://www.facebook.com/dejavuktm" },
+   { name: "Taaj Heritage", logo: "/logo/logo1(6).jpg", url:"https://taajreception.com/" },
+ 
+ 
   { name: "Sangam batika", logo: "/logo/sangam.jpg" },
-  { name: "Rambagh Mahal", logo: "/logo/logo1(4).jpg", url: "https://rambaghmahal.com" },
+  
   { name: "Imperial banquet Bhaktapur", logo: "/logo/impiral-bhaktapur.jpg", url:"https://www.facebook.com/IMPERIALBHAKTAPUR" },
   { name: "Boudha Heritage", logo: "/logo/logo1(5).jpg" , url:"https://www.facebook.com/boudhaheritage1"},
-  { name: "Taaj Heritage", logo: "/logo/logo1(6).jpg", url:"https://taajreception.com/" },
+ 
   { name: "PANAS", logo: "/logo/logo1(7).jpg" , url:"https://www.facebook.com/panas.banquet5"},
   { name: "White Lotus", logo: "/logo/logo8.svg" },
    { name: "Imperial banquet Ithari", logo: "/logo/impiral-itahari.jpg", url:"https://www.facebook.com/imperial.banquet.itahari" },
   { name: "Utsav Kunj", logo: "/logo/logo9.svg" },
-  { name: "Majestic Grand", logo: "/logo/majestic.svg", url:"https://majesticgrandnepal.com/" },
+  
 ];
 
 // ✅ LogoSlide component

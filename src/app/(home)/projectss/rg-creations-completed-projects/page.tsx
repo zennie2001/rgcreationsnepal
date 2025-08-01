@@ -5,7 +5,8 @@ import React from 'react'
 
 export const metadata = {
   title: "Completed Projects | Leading Construction Nepal",
-  description:"Explore RG Creations’ ongoing projects showcasing innovative architecture and construction expertise across Nepal."};
+  description: "Explore RG Creations Nepal’s completed projects showcasing innovative architecture and expert construction craftsmanship across Nepal.",
+};
 
 const page = () => {
   return (

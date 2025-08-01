@@ -1,6 +1,12 @@
 import Script from "next/script";
 import React from "react";
 
+export const metadata = {
+  title: "Awards & Recognition | Top Architecture Firm Nepal",
+  description:
+    "Discover how RG Creations Nepal has been recognized for excellence in architecture, hospitality design, and integrated construction. Explore awards, milestones, and media highlights that showcase our impact in Nepal and beyond.",
+};
+
 export default function page() {
   return (
     <>
