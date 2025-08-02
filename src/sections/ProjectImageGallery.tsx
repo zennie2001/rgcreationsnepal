@@ -196,7 +196,7 @@ const ProjectImageGallery = () => {
               <div className="px-4 py-2 text-sm md:text-base font-medium transition-all duration-300">
                 <button className="text-[#244D4D]">Image</button>
                 <span className="ml-4 text-gray-300">/ &nbsp; </span>
-                <Link href={"/gallery/video"}>
+                <Link href={"/gallery/video-gallery"}>
                   <button className="text-gray-400 hover:text-[#244D4D]">
                     Video
                   </button>

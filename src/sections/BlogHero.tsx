@@ -25,10 +25,10 @@ export default function BlogHero() {
           </p>
         </div>
 
-        <h2 className="text-2xl md:text-3xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h1 className="text-2xl md:text-3xl font-bold mb-4 tracking-wider  max-w-3xl">
           Dive into inspiring stories, architectural trends, and behind-the-scenes insights from Nepal’s premier luxury construction company <br className="hidden md:block" /> 
           
-        </h2>
+        </h1>
 
         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">
           Lorem ipsum dolor sit amet consectetur. Consequat ornare morbi aliquet

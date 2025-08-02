@@ -25,11 +25,11 @@ export default function ServicesEquipmentHero() {
           </p>
         </div>
 
-        <h2 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+        <h1 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
            {/* <br className="hidden md:block" />  */}
            Unmatched Sound, Lighting,<br className="hidden md:block" />  and Special Effects, Empowering Nightlife Venues
 
-        </h2>
+        </h1>
 
         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">
           Lorem ipsum dolor sit amet consectetur. Consequat ornare morbi aliquet

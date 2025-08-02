@@ -114,7 +114,7 @@ const ProjectVideoGallery = () => {
             {/* Filter Tabs */}
             <div className="flex flex-wrap gap-2 md:gap-4">
               <div className="px-4 py-2 text-sm md:text-base font-medium transition-all duration-300">
-                <Link href="/gallery/photo">
+                <Link href="/gallery/photo-gallery">
                   <button className="text-gray-400 hover:text-[#244D4D]">
                     Image
                   </button>
