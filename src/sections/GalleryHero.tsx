@@ -25,9 +25,9 @@ export default function GalleryHero() {
           </p>
         </div>
 
-        <h2 className="text-3xl md:text-3xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h1 className="text-3xl md:text-3xl font-bold mb-4 tracking-wider  max-w-3xl">
           Captured Moments of Design Excellence – A Visual Showcase
-        </h2>
+        </h1>
 {/* 
         <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">
           Lorem ipsum dolor sit amet consectetur. Consequat ornare morbi aliquet

@@ -100,9 +100,9 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="absolute inset-0 flex items-center md:items-start mt-20 xxl:mt-40 justify-center z-30">
         <div className="text-center  text-white  mx-8  ">
-          <p style={{ whiteSpace: "pre-line" }} className="text-2xl md:text-4xl font-bold  mb-3 leading-tight  ">
+          <h1 style={{ whiteSpace: "pre-line" }} className="text-2xl md:text-4xl font-bold  mb-3 leading-tight  ">
             {slides[currentSlide].title}
-          </p>
+          </h1>
 
           
         </div>

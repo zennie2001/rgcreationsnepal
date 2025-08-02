@@ -25,10 +25,10 @@ export default function AboutResearchHero() {
           </p>
         </div>
 
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
            Innovation at the Heart of<br className="hidden md:block" />  Everything We Build  
          
-        </h2>
+        </h1>
 
         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">
           Lorem ipsum dolor sit amet consectetur. Consequat ornare morbi aliquet

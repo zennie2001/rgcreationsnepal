@@ -26,9 +26,9 @@ export default function ProjectListHero() {
           </p>
         </div>
 
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
           Harshah Batika
-        </h2>
+        </h1>
 
        
       </div>

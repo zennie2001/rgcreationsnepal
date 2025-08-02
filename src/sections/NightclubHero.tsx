@@ -25,11 +25,11 @@ export default function NightclubHero() {
           </p>
         </div>
 
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
           Delivering Cutting-Edge <br className="hidden md:block" />  and Lighting Solutions 
           That<br className="hidden md:block" />  Transform Your Venue into the<br className="hidden md:block" />  Ultimate Nightlife Experience
 
-        </h2>
+        </h1>
 
         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">
           Lorem ipsum dolor sit amet consectetur. Consequat ornare morbi aliquet

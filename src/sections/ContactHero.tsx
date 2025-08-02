@@ -25,10 +25,10 @@ export default function ContactHero() {
           </p>
         </div>
 
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
           Let’s Build Something<br className="hidden md:block" />  Extraordinary Together 
          
-        </h2>
+        </h1>
 
         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">
           At RG Creations Nepal, we believe that every great structure begins with a strong conversation. Whether you're planning a luxury residence, a commercial complex, or an interior transformation, our expert team is here to guide you from concept to creation.
