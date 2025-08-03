@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { FiChevronDown } from "react-icons/fi";
 import { AiOutlineClose, AiOutlineZoomIn, AiOutlineZoomOut } from "react-icons/ai";
 
 type MediaTab = "english" | "nepali" | "paper" | "tvs";
@@ -67,6 +66,17 @@ date: "1 August 2025",
 path: "/blogs/media-coverage/top-rg-creations-architecture-design-firm",
 mediaName: "Nepal News",
 mediaLogo: "/medialogo/nepalnews.png",
+},
+  {
+id: 24,
+title: "RG Creations redefining hospitality spaces with visionary designs",
+description:"RG Creations Nepal is carving a distinct identity in the architecture and design landscape, especially in the country’s hospitality and nightlife sectors.",
+category: "ARCHITECTURE",
+image: "/majestic-1_11zon.jpg",
+date: "30 July 2025",
+path: "/blogs/media-coverage/top-rg-creations-craving-distinct-identity-in-architecture",
+mediaName: "Himal Press",
+mediaLogo: "/medialogo/himalpress.png",
 },
 {
 id: 8,
@@ -368,10 +378,10 @@ date: "June 28, 2025"
 
 ],
 tvs:[
-  // {
-  //   id:1,
-  //   url:"https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=24499737119650338&show_text=false&width=500",
-  // },
+  {
+    id:1,
+    url:"https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=24499737119650338&show_text=false&width=500",
+  },
 ],
 };
 

@@ -29,6 +29,7 @@ const clients: Client[] = [
   
   { name: "Imperial banquet Bhaktapur", logo: "/logo/impiral-bhaktapur.jpg", url:"https://www.facebook.com/IMPERIALBHAKTAPUR" },
   { name: "Boudha Heritage", logo: "/logo/logo1(5).jpg" , url:"https://www.facebook.com/boudhaheritage1"},
+  { name: "Station Pub", logo: "/stationpub.jpg" , url:"https://www.facebook.com/profile.php?id=100066715534252"},
  
   { name: "PANAS", logo: "/logo/logo1(7).jpg" , url:"https://www.facebook.com/panas.banquet5"},
   { name: "White Lotus", logo: "/logo/logo8.svg" },

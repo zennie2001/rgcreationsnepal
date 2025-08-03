@@ -25,8 +25,8 @@ export default function OurProjectHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
-        Showcasing Excellence in Architecture, <br className="hidden md:block" />  Interior Design, and Turnkey Construction 
+        <h1 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
+        Showcasing Excellence in<br className="hidden md:block" />  Architecture, Interior Design, and Turnkey Construction 
          
         </h1>
 
