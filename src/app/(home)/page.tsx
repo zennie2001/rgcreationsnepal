@@ -15,7 +15,7 @@ import SEOContent from "@/components/SEOContent";
 
 
 export const metadata = {
-  title: "RG Creations - Top Architecture and Construction Company",
+  title: "RG Creations - Top Architecture Company Nepal",
   description:
     "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
 };

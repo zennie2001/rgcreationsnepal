@@ -5,18 +5,19 @@ import React, { useState } from 'react';
 import { FiChevronDown } from "react-icons/fi";
 import { AiOutlineClose, AiOutlineZoomIn, AiOutlineZoomOut } from "react-icons/ai";
 
-type MediaTab = "english" | "nepali" | "paper";
+type MediaTab = "english" | "nepali" | "paper" | "tvs";
 
 type NewsItem = {
   id: number;
   title?: string;
   description?: string;
   category?: string;
-  image: string;
+  image?: string;
   date?: string;
   path?: string;
   mediaName?: string;
   mediaLogo?: string;
+  url?: string;
 };
 
 const mediaNews: Record<MediaTab, NewsItem[]> = {
@@ -55,6 +56,17 @@ date: "24 May 2025",
 path: "/blogs/media-coverage/top-rg-creations-nepal-making-strides",
 mediaName: "The Business Age",
 mediaLogo: "/medialogo/businessage.jpg",
+},
+  {
+id: 24,
+title: "RG Creations Nepal expands portfolio in hospitality and architectural design",
+description:"RG Creations Nepal, an architecture and design firm based in Kathmandu, has been active in the hospitality and commercial interior sector for over 15 years. The company has completed more than 30 projects across cities.",
+category: "ARCHITECTURE",
+image: "/rambagh3 (1).jpg",
+date: "1 August 2025",
+path: "/blogs/media-coverage/top-rg-creations-architecture-design-firm",
+mediaName: "Nepal News",
+mediaLogo: "/medialogo/nepalnews.png",
 },
 {
 id: 8,
@@ -354,10 +366,16 @@ mediaLogo: "/medialogo/karobar.jpg",
 date: "June 28, 2025"
  },
 
-]
+],
+tvs:[
+  // {
+  //   id:1,
+  //   url:"https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/watch/?v=24499737119650338&show_text=false&width=500",
+  // },
+],
 };
 
-const tabs: MediaTab[] = ["english", "nepali", "paper"];
+const tabs: MediaTab[] = ["english", "nepali", "paper", "tvs"];
 
 const MediaCoverage = () => {
 const [activeTab, setActiveTab] = useState<MediaTab>("english");
@@ -410,6 +428,7 @@ ${activeTab === tab ? "bg-[#133950] text-white" : "text-gray-600 border-gray-300
 {tab === "english" && "English News"}
 {tab === "nepali" && "Nepali News"}
 {tab === "paper" && "Paper News"}
+{tab === "tvs" && "TVC"}
 </button>
 ))}
 </div>
@@ -509,6 +528,22 @@ className="p-3 bg-white rounded-full hover:bg-gray-200"
 )}
 
 </>
+): activeTab === "tvs" ? (
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-10 lg:px-12">
+    {blogs.map((video) => (
+      <div key={video.id} className="aspect-video w-full shadow-lg rounded overflow-hidden">
+        <iframe
+          src={video.url}
+          width="100%"
+          height="100%"
+          style={{ border: "none", overflow: "hidden" }}
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          allowFullScreen
+          title={`Facebook Video ${video.id}`}
+        ></iframe>
+      </div>
+    ))}
+  </div>
 ) : (
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-10 lg:px-12">
     {blogs.map((blog) => (
