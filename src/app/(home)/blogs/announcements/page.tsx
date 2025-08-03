@@ -39,14 +39,18 @@ export default function page() {
       <div className="h-[120px] bg-gray-400 w-full" />
 
       {/* Remaining white section */}
-      <div className="flex-1 bg-white flex flex-col items-center justify-center text-center px-4">
+      <div className="flex-1 bg-white flex flex-col items-center justify-center text-center px-4 py-16">
         <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-4">
-          ⏳ Coming Soon
+          📢 Coming Soon
         </h1>
-        <p className="text-lg md:text-xl text-gray-600 max-w-xl">
-          This page is currently being updated. Please check back soon for the latest content.
+        <p className="text-lg md:text-xl text-gray-600 max-w-xl mb-4">
+          Our <span className="font-semibold text-gray-800">Announcements</span> page is currently being updated.
+        </p>
+        <p className="text-md md:text-lg text-gray-500 max-w-xl">
+          Stay tuned for important updates, event news, and the latest happenings. We’ll be back shortly with fresh content!
         </p>
       </div>
+
     </div>
     </>
   );
