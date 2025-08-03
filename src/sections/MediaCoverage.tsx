@@ -467,7 +467,12 @@ Most Recent <FiChevronDown />
       <img
         src={blog.image}
         alt={blog.mediaName}
-        onClick={() => openModal(blog.image)}
+        onClick={() => {
+          if (blog.image) {
+            openModal(blog.image);
+          }
+        }}
+
         className="w-full h-[400px] object-cover rounded-sm shadow cursor-pointer hover:shadow-lg transition-transform duration-300"
       />
 
