@@ -4,10 +4,11 @@ import Image from 'next/image';
 import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 
 export const metadata = {
-  title: "RG Creations - Award Wining Architecture company Nepal",
+  title: "RG Creations Nepal Expands Portfolio in Hospitality & Architectural Design",
   description:
-    "Learn how RG Creations Nepal is broadening its impact with innovative architecture and design in hospitality and nightlife, delivering iconic projects while fostering local talent and sustainable growth.",
+    "RG Creations Nepal is expanding its diverse portfolio with groundbreaking hospitality and architectural projects, combining creative design with cultural insight to shape memorable, future-ready spaces.",
 };
+
 
 
 
