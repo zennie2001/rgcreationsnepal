@@ -23,14 +23,17 @@ const WelcomeSection = () => {
                 </h2>
               </div>
 
-              <div className="space-y-6  lg:w-[450px]">
-                <p className="text-gray-700 text-sm  lg:leading-relaxed pb-4 text-justify">
-                  AT RG CREATIONS PVT. LTD., WE DON'T JUST DESIGN BUILDINGS—WE
-                  CRAFT ENVIRONMENTS THAT INSPIRE, ENGAGE, AND ELEVATE. BASED IN
-                  KATHMANDU, NEPAL AND BACKED BY OVER 15 YEARS OF HANDS-ON
-                  INDUSTRY EXPERIENCE, WE SPECIALIZE IN ARCHITECTURAL AND
-                  INTERIOR DESIGN WITH A STRONG FOCUS ON THE HOSPITALITY,
-                  NIGHTLIFE, AND COMMERCIAL SECTORS.
+              <div className="space-y-6  ">
+                <p className="text-gray-700 text-sm  lg:leading-relaxed pb-4 text-justify md:pr-10">
+                  At  <Link href="/" className="text-blue-600 font-semibold hover:underline">
+                        RG Creations Nepal
+                      </Link>
+                  , we don’t just design buildings—we craft environments that inspire, engage, and elevate. As a leading architecture company in Nepal based in Kathmandu, we bring over 15 years of hands-on experience in delivering innovative architectural and interior design solutions. Our expert team of top-rated architects in Nepal specializes in hospitality architecture, commercial buildings, and modern nightlife venue design. Whether you're looking for the best architect in Nepal for a resort, night clubs hotel, or restaurant project, or a premium architecture company that understands both function and aesthetics, RG Creations delivers. We are widely recognized as the{" "}
+                  <Link href="/services/we-build-lease-partner" className="text-blue-600 font-semibold hover:underline">
+                         No.1 architecture firm  
+                  </Link>
+                  
+                  {" "} for hotel construction in Nepal, offering cutting-edge designs tailored to each client’s needs. From interior design in Nepal to large-scale commercial planning, RG Creations is your trusted partner in shaping the future of architectural excellence.
                 </p>
 
                 <Link href={'/about/about-us'} aria-label="Learn more about our company on the About page">
