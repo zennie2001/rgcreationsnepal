@@ -344,6 +344,11 @@ date: "June 19, 2025"
 mediaLogo: "/medialogo/himalayan.jpg",
 date: "July 1, 2025"
 },
+  { id: 10, image: "/risingNews_11zon.jpg" ,
+  mediaName: "The Rising Nepal",
+mediaLogo: "/medialogo/risingnepal.jpg",
+date: "May 21, 2025"
+},
 { id: 1, image: "/news1.jpg" ,
   mediaName: "Aarthiknews",
 mediaLogo: "/medialogo/arthiknews.png",
