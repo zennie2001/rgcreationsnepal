@@ -349,12 +349,12 @@ date: "July 1, 2025"
 mediaLogo: "/medialogo/arthiknews.png",
 date: "June 28, 2025"
 },
-{ id: 2, image: "/newsNagrik.jpg",
+{ id: 2, image: "/Nagarik_11zon.jpg",
     mediaName: "Nagrik Daily",
 mediaLogo: "/medialogo/republica.svg",
  date: "June 4, 2025"
  },
-{ id: 4, image: "/newsKarobar.jpg",
+{ id: 4, image: "/Karobar NEW_11zon.jpg",
     mediaName: "Karobar Daily",
 mediaLogo: "/medialogo/karobar.jpg",
  date: "June 6, 2025"
@@ -370,7 +370,7 @@ date: "May 21, 2025"
 mediaLogo: "/medialogo/abhiyan.png",
 date: "May 23, 2025"
 },
-{ id: 8, image: "/news88.jpg",
+{ id: 8, image: "/news88 (1)_11zon.jpg",
     mediaName: "Karobar Daily",
 mediaLogo: "/medialogo/karobar.jpg",
 date: "June 28, 2025"
