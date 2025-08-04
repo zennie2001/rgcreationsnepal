@@ -29,7 +29,7 @@ const WelcomeSection = () => {
                         RG Creations Nepal
                       </Link>
                   , we don’t just design buildings—we craft environments that inspire, engage, and elevate. As a leading architecture company in Nepal based in Kathmandu, we bring over 15 years of hands-on experience in delivering innovative architectural and interior design solutions. Our expert team of top-rated architects in Nepal specializes in hospitality architecture, commercial buildings, and modern nightlife venue design. Whether you're looking for the best architect in Nepal for a resort, night clubs hotel, or restaurant project, or a premium architecture company that understands both function and aesthetics, RG Creations delivers. We are widely recognized as the{" "}
-                  <Link href="/services/we-build-lease-partner" className="text-blue-600 font-semibold hover:underline">
+                  <Link href="/blogs/kathmandus-best-architect-company" className="text-blue-600 font-semibold hover:underline">
                          No.1 architecture firm for hotel construction in Nepal 
                   </Link>
                   
