@@ -26,9 +26,9 @@ const page = () => {
 
         {/* Content */}
         <div className="relative z-20 flex flex-col justify-center items-center text-center h-full px-6">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider max-w-3xl">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider max-w-3xl">
             How to Choose the Best Architect in Nepal for Your Dream Project?
-          </h2>
+          </h1>
         </div>
       </section>
 

@@ -90,9 +90,10 @@ const page = () => {
                     </h2>
                     <p className="text-gray-600 text-sm leading-relaxed">
                       <i>Building Iconic Nightlife Destinations Across Nepal</i><br/><br/>
-                      At RG Creations Nepal, we don’t just build nightclubs — we create immersive, high-energy destinations that captivate your guests from the moment they walk in. Our premium nightclub construction services are trusted by some of Nepal’s most successful hospitality brands, setting the benchmark for elegance, innovation, and functionality.
+                      At RG Creations Nepal, we not only build nightclubs — we create spaces that grab your customers from the moment they step in. As one of the top architects in Nepal for hospitality and nightlife architecture, our premium nightclub construction services are used by some of Nepal’s top hospitality brands, setting the standard for luxury, innovation and functionality.
+
                         <br />
-                      <br />From sleek VIP lounges and futuristic dance floors to intelligent soundproofing and mood lighting systems, every element is curated to deliver unforgettable experiences. Whether you're targeting high-end clientele or the vibrant youth crowd, RG Creations crafts venues that speak your brand’s language and stay relevant for years to come.
+                      <br />From VIP lounges and futuristic dance floors to intelligent soundproofing and mood lighting systems, every detail is designed by our top architecture firm in Kathmandu to deliver experiences that are unforgettable. Whether you’re targeting high end customers or the youth crowd, RG Creations builds spaces that speak your brand language and stay relevant for years to come. As the best architecture company in Nepal for nightclub and commercial space design, we combine creativity with practicality to build spaces that inspire and engage.
                     </p>
                   </div>
 

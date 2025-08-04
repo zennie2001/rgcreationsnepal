@@ -16,7 +16,7 @@ type Client = {
 
 // ✅ Client data
 const clients: Client[] = [
-  { name: "Majestic Grand", logo: "/logo/majestic.svg", url:"https://majesticgrandnepal.com/" },
+  { name: "Majestic Grand", logo: "/logo/majestic-grand.jpg", url:"https://majesticgrandnepal.com/" },
    { name: "Harshah Batika", logo: "/logo/logo1(2).jpg", url:"https://harshahbatika.com/" },
    { name: "Rambagh Mahal", logo: "/logo/logo1(4).jpg", url: "https://rambaghmahal.com" },
     { name: "Deja vu", logo: "/logo/logo1(3).jpg", url:"https://www.facebook.com/dejavuktm" },
