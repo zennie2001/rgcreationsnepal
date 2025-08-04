@@ -44,7 +44,7 @@ const page = () => {
                     <div>
                         <h1 className="text-3xl font-bold flex gap-6  leading-relaxed mb-8 uppercase">
                       
-                        <span>प्रिमियम हस्पिटालिटी आउट लेट’ आरजी क्रिएसन्सको फरक पहिचान</span>
+                        प्रिमियम हस्पिटालिटी आउट लेट’ आरजी क्रिएसन्सको फरक पहिचान
                         </h1>
                         <div className='flex justify-between pb-10'>
                             <div>

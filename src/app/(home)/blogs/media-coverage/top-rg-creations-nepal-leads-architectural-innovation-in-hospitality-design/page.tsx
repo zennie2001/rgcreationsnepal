@@ -45,7 +45,7 @@ const page = () => {
                     <div>
                         <h1 className="text-3xl font-bold flex gap-6  leading-relaxed mb-8 uppercase">
                       
-                        <span>RG Creations Nepal Leads Architectural Innovation in Hospitality Design</span>
+                        RG Creations Nepal Leads Architectural Innovation in Hospitality Design
                         </h1>
                         <div className='flex justify-between pb-10'>
                             <div>

@@ -5,7 +5,7 @@ import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 export const metadata = {
   title: "RG Creations Takes Lead In Architectural Design",
   description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+    "RG Creations Nepal is shaping the future of hospitality and nightlife architecture with 30+ landmark projects across Kathmandu, Pokhara, Dharan, and more combining global design insights with local expertise in architecture in Nepal.",
 };
 
 const page = () => {
@@ -43,7 +43,7 @@ const page = () => {
                     <div>
                         <h1 className="text-3xl font-bold flex gap-6  leading-relaxed mb-8 uppercase">
                       
-                        <span>RG designs 30 landmark projects in tourism and hospitality</span>
+                        RG designs 30 landmark projects in tourism and hospitality
                         </h1>
                         <div className='flex justify-between pb-10'>
                             <div>

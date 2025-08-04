@@ -29,8 +29,7 @@ const page = () => {
         <div className="relative z-20 flex flex-col justify-center items-center text-center h-full px-6">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider max-w-3xl">
             How RG Creations is Shaping Nepal’s Future through Employment, Training & Sustainable Growth
-
-          </h1>
+            </h1>
         </div>
       </section>
 

@@ -13,7 +13,7 @@ import BlogDetail3Hero from "@/sections/BlogDetail3Hero";
 export const metadata = {
   title: "Nepal’s Best Premium Construction Company",
   description:
-    "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
+    "Discover how RG Creations is redefining construction in Nepal by offering luxurious residential, commercial, and hospitality spaces with top-tier craftsmanship and cost efficiency - combining innovation, quality, and sustainability to lead Nepal’s architectural future.",
 };
 
 const BlogPost = () => {
