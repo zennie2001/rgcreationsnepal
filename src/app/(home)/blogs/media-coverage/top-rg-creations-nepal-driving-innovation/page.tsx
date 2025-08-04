@@ -43,10 +43,10 @@ const page = () => {
                   <div className="prose prose-lg max-w-none">
                     
                     <div>
-                        <h2 className="text-3xl font-bold flex gap-6  leading-relaxed mb-8 uppercase">
+                        <h1 className="text-3xl font-bold flex gap-6  leading-relaxed mb-8 uppercase">
                       
                         <span>RG Creations Nepal driving innovation in hospitality and nightlife architecture</span>
-                        </h2>
+                        </h1>
                         <div className='flex justify-between pb-10'>
                             <div>
                                 <p className='text-lg font-semibold'>Aarthiknews</p>

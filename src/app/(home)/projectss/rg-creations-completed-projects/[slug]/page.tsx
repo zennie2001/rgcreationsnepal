@@ -67,9 +67,9 @@ export default async function Page({ params }: Props) {
               </p>
             </div>
 
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+            <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
               {project.title}
-            </h2>
+            </h1>
           </div>
         </div>
 

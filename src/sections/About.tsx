@@ -71,7 +71,11 @@ const Specialization: React.FC = () => {
               </h3>
               </Link>
               <p className="text-gray-600 text-sm leading-relaxed mb-8 text-justify">
-                CREATING ELEGANT, HIGH-END HOMES AND APARTMENT COMPLEXES THAT
+                CREATING {" "}
+                <Link
+                  href="/services/top-luxurious-residential-developments"
+                  className="text-blue-600 font-semibold hover:underline"
+                >ELEGANT, HIGH-END HOMES AND APARTMENT COMPLEXES</Link> {" "} THAT
                 COMBINE TIMELESS DESIGN, COMFORT, AND MODERN FUNCTIONALITY.
               </p>
               <Link href={'/services/top-luxurious-residential-developments'} aria-label="Learn more about LUXURIOUS RESIDENTIAL ">
@@ -110,7 +114,11 @@ const Specialization: React.FC = () => {
               </Link>
               <p className="text-gray-600 text-sm leading-relaxed mb-8 text-justify">
                 DEVELOPING OFFICE BUILDINGS, RETAIL SPACES, HOTELS, AND OTHER
-                COMMERCIAL PROJECTS TAILORED TO MEET YOUR BUSINESS GOALS AND
+                 {" "}<Link
+                  href="/services/top-commercial-construction"
+                  className="text-blue-600 font-semibold hover:underline"
+                >
+                COMMERCIAL PROJECTS </Link>{" "}TAILORED TO MEET YOUR BUSINESS GOALS AND
                 ENHANCE OPERATIONAL SUCCESS.
               </p>
               <Link href={'/services/top-commercial-construction'} aria-label="Learn more about  COMMERCIAL">
@@ -133,7 +141,14 @@ const Specialization: React.FC = () => {
               </h3>
               </Link>
               <p className="text-gray-600 text-sm leading-relaxed mb-8 text-justify">
-                PROVIDING INNOVATIVE DESIGNS FOR HOSPITALITY VENUES, LUXURY
+                PROVIDING 
+                {" "}<Link
+                  href="/services/top-architectural-interior-design"
+                  className="text-blue-600 font-semibold hover:underline"
+                >
+               INNOVATIVE DESIGNS </Link>{" "}
+                
+                FOR HOSPITALITY VENUES, LUXURY
                 BOUTIQUE HOTELS, EXCLUSIVE RESIDENCES, AND COMMERCIAL PROPERTIES
                 - EACH CUSTOMIZED TO YOUR VISION.
               </p>
@@ -172,7 +187,14 @@ const Specialization: React.FC = () => {
               </h3>
               </Link>
               <p className="text-gray-600 text-sm leading-relaxed mb-8">
-                PROVIDING EXCLUSIVE, HIGH-QUALITY FURNITURE COLLECTIONS THAT
+                PROVIDING EXCLUSIVE, 
+                {" "}<Link
+                  href="/services/top-premium-furniture-supply"
+                  className="text-blue-600 font-semibold hover:underline"
+                >
+                HIGH-QUALITY FURNITURE </Link>{" "}
+                
+                COLLECTIONS THAT
                 BLEND STYLE, COMFORT, AND DURABILITY, PERFECT FOR UPSCALE
                 ENVIRONMENTS.
               </p>
@@ -198,7 +220,14 @@ const Specialization: React.FC = () => {
               </Link>
               <p className="text-gray-600 text-sm leading-relaxed mb-8 text-justify">
                SUPPLYING STATE-OF-THE-ART SOUND SYSTEMS, DYNAMIC LIGHTING, AND
-                SPECIALIZED NIGHTCLUB GEAR THAT ELEVATE ENTERTAINMENT VENUES.
+                SPECIALIZED 
+                {" "}<Link
+                  href="/services/top-nightclub-equipment-supply"
+                  className="text-blue-600 font-semibold hover:underline"
+                >
+                NIGHTCLUB GEAR  </Link>{" "}
+                
+                THAT ELEVATE ENTERTAINMENT VENUES.
               </p>
                <Link href={'/services/top-nightclub-equipment-supply'} aria-label="Learn more about  NIGHTCLUB EQUIPMENT ">
               <button className="text-blue-500 text-sm font-medium tracking-widest hover:text-blue-700 transition-colors">
@@ -269,7 +298,14 @@ const Specialization: React.FC = () => {
               </h3>
               </Link>
               <p className="text-gray-600 text-sm leading-relaxed mb-8">
-                ENSURING SEAMLESS PROJECT DELIVERY FROM CONCEPT TO COMPLETION -
+                ENSURING 
+                {" "}<Link
+                  href="/services/top-project-management-turnkey-solutions"
+                  className="text-blue-600 font-semibold hover:underline"
+                >
+                SEAMLESS PROJECT DELIVERY </Link>{" "}
+                
+                FROM CONCEPT TO COMPLETION -
                 ON TIME, WITHIN BUDGET, AND BEYOND EXPECTATIONS.
               </p>
                <Link href={'/services/top-project-management-turnkey-solutions'} aria-label="Learn more about PPROJECT MANAGEMENT ">
