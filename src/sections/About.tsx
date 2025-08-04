@@ -40,7 +40,13 @@ const Specialization: React.FC = () => {
               </h3>
               </Link>
               <p className="text-gray-600 text-sm leading-relaxed mb-8 text-justify">
-                DESIGNING AND BUILDING WORLD-CLASS NIGHTCLUBS FEATURING FLAWLESS
+                DESIGNING AND BUILDING {" "}
+                <Link
+                  href="/luxury-nightclub-construction"
+                  className="text-blue-600 font-semibold hover:underline"
+                >
+                  WORLD-CLASS NIGHTCLUBS
+                </Link>{" "} FEATURING FLAWLESS
                 ARCHITECTURE, CUTTING-EDGE ACOUSTICS, AND IMMERSIVE LIGHTING TO
                 CREATE UNFORGETTABLE NIGHTLIFE EXPERIENCES.
               </p>

@@ -49,8 +49,8 @@ const Collection: React.FC = () => {
              Stylish & Innovative Construction Designs
 
             </h3>
-            <p className="text-gray-600 leading-relaxed text-left  ">
-              At RG Creations Nepal, we blend creativity with functionality to deliver<br/> construction designs that are both modern and timeless. From bold <br/>interiors to smart architectural layouts, our projects reflect the latest<br/> trends with a focus on quality and innovation.
+            <p className="text-gray-600 leading-relaxed  md:pr-10 text-justify">
+             At RG Creations Nepal, we blend architectural creativity with practical functionality to deliver modern and timeless construction designs. As a top architecture firm in Nepal, our work ranges from bold interior designs to smart, efficient architectural layouts that reflect both innovation and excellence. Our team of expert architects in Nepal ensures each project aligns with the latest industry trends while maintaining superior quality and lasting impact. Whether it's a commercial space or a hospitality venue, RG Creations stands as a trusted name in Nepal’s architecture and design landscape.
 
             </p>
             <Link href="/gallery/photo-gallery">
