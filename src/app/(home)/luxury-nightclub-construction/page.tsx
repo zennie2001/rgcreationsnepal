@@ -1,5 +1,6 @@
 import Nightclub from '@/sections/NIghtclub'
 import NightclubHero from '@/sections/NightclubHero'
+import Script from 'next/script';
 import React from 'react'
 
 export const metadata = {
@@ -10,7 +11,67 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div className='overflow-hidden'>
+    <>
+    <Script
+  id="luxury-nightclub-construction-schema"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "url": "https://www.rgcreationsnepal.com/luxury-nightclub-construction",
+      "name": "Luxury Nightclub Construction Services - RG Creations Nepal Pvt. Ltd.",
+      "description": "RG Creations Nepal Pvt. Ltd. specializes in high-end, luxurious nightclub construction services. We combine architecture, interior design, lighting, and structural excellence to build unforgettable nightlife spaces in Nepal.",
+      "provider": {
+        "@type": "Organization",
+        "name": "RG Creations Nepal Pvt. Ltd.",
+        "url": "https://www.rgcreationsnepal.com",
+        "logo": "https://www.rgcreationsnepal.com/logo.png",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+977-9802357231",
+            "contactType": "customer service",
+            "areaServed": "NP",
+            "availableLanguage": ["English", "Nepali"]
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+977-01-4524806",
+            "contactType": "office",
+            "areaServed": "NP",
+            "availableLanguage": ["English", "Nepali"]
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Baluwatar",
+          "addressLocality": "Kathmandu",
+          "postalCode": "44600",
+          "addressCountry": "NP"
+        },
+        "foundingDate": "2016",
+        "description": "RG Creations Nepal is Nepal’s leading architectural and interior design firm, specializing in luxury construction projects, including high-end nightclubs, lounges, and hospitality venues."
+      },
+      "serviceType": "Luxury Nightclub Construction",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Nepal"
+      },
+      "keywords": [
+        "Luxury nightclub construction Nepal",
+        "High-end nightclub design Nepal",
+        "Club architecture Nepal",
+        "Nightlife venue construction Nepal",
+        "Interior design for nightclubs",
+        "RG Creations Nepal club design"
+      ]
+    }),
+  }}
+/>
+
+   <main className='overflow-hidden'>
       <NightclubHero />
       <Nightclub />
 
@@ -51,7 +112,10 @@ const page = () => {
     </div>
 
 
-    </div>
+    </main>
+
+    </>
+   
   )
 }
 

@@ -375,11 +375,11 @@ date: "May 21, 2025"
 mediaLogo: "/medialogo/abhiyan.png",
 date: "May 23, 2025"
 },
-{ id: 8, image: "/news88 (1)_11zon.jpg",
-    mediaName: "Karobar Daily",
-mediaLogo: "/medialogo/karobar.jpg",
-date: "June 28, 2025"
- },
+// { id: 8, image: "/news88 (1)_11zon.jpg",
+//     mediaName: "Karobar Daily",
+// mediaLogo: "/medialogo/karobar.jpg",
+// date: "June 28, 2025"
+//  },
 
 ],
 tvs:[

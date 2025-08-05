@@ -3,6 +3,7 @@ import React from 'react'
 import { ArrowRight, CheckCircle, Clock } from "lucide-react";
 import Link from 'next/link';
 import QualityResidentialHero from '@/sections/QualityConstructionHero';
+import Script from 'next/script';
 
 export const metadata = {
   title: "Luxurious Residential Developments Nepal ",
@@ -12,7 +13,67 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div className='overflow-hidden'>
+    <>
+    <Script
+  id="quality-construction-for-residential-schema"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "url": "https://www.rgcreationsnepal.com/quality-construction-for-residential",
+      "name": "Luxurious Residential Construction Services - RG Creations Nepal Pvt. Ltd.",
+      "description": "RG Creations Nepal Pvt. Ltd. offers high-end residential construction services across Nepal. We specialize in designing and building luxurious villas, apartments, and gated communities with a focus on quality, functionality, and elegance.",
+      "provider": {
+        "@type": "Organization",
+        "name": "RG Creations Nepal Pvt. Ltd.",
+        "url": "https://www.rgcreationsnepal.com",
+        "logo": "https://www.rgcreationsnepal.com/logo.png",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+977-9802357231",
+            "contactType": "customer service",
+            "areaServed": "NP",
+            "availableLanguage": ["English", "Nepali"]
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+977-01-4524806",
+            "contactType": "office",
+            "areaServed": "NP",
+            "availableLanguage": ["English", "Nepali"]
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Baluwatar",
+          "addressLocality": "Kathmandu",
+          "postalCode": "44600",
+          "addressCountry": "NP"
+        },
+        "foundingDate": "2016",
+        "description": "RG Creations Nepal is a leading architecture and interior design firm in Nepal, trusted for luxurious residential construction including villas, apartments, and custom homes designed to meet modern lifestyle needs."
+      },
+      "serviceType": "Luxurious Residential Construction",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Nepal"
+      },
+      "keywords": [
+        "Residential construction Nepal",
+        "Luxury home builders Nepal",
+        "Villa construction Nepal",
+        "Apartment construction company Nepal",
+        "High-end residential design Nepal",
+        "RG Creations custom homes"
+      ]
+    }),
+  }}
+/>
+
+ <main className='overflow-hidden'>
         <QualityResidentialHero/>
         <section className="w-full container mx-auto">
         <div className=" py-20 bg-white">
@@ -142,7 +203,10 @@ const page = () => {
           </section>
         </div>
       </section>
-    </div>
+    </main>
+
+    </>
+   
   )
 }
 
