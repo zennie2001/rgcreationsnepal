@@ -27,7 +27,7 @@ const page = () => {
         {/* Content */}
         <div className="relative z-20 flex flex-col justify-center items-center text-center h-full px-6">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-wider max-w-3xl">
-            How to Choose the Best Architect in Nepal for Your Dream Project?
+            How to Choose the Best Architect in Nepal for Your Dream Project: A Comprehensive Guide to Finding Top Architects in Kathmandu and Beyond
           </h1>
         </div>
       </section>
@@ -38,6 +38,10 @@ const page = () => {
           <div className="lg:col-span-4">
             <article className="bg-white rounded-lg shadow-sm p-8">
               <div className="prose prose-lg max-w-none">
+                <h2 className="  leading-relaxed mb-4">
+                  Finding the right partner for your project means choosing a firm that’s not only creative and reliable but also recognized as a top architecture company in Nepal. At the forefront of Nepal’s design and construction industry are premium, elegant, and award-winning architecture firms that specialize in everything from luxury resorts and sustainable communities to iconic banquet halls and nightclub interiors.
+                  <br/><br/>Whether you're searching for a highly recommended architecture company in Kathmandu, a visionary banquet design studio, or a trusted nightclub design expert, Nepal’s leading firms offer customized architectural solutions backed by decades of experience. From hospitality architects to interior design consultants, these professionals shape the identity of spaces that elevate both lifestyle and business.
+                </h2>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   Designing and building your dream space is one of the most important investments you'll ever make. Whether it's a new home, resort, restaurant, or commercial complex, finding the best architect in Nepal is crucial to ensuring your vision is brought to life—creatively, functionally, and within budget.
                 </p>

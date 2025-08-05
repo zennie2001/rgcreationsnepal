@@ -60,6 +60,12 @@ const howWeHelpItems = [
 export default function Home() {
   return (
     <>
+     <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/about/how-we-help-our-clients"
+      />
+    </head>
      <Script
       id="how-we-help-clients-schema"
       type="application/ld+json"
@@ -68,7 +74,7 @@ export default function Home() {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "AboutPage",
-          "url": "https://www.rgcreationsnepal.com/about/how-we-help",
+          "url": "https://www.rgcreationsnepal.com/about/how-we-help-our-clients",
           "name": "How We Help Clients - RG Creations Nepal Pvt. Ltd.",
           "description":
             "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",

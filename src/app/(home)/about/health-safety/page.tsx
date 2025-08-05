@@ -47,6 +47,14 @@ const safetyItems = [
 export default function Home() {
   return (
     <>
+
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/about/health-safety"
+      />
+    </head>
+
     <Script
       id="health-safety-schema"
       type="application/ld+json"

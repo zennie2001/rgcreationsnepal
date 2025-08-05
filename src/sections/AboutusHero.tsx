@@ -26,8 +26,7 @@ export default function AboutusHero() {
         </div>
 
         <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
-          Turning Ideas into Iconic Structures. Driven by Design, <br className="hidden md:block" /> 
-            Defined by Excellence
+          Turning Innovative Ideas into Iconic Architectural Structures – Driven by Cutting-Edge Design Principles and Defined by Excellence in Nepal’s Construction Industry
         </h1>
 
         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">

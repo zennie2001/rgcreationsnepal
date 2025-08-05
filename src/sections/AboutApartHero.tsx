@@ -26,8 +26,7 @@ export default function AboutApartHero() {
         </div>
 
         <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
-        we don’t follow trends -  <br className="hidden md:block" /> 
-          we set them
+        What Sets RG Creations Nepal Apart: Pioneering Innovation, Trendsetting Design, and Unmatched Excellence in Architecture and Construction Across Nepal
         </h1>
 
         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">

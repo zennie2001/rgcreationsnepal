@@ -86,6 +86,14 @@ const page = () => {
                      <p className="text-gray-700 leading-relaxed mb-6">
                         “With 20 years of experience, we’re setting new standards by using unique concepts and high-quality materials,” added Giri. The company continues to move forward with the goal of contributing to tourism development in Nepal.                 
                      </p>
+
+                     <p className="text-gray-700 leading-relaxed mb-2">
+                  <strong>Hashtags:</strong>
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  #BestArchitectureCompanyNepal #TopArchitectureCompanyNepal #PremiumArchitectureNepal #ElegantArchitectureNepal #HighlyRecommendedArchitectNepal #LeadingArchitectureCompanyNepal #KathmanduArchitectureCompany #AwardWinningArchitectNepal #TrustedArchitectNepal #ArchitectureFirmKathmandu #TopRatedArchitectNepal #CreativeArchitectureNepal #LuxuryArchitectureNepal #ModernArchitectureNepal #NeoclassicalArchitectureNepal #SustainableArchitectureNepal #CustomArchitecturalDesignNepal #ResortArchitectNepal #HotelArchitectNepal #InteriorDesignNepal
+
+                </p>
                     
     
                     

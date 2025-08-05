@@ -15,6 +15,12 @@ export default function Home() {
 
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/about/our-values"
+      />
+    </head>
 
     <Script
   id="our-values-schema"

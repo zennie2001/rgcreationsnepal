@@ -12,6 +12,12 @@ export const metadata = {
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/about/research-technology"
+      />
+    </head>
     <Script
       id="research-technology-schema"
       type="application/ld+json"

@@ -26,8 +26,7 @@ export default function AboutChairmanHero() {
         </div>
 
         <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
-          Visionary Leadership. Transforming Spaces, 
-           Inspiring Futures.
+           Visionary Leadership Driving Transformative Architectural Design, Sustainable Development, and Inspiring Lasting Impact Across Nepal’s Built Environment
         </h1>
 
         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">

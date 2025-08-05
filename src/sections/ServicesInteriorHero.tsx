@@ -27,7 +27,7 @@ export default function ServicesInteriorHero() {
 
         <h1 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
            {/* <br className="hidden md:block" />  */}
-           Creating Elegant, Functional<br className="hidden md:block" />  Spaces Tailored to Your Vision
+           Designing Elegant, Functional, and Sustainable Spaces in Nepal – Custom Architecture and Interior Design Solutions That Bring Your Vision to Life
 
         </h1>
 

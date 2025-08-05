@@ -16,6 +16,12 @@ export const metadata = {
 export default function Home() {
   return (
    <>
+   <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/about/what-sets-us-apart"
+      />
+    </head>
 
    <Script
   id="what-sets-us-apart-schema"

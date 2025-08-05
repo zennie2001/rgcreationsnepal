@@ -6,7 +6,7 @@ export default function Head() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       
       {/* SEO Meta Tags */}
-      <title>No.1 Architecture Firm Nepal | Best Architects & Designers</title>
+      <title>Best Architecture Company Nepal – Kathmandu</title>
       <meta
         name="description"
         content="Discover the number 1 architect company in Nepal, specializing in hotels, night clubs, resorts, and commercial design."

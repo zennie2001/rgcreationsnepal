@@ -27,7 +27,7 @@ export default function ServicesBuildHero() {
 
         <h1 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
            {/* <br className="hidden md:block" />  */}
-          Unlock Lasting Value Through<br className="hidden md:block" />  Tailored Hospitality Solutions
+         Partner with RG Creations Nepal to build, lease, or jointly develop palace-style banquet halls with expert project management and turnkey solutions that maximize your land’s value.
 
         </h1>
 

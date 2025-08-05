@@ -17,6 +17,13 @@ export const metadata = {
 export default function Home() {
   return (
     <>
+     <head>
+        <link
+          rel="canonical"
+          href="https://www.rgcreationsnepal.com/about/about-us"
+        />
+      </head>
+      
     <Script
   id="about-page-schema"
   type="application/ld+json"

@@ -26,7 +26,8 @@ export default function AboutCaseHero() {
         </div>
 
         <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
-          Showcasing Vision, <br className="hidden md:block" /> Craftsmanship & Excellence
+           Showcasing Vision, 
+  Expert Craftsmanship, and Unparalleled Excellence in Architectural and Construction Projects Across Nepal
            
            
         </h1>

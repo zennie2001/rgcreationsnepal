@@ -26,7 +26,7 @@ export default function AboutResearchHero() {
         </div>
 
         <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
-           Innovation at the Heart of<br className="hidden md:block" />  Everything We Build  
+           Driving Innovation Through Advanced Research and Cutting-Edge Technology - Empowering Sustainable Architectural and Construction Solutions Across Nepal 
          
         </h1>
 

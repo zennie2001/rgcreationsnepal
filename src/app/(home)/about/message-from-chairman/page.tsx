@@ -13,6 +13,12 @@ export const metadata = {
 export default function Home() {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/about/message-from-chairman"
+      />
+    </head>
      <Script
       id="message-from-chairman-schema"
       type="application/ld+json"
