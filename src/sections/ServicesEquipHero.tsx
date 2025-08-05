@@ -27,7 +27,7 @@ export default function ServicesEquipmentHero() {
 
         <h1 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
            {/* <br className="hidden md:block" />  */}
-           Unmatched Sound, Lighting,<br className="hidden md:block" />  and Special Effects, Empowering Nightlife Venues
+           Unmatched Sound, Lighting, and Special Effects Solutions – Empowering Nightlife Venues in Nepal with Cutting-Edge Technology for Immersive Entertainment Experiences
 
         </h1>
 

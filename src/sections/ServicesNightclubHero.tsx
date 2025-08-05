@@ -27,7 +27,7 @@ export default function ServicesNightclubHero() {
 
         <h1 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
            {/* <br className="hidden md:block" />  */}
-           Transform Your Venue into the<br className="hidden md:block" />  Ultimate Nightlife Experience
+           Redefining Modern Living with Exclusive, Elegant Homes, Sustainable Communities, and Iconic Designs by Nepal’s Best Architecture Company in Kathmandu – Experts in Nightclub Construction and Premium Lifestyle Spaces.
 
         </h1>
 

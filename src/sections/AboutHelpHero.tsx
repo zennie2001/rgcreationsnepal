@@ -26,8 +26,8 @@ export default function AboutHelpHero() {
         </div>
 
         <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
-          Helping Our Clients Turn  <br className="hidden md:block" /> 
-          Vision into Reality
+          Committed to Health and Safety Excellence — 
+Protecting Lives and Ensuring Rigorous Compliance on Every Construction Site Across Nepal for Sustainable, Risk-Free Projects
         </h1>
 
         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">

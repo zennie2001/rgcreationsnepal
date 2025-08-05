@@ -11,6 +11,12 @@ export const metadata = {
 export default function page() {
   return (
     <>
+    <head>
+  <link
+    rel="canonical"
+    href="https://www.rgcreationsnepal.com/about/case-studies"
+  />
+</head>
      <Script
       id="case-studies-schema"
       type="application/ld+json"

@@ -15,7 +15,7 @@ import SEOContent from "@/components/SEOContent";
 
 
 export const metadata = {
-  title: "No.1 Architecture Firm Nepal | Best Architects & Designers",
+  title: "Best Architecture Company Nepal – Kathmandu",
   description:
     "RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more.",
      keywords: [

@@ -12,6 +12,12 @@ export const metadata = {
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/about/swot-analysis"
+      />
+    </head>
     <Script
       id="swot-analysis-schema"
       type="application/ld+json"

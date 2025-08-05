@@ -90,10 +90,19 @@ const page = () => {
                     </h2>
                     <p className="text-gray-600 text-sm leading-relaxed">
                       <i>Building Iconic Nightlife Destinations Across Nepal</i><br/><br/>
-                      At RG Creations Nepal, we not only build nightclubs — we create spaces that grab your customers from the moment they step in. As one of the top architects in Nepal for hospitality and nightlife architecture, our premium nightclub construction services are used by some of Nepal’s top hospitality brands, setting the standard for luxury, innovation and functionality.
+                      At RG Creations Nepal, we not only build nightclubs — we create spaces that grab your customers from the moment they step in. As one of the top architects in Nepal for hospitality and nightlife architecture, our{" "}
+                      <Link href="/services/top-premium-nightclub-construction" className="text-blue-600 font-semibold hover:underline">
+                         premium nightclub construction
+                  </Link>{" "} 
+                   services are used by some of Nepal’s top hospitality brands, setting the standard for luxury, innovation and functionality.
 
                         <br />
-                      <br />From VIP lounges and futuristic dance floors to intelligent soundproofing and mood lighting systems, every detail is designed by our top architecture firm in Kathmandu to deliver experiences that are unforgettable. Whether you’re targeting high end customers or the youth crowd, RG Creations builds spaces that speak your brand language and stay relevant for years to come. As the best architecture company in Nepal for nightclub and commercial space design, we combine creativity with practicality to build spaces that inspire and engage.
+                      <br />From VIP lounges and futuristic dance floors to intelligent soundproofing and mood lighting systems, every detail is designed by our{" "}
+                       <Link href="/blogs/kathmandus-best-architect-company" className="text-blue-600 font-semibold hover:underline">
+                         top architecture firm in Kathmandu 
+                  </Link>{" "}
+                      
+                      to deliver experiences that are unforgettable. Whether you’re targeting high end customers or the youth crowd, RG Creations builds spaces that speak your brand language and stay relevant for years to come. As the best architecture company in Nepal for nightclub and commercial space design, we combine creativity with practicality to build spaces that inspire and engage.
                     </p>
                   </div>
 

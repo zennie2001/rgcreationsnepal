@@ -11,6 +11,13 @@ export default function page() {
   return (
     <>
 
+    <head>
+  <link
+    rel="canonical"
+    href="https://www.rgcreationsnepal.com/about/award-recognition"
+  />
+</head>
+
      <Script
       id="award-recognition-schema"
       type="application/ld+json"

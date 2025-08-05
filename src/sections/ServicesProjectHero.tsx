@@ -27,8 +27,7 @@ export default function ServicesProjectHero() {
 
         <h1 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
            {/* <br className="hidden md:block" />  */}
-           Unlock Lasting Value Through<br className="hidden md:block" />  Tailored Hospitality Solutions
-
+          Unlock Long-Term Value and Business Growth Through Customized Hospitality Solutions Designed for Resorts, Hotels, Banquet Halls, and Nightlife Venues in Nepal
         </h1>
 
         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">

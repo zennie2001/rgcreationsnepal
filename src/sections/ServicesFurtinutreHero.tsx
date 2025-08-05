@@ -27,7 +27,7 @@ export default function ServicesFirnitureHero() {
 
         <h1 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider max-w-3xl">
            {/* <br className="hidden md:block" />  */}
-           Timeless Style and Bespoke Elegance, Delivering Sophisticated, High-Quality Pieces that Transform Residential
+           Timeless Style and Bespoke Elegance – Delivering Sophisticated, High-Quality Architectural and Interior Design Solutions That Transform Residential Spaces Across Nepal
 
         </h1>
 
