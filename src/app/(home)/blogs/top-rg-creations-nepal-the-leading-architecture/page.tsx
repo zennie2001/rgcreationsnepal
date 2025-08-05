@@ -348,7 +348,14 @@ const BlogPost = () => {
                    <p className="text-gray-700 leading-relaxed flex items-center gap-2"><MdOutlineMail /> Email: info@rgcreationsnepal.com </p>
                    <p className="text-gray-700 leading-relaxed flex items-center gap-2"> <TbWorld />Website: www.rgcreationsnepal.com</p>
 
+                  
+                  <p className="text-gray-700 leading-relaxed mb-2">
+                  <strong>Hashtags:</strong>
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  #Best_architecture_company #Top_architecture_company #Premium_architecture_company #Elegant_architecture_company #Highly_recommended_architecture_company #Nepals_leading_architecture_company #Kathmandus_top_architecture_company #Awardwinning_architecture_company #Trusted_architecture_company #Best_architectural_firm_in_Kathmandu #Worldclass_architectural_firm #Architectural_firm_near_me #LEEDcertified_architectural_firm #Top_architectural_firms_Kathmandu #Customized_architectural_solutions_Nepal #Architecture_with_purpose_and_soul #Modern_architecture #Sustainable_architecture #Sustainable_architecture_for_hotels #Architectural_design_services #Interior_design #Interior_architecture_for_hospitality #Architectural_project_management #Structural_engineering_services #Architectural_renovation_services 
 
+                </p>
                   
 
 

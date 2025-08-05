@@ -142,6 +142,13 @@ const page = () => {
                     <p className="text-gray-700 leading-relaxed mb-6">
                     Whether you are a homeowner, entrepreneur, or investor, now is the time to explore the endless possibilities of construction in Nepal. Embrace innovation, value sustainability, and work with professionals who understand the evolving dynamics of architecture and hospitality construction in Nepal. Your dream project deserves a foundation built on experience, creativity, and trust.
                     </p>
+                    <p className="text-gray-700 leading-relaxed mb-2">
+                  <strong>Hashtags:</strong>
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  #Best_architecture_company #Top_architecture_company #Premium_architecture_company #Elegant_architecture_company #Highly_recommended_architecture_company #Nepals_leading_architecture_company #Kathmandus_top_architecture_company #Awardwinning_architecture_company #Trusted_architecture_company #Best_architectural_firm_in_Kathmandu #Worldclass_architectural_firm #Architectural_firm_near_me #LEEDcertified_architectural_firm #Top_architectural_firms_Kathmandu #Customized_architectural_solutions_Nepal #Architecture_with_purpose_and_soul #Modern_architecture #Sustainable_architecture #Sustainable_architecture_for_hotels #Architectural_design_services #Interior_design #Interior_architecture_for_hospitality 
+
+                </p>
 
               </div>
             </article>

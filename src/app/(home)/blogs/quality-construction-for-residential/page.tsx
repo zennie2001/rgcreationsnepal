@@ -178,6 +178,8 @@ const page = () => {
                   <strong>Popular Industry Hashtags:</strong> <br />
                   #LuxuryHomesNepal #PremiumVillaNepal #LuxuryConstructionNepal #VillaDesignNepal #NepalArchitecture #HighEndLivingNepal #LuxuryRealEstateNepal #ModernVillasNepal #ResidentialBuilderNepal #TurnkeyConstructionNepal #SmartHomeNepal #SustainableLuxuryNepal #KathmanduVillaProjects #LuxuryLivingNepal
                 </p>
+
+                
               </div>
             </article>
           </div>
