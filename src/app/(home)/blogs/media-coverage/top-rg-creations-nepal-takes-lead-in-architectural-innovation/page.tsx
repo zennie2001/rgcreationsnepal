@@ -5,7 +5,7 @@ import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 export const metadata = {
   title: "RG Creations Takes Lead In Architectural Design",
   description:
-    "Discover how RG Creations Nepal Pvt. Ltd. leads the way in innovative architectural design and premium construction services across Nepal, and bespoke commercial spaces that blend innovation, cultural relevance, and timeless design across Nepal.",
+    "Discover how RG Creations leads the way in innovative architectural design and bespoke commercial spaces that blend innovation and culture.",
 };
 
 

@@ -7,12 +7,18 @@ import React from 'react'
 export const metadata = {
   title: "Video Gallery | Top Architecture & Interior Design",
   description:
-    "Watch captivating videos showcasing RG Creations Nepal’s architectural and interior design projects, highlighting our craftsmanship, innovation, and client successes.",
+    "Watch captivating videos showcasing RG Creations Nepal’s architectural and interior design projects, innovation, and client successes.",
 };
 
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/gallery/video-gallery"
+      />
+    </head>
     <Script
       id="video-gallery-schema"
       type="application/ld+json"

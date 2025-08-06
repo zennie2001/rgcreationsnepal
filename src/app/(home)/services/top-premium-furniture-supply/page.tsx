@@ -9,12 +9,18 @@ import Script from 'next/script';
 
 export const metadata = {
   title: "Premium Furniture Supply | Nepal Construction Partner",
-  description: "Discover RG Creations Nepal’s premium furniture solutions that complement our architectural and interior design projects, delivering style and quality across Nepal.",
+  description: "Discover RG Creations Nepal’s premium furniture solutions that complement our architectural and interior design projects.",
 };
 
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/services/top-premium-furniture-supply"
+      />
+    </head>
         <Script
       id="top-premium-furniture-supply-schema"
       type="application/ld+json"

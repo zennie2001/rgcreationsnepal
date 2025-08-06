@@ -6,12 +6,18 @@ import React from 'react'
 export const metadata = {
   title: "Luxury Nightclub Construction | Top Builder Nepal",
   description:
-    "RG Creations Nepal delivers cutting-edge luxury nightclub construction with stylish designs, premium finishes, and exceptional craftsmanship to create unforgettable nightlife venues.",
+    "RG Creations Nepal delivers cutting-edge luxury nightclub construction with stylish designs to create unforgettable nightlife venues.",
 };
 
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/luxury-nightclub-construction"
+      />
+    </head>
     <Script
   id="luxury-nightclub-construction-schema"
   type="application/ld+json"

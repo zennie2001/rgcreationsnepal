@@ -6,13 +6,19 @@ import React from 'react'
 export const metadata = {
   title: "Hotel Resort Construction | Top Builder Nepal",
   description:
-    "RG Creations Nepal specializes in hotel and resort construction, delivering luxurious, sustainable, and innovative hospitality spaces tailored to Nepal’s unique landscape.",
+    "RG Creations Nepal specializes in hotel and resort construction, delivering luxurious, sustainable, and innovative hospitality spaces.",
 };
 
 
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/hotel-resort-construction"
+      />
+    </head>
     <Script
   id="hotel-resort-construction-schema"
   type="application/ld+json"

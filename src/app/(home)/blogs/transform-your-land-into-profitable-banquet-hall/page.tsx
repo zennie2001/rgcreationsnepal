@@ -4,7 +4,7 @@ import React from 'react'
 export const metadata = {
   title: "Transform Land into Profitable Banquet | RG Creations Nepal",
   description:
-    "Partner with RG Creations Nepal to build, lease, or co-develop luxury banquet halls and maximize your land's earning potential in Nepal's growing hospitality sector.",
+    "Partner with RG Creations Nepal to build, lease, or co-develop luxury banquet halls and maximize your land's earning potential in Nepal.",
 };
 
 

@@ -9,7 +9,7 @@ import Script from "next/script";
 export const metadata = {
   title: "What Sets Us Apart | Top Architecture & Construction",
   description:
-    "Discover what makes RG Creations Nepal unique — from innovative design and precise execution to a client-first approach, setting new benchmarks in architecture and construction across Nepal.",
+    "Discover what makes RG Creations Nepal unique — from innovative design setting new benchmarks in architecture and construction across Nepal.",
 };
 
 

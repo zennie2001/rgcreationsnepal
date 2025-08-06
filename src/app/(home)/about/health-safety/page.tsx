@@ -8,7 +8,7 @@ import Script from "next/script";
 export const metadata = {
   title: "Health & Safety | Trusted Architecture Firm Nepal ",
   description:
-    "At RG Creations, health and safety are paramount—ensuring secure and compliant construction practices across all architectural projects in Nepal.",
+    "At RG Creations, health and safety are paramount—ensuring secure construction practices across all architectural projects in Nepal.",
 };
 
 const safetyItems = [

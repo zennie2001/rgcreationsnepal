@@ -5,7 +5,7 @@ import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 export const metadata = {
   title: "RG Creations Nepal Emerges as Pioneer in Hospitality Architecture",
   description:
-    "Explore how RG Creations Nepal is revolutionizing hospitality architecture with innovative designs, cutting-edge technology, and a commitment to sustainable growth across Nepal's major urban centers.",
+    "Explore how RG Creations Nepal is revolutionizing hospitality architecture with innovative designs, cutting-edge technology, and a commitment.",
 };
 
 

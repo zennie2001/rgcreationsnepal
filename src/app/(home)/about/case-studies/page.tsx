@@ -5,7 +5,7 @@ import React from "react";
 export const metadata = {
   title: "Case Studies | Architecture & Design Projects in Nepal",
   description:
-    "Explore detailed case studies of RG Creations Nepal’s standout projects in architecture, interior design, and hospitality. See how our designs come to life through innovation, sustainability, and craftsmanship.",
+    "Explore detailed case studies of RG Creations Nepal’s standout projects in architecture, interior design, innovation, and hospitality.",
 };
 
 export default function page() {

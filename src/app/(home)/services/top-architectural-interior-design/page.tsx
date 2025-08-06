@@ -7,11 +7,17 @@ import Script from 'next/script';
 
 export const metadata = {
   title: "Architectural & Interior Design | Nepal Leaders",
-  description:"Experience cutting-edge architectural and interior design solutions by RG Creations, leaders in Nepal’s construction industry."};
+  description:"We are an elegant architecture company in Nepal, offering creative, sustainable, and modern architectural solutions for banquet halls and resorts."};
 
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/services/top-architectural-interior-design"
+      />
+    </head>
     <Script
       id="top-architectural-interior-design-schema"
       type="application/ld+json"

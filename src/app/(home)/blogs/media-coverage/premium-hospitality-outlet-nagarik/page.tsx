@@ -4,7 +4,7 @@ import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 
 export const metadata = {
   title: "RG Creations Carves a Distinct Identity in Premium Hospitality",
-  description: "RG Creations leads Nepal’s hospitality sector by delivering innovative, cost-effective, and internationally benchmarked nightlife and event venues, setting new standards across the region.",
+  description: "RG Creations leads Nepal’s hospitality sector by delivering innovative, cost-effective, and internationally benchmarked nightlife.",
 };
 
 

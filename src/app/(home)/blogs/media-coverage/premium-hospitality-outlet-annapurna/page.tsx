@@ -4,7 +4,7 @@ import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 
 export const metadata = {
   title: "Distinct Identity of RG Creations in Premium Hospitality Outlets",
-  description: "RG Creations has established a unique standard in Nepal's hospitality and nightclub industry for over 15 years, providing quality design, concept, and construction services tailored to investors' budgets.",
+  description: "RG Creations has established a standard in Nepal's hospitality and nightclub industry for over 15 years, providing quality design.",
 };
 
 

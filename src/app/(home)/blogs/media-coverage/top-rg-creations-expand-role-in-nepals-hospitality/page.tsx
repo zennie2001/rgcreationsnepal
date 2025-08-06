@@ -6,7 +6,7 @@ import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 export const metadata = {
   title: "RG Creations Expands Role in Hospitality and Architecture Sectors",
   description:
-    "Learn how RG Creations Nepal is broadening its impact with innovative architecture and design in hospitality and nightlife, delivering iconic projects while fostering local talent and sustainable growth.",
+    "Learn how RG Creations Nepal is broadening its impact with innovative architecture and design in hospitality and nightlife.",
 };
 
 

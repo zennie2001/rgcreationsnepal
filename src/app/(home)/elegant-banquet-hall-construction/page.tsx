@@ -6,13 +6,19 @@ import React from 'react'
 export const metadata = {
   title: "Elegant Banquet Construction | Top Builder Nepal",
   description:
-    "RG Creations Nepal specializes in designing and constructing elegant banquet halls with luxurious finishes, functional layouts, and timeless architecture tailored to your vision.",
+    "RG Creations Nepal specializes in constructing elegant banquet halls with luxurious finishes, and timeless architecture tailored to your vision.",
 };
 
 
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/elegant-banquet-hall-construction"
+      />
+    </head>
 
     <Script
   id="elegant-banquet-hall-construction-schema"

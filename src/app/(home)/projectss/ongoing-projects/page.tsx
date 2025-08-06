@@ -11,6 +11,12 @@ export const metadata = {
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/projectss/ongoing-projects"
+      />
+    </head>
      <Script
       id="ongoing-projects-schema"
       type="application/ld+json"

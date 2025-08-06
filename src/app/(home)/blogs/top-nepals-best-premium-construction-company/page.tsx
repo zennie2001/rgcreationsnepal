@@ -13,7 +13,7 @@ import BlogDetail3Hero from "@/sections/BlogDetail3Hero";
 export const metadata = {
   title: "Nepal’s Best Premium Construction Company",
   description:
-    "Discover how RG Creations is redefining construction in Nepal by offering luxurious residential, commercial, and hospitality spaces with top-tier craftsmanship and cost efficiency - combining innovation, quality, and sustainability to lead Nepal’s architectural future.",
+    "Discover how RG Creations is redefining construction in Nepal by offering luxurious residential, commercial, hospitality and cost efficiency.",
 };
 
 const BlogPost = () => {

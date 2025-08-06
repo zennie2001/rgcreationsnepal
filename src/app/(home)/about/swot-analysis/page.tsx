@@ -5,7 +5,7 @@ import React from 'react'
 export const metadata = {
   title: "SWOT Analysis | RG Creations Nepal Construction & Architecture",
   description:
-    "Explore the strengths, weaknesses, opportunities, and threats (SWOT) shaping RG Creations Nepal. Gain insights into our strategic position in Nepal’s construction and architecture industry.",
+    "Explore the strengths, weaknesses, opportunities, and threats (SWOT) shaping RG Creations Nepal in architecture industry.",
 };
 
 

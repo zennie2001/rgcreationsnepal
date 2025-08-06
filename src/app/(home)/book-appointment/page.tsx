@@ -7,13 +7,19 @@ import React from "react";
 export const metadata = {
   title: "Book a Consultation - RG Creations Nepal",
   description:
-    "Schedule a personalized consultation with RG Creations Nepal. Let our experts guide you through your architecture and construction needs—from concept to completion.",
+    "Schedule a personalized consultation with RG Creations Nepal. Let our experts guide you through your architecture and construction needs.",
 };
 
 
 const BookAppointmentPage = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/book-appointment"
+      />
+    </head>
      <Script
       id="book-appointment-schema"
       type="application/ld+json"

@@ -14,6 +14,12 @@ export const metadata = {
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/quality-construction-for-residential"
+      />
+    </head>
     <Script
   id="quality-construction-for-residential-schema"
   type="application/ld+json"

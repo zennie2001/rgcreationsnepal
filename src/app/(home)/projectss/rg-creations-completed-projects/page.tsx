@@ -5,12 +5,18 @@ import React from 'react'
 
 export const metadata = {
   title: "Completed Projects | Leading Construction Nepal",
-  description: "Explore RG Creations Nepal’s completed projects showcasing innovative architecture and expert construction craftsmanship across Nepal.",
+  description: "Explore RG Creations Nepal’s completed projects showcasing innovative architecture and expert constructions.",
 };
 
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/projectss/rg-creations-completed-projects"
+      />
+    </head>
      <Script
       id="completed-projects-schema"
       type="application/ld+json"

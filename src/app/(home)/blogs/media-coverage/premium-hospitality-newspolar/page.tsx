@@ -5,7 +5,7 @@ import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 
 export const metadata = {
   title: "Building a Distinct Identity in Premium Hospitality Outlets",
-  description: "RG Creations is a renowned name in Nepal’s hospitality and nightlife industry, with over 15 years of expertise in designing, constructing, and operating hotels, nightclubs, event venues, and other hospitality projects tailored to investors’ budgets and market trends.",
+  description: "RG Creations is a renowned name in Nepal’s hospitality and nightlife industry, with over 15 years of expertise in constructions.",
 };
 
 

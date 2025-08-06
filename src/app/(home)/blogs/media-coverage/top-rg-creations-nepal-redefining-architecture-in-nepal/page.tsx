@@ -5,7 +5,7 @@ import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 export const metadata = {
   title: "RG Creations: Pioneering Luxury Architecture and Construction in Nepal",
   description:
-    "RG Creations Nepal Pvt. Ltd. is a premier construction and architectural firm specializing in luxury resorts, banquet halls, nightclubs, and upscale residential projects across Nepal.",
+    "RG Creations Nepal Pvt. Ltd. is a premier construction and architectural firm specializing in luxury resorts, banquet halls, nightclubs sectors.",
 };
 
 

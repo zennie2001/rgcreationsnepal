@@ -5,7 +5,7 @@ import React from 'react'
 export const metadata = {
   title: "Research and Technology | Best Construction Company Nepal",
   description:
-    "Discover how RG Creations Nepal integrates advanced research, cutting-edge technology, and modern design methodologies to deliver innovative and sustainable construction solutions across Nepal.",
+    "Discover how RG Creations Nepal integrates advanced research and cutting-edge technology to deliver innovative and sustainable construction.",
 };
 
 
