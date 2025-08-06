@@ -20,12 +20,14 @@ const page = () => {
       />
     </head>
      <Script
-      id="luxurious-residential-developments-schema"
-      type="application/ld+json"
-      strategy="afterInteractive"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
+  id="luxurious-residential-developments-schema"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
           "@type": "Service",
           "url": "https://www.rgcreationsnepal.com/services/top-luxurious-residential-developments",
           "name": "Top Luxurious Residential Developments - RG Creations Nepal Pvt. Ltd.",
@@ -74,9 +76,57 @@ const page = () => {
             "RG Creations residential projects",
             "High-end residential architecture Nepal"
           ]
-        }),
-      }}
-    />
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is included in RG Creations Nepal's luxurious residential development services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our services include bespoke architectural design, high-end construction, interior design, landscaping, and sustainable building practices tailored to luxury living standards."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you offer custom design solutions for luxury homes?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we specialize in fully customized residential design solutions to reflect your lifestyle, preferences, and personality, ensuring a unique and luxurious living space."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What makes your residential projects stand out?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our residential developments stand out due to premium craftsmanship, sustainable materials, modern aesthetics, and a personalized approach that aligns with global luxury living standards."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you assist with permits and legal approvals for residential construction in Nepal?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. We manage all permit applications, zoning regulations, and legal documentation required for luxurious residential construction in Nepal."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does a luxury residential development project take to complete?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timelines vary based on complexity and customization, but most luxury residential projects take between 6 to 18 months from design to final handover."
+              }
+            }
+          ]
+        }
+      ]
+    }),
+  }}
+/>
+
     <div className='overflow-hidden'>
         <ServicesResidentialHero />
         <section className="w-full container mx-auto">

@@ -19,12 +19,14 @@ const page = () => {
       />
     </head>
     <Script
-      id="top-architectural-interior-design-schema"
-      type="application/ld+json"
-      strategy="afterInteractive"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
+  id="top-architectural-interior-design-schema"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
           "@type": "Service",
           "url": "https://www.rgcreationsnepal.com/services/top-architectural-interior-design",
           "name": "Top Architectural & Interior Design Services - RG Creations Nepal Pvt. Ltd.",
@@ -73,9 +75,57 @@ const page = () => {
             "Creative interior solutions Nepal",
             "RG Creations interior design"
           ]
-        }),
-      }}
-    />
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What architectural and interior design services do you offer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We offer complete architectural planning, space optimization, 3D visualization, theme-based interior styling, furniture design, and material selection tailored to your project goals."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you provide turnkey interior design solutions?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, RG Creations Nepal offers turnkey interior solutions, managing every aspect from concept to execution, including layout design, lighting, furnishings, and decor."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you help with sustainable and eco-friendly architectural designs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. We integrate sustainable materials, passive design strategies, and energy-efficient systems to create environmentally conscious spaces."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How involved will I be in the design process?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We prioritize client collaboration. You'll be involved at every key stage—from concept development to final approvals—to ensure the design reflects your vision and lifestyle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What types of spaces do you specialize in designing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We design residential homes, commercial offices, showrooms, hospitality spaces, and high-end retail interiors, focusing on function, aesthetics, and brand identity."
+              }
+            }
+          ]
+        }
+      ]
+    }),
+  }}
+/>
+
     <div className='overflow-hidden'>
         <ServicesInteriorHero />
 

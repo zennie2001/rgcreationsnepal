@@ -19,13 +19,15 @@ const page = () => {
         href="https://www.rgcreationsnepal.com/services/top-nightclub-equipment-supply"
       />
     </head>
-     <Script
-      id="top-nightclub-equipment-supply-schema"
-      type="application/ld+json"
-      strategy="afterInteractive"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
+    <Script
+  id="top-nightclub-equipment-supply-schema"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
           "@type": "Service",
           "url": "https://www.rgcreationsnepal.com/services/top-nightclub-equipment-supply",
           "name": "Top Nightclub Equipment Supply - RG Creations Nepal Pvt. Ltd.",
@@ -74,9 +76,57 @@ const page = () => {
             "Entertainment venue equipment Nepal",
             "RG Creations nightclub supply"
           ]
-        }),
-      }}
-    />
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What types of nightclub equipment does RG Creations Nepal supply?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We supply advanced sound systems, dynamic lighting setups, DJ consoles, LED walls, stage effects, and more for nightclubs and entertainment venues."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you provide installation services for nightclub equipment?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we offer complete installation, configuration, and testing services to ensure all equipment functions flawlessly in your venue."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can your equipment be customized based on venue size and theme?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. We tailor equipment packages to match the acoustics, design, and branding of your nightclub for optimal performance and aesthetics."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is your equipment suitable for both indoor and outdoor clubs?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we supply equipment suitable for both indoor and open-air venues, ensuring durability and performance regardless of the setting."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who can benefit from your nightclub equipment supply service?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our services are ideal for nightclub owners, event organizers, hospitality investors, lounge operators, and entertainment venue developers across Nepal."
+              }
+            }
+          ]
+        }
+      ]
+    }),
+  }}
+/>
+
     <div className='overflow-hidden'>
         <ServicesEquipmentHero/>
 

@@ -19,13 +19,15 @@ const page = () => {
         href="https://www.rgcreationsnepal.com/services/top-commercial-construction"
       />
     </head>
-     <Script
-      id="top-commercial-construction-schema"
-      type="application/ld+json"
-      strategy="afterInteractive"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
+    <Script
+  id="top-commercial-construction-schema"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
           "@type": "Service",
           "url": "https://www.rgcreationsnepal.com/services/top-commercial-construction",
           "name": "Top Commercial Construction Services - RG Creations Nepal Pvt. Ltd.",
@@ -74,9 +76,57 @@ const page = () => {
             "RG Creations commercial projects",
             "Business infrastructure Nepal"
           ]
-        }),
-      }}
-    />
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What types of commercial projects does RG Creations Nepal handle?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We specialize in office buildings, retail spaces, malls, educational institutions, and other business infrastructure tailored to meet your operational needs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you provide end-to-end commercial construction services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we offer full-service solutions from architectural design and project planning to engineering, construction, interior design, and final handover."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you ensure the sustainability of your commercial buildings?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We integrate energy-efficient materials, green building practices, and smart infrastructure to reduce environmental impact and operational costs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can RG Creations assist with commercial construction permits and approvals?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. Our team manages all legal, regulatory, and municipal processes to ensure smooth permit acquisition and construction compliance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does a commercial construction project typically take?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timelines depend on project size and complexity, but standard commercial buildings can take anywhere from a few months to over a year to complete."
+              }
+            }
+          ]
+        }
+      ]
+    }),
+  }}
+/>
+
     <div className='overflow-hidden'>
         <ServicesCommercialHero />
 

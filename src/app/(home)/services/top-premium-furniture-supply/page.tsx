@@ -21,13 +21,15 @@ const page = () => {
         href="https://www.rgcreationsnepal.com/services/top-premium-furniture-supply"
       />
     </head>
-        <Script
-      id="top-premium-furniture-supply-schema"
-      type="application/ld+json"
-      strategy="afterInteractive"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
+      <Script
+  id="top-premium-furniture-supply-schema"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
           "@type": "Service",
           "url": "https://www.rgcreationsnepal.com/services/top-premium-furniture-supply",
           "name": "Top Premium Furniture Supply - RG Creations Nepal Pvt. Ltd.",
@@ -76,9 +78,57 @@ const page = () => {
             "Furniture supplier Nepal",
             "RG Creations furniture supply"
           ]
-        }),
-      }}
-    />
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What types of furniture does RG Creations Nepal supply?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We supply premium furniture for residential, commercial, and hospitality spaces including sofas, beds, dining sets, office furniture, and customized designs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I request custom-made furniture from RG Creations Nepal?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we offer fully customized furniture solutions based on your preferred styles, materials, dimensions, and usage requirements."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you offer delivery and installation services for furniture?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we provide professional delivery and on-site installation services across Nepal to ensure the furniture fits perfectly and is ready to use."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What makes your furniture supply service premium?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our furniture is crafted with high-quality materials, superior finishes, and attention to detail, offering both durability and design tailored to luxury environments."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who can benefit from your premium furniture supply service?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We serve homeowners, interior designers, architects, hospitality businesses, and commercial developers seeking stylish, functional, and premium-quality furniture."
+              }
+            }
+          ]
+        }
+      ]
+    }),
+  }}
+/>
+
 
     <div className='overflow-hidden'>
         <ServicesFirnitureHero />
