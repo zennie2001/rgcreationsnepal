@@ -246,9 +246,8 @@ const page = () => {
                       Get an appointment with our Expert
                     </h2>
                     <p className="pt-2 text-sm">
-                      Cras tincidunt tellus at mi tristique rhoncus. Etiam
-                      dapibus rutrum leo consectetur accumsan. Vivamus viverra
-                      ante turpis.
+                      Ready to bring your dream space to life? Schedule a consultation with our architectural expert today.<br/>
+                        At RG Creations, we blend innovation with tradition to craft spaces that inspire. Let's discuss your vision and turn it into reality—with precision, creativity, and care.
                     </p>
                     <Link
                         href="/book-appointment"
