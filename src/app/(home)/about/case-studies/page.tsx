@@ -204,8 +204,8 @@ export default function page() {
       <div className="text-center">
         <h2 className="text-4xl font-extrabold text-[#333d49] mb-4">Case Study: Harsa Batika</h2>
         <div className="w-24 h-1 bg-gray-700 mx-auto mb-4 rounded-full" />
-        <p className="text-xl font-medium text-gray-600">
-          A Celebration of Elegance in Nature
+        <p className="text-xl font-medium text-gray-600 md:px-60">
+           Premium Event Venue in Lalitpur | Expert Construction, Branding & Modern Architecture by RG Creations Nepal, Leading Architecture Firm in Nepal
         </p>
       </div>
 

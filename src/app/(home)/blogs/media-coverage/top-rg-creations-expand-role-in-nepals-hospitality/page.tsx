@@ -59,7 +59,7 @@ const page = () => {
 
                     <div className="w-full h-64 lg:h-[500px] lg:w-full relative mb-12">
                     <Image
-                        src="/Royal-Empire-Boutique.jpg"        // Your image path (public folder or remote)
+                        src="/Royal-Empire-Boutique_11zon.jpg"        // Your image path (public folder or remote)
                         alt="Nepal driving innovation in hospitality and nightlife architecture" // Alt text for accessibility
                         fill                        // Makes the image fill its parent div
                         style={{ objectFit: 'cover' }} // Optional: crop image to fill div

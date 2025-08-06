@@ -4,7 +4,7 @@ import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 
 
 export const metadata = {
-  title: "RG Creations Nepal Leads Architectural Innovation in Hospitality Design",
+  title: "RG Creations Nepal Leads Architectural Innovation",
   description:
     "With over 15 years of experience, RG Creations Nepal specializes in premium hospitality design, developing iconic nightclubs, hotels, and event.",
 };

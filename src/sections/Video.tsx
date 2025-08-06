@@ -35,7 +35,7 @@ const Video = () => {
         ) : (
           <div className="absolute inset-0 w-full h-full">
             <img
-              src="/GalleryHero.jpg"
+              src="/GalleryHero_11zon.jpg"
               alt="Kathmandu’s top architecture company"
               className="w-full h-full object-cover"
             />

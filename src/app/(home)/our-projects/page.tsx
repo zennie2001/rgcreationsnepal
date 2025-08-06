@@ -6,7 +6,7 @@ import OurProjectHero from "@/sections/OurProjectsHero";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Our Projects | Architecture, Interior & Nightclub Construction in Nepal – RG Creations",
+  title: "Our Projects | Architecture, Interior & Nightclub Construction",
   description:
     "Explore RG Creations Nepal’s featured projects, See how we blend design, innovation, and functionality across Nepal.",
 };

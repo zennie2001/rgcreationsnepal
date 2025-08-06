@@ -39,7 +39,7 @@ title: "RG designs 30 landmark projects in tourism and hospitality",
 description:
 "RG Creations operates with an international sourcing and research hub, Link World Tech, in Shenzhen, China. The firm integrates global design practices with local market insights. ",
 category: "ARCHITECTURE",
-image: "/taaj-palace.jpg",
+image: "/taaj-palace_11zon.jpg",
 date: "22 May 2025",
 path: "/blogs/media-coverage/top-rg-designs-30-landmark-projects",
 mediaName: "The Rising Nepal",
@@ -84,7 +84,7 @@ title: "RG Creations expands role in Nepal’s hospitality and architecture sect
 description:
 "RG Creations Nepal is expanding its influence in architecture and design, focusing on hospitality and nightlife infrastructure. With over 15 years of experience, the company has completed more than 30 projects across Nepal, including venues in Kathmandu, Pokhara, Dharan, and Itahari.",
 category: "ARCHITECTURE",
-image: "/Royal-Empire-Boutique.jpg",
+image: "/Royal-Empire-Boutique_11zon.jpg",
 date: "June 3, 2025",
 path: "/blogs/media-coverage/top-rg-creations-expand-role-in-nepals-hospitality",
 mediaName: "Online Khabar",
@@ -131,7 +131,7 @@ title: "RG Creations Nepal Takes the Lead in Architectural Innovation and Hospit
 description:
 "RG Creations operates with an international sourcing and research hub, Link World Tech, in Shenzhen, China. The firm integrates global design practices with local market insights. ",
 category: "ARCHITECTURE",
-image: "/taaj-palace.jpg",
+image: "/taaj-palace_11zon.jpg",
 date: "22 May 2025",
 path: "/blogs/media-coverage/top-rg-designs-30-landmark-projects",
 mediaName: "Banking Khabar",
