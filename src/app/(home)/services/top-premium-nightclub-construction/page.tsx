@@ -7,13 +7,19 @@ import Script from 'next/script';
 export const metadata = {
   title: "Premium Nightclub Construction | Top Builder Nepal",
   description:
-    "RG Creations Nepal specializes in premium nightclub construction, combining innovative design and expert craftsmanship to create vibrant and luxurious nightlife venues.",
+    "RG Creations Nepal specializes in premium nightclub construction, combining innovative design and expert craftsmanship.",
 };
 
 
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/services/top-premium-nightclub-construction"
+      />
+    </head>
      <Script
       id="nightclub-construction-schema"
       type="application/ld+json"

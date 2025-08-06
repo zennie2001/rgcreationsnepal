@@ -5,7 +5,7 @@ import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 export const metadata = {
   title: "RG Creations Nepal Making Strides in Architecture & Design",
   description:
-    "Discover how RG Creations Nepal is reshaping the hospitality and nightlife scene with innovative architectural designs, combining local expertise and global trends to create unique, tailor-made venues across Kathmandu, Pokhara, and beyond.",
+    "Discover how RG Creations Nepal is reshaping the hospitality and nightlife scene, combining local expertise and global trends and beyond.",
 };
 
 

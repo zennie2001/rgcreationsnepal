@@ -7,12 +7,18 @@ import Script from 'next/script';
 
 export const metadata = {
   title: "Commercial Construction Experts | Nepal’s Top Firm",
-  description: "Discover RG Creations Nepal’s expertise in commercial construction, delivering innovative and high-quality office buildings, retail spaces, and mixed-use developments.",
+  description: "Discover RG Creations Nepal’s expertise in commercial construction, delivering innovative and high-quality office buildings.",
 };
 
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/services/top-commercial-construction"
+      />
+    </head>
      <Script
       id="top-commercial-construction-schema"
       type="application/ld+json"

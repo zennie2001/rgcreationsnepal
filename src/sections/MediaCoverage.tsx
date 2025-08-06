@@ -349,6 +349,11 @@ date: "July 1, 2025"
 mediaLogo: "/medialogo/risingnepal.jpg",
 date: "May 21, 2025"
 },
+ { id: 12, image: "/aarthikNews.jpg" ,
+  mediaName: "Aarthik Dainik",
+mediaLogo: "/medialogo/arthikdainik.png",
+date: "May 21, 2025"
+},
 { id: 1, image: "/news1.jpg" ,
   mediaName: "Aarthiknews",
 mediaLogo: "/medialogo/arthiknews.png",
@@ -359,17 +364,17 @@ date: "June 28, 2025"
 mediaLogo: "/medialogo/republica.svg",
  date: "June 4, 2025"
  },
-{ id: 4, image: "/Karobar NEW_11zon.jpg",
-    mediaName: "Karobar Daily",
-mediaLogo: "/medialogo/karobar.jpg",
- date: "June 6, 2025"
- },
+// { id: 4, image: "/Karobar NEW_11zon.jpg",
+//     mediaName: "Karobar Daily",
+// mediaLogo: "/medialogo/karobar.jpg",
+//  date: "June 6, 2025"
+//  },
 
-{ id: 6, image: "/news66.jpg" ,
-    mediaName: "The Rising Nepal",
-mediaLogo: "/medialogo/risingnepal.jpg",
-date: "May 21, 2025"
-},
+// { id: 6, image: "/news66.jpg" ,
+//     mediaName: "The Rising Nepal",
+// mediaLogo: "/medialogo/risingnepal.jpg",
+// date: "May 21, 2025"
+// },
 { id: 7, image: "/newsAbhiyanDaily.jpg" ,
     mediaName: "Abhiyan",
 mediaLogo: "/medialogo/abhiyan.png",

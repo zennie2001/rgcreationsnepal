@@ -4,7 +4,7 @@ import React from 'react'
 export const metadata = {
   title: "RG Creations Nepal – The Number 1 Architecture Company in Nepal (2025)",
   description:
-    "From iconic hotels to vibrant nightclubs, RG Creations Nepal blends creativity, culture, and cutting-edge design to shape the future of architecture in Nepal. Trusted by top brands for delivering visionary spaces with lasting impact.",
+    "From iconic hotels to vibrant nightclubs, RG Creations Nepal blends creativity, culture, and cutting-edge design of architecture in Nepal.",
 };
 
 

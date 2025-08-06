@@ -6,12 +6,18 @@ import Script from 'next/script';
 
 export const metadata = {
   title: "Project Management & Turnkey Solutions Nepal",
-  description: "Experience seamless project management and turnkey construction solutions with RG Creations, delivering quality architecture and hospitality projects across Nepal.",
+  description: "Experience seamless project management and turnkey construction solutions with RG Creations, delivering quality architecture.",
 };
 
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/services/top-project-management-turnkey-solutions"
+      />
+    </head>
      <Script
       id="top-project-management-schema"
       type="application/ld+json"

@@ -4,13 +4,19 @@ import React from "react";
 export const metadata = {
   title: "Announcements | RG Creations Nepal Blog",
   description:
-    "Stay updated with the latest announcements, news, and insights from RG Creations Nepal Pvt. Ltd., a leading construction and architecture firm in Nepal.",
+    "Stay updated with the latest announcements, news, and insights from RG Creations Nepal Pvt. Ltd., a leading construction firm in Nepal.",
 };
 
 
 export default function page() {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/blogs/announcements"
+      />
+    </head>
      <Script
       id="announcements-schema"
       type="application/ld+json"

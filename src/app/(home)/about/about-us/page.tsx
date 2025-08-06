@@ -11,7 +11,7 @@ import Script from "next/script";
 export const metadata = {
   title: "About Us | Top Architecture Firm Nepal | RG Creations",
   description:
-    "Discover RG Creations, a top architecture firm in Nepal delivering innovative design and expert construction services across residential and commercial projects.",
+    "Discover RG Creations, a top architecture firm in Nepal delivering expert construction services across residential and commercial projects.",
 };
 
 export default function Home() {

@@ -7,12 +7,18 @@ import Script from 'next/script';
 
 export const metadata = {
   title: "We Build & Lease Partner | Banquet Hall Construction Nepal",
-  description: "Partner with RG Creations Nepal to build, lease, or jointly develop palace-style banquet halls with expert project management and turnkey solutions that maximize your land’s value.",
+  description: "Partner with RG Creations Nepal to build, lease, or jointly develop palace-style banquet halls with expert project management.",
 };
 
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/services/we-build-lease-partner"
+      />
+    </head>
      <Script
       id="we-build-lease-partner-schema"
       type="application/ld+json"

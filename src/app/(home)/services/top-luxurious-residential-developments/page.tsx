@@ -13,6 +13,12 @@ export const metadata = {
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/services/top-luxurious-residential-developments"
+      />
+    </head>
      <Script
       id="luxurious-residential-developments-schema"
       type="application/ld+json"

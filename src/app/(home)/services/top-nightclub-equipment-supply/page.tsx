@@ -13,6 +13,12 @@ export const metadata = {
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/services/top-nightclub-equipment-supply"
+      />
+    </head>
      <Script
       id="top-nightclub-equipment-supply-schema"
       type="application/ld+json"

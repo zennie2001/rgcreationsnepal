@@ -3,7 +3,7 @@ import React from 'react'
 
 export const metadata = {
   title: "Luxury Residential & Premium Villa Construction Experts in Nepal",
-  description: "Discover Nepal’s leading luxury home builders specializing in premium villas, smart homes, and sustainable construction. Build your dream residence with top experts.",
+  description: "Discover Nepal’s leading luxury home builders specializing in premium villas, smart homes, and sustainable construction.",
 };
 
 

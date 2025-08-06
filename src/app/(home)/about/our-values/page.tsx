@@ -9,7 +9,7 @@ import Script from "next/script";
 
 export const metadata = {
   title: "Our Values | Leading Construction Company Nepal",
-  description:"Learn about RG Creations’ core values that drive quality, sustainability, and client satisfaction as a leading construction company in Nepal."};
+  description:"Learn about RG Creations’ core values that drive quality, sustainability, and client satisfaction as a leading construction company."};
 
 export default function Home() {
 

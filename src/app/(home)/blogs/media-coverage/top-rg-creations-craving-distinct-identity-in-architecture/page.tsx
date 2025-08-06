@@ -6,7 +6,7 @@ import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 export const metadata = {
   title: "RG Creations Redefining Hospitality Spaces with Visionary Designs",
   description:
-    "Discover how RG Creations is transforming hospitality environments through bold, visionary architecture and design—setting new standards in luxury, experience, and innovation across Nepal.",
+    "Discover how RG Creations is transforming hospitality environments through bold, visionary architecture in luxury, experience, and innovation.",
 };
 
 

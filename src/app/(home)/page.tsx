@@ -56,9 +56,10 @@ export default function Home() {
   return (
     <>
     <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify({
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify([
+      {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "RG Creations Nepal",
@@ -79,7 +80,7 @@ export default function Home() {
           "Premium banquet design company Nepal",
           "Elegant banquet design company Nepal",
           "Famous banquet design company Nepal",
-           "Number 1 architect company in Nepal",
+          "Number 1 architect company in Nepal",
           "Best architects in Nepal",
           "Top architecture firms in Nepal",
           "Top 10 architecture companies in Nepal",
@@ -130,16 +131,103 @@ export default function Home() {
         "foundingLocation": "Kathmandu, Nepal",
         "areaServed": "Nepal",
         "numberOfEmployees": "200+",
-        "slogan":
-          "We don’t just build spaces; we create lasting impressions.",
+        "slogan": "We don’t just build spaces; we create lasting impressions.",
         "memberOf": ["Link World Tech (R&D hub, Shenzhen, China)"],
         "award": [
           "Award‑winning architecture company Nepal",
           "Award‑winning banquet design company Nepal"
         ]
-      })
-    }}
-  />
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What makes your firm one of the best architectural firms in Kathmandu, Nepal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We are recognized as one of Kathmandu's top architecture companies offering award-winning, highly recommended, and trusted architectural services with a focus on modern, sustainable architecture and elegant, premium designs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer specialized design services for bars, pubs, and nightclubs in Nepal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we provide expert bar and pub design services in Nepal, including nightclub design in Kathmandu, combining creative concepts with functional architecture."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can your firm handle luxury and creative resort master planning in Nepal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. We specialize in luxury resort architecture and creative resort master planning, delivering customized architectural solutions tailored for the hospitality sector across Nepal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What services do you provide as a neoclassical architectural firm in Nepal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our neoclassical architectural services focus on timeless elegance, incorporating classical design principles with modern construction techniques to create world-class buildings."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you assist with building permits and construction project management in Kathmandu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we provide comprehensive building permit assistance and full construction project management services to ensure smooth and compliant project execution."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are your architectural services LEED-certified or focused on sustainability?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We are proud to be a LEED-certified architectural firm, delivering sustainable architecture for hotels and commercial projects that combine efficiency with design excellence."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer 3D architectural visualization and interior architecture for hospitality projects?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, our services include detailed 3D architectural visualization and interior architecture tailored specifically for hospitality clients, ensuring immersive and accurate design previews."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What kind of architectural renovation services do you provide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We offer customized architectural renovation services, helping transform existing buildings with fresh, elegant designs that meet modern standards and client expectations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you stand out as Nepal’s leading architecture company and trusted partner?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our combination of premium architectural expertise, award-winning design, sustainable solutions, and dedicated project management makes us a highly recommended and world-class architectural firm in Nepal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you help with premium hanging lights and interior design as part of your architectural project management?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we integrate premium hanging lights and comprehensive interior design solutions within our architectural project management to create cohesive, elegant spaces."
+            }
+          }
+        ]
+      }
+    ])
+  }}
+/>
+
     <main className="overflow-hidden">
   
 

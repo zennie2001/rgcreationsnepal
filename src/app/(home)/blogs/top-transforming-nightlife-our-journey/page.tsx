@@ -11,7 +11,7 @@ import BlogDetail2Hero from "@/sections/BlogDetail2Hero";
 export const metadata = {
   title: "Transforming Nightlife | Nepal Leaders",
   description:
-    "RG Creations Nepal leads in designing and constructing luxury nightclubs and entertainment venues, reshaping Nepal’s nightlife with innovative architecture and exceptional quality.",
+    "RG Creations Nepal leads in designing and constructing luxury nightclubs and entertainment venues, reshaping Nepal’s nightlife.",
 };
 
 

@@ -7,12 +7,18 @@ import React from 'react'
 export const metadata = {
   title: "3D Gallery | Top Architecture Visualization",
   description:
-    "Explore RG Creations Nepal’s 3D gallery showcasing realistic architectural visualizations, immersive designs, and innovative construction concepts across luxury resorts and commercial projects.",
+    "Explore RG Creations Nepal’s 3D gallery showcasing realistic architectural visualizations, immersive designs and commercial projects.",
 };
 
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/gallery/3d-gallery"
+      />
+    </head>
      <Script
       id="3d-gallery-schema"
       type="application/ld+json"

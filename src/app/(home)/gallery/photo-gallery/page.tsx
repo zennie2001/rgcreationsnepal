@@ -7,12 +7,18 @@ import React from 'react'
 export const metadata = {
   title: "Photo Gallery | RG Creations Nepal",
   description:
-    "Browse stunning photos of RG Creations Nepal’s completed projects, including luxury resorts, banquet halls, clubs, and architectural masterpieces across Nepal.",
+    "Browse stunning photos of RG Creations Nepal’s projects, including luxury resorts, banquet halls, clubs, and architectural masterpieces.",
 };
 
 const page = () => {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/gallery/photo-gallery"
+      />
+    </head>
      <Script
       id="photo-gallery-schema"
       type="application/ld+json"

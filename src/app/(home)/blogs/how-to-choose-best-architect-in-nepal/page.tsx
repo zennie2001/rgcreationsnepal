@@ -3,7 +3,7 @@ import React from 'react'
 
 export const metadata = {
   title: "How to Choose the Best Architect in Nepal | RG Creations Nepal",
-  description: "A step-by-step guide to selecting the best architect in Nepal for residential, commercial, and hospitality projects. Tips on credentials, portfolio, budget, and collaboration.",
+  description: "A step-by-step guide to selecting the best architect in Nepal for residential, commercial, and hospitality projects.",
 };
 
 

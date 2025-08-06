@@ -5,7 +5,7 @@ import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 export const metadata = {
   title: "RG Creations Takes Lead In Architectural Design",
   description:
-    "RG Creations Nepal is shaping the future of hospitality and nightlife architecture with 30+ landmark projects across Kathmandu, Pokhara, Dharan, and more combining global design insights with local expertise in architecture in Nepal.",
+    "RG Creations Nepal is shaping the future of hospitality and architecture with 30+ landmark projects across Kathmandu, Pokhara, Dharan.",
 };
 
 const page = () => {

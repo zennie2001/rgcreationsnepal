@@ -8,7 +8,7 @@ import Script from "next/script";
 export const metadata = {
   title: "Blogs | Leading Construction Company Nepal",
   description:
-    "Explore insightful articles and updates from RG Creations Nepal on construction trends, architecture innovations, hospitality design, and project highlights across Nepal.",
+    "Explore insightful articles and updates from RG Creations Nepal on construction trends, architecture innovations and project highlights.",
 };
 
 
@@ -47,6 +47,12 @@ export const metadata = {
 function Blog() {
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/blogs"
+      />
+    </head>
       <Script
       id="blogs-schema"
       type="application/ld+json"

@@ -7,7 +7,7 @@ import React from 'react'
 export const metadata = {
   title: "Media Coverage | Best Construction Company Nepal",
   description:
-    "Explore news articles, press releases, and media features highlighting RG Creations Nepal’s achievements and projects in construction and architecture across Nepal.",
+    "Explore news articles, press releases, and media features of RG Creations Nepal’s achievements and projects in construction and architecture.",
 };
 
 
@@ -19,6 +19,12 @@ const page = () => {
 
   return (
     <>
+    <head>
+      <link
+        rel="canonical"
+        href="https://www.rgcreationsnepal.com/blogs/media-coverage"
+      />
+    </head>
      <Script
       id="media-coverage-schema"
       type="application/ld+json"

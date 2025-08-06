@@ -5,7 +5,7 @@ import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 
 export const metadata = {
   title: "RG Creations Focuses on Premium Hospitality Outlets",
-  description: "RG Creations leverages over 15 years of experience to deliver customized, cost-effective hospitality and nightlife projects across Nepal and abroad, emphasizing innovative design, quality construction, and investor-focused solutions.",
+  description: "RG Creations leverages over 15 years of experience to deliver customized, cost-effective hospitality and nightlife projects in Nepal.",
 };
 
 
