@@ -19,12 +19,14 @@ const page = () => {
       />
     </head>
      <Script
-      id="top-project-management-schema"
-      type="application/ld+json"
-      strategy="afterInteractive"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
+  id="top-project-management-schema"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
           "@type": "Service",
           "url": "https://www.rgcreationsnepal.com/services/top-project-management-turnkey-solutions",
           "name": "Top Project Management & Turnkey Solutions - RG Creations Nepal Pvt. Ltd.",
@@ -72,9 +74,57 @@ const page = () => {
             "Turnkey solutions Nepal",
             "RG Creations project management"
           ]
-        }),
-      }}
-    />
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is included in your turnkey project management service?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our turnkey service covers everything from design and procurement to construction, interior fit-out, and final handover — all managed under one contract."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you handle both residential and commercial turnkey projects?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we manage residential, commercial, hospitality, and institutional projects across Nepal with tailored project execution plans."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you ensure projects are completed on time and within budget?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We apply proven project management methodologies, use detailed planning tools, and maintain constant coordination with all stakeholders to ensure efficiency."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you work with third-party architects or designers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. We collaborate with client-appointed architects, designers, and consultants to integrate their input into our project delivery process."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is your service available outside Kathmandu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we serve clients across Nepal, including Pokhara, Chitwan, Dharan, and other growing urban and suburban areas."
+              }
+            }
+          ]
+        }
+      ]
+    }),
+  }}
+/>
+
     <div className='overflow-hidden'>
         <ServicesProjectHero />
 

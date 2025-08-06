@@ -20,13 +20,15 @@ const page = () => {
         href="https://www.rgcreationsnepal.com/services/top-premium-nightclub-construction"
       />
     </head>
-     <Script
-      id="nightclub-construction-schema"
-      type="application/ld+json"
-      strategy="afterInteractive"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
+    <Script
+  id="nightclub-construction-schema"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
           "@type": "Service",
           "url": "https://www.rgcreationsnepal.com/services/top-premium-nightclub-construction",
           "name": "Top Premium Nightclub Construction - RG Creations Nepal Pvt. Ltd.",
@@ -75,9 +77,57 @@ const page = () => {
             "RG Creations nightclub services",
             "Turnkey nightclub solutions Nepal"
           ]
-        }),
-      }}
-    />
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What services does RG Creations Nepal offer for nightclub construction?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "RG Creations Nepal specializes in top-premium nightclub construction, offering complete architectural design, interior styling, lighting, sound system setup, and structural development to create immersive nightlife experiences."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why choose RG Creations Nepal for your nightclub project?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We are trusted for delivering high-end, award-winning nightclub designs that blend functionality with aesthetics. Our team ensures every element—from ambiance to acoustics—is crafted for a premium experience."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you provide custom design solutions for nightclub interiors?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, RG Creations Nepal provides fully customized design solutions tailored to your brand, audience, and venue size. We create unique themes, lighting schemes, and layouts to match your vision."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does it take to complete a nightclub construction project?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The timeline varies based on project complexity, location, and client requirements. Typically, a premium nightclub construction project may take several weeks to a few months from planning to handover."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can RG Creations handle permits and legal compliance for nightclub construction?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. We assist clients with all necessary building permits, safety regulations, and local compliance to ensure a smooth and legal construction process."
+              }
+            }
+          ]
+        }
+      ]
+    }),
+  }}
+/>
+
     <main className='overflow-hidden'>
 
         <ServicesNightclubHero />

@@ -20,12 +20,14 @@ const page = () => {
       />
     </head>
      <Script
-      id="we-build-lease-partner-schema"
-      type="application/ld+json"
-      strategy="afterInteractive"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
+  id="we-build-lease-partner-schema"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
           "@type": "Service",
           "url": "https://www.rgcreationsnepal.com/services/we-build-lease-partner",
           "name": "We Build & Lease Partner - RG Creations Nepal Pvt. Ltd.",
@@ -73,9 +75,57 @@ const page = () => {
             "Property development Nepal",
             "RG Creations lease partner"
           ]
-        }),
-      }}
-    />
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is a build and lease partnership?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A build and lease partnership is a service where we develop a property based on client requirements and lease it back to them or a third party under flexible leasing terms."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who can benefit from your build and lease service?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Businesses, franchises, retail chains, hospitality groups, and investors looking for strategic real estate development with minimal risk can benefit from our service."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you provide land or build on client-provided land?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We are flexible. We can either build on our own land or partner with clients who already have a site available for development."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What types of properties do you develop under this model?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We specialize in commercial buildings, hotels, showrooms, and large retail outlets, but are open to custom requirements."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is long-term maintenance included in the lease agreement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depending on the agreement, we can include maintenance, facility management, and other operational support services during the lease term."
+              }
+            }
+          ]
+        }
+      ]
+    }),
+  }}
+/>
+
     <div className='overflow-hidden'>
         <ServicesBuildHero />
 
