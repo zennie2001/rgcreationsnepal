@@ -7,7 +7,7 @@ export default function GalleryHero() {
     <section className="relative h-[500px] w-full text-white">
       {/* Background Image */}
       <Image
-        src="/GalleryHero.jpg" // Replace with your actual image path
+        src="/GalleryHero_11zon.jpg" // Replace with your actual image path
         alt="Architecture Photo Gallery"
         fill
         className="object-cover z-0"

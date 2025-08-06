@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { projects } from "@/constants/completedData";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
@@ -31,6 +32,44 @@ export async function generateStaticParams() {
   return projects.map((project) => ({
     slug: project.slug,
   }));
+}
+
+
+const keywordLinks = [
+  {
+    keyword: "modern architecture",
+    url: "/services/top-architectural-interior-design",
+  },
+  {
+    keyword: "most luxurious banquet",
+    url: "/elegant-banquet-hall-construction",
+  },
+];
+
+function renderWithLinks(text: string) {
+  const elements: (string | JSX.Element)[] = [text];
+
+  keywordLinks.forEach(({ keyword, url }) => {
+    for (let i = 0; i < elements.length; i++) {
+      const el = elements[i];
+
+      if (typeof el === "string" && el.includes(keyword)) {
+        const split = el.split(keyword);
+        // Replace the string with parts: before, link, after
+        elements.splice(
+          i,
+          1,
+          split[0],
+          <Link key={`${keyword}-${i}`} href={url} className="text-blue-600 underline hover:text-blue-800">
+            {keyword}
+          </Link>,
+          split[1]
+        );
+      }
+    }
+  });
+
+  return elements;
 }
 
 export default async function Page({ params }: Props) {
@@ -67,7 +106,7 @@ export default async function Page({ params }: Props) {
               </p>
             </div>
 
-            <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider leading-loose max-w-3xl">
+            <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider leading-loose max-w-3xl ">
               {project.title}
             </h1>
           </div>
@@ -100,8 +139,8 @@ export default async function Page({ params }: Props) {
             <h2 className="font-semibold text-lg md:text-xl mb-2">
               {project.name}
             </h2>
-            <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-              {project.description1}
+            <p className="text-gray-700 text-sm md:text-base leading-relaxed whitespace-pre-line">
+              {renderWithLinks(project.description1)}
             </p>
           </div>
 
@@ -109,9 +148,14 @@ export default async function Page({ params }: Props) {
             <h2 className="font-semibold text-base md:text-lg mb-2">
               More About Project
             </h2>
-            <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+            <p className="text-gray-700 text-sm md:text-base leading-relaxed whitespace-pre-line">
               {project.description2}
             </p>
+            <ul className="list-disc list-inside space-y-1 text-gray-700">
+            {project.bulletPoints?.map((point, idx) => (
+              <li key={idx}>{point}</li>
+            ))}
+          </ul>
           </div>
 
            <div>

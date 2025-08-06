@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 
 export const metadata = {
-  title: "RG Creations Nepal Expands Portfolio in Hospitality & Architectural Design",
+  title: "RG Creations Nepal Expands Portfolio in Hospitality",
   description:
     "RG Creations Nepal is expanding its diverse portfolio with groundbreaking hospitality and architectural projects to shape future-ready spaces.",
 };

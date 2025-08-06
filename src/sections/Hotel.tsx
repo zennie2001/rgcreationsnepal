@@ -58,7 +58,7 @@ const Hotel = () => {
             </div>
             <div className="order-1 overflow-hidden lg:order-2">
               <img
-               src="/about/3.jpg"
+               src="/3_11zon.jpg"
                 alt="Modern Interior Design"
                 className="w-full h-96 hover:scale-110 duration-300 transition-all object-cover rounded-sm shadow-lg"
               />

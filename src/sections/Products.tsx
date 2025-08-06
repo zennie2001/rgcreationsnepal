@@ -30,7 +30,7 @@ const LatestProjects = () => {
     {
       id: 3,
       category: "Ongoing Projects",
-      image: "/about/poland.png",
+      image: "/poland_11zon.png",
       video: "https://www.youtube.com/embed/crejH20zYz8",
       title: "Modern Villa in Poland",
       alt:"Elegant architecture company ",
