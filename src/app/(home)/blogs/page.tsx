@@ -53,13 +53,15 @@ function Blog() {
         href="https://www.rgcreationsnepal.com/blogs"
       />
     </head>
-      <Script
-      id="blogs-schema"
-      type="application/ld+json"
-      strategy="afterInteractive"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
+     <Script
+  id="blogs-schema"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
           "@type": "Blog",
           "url": "https://www.rgcreationsnepal.com/blogs",
           "name": "Blogs - RG Creations Nepal Pvt. Ltd.",
@@ -73,9 +75,57 @@ function Blog() {
               "url": "https://www.rgcreationsnepal.com/logo.png"
             }
           }
-        }),
-      }}
-    />
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What topics are covered in the RG Creations Nepal blog?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The blog covers architecture, construction, interior design, sustainability, project updates, and industry news relevant to Nepal."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How often is new content published on the blog?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "New blog posts are published regularly, depending on project progress, industry trends, and company updates."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can readers subscribe to receive blog updates?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, readers can subscribe to our newsletter or follow us on social media for timely updates on new blog posts."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who writes the blog content?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our expert team of architects, designers, project managers, and industry professionals contribute to the blog."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I suggest topics or ask questions related to the blog?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we welcome suggestions and questions through our contact page or social media channels."
+              }
+            }
+          ]
+        }
+      ]
+    }),
+  }}
+/>
+
     <main className="overflow-hidden mb-16">
       <BlogHero />
 
@@ -148,6 +198,50 @@ function Blog() {
             </div>
           </article>
 
+           <article  className="group cursor-pointer h-full lg:h-[500px]">
+            <div className="relative rounded-sm h-full">
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/50 overflow-hidden z-10 rounded-sm"></div>
+
+              {/* Image */}
+              <img
+                src='/rambagh3 (1).jpg'
+                alt='The Leading Architecture and Construction Company'
+                className="
+                  w-[276.6946105957031px] h-[439px]
+                  sm:w-[276.6946105957031px] sm:h-[439px]
+                  md:w-full md:h-full
+                  mx-auto
+                  object-cover group-hover:scale-105 transition-transform duration-500 rounded-sm
+                "
+              />
+
+              {/* Overlay Content */}
+              
+              <div className="absolute top-1/2  left-16 transform -translate-y-1/2 text-white rounded-sm max-w-md z-20">
+               
+                <div className="lg:border-[16px] border-[#133950] py-6 lg:pl-6  lg:pr-6 pr-1 ">
+                  <Link href={'/blogs/top-architect-company-nepal'}>
+                  <h3 className="text-2xl font-bold  leading-tight mb-4">
+                   Shaping Nepal’s Skyline: Discover the Best Architecture Firm in Nepal
+
+                  </h3>
+                  </Link>
+                  <p className="text-sm hidden lg:block pb-4  opacity-90 leading-relaxed mb-4">
+                      From the bustling urban vibe of Kathmandu to the serene charm of Pokhara and the rich heritage of Bhaktapur and Lalitpur, Nepal is home to top architect companies that are redefining the built environment. Among them, Rg Creations Nepal stands out as a leading architectural firm in Nepal, known for its innovation, sustainability, and client-centric approach. 
+
+                  </p>
+                  <Link href={'/blogs/top-architect-company-nepal'}>
+                  <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
+                    READ MORE
+                  </button>
+                  </Link>
+                </div>
+              </div>
+             
+            </div>
+          </article>
+
          <article  className="group cursor-pointer h-full lg:h-[500px]">
             <div className="relative rounded-sm h-full">
               {/* Overlay */}
@@ -189,6 +283,8 @@ function Blog() {
              
             </div>
           </article>
+
+          
         
        
         
