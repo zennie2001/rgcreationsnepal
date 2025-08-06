@@ -18,12 +18,14 @@ export default function page() {
       />
     </head>
      <Script
-      id="announcements-schema"
-      type="application/ld+json"
-      strategy="afterInteractive"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
+  id="announcements-schema"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
           "@type": "Blog",
           "url": "https://www.rgcreationsnepal.com/blogs/announcements",
           "name": "Announcements - RG Creations Nepal Pvt. Ltd.",
@@ -37,9 +39,57 @@ export default function page() {
               "url": "https://www.rgcreationsnepal.com/logo.png"
             }
           }
-        }),
-      }}
-    />
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What kind of announcements does RG Creations Nepal publish?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We share updates related to our ongoing and upcoming projects, partnerships, events, and key company milestones."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How often are new announcements posted?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "New announcements are typically posted every few weeks, depending on ongoing activities and project developments."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I get notified about new announcements?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, you can subscribe to our newsletter or follow us on social media platforms to receive updates when new announcements are published."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are these announcements related only to construction?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No, we also share updates about interior design, furniture innovations, corporate news, and client partnerships."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where else can I find RG Creations Nepal updates?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Besides our blog, you can follow us on Facebook, Instagram, and LinkedIn for real-time updates and insights."
+              }
+            }
+          ]
+        }
+      ]
+    }),
+  }}
+/>
+
     <div className="min-h-screen flex flex-col">
       {/* Top 80px gray section */}
       <div className="h-[120px] bg-gray-400 w-full" />
