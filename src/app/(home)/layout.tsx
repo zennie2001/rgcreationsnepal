@@ -36,11 +36,13 @@ export default function RootLayout({
     <html lang="en">
         
       
-      <body className={twMerge(jakarta.variable, "antialiased font-sans")}>
+      <body className={twMerge(jakarta.variable, "antialiased font-sans overflow-y-scroll min-h-screen scrollbar-visible ")}>
+        
         <Header />
         {children}
         <ToastProvider />
         <Footer />
+        
       </body>
     </html>
   );

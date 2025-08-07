@@ -25,7 +25,7 @@ export default function Gallery3DHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-3xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h1 className="text-2xl md:text-3xl font-bold mb-4 tracking-wider  max-w-3xl">
           Immersive Ideas, Intelligent Design – Explore Our 3D Concepts
         </h1>
 {/* 

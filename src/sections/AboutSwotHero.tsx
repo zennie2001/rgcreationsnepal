@@ -25,7 +25,7 @@ export default function AboutSwotHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h1 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
           Comprehensive SWOT Analysis for Strategic Planning — Identifying Strengths, Weaknesses, Opportunities, and Threats to Drive Informed Decisions in Architecture
            
         </h1>

@@ -25,7 +25,7 @@ export default function ContactHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h1 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
           Redefining Modern Living with Exclusive, Elegant Homes, Sustainable Communities, and Premium Architectural Solutions by Nepal’s Leading Architecture Company<br className="hidden md:block" />  
          
         </h1>

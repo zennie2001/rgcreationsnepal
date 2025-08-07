@@ -25,7 +25,7 @@ export default function AboutOrgHero() {
           </p>
         </div> */}
 
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h1 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
          Organization Hierarchy <br className="hidden md:block" /> 
             Structure
         </h1>

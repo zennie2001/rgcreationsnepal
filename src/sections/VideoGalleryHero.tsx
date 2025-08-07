@@ -25,7 +25,7 @@ export default function VideoGalleryHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-3xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h1 className="text-2xl md:text-3xl font-bold mb-4 tracking-wider  max-w-3xl">
           From Concept to Reality – Witness the Journey of Our Masterpieces
         </h1>
 

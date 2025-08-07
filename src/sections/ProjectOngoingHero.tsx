@@ -25,7 +25,7 @@ export default function ProjectOnGoingHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h1 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
           Every great design begins with a bold idea — take a closer look at the architectural journeys we’re building right now
         </h1>
 
