@@ -31,7 +31,7 @@ export default function Header() {
     { title: "What Sets Us Apart", href: "/about/what-sets-us-apart" },
     { title: "How We Help Our Clients", href: "/about/how-we-help-our-clients" },
     { title: "Health and Safety", href: "/about/health-safety" },
-    { title: "Organizational Chart", href: "https://drive.google.com/file/d/1x4dbiNt6LJQjVSZjd0dCGqEvX6BEmkvC/view"},
+    { title: "Organizational Chart", href: "/about/organizational-chart"},
     { title: "Message from Chairman", href: "/about/message-from-chairman" },
     { title: "Awards and Recognition", href: "/about/award-recognition" },
     { title: "Case Studies", href: "/about/case-studies" },
