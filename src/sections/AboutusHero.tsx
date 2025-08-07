@@ -25,7 +25,7 @@ export default function AboutusHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h1 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
           Turning Innovative Ideas into Iconic Architectural Structures – Driven by Cutting-Edge Design Principles and Defined by Excellence in Nepal’s Construction Industry
         </h1>
 

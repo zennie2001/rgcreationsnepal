@@ -25,7 +25,7 @@ export default function AboutChairmanHero() {
           </p>
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
+        <h1 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
            Visionary Leadership Driving Transformative Architectural Design, Sustainable Development, and Inspiring Lasting Impact Across Nepal’s Built Environment
         </h1>
 
