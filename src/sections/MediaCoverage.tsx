@@ -339,17 +339,17 @@ paper: [
 mediaLogo: "/medialogo/annapurna.png",
 date: "June 19, 2025"
 },
-  { id: 10, image: "/new1st.jpg" ,
+  { id: 10, image: "/newHimalayan_11zon.jpg" ,
   mediaName: "The Himalayan Times",
 mediaLogo: "/medialogo/himalayan.jpg",
 date: "July 1, 2025"
 },
-  { id: 10, image: "/risingNews_11zon.jpg" ,
+  { id: 10, image: "/newRising_11zon.jpg" ,
   mediaName: "The Rising Nepal",
 mediaLogo: "/medialogo/risingnepal.jpg",
 date: "May 21, 2025"
 },
- { id: 12, image: "/aarthikNews.jpg" ,
+ { id: 12, image: "/newArthik_11zon.jpg" ,
   mediaName: "Aarthik Dainik",
 mediaLogo: "/medialogo/arthikdainik.png",
 date: "May 21, 2025"
