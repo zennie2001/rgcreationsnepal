@@ -10,7 +10,7 @@ type GalleryImage = {
 };
 
 const FurnitureImage: React.FC = () => {
-  const images: GalleryImage[] = Array.from({ length: 18 }, (_, i) => ({
+  const images: GalleryImage[] = Array.from({ length: 17 }, (_, i) => ({
     id: i + 1,
     src: `/furniture/${i + 25}.jpg`,
     alt: `Furniture image ${i + 1}`,

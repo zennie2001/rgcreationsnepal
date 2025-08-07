@@ -3,13 +3,27 @@
 import { Menu as HeadlessMenu } from "@headlessui/react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useEffect } from "react";
+
 import { usePathname } from "next/navigation";
 
 export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
 
   const isHome = pathname === "/" ;
+
+  useEffect(() => {
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 10); // adjust threshold if needed
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
 
   const aboutUsItems = [
     { title: "About Us", href: "/about/about-us" },
@@ -60,13 +74,11 @@ export default function Header() {
   ];
 
   return (
-    <header
-      className={`w-full z-50 ${
-        isHome
-          ? "bg-white relative shadow-md "
-          : "absolute top-0 left-0 backdrop-blur-sm bg-transparent text-white"
-      }`}
-    >
+  <header
+  className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
+    scrolled ? "bg-white text-gray-800 shadow-md" : isHome ? "bg-white text-gray-800" : "bg-transparent text-white"
+  }`}
+>
       <div className="container mx-auto  px-4 flex justify-between items-center ">
         {/* Logo */}
         <a href="/" className="font-bold text-xl">
@@ -79,7 +91,7 @@ export default function Header() {
         {/* Desktop Menu */}
         <nav
           className={`hidden lg:flex space-x-5 items-center ${
-            isHome ? "text-gray-800" : "text-white"
+            isHome ? "text-gray-800" : ""
           }`}
         >
           <a href="/" className="hover:text-green-500 font-medium">

@@ -14,7 +14,7 @@ const page = () => {
       <section className="relative h-screen w-full text-white">
         {/* Background Image */}
         <Image
-          src="/GalleryHero.jpg"
+          src="/GalleryHero_11zon.jpg"
           alt="RG Creations Nepal Pvt Ltd – The Leading Architecture and Construction Company in Nepal"
           fill
           className="object-cover z-0"

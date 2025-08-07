@@ -80,7 +80,7 @@ export const projects = [
         video: "https://www.youtube.com/embed/KL6GjVHCRS0",
         description1: "Déjà Vu Lounge, located in Durbar Marg, Kathmandu, offers a vibrant nightlife experience with a dance club atmosphere and gourmet dining. As an upscale venue, it caters to locals and tourists seeking memorable evenings. With a focus on entertainment and special events, Déjà Vu Lounge promotes active engagement on social media, showcasing its inviting ambiance and upcoming nightlife happenings.",
         description2: "One of the trendiest entertainment destinations, Deja Vu offers an immersive nightlife experience. Designed with dynamic lighting, sound acoustics, and premium lounge areas, it caters to a modern and energetic clientele. ",
-        location: "Bhanimandal, Lalitpur",
+        location: "Durbar Marg, Kathmandu",
         contact: "+977-01-4440744",
         category:"Nighclun & Lounge",
         projectDemand: "Interior & Exterior Construction",
@@ -101,6 +101,7 @@ export const projects = [
         video: "https://www.youtube.com/embed/8-x2IvYZ9Og",
         description1: "The Majestic Grand is a beautifully designed banquet hall ideal for special occasions. It features elegant decor and a charming ambiance, enhancing the overall experience for guests. With convenient access to nearby attractions, the venue offers comprehensive event planning assistance, catering, and transportation arrangements, ensuring that each celebration is memorable and fits within budget.",
         description2: "The Majestic Grand Gallery provides unforgettable memories are captured in the most elegant setting. As the best events venue in Lalitpur, we take immense pride in hosting some of the most stunning weddings, grand receptions, corporate functions, and social celebrations in Nepal.",
+        location:"Ekantakuna -13 Lalitpur",
         contact: "+977-9802357236",
         category:"Luxurious and top banquet and wedding venue",
         projectDemand: "Interior & Exterior Construction",
@@ -134,7 +135,7 @@ export const projects = [
             "/boudha-3_11zon.jpg",
            "/boudha-4_11zon.jpg",
            "/boudha-5_11zon.jpg",
-           "/majestic-6_11zon.jpg",
+           
              
         ]
     },
