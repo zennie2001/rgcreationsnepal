@@ -7,7 +7,7 @@ export default function AboutOrgHero() {
     <section className="relative h-screen w-full text-white">
       {/* Background Image */}
       <Image
-        src="/about/main.jpg" // Replace with your actual image path
+        src="/3_11zon.jpg" // Replace with your actual image path
         alt="Corporate Hierarchy Structure"
         fill
         className="object-cover z-0"
@@ -19,11 +19,11 @@ export default function AboutOrgHero() {
 
       {/* Content */}
       <div className="relative z-20 flex flex-col justify-center  items-center text-center h-full px-6">
-        {/* <div className=" text-center border-b-2 w-[500px] mb-8">
+        <div className=" text-center border-b-2 w-[500px] mb-8">
           <p className="uppercase tracking-wider text-base font-medium mb-4" >
-            Who We Are
+           Organizational Chart
           </p>
-        </div> */}
+        </div>
 
         <h1 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
          Organization Hierarchy <br className="hidden md:block" /> 
