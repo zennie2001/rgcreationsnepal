@@ -36,7 +36,7 @@ export default function RootLayout({
     <html lang="en">
         
       
-      <body className={twMerge(jakarta.variable, "antialiased font-sans overflow-y-scroll min-h-screen scrollbar-visible ")}>
+      <body className={twMerge(jakarta.variable, "antialiased font-sans overflow-y-scroll  scrollbar-visible ")}>
         
         <Header />
         {children}

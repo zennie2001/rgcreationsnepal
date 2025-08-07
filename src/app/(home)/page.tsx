@@ -228,7 +228,7 @@ export default function Home() {
   }}
 />
 
-    <main className="overflow-hidden">
+    <main className="">
   
 
       
