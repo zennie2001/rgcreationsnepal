@@ -375,7 +375,7 @@ mediaLogo: "/medialogo/republica.svg",
 // mediaLogo: "/medialogo/risingnepal.jpg",
 // date: "May 21, 2025"
 // },
-{ id: 7, image: "/newsAbhiyanDaily.jpg" ,
+{ id: 7, image: "/NewsAbhiyanDaily.jpg" ,
     mediaName: "Abhiyan",
 mediaLogo: "/medialogo/abhiyan.png",
 date: "May 23, 2025"

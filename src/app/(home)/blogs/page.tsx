@@ -249,7 +249,7 @@ function Blog() {
 
               {/* Image */}
               <img
-                src='/service-hero.jpg'
+                src='/service-hero_11zon.jpg'
                 alt='The Leading Architecture and Construction Company'
                 className="
                   w-[276.6946105957031px] h-[439px]
@@ -339,7 +339,7 @@ function Blog() {
 
               {/* Image */}
               <img
-                src='/about/news3.jpg'
+                src='/about/nightclub.jpg'
                 alt='Transforming Nightlife: The World’s Top 40 Nightclubs'
                 className="
                   w-[276.6946105957031px] h-[439px]
@@ -516,7 +516,7 @@ function Blog() {
 
               {/* Image */}
               <img
-                src='/GalleryHero.jpg'
+                src='/GalleryHero_11zon.jpg'
                 alt='Nepal’s Best Premium Construction Company'
                 className="
                   w-[276.6946105957031px] h-[439px]
@@ -601,7 +601,7 @@ function Blog() {
 
               {/* Image */}
               <img
-                src='/royal.jpg'
+                src='/7_11zon.jpg'
                 alt='Nepal’s Best Premium Construction Company'
                 className="
                   w-[276.6946105957031px] h-[439px]

@@ -7,7 +7,7 @@ export default function BlogDetail2Hero() {
     <section className="relative h-screen w-full text-white">
       {/* Background Image */}
       <Image
-        src="/about/news3.jpg" // Replace with your actual image path
+        src="/about/nightclub.jpg" // Replace with your actual image path
         alt="RG Creations Nepal: Transforming Nightlife with the Design of One of the World’s Top 40 Nightclubs"
         fill
         className="object-cover z-0"
