@@ -261,15 +261,15 @@ export default function OrganizationalChart() {
   ];
 
   return (
-    <div className="min-h-screen bg-background p-2 sm:p-4 md:p-6 lg:p-8">
+    <div className="min-h-screen bg-white p-2 sm:p-4 md:p-6 lg:p-8">
       <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-24 xl:mx-[120px] space-y-6 sm:space-y-8">
         {/* Header */}
         <div className="text-center space-y-3 sm:space-y-4">
           <div className="flex items-center justify-center gap-2 sm:gap-3">
-            <Building2 className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
-            <h1 className="text-2xl sm:text-2xl lg:text-3xl font-medium">
+            <Building2 className="h-6 w-6 sm:h-8 sm:w-8 text-background" />
+            <h2 className="md:text-4xl text-2xl  font-bold text-background">
               RG Creations Nepal
-            </h1>
+            </h2>
           </div>
           <p className="text-muted-foreground text-base sm:text-base">
             Organizational Structure
@@ -281,9 +281,9 @@ export default function OrganizationalChart() {
           <CardHeader className="text-center pb-3 sm:pb-4">
             <div className="flex items-center justify-center gap-2 sm:gap-3">
               <div className="p-1.5 sm:p-2 rounded-lg bg-primary">
-                <Users className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
+                <Users className="h-4 w-4 sm:h-5 sm:w-5 text-gray-800" />
               </div>
-              <CardTitle className="text-lg sm:text-xl font-medium">
+              <CardTitle className="md:text-2xl text-xl font-medium">
                 Leadership & Strategy
               </CardTitle>
             </div>
@@ -294,9 +294,9 @@ export default function OrganizationalChart() {
               <div className="flex justify-center">
                 <Badge
                   variant="default"
-                  className="p-2 text-xs sm:text-xs justify-center bg-primary text-primary-foreground font-medium h-[60px] sm:h-[70px] w-full max-w-xs flex items-center"
+                  className="p-2 md:text-lg text-md  justify-center bg-[#133950] text-white  font-medium h-[60px] sm:h-[70px] w-full max-w-xs flex items-center"
                 >
-                  <span className="text-center leading-tight whitespace-normal break-words">
+                  <span className="text-center leading-relaxed whitespace-normal break-words">
                     {leadership[0].name}
                   </span>
                 </Badge>
@@ -308,7 +308,7 @@ export default function OrganizationalChart() {
                   <Badge
                     key={index + 1}
                     variant="default"
-                    className="p-2 text-xs sm:text-xs justify-center bg-primary text-primary-foreground font-medium h-[60px] sm:h-[70px] w-full flex items-center"
+                    className="p-2 md:text-lg text-md justify-center bg-[#133950] text-white font-medium h-[60px] sm:h-[70px] w-full flex items-center"
                   >
                     <span className="text-center leading-tight whitespace-normal break-words">
                       {leader.name}
