@@ -39,7 +39,7 @@ const DepartmentCard = ({
         >
           <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-white" />
         </div>
-        <CardTitle className="text-sm sm:text-sm leading-tight text-primary">
+        <CardTitle className="md:text-lg text-sm  text-primary">
           {title}
         </CardTitle>
       </div>
@@ -48,7 +48,7 @@ const DepartmentCard = ({
       <div className="space-y-4 sm:space-y-6">
         {roles.map((role, index) => (
           <div key={index} className="space-y-2 sm:space-y-3">
-            <h4 className="font-medium text-xs sm:text-xs text-muted-foreground uppercase tracking-wide">
+            <h4 className="font-medium md:text-lg text-xs text-muted-foreground uppercase tracking-wide">
               {role.title}
             </h4>
             {role.team && (
@@ -59,7 +59,7 @@ const DepartmentCard = ({
                     variant="secondary"
                     className="justify-center p-1.5 sm:p-2 text-xs h-[70px] sm:h-[80px] w-full flex items-center"
                   >
-                    <span className="text-center text-[11px] sm:text-[11px] leading-tight whitespace-normal break-words px-1">
+                    <span className="text-center md:text-[13px] text-[11px] leading-tight whitespace-normal break-words px-1">
                       {member.name}
                     </span>
                   </Badge>

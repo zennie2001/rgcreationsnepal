@@ -7,7 +7,7 @@ export default function AboutOrgHero() {
     <section className="relative h-screen w-full text-white">
       {/* Background Image */}
       <Image
-        src="/3_11zon.jpg" // Replace with your actual image path
+        src="/about/value.jpg" // Replace with your actual image path
         alt="Corporate Hierarchy Structure"
         fill
         className="object-cover z-0"

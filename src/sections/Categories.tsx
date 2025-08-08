@@ -17,7 +17,7 @@ const WelcomeSection = () => {
                 <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-[#333d49] leading-tight">
                   Top-Rated <span className="text-[#333d49]">Architecture</span>
                   <br />
-                  Firm in Nepal– Your 
+                  Company in Nepal– Your 
                   <br />
                   Vision, Our Design
                 </h2>
