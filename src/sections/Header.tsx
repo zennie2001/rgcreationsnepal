@@ -90,7 +90,7 @@ export default function Header() {
 
         {/* Desktop Menu */}
         <nav
-          className={`hidden lg:flex space-x-5 items-center ${
+          className={`hidden lg:flex space-x-3 xl:space-x-5 items-center ${
             isHome ? "text-gray-800" : ""
           }`}
         >
@@ -252,7 +252,7 @@ export default function Header() {
 
 
           
-          <a href="/book-appointment" className="hover:bg-[#333d49] text-white bg-[#133950] p-2  font-medium">
+          <a href="/book-appointment" className="hover:bg-[#333d49] hidden xl:inline-block  text-white bg-[#133950] p-2  font-medium">
             BOOK A CONSULTATION
           </a>
 

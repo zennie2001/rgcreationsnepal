@@ -9,7 +9,7 @@ const WelcomeSection = () => {
         <div className="container px-4 md:px-0">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-center">
             {/* Left Content */}
-            <div className="space-y-8 z-10 relative">
+            <div className="space-y-8 z-10 relative px-4">
               <div className="space-y-4">
                 <p className="text-sm text-gray-600 uppercase tracking-widest font-medium">
                   Welcome to RG Creations Nepal
