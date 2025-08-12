@@ -12,6 +12,7 @@ import FAQ from "@/app/(home)/faqs/page";
 import BlogDesign from "@/sections/Blog";
 import Video from "@/sections/Video";
 import SEOContent from "@/components/SEOContent";
+import Head from "next/head";
 
 
 export const metadata = {
@@ -55,6 +56,8 @@ export const metadata = {
 export default function Home() {
   return (
     <>
+    <Head>
+     <link rel="canonical" href="https://www.rgcreationsnepal.com/" />
     <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
@@ -227,6 +230,7 @@ export default function Home() {
     ])
   }}
 />
+</Head>
 
     <main className="">
   
