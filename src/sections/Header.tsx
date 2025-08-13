@@ -94,14 +94,14 @@ export default function Header() {
             isHome ? "text-gray-800" : ""
           }`}
         >
-          <a href="/" className="hover:text-green-500 font-medium">
+          <a href="/" className="hover:text-green-500 font-medium text-base max-[1366px]:text-sm">
             HOME
           </a>
 
           {/* About Us Dropdown */}
           <div className="relative group">
             <HeadlessMenu>
-              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium">
+              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium text-base max-[1366px]:text-sm">
                 ABOUT US
                 <ChevronDown size={16} />
               </HeadlessMenu.Button>
@@ -125,7 +125,7 @@ export default function Header() {
           <nav className="relative z-[9999]">
           <div className="relative group">
             <HeadlessMenu>
-              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium">
+              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium text-base max-[1366px]:text-sm">
                 SERVICES
                 <ChevronDown size={16} />
               </HeadlessMenu.Button>
@@ -148,7 +148,7 @@ export default function Header() {
            <nav className="relative z-[9999]">
           <div className="relative group">
             <HeadlessMenu>
-              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium ">
+              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium text-base max-[1366px]:text-sm">
                 PROJECTS
                 <ChevronDown size={16} />
               </HeadlessMenu.Button>
@@ -177,7 +177,7 @@ export default function Header() {
 
           <div className="relative group">
             <HeadlessMenu>
-              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium">
+              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium text-base max-[1366px]:text-sm">
                 NEWS & UPDATES
                 <ChevronDown size={16} />
               </HeadlessMenu.Button>
@@ -200,7 +200,7 @@ export default function Header() {
           {/* Gallery Dropdown */}
           <div className="relative group">
           <HeadlessMenu>
-              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium">
+              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium text-base max-[1366px]:text-sm">
                 GALLERY
                 <ChevronDown size={16} />
               </HeadlessMenu.Button>
@@ -222,7 +222,7 @@ export default function Header() {
 
             <div className="relative group">
             <HeadlessMenu>
-              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium">
+              <HeadlessMenu.Button className="flex items-center gap-1 hover:text-green-500 font-medium text-base max-[1366px]:text-sm">
                 CAREER
                 <ChevronDown size={16} />
               </HeadlessMenu.Button>
@@ -243,7 +243,7 @@ export default function Header() {
           </div>
 
 
-          <a href="/contact" className="hover:text-green-500 font-medium">
+          <a href="/contact" className="hover:text-green-500 font-medium text-base max-[1366px]:text-sm">
             CONTACT 
           </a>
 
