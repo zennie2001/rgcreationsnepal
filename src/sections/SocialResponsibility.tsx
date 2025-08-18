@@ -9,7 +9,7 @@ function SocialResponsibilites() {
       id: 1,
       image: "/Award1_11zon.jpg",
       category: "News",
-      title: "Blood Donation Program at Taaj Reception",
+      title: "Blood donation program by RG Creations Nepal on 16th August 2025",
       description:
         "At RG Creations Nepal, we believe our responsibility goes beyond designing spaces—we strive to make a meaningful difference in people’s lives and the community we are part of. The initiative was made successful through the dedicated medical expertise of the Himal Blood Transfusion Center.",
       
@@ -81,7 +81,7 @@ function SocialResponsibilites() {
                   </p>
                   </Link>
                   <Link href={item.link}>
-                  <button className="text-xs font-medium mt-8 tracking-widest hover:underline">
+                  <button className="text-xs font-medium tracking-widest hover:underline">
                     READ MORE
                   </button>
                   </Link>
