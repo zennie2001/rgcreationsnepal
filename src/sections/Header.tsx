@@ -37,6 +37,7 @@ export default function Header() {
     { title: "Case Studies", href: "/about/case-studies" },
     { title: "Research and Technology", href: "/about/research-technology" },
     { title: "SWOT Analysis", href: "/about/swot-analysis" },
+     {title: "Corporate Social Responsibility(CSR)", href: "/about/corporate-social-responsibility" },
   ];
   const servicesItems = [
     { title: "Premium Nightclub Construction", href: "/services/top-premium-nightclub-construction" },
