@@ -4,9 +4,9 @@ import Image from 'next/image';
 import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 
 export const metadata = {
-  title: "RG Creations Nepal Expands Portfolio in Hospitality",
+  title: "RG Creations Nepal CSR Initiative: Blood Donation & Community Impact",
   description:
-    "RG Creations Nepal is expanding its diverse portfolio with groundbreaking hospitality and architectural projects to shape future-ready spaces.",
+    "Discover how RG Creations impactful Blood Donation Program at Taaj Reception, and their ongoing commitment to social responsibility.",
 };
 
 
