@@ -5,7 +5,7 @@ import Script from "next/script";
 import React from "react";
 
 export const metadata = {
-  title: "Corporate Social Responsibility | RG Creations Nepal",
+  title: "Corporate Social Responsibility | RG Creations",
   description:
     "Discover how RG Creations Nepal drives positive change through community empowerment, and socially responsible initiatives that shape a better future.",
 };

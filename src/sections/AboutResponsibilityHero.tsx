@@ -26,7 +26,7 @@ export default function AboutResponsibilityHero() {
         </div>
 
         <h1 className="text-2xl md:text-4xl font-bold mb-4 tracking-wider  max-w-3xl">
-          Driven by responsibility and guided by compassion, we dedicate ourselves to building stronger societies, greener environments, and brighter futures through every project we undertake.
+          Together with our community, we are shaping a more responsible and sustainable tomorrow
         </h1>
 
         {/* <p className="max-w-xl text-sm md:text-base text-gray-200 mb-6">

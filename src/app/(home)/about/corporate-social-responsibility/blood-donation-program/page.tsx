@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { FaWhatsapp, FaFacebook , FaTwitter } from "react-icons/fa";
 
 export const metadata = {
-  title: "RG Creations Nepal CSR Initiative: Blood Donation & Community Impact",
+  title: "RG Creations Nepal CSR Initiative: Blood Donation",
   description:
     "Discover how RG Creations impactful Blood Donation Program at Taaj Reception, and their ongoing commitment to social responsibility.",
 };
