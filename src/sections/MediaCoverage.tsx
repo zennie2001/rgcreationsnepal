@@ -224,6 +224,30 @@ mediaName: "नागरिक",
 mediaLogo: "/medialogo/republica.svg",
 },
 {
+id: 15,
+title: "प्रिमियम हस्पिटालिटी आउटलेट’ निर्माणमा विशिष्ट पहिचान बनाउँदै ‘आरजी क्रिएसन्स",
+description:
+"आरजी क्रिएसन्सले विगत १५ वर्षदेखि काठमाडौं उपत्यका लगायत देशका विभिन्न शहर र विदेशमासमेत होटल, इभेन्ट भेन्यू, नाइट क्लब, डिस्को थेक, क्यासिनो, ब्यांक्वेट, लाउञ्ज, क्याफे, बार, पब लगायत हस्पिटालिटी क्षेत्रसँग सम्बन्धित प्रडक्टको कन्सेप्ट डिजाइन, कन्स्ट्रक्सन र सञ्चालन गरी आफ्नो छुट्टै मापदण्ड स्थापित गरिसकेको छ । ",
+category: "ARCHITECTURE",
+image: "/majestic-1_11zon.jpg",
+date: "साउन २९, २०८२",
+path: "/blogs/media-coverage/premium-hospitality-outlet-12khari",
+mediaName: "बाह्रखरी",
+mediaLogo: "/medialogo/12khari.jpg",
+},
+{
+id: 16,
+title: "हस्पिटालिटी आउटलेट निर्माणमा पहिचान बनाउँदै आरजी क्रिएसन्स, काठमाडौंमा बने आकर्षक इभेन्ट भेन्यु",
+description:
+"काठमाडौं उपत्यकामा होटल, इभेन्ट भेन्यु र क्याफे डिजाइनमा आरजी क्रिएसन्स परिचित बन्दै गएको छ । चीनको ग्वाङ्दोङ प्रदेशको सेन्जेन शहरमा रहेको ‘लिंक वर्ल्ड टेक’सँगको सहकार्यमा आरजी क्रिएसन्सले नेपालमा आकर्षक डिजाइन गरेको छ ।",
+category: "ARCHITECTURE",
+image: "/panas-2_11zon.jpg",
+date: "साउन २९, २०८२",
+path: "/blogs/media-coverage/premium-hospitality-nirman-lokantar",
+mediaName: "Lokantar",
+mediaLogo: "/medialogo/lokantar.png",
+},
+{
 id: 6,
 title: "प्रिमियम हस्पिटालिटी आउटलेट’ निर्माणमा जोड दिँदै ‘आरजी क्रिएसन्स",
 description:
@@ -348,6 +372,11 @@ date: "July 1, 2025"
   mediaName: "The Rising Nepal",
 mediaLogo: "/medialogo/risingnepal.jpg",
 date: "May 21, 2025"
+},
+ { id: 21, image: "/news23.jpg" ,
+  mediaName: "The Annapurna Express",
+mediaLogo: "/medialogo/annapurna-express.png",
+date: "August 08, 2025"
 },
  { id: 12, image: "/newArthik_11zon.jpg" ,
   mediaName: "Aarthik Dainik",
