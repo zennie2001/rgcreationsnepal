@@ -16,7 +16,7 @@ const jakarta = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Top-Rated Construction Company for Nightclubs, Hotels & Banquets",
+    default: "Best Architecture & Construction for Hotels & Clubs",
     template: "%s ",
   },
   description:

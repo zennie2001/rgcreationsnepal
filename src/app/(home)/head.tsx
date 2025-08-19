@@ -8,7 +8,7 @@ export default function Head() {
       
       
       {/* SEO Meta Tags */}
-      <title> Best Architecture Company in Kathmandu, Nepal </title>
+      <title>Best Architecture & Construction for Hotels & Clubs </title>
       <meta
         name="description"
         content="Discover the number 1 architect company in Nepal, specializing in hotels, night clubs, resorts, and commercial design."
@@ -21,7 +21,7 @@ export default function Head() {
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="Top Architecture Firm in Nepal | RG Creations Nepal" />
+      <meta property="og:title" content="Best Architecture & Construction for Hotels & Clubs" />
       <meta
         property="og:description"
         content="Discover the number 1 architect company in Nepal, specializing in hotels, night clubs, resorts, and commercial design."

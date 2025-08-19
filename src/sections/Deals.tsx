@@ -35,6 +35,7 @@ const clients: Client[] = [
   { name: "White Lotus", logo: "/logo/logo8.svg" },
    { name: "Imperial banquet Ithari", logo: "/logo/impiral-itahari.jpg", url:"https://www.facebook.com/imperial.banquet.itahari" },
   { name: "Utsav Kunj", logo: "/logo/logo9.svg" },
+  { name: "Station Pub", logo: "/logo/logoStation.jpg" , url:"https://www.facebook.com/profile.php?id=100066715534252"},
   
 ];
 

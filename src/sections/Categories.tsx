@@ -15,11 +15,12 @@ const WelcomeSection = () => {
                   Welcome to RG Creations Nepal
                 </p>
                 <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-[#333d49] leading-tight">
-                  Top-Rated <span className="text-[#333d49]">Architecture</span>
+                  Architecture & Construction Company in Nepal | Your<br className="hidden md:block"/> Vision, Our Design
+                  {/* Top-Rated <span className="text-[#333d49]">Architecture</span>
                   <br />
                   Company in Nepal– Your 
                   <br />
-                  Vision, Our Design
+                  Vision, Our Design */}
                 </h2>
               </div>
 
