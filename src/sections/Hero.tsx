@@ -100,7 +100,7 @@ const Hero = () => {
       {/* Hero Content */}
       <div className="absolute inset-0 flex items-center md:items-start md:top-1/4 justify-center z-30">
         <div className="text-center  text-white  mx-8  ">
-          <h2 style={{ whiteSpace: "pre-line" }} className="text-2xl md:text-4xl font-bold  mb-3 leading-tight  ">
+          <h2 style={{ whiteSpace: "pre-line" }} className="text-2xl md:text-4xl max-[1366px]:text-xl font-bold  mb-3 leading-tight  ">
             {slides[currentSlide].title}
           </h2>
 
@@ -153,7 +153,7 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* Night Clubs Design */}
             <div className="text-left p-6 rounded-2xl text-white backdrop-blur-md bg-white/10 group cursor-pointer">
-              <div className="mb-3 flex justify-start">
+              <div className="mb-3  max-[1366px]:hidden flex justify-start">
                 <svg
                   width="30"
                   height="30"
@@ -167,7 +167,7 @@ const Hero = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-lg 2xl:text-xl font-bold mb-2">Luxury Nightclub Construction</h3>
+              <h3 className="text-lg 2xl:text-xl  font-bold mb-2">Luxury Nightclub Construction</h3>
               <p className="text-gray-300 text-sm leading-relaxed mb-3 ">
                 RG Creations Nepal builds high-end nightclubs with stunning interiors, vibrant lighting, and superior acoustics—designed for unforgettable nightlife experiences.
 
@@ -181,7 +181,7 @@ const Hero = () => {
 
             {/* Hotel Design */}
             <div className="text-left p-6 rounded-2xl text-white backdrop-blur-md bg-white/10 group cursor-pointer">
-              <div className="mb-3 flex justify-start">
+              <div className="mb-3 max-[1366px]:hidden flex justify-start">
                 <svg
                   width="30"
                   height="31"
@@ -209,7 +209,7 @@ const Hero = () => {
 
             {/* Banquet Design */}
             <div className="text-left p-6 rounded-2xl text-white backdrop-blur-md bg-white/10 group cursor-pointer">
-              <div className="mb-3 flex justify-start">
+              <div className="mb-3 max-[1366px]:hidden flex justify-start">
                 <svg
                   width="30"
                   height="30"

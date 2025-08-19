@@ -187,11 +187,11 @@ export default function Home() {
           {/* Image Section */}
           <div className="relative w-full  md:w-[50%]  md:ms-60 h-[500px]">
             {/* Decorative Border Box */}
-            <div className="absolute top-8 right-14 w-full h-full border-8 border-[#133950] z-0" />
+            <div className="absolute hidden md:block top-8 right-14 w-full h-full border-8 border-[#133950] z-0" />
             {/* Main Image */}
-            <div className="relative z-10 w-full h-full overflow-hidden ">
+            <div className="relative z-10 top-8 w-full h-full overflow-hidden ">
               <Image
-                src="/about-us.jpg" // Replace with your image path
+                src="/logoGold_11zon.jpg" // Replace with your image path
                 alt="Innovative Architecture"
                 fill
                 className="object-contain"
@@ -255,7 +255,7 @@ export default function Home() {
           {/* Right Half - Image with overlay */}
 
           {/* Text box overlaying from left inside the image half */}
-          <div className="absolute lg:left-36 lg:top-1/2 lg:-translate-y-1/2 bg-black text-white p-8  shadow-lg max-w-lg z-10">
+          <div className="absolute lg:left-36 lg:top-1/2 lg:-translate-y-1/2 bg-[#133950] text-white p-8  shadow-lg max-w-lg z-10">
             <h2 className="text-2xl font-bold mb-4">OUR MISSION</h2>
             <p className="text-sm leading-relaxed text-justify">
               At RG Creations, our mission is to empower entrepreneurs by delivering innovative architectural design, high-quality construction services, and end-to-end material solutions. We go beyond building structures- we guide business owners with proven strategies and personalized business models to turn bold ideas into sustainable success.
