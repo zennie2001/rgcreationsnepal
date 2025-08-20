@@ -62,7 +62,7 @@ export default function Home() {
     <title>Best Architecture & Construction for Hotels & Clubs</title>
         <meta name="description" content="RG Creations Nepal Pvt. Ltd. is a top construction and architecture company in Nepal, specializing in luxury resorts, banquet halls, clubs, and more." />
         <meta name="keywords" content="Number 1 architect company in Nepal, Best architects in Nepal, Top architecture firms in Nepal, Top 10 architecture companies in Nepal, Best architecture company in Kathmandu, Leading architect firm Nepal, No.1 architecture company Nepal, Award-winning architecture company in Nepal, Best design and architecture company Nepal, Best hospitality architecture firm in Nepal, Commercial architect company Nepal, Top rated architects Nepal, Best interior and architecture firm Nepal, Architecture company for hotel design in Nepal, Premium architecture company Kathmandu, Who is the best architect in Nepal?, Top architects list Nepal 2025, Best architectural design styles in Nepal, Best architecture firm for commercial projects Nepal, Famous architect companies in Nepal, Architecture firm portfolio Nepal, Architecture company reviews Nepal, How to choose top architects in Nepal, Cost of hiring architect in Kathmandu, Best architecture for resorts and hotels in Nepal, Best architect firm for hotel construction Nepal, No.1 architecture firm for restaurant design Nepal, Top modern architect companies Kathmandu, Best architecture company near me, Top 10 architecture consultants in Nepal" />
-     
+     <script src="https://analytics.ahrefs.com/analytics.js" data-key="5ewLOPv8pvIzpl2xHHZQoQ" async></script>
     <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
